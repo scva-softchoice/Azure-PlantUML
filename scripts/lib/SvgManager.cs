@@ -5,6 +5,9 @@ using Microsoft.Playwright;
 using System.Globalization;
 using System.Drawing;
 
+/// <summary>
+/// Manages SVG image operations, including exporting to PNG, resizing, and applying monochrome effects.
+/// </summary>
 public class SvgManager : IImageManager
 {
     private readonly ILogger _logger;
@@ -12,6 +15,10 @@ public class SvgManager : IImageManager
     private IPlaywright? playwrightContext;
     private IBrowser? browser;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="SvgManager"/> class.
+    /// </summary>
+    /// <param name="logger">The logger.</param>
     public SvgManager(ILogger<SvgManager> logger)
     {
         _logger = logger;
@@ -20,7 +27,7 @@ public class SvgManager : IImageManager
     private async Task Init()
     {
         // Ensure browsers are installed: https://playwright.dev/dotnet/docs/browsers#prerequisites-for-net
-        Microsoft.Playwright.Program.Main(new string[] { "install" });
+        Microsoft.Playwright.Program.Main(["install"]);
         
         try
         {
@@ -38,6 +45,14 @@ public class SvgManager : IImageManager
         }
     }
 
+    /// <summary>
+    /// Exports an SVG file to a PNG image.
+    /// </summary>
+    /// <param name="inputPath">The path to the input SVG file.</param>
+    /// <param name="outputPath">The path to save the output PNG image.</param>
+    /// <param name="targetImageHeight">The target height of the output image.</param>
+    /// <param name="omitBackground">Whether to omit the background of the image.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the export was successful.</returns>
     public async Task<bool> ExportToPng(string inputPath, string outputPath, int targetImageHeight, bool omitBackground = true)
     {
         var currentDirectory = Environment.CurrentDirectory;
@@ -76,14 +91,20 @@ public class SvgManager : IImageManager
         }
     }
 
- public async Task<bool> ResizeAndCopy(string inputPath, string outputPath, int targetImageHeight)
+    /// <summary>
+    /// Resizes and copies an SVG file.
+    /// </summary>
+    /// <param name="inputPath">The path to the input SVG file.</param>
+    /// <param name="outputPath">The path to save the resized SVG file.</param>
+    /// <param name="targetImageHeight">The target height of the image.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the operation was successful.</returns>
+    public async Task<bool> ResizeAndCopy(string inputPath, string outputPath, int targetImageHeight)
     {
         try
         {
             XmlDocument xmldoc = new XmlDocument();
             xmldoc.Load(inputPath);
-            XmlElement svg = xmldoc.DocumentElement;
-
+            var svg = xmldoc.DocumentElement;
             if (svg == null)
             {
                 throw new Exception("unable to load svg element from file");
@@ -122,10 +143,18 @@ public class SvgManager : IImageManager
         }
         catch (Exception ex)
         {
-            throw ex;
+            _logger.LogCritical(ex.Message);
+            throw;
         }
     }
 
+    /// <summary>
+    /// Exports an SVG file to a monochrome version.
+    /// </summary>
+    /// <param name="inputPath">The path to the input SVG file.</param>
+    /// <param name="outputPath">The path to save the monochrome SVG file.</param>
+    /// <param name="azureColor">The base color to use for the monochrome conversion.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the export was successful.</returns>
     public async Task<bool> ExportToMonochrome(string inputPath, string outputPath, Color azureColor)
     {
         // Making it first grayscale and after that monochrom gives best result

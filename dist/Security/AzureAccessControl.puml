@@ -1,13 +1,19 @@
 sprite $AzureAccessControl [70x70/16z] {
-dLW7aiCm25Jl4l__xNaqN18fc0ZlD1UofYvsr0TigWC0Ml5QFOMjy4OspqWIB1ZX2Kc67VavIKafbQSqVeqYZ7ak3Qh3XVwkZEwJLLQgk94WZJ2c1XVMsfhf
-Z8J4KC-TENO2bW0NxDw4S2596qxjUCBIo6HL0KjbM6IDszMEyIGlXYfSaDOeKTHMmAA9TjT3sdMgVhTTba-0GINOI40_aPTY_baBOAfaw2XItZhhKQQQaa9t
-sD7rOk1BdzJPQOQcm8hwQMmMMOxwZYG2WhADusX1s0xVQ7PtaryGVk0pShoGo_-fdoGDyvIZSp7ZlQfsE2oGVL_1Nxh_beHcjdkxDtRITqim3ukj5Bxc3gBw
-nzlZGjU-MI2cqdyFNY99S1vXSdbI1SfktCd20QBytZq5pvdN27tpXB1EK65qXxgBFwihgM57FTmkPKQvTx_f1UaMbiPAsa1RWcNXRwmQzKCMO5Yu0hgbUEc2
-vNUCkxsZ3d6x2QfaqPIR4keXMJI1Q1ZvvjG3TPmGaoRRuMY_YucJRggsU6CcIPLlt-vtbUwozOioquAPPx43ofyC3bQW84lX1h5zXJ0Plb6SY4Dde97Des1w
-RnTwbt_D1K3Ke1N2nFhlZl0BRlFU5Ao-FYUfXaXvFQM9C96uRzvos6oElvyFD05917jcG_dz6Hj-jh4vUUDDlspgyeh2YSymFrnnHnL8VAkqinqnU9tq9zh3
-sDdZR_A1hITF_cxPkRyCtB6S6kbxomxD90OOFmdJz0S
+dLU7beGm2DoWwIJy_zTUyTpBYd6UEA_Q9Z1KNn-WqkG7dDRNOr2LWUoUaMGv8ZqXgQ9HdrlIIYhjxPMLPDsze3-5TavlP6cR7JIKtcvq6qdOI3xlk8qccbXO
+Vd2CBGtYcw1PPCllJR8wH3F1Wu4bJPNS33Gc2q_ZLWmiPSh2niJBqt1qeqT9Vg1lEgkwVgIx2jnYO76p36lc4k2pzH446fQqr_vqzwH79VTsCOj9sr726yfA
+B_BbQREZBXhD7RtEt4KwfmLPmug43oInVz3xwxhUVPg-kpPr0W5B57Zaji9SUDhFwYN565CvAiCxQGgh3tb_DLz9cuTkdkK_OQeQbhIdnJJCl9nhIzhRdVLK
+Ok8d-P_dNbQIILNwyvm95nNZDZzPMx8XdkPClqfJ0eEVbJ7fF8jqXDr5_Qv7KpBeEwE5Wzw-R8V1JSAZwJEk6FSTkkooexF0bYRZNONbmDzWDsgNB7H8emvP
+YbRjGi-OKbhmZ5cmBXXuv1Umte2NCJr6k4YOE5orZyrHgT2X-Q5rcW6hTOcjRj9wpAkZTA_Ca-QUxEKjk4sHzsIYbmrUpkZBoufbDdsDe2ndPAD3KUP85aDu
+3DmVLER_6utCmd8OUHiP36im10efkUj-to19fSiVtdpRdOJiZ3TpreD3a3QZ-77X-XkLK9Gby7SJPtsw4KFaKntd07Jyip2M7uWL6vDLKY6J6G_ezMPE4R1K
+gGAKYKZyU8SbWpxEMbliacblmHl8V2Bo_NqWVWC
 }
 
 AzureEntityColoring(AzureAccessControl)
 !define AzureAccessControl(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAccessControl, AzureAccessControl)
 !define AzureAccessControl(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAccessControl, AzureAccessControl)
+!procedure AzureAccessControl($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAccessControl, $stereo=AzureAccessControl, $tags, $link)
+ !endprocedure
+!procedure AzureAccessControl($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAccessControl, $tags, $link, AzureAccessControl)
+!endprocedure

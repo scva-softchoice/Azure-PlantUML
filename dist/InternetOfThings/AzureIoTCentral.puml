@@ -8,3 +8,9 @@ OtceL0KvAOT9HGRxXonKXwXqDw5I1MzPXAePjZJnReFhuTq4ryE543r4oBjtV5mF5yBry4vOxyhr6u8l
 AzureEntityColoring(AzureIoTCentral)
 !define AzureIoTCentral(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIoTCentral, AzureIoTCentral)
 !define AzureIoTCentral(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIoTCentral, AzureIoTCentral)
+!procedure AzureIoTCentral($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIoTCentral, $stereo=AzureIoTCentral, $tags, $link)
+ !endprocedure
+!procedure AzureIoTCentral($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIoTCentral, $tags, $link, AzureIoTCentral)
+!endprocedure

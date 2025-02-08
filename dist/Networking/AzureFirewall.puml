@@ -1,10 +1,17 @@
 sprite $AzureFirewall [70x70/16z] {
-xT9Likqu38NXPH0brlodsmSZRtRYzENlLLM_4J_FFxbKUbDhFfuWwL310LMkyUvEPhc3C_Oeya31E9A72ADOP3v3ybJTzpWpTvFbfJHnAO5cpXCoNf0HFFBT
-fcucLPPmx9bA90xVRsBTGt1FrPrm1-jU2TUIw6vS2ow97bFH8JqizfDr0iTvPdpzugAJqknMuWFgj1e7cf50Ee_0TWA8dQ2edO1FgOZO2PJi3CLEeB0J2CGw
-I_CXRR4UerfdzK6hzIfmMMbhy4Ksra_QLGL0lQmicxSARzJNRd9PORpH68zNbc09RvBDLGWVybH5yQN4s5lmrkadtbKiOSlOHSLztKGu9YqgbX6IzYTgpg6r
-9NZZD-PhxEH2jGCLmOsYEokQSPSELrHgnWFixVFsDBIBgsxwPd764-nZNbNQ6dorpT9FselAuD_z2okTosJhFA-G3o8yGpo4yEFyyny
+xTC5kkiu38RXtoHmvFrlTyfosOapbzzpYkhp1OsVvv-GSYwbv1onLIpSAGaRP7v4gpk1-0MAM2Fn6mdZ2h-LCOhuWpAp9owlkpWpvoRoLs7YfBWoSpmkuWiU
+GIEtszIP2PbuKC8RYNXS6LXz0_1AbfNm0ibQ0Oy2osgK4-wnRC8PdI9RiUzFb0danpFZSXSdcHJy8azW7CYqx0Sq8w38l08IdVy3wmwIw0vebmgpxa2AxY7f
+3WIw0mPhfreRObLxXAoTfGrQj9U1-uejhbM-qNvY3nK0-RvIRmuLkf6sT9Fx2k50gbx-LbIg-b_0GL0VZrTSmKdKcOhW8lcucMlMwIUjgsZ0BNFPcyFyygiR
+3_l4lA8HBiYbOkSNScRLDQC3RUPxSYVhXWhZIPAL5ObuIKShYt2EU8ERdS-UEBixrIO7jJ4-u3RcMyKMrw-Msa_iIsNmtlqBAvtxf7K-LqeRLF19eI45Fyu_
+_m4
 }
 
 AzureEntityColoring(AzureFirewall)
 !define AzureFirewall(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFirewall, AzureFirewall)
 !define AzureFirewall(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFirewall, AzureFirewall)
+!procedure AzureFirewall($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFirewall, $stereo=AzureFirewall, $tags, $link)
+ !endprocedure
+!procedure AzureFirewall($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFirewall, $tags, $link, AzureFirewall)
+!endprocedure

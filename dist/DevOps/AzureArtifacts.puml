@@ -1,9 +1,15 @@
 sprite $AzureArtifacts [70x70/16z] {
-xT85ae0m44JHk7B_wwvtpGQTuFRBaHSLU_McV9ZEgt541bvoLD61bpbUYMXd9QBZbKXLAsRnN4WfMrk9hrBsAf7H3PHNqNie2IrHqXwA37YTaNUibA0InLKG
-8J8LvJIjU2Hx5BHGGGkK_jtr8VuMk0gCflcdHEIP2em5oj1zgLiHWjBJ3aeksbnvbR3YN6pHJCMQ8bkjXDMKuVm1YlrhYKBxShn2NKP1FKfYAeAIiN8oC9mI
-E_Js2G
+xT1b0iCW38RXUeJU_xhpRxuKc-UjyEy1qhmghoDUZdeRQJckrbHwZgkleWmbYg0NAuBUhyYfDvwbVBf35E8ASaMO7ttnYbZzZk9ABsQAIXJDL1HhZDAoed28
+fgYwCqLHl8BkA2X6eUrdAhge46eDHSkKW4uAiUpZM2MW-KmHH4dAl2bMYRyHopRcjEb2kUaLIhZiEnHNUDesNfHvbd6uQ4nMk99YL4cXhEbQIlnStgqOVQZI
+c8gaAvqa7WR6r3Klo5i3
 }
 
 AzureEntityColoring(AzureArtifacts)
 !define AzureArtifacts(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureArtifacts, AzureArtifacts)
 !define AzureArtifacts(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureArtifacts, AzureArtifacts)
+!procedure AzureArtifacts($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureArtifacts, $stereo=AzureArtifacts, $tags, $link)
+ !endprocedure
+!procedure AzureArtifacts($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureArtifacts, $tags, $link, AzureArtifacts)
+!endprocedure

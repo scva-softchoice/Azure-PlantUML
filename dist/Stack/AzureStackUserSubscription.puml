@@ -1,11 +1,17 @@
 sprite $AzureStackUserSubscription [70x70/16z] {
-rPO7ikGm24GDDE3xNtY3NAfgUsJMPlFxOQ9UjNe2sluFr0nc9biVGqoyApAF4-X841_eMuTuBB2NaY3Q6eyRjDy98uyb6lTuVp-CzgCmZIZzPgB66XlgzciH
-DN_GWhYIaSoRBCcB6vOi-6KMVsIHhC7sYCWIVMP1knP6NjJI2hFNKUemU-uJR8_HdHSoiRt0nf9Q8cegjGPh2QrIVCFrVHfEOZYmic3r_93O9ObQgH54XEBi
-K8-0JCbOFYwrS4H0H3r7eWo8s77lb1p2SQNybf8p7WFN8I4Bf3eic9o82VMg6CYz95mOi6HWQi1Aey6e47wIs058mn869D4Pa1oiASu-Ymqvm8iNOUAAVNRh
-616S61Qz6qJShx5b5KQA-QmSvM2TnQgZ0gZRoUo59QYF2jpjn2uCIJa_J0QHX5yjjaqqb_YGM6Qb-V4e6nRFIbFD8DgIPXQQ9oCeH0HPQ9xDPgLk2Km9axSu
-TrjRBEyHNrk0gfOhoBN5XmN2jHHK5YZNih_5ZJz00zbVut1SDDgo71hv1HRknVgMxPTOxDVqeiKhtSZI30E7syP88utx8M4KRs597z7jN-Kh
+rTO7qgH028PXmWVC_K-yPUYbrPOnR7p-C9NcBR02qd-1HG6e2Zsdves1wH4ntm0z0DypePlOV00t8pw6DvCafUlCJmbTfLwuDyhRdSGhHjV0IqoNU4rVB9Ji
+3rRKI-4F7suiFyszIfoWApHgJbV8Bwbmr8mkyIW9NO8eqJNyPg5aSUOJmVHqc4y2NQQVc7-Ed6x0PomeiQeobMmSwRub06129VcoZcAXL62nE4Hq5v7vtta3
+xYwwwHYREpWZkgubHSCTpEfBA5oPrITeaILuEWrynLlcCvCbaXL8TQALU-8D9hbHPaOHD-vfHbOg2emouZtPBvGHNQ3XquXZi91bOvCftdqu8IlzjmV3-9vc
+nLUsHAophS3tZ1ljAkKiuaUIepI7MJ3Hwjq7l11F_IW_A_MHpsURTAUBaCVeHzf2qVtiA_hj8XfFD7g7pFTJnXEBAdFX1e6P9QB8NBc7pio80zFcscqMvXX0
+HbASCjQh5ObpRECAK3sMFSIuOdC5VF6LfQf0A4MxovS_fyg44dzkCzZ-Dihp2gIit9z5drVeRMMVaHSLoKpShlXQKNev30ocrEEudp5haIIuAoDliD2_wWS
 }
 
 AzureEntityColoring(AzureStackUserSubscription)
 !define AzureStackUserSubscription(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackUserSubscription, AzureStackUserSubscription)
 !define AzureStackUserSubscription(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackUserSubscription, AzureStackUserSubscription)
+!procedure AzureStackUserSubscription($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackUserSubscription, $stereo=AzureStackUserSubscription, $tags, $link)
+ !endprocedure
+!procedure AzureStackUserSubscription($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackUserSubscription, $tags, $link, AzureStackUserSubscription)
+!endprocedure

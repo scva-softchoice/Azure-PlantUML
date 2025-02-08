@@ -1,8 +1,17 @@
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
+/// <summary>
+/// Provides functionality to generate VS Code snippets for PlantUML diagrams.
+/// </summary>
 public static class VSCodeSnippets
 {
+    /// <summary>
+    /// Generates VS Code snippets based on the PlantUML files in the specified directory.
+    /// </summary>
+    /// <param name="distFolder">The directory containing the PlantUML files.</param>
+    /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the snippet generation was successful.</returns>
     public static async Task<bool> GenerateSnippets(string distFolder)
     {
         Console.WriteLine("Generating VSCode Snippets...");
@@ -39,26 +48,45 @@ public static class VSCodeSnippets
         var snippetsDirectory = Path.Combine(distFolder, ".vscode", "snippets");
         Directory.CreateDirectory(snippetsDirectory);
 
-        using (StreamWriter file = File.CreateText(Path.Combine(snippetsDirectory, "diagram.json")))
+        var options = new JsonSerializerOptions
         {
-            var serializer = new JsonSerializer
-            {
-                Formatting = Formatting.Indented,
-            };
-            serializer.Serialize(file, snippets);
+            WriteIndented = true,
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
+
+        using (FileStream fileStream = File.Create(Path.Combine(snippetsDirectory, "diagram.json")))
+        {
+            await JsonSerializer.SerializeAsync(fileStream, snippets, options);
         }
 
         return await Task.FromResult(true);
     }
 
+    /// <summary>
+    /// Splits a camel case string into separate words.
+    /// </summary>
+    /// <param name="camelCaseString">The camel case string to split.</param>
+    /// <returns>The string with spaces inserted between the words.</returns>
     private static string SplitCamelCase(string camelCaseString) => Regex.Replace(camelCaseString, "(\\B[A-Z])", " $1");
 
+    /// <summary>
+    /// Represents a VS Code snippet.
+    /// </summary>
     private class Snippet
     {
+        /// <summary>
+        /// Gets or sets the prefix for the snippet.
+        /// </summary>
         public string? prefix { get; set; }
 
+        /// <summary>
+        /// Gets or sets the description for the snippet.
+        /// </summary>
         public string? description { get; set; }
 
+        /// <summary>
+        /// Gets or sets the body for the snippet.
+        /// </summary>
         public List<string>? body { get; set; }
     }
 

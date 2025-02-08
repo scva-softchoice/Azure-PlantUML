@@ -1,9 +1,15 @@
 sprite $PowerBI [70x70/16z] {
-xTZNaSDG34DHIGH5zT_mHexX0Dl2vl1k0MVmZMbVo6uzb9WdBpJHI9UcqiXvfg88NraLuYkYeGnbA5OpyYLR2Pcfp5h93r7mUSfGy7u50UG9Khu2u4mfLq6W
-5HBbAkYebAk029A4fw2ZKhw2KuM4eU2iB5y1V6LUH64gY-xlAaCPob0oFq39ToWatg_a-vKy8ElRb6Za7Key1HAkGYIGbYA8syfMssqb6f4A4QsGO7ccaDXk
-A2Ja5Y9Q4OJQqiGj9NOeH9GY2A6Gq4hiKhPVf2o-KfDWN6Nbk_K8
+xSo7SSGm30H0KRWZq7_5zYS538Rpvnou1Upo7F2kRuYsQ92A-oCkHN8XBblnpgL_m58LSvdBN2GDu8MyM4bSMhtmGnPytZ8Nl7-10Un7hYy0qkBwWhHuTtK1
+a1Q_K1OOqkBTzGLfyGjjmGctGbYGqTK51kXBMmicBcljxovpcSjS-14BoVSk1D-_yE9z2xUalsqnu5AyPx7L3E3x5hi0rIKNuoKygYKNuoLU3HOx9iPo2O_X
+iXNriYMZnL9IBR4bzPAAUebDkLXIBp5UxAabVj6oweilHICktjloy08
 }
 
 AzureEntityColoring(PowerBI)
 !define PowerBI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PowerBI, PowerBI)
 !define PowerBI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PowerBI, PowerBI)
+!procedure PowerBI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PowerBI, $stereo=PowerBI, $tags, $link)
+ !endprocedure
+!procedure PowerBI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PowerBI, $tags, $link, PowerBI)
+!endprocedure

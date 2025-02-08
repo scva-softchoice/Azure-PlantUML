@@ -1,11 +1,17 @@
 sprite $AzureBlockchainConnection [70x70/16z] {
-vP9BekKW24HHGPJzxxS_xrlcOXkCetvd74weGlg1v4AFIImYcPvHv0rEJyB85sKxZ0paxK96qcOXIBoUB1DAE8nFZeVPZfLb2OUkEoT72ubxM6vJQOgetCJi
-NnQzvUcsicYL1MgsjApMgMPhoyhJxQvb7gkPHIogVfY8nVUOHIn-h6OX2uBNZLeGA2HeQQqDiRfjMBgPTLYdMT02G-sPvNF_JKjAzMse_m4q4GkB0cyRjQYb
-w0jc5hCaKTVI8fPK5O05UiJYIu8MqJUa918OYrcoli4Wr1wmO9wCQxqDtcmNLn5wWzttqisX4_8sM2VdcblOwLRSzpUtLFVCXG1UMLgcAz0jnffR-bUOVB4K
-6YbrPi4mocClJ5SOBPCmC8Vj8abUBNtS6NvV8D98hXUBE9Ko5bF9Wz7IadiOnayb4SrYTGY3A6fK8PGNgqCOH56JzGFXuY3Qb8k73XhMVSvhSjL7L7Zpsq3t
-kKWGbEnpH49797H4GaSaT4H2HoHqH492_p6_0G
+vTHNrjmW38PXYWhI_lURGlxssSI0ICzxFJp74fn9_s6bdXkPcBaS8fLxb4-6uRTgU1Y6IdWXM8uk1ACSNGXMmyDW9J1CTAp2qsZdTcDZuKBY3l5oyds5bHTp
+Vr9qoJ6VAIeyITsdoknpn7skp1ppHULXhEQ-hFJ6m-meOySzegZWC16b1xSRKtgma2sbjGPZcGSKStVJzve7bEQzTgQOVokgPEc7pAnB0QMmGkRUTfKYUitT
+DnLM7IbjHS5rOFsexIXZP5N1SQJcn9TZwqhL7dKGzsbp1UUfkENclhNTeb_ZrAFtlNnuB-Q339H-KCRNzQ3GOBS4QvehChpc2bytKrf9r_HhvV4LecBqjjBR
+js1LK1aF8uGAfMi4odWOKOAVSxgL-QvOlQwKuRtayRy5Adoxc7T6uS50z55fEGqKVAyCly6n38O1vPtHdi1jmrW6mrmLPNYjmbG7iJQbEahq8qCQxMSmLSyI
+UFD7I2zNuhq02GT8E43E54w70H8Ea720X0Ca7AL_kCy
 }
 
 AzureEntityColoring(AzureBlockchainConnection)
 !define AzureBlockchainConnection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlockchainConnection, AzureBlockchainConnection)
 !define AzureBlockchainConnection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlockchainConnection, AzureBlockchainConnection)
+!procedure AzureBlockchainConnection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlockchainConnection, $stereo=AzureBlockchainConnection, $tags, $link)
+ !endprocedure
+!procedure AzureBlockchainConnection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlockchainConnection, $tags, $link, AzureBlockchainConnection)
+!endprocedure

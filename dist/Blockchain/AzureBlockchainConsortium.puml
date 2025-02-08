@@ -1,13 +1,19 @@
 sprite $AzureBlockchainConsortium [70x70/16z] {
-xTI7Zjim3CPn3GwHoVi_Rqyo2OUG3S4AHjU_c6tlT_a4X6bPJj-N0V5hfs8FlZMiiZy6Fykx3nA3xJ6nic_iEnbluaSAqoMY-apX2wVfKwKN3LRTKQAZkgkS
-iqHt5NDipARIfDai0rwlvqfJrOCXGzxlvugeCsJ8pv_7IWTKJUb86_B6wpPjxCgBU_94AQw8A-z3OLXUumpsdSt48_bGtieZJBrSQottrm3oYR08dujUdJIc
-r56UHw050x5CyGx6ZE3Cvn4w0pGfKX8mrL39zwSDkAHKAIgOV4jqmfZ8Z5y17mhveyxbC6Q--1bDQILyaCa9I2Zr2dK5qWZfqW0fcV7AWQR-PaJ9GcQSaIPT
-OOR9uEdhQmfpZP68AKpH8TLxXIcCaLFXC4lqNXcX6qs2Siw2fdglU3vcKfZ07cIXs2mKYOg7QC1QOP9PyVnElswL9jAMYY7tYiXWbifBcFLUQKrahHp7w5RX
-8QsLnhrJoL2Zmcsbz7ZaIeMVIbHaKkZYNKRZ4nGu6aUad1ybAEYto9MHCPI7uSvvrJaeN8xX61Ldi4AeNYcj9gzGKBZl93D2Z3cJApxc34v5Xkv6xFWdSeLo
-YcKy5DCDcVEpJZR62hFKTQ1BXyIVadpCLAMIB232sH7fogZaj0xe9uWr6Sg3W4RrSuniAkSi5DbJB1kphrWsvai5vOzN_Yjh9YeDqhCApWgcvzMWs9dU24on
-CRjbD2MCsPg5OSncWAscxyjfsIy
+xTJ1agCw38LXsvPrBD7l_xmtD2Uj0aCJO7LdvbzbzM4fLKgdbVIyt5fxxDGs9_cXmUfjexJexbXPGhWzLcrZzT4mKRuqJJj8Bod0Bk9-KO4EXlbrPViSk5zN
+DewwtrN2CN-WS3tT_RRIEvz3O9gkA_Ft5qQ9V7rDjnItKAPNDnG0xbJcbtJ0RcstU_zH9ipP5QLYoGrKlXO5abW-lYWyHOM8kSL4KyTSutTgBSSNHN8WC4DC
+DBbXJkVFrE_oyKMH1M5K6EOQ3Jf7vr4KWEYWM4qLMbULNywZeAHKDqfBd6LqOfZnKcT1ACX4nZA7ERhKMQbOFJ3e41cJPTPlXN_lozvBUibeicTqvxoYo8aA
+82C2ivS2o61WE09Ke1j3pQX0DuxxeGAq6ebPA5YDPNwih9rkeQmSwSvs5IPSoA10XGivL0G_QMqKg4JQ29mhKDigaR-luw7IpVgfGkHOiLVz0sLom8yLTBDJ
+XLV4VjkBzNEbOs4IArBpMkdssLlYtESghyg9adJO2vcQNbLXcLUTo4hH-4AyXMSQBHU9QigAA1Gi3yrjev1ficbFwJMzAxfIa5E3LXbgqCmNKMd3dqZ5k90n
+hgSgg6XEKOpbJft8MEOtbGk9OYn_wwAxZjfxbTebxITQugUsqJ6ZabB9wJpHLnkZ6nNseQ8SYyFONIN6CdkWS2pOVOLLDNkkDFjZbNyAcL6HTAtIHgMbwzMD
+Wf9k9LI6OIwFHKLl6nohSPX7IJDv17nyOly3
 }
 
 AzureEntityColoring(AzureBlockchainConsortium)
 !define AzureBlockchainConsortium(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlockchainConsortium, AzureBlockchainConsortium)
 !define AzureBlockchainConsortium(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlockchainConsortium, AzureBlockchainConsortium)
+!procedure AzureBlockchainConsortium($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlockchainConsortium, $stereo=AzureBlockchainConsortium, $tags, $link)
+ !endprocedure
+!procedure AzureBlockchainConsortium($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlockchainConsortium, $tags, $link, AzureBlockchainConsortium)
+!endprocedure

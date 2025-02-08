@@ -1,4 +1,3 @@
-
 // From Rich Newman
 // https://richnewman.wordpress.com/about/code-listings-and-diagrams/hslcolor-class/
 using System;
@@ -6,7 +5,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-
+/// <summary>
+/// Represents a color in HSL (Hue, Saturation, Luminosity) format.
+/// </summary>
 public class HSLColor
 {
     // Private data members below are on scale 0-1
@@ -17,16 +18,27 @@ public class HSLColor
 
     private const double scale = 240.0;
 
+    /// <summary>
+    /// Gets or sets the hue component of the color.
+    /// </summary>
     public double Hue
     {
         get { return hue * scale; }
         set { hue = CheckRange(value / scale); }
     }
+
+    /// <summary>
+    /// Gets or sets the saturation component of the color.
+    /// </summary>
     public double Saturation
     {
         get { return saturation * scale; }
         set { saturation = CheckRange(value / scale); }
     }
+
+    /// <summary>
+    /// Gets or sets the luminosity component of the color.
+    /// </summary>
     public double Luminosity
     {
         get { return luminosity * scale; }
@@ -42,11 +54,16 @@ public class HSLColor
         return value;
     }
 
+    /// <inheritdoc />
     public override string ToString()
     {
         return String.Format("H: {0:#0.##} S: {1:#0.##} L: {2:#0.##}", Hue, Saturation, Luminosity);
     }
 
+    /// <summary>
+    /// Returns a string representation of the color in RGB format.
+    /// </summary>
+    /// <returns>A string representation of the color in RGB format.</returns>
     public string ToRGBString()
     {
         Color color = (Color)this;
@@ -54,6 +71,10 @@ public class HSLColor
     }
 
     #region Casts to/from System.Drawing.Color
+    /// <summary>
+    /// Converts an HSLColor to a System.Drawing.Color.
+    /// </summary>
+    /// <param name="hslColor">The HSLColor to convert.</param>
     public static implicit operator Color(HSLColor hslColor)
     {
         double r = 0, g = 0, b = 0;
@@ -104,6 +125,10 @@ public class HSLColor
         return temp2;
     }
 
+    /// <summary>
+    /// Converts a System.Drawing.Color to an HSLColor.
+    /// </summary>
+    /// <param name="color">The System.Drawing.Color to convert.</param>
     public static implicit operator HSLColor(Color color)
     {
         HSLColor hslColor = new HSLColor();
@@ -114,6 +139,12 @@ public class HSLColor
     }
     #endregion
 
+    /// <summary>
+    /// Sets the RGB components of the color.
+    /// </summary>
+    /// <param name="red">The red component.</param>
+    /// <param name="green">The green component.</param>
+    /// <param name="blue">The blue component.</param>
     public void SetRGB(int red, int green, int blue)
     {
         HSLColor hslColor = (HSLColor)Color.FromArgb(red, green, blue);
@@ -122,15 +153,37 @@ public class HSLColor
         this.luminosity = hslColor.luminosity;
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HSLColor"/> class.
+    /// </summary>
     public HSLColor() { }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HSLColor"/> class from a System.Drawing.Color.
+    /// </summary>
+    /// <param name="color">The System.Drawing.Color to initialize from.</param>
     public HSLColor(Color color)
     {
         SetRGB(color.R, color.G, color.B);
     }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HSLColor"/> class from RGB components.
+    /// </summary>
+    /// <param name="red">The red component.</param>
+    /// <param name="green">The green component.</param>
+    /// <param name="blue">The blue component.</param>
     public HSLColor(int red, int green, int blue)
     {
         SetRGB(red, green, blue);
     }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="HSLColor"/> class from HSL components.
+    /// </summary>
+    /// <param name="hue">The hue component.</param>
+    /// <param name="saturation">The saturation component.</param>
+    /// <param name="luminosity">The luminosity component.</param>
     public HSLColor(double hue, double saturation, double luminosity)
     {
         this.Hue = hue;

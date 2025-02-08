@@ -1,11 +1,18 @@
 sprite $AzurePrivateLink [70x70/16z] {
-xTQ7akCW30PWr2M__mFVu8s69RB3pPBhzq-DCP-HbDR-e00oRXiMFRo5aCT7R4VnoCZN4OaHs3tAPclYK-GNAnOZz8xkEcnEUljz1xxNbOncK_RYNoZdl_9V
--Q-OlK6n27kfY7mNCZ55aGXP8prohyXONo95gNUiaQ8ic0LIb0LJbwkoPkeYd75FPSdK9HORaPjx5mYfJL5QClKoMucic7gIlWiXr-14wV9NKsuHC3ESjwYP
-mKkcDhQU7-QQAbDhrFcvALjxoJoPC6z04ZD4CmF4EwRMX-u-TyICmDsHpFYAqN6IaLEPHuwT1Z8plMAifJOfC4PkGW2DEerwnwXtYs7-uyFP8LF8tkc3fIkc
-UHZpPmRopvEOMS8HcF35FqXlJPcJ6NkKpjBEhUIZQ7MV3iCiZoVGnEJi6_HUi7dqUEvovmbX5k_81QF7SVIHM_FZZBQXw8nmgfKXZOOH3yLeB4HeHIepSfQ5
-24_Dv8AyP3ntpDUm8fMPXmXrhWLPC5U_ha45MJ0OFSOVKUklf21hne-dN27hecmo70goO3B8yWX1QUoQgId81fF8cjb2ae4T91bOdRLjXnBP2xRVEzy
+xTU5ikj0281XO5cax__0DzGe4Uvn_qTBPxzufeLl50wcLnlg4RyA8Rychr4iXDVkZNY6BrRyeVaZ5FDil5ZXHEnDhlJuzBikdu1NPiz7_fG_vKz1LNorWkPk
+s2bpFWLPqaRH_Bf7N8uLATztY3RdfMocHne52zCXZV9_fY1LwPWUmNDcLfJAz0XEVKZeWEcHeQluQKmPiswIbgb8xWbZhk1-R_OHL5MgIqHLyNzC7N3Ty0sU
+q3DQFqhTxaqMw9Xg1geAsU159OeXZIDcYw1PAYGQ3JGp6ghpWAb8T5Rg9ITQ51nwm2ZiFCLcc9TSUI02czbbnsIF4Gk4gRw7-7vbv0BgPNSfZcwF0LiGVcJG
+tSuVfwhUOQSRN9LfPmM4kJAnPbASvej6bhztPymoP0ucHcFDw9cdHG5MBRzKXzaeoCA4kyV8wUInGC5EaKz8PHPa2Q8zXiI1OWz2CK6uDTnb5uaucImE2waE
+fpjla9QnsuewemtIChpzSnMZ1accU__F66oHdY5VCfdN0dNPGtfc-6dLt4Tw1hKOHXNfc796aNXUOa9ea9wfLQHdw3L8Cgz0ag7N7NFK8Z0IwKE0de4tYE1h
+zmy
 }
 
 AzureEntityColoring(AzurePrivateLink)
 !define AzurePrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
 !define AzurePrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
+!procedure AzurePrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePrivateLink, $stereo=AzurePrivateLink, $tags, $link)
+ !endprocedure
+!procedure AzurePrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePrivateLink, $tags, $link, AzurePrivateLink)
+!endprocedure

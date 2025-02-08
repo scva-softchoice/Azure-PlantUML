@@ -5,6 +5,9 @@ using System.Drawing;
 using System.Text;
 using System.Diagnostics;
 
+/// <summary>
+/// Generates PlantUML files and related assets for Azure services.
+/// </summary>
 public class GeneratePlantuml : IHostedService
 {
     readonly ILogger logger;
@@ -18,19 +21,32 @@ public class GeneratePlantuml : IHostedService
     readonly string plantUmlPath;
     IImageManager svgManager;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GeneratePlantuml"/> class.
+    /// </summary>
+    /// <param name="logprovider">The logger.</param>
+    /// <param name="config">The configuration.</param>
+    /// <param name="exporter">The image exporter.</param>
+    /// <param name="appLifetime">The application lifetime.</param>
     public GeneratePlantuml(ILogger<GeneratePlantuml> logprovider, IConfiguration config, IImageManager exporter, IHostApplicationLifetime appLifetime)
     {
         logger = logprovider;
         lifetime = appLifetime;
-        sourceFolder = config.GetSection("sourceFolderPath").Value;
+        sourceFolder = config.GetSection("sourceFolderPath").Value ?? throw new ArgumentNullException("sourceFolderPath");
         originalSourceFolder = Path.Combine(sourceFolder, "official");
         manualSourceFolder = Path.Combine(sourceFolder, "manual");
-        targetFolder = config.GetSection("targetFolderPath").Value;
-        azureColor = System.Drawing.ColorTranslator.FromHtml(config.GetSection("monochromeColorHex").Value);
-        plantUmlPath = config.GetSection("plantUmlPath").Value;
+        targetFolder = config.GetSection("targetFolderPath").Value ?? throw new ArgumentNullException("targetFolderPath");
+        var monochromeColorHex = config.GetSection("monochromeColorHex").Value ?? throw new ArgumentNullException("monochromeColorHex");
+        azureColor = System.Drawing.ColorTranslator.FromHtml(monochromeColorHex);
+        plantUmlPath = config.GetSection("plantUmlPath").Value ?? throw new ArgumentNullException("plantUmlPath");
         svgManager = exporter;
     }
 
+    /// <summary>
+    /// Starts the PlantUML generation process.
+    /// </summary>
+    /// <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+    /// <returns>A task that represents the asynchronous operation.</returns>
     public Task StartAsync(CancellationToken cancellationToken)
     {
         logger.LogInformation("GeneratePlantUml is starting.");
@@ -38,6 +54,11 @@ public class GeneratePlantuml : IHostedService
         return Task.CompletedTask;
     }
 
+    /// <summary>
+    /// Stops the PlantUML generation process.
+    /// </summary>
+    /// <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+    /// <returns>A task that represents the asynchronous operation.</returns>
     public Task StopAsync(CancellationToken cancellationToken)
     {
         logger.LogInformation("GeneratePlantUml is stopping.");

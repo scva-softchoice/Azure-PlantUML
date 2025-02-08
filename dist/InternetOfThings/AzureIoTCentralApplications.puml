@@ -1,12 +1,18 @@
 sprite $AzureIoTCentralApplications [70x70/16z] {
-fPO7iiCW44EpbVkV-1TD9aqiPicRvlf0ShrT8Pbo-vOOVyHt3Xzt_DnXumKxSqYEDrAE2Y7Yh12GEHxuQI4EPRyUIGeHxNhu33QleTbNAPSe7LeCe7k5fBJt
-So75M7fLZtEOzc4wU93UbDU1HLMswh75lQc0xss-MfPLKj4xKjMJzhHapiCyA69blbkIhwv-m5SzoP8SvXsEbOM57EJfMBHatw9BrXQXC0LIMLxNrKrNf2qj
-6GgBkzMU66DfWKTWSIyqDaPfaSW70ilSOpag2z27HM41ap0B2_1t2q_7OIWjxx5W8GyAkRG03RB0WqBsBC3OueP2zYs8HHQto9O5S2Bt_Cw2MjmzyjW21opm
-d5dWU5ZWwLlCzCK2icqnLR9uPCS21rlWsRN0CRN0isanBIs0B5F4bXQjtjw-zD142WlFIsrkkVYg1VrTJ2no_OKDAM9n8K22BC3diQWGu0dOmlN0GeNCJv58
-KDJ3XMZa0wNDytgAGcOb6Esfy9oF2CIJipAMTNgWN0yViZ6KqMJBwVfcQ6-DKLy0QnIohATLI7tLfLL8VTLRXTINj2Ya5wjHI7dLgP0s4gU5S3rSI1-ZGivm
-lmxp2m
+fPO7aYj124ENfBx_YN-WjjWWCmpZLy7vqH9E7nC2oCUxnFb7lEVmyua_TzZvXZrp2CuF88yA8M9VI06SmfyMugdSroEW4B6jXr_1vW4wVPVo4gMdDWFqNY6G
+zUDSI3DBftgSmwoVfeU7B8uy1XPLkLMFyNOBJVYzpTioT4b5Fv6k7jYN1NWTfcXY0JyjuEtgBtZh80ieJD75GcCX1tas5csvRz5BhYr2OHhambAtrVMIi4iB
+GjFYRjhYvmmM82GjhSVEQIqIA2Gjhps6qraIBOkc9Q52pcaiXRF5xLSXaoLZaIKzLSXiIJJ8afuiPBOKnXRtAcIsL2osM62oCByJcRh7cnPJpTjuQgaLvTN0
+tbAEigHdRqb7MP9OMqpPuew5fHnayS1TIphOKfvR5Z5jBOcIPTImHRflRx_qq44Q2vzBxQN5Xb-re7yNoXQPVs53cbWS9f4WI-AlOr6On96mXUlvij3tMTBy
+aeHoB0wZWKBvRd0zQXM6Xb89HezqE7XY8GxEoXWeFQNb9_I5s3283yl7zPkXVJMZNu0j2XdgMHJIRrrMXVHRNnNIhxGfP1ThKKYxTIfaZKHVoBOUBcIFDOLi
+SP_3_0K
 }
 
 AzureEntityColoring(AzureIoTCentralApplications)
 !define AzureIoTCentralApplications(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIoTCentralApplications, AzureIoTCentralApplications)
 !define AzureIoTCentralApplications(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIoTCentralApplications, AzureIoTCentralApplications)
+!procedure AzureIoTCentralApplications($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIoTCentralApplications, $stereo=AzureIoTCentralApplications, $tags, $link)
+ !endprocedure
+!procedure AzureIoTCentralApplications($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIoTCentralApplications, $tags, $link, AzureIoTCentralApplications)
+!endprocedure

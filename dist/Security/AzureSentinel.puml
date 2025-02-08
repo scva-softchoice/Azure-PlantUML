@@ -1,12 +1,18 @@
 sprite $AzureSentinel [70x70/16z] {
-rTH9jjmW38LX2VNxNt0Qd3Y-Fk32P5JVA7dDZn1r7dsBPf7rIuOrsgHP5wbRZVwh6LrkTgAgml_f8QTN9AlIRx8gsuk6duE0g2fVwx1cmI3tQuNGN1DLyxyl
-wnFdzqr5UBZDGqPlp3izr3aXxi-Q0OMPYCZiCK8DrhacXvNNlh5YglABgcrNJFX2R53XJnLhVDFiRSKR3pH_LJ6Ui4-LZ9FobAvMC3BFv6D5-P4kLOm_i9KA
-lew8gWY-r495XfyGkxRbgT8v_7IUeExPpIl29qjWb_o7Il19-_zLMXFhGocVuhbYU9upTUmufprN18upEXaCAiyL-BcWYxYUqSOLFYe1CpSu1-uRmmeT5OSV
-8m27-56XOIMk3-G4_7gb75VoJyOEsNSBZgyTueW4tNYlWC4ieCheHk-LqLxk5Q4R7bGOVc1GOHej1Wm-Bm3MydGbfPCEHb6YEoxCu89z42aQi5wvqyRSD16-
-qFCmQ3uAyXUPWb5sXwbAcj1wGMacQbdG5DUgP9gJMjJeYTKIesUnkHJ4kRqKp6n7CBCTmSns13FR4SpiHb0iFF5knkajtuqWpG8fj8CX4qoR76wpJU4lspRs
-FWZJVsgPGj_a9m
+rTO7Kkqm341HMLtxNp35eLWPnN7ChuSEcOkiK1xyBr3CuusR86nYZu7pLYFUk5ldcnsB2DDlPX6Xy0XvXEk9HpW-QEWmoA2FizPfVQckbRuV8xY6n2pwUMUr
+zlrrOQ9MRlFWPZfXxl598MlzjhgbmYKpznw33DCwrtXPUQEFNihAKt-sei9CRvXbkoBK1YH5fTrL1Di9ojEAKYkGFgdaGV8uwnLkbtYvmcs2vnLFaOMCpohI
+RiXA1VC-YPbQWWiLIjEhTPfEIRDAf-bg_w9ZNRsxhl0mY2VfA_FAi1NoTyA8BFwEXitCA_9zvN4-wFePXfN9l4BZsOtW2zcuCvfNS1p5O63fgtMb7HLBCwTh
+C9tNoWeS5HqlKqXq_2PwLA2i-7XmWKJ6jNbTyQDYSZ1tPqWuVRbN34uqmfFgH5c4m0dtIWQ9dqKGdBIYaYwYejBWp8lCpIW6INcal5yfAWomSYJNUhNfFcTI
+POmG0CcgY03KmwoB22ZfaqmU9GyJwn672tna5buYtQ3h1vetRyFWKejLtk0QnIA46Oab0dCM2mnkDDzUIiviHt9cEv8psv6SsOxap6uaiuLRl9jHU4ft8nbx
+94wGREtO6cpIT9fj_1bX-8ccVP06FuJk1F-JLm
 }
 
 AzureEntityColoring(AzureSentinel)
 !define AzureSentinel(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSentinel, AzureSentinel)
 !define AzureSentinel(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSentinel, AzureSentinel)
+!procedure AzureSentinel($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSentinel, $stereo=AzureSentinel, $tags, $link)
+ !endprocedure
+!procedure AzureSentinel($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSentinel, $tags, $link, AzureSentinel)
+!endprocedure

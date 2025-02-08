@@ -1,11 +1,17 @@
 sprite $AzureDevTestLabs [70x70/16z] {
-vTVPkfWW30JWW90PbFT_tIwSnL8XnkMg_U-TBnDt-R-4cB82WEOKv9wOqKbtviWuoE7g81YASaN2H18_nLJsXz2Gl7LeMiGZyaGG1_14bdEPV3vCu9H_c9Xv
-3kOOIUaJvnbAjsHS97vgNAv-i4Byp10_JS7QYPz6wyRnIyuRnt-k5ju7QnG_EBQ2WzcTcJW5FJZ6XBD2UeJ9Xbcce0Si1osbM6XdD8k8X6BgwvIHLkbn2esz
--5FQOl1AIdwbKNYQ0ZbTpFUnn2mbjvHqahBLPfsbH6befzIJ5FcmU5DO1f9ymeCKofV0-obHTdIbmEZJQ1bYbwA3Ex6NPgEmVXfSTddmpJ1-JAtrKuli1eqo
-47JGfzHlw3jbcOb9sVL1tMr_tWwBEEb--U-T5hac0IYrGm11hWW0M7iR09Kh5C1M_x9U_2t90DRQtEyKzpw7JX0l06nzHftotJwxulxnMqYMEhQHXEyaawtF
-D4QTVtnhdLf9Biu-Srjn_2C5jZw6rT49nINPVOeFnHABavYoRvH5_cK_0G
+vTVNrkCW30HWWK4psBp_wsxvQtIeLhRlbrjdZWPNv3yJKrO0q9o2DoB3IEAGqSXt1uheYd97Wk6hfHZAdX3_D8bJX-o8d4EG3U12bhNCfVKmWOPlc9YvXkaO
+IRadZZEKsvBp8h5K-fHtm1jYkKCiJS6x9fR6viPnIUCRntck3lh1ZEAc6wk2ncXj4eUqXS5Z0iuKsuaien-qqJbQlYipLAFq728IofIjKtfUAZsTGlc6ZXHB
+li4FIKa_f55uDWMoN9ZF_sAKagMjrAPSzSKvIedoWlEK-keQf51U7K-b97c39r8exmBzAL4-qPkIv96MBfgKzY0LAur6uKCAEfUA5RGqeAfdVVCIQGQDOfWS
+swVKTnTifomZCIdivV_zocqw4VcGJTc6l7Owv9u3GAa60GIv8m1WjIu0AdSeyDB7E06actkRqoGuEaNJnzi904qVJwTi-XW5GDpUt9JQTv64x01f-ZGnAcjg
+GXhdreRj87dMYRAnHmgqexJEZKueMvBCnBA7lo15SjaIvL_s5G
 }
 
 AzureEntityColoring(AzureDevTestLabs)
 !define AzureDevTestLabs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDevTestLabs, AzureDevTestLabs)
 !define AzureDevTestLabs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDevTestLabs, AzureDevTestLabs)
+!procedure AzureDevTestLabs($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDevTestLabs, $stereo=AzureDevTestLabs, $tags, $link)
+ !endprocedure
+!procedure AzureDevTestLabs($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDevTestLabs, $tags, $link, AzureDevTestLabs)
+!endprocedure

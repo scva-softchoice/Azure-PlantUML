@@ -1,12 +1,18 @@
 sprite $AzureServiceEndpoint [70x70/16z] {
-jTO7hgKm38LXTyB-DpnKMOnpU7ZAhqPk-PJGwN_5OmY1T2py5Hb1eDY-v6_8wrmA0n4bc7zXD97-R322cJw26OmqcJw2Vuc_wZCOQJ08QJ08QJB--4Y4AHEX
-Cae68RvkELtPU8pMBIjCHM8zMfBSYiTtyM1cYAvN-iCecTnqogcSnUiecUis4lVMqLYlnZtA1IuvkXjRHbkoRqL_BdctAKlAjLiTMOwUI6KY5rH6Iowe8CSm
-6Jz-o7Lqer6G6SDcabzPddHROYO8IQQcUNfa1G4CK0226AnW98yKK0226QnW13DOyTQZ91LJOO3ypB3wgNXiAK3U6JRtIuapwp_krJsLEmK8U7zXzvaII-Cr
-Q147IYm5WOmxLCBfOmAK7cElIcXZAbY9Jue3fRKcHKh6XEEznrxnc2k6234_ImGh0QPXNW8ANfBEYGYaADKC45ZnYYX6_5JiPqMW4Nuy3eCgKzS3aRWUpOFA
-cbI57-l1YDrlP4uQaomLWqW8ZVkTGMAQt8fZXMcz8evv2lPjP9flbHeWpjq2b20-boJaIF6fyjjyULdN8IG1Kw0yVy9Cn84pg6GkH6BnrcplHgDKwDyezayK
-xYde9c4D1P-z_7VAz0RJdye_O1my0bg8WNjlYv5w-rLhCQwvItu1
+jTQ7pgGm30HWN0dl_yA7M6yPdOUYt8tQxmtwv3-Gilolo3g4ZUbORoCZs62EUuoCFSP6VUoCF40c60M4CKCc463c4CvmX3DA1eqWv4cTG83Xo1JZ7E6C4MIA
+2VX9eLMiH91XY8rj6xwqbMzx_9Vn7idjIDOGL3Y6tJXqibME7nGg60Ec_em5MjcJLnL-nG6lVcoLSLR1FkAVrVFHrwsoOjNt4j-52Onk5V-xSgWGgPb9d9Yr
+gzQg4859Ya-nFnXBMyLM5Kve9U0zgSbtoEeVg9WrSz8oUq21rK8Hpd0bu2oW35SuWbFCbNC4bm9N4E6CCuKZd475JQL1I1GPiNWfaNjS-4dD6V68KZApdAV7
+lKM0SiGEvFRzHI8w9TS6OSmgGPHSxr_9FAYIiToCnecIVbE9KoNr5c9KgJnfXIl-e1MYq6RmAFVu9dl5g50jkCMraiJmQC8LwH0ZHZ956yHx8RdYJISS-TrV
+pfU1zaOzdCVXxfSAHt97wc3En9W9ji8HVz_8Oh5iOYTJ-_icnllQezabf1294qMsIYcq7UL8slTMoPIK_ZN3cv1nABe4Kw9L4lkLzRWrQzBefPBwMkYIFDRD
+Is9yTzJp946KXu5FTqxnVwBef1Am19uhkDNCALAAp2XMo1GJ7mIPXmZ47Z7yT5FtHqpyx9b_
 }
 
 AzureEntityColoring(AzureServiceEndpoint)
 !define AzureServiceEndpoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
 !define AzureServiceEndpoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
+!procedure AzureServiceEndpoint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceEndpoint, $stereo=AzureServiceEndpoint, $tags, $link)
+ !endprocedure
+!procedure AzureServiceEndpoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceEndpoint, $tags, $link, AzureServiceEndpoint)
+!endprocedure

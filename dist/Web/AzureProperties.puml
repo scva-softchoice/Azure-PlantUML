@@ -1,11 +1,16 @@
 sprite $AzureProperties [70x70/16z] {
-rTS5jkOe50JWmZNK_dSxnDw3J4kuxT-nNz4AvuA_bpONG2xmLXI4TE6dvY1Y6YSU0chZWyMwECn3LtQRmYh3hgffdHDM5NO67oexZJMQNSOdooxW7OuS1er2
-5eDA8OD1_UrZiHV_lvrbb-qxk6qacy87pyvWaPktMZMI5SigkwolHh8aT9tchkLWZV7jp9o0von3n76K8AJgb1snK4zPuPTHFfmSv4pbBIe8UGwgWKZYf1dv
-I5Xtt3M5PQgnImexkmbJcUSJjOWYfTdLhxutxoHs-hdMrbpuNiF0KgZ-HQriNs_5lfE_kBhENbPskWplspcuHMLENPOTP6ey46nbbyLFOoix7XG4CcS68e63
-pK38RBmb1J4LuidXctmvPGKnLQO2NiOr3Y94F6S90hhn8OXJ5Utkd5lJihAZwQdD8Yl8B6wghQJSNDopRyykcNU-VW_W7xm7_FbMSD7Fc2bHxihZK8-YujlC
-Jw1cbsGLLmiusUs7ggKjxBAyS3QSUOZeEWTPAl9M5UHCF7dyi_u3
+tTS75jiW40JG1QqGVUv_s-178dj9mvEU_uexygAXoT_BwNI8y08-AKv8lkAfdsGZ7SObZ8Q5olik36tMuJE6HjI3ePX-9chA6BpSAWOdxt4OaZmT68Bi-Nft
+Tf2ylAX_jfM3RKK_EZ-xinYIxZ6Nxavkfobnbs98zXPbuMANdKpf3XsHEo1VgXhwp1pXX9M5ShADMBxXTWelrgbu-NMkEAaORC59M04lcYUhWT4z7uDU7-PJ
+9jaTGxoNFtAKsI5HC2WroAhSl7sjUz8w5IOCfqu7zdKx7P6gIU0lReMlwEVqhkpnNxlJFvwwWvZRoH5WXNKqmWaXmT8_C4iHCoOnUzCh2R-gyIli7rlj7Gno
+vv7ntCc5JgPJRPOILrDTKjtV-JDcfrhMlaww1xSr8_ZlpW4D-qpcmXh2m8IkhPiUUPUtrtRaYJg-DdDK08q-bRVuaFdvsNSOWPtgR91PoQmKD8tJ9V-i3m
 }
 
 AzureEntityColoring(AzureProperties)
 !define AzureProperties(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureProperties, AzureProperties)
 !define AzureProperties(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureProperties, AzureProperties)
+!procedure AzureProperties($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureProperties, $stereo=AzureProperties, $tags, $link)
+ !endprocedure
+!procedure AzureProperties($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureProperties, $tags, $link, AzureProperties)
+!endprocedure

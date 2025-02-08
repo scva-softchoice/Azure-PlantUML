@@ -1,9 +1,15 @@
 sprite $AzureWebSlot [70x70/16z] {
-xTS5RiOm38PXq-V2_G-yvMTNNHGQvnKLdrfGeb-PAWt8e4CKw105EaI13b6WtKeVmo9gXblQ0YXYzSnDw67Oy54wm2Xd5DciR13FXY840n3ndp89-J5JLM56
-3MBXkifXHoaYJy8ax44vGl1RUhO7L3CAvDG7bMLnZgY02ak6qMaeHdXPNAWtMS3KdItBUisJnhxUylYqCChb-oF4rNIUBO-4CY4gQrp5Kz5FLAOobQbCHUqz
-faU-fRXIsL8BFLgsb7o7CfMfsE75d7bFPnJI-BzWSLNqbb16AU-dA-OfLEOfeqTOciDVLiHR4MVwQRq1
+xTPLWkD038HXGPKCzx_lxg32ITDm_q_6pmpo8tCVej27AFGHoWW67C608nYmYr5p1q0sC-fWriWOirP6mQoPIQE3STuDKf0oxbQ4MFmgHECimkqfPGKYF15S
+SmOg43idCfGZaaOInmgbPbTeSX4IAJmhVdqMfR2ulTieHYoMSEdDbr3f3ilwrlAiwTbeuJCTUyRBKIoP5ofngV1pbAbCPIfJSJobad5xJYkLxRcGBBRdx2kK
+gKm5UmQv6FKbitkAEDzoaSjHyxTCxYZbVNS5yHmhE_yNvz8SlwU2TWMIMRGYeVBT-Wy
 }
 
 AzureEntityColoring(AzureWebSlot)
 !define AzureWebSlot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebSlot, AzureWebSlot)
 !define AzureWebSlot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebSlot, AzureWebSlot)
+!procedure AzureWebSlot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebSlot, $stereo=AzureWebSlot, $tags, $link)
+ !endprocedure
+!procedure AzureWebSlot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebSlot, $tags, $link, AzureWebSlot)
+!endprocedure

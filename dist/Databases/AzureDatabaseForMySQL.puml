@@ -1,11 +1,17 @@
 sprite $AzureDatabaseForMySQL [70x70/16z] {
-xTK5iYmX38NXX10Yx7-_ZnuoGhscjUJQTsNyhpCEtmGERjvyT3gHKgBGZfu8lG94-JyjTYWK4_A66BNNeBmZ5cr6yW6HcLVo8VCAdgtWl49vK0AFZyoyGaEc
-YAgDL7hi6I5OOTWbOb6RaK89EuSLrV0f5vqqcF39wcgbLiAtp4LKezQEbD8BWMgTLQebF2HPdLSQ8zn5hJ6l1EE4KuaZiLa9han3AoNAHRs6GvNWWqYShVXk
-vM_BtnQt8Q9NAfe0a5_1103vTCKH5X9R4YpeR4NX0Vij6BgB5IYryNIp0ij3B72tajk9_Ax0Gcj3CNMt4cCCRbLI7yDn_695-XXS8doveWGDGiCtAW81_KQb
-8dHvg2Hgy7Y5eREX4WvN36FAiv8lLE8GxLLnEbCnQcmvmfHRn8KQRxHmQIGVg8pyHPZB0yD2httkZdS8_SAMoSDoRmj6vDBZydnarF--6szN_hO4Fxl5OKKv
-kwN06Z-tnM4L-fajXZ1HZczXc4jwR4j1s9PjRuinmZxCuhCjLWYEmqIPHSqxKrLXGlW6_W4
+xTK5SWCn38LXWILRzltlMyskmd5Z62hyGyLlNXRXXuGFBVnxlsc2Y3WYeWde2Z2dbnmRWc82fsuSepuD2Q8VN-VqXwI1OavVIKE5iZwbFwP_L4H4LKI6Zmmz
+CAAbs4EbP9LxXE5DXcV4BbYlh4nuLk5DpJ0YoHscAECbQs-LrXYlKTASItduE8otkBMUqenmABBMLpnZ_1YxqLSY4y9k945ygqIr23zOH9oqr1QDAM4zrg8V
+glIHdtzSVlvniNl5YYqenWWe5yK80CYc5GJmSannnAFPus9mXEU_wEMxira5vDX2SBQcn9WCMqgCuIjv_jYQH-3fe8BM3BSK0YyrEOHbHSyn1v2MbSpNHRgX
+P8YmRYWDuKmU568FnnM9AHPAHRWshiH_fNfHU4Lf9QQ44ioeKjahpHbXTgGgUzNBAgfU0Y-lFUkoU8U2u9Mrvsw2-x2kRNbKjEqhc5lRFIvQwlzxUblvFovH
+dKKgl4bdjoWiZ-bFYR3EA8RGISSHWNwOnnX5-BvadnGJXCzXohMdc39CH9ma5wjdLah9mWW_e2y
 }
 
 AzureEntityColoring(AzureDatabaseForMySQL)
 !define AzureDatabaseForMySQL(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabaseForMySQL, AzureDatabaseForMySQL)
 !define AzureDatabaseForMySQL(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabaseForMySQL, AzureDatabaseForMySQL)
+!procedure AzureDatabaseForMySQL($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabaseForMySQL, $stereo=AzureDatabaseForMySQL, $tags, $link)
+ !endprocedure
+!procedure AzureDatabaseForMySQL($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabaseForMySQL, $tags, $link, AzureDatabaseForMySQL)
+!endprocedure

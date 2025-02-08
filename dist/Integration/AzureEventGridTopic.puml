@@ -1,10 +1,16 @@
 sprite $AzureEventGridTopic [70x70/16z] {
-xTXdZi8m48RXwL_s_XTUfKWsYXsD2HsU__FISQ7x-Z6VcGxR1caME2dc2auZ8a7Jhn8hqs4MgweYD4p6AdoJYjjDAh2RL6235LOtsLLWXnME5TCMmSoa5cXc
-k5H8RQQqmTJZL2kZGZiozJbbsK45b2K74QQqVeKfZnjl0KeaYpLSwKAKo0bHHuolhbIJ7bTcBkOS0nbcQdEaCme0rgbaCuP5U4CWcy6XP4QIg_Cnlac5RX8X
-nSAr8RP8WWOGsl-aAOcfmqjaZ75T6OoqVu0UT1q7IaOeXKNs5J0DCG3GNMKiurXu3HZCy4rM4frkaP63Ib2V-YonsaTljB7pq6bXjVOgNKORko31D2tD8fgH
-CjgeD4I9dAdyWMvG0TsWedIB2gKhfiEiL1IdVMI5STfjJkKdRmWMGlVrymy
+xTW7bjim38JX0GbWTFyJvz4LBsgam6JhlyKLdxjLy6_xJQsbTRZ785hEPDuKfWCWJ2VVKl5xLrvflnSKmM3lKVGfPOfYEaMXJb6eeqerBK3CIUgXWd2q9MnP
+YJatcJXQj5NmYEIo_MU8nT5LPTdFq5izK8ZUv00HTCTTHO31EwDhMJ2KkXKWvcya4IEYSba9a-ONcJW7um0ZWksCtOoIzBgZz3ALRBbjvEnbEXUhnnKccCaA
+qaXyThLkv7r8gzZnAptbNOShgKHb4Dd-09hZMaQ-cOAkf1QibseoVCDaMIcKOOGqDtl-EJdAT2n9yakrlEBdcm4ToyQ3KV5xVzqPZGMaTor8VLbS4FDD13As
+fkeDIIjiI5uX9YWLCnHqAVcjYS9qtr8HffkpLPxRGr2rLV5l--qF
 }
 
 AzureEntityColoring(AzureEventGridTopic)
 !define AzureEventGridTopic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEventGridTopic, AzureEventGridTopic)
 !define AzureEventGridTopic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEventGridTopic, AzureEventGridTopic)
+!procedure AzureEventGridTopic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEventGridTopic, $stereo=AzureEventGridTopic, $tags, $link)
+ !endprocedure
+!procedure AzureEventGridTopic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEventGridTopic, $tags, $link, AzureEventGridTopic)
+!endprocedure

@@ -1,11 +1,18 @@
 sprite $AzurePurviewAccount [70x70/16z] {
-xTD7SkKu48JXB0_EtF--BO8CmXIUNRNXjvR-o894_05kjnk9kNk4koaJlY6-ZS8Ods7RLWf_ql3y-wwCJr2aX14-fAaX-9HiCyM5Y5YO22-a1md2WTNYuYPu
-YCeSSLIa7XCdhEcZQyHZWR52_yq45rw412jbYZXwaZk61KkHaPNP_3WCW8T8GI8f4qD6wetHHJP6nl4i8o8qZL5KnA9eg2JKHOunPRw7xGSw_30ZkcjZsXIr
-7QEZgH9THCUNeND9bJwIKRJ8CGR3GNPIzCeYmtgfmuwAjIdfADcIq4Rgu5OHwoctCObsg6QkYlf0demHxM1NdbLeEIQWrXoPE5-NVS1r1-KFhlvqplZvb_QU
-OMUovtC4P1qvBwyvJGUnrLYAh3DGx2mkrpyp0oXJ96UKqFWOOJEJwM4Ooupr6OcTCQhpwS0vaZEC7brLjLsjv4ZEc611sxVv_w561kQzt27pGwiKPE8Z4-eQ
-wZvN32jiFZDL-T4IhPAkILSbkLBmcBvNuU6QZFqL0y2CvBCvWhUG-JECDx75GqPu6wd7WWlXCwms9PJm5HAnIeG8Vu3RxVOB
+xTQ7bfmm38LXTHdo_k-RO9h59NF2vfGKlksBvyUQJd-1r-ibwf6jjGmtPVe2jcXLkj0pcjED5lfxZVI78maqcZCzvD1GUifW5gC3YwYg2DD73CCaqqhCy-H7
+6ybqvSVDdXV1T4yXebizyeRUZpDFyro-TBpnaT6TDbTrbUA6WcvuZS0QovQPBTlnCvaAMRvAf16GR5TIjgim4XDYpF0OKLv-316bbQZzOaONzCDqdOVDtSfG
+xMSPjKNTZAr7V55cjxlC4R5wpVGZuYjuj5QDryYn6Iu3-SPer22J97Re6nxkA-8xu_Am1s6dFd-S5VM1cPJDL3RePyoZOb78Xyse3TPJVQh8xMQ2pDnz-z8z
+q_ebek1UPdp0zTNcfpKJwotD9UAqw2la4c6wpTZa_GSEvFr0YKnCX9bk_U5vi7tbKijB13D60wyHsKxZ4Ebyn7IItZ6cRZ-BO0GpIYE-R7bueC2pa4C7sFdO
+_3Ql7m9hOkHmd3rMlT9DJ42ZS1CU6XPnhGGLzMmrPRheHsfbXgbXAW0Lc0Qc-gZVHZ0DJlLPlx_0D4-t0u4lNJlou5rgBX-P-DFf0OsyuKeFiLejXJ5z3OkQ
+kQaAqz_WzNfz1m
 }
 
 AzureEntityColoring(AzurePurviewAccount)
 !define AzurePurviewAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePurviewAccount, AzurePurviewAccount)
 !define AzurePurviewAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePurviewAccount, AzurePurviewAccount)
+!procedure AzurePurviewAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePurviewAccount, $stereo=AzurePurviewAccount, $tags, $link)
+ !endprocedure
+!procedure AzurePurviewAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePurviewAccount, $tags, $link, AzurePurviewAccount)
+!endprocedure

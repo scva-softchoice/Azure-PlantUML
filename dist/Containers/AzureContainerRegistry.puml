@@ -1,12 +1,18 @@
 sprite $AzureContainerRegistry [70x70/16z] {
-xPS7akiW44G70TEDm_sl-mjDgK098Rm_xzkyDa_T10Vvk_d6-H2YQWnX6bO4i80u98hSebvkui43r7qOnC2TECfJWlG2Dl2VIepfqpg6TE1vHHpeCzGfy1gL
-AzY3QvySPHUXUVXwmVXyN2-s0s_X3YMyoVGL4aRNscZz86n4shFd9srlFfykm2IIBnoGrjIJZBQ3NiH5g9VyavlREgF4V1S0AJ5EafkbcaN3PXcNno5RCWWo
-ItUbN4kIhnG1jImfezEw6IGJ6X9QcMWMLHjgcsLI9jDcYpOj3gh5aWFDO-6hPZaSBYmnhYnGrCq2RVvvqr8ICLWpYaWQiK1XWSf23rbq2MJd4kCMLIwRA8vR
-x5VEpJwrv4IKhx5ehoMHvnP_QR7JQ10uj0ZQ5aM6J8KZYsjQPXxlz_lrI9MAMul42ylZLNYmg0XM5a73mkSyE3qUp-VBU9PGjKLuPf60z7mc8CrabvcgVbmi
-WiSHIJB1bgXWiIoKgIX6JCSM5m3LIbExZAmgp_T75WSeeba0xbNPzQXVaayuiaHTdu3PjT9Hr-zOd5UUM7XmZigYKxQugT2sBE7Cqg33eledMRYpV5liJ8vR
-oWxkiEZEGWkm0Br-o-uYAijwF16zapwymYpR4-Za5W6r1T4QtCRfRA5QWs6yDVZ9_
+xTG7kk8m34NXwoPTcUBzxtRYO8XfIV2RFlE_GZyV2Whui_tdGen9KehHOrHKBZGDXI8VIS27Wl85SVX4uclgiP_mhOYzb2l2UAJdnyVfOOV0BMbWdg6P8hS9
+jd0FXnKk2dU9AmdbNZf-F7fuoIa_uWOZsv-ruwUI6rcqPneVGh9dvxsiBr_W1dM0U_NzfwwVnypU_p40uMGI0BZqz5WJR5K2OAMO6PC7u9FrVAkehL07f7Ef
+bKeZvidifcsEinK1SBbKTYM-JTOegcZl4P2fe8Uv8aghBilYXIsBYQnMGZaVIceL4JFI9XgwoJm0tQYGznKHTfD5Neu_Hogq2UCyMI806wc8g5KISC6HYjQh
+njkXXWnNAABN9KfVh93pP5-ig0YD-3uLsQp8QQuO-RxYDokLNQc-h41NAtQiaHDfYrSLjrgf3lauoTQb-5X1Mg_amt6HkQIeVGNwldA-D4w7d0_Nsi6MKbS1
+trKGrGx7ypIKpV8SlP-FrYhGTnKWv59QfRczhOEr-Le5qIm__HWG3wMSshuqNQkQKsYSvYS6NoPjTrNvdAgjB0utNbzLSduu0sgBVOyIFJek21yhUgdaf_Ee
+Rn6Fd5-iLYYYRMc8LTiL5VcTAdoe_A_GZAHzfMAqPhjoFhweq1OgqME3FvQYruhQ7MeA3lj8gRBPundey0cNBvL6K_GOaSvpXT8c64Nkds3SDm
 }
 
 AzureEntityColoring(AzureContainerRegistry)
 !define AzureContainerRegistry(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerRegistry, AzureContainerRegistry)
 !define AzureContainerRegistry(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerRegistry, AzureContainerRegistry)
+!procedure AzureContainerRegistry($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerRegistry, $stereo=AzureContainerRegistry, $tags, $link)
+ !endprocedure
+!procedure AzureContainerRegistry($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerRegistry, $tags, $link, AzureContainerRegistry)
+!endprocedure

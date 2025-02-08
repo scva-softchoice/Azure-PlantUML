@@ -1,11 +1,18 @@
 sprite $AzureUserPrivacy [70x70/16z] {
-rTLNkdCh281X4051vp_UirDNUIJ1vFpjtRtaMvOBu9-0fRA8S2NylC6ouG8VgNB4-Cr2DWKM5PcXxrUolXgM048UIOGX3ILMLkuu1bdo2YxSSemMpZR6AySI
-WnoMY8ggVbRHozicNr7H6EHKVKKWX_GLXXpKLmYIz1M4fBfoB36D5GYaphTfkn1O8C-N7IaiqJQ5i0IdAo5O9S5ArfHpHWWMOHLXt7UqL672jSO58XAB_f2A
-Y79HSNK44ExHuxUBmvLnP_jrNHm01JT5DcfZ31DCHQJYfig3ZMxMpFgGt2Z2ZTortjlpMwFCWAR3sQeswyDL7jI72H6zcI6ytz0OtTtqoDpxi3VZhEpETcYW
-ZV1GZkTRynMPm1j9LqWd22-A_iXLH2SOBpXTAJg55vgki4vLHAHyHUS44ILT8GqKB9gki0OO-Lvf0Tig6a9DLug6v56njnLgR_MeuWPttDvoZ_xG9ZCiOZrQ
-P0tdSdvBrk6X9NYVnoMiv1VZ3ciLcsHi43n9o_1kPrrXWosb-pbYi5TQXfqoRd1IQWAx7rPIu3FMW-siqVkkF8WayJNZG-4hvDrx9_YM3aFu7iAlyHy
+rTM7hkim281Xm6RO-FsVzwepGwOrkVixK-jN85A1_mDLlga4bs5bUQjuiI57Lnu8MSuudI6MYP9-aYc239OvHbXN9SAm32MGcgb8Z3DRYM5Ye5X931IhYJSK
+uv-iwFrBBYvNZvOhUlkAh4wadyWlgJ2i8VsamYBz165HpQmbfZ42-8c7iGU1156rszUP8cIeJI6au3H3a2N1E3bqpaY192mYVEWeLU62-HDDY8L5LKKg8dBk
+w5TvABXNvA4aZolZ7cS-U4asX1kIZRO-kWakHQJYfifB6xsPMUlEOUG0D_9axlR-jzFAFIl7tQerzwwxoRnDtZxB4UztwyEzDvKzlGqsxCiXecqW7QPpvk5I
+Zlijjuf63XMPs7ORLyoZ8t_SBwrNH2SOR_ZsRrmPNwyGtkXoXNNgDb9Ph-YS8A8yAlQzKZH0I7fZAnNMGCNwgfZQz6VWztE8-ge4jWffYFN1BT1yifQ8Dvlh
+xRqM-wftc-iskM6H5etaTNANGy58lSEBBUW-ZtEgOjw3HqbLscIcDWZUnDPcQcSki45RudwE640wqxmV8nrEg2xWxeS8mZNcGIH7dfdk3U6wUb-E3uMVGjsx
+UuMVX3eCuUSX_1u_
 }
 
 AzureEntityColoring(AzureUserPrivacy)
 !define AzureUserPrivacy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureUserPrivacy, AzureUserPrivacy)
 !define AzureUserPrivacy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureUserPrivacy, AzureUserPrivacy)
+!procedure AzureUserPrivacy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureUserPrivacy, $stereo=AzureUserPrivacy, $tags, $link)
+ !endprocedure
+!procedure AzureUserPrivacy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureUserPrivacy, $tags, $link, AzureUserPrivacy)
+!endprocedure

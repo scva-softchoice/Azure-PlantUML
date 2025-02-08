@@ -1,11 +1,18 @@
 sprite $AzureLoadBalancer [70x70/16z] {
-dTG7bjqW38LXEix-5vnav2BuvvLxT4ytyaSdCKoTiwP0Y8298M1Y29WO0YQ6W8aXPEB86612IArWOWYO608cXe098sJY21aTwRN66I8wGyGoVd81F_5JB2AU
-K-575Q52HaIew4oRaaA6YAxC9Y9Ko8W85J8oqafEAPUXC8wChRxdkpdtkMQyPjfXcQqVdfAMr6D9lShQQwGk2ZQppAK93917SIJdtwEfO82uqazYs3ASq705
-311NR56UpIb6kW86YCVQVCUobTwfODuXzbTVzjPM1haP853c4flWE-PUo_f2oQjY7ohIZZqzehJx23Kmseo8933thZIiRjzkB944vcwP-qwF_TWH8JEtKvV7
-XPJz2W0Xuyf8bdvEnp9T0KB6A_k7sqY4pCJBW1gMDPGmP3eQYRndvkEqAI3Eq4dx5XCH6IYOiC104H1B5HGW6jEyGK0uATRc5xh0iBRe29cSF1D3b9cEDTCG
-be-qf00H6If0D8PA1I8oN5qWEjFn1OZ4yDGHqPbEDCOSezKnWGGO2v00GoJEn17UdJW39ChyiG09C422Z8By0m
+fTM7hlCW341Xm83f-p_mFvpBTNAa8iivtUkJgmmAOw8gvMrDLRMzHzupeWecZLZo1W6JGyZaaJ70f10HC3a4J0u1aqF0914o6IJ544anHFACw6x-JonxgZi9
+8fvOV3EAK24JHAYG2I5KuapNe4A6I5pH7aIea0aZlPPIQjCpSqP6sTLnOeZqgLx3DxnkA9c-TAsbscN-VxJBCiHh-_sbgykmHsCSiRIBALTIhcejLx9-wo9Z
+MSOGSMKKo_vYlw1vKnuC4LVQOsSMc-gXE4F4iy-g_cRJZFwJ21WWEnjbk39jDBGP85xrKNoOzerPLqDEojvvgg2kwz48pE8AaNvZg9IxOZlUDwI06NebsElx
+_VKaKi3iJ_JQpnwZ5FNz1GWOFUnribm10aQVHq2rQMQzHd4529dRDtaqZkMV0I7ZofAo8xB60m636X3ao9aPrLUg4qA6pMBDTK02p44H063E2X4c0GN8aU5t
+cnwHCwErx6O88SEDq8Z4cN9BWOIPYIq89CWCl0qan5014cIe00apYcCQI8ZXbYOIPzf-NNKZ6MRiLuvac3L5XW99C1QG10Caon39Ctc4ktsU0P9cFki39CDy
+0iXV
 }
 
 AzureEntityColoring(AzureLoadBalancer)
 !define AzureLoadBalancer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLoadBalancer, AzureLoadBalancer)
 !define AzureLoadBalancer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLoadBalancer, AzureLoadBalancer)
+!procedure AzureLoadBalancer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLoadBalancer, $stereo=AzureLoadBalancer, $tags, $link)
+ !endprocedure
+!procedure AzureLoadBalancer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLoadBalancer, $tags, $link, AzureLoadBalancer)
+!endprocedure

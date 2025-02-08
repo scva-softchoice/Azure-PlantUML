@@ -1,12 +1,18 @@
 sprite $AzureSql [70x70/16z] {
-xTFPmgCm28RX3q82UFyNF6gmLdyPq-LabkUaQzw6QF55__r7n0l2-rZghj1dYHRgonsIG-2zJja2Punnqb85esfBgSfd4GtblN7qX76Fyi06z_P0Id2dxEjp
-X1jD1zIxhUYGcx-E3Z2pWWJ9I41jbOrKnvO7nPKo70ZZ4LDBqLZ4Vg_SH6nGEuOe6U6UO1VBty88OaTQ202LU2LCnA8n1O1cJrpGwMbSGdVSivmgRjx9rLPq
-YJ0JyBWIj7RBenA1JRdOofAkwrpnWZN6ht7BgfyGG1VtWMtm-7pzfljbHRU1pdlfwlhS5-lJfE8SAtQjtuQFoxZ_7ZYhADhrhItMpuqyO9PLdDLEN0WpDdS6
--BcYMKKEWSugzVsNuqJvNff6u60TgxhiQnhoSvbScryn0kgwfiJaLzTeygdpwaUrPvTANolRRKuUbIsmytAkWAMrFf4RPYo5C6jHuRAmvuhHZqhWcAphaKcn
-qUUAdW-hnRfYlfB-Mlfl9nM1-4chC_FDrF_8SG0Qx70k19XVsmzmoSYKSm0b3spgal6q8fZfONdwFSuoZWLjYPpRBFj2sIxgz055a0yY1doUSOHFXZ8SrNSY
-5J-qLnlAk5AQZyyYX1pn2C9VuR__VW4
+xTDNOkGg48NXKxbA-z-l0v9CquQEz-NEpESN9tvGDS9_w9z_YFWRuNMizaE5takuUQDFTqZtmCYUwqWFZ1YFKryIFCfyAKBUYyH1NdkSkCAuZrQ13lVrm9BY
+7kdhrmXtU3p0S1l7G-wyEl60Z6Gia3uIE1ZcxEx-bm8pSYimytWalxyMwB58tYQBo6B_9Hj3r1DFKdJUJl0Qna5p5C844it6bObO_FW9mB1XANQH0yTX7A9S
+LIfhfxEZ104W9k3dmCm4W7kb1Z8vYWAmzbp73tpMxApK5G9eSW_or29D-y-gQIK0dNnuVl7A-Ju10s2BIZ4i9yFL-3bNtm-yLxAk1Nn-jJNR7g3Q9G2iAiMn
+k90SlokngWnZgLq8052huBAIguf73tJ10Boapz9kp6NRmhDc2D2sHgfX07PTsMhRbTN8_QpOlbRF-qbrKTa69JKoiBen03-cGQe4075KMBxbPINngtBWDY32
+oTi0S1egWQY1OoTPtrBtZhPLguf2QvJsnIz6c070jgRYaCDa2CYQsweV6D1jhG38Aj0P05bN501YM5wh_vEwSHI0piGD-MNr3uA6Qtj3uA1lH19uFrDetdke
+mCXUYHX-yQSFmfWHhyUdgeGruaSG_WZ__FC9
 }
 
 AzureEntityColoring(AzureSql)
 !define AzureSql(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSql, AzureSql)
 !define AzureSql(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSql, AzureSql)
+!procedure AzureSql($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSql, $stereo=AzureSql, $tags, $link)
+ !endprocedure
+!procedure AzureSql($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSql, $tags, $link, AzureSql)
+!endprocedure

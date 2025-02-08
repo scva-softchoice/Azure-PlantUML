@@ -1,38 +1,56 @@
 sprite $AzureMedia [70x70/16z] {
-dT69cGCX241Xy0BHwR_TDSiUuaXCyXVmFWuum11YGFXOA5pRzKiu1tXNulvm6QqcU1rIwshDY32-skX_BglBK5_fvAxyZ1Gu2E95L9DluPL1_4mNbS77RcGT
-HXWSoAr96qp66KQg4w5_BCr6x30ATZ8jP9lfyWVX9j66U9THRcJ5spSv9uxaAk9MfBYNjKf0J7OUcGIO5794V0YbcyDCNZXAmb-XxbUIVDed1vp4jgs8sMTt
-46CwZ-o6GVyWLg3DOQe_IiAzK6yLILevBcFFirPu_o1jk79lOY0CpZA-m6AaUwM6SoNARQLe8nB2eP5I4clv48j869xDaUwL160YMl4xet6lS06O8rfHpZAR
-2X60ZMX5RPRPLLWh9Y9XiZJs5HeLN28IZ7KPjOn269U81CiqDfLAGqXQ4LCnT1clGWz1PwcsOYN3LdYgi4oL-4QbabQG1Z6LRuUAYUYdgqoYCIBHhLIQA-9K
-b5kfD5VuiqebKv7FAlId06J-g5BfNm88OiKq72jC4mI0UgyelrB9WA68aPErgMGo2WnHZDxISx6G5G1kAxNhucUDJ2lubfRAK9A7RZAekbI6xZTM02hBx5BY
-7iHA0BjX-lM3d8DOy2Ul5TMplunzaBeVHhMa8ZaoJD0SPjAh7iHH46PbNKdrWGgv42pUhzGVMZqSPNiQ4r7LVRA5xaggLUUoRcQA64qgCsk32spXPfZk4l1K
-KUqSOV0LEuoVoV1CD1alKX4EIjET_4oBS8RyFyokaU4rI6v6JECaSkktI2E4TyN2xI_JX3Dy3ECGuEGB
+dT49UaCX24LXn055t_wtMnFQHb0o_GiutqNXbO280Rw6kRP-_U6Q4JwLwhYvbDuIl2zG7y9cc6jujp7-NJepU6hlTF9OICHakC0Bo7v4Rhh3TuRucS4YWwzk
+aU6CuUf7-Axt9UEDuURzpQ9nLn4zHi199gFrKsRmlm2RH0TjE6E46x7gyPkS9uxaAknMkBWlgsKC8Uazl41O56y7XXiiOtyOySOzCVp1TZw9ywjxSbZ5RYfs
+J76EKPRduTEOu1-Z8HqUflbJKZZ3jbKuIUNqkwxORQN2JN8Un9D7PoN0v1pZmyfAsYiDNrSYRoT5MZ4ZlcYab5WpFtIRYjEp7Mcl900LaOhVcOszKWl06f6A
+S8uvL8W0T4GgOZ_cMAbhfRB0nTuGPWf1C156nHuZp1GAaGHl5M4Rjj9emcGYZ9OSurNe1cLBqnKj9RzIfOBgKIQC7rGQIINGnAfozrQbaG0mKpWkxhkYMscq
+LjYf2BVIQAtKxogDL8M_gz2_0f3hLnLP8X80iXRJzB9IQH40eEqLuLSQAJ0LLdBI3fLCIe4fiZ9wUYuMqX1WEwbVLttMo6J1NJALgIGFRJA8PYhJy1iMWCYy
+kWIx3w8b46RCk7wHyo0Q_Cks8aRsZz4V9FQ74Js9I8uCYs0VHenhD7aGHmcmAlOaCIOgv0gWrUqasNBJc_ierlcaFytxP3ypp1PdK8Q3S1WpjCwjrYgDQY9x
+PYnRF0oUPjztk2huYXxZRydmJ3IPinRWXTBb9dzBZ_1Qg8ynfqQ2Dv5a3biummTYxVkMJW4-5VCi_GUuPlXQY1F2Apy
 }
 
 AzureEntityColoring(AzureMedia)
 !define AzureMedia(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMedia, AzureMedia)
 !define AzureMedia(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMedia, AzureMedia)
+!procedure AzureMedia($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMedia, $stereo=AzureMedia, $tags, $link)
+ !endprocedure
+!procedure AzureMedia($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMedia, $tags, $link, AzureMedia)
+!endprocedure
 
 sprite $AzureMediaFile [70x70/16z] {
-xTK5ieKm341H8crAzh_VxzQ1mFrkxuu_EGFLvGScFOxgXfGUnwrEb3XJqfbYKcMtIZfIf1wqMmKmG04CK0035C001J100GnG00CKm005C4013508SwDegUYa
-b0nNPgPMp0KewSTAH3XGqa-KxG4PCP8mitBZoFGjPCOOanBHNhxIsCrEbNbuV5VfG9c6H_iU0vJfjROfLq8-GEdwrcT1rofNl0IuqcHvhr8F25Vg0U5AAmU4
-ApokN9HrNHyLAvD9kVbBhVIeKwp4GVOXpo9OMQJgnY0Aw6iLiJBzufcMoqn_fg9jpkL0uQFRk9APrPxkXPAPjTBgHSALcuhffGhjzSf5SNrLlgkylgqoteAC
-xQtx1aIN7zWr
+xT45OWCn34HHMpBV_y1LohMhsGdZ3owz1OKRJ795PQMKN76TOkgMCfHJD7hfJXbAAHAyPASWXbSGmok8uHN4y0fYU0Knl88ONa4Cho26Ln33AuZX5SJmoi90
+HHAZ3CLAgKK9nHYir5fatjg6mm35d3XjRNrXqfPYfL-ELgijwQpOkaan9toNR7jTFeLHVZzcARMjKOevmKrufSOJA4N2uShwM0vN4Y1O9STmj58aRALO0G-4
+Lp9u8BnYNL_Hnr9wwr-AkiM_Ib-L_gMKwlURKJl4LM85AL1EVorMT0k1Kt0NLl2aWNB3ayu-KfvvqfB_bk8XIftBl3Bwy2PTF6MioXZUfDLHx11V2M2yf88x
+N7afMVOg_wSSqAgqGv0wAte0qoJSO6y
 }
 
 AzureEntityColoring(AzureMediaFile)
 !define AzureMediaFile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMediaFile, AzureMediaFile)
 !define AzureMediaFile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMediaFile, AzureMediaFile)
+!procedure AzureMediaFile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMediaFile, $stereo=AzureMediaFile, $tags, $link)
+ !endprocedure
+!procedure AzureMediaFile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMediaFile, $tags, $link, AzureMediaFile)
+!endprocedure
 
 sprite $AzureMediaServices [70x70/16z] {
-fPS7jWCX24LZ0KTq_-lzF_qP62FcdJhj7hXCy_8jiTPu-JMb_wVyniYjtzBoFYD9VqNI7YCSVSWHDY3SLNXF2CQl9zP-aXftXMpfeTQdQUIOxYIIt4ByUafV
-Jd48SUlHGlnwWYb4cD8rN9gjPvmwMwVamRiDOZYZ6GmzJROuBRwKw6DfTOQIJYaI7xOI4JDJZiyngZFFASTZDqCetFUr4N9EgNTP_16wxyQ-vPmYjtsPTSBj
-040i2aedjX87nJAX441iZ234fWXufMGsbH5YK_9rm2-VWIp50X2J8jWFmRYnfmmGar9mndGn75rtTPbJ4bv6UFTXCMLEQRUd3YcgdEjLUKwfq11GXdAkfzWK
-r98KvHeQnCmfV4B1tM69GaZ1v3UbUYW14yb3IJR5qT5nHeaUkpXffAX9U-uwACHpr_NREHyK_GImU9v6A4HfMNypG25OIbAKwLigHFCjTGXaxus9fUo_lR6K
-_Iy93cZpgwRwSNzXysrta25xN_jO5SN_vv559fJ5PGEBJdB-aL4LdHg__Hq6G0IRmQu_rIfMIl3zDOkH8pd_u9lHJ7Ql9WmX_fLDKyt4ZLLMCuJuby22gRIv
--fnCTrrFGo7Rg_B9T1rw9jDrw74AiQVU9jDTN-Stfn3xeV0AiQU-8EGF
+fPVfOg0W38HBGb22x_-wUx1iTIfECPsVFJwJZ_lZkqYjyl7JRCUVR3zZv7Rqj1ndg1-VSOqnqdv0zXI0bEEM4X02YUYHUZoaIbH8I8-rWwRPwkZokBuJ4jAp
+7SlP0aA87YuaeYTDXNYnh9gpRMsk1qUzJ15NXRbF8hOefAsqdQRkctmg8GpaC3dwz86aPgKKo_BKkGDb9asidCb3pnV8CwN-gyCAHcz_s_oPuhqIBRTO_uK1
+v8dIKg-yp2AmJ9nG326O_WKV44BnIplvtjPfs1ab_nLR1kMksFuNuupIki3BwEf4JJuXG85jGs2E9BiNSpYdQ2y5PvhU1E-CCXegG1dbmEJBd59xGq3fKMmf
+4ShGeaWPCHXiJYamu-0ybIkbKeezKivVf2MANPRVDMA4GZe2YfAEY5sW2BFBHzgma9CYQxCEAK9c7La1ICct5R3vmce4YanMOwMKiKbTANcoC-W0y5rAFYbI
+PhlK_Yt5BxFKycJZXLBuxcrazuPImYU90IHugcLW14zOgS28dVRw5HAvUPWxfs0URa5EA8itib8da2hyTjZWTgZ5PupowgPQVPOjlRirpnYxlhp1jqap-VLh
+WWYXBnjUoYw1LrOZGjQVmDYC1L-VP7JNzJGG4dsLiz5TryD6TrtFeX0-wesCxlexlwqB8Ok22LaVzGKXlm4
 }
 
 AzureEntityColoring(AzureMediaServices)
 !define AzureMediaServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMediaServices, AzureMediaServices)
 !define AzureMediaServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMediaServices, AzureMediaServices)
+!procedure AzureMediaServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMediaServices, $stereo=AzureMediaServices, $tags, $link)
+ !endprocedure
+!procedure AzureMediaServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMediaServices, $tags, $link, AzureMediaServices)
+!endprocedure
 

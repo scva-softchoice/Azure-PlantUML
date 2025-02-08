@@ -1,9 +1,16 @@
 sprite $AzureDataLakeStorage [70x70/16z] {
-xT1NWeCm30RX4KQIK-v_tatlGHYndVdVFnUQMbhIpVPDLHZTTY1DAgTMqgIusqjwessASzERwqIAkN5DcdzdEzp6BKXZPMrnx4eZ9a02kLTY95RMxrhPUALQ
-DW6nBrEqpA7Gpw1qM5xfaHaKA7b5mD9AOGu5AB7YGvaBe6vtQrMyiClVjqT3HTdL-M2n8koISgoVg1HkwwOfobqsJU6ktWCbyPv8KUxoQGftQQp4xoa-JN4z
-9kmIZvGWzbcarAVyTigktaDbk09qTR0H2hiygnYWDQiKw6fQ4V2quc0rhIYbvfLEwXoAfvJxOcLrhjwiNOaB3ZefoVwaGbvXLrqdgpIrjFG1
+xT57beKm34JHaeq2OV_hxP-J6emb9XrUJJaNiD7LV__nlAnaXDqj6t54yOtKeqoYZ6VbmSpSeSogYfVSv-nJH0NFgFjqbkrcbKRSLYPfXrDfH0X01F5A2F7A
+jDOe-nMJG4wH8nII7N4zGi5mW58WUMK07Q00DQyGm6bb021f1K1jA_fzSXi1O9NNYQXNDgiu9RfPKs6SAffK2AUeNkEWKl4QnHJ6Mn9JyDQW8QNWjQ8XXV6M
+nXIynJ6buhMgCKNv6hbBRYi-d9EMOglfUUmkkQtu2jQUqTkBzYWufRPPMn40R5cb0iNI2W6QLXGGIoi3gkMLGdQ4eWd5rLJ6SJItWDARdUQKTBzIGLx1APkI
+6Rhwxxyl
 }
 
 AzureEntityColoring(AzureDataLakeStorage)
 !define AzureDataLakeStorage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataLakeStorage, AzureDataLakeStorage)
 !define AzureDataLakeStorage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataLakeStorage, AzureDataLakeStorage)
+!procedure AzureDataLakeStorage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataLakeStorage, $stereo=AzureDataLakeStorage, $tags, $link)
+ !endprocedure
+!procedure AzureDataLakeStorage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataLakeStorage, $tags, $link, AzureDataLakeStorage)
+!endprocedure

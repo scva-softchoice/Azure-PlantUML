@@ -1,8 +1,14 @@
 sprite $AzureBlobStorage [70x70/16z] {
-xT853WCn34JH92QfzpzmPL4PHfCKTlqEy0DsmvGoX39QiY1fLeBbV2NzSwKgLL5QLZejAuCslz9XzoeDzcULgj2o8hG55GNThGHiPQKgkkmk2fk_kqexhtY0
-_5xb0DjUnLPLZAXC_nTpaDrKA5anshoA64bQ6gI6AUK8
+xSu53WDH24LHdAJxNt33HEf2NtquNuZUG3rZY4A4YYV8gfAem2lbbojJcOh1giAmgWWBCmi_FfSARB_2RUSgrFPZbQa0dbrHs475civMiksLbQdOotQnjgCA
+g2e6swz4DiMvogRj_oh-TnKxK_5eygCAg2fkw5agiAgeWvIAWAXdZ2q
 }
 
 AzureEntityColoring(AzureBlobStorage)
 !define AzureBlobStorage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlobStorage, AzureBlobStorage)
 !define AzureBlobStorage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlobStorage, AzureBlobStorage)
+!procedure AzureBlobStorage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlobStorage, $stereo=AzureBlobStorage, $tags, $link)
+ !endprocedure
+!procedure AzureBlobStorage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlobStorage, $tags, $link, AzureBlobStorage)
+!endprocedure

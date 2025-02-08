@@ -1,9 +1,16 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
-
+/// <summary>
+/// Provides functionality to generate a Markdown table of Azure services.
+/// </summary>
 public static class MarkdownTable
 {
+    /// <summary>
+    /// Generates a Markdown table based on the PlantUML files in the specified directory.
+    /// </summary>
+    /// <param name="distFolder">The directory containing the PlantUML files.</param>
+    /// <returns>A task that represents the asynchronous operation.</returns>
     public static async Task GenerateTable(string distFolder)
     {
         Console.WriteLine("Generating Markdown table...");

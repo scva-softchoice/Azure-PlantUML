@@ -1,14 +1,20 @@
 sprite $AzureKeyVault [70x70/16z] {
-rTW7ZkH020LGeA22xt_WRQFcsysMcQ0uNs7ZF16SwOz4clKnrvgZMvFV2AnZ7QyiZ_-kA__Ci1d0w6PzX3Nj1yQA6gQfnsOuwvkEhfFm34My78UM_iGOJVGM
-QGDEephZtSjivu0_maHjlliQ9J9X1DBubHOCd5biTnrX025FC72EoJKoA93umVIduSpY2h7xZoc6VcTiEVCyaob0sXae7upCfzdq0zqGdqHImA2herEEUILl
-f24IvsLcl1fDIFEPC124yJUV3FjiqedkanKWswJPn8HJFvgHcj6JiRjo6qf3dfbhD2llHzvp_0OZwEcs9yQIKob5CLWtVvJ2ML44IGf7CLXGpuUARGA6KGpM
-92ZbNejkbOPQC1cvhPcWL4aAtPOzqT395xLeA8A9uWXXhDbJpwNXqdMrn3Y52E5YBbvBp1OjEQfGm5G10aNZQ1bKC0L2CyOxNehHjvb0CDvZn4cbL305GXfB
-MgyqAfW2eHRdDHQzOKe4gtvGmDG857HKC0M2ZZ3TcW6ocousNJ05GXQRxZWPSwH4S8NfSM7meifYylppiOkpiMvfh-1inAftYch9OD6uIkqLAnYSHkcAMIdA
--uOqNRrBHTj3Gto9gzUA0ibxNlckbYEXu3A9vBiQxh1FYcUZu0wRx_PPKRqKtKq5fQ2OkLFCz96Pfx9v2ggLL2oUWl8JMQd8ff-rVJei5CdxmIcKUvg5iXkA
-FJqrPmLC-t_9_V49ddTAPjWhcSNRX7mgVJDUmTl4CwDRnTGOAtQ4wrUrmRaZUoKG6SNB6aRiphluiu88my1W7wFnzkaE6o9knDkdKXqPrvimaToGwqqOBHTf
-vv132YM4SoADlXNDpW1nBFtPbmPyQi17XjrNXZfYypWJm2lJX7uUrjx7FBkOetTb-Xlv1m
+rTW5SkL030JG4GtT_xuBirP_fyjVWSBjWl0hWJ7jFubQz37NcgE7wKy4yR7sdwoJyrbt-PuHCu4H4NsaDUCRnieQPlX9p7JM5nrVUrqPZenrPI__ZZ5C_1Qn
+0STQdN7rCgsrH99fpURLroYH2ICHKn450sSMsrqx3I3jn999Pq-faT4IoJ-ahyPXbbH8tF_CCVGx4_-OzpEP2iJ-XfIBqVbkDdsZcoP782KPTBLxuyIfX17J
+F2-PETKu8NPc8a0GmNS-Cd9cGoVwcQmIGg7Pv8If7sUaPlml4tVbDXJB5CnhD8ltezSSly3egwSEH6vBDgGk1kkM3wK8A_ukK2IBmO8w7ohn43S-zbvhKfHo
+hyKV5KCjc8pUrjoWL26btPOzJqF9LxMaefWeZX31ca_gkHp5MaQn9KD3OAfQC5kqT50dHQmC42YUHyjeNsNSxaYRETxnHudsLGO8nhl7nIrl1LCWpND9wq-i
+5Ko1DClp6ej-O4e4gsQbPe2mWeuAfa3G4QRBqGBXwVAccQcH5hdfZfEnO81GHbwdObz5bQEX-VEnYxEnLcZ-T3RogbdnWi6Y-Ih5YaV1u3IYAsQbk3mtv7Jr
+BXMtDmt9IrozLfmGlfFWhbOek4mYV5V37VQTSeKLt67vRizHToZ4yDqUnSnAOGOFPOzFGQp4JQ5YyHJ4JsIbOW_zhCUdmq8XH1PE8Uvf5ihJKA9yQhuhGRLK
+JyruWfSdXOShfv9Pl4teHwK_732QRnC5uuzAUAJYnPiDcbf3kAFuaqHq52zh6F5nybaj3f0831uin_FjypWIY1uZtpwzrT7nUXC-32fvlGcZvIAszigCLCRA
+x6djIt5s1eYz_7l_QTXWPX9xHVjMDERUeCwdCxHzF-AzZ_ctYpbwTsd_Htu3
 }
 
 AzureEntityColoring(AzureKeyVault)
 !define AzureKeyVault(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureKeyVault, AzureKeyVault)
 !define AzureKeyVault(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureKeyVault, AzureKeyVault)
+!procedure AzureKeyVault($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureKeyVault, $stereo=AzureKeyVault, $tags, $link)
+ !endprocedure
+!procedure AzureKeyVault($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureKeyVault, $tags, $link, AzureKeyVault)
+!endprocedure

@@ -1,13 +1,19 @@
 sprite $AzureContainerApp [70x70/16z] {
-xPY7SkCW48RP3lBxl-y5ybyirbZuUlscUGZwl6qcAvSV3ecQMRYPYj3vl9-yP52BX78PI0oSTmxnM69Iojr-7Ou6S3CHPX4pQArmtA5j7Axf3lSWk407vnF8
-tnNBfDaAnGbVAb0vlqYOuqnPOeZpMopaBpJmEYD8j6pOL1UI7NmToXC9BQO9yBgmcWIY7j6SrWErc3cT94HY7k-quwXAiqUj3nJpOxQuIImM09OtRbKNN-mF
-HU6H0GJ9qZMtMqgO7fea4VrqIOEa4vBcd5D_UbAPKPfZS0F7IUHpizLDayKxiDmbrOtdd1O5nkFPCgWcZFwRLnSqrazILYjSQ-3PywVQ5OPhWlxtG-zICVwO
-hCwmW8zFi4Hktr0VhOi60IujLg2OBH1bIyMTrooWAdsh1Q9lj80_olBVqjfdIsi1Mcj_XUN-wTTP6jBuRudlO74gtsgfYeLZR_6YlhGuJrjAjnn7guE-Qu1Z
-qFezLfyjJVkfJ0lF4ml00anY3alq0_NJ_YtKhVZUjhBq__FLf7HOBOnG3fjs28C5jBC5civnjNhug4kYlJ5B3aVyQVC0FAHiqOu5q3HzN0KfRvYAjoklAycn
-t5IIbqxHBO926CidijccMuAWqDICBzTcoG5Yqb3HrP8jotCRWwooUco_gGFzsF5ruo18rbW0tx_XskxTDTt9w6Mu52VuCf3Wvu52S5KQ7WwdJQHNAP7wllWs
-MrWuZGx-GkKAcIqIWPyxpCm36B_qNWa4eKsulZYGzu7Hf37byXAUViqW4RKtH2G5iPjiTFAR43CtAR-6Jm
+xPS7akiW343L1Upzx_i3KMp09lpUtpQFChmL4Haa-D4WYQgPcwam8HoGr1327XBp4HE21aU0OGERtw8C8Fv2u1tYWQam4n6pg3qrG7w2spnCy6QF1Eg-JmQj
+AJWK8wG0tc6hHDgB14l8U-0MZJo_tXAxCOHtu6v7JQAmmVn4lrO2_BxI2majJvCJND2hX5ZDFHjDuJXGU9-e3Xz4yoUbbAmuUaIP092k1LHw2bZKUqhb8obU
+jsOmOivDO7wXF3KV7qakDPTvFt4IbfPASPxUPfhg0-GNhBC4nQXVPRtLL2QBLS9oIh9hzpcbCHcCM2oVBOtiGaVzatES3kqin08qh1qjJcFzKusrUXW2T7K1
+IidTsbV_L1UakVwfD8pXIOJ34XnFOL6mqn2MmEWxME9WdnR-2ajWWoLzfQNSMTBVRVbloVbboTc3dFEFilotf6-mv7ZwIal-Iej_1uiXVAibILmfUuk1t5kS
+-YwZMSfXAOUbL4d9SUNqbkX7cE446VWHJobvUbXA-vlEpEDY9DQN9J40Ij-LKNtaKiaFKxK49QZtV3AEt2qPndMlG-EXOGdoQ3clUvdwBvexZpAH7uoMqb9O
+THv0JKhgkIoOUwaeByqHYTlVKhaofn7xcRmuzECaDYOLQInMZ6OT8yV-Z1QT_3KkSuAnlwpBwOLlurgNYJ325bjEG7hq-BfnO4XMBmP6sx54DxFh9flTGEUx
+8VUSIFZpHa9-vp3S3-FhBR4D_s5lCI0Xw42IyEDk8ZoH9bKLOHPHFUA3O_U-4AXVC8OzEapAOgD1cU1pG9iAJImYgi9421DxZH5y4wncol1h-0G
 }
 
 AzureEntityColoring(AzureContainerApp)
 !define AzureContainerApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerApp, AzureContainerApp)
 !define AzureContainerApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerApp, AzureContainerApp)
+!procedure AzureContainerApp($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerApp, $stereo=AzureContainerApp, $tags, $link)
+ !endprocedure
+!procedure AzureContainerApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerApp, $tags, $link, AzureContainerApp)
+!endprocedure

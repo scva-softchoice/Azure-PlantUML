@@ -1,10 +1,16 @@
 sprite $AzureTimeSeriesInsightsAccessPolicy [70x70/16z] {
-pTT7OiGm34DHYW3lV-Jq1DDD4Mb_DVMvsr8Sb22HOPNyo770h-0W2WwYO260c2cIsic4XKGiCGC4L-ydvqbUVM2TRFfa6m6aK4mVmKVQBsAw29JWBIQ9izPB
-0FQOnBqsc2HyPW5eCUkH0dIP_LLHhPN9lfAj3QgRjUvPUQGK6igImjk17wMnTwMlrf5cAKMqRbU7--L3YOUjthhay6fKGXn6YCC8SHWX1YF4O8GuJ8J32F6P
-28CHuZ12V2PcNI6-ikAlruMq6G1LKAuYnbVILy0CMw6GkK8oR8KauIYaELyZAKMCgS1HX5YA45y9PIZBKiIuYXXVuRzPbveX0Oee8PELOR5AoAGtG8ZBP5XH
-YCjasB61F0C
+pTW5RaD140JHWTxx7pbOalbdl1qgaV6fpH37PRNKbU5KeZAGbaJj8cGYr1RIRJ2jqzrQCBj8ye33x25zVNm7KGMLO3QGavAYtdXqhhR0Z96cxMTnOS20q9Gf
+ZAQCoEudcUf73HcMJ9WwHBAFqgayKhgdpDOK6esfkL8ZPTtjfBIXh7vEqVrQLCQzUz9pz4XhtKizUhlwydv1YSFoM15Ane0v3CHaU7nC1iHaAcQbYL2Q2AM9
+K9e8fObGcWYLYL2P2FL5GPPIyTTR98j1MQjFkGfv2fMlj2fiHI2RYa0KjYAvMsYRaOHoOdobJGN4LK1y9SXJqbPWV0N6L_Hljgoq_o9O2sHpZ9RM0jbCQr65
+aKo4168c43CDa5S
 }
 
 AzureEntityColoring(AzureTimeSeriesInsightsAccessPolicy)
 !define AzureTimeSeriesInsightsAccessPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsAccessPolicy, AzureTimeSeriesInsightsAccessPolicy)
 !define AzureTimeSeriesInsightsAccessPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsAccessPolicy, AzureTimeSeriesInsightsAccessPolicy)
+!procedure AzureTimeSeriesInsightsAccessPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTimeSeriesInsightsAccessPolicy, $stereo=AzureTimeSeriesInsightsAccessPolicy, $tags, $link)
+ !endprocedure
+!procedure AzureTimeSeriesInsightsAccessPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTimeSeriesInsightsAccessPolicy, $tags, $link, AzureTimeSeriesInsightsAccessPolicy)
+!endprocedure

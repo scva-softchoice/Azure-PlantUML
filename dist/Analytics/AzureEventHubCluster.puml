@@ -1,9 +1,16 @@
 sprite $AzureEventHubCluster [70x70/16z] {
-xTI7Si8m381XJGVU_uKhtv6fiw94tUtNik4_y89B_lsJATOG4gOp_AcLfYCjMmdVXp-nmineDyHcy6gUJWO2FwxYnwMk_btu16R6nUx4z8TKi9ihCEGhNhd2
-gYg5YX-N1aCjLvbn-h2SwrollDwCNR7YaHgQxuHynPDifUa2xrPsq8qBgohJY5oeOBXOvzlLleBfYbUlU2WY24OCmG6920JGx1wh4SXnerkl4FXABaRCl1tT
-1Q41c8ncppfI0yx5YgT6baepSgCoTSlSFKsBAxoWVQN1B55PgHkGrjskp9uTd95Y9KQlt_2mcqUrKb2l83E3mRdYzqiWTmw9glx42WrbAwAXJwrGgUBz-_S6
+xTLNOeCm381XQpgv_uKhYhCZIw3kvdjX_snecxoyS9zJQ0dQ0zGIUeIJnwBYqMnbkXx-nWeHeGsGpDEbqFAqc-Rv-egs4kUw5DMF1IW0cQlBFI2PYbGgCkvH
+hGABKT7f8KiBb2ia8bokNEvHfIBlbGli1hUyG7HzZmPoFjpphnGiYfL7A0R6oDobukDiHUKCzbPkuCrrmV4W4NfuGmMc3-iONe4z5Hzs0yNA1J9pMx11PwaB
+pCsq66vvb-loQHMs0RK84E5jPK00IF_-nbSAnRat-OhxGl5Q4HiOZYh-GOnxTpHzMkbqXiwfP2eNV5iHMwwgibPqHsKusEQ75k529GP78skbjxqmk1BPIkKW
+ODnkM2lEqWYAoFmFyTig92BeobS2NrZ1L2NlvUKD
 }
 
 AzureEntityColoring(AzureEventHubCluster)
 !define AzureEventHubCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEventHubCluster, AzureEventHubCluster)
 !define AzureEventHubCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEventHubCluster, AzureEventHubCluster)
+!procedure AzureEventHubCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEventHubCluster, $stereo=AzureEventHubCluster, $tags, $link)
+ !endprocedure
+!procedure AzureEventHubCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEventHubCluster, $tags, $link, AzureEventHubCluster)
+!endprocedure

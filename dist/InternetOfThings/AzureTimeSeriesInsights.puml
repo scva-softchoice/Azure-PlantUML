@@ -1,12 +1,18 @@
 sprite $AzureTimeSeriesInsights [70x70/16z] {
-jPW7aYmW24G51E7-1_xvKqvemTdQLs7ZG3UO1uPacddyncmAZNjOFPvmat43QG2Ksp8i3hWqOnHuhKUZWT5Po9kIcbtAcR6pb2d3YtdiQCkDpnVLD7rt1OAi
-I0me5j-a5a6SMvLRno2psyM5_-PPZrgEeUwiKKF-lbDSD13Qvx7X84WPnlUYzEtWlFmQk5-Rz6Gl9XEydl2JViRZXChvahaD-x7miZJs84NUg-Po1Q1DcOD-
-MjbkJM5GoicIHERd_1OObx8od8OKfh9oUcl68pmy1uJ--SXlG0jwbaYW8R2AtA6HZ8BIChPKazF22qizAUHVihJ-rLntIpFUidWCCWy43TxM44B_w7-o8cRs
-cx9KRn4AYFznaV4a83BEKWQb9J-bcoSfMMVwLsUtL_vau_aUtXip-Ii3C2rvElkCzT3wJvbxlJ_dS5xXFz0ObDyX3FhHN82utAC57YWy6vVVLfOSLSmtMLvP
-OYH5zrLDpfOKEkKjLR6lUx7RvtQl9qi2MoV5AIZXC7WAicsg59wyE97rJeS4PvUz5Yhi_gHQdvhhIS4lmx2jXXPAQf_S9jPtt6pwjonn6AH_uxD0GHAxkNsk
-vfLygL164CKtOLp-nCty-f70cYy41RmwhnKriegNaoQiq0kF6-JgHQbwtOhMwzPF
+fPVNeZCX28Gf2lZ-3_nNixfbqEpvRaw9WHcm4eQrLlE82BTQLEXxj7gxOahVmDQUYRgjIAmb-9OWyRR0rtgiRM0B8N5BREPnhqycfvu3LELFkQNOELR1Rl8Y
+SeaDLxukeCvZ5a5SjYhdMP3eNjR5SroJOEgivHXAuBI6uxbJ2g83-B0lDF49NWc0gXWFHJ7QXUzv1TO48wt3LtbCD_1-eXVzYfS6jxfSBtoI4eyZWo0nn0o7
+ycnU257w5uSol2eiQ_UeH2ubiwGZ__WL65U2307MPS5KjbpUzQWqmnwqvTGBuluBRW6sD2HWsR6zplVE0tfDTvfRsZmZ8x6qBuNZHvQyJuGwMohuz6UBXc2I
+QM8p6XWzwpFbw3Vdrmdb1edXelG50L3AfH0VbY9BLr8f7yVSwnnsvrysAS_8t9WYxoVWP2cwixVugVLlANEztvFSL-G_H2p_IBGQz5EF3KYMPxJ22qMCnerV
+Sqi1ApR9yfKbIOzOxX4rjrIXKraTiIDf49BYfrCblsGetDxbqah1fvV1ovHV_n64m7wQxDyE6QukcmQzlwa-tfhBb-jShrtOLyE1Hjl-Gq3R1yCYGzw_REOz
+tZWHCeO5euT6f_BwnHTWZEUlJwan3zXz2HSvT4hfAV9UWbj1XFlJgroNhp0CBZzkmW0BmPH8OnJQf41V9lGDQd5JOKhV8yKyFW6ACc5-0m
 }
 
 AzureEntityColoring(AzureTimeSeriesInsights)
 !define AzureTimeSeriesInsights(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsights, AzureTimeSeriesInsights)
 !define AzureTimeSeriesInsights(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsights, AzureTimeSeriesInsights)
+!procedure AzureTimeSeriesInsights($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTimeSeriesInsights, $stereo=AzureTimeSeriesInsights, $tags, $link)
+ !endprocedure
+!procedure AzureTimeSeriesInsights($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTimeSeriesInsights, $tags, $link, AzureTimeSeriesInsights)
+!endprocedure

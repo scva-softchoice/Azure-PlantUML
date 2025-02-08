@@ -1,9 +1,15 @@
 sprite $AzureCostAlert [70x70/16z] {
-xTE53ID034JHCM_wB_Z0YiBe4OH-0M_H-9v-gL5f8vva_bz9kZTJ8e9N0a1ya1Ak04JLxobrjLJiqxhQJIK4XysKR8HL31sfu7-Y0DnrgcGhtYzTbIOZ9Lg9
-hTAD5IELH6USKeAEL6AdMCwLCkpI72lbsETZfL8UdiPrgzGTu-jQTvMLs5MSOjAASqhcN8dQAQiLcoY05x-NVbxt_RtaL3bCYbTwAxpYQwIaOP_ccYXTkCf_
-mjiOAjtsHZv8KTMYbMwi_9JQaDL_nOf458_awt3TSL8x9K6KjD8vhNIoQALBMkcy5JfTcm3uNF3L_VeB
+xT85aeDW38RXBnxkV-6Th20pM_jJBs-BmuFYSzeZQKMer9jfATxknHGpku82GDz9KGP0n6BdAV7FLB34X_S3W3YK4TR5mOvjTS8L5C4L54T5POdGg6Aej32B
+CA66OZzArL2afypFfQS40rLJiLbX6rU2iNA6bH0ioR0IIfZZ4qf671oCPqOFxWS0URIO5V8yq7cA42hjAUQeP4JHc9MaOOL8OdCjEgG0n6e0c53PcBADyXgA
+NqFH759S27FiEQ9KeS9KX4LMpQykyusK5EReAzMmiYkHKsPdY5AuoGJZd6JA-USOZcBwoz78hw90yXeAAFfAvLTHe7aD1PoJuGefuQFR-m8
 }
 
 AzureEntityColoring(AzureCostAlert)
 !define AzureCostAlert(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCostAlert, AzureCostAlert)
 !define AzureCostAlert(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCostAlert, AzureCostAlert)
+!procedure AzureCostAlert($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCostAlert, $stereo=AzureCostAlert, $tags, $link)
+ !endprocedure
+!procedure AzureCostAlert($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCostAlert, $tags, $link, AzureCostAlert)
+!endprocedure

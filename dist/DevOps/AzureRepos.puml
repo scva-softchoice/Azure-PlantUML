@@ -1,12 +1,18 @@
 sprite $AzureRepos [70x70/16z] {
-xT87hjim383Xc9lC_UzRXOX1HncMrDs-FnFh0odhqeSU9pbUpiBhGAUCZ2ZoQnGTKVIJ08ZeCP0Z8hn1EARYrqfCzXBP8hiE5DdsNhaEzKxPDep9SEiSDZEV
-pipeE8YjAhQL0kiAV5BUc6RZYZ8HiJuHZ2ssjueVQqR6viSKxuaVUgTm3YAtRpzaY4WibCofeliGJLEl257saUnKOIBpZ8WUzc7F9BaJfHQHzEv9JT2yCyLg
-3-qKB-NNpEAyAywlpYN_oT0psX5vV4OQhORWw7sH_Eul7H7tzsNvxhAFA2w9Y7SP9Q8-fdWgrYiXEKcCAdpBUkIFKI9SQ54fmtAGAKLksS5GHbnJTY5NgTXd
-5BqHQU0XiHXNj9M6yeFXJHrMj6NUhKBQr2d5RlMh53AcD8AnMwM8OOK0e5kba24bGW5A4IjZIf5InCkOKQ9coLLMb2Y5h3F6bORiYdR2k1BFYiyfDR-a8d7I
-IyKVa6B6bJZ4iCTntXl5xaUY-Rkg483j72uh05YUBoe687NAjgWu00yeuniXGAmgl0-Z0BIiE02GcJKDV5a9WpsDTIKSqq2B9QKS4IbZGQb-hLBvAkANOzjY
-bv_VLzy
+rTA7ik8m38LXec9BX_T_tqK1Zmma4zlR_ostVtCKxkqpzlj5phUhw3uGNIbrHAbNYeqezlkLZPaT0papRoU8O2e-LZ3PyJtOkm-4lUrSkGzrfcmROpBUFXon
+HpwRcKclh25HVuujCzrHz8MSa6RZIbKHqVf5A3yI6rF2YDJVglogd2cVI2abcKH4YtIC-RlYvesf8celhNWMFzqqIuPw9HDfbxSnROhwNjcvrecI2qfuhP8B
+mhjGB9NQAygSjycVsU9w_5nivhdaQsGgKZsJxZNoIoN6YAfAcv9ZM1vnQEVArE_kjU95ekBlmOGZyp759R9F1IKGmQYYqR-h0BuZwmeSC6MUL4fatOmgt1AV
+KjgEEALBCQsWdT9Im_YM-cWtufIin7N3IY0Mf_I6r61zGh7eyvJ89vGayfH6J6mH8leu9P0P1KPHVqhaKmewHOg_2FYg8hMRCQK0JH5hnhpYQ4etP5A18vLk
+2MOKFAiKwSAMN892r35--kT0oILABK4UTVJlKzdjFAS2iDVRYprlIiP41ZmPncN7YkSXGkJhYWBjATlFAxgYv7FftfjMyWvfKtHPSIBY2XCYycK5HYt3kW8N
+YiInecHknS9OLh9fPSDosot3Scb4srAt_w3_lny
 }
 
 AzureEntityColoring(AzureRepos)
 !define AzureRepos(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRepos, AzureRepos)
 !define AzureRepos(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRepos, AzureRepos)
+!procedure AzureRepos($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRepos, $stereo=AzureRepos, $tags, $link)
+ !endprocedure
+!procedure AzureRepos($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRepos, $tags, $link, AzureRepos)
+!endprocedure

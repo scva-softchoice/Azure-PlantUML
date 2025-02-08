@@ -8,3 +8,9 @@ fAyHTnj8EXeIvpANIUJHr4ZIrsXr0URfQ_BpMrIMU7wJ79SrlFhX4m
 AzureEntityColoring(AzureMachineLearningService)
 !define AzureMachineLearningService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
 !define AzureMachineLearningService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
+!procedure AzureMachineLearningService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningService, $stereo=AzureMachineLearningService, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningService, $tags, $link, AzureMachineLearningService)
+!endprocedure

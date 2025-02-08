@@ -1,13 +1,19 @@
 sprite $AzureBotService [70x70/16z] {
-rTTNWXmX30JG0SM-_u4t8EYQ80RQsVNZ_2nARE3sdwGGYvgxgJ2L7o98_2boLMBp4NC3P7p1Y7_nc05jEcGWKeX-m50HVO9ivIWCKwvddQMo6XpTH9A551AC
-CpUAdKQzfQaw72ihH67aZdzdmWnaiKiUJDv984hhDPhDkf6Eb1KIfyetnO5888kKO0v-vcF5q1VfJCsQrRAhbDvmTfv7MYnD7BecPt9FLcoJy5Zuqp22KZOK
-xTMqOGI7V3vFf4eICujxCivK7kzRgAj8A1X67nTKhYgrAJv-XL5sbOYCEuCrr-iAZMNZG2YLgEuffIaMFtywKFnYeQ3V8xP4JI7y1_iAjs48IlaHfQ0OGItx
-IW-khtuh-XEAzf_b2flosO0Q9ugUYdyhygg8uSESBNutLVoTylZn-vrNHRwLuxSgrqyqRrVqlbsLsOuil9-yB_hhRXstOkgFABMLsuvDJU4VKRWfT3kNfFkA
-OaLzqQYtx2c521_-ermKGuco2FLQMWhktRw2cpj6SspfYb8zRYvCzBkde5ivMy8mePWagSae1mw4ORgIHoUZ8EvOaywOHuJH2duBPw898yzRnfenpFvNV5ou
-60MX0zNi9923afVLFgE1SFO7kzyxL8jID1qo65eXr15B2_EMzMl27SrE6L-yRC8uVBfFEuA1anY1s6qUENmusOjFVI3olhcZE_xo-ZG_ZOEMZvRJwGycrNZa
-mTXvT933GM0OtRR2RGUvuRn5m0aA08pj5BRZASReumeagXRtK2M8_o2V
+rTU7Tjim30NGa9Zy_m_k84o_ce4YUBKDplAy0Hwa4_FZcrGZ5ZLtKs5g3n4alfNSAx7vAdC3P7o74T-uhGKL7J8GAKGF62gY6sHdZZeCvNwDitLMEAv595b8
+8q4xnqQpgz7pJtHTZhKpH66aJhHpm2paP9Uyc3oJG9HErnXCcerSaAJHRAfyKno8jD9j6ipWdOyLXrwe2zEpPBLLbROIJkQvfSNIYg5xCfDxic8xA5uBtveH
+X7Acu7Cwcn4CkSyJrIMfYuAPsktr9hNbX89cz7P1xLwbJyNNCxHILQ9aNJDOSxzVeRLi38HGYLfDQLEnUBmD54yAIkGxOaiq5S8Vg2iyco4exH6b8HX1B6Lb
+5IvV_Qte4uh6emE5LMEBUBmhUbNyjoAV5SRzYyUPubyfYliNZpT5VYlZ_KfzecVJnIsWprul-hghZcSm_H6bpt3dg3GLVaJXgT1yF1KjAlAdefT58zvMKneH
+RlyLBeAXJIaKNMAPrQOYzoiobTMQOqir1HlouJ2HRr51jd9D2Ss4Of8K9QqC38HcbfAM7hI2SiUQjAOmKi5BcAbBhiY-PQmPpTJ_u-E2YrPGD11DfG8Pb9oi
+wem6mjaRrTyEtI8KJPiCfl0BFX1B0tCFXokdIYIRCtvoiWbZU3jCVWG39pLyO9oiPFXoiXEV-aBaw-J6yAXFfq_pgp7EDj1qER4nKzKuvC6e73h8uQ1W67sK
+YkSESiEvHC092W2CSZMsiPKnyhW74jMuBrGbY6zGFm4
 }
 
 AzureEntityColoring(AzureBotService)
 !define AzureBotService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
 !define AzureBotService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
+!procedure AzureBotService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBotService, $stereo=AzureBotService, $tags, $link)
+ !endprocedure
+!procedure AzureBotService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBotService, $tags, $link, AzureBotService)
+!endprocedure

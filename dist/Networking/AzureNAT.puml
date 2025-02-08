@@ -1,11 +1,18 @@
 sprite $AzureNAT [70x70/16z] {
-hTG7SkCm44JHdWHuxt_XBG1qbmY5jaJz2WuOFcP25e7hPLL-0o5p3T6CHZIZaUiCYIjCRLr3s3M4NK1ICne9k6Oq0cX68nlpCQ8PZMX68vhHY68qae1YD59f
-8yniL8eXqhPo8Msl128KCW8H2Xc128MCG8H2HY128ICGeP3HY5R8456APeY4cuTKE4Q6Czm2LgyKZY7RYWXLs7P-jIcFncnDq8ogSW0vsvJAsV5s-_ml6Hxe
-N5thFgkp4ZxZsCqn8tZ90BxrzbmnSEncM_xci3yf7BCR1TyubjCjiXgPk2uSssvIdutrh3G0dcDn_FzGndeRQ3Wuvdqs4J8DlutZw3Cggtay76j4Jam0u4Lv
-eF3IZ7n3oFIMKMEI31KYeyp8redi36V9KDaNDeGCu_HPUO9eXef014D5888v584e9jUAG2Ip5WIYc6Fs7i6hDeOxV85e1e17BAOzHZG388wlm8R8JjDUCy0t
-HDP-ZWhWrz5_VYCYwfn7tYaTU8_fDsSKRoDa3BowHUHjfgsd7u0J-O0fhBmJ-OJfRe2dE1B9C8reHYEQqOXcDA8P8bUOVpEDQ4OZcY5ogKp8_WC
+hTI9ahGg343X41BqllyBNrdcb9d5HlZFx7JwAv4fvMCvotxcRly2WTb3ODOHc1radt62MKPe3w4zXFOGMaPCD32BY0Hc6H59WLb48hECH6OPYSmo4fbLPFQa
+G53IbVJIbVeiuruyV77IOVsPyVAzeV0t-Gi4PO81cL78fn6K2GPaJY6VH53c67-OGtbWG1OKc82OfcmV5COYmuoDF_rPyHJ678G_fKtuW_BBMBfFY4XszoII
+hFLDSMkDCMshC6oslTePRNbKJ5ktCUC2SXbb7WiYwMyb2MEtz_ARIdghA8gylnRx6cD7uOZIt7rXB1xIKIljSFh3JSsBbxhU5Mq3NjopofMvrUc3DzuO-KfL
+lK-Wz4fMLSOAI63g03SbAY1NgQy51EQgUBQi2eC2qZBFNjWEmOJPe8GN2EI9GNb09XYKtn4X-eNn0-LtP98PoWComrXNPf78i0F-XLe-WqYA38hC8VITaT4h
+938DKSjzJn5vmOndh2UH5mWCqyfpRHQ1EO_-uJpNagHZh89yPdf1EKSWiynnsr4-MPlkE5lAtRt1hvc3ayvivrKbl2iVImXNOqb4LxO3q-i_GHQPTGHc7u41
+MMT0TfZ_pki3P9sv0bbdGBOoau_z3m
 }
 
 AzureEntityColoring(AzureNAT)
 !define AzureNAT(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNAT, AzureNAT)
 !define AzureNAT(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNAT, AzureNAT)
+!procedure AzureNAT($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNAT, $stereo=AzureNAT, $tags, $link)
+ !endprocedure
+!procedure AzureNAT($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNAT, $tags, $link, AzureNAT)
+!endprocedure

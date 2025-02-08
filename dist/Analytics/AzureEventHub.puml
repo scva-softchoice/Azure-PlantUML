@@ -1,9 +1,15 @@
 sprite $AzureEventHub [70x70/16z] {
-xTS5RWHH281XdFlVk1dXfTG9NUUBxOxyumONDdX3M4QyWPrwasuLRxjIPIe4PNIRobIG0bOgvXjRepG8_4RZcawAbV2I5JorAkO12ZwUBxv0mpDKC7Ggx44-
-LyW3_QaILvdeIV98BbMogKH5rhzIXInDw4iQQGG5SpLkyWxarjKODDqnhL59T-z6fQ1VGTbWjP9dZVs7zGh6Vi_lBxaYdNSf3D2eP5DXBEChVTbCnRp9tjre
-JSlic0_XeiOR
+xTS5SWCn38NXPzG6z_wtxSZG6PLLhOlw1i9_aYNRMCk5oc9GYvK5i1CPRLpPZgW4CWklLhooTnbgUUyMLxo2SJTXYDE7Atp_ihCRXbIcXFVSTdQ192iP2l-k
+4WPbHUwZIaE5Hf372ps2mL-eXCbIIJJbvvL8KyIRCar5xFWiNqoAocilUgNGK5MLI5Cox6d9pyRtjwwasjELXcgf80mmL8JrbN9cz9aAdLc5c7aeAdBc8MT1
+if8jSwam-HppWCgjAq4jtpfVPRrQmG6LezRJo5jJYrhTceobt0C
 }
 
 AzureEntityColoring(AzureEventHub)
 !define AzureEventHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEventHub, AzureEventHub)
 !define AzureEventHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEventHub, AzureEventHub)
+!procedure AzureEventHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEventHub, $stereo=AzureEventHub, $tags, $link)
+ !endprocedure
+!procedure AzureEventHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEventHub, $tags, $link, AzureEventHub)
+!endprocedure

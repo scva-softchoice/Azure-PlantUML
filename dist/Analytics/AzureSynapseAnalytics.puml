@@ -1,12 +1,18 @@
 sprite $AzureSynapseAnalytics [70x70/16z] {
-hPO7jkCW300bL01vxt_TdoxBvaK9PETLjmcQDE0Jr3l1Zs2pAmtX5wezgR2CM41W2RBjW9ML8Dl0T9uQrX3MD9M7muCAe479y2N5uX3dyOncWrWPp5rOSIR8
-9X2GkrRvYYYay9QKR5lb9yBV1UauNcP7kfKlFY4yNkQTvk6p80e3n8wQpvm4oOVX-cx9nVuvLj9XojkxPVEpcumE2exn0NQBRSzJ3R9X29psUi9ajzXsE_iX
-2480xUROx62vUMY_fHGSWvpWc-DiCJozVW6AmuoW9HQM5xi3OTB2iXE2p5cAH3p8f8Kbua4cBNg02wnOy6HXflBpMfAykQK6D7nkv-eUBGvDMQ06E39bASqX
-B9HeCWjWxNSgddzU9YnNI6eL3n4yKvRi9vFAlCNXA_A0CRVa6d5msO8IMBQG16ZL8XgGLOiU-3yMNB8W_OUr4BFMm4gNmbUa1afYoJ_zjJa2kINPC8Xh579B
-lc7WrgyqXipIoiSD0nBXVhKDbZkAoGxg1AhPO3cVWZSRXkIHqlrSfp7868owEGGEczFA-nsK1t4gGaJDqJH8l7DyGx0zPz8lWrXdYCHfA-_aGGJU84sIOP8W
-Hz0jrJGFaa9tZtPVSn8aWqMQVtecWgHBpuBaO7XA9u9aRsaU94TiG60Uz46cWgIVibvW6Uv9aDay2h-2zOiW5m
+pPO5bkim30251ddlVzqjHhMJLssLZzD7eOaz3S5FKEy4lmWskz8GVeLgJogSHcn2u1JKnqAdCq76WNIUEXopuTHSaE4KW3ASp_EGhPDOfsUS3M9qC7ULWfaW
+Gs52xzeYLxH0Y8oWP1rLdgXy5gGZx45nj1jzS8N8SJE_7Ct3Hq4A761nwjivomWdG-BmEkGroDVsCug22BxTMyRNnj0eY3oFqUa07uxQUAwgOH06fsr7cBui
+DcvhVmYoRCL-SmnRB3SFmmOIuZ783havzXR3tVbf3N84BR28Fbc292sYBpn8ra8wuq6I5btm84bBMN19pe8xYmWJ_l9O7j0lMZOmMRTE574OCnQi4oeJbB00
+DOU9ET145i3QxrJSFrumOG4WyIjbzQGiuLE6yXP7hkW3mTWIQzJ1qnRKYTCMrWa-QoaB_vC5JrbGViDOMAJK2KrQ_ChLEa5f2yg3qfpqzO8i6tMHP2mi3YFL
+VgKIH9P6no0ly65bSAWTBJSAha6YbpqMiwF5LyLVFy4Xr6sZS_3rut0tXy4HSne5NpzR4AUkcuiv9Gm2PJtZ2hPD_s4GwmBERhPDnOc3ABn1PmSbWgoGMwgL
+E4W8tpsb-vY3814YslpgYOB4u3BqA4WCDdDA8aZqboQ219TN42IH9nSalCewmMca1q6oUGhyAbW_2781
 }
 
 AzureEntityColoring(AzureSynapseAnalytics)
 !define AzureSynapseAnalytics(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSynapseAnalytics, AzureSynapseAnalytics)
 !define AzureSynapseAnalytics(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSynapseAnalytics, AzureSynapseAnalytics)
+!procedure AzureSynapseAnalytics($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSynapseAnalytics, $stereo=AzureSynapseAnalytics, $tags, $link)
+ !endprocedure
+!procedure AzureSynapseAnalytics($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSynapseAnalytics, $tags, $link, AzureSynapseAnalytics)
+!endprocedure

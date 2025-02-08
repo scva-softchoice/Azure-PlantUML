@@ -1,13 +1,19 @@
 sprite $AzureDigitalTwins [70x70/16z] {
-fT5PWjiW48JXtXlT_y8nH46e1Z78-Vmso-y2w9bwPeO9_GVBVqBfIvgZOFg2H0AZjzZxKPZ5yY_zyaBiZCRP5DgcaIVls_BaJ5iuiXlAxwx7y-93Eo_wxdML
-BlklBf4x5RoU-UlEJmHqyRg05x-TlJedm9UUyATRHRwgu2rBFZ8XOcQRP-0u2y5L_fg9BBcW36FcJrMQR9-dCP80RrXA0wdDCRsY1K0EnymhLX26f6QydS0-
-FB9Zg2nutIAjSUeTsQyKgHKRELQyx8mHo9Y_tf9IgTt5kotfAfK1Zx9ToJ2pSmpotKfODHzZxhfJwQyx6UFc7oPOcG_1CMUWCrvNt2wz0f5pZkz4pZ4AWRxc
-kP9MmHYVCgZW51pZSyyLUDJb67ckm8ke27-8sejAudiOqqdULU0zExQdYgkeZHLuLARHl9925STGkL6wuMc5wPJpYX7GIKL_VedfI202OxHLwC8NkJ2XdvNy
-jK8lAxHPiLl5ob6EUMHpIqIe7iTHbBeyXOtagHADqb4pL-Iph3G-KW9y9LebQYQPcZXA-s356IhM4bU5or6vi5WvEgWOtKZSA94U02kDtC-35SX0PRf6MWGg
-96LPmRknG4gD_rg9obJ7QyKASM064alNfIaSAo2nGWChFuyKEumkUApqs4H0Sip45cSYfELbnWZXgvVS7u8ujpjA2rA6pei6ChZbdSEihwUOJHf2UopRWOI8
-sDyS1d5VBV2wtzAD2zdksApn1m
+fTC9RkL8281XTl3zBposnYXbNDjpVq-jfPFyeK21CLPtDo7u1-B963vYRnd21sHU2FmADKSW1CgNySU5y1srRC8sjjSZq6-Ai0MRXVHMBRkFITgq_OUhy_0g
+-rSdyqKbwVAwynSb7Y-ami5NHrT7xx7fbtMqrKgnLYPR9XzIHa14wMVgSyOCBxxCc4ynbc7wf_A8yFmCXY7lKaWKZLw89iD0ugZ-vehLC90aHlpwbyEedrHE
+sYmInvKwbrwpqDt8ph9IELqLQMdkRByIYaWb8_fpnUd2ycHjHTSHPRf8eHRR5JSHoM4AtQsON7AOGeLtAddTtZ0gUX8gbN6Z3gFN9mbcPHn9RKKBcbLK6fnF
+qWu4dUwr3gDT0ZeTfGwZVUDAEUfq65fMyXvqGaJYNofU3o84DzAAPnMLvpqJogXYGe-Yrw6XDQWGND175OO7x5OGRjwl21JSgSZxbmYt20hiLDel_w4_2DMx
+uiiAR5JYGqKU5OaZZcw5DcSnC-RZ993GRoOj6bNCBWnnLWAI7t7J5dTlP8d1ZfF2__Yun54hYgKYrcB0E4uX1CX-f5eHU20h5U2Z9olTDw6-Ai2hIfs6rDuL
+e9XM4fMTb0g0BYjsKc4MDHjL0ArcIcAA875vbfN433Gata-o7G8FrcPSROz2GTvczYCLnuyPWQfUFPOT9QWwLm-ROfYWsEe8BCXwougmfaSAKNiZs2D-9Om6
+VyNx4E76vJ5VIRdkHoZ3ndy
 }
 
 AzureEntityColoring(AzureDigitalTwins)
 !define AzureDigitalTwins(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDigitalTwins, AzureDigitalTwins)
 !define AzureDigitalTwins(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDigitalTwins, AzureDigitalTwins)
+!procedure AzureDigitalTwins($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDigitalTwins, $stereo=AzureDigitalTwins, $tags, $link)
+ !endprocedure
+!procedure AzureDigitalTwins($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDigitalTwins, $tags, $link, AzureDigitalTwins)
+!endprocedure

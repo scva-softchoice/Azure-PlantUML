@@ -1,12 +1,18 @@
 sprite $AzureManagedDatabase [70x70/16z] {
-xPBRTjmW3011Tt3__tjRY4x28kF0zdNdnVVnS4JQvKCUUF_xoBa104S03ankGBe3OKiK505qpPaZ0j4J9UGSQA8bb1mkAj-ri3H2ore3euP5pSg0cGfxIeSM
-5ibV8AiB0YheF-ELvUBieEYTmuIoGzVAykUo_0EGY9WZ8jmh7BsMbkiVd3VWzkQwfQ6O7q6zEkiMftXz0Dakvw5bfAWGVaEivN8sMaRg2vTpq79c-RHyMiuj
-dvPQhVB_jPWuXE-sL9C1XhTQgiehTDeI91qwRgbo0vwsgDm1Por5Rk6p5fLxOB-bcCe2tcqnUMApHL_6YdxrVP5tMigqEVAiX9sMiCLO6l0JnfX_Qz5W0L_G
-k3nyRYdJTcz_zNCOBCAFBJfPm9S4AT5e4NfgaSb2lgIMv1O7rYqbMDhB_HGcYwnRRDwbt5JS5pHRm5jsB98yGsOB7hJqbzk2WeMNBKK7kaNvQzwasYpJutG_
-esZHrD5WwRCkjnQB5kp3Y9P-FzzQIhJqaKgqvDI0UcEfzaEVZ9dbb7AxJYdH-DJHQ1arIaJQtYVYTar4OkQq52TBj5JR0j88IfqijVoEKPh9o5ggMxOycjCA
-621zK32cHpxy1G
+xTS7UkCW48PXCnt8_S-xqV-C6mY7R6_VblJNmqXfbzt-Lnxw-e-V-mg1YEyHVKPAWEKaPjg29cAAFcGAWl7rJa62lfxPc0JnfCnxbSTKrKnL9sN9qEDQr3pg
+K-6cZmWl5BjEeodCXGbTrxTGkfPqs4uTXu6aBvKUvHQnchbx7BcRALEvvNsjlATb8-rzhRpr8-VN17j7wrcocjDFiKP7EmewTictHBrsjAzaxQc-fxoj5VIJ
+PlbwvVzUsX-qb__tIsirgfPlcQM5PIfVUx-aaIbzrIpDXkGhzj9iIhPdcP6PsLV2pgBFASrEqy_jnUqysf-bXgsINGN4iat5drR0ZnzCPbPszbA7HHP3SbDe
+PvRfSkXzgL1CkNoa-AHm7YWLnA-LQi_AyQXve08bqvTxyK7XF1BXsLIINSzYWmB9S21D9QErKYU5S2Gv02ZtrafC2luxxX4P5SPUzXJ3aJ3GeCZ6B3ap7hBW
+GAEYwxtuGr0yhxSw5B-7Ytsgj5dnSZdoIS6rhgTAp0hZ1dRtGS6bBkrCgRE2IwfGW6Kv8xL1GH6UVr89l7juGBc_LI-P3GgAMouY7X4cel6U74ypc5cnMMcn
+5LqUOsk3qke68fUnmkgrGSdg1s5Lvz53_EBNG6KOw_xt1G
 }
 
 AzureEntityColoring(AzureManagedDatabase)
 !define AzureManagedDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagedDatabase, AzureManagedDatabase)
 !define AzureManagedDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagedDatabase, AzureManagedDatabase)
+!procedure AzureManagedDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagedDatabase, $stereo=AzureManagedDatabase, $tags, $link)
+ !endprocedure
+!procedure AzureManagedDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagedDatabase, $tags, $link, AzureManagedDatabase)
+!endprocedure

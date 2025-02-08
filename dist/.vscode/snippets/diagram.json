@@ -3,7 +3,7 @@
     "prefix": "Azure C4 Integration",
     "description": "Add Azure C4 Integration to diagram",
     "body": [
-      "AzureC4Integration(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureC4Integration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -11,7 +11,7 @@
     "prefix": "Azure C4 Integration with Description",
     "description": "Add Azure C4 Integration with Description to diagram",
     "body": [
-      "AzureC4Integration(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureC4Integration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -19,7 +19,7 @@
     "prefix": "Azure Common",
     "description": "Add Azure Common to diagram",
     "body": [
-      "AzureCommon(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCommon(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -27,7 +27,7 @@
     "prefix": "Azure Common with Description",
     "description": "Add Azure Common with Description to diagram",
     "body": [
-      "AzureCommon(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCommon(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -35,7 +35,7 @@
     "prefix": "Azure Raw",
     "description": "Add Azure Raw to diagram",
     "body": [
-      "AzureRaw(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRaw(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -43,7 +43,7 @@
     "prefix": "Azure Raw with Description",
     "description": "Add Azure Raw with Description to diagram",
     "body": [
-      "AzureRaw(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRaw(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -51,7 +51,7 @@
     "prefix": "Azure Simplified",
     "description": "Add Azure Simplified to diagram",
     "body": [
-      "AzureSimplified(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSimplified(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -59,23 +59,7 @@
     "prefix": "Azure Simplified with Description",
     "description": "Add Azure Simplified with Description to diagram",
     "body": [
-      "AzureSimplified(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureBatchAI": {
-    "prefix": "Azure Batch A I",
-    "description": "Add Azure Batch A I to diagram",
-    "body": [
-      "AzureBatchAI(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureBatchAI_Descr": {
-    "prefix": "Azure Batch A I with Description",
-    "description": "Add Azure Batch A I with Description to diagram",
-    "body": [
-      "AzureBatchAI(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSimplified(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -83,7 +67,7 @@
     "prefix": "Azure Bot Service",
     "description": "Add Azure Bot Service to diagram",
     "body": [
-      "AzureBotService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBotService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -91,7 +75,7 @@
     "prefix": "Azure Bot Service with Description",
     "description": "Add Azure Bot Service with Description to diagram",
     "body": [
-      "AzureBotService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBotService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -99,7 +83,7 @@
     "prefix": "Azure Cognitive Services",
     "description": "Add Azure Cognitive Services to diagram",
     "body": [
-      "AzureCognitiveServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCognitiveServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -107,7 +91,7 @@
     "prefix": "Azure Cognitive Services with Description",
     "description": "Add Azure Cognitive Services with Description to diagram",
     "body": [
-      "AzureCognitiveServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCognitiveServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -115,7 +99,7 @@
     "prefix": "Azure Machine Learning Service",
     "description": "Add Azure Machine Learning Service to diagram",
     "body": [
-      "AzureMachineLearningService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMachineLearningService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -123,7 +107,7 @@
     "prefix": "Azure Machine Learning Service with Description",
     "description": "Add Azure Machine Learning Service with Description to diagram",
     "body": [
-      "AzureMachineLearningService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMachineLearningService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -131,7 +115,7 @@
     "prefix": "Azure Machine Learning Studio",
     "description": "Add Azure Machine Learning Studio to diagram",
     "body": [
-      "AzureMachineLearningStudio(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMachineLearningStudio(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -139,7 +123,7 @@
     "prefix": "Azure Machine Learning Studio with Description",
     "description": "Add Azure Machine Learning Studio with Description to diagram",
     "body": [
-      "AzureMachineLearningStudio(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMachineLearningStudio(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -147,7 +131,7 @@
     "prefix": "Azure Machine Learning Studio Classic",
     "description": "Add Azure Machine Learning Studio Classic to diagram",
     "body": [
-      "AzureMachineLearningStudioClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMachineLearningStudioClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -155,7 +139,7 @@
     "prefix": "Azure Machine Learning Studio Classic with Description",
     "description": "Add Azure Machine Learning Studio Classic with Description to diagram",
     "body": [
-      "AzureMachineLearningStudioClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMachineLearningStudioClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -163,7 +147,7 @@
     "prefix": "Azure Machine Learning Studio Web Service Plan",
     "description": "Add Azure Machine Learning Studio Web Service Plan to diagram",
     "body": [
-      "AzureMachineLearningStudioWebServicePlan(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMachineLearningStudioWebServicePlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -171,7 +155,7 @@
     "prefix": "Azure Machine Learning Studio Web Service Plan with Description",
     "description": "Add Azure Machine Learning Studio Web Service Plan with Description to diagram",
     "body": [
-      "AzureMachineLearningStudioWebServicePlan(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMachineLearningStudioWebServicePlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -179,7 +163,7 @@
     "prefix": "Azure Machine Learning Studio Workspace",
     "description": "Add Azure Machine Learning Studio Workspace to diagram",
     "body": [
-      "AzureMachineLearningStudioWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMachineLearningStudioWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -187,7 +171,7 @@
     "prefix": "Azure Machine Learning Studio Workspace with Description",
     "description": "Add Azure Machine Learning Studio Workspace with Description to diagram",
     "body": [
-      "AzureMachineLearningStudioWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMachineLearningStudioWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -195,7 +179,7 @@
     "prefix": "Azure Translator Text",
     "description": "Add Azure Translator Text to diagram",
     "body": [
-      "AzureTranslatorText(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTranslatorText(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -203,7 +187,7 @@
     "prefix": "Azure Translator Text with Description",
     "description": "Add Azure Translator Text with Description to diagram",
     "body": [
-      "AzureTranslatorText(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTranslatorText(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -211,7 +195,7 @@
     "prefix": "Microsoft Genomics",
     "description": "Add Microsoft Genomics to diagram",
     "body": [
-      "MicrosoftGenomics(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "MicrosoftGenomics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -219,7 +203,7 @@
     "prefix": "Microsoft Genomics with Description",
     "description": "Add Microsoft Genomics with Description to diagram",
     "body": [
-      "MicrosoftGenomics(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "MicrosoftGenomics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -227,7 +211,7 @@
     "prefix": "Azure Analysis Services",
     "description": "Add Azure Analysis Services to diagram",
     "body": [
-      "AzureAnalysisServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAnalysisServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -235,7 +219,7 @@
     "prefix": "Azure Analysis Services with Description",
     "description": "Add Azure Analysis Services with Description to diagram",
     "body": [
-      "AzureAnalysisServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAnalysisServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -243,7 +227,7 @@
     "prefix": "Azure Databricks",
     "description": "Add Azure Databricks to diagram",
     "body": [
-      "AzureDatabricks(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDatabricks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -251,7 +235,7 @@
     "prefix": "Azure Databricks with Description",
     "description": "Add Azure Databricks with Description to diagram",
     "body": [
-      "AzureDatabricks(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDatabricks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -259,7 +243,7 @@
     "prefix": "Azure Data Catalog",
     "description": "Add Azure Data Catalog to diagram",
     "body": [
-      "AzureDataCatalog(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataCatalog(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -267,7 +251,7 @@
     "prefix": "Azure Data Catalog with Description",
     "description": "Add Azure Data Catalog with Description to diagram",
     "body": [
-      "AzureDataCatalog(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataCatalog(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -275,7 +259,7 @@
     "prefix": "Azure Data Explorer",
     "description": "Add Azure Data Explorer to diagram",
     "body": [
-      "AzureDataExplorer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataExplorer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -283,7 +267,7 @@
     "prefix": "Azure Data Explorer with Description",
     "description": "Add Azure Data Explorer with Description to diagram",
     "body": [
-      "AzureDataExplorer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataExplorer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -291,7 +275,7 @@
     "prefix": "Azure Data Lake Store Gen1",
     "description": "Add Azure Data Lake Store Gen1 to diagram",
     "body": [
-      "AzureDataLakeStoreGen1(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataLakeStoreGen1(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -299,7 +283,7 @@
     "prefix": "Azure Data Lake Store Gen1 with Description",
     "description": "Add Azure Data Lake Store Gen1 with Description to diagram",
     "body": [
-      "AzureDataLakeStoreGen1(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataLakeStoreGen1(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -307,7 +291,7 @@
     "prefix": "Azure Event Hub",
     "description": "Add Azure Event Hub to diagram",
     "body": [
-      "AzureEventHub(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -315,7 +299,7 @@
     "prefix": "Azure Event Hub with Description",
     "description": "Add Azure Event Hub with Description to diagram",
     "body": [
-      "AzureEventHub(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -323,7 +307,7 @@
     "prefix": "Azure Event Hub Cluster",
     "description": "Add Azure Event Hub Cluster to diagram",
     "body": [
-      "AzureEventHubCluster(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventHubCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -331,7 +315,7 @@
     "prefix": "Azure Event Hub Cluster with Description",
     "description": "Add Azure Event Hub Cluster with Description to diagram",
     "body": [
-      "AzureEventHubCluster(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventHubCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -339,7 +323,7 @@
     "prefix": "Azure H D Insight Cluster",
     "description": "Add Azure H D Insight Cluster to diagram",
     "body": [
-      "AzureHDInsightCluster(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureHDInsightCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -347,7 +331,7 @@
     "prefix": "Azure H D Insight Cluster with Description",
     "description": "Add Azure H D Insight Cluster with Description to diagram",
     "body": [
-      "AzureHDInsightCluster(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureHDInsightCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -355,7 +339,7 @@
     "prefix": "Azure Log Analytics Workspace",
     "description": "Add Azure Log Analytics Workspace to diagram",
     "body": [
-      "AzureLogAnalyticsWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLogAnalyticsWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -363,7 +347,7 @@
     "prefix": "Azure Log Analytics Workspace with Description",
     "description": "Add Azure Log Analytics Workspace with Description to diagram",
     "body": [
-      "AzureLogAnalyticsWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLogAnalyticsWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -371,7 +355,7 @@
     "prefix": "Azure Power B I Embedded",
     "description": "Add Azure Power B I Embedded to diagram",
     "body": [
-      "AzurePowerBIEmbedded(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePowerBIEmbedded(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -379,7 +363,7 @@
     "prefix": "Azure Power B I Embedded with Description",
     "description": "Add Azure Power B I Embedded with Description to diagram",
     "body": [
-      "AzurePowerBIEmbedded(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePowerBIEmbedded(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -387,7 +371,7 @@
     "prefix": "Azure Purview Account",
     "description": "Add Azure Purview Account to diagram",
     "body": [
-      "AzurePurviewAccount(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePurviewAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -395,7 +379,7 @@
     "prefix": "Azure Purview Account with Description",
     "description": "Add Azure Purview Account with Description to diagram",
     "body": [
-      "AzurePurviewAccount(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePurviewAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -403,7 +387,7 @@
     "prefix": "Azure Stream Analytics Job",
     "description": "Add Azure Stream Analytics Job to diagram",
     "body": [
-      "AzureStreamAnalyticsJob(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStreamAnalyticsJob(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -411,7 +395,7 @@
     "prefix": "Azure Stream Analytics Job with Description",
     "description": "Add Azure Stream Analytics Job with Description to diagram",
     "body": [
-      "AzureStreamAnalyticsJob(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStreamAnalyticsJob(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -419,7 +403,7 @@
     "prefix": "Azure Synapse Analytics",
     "description": "Add Azure Synapse Analytics to diagram",
     "body": [
-      "AzureSynapseAnalytics(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSynapseAnalytics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -427,7 +411,7 @@
     "prefix": "Azure Synapse Analytics with Description",
     "description": "Add Azure Synapse Analytics with Description to diagram",
     "body": [
-      "AzureSynapseAnalytics(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSynapseAnalytics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -435,7 +419,7 @@
     "prefix": "Power B I",
     "description": "Add Power B I to diagram",
     "body": [
-      "PowerBI(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "PowerBI(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -443,7 +427,7 @@
     "prefix": "Power B I with Description",
     "description": "Add Power B I with Description to diagram",
     "body": [
-      "PowerBI(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "PowerBI(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -451,7 +435,7 @@
     "prefix": "Azur Blockchain Member",
     "description": "Add Azur Blockchain Member to diagram",
     "body": [
-      "AzurBlockchainMember(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurBlockchainMember(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -459,7 +443,7 @@
     "prefix": "Azur Blockchain Member with Description",
     "description": "Add Azur Blockchain Member with Description to diagram",
     "body": [
-      "AzurBlockchainMember(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurBlockchainMember(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -467,7 +451,7 @@
     "prefix": "Azur Blockchain Service",
     "description": "Add Azur Blockchain Service to diagram",
     "body": [
-      "AzurBlockchainService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurBlockchainService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -475,7 +459,7 @@
     "prefix": "Azur Blockchain Service with Description",
     "description": "Add Azur Blockchain Service with Description to diagram",
     "body": [
-      "AzurBlockchainService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurBlockchainService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -483,7 +467,7 @@
     "prefix": "Azur Blockchain Token Service",
     "description": "Add Azur Blockchain Token Service to diagram",
     "body": [
-      "AzurBlockchainTokenService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurBlockchainTokenService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -491,7 +475,7 @@
     "prefix": "Azur Blockchain Token Service with Description",
     "description": "Add Azur Blockchain Token Service with Description to diagram",
     "body": [
-      "AzurBlockchainTokenService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurBlockchainTokenService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -499,7 +483,7 @@
     "prefix": "Azure Blockchain Connection",
     "description": "Add Azure Blockchain Connection to diagram",
     "body": [
-      "AzureBlockchainConnection(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBlockchainConnection(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -507,7 +491,7 @@
     "prefix": "Azure Blockchain Connection with Description",
     "description": "Add Azure Blockchain Connection with Description to diagram",
     "body": [
-      "AzureBlockchainConnection(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBlockchainConnection(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -515,7 +499,7 @@
     "prefix": "Azure Blockchain Consortium",
     "description": "Add Azure Blockchain Consortium to diagram",
     "body": [
-      "AzureBlockchainConsortium(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBlockchainConsortium(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -523,7 +507,7 @@
     "prefix": "Azure Blockchain Consortium with Description",
     "description": "Add Azure Blockchain Consortium with Description to diagram",
     "body": [
-      "AzureBlockchainConsortium(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBlockchainConsortium(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -531,7 +515,7 @@
     "prefix": "Azure App Service",
     "description": "Add Azure App Service to diagram",
     "body": [
-      "AzureAppService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -539,7 +523,7 @@
     "prefix": "Azure App Service with Description",
     "description": "Add Azure App Service with Description to diagram",
     "body": [
-      "AzureAppService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -547,7 +531,7 @@
     "prefix": "Azure App Service Plan",
     "description": "Add Azure App Service Plan to diagram",
     "body": [
-      "AzureAppServicePlan(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppServicePlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -555,7 +539,7 @@
     "prefix": "Azure App Service Plan with Description",
     "description": "Add Azure App Service Plan with Description to diagram",
     "body": [
-      "AzureAppServicePlan(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppServicePlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -563,7 +547,7 @@
     "prefix": "Azure App Service Plan Linux",
     "description": "Add Azure App Service Plan Linux to diagram",
     "body": [
-      "AzureAppServicePlanLinux(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppServicePlanLinux(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -571,7 +555,7 @@
     "prefix": "Azure App Service Plan Linux with Description",
     "description": "Add Azure App Service Plan Linux with Description to diagram",
     "body": [
-      "AzureAppServicePlanLinux(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppServicePlanLinux(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -579,7 +563,7 @@
     "prefix": "Azure Automanaged Virtual Machine",
     "description": "Add Azure Automanaged Virtual Machine to diagram",
     "body": [
-      "AzureAutomanagedVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAutomanagedVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -587,7 +571,7 @@
     "prefix": "Azure Automanaged Virtual Machine with Description",
     "description": "Add Azure Automanaged Virtual Machine with Description to diagram",
     "body": [
-      "AzureAutomanagedVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAutomanagedVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -595,7 +579,7 @@
     "prefix": "Azure Availabilty Set",
     "description": "Add Azure Availabilty Set to diagram",
     "body": [
-      "AzureAvailabiltySet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAvailabiltySet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -603,7 +587,7 @@
     "prefix": "Azure Availabilty Set with Description",
     "description": "Add Azure Availabilty Set with Description to diagram",
     "body": [
-      "AzureAvailabiltySet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAvailabiltySet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -611,7 +595,7 @@
     "prefix": "Azure Batch",
     "description": "Add Azure Batch to diagram",
     "body": [
-      "AzureBatch(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBatch(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -619,7 +603,7 @@
     "prefix": "Azure Batch with Description",
     "description": "Add Azure Batch with Description to diagram",
     "body": [
-      "AzureBatch(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBatch(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -627,7 +611,7 @@
     "prefix": "Azure Batch Account",
     "description": "Add Azure Batch Account to diagram",
     "body": [
-      "AzureBatchAccount(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBatchAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -635,7 +619,7 @@
     "prefix": "Azure Batch Account with Description",
     "description": "Add Azure Batch Account with Description to diagram",
     "body": [
-      "AzureBatchAccount(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBatchAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -643,7 +627,7 @@
     "prefix": "Azure Cloud Services",
     "description": "Add Azure Cloud Services to diagram",
     "body": [
-      "AzureCloudServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCloudServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -651,7 +635,7 @@
     "prefix": "Azure Cloud Services with Description",
     "description": "Add Azure Cloud Services with Description to diagram",
     "body": [
-      "AzureCloudServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCloudServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -659,7 +643,7 @@
     "prefix": "Azure Container Service",
     "description": "Add Azure Container Service to diagram",
     "body": [
-      "AzureContainerService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureContainerService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -667,7 +651,7 @@
     "prefix": "Azure Container Service with Description",
     "description": "Add Azure Container Service with Description to diagram",
     "body": [
-      "AzureContainerService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureContainerService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -675,7 +659,7 @@
     "prefix": "Azure Disk",
     "description": "Add Azure Disk to diagram",
     "body": [
-      "AzureDisk(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDisk(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -683,7 +667,7 @@
     "prefix": "Azure Disk with Description",
     "description": "Add Azure Disk with Description to diagram",
     "body": [
-      "AzureDisk(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDisk(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -691,7 +675,7 @@
     "prefix": "Azure Disk Encryption Set",
     "description": "Add Azure Disk Encryption Set to diagram",
     "body": [
-      "AzureDiskEncryptionSet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDiskEncryptionSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -699,7 +683,7 @@
     "prefix": "Azure Disk Encryption Set with Description",
     "description": "Add Azure Disk Encryption Set with Description to diagram",
     "body": [
-      "AzureDiskEncryptionSet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDiskEncryptionSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -707,7 +691,7 @@
     "prefix": "Azure Disk Snapshot",
     "description": "Add Azure Disk Snapshot to diagram",
     "body": [
-      "AzureDiskSnapshot(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDiskSnapshot(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -715,7 +699,7 @@
     "prefix": "Azure Disk Snapshot with Description",
     "description": "Add Azure Disk Snapshot with Description to diagram",
     "body": [
-      "AzureDiskSnapshot(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDiskSnapshot(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -723,7 +707,7 @@
     "prefix": "Azure Function",
     "description": "Add Azure Function to diagram",
     "body": [
-      "AzureFunction(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureFunction(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -731,7 +715,7 @@
     "prefix": "Azure Function with Description",
     "description": "Add Azure Function with Description to diagram",
     "body": [
-      "AzureFunction(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureFunction(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -739,7 +723,7 @@
     "prefix": "Azure Image Classic",
     "description": "Add Azure Image Classic to diagram",
     "body": [
-      "AzureImageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureImageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -747,7 +731,7 @@
     "prefix": "Azure Image Classic with Description",
     "description": "Add Azure Image Classic with Description to diagram",
     "body": [
-      "AzureImageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureImageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -755,7 +739,7 @@
     "prefix": "Azure Image Definition",
     "description": "Add Azure Image Definition to diagram",
     "body": [
-      "AzureImageDefinition(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureImageDefinition(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -763,7 +747,7 @@
     "prefix": "Azure Image Definition with Description",
     "description": "Add Azure Image Definition with Description to diagram",
     "body": [
-      "AzureImageDefinition(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureImageDefinition(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -771,7 +755,7 @@
     "prefix": "Azure Image Version",
     "description": "Add Azure Image Version to diagram",
     "body": [
-      "AzureImageVersion(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureImageVersion(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -779,7 +763,7 @@
     "prefix": "Azure Image Version with Description",
     "description": "Add Azure Image Version with Description to diagram",
     "body": [
-      "AzureImageVersion(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureImageVersion(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -787,7 +771,7 @@
     "prefix": "Azure Mesh Application",
     "description": "Add Azure Mesh Application to diagram",
     "body": [
-      "AzureMeshApplication(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMeshApplication(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -795,7 +779,7 @@
     "prefix": "Azure Mesh Application with Description",
     "description": "Add Azure Mesh Application with Description to diagram",
     "body": [
-      "AzureMeshApplication(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMeshApplication(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -803,7 +787,7 @@
     "prefix": "Azure Server Farm",
     "description": "Add Azure Server Farm to diagram",
     "body": [
-      "AzureServerFarm(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServerFarm(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -811,7 +795,7 @@
     "prefix": "Azure Server Farm with Description",
     "description": "Add Azure Server Farm with Description to diagram",
     "body": [
-      "AzureServerFarm(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServerFarm(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -819,7 +803,7 @@
     "prefix": "Azure Service Fabric",
     "description": "Add Azure Service Fabric to diagram",
     "body": [
-      "AzureServiceFabric(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceFabric(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -827,7 +811,7 @@
     "prefix": "Azure Service Fabric with Description",
     "description": "Add Azure Service Fabric with Description to diagram",
     "body": [
-      "AzureServiceFabric(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceFabric(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -835,7 +819,7 @@
     "prefix": "Azure Shared Image Gallery",
     "description": "Add Azure Shared Image Gallery to diagram",
     "body": [
-      "AzureSharedImageGallery(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSharedImageGallery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -843,23 +827,7 @@
     "prefix": "Azure Shared Image Gallery with Description",
     "description": "Add Azure Shared Image Gallery with Description to diagram",
     "body": [
-      "AzureSharedImageGallery(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureSpringCloud": {
-    "prefix": "Azure Spring Cloud",
-    "description": "Add Azure Spring Cloud to diagram",
-    "body": [
-      "AzureSpringCloud(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureSpringCloud_Descr": {
-    "prefix": "Azure Spring Cloud with Description",
-    "description": "Add Azure Spring Cloud with Description to diagram",
-    "body": [
-      "AzureSpringCloud(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSharedImageGallery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -867,7 +835,7 @@
     "prefix": "Azure Virtual Desktop",
     "description": "Add Azure Virtual Desktop to diagram",
     "body": [
-      "AzureVirtualDesktop(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualDesktop(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -875,7 +843,7 @@
     "prefix": "Azure Virtual Desktop with Description",
     "description": "Add Azure Virtual Desktop with Description to diagram",
     "body": [
-      "AzureVirtualDesktop(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualDesktop(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -883,7 +851,7 @@
     "prefix": "Azure Virtual Desktop Application Group",
     "description": "Add Azure Virtual Desktop Application Group to diagram",
     "body": [
-      "AzureVirtualDesktopApplicationGroup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualDesktopApplicationGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -891,7 +859,7 @@
     "prefix": "Azure Virtual Desktop Application Group with Description",
     "description": "Add Azure Virtual Desktop Application Group with Description to diagram",
     "body": [
-      "AzureVirtualDesktopApplicationGroup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualDesktopApplicationGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -899,7 +867,7 @@
     "prefix": "Azure Virtual Desktop Host Pool",
     "description": "Add Azure Virtual Desktop Host Pool to diagram",
     "body": [
-      "AzureVirtualDesktopHostPool(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualDesktopHostPool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -907,7 +875,7 @@
     "prefix": "Azure Virtual Desktop Host Pool with Description",
     "description": "Add Azure Virtual Desktop Host Pool with Description to diagram",
     "body": [
-      "AzureVirtualDesktopHostPool(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualDesktopHostPool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -915,7 +883,7 @@
     "prefix": "Azure Virtual Desktop Workspace",
     "description": "Add Azure Virtual Desktop Workspace to diagram",
     "body": [
-      "AzureVirtualDesktopWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualDesktopWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -923,7 +891,7 @@
     "prefix": "Azure Virtual Desktop Workspace with Description",
     "description": "Add Azure Virtual Desktop Workspace with Description to diagram",
     "body": [
-      "AzureVirtualDesktopWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualDesktopWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -931,7 +899,7 @@
     "prefix": "Azure Virtual Machine",
     "description": "Add Azure Virtual Machine to diagram",
     "body": [
-      "AzureVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -939,7 +907,7 @@
     "prefix": "Azure Virtual Machine with Description",
     "description": "Add Azure Virtual Machine with Description to diagram",
     "body": [
-      "AzureVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -947,7 +915,7 @@
     "prefix": "Azure Virtual Machine Classic",
     "description": "Add Azure Virtual Machine Classic to diagram",
     "body": [
-      "AzureVirtualMachineClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualMachineClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -955,7 +923,7 @@
     "prefix": "Azure Virtual Machine Classic with Description",
     "description": "Add Azure Virtual Machine Classic with Description to diagram",
     "body": [
-      "AzureVirtualMachineClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualMachineClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -963,7 +931,7 @@
     "prefix": "Azure Virtual Machine Scale Set",
     "description": "Add Azure Virtual Machine Scale Set to diagram",
     "body": [
-      "AzureVirtualMachineScaleSet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualMachineScaleSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -971,7 +939,7 @@
     "prefix": "Azure Virtual Machine Scale Set with Description",
     "description": "Add Azure Virtual Machine Scale Set with Description to diagram",
     "body": [
-      "AzureVirtualMachineScaleSet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualMachineScaleSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -979,7 +947,7 @@
     "prefix": "Azure Web Slot",
     "description": "Add Azure Web Slot to diagram",
     "body": [
-      "AzureWebSlot(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWebSlot(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -987,7 +955,7 @@
     "prefix": "Azure Web Slot with Description",
     "description": "Add Azure Web Slot with Description to diagram",
     "body": [
-      "AzureWebSlot(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWebSlot(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -995,7 +963,7 @@
     "prefix": "Azure Web Test",
     "description": "Add Azure Web Test to diagram",
     "body": [
-      "AzureWebTest(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWebTest(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1003,7 +971,7 @@
     "prefix": "Azure Web Test with Description",
     "description": "Add Azure Web Test with Description to diagram",
     "body": [
-      "AzureWebTest(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWebTest(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1011,7 +979,7 @@
     "prefix": "Azure Workspace",
     "description": "Add Azure Workspace to diagram",
     "body": [
-      "AzureWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1019,7 +987,7 @@
     "prefix": "Azure Workspace with Description",
     "description": "Add Azure Workspace with Description to diagram",
     "body": [
-      "AzureWorkspace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWorkspace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1027,7 +995,7 @@
     "prefix": "Azure Container App",
     "description": "Add Azure Container App to diagram",
     "body": [
-      "AzureContainerApp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureContainerApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1035,7 +1003,7 @@
     "prefix": "Azure Container App with Description",
     "description": "Add Azure Container App with Description to diagram",
     "body": [
-      "AzureContainerApp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureContainerApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1043,7 +1011,7 @@
     "prefix": "Azure Container Instance",
     "description": "Add Azure Container Instance to diagram",
     "body": [
-      "AzureContainerInstance(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureContainerInstance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1051,7 +1019,7 @@
     "prefix": "Azure Container Instance with Description",
     "description": "Add Azure Container Instance with Description to diagram",
     "body": [
-      "AzureContainerInstance(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureContainerInstance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1059,7 +1027,7 @@
     "prefix": "Azure Container Registry",
     "description": "Add Azure Container Registry to diagram",
     "body": [
-      "AzureContainerRegistry(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureContainerRegistry(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1067,7 +1035,7 @@
     "prefix": "Azure Container Registry with Description",
     "description": "Add Azure Container Registry with Description to diagram",
     "body": [
-      "AzureContainerRegistry(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureContainerRegistry(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1075,7 +1043,7 @@
     "prefix": "Azure Kubernetes Service",
     "description": "Add Azure Kubernetes Service to diagram",
     "body": [
-      "AzureKubernetesService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureKubernetesService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1083,7 +1051,7 @@
     "prefix": "Azure Kubernetes Service with Description",
     "description": "Add Azure Kubernetes Service with Description to diagram",
     "body": [
-      "AzureKubernetesService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureKubernetesService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1091,7 +1059,7 @@
     "prefix": "Azure Service Environment",
     "description": "Add Azure Service Environment to diagram",
     "body": [
-      "AzureServiceEnvironment(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceEnvironment(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1099,7 +1067,7 @@
     "prefix": "Azure Service Environment with Description",
     "description": "Add Azure Service Environment with Description to diagram",
     "body": [
-      "AzureServiceEnvironment(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceEnvironment(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1107,7 +1075,7 @@
     "prefix": "Azure Cosmos Db",
     "description": "Add Azure Cosmos Db to diagram",
     "body": [
-      "AzureCosmosDb(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCosmosDb(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1115,7 +1083,7 @@
     "prefix": "Azure Cosmos Db with Description",
     "description": "Add Azure Cosmos Db with Description to diagram",
     "body": [
-      "AzureCosmosDb(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCosmosDb(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1123,7 +1091,7 @@
     "prefix": "Azure Database For Maria D B",
     "description": "Add Azure Database For Maria D B to diagram",
     "body": [
-      "AzureDatabaseForMariaDB(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDatabaseForMariaDB(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1131,7 +1099,7 @@
     "prefix": "Azure Database For Maria D B with Description",
     "description": "Add Azure Database For Maria D B with Description to diagram",
     "body": [
-      "AzureDatabaseForMariaDB(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDatabaseForMariaDB(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1139,7 +1107,7 @@
     "prefix": "Azure Database For My S Q L",
     "description": "Add Azure Database For My S Q L to diagram",
     "body": [
-      "AzureDatabaseForMySQL(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDatabaseForMySQL(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1147,7 +1115,7 @@
     "prefix": "Azure Database For My S Q L with Description",
     "description": "Add Azure Database For My S Q L with Description to diagram",
     "body": [
-      "AzureDatabaseForMySQL(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDatabaseForMySQL(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1155,7 +1123,7 @@
     "prefix": "Azure Database For Postgre S Q L",
     "description": "Add Azure Database For Postgre S Q L to diagram",
     "body": [
-      "AzureDatabaseForPostgreSQL(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDatabaseForPostgreSQL(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1163,7 +1131,7 @@
     "prefix": "Azure Database For Postgre S Q L with Description",
     "description": "Add Azure Database For Postgre S Q L with Description to diagram",
     "body": [
-      "AzureDatabaseForPostgreSQL(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDatabaseForPostgreSQL(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1171,7 +1139,7 @@
     "prefix": "Azure Database Migration Service",
     "description": "Add Azure Database Migration Service to diagram",
     "body": [
-      "AzureDatabaseMigrationService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDatabaseMigrationService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1179,7 +1147,7 @@
     "prefix": "Azure Database Migration Service with Description",
     "description": "Add Azure Database Migration Service with Description to diagram",
     "body": [
-      "AzureDatabaseMigrationService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDatabaseMigrationService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1187,7 +1155,7 @@
     "prefix": "Azure Data Bricks",
     "description": "Add Azure Data Bricks to diagram",
     "body": [
-      "AzureDataBricks(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataBricks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1195,7 +1163,7 @@
     "prefix": "Azure Data Bricks with Description",
     "description": "Add Azure Data Bricks with Description to diagram",
     "body": [
-      "AzureDataBricks(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataBricks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1203,7 +1171,7 @@
     "prefix": "Azure Data Explorer Cluster",
     "description": "Add Azure Data Explorer Cluster to diagram",
     "body": [
-      "AzureDataExplorerCluster(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataExplorerCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1211,23 +1179,7 @@
     "prefix": "Azure Data Explorer Cluster with Description",
     "description": "Add Azure Data Explorer Cluster with Description to diagram",
     "body": [
-      "AzureDataExplorerCluster(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureDataFactory": {
-    "prefix": "Azure Data Factory",
-    "description": "Add Azure Data Factory to diagram",
-    "body": [
-      "AzureDataFactory(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureDataFactory_Descr": {
-    "prefix": "Azure Data Factory with Description",
-    "description": "Add Azure Data Factory with Description to diagram",
-    "body": [
-      "AzureDataFactory(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataExplorerCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1235,7 +1187,7 @@
     "prefix": "Azure Instance Pool",
     "description": "Add Azure Instance Pool to diagram",
     "body": [
-      "AzureInstancePool(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureInstancePool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1243,7 +1195,7 @@
     "prefix": "Azure Instance Pool with Description",
     "description": "Add Azure Instance Pool with Description to diagram",
     "body": [
-      "AzureInstancePool(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureInstancePool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1251,7 +1203,7 @@
     "prefix": "Azure Managed Database",
     "description": "Add Azure Managed Database to diagram",
     "body": [
-      "AzureManagedDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagedDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1259,7 +1211,7 @@
     "prefix": "Azure Managed Database with Description",
     "description": "Add Azure Managed Database with Description to diagram",
     "body": [
-      "AzureManagedDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagedDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1267,7 +1219,7 @@
     "prefix": "Azure Redis Cache",
     "description": "Add Azure Redis Cache to diagram",
     "body": [
-      "AzureRedisCache(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRedisCache(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1275,7 +1227,7 @@
     "prefix": "Azure Redis Cache with Description",
     "description": "Add Azure Redis Cache with Description to diagram",
     "body": [
-      "AzureRedisCache(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRedisCache(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1283,7 +1235,7 @@
     "prefix": "Azure Sql",
     "description": "Add Azure Sql to diagram",
     "body": [
-      "AzureSql(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSql(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1291,7 +1243,7 @@
     "prefix": "Azure Sql with Description",
     "description": "Add Azure Sql with Description to diagram",
     "body": [
-      "AzureSql(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSql(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1299,7 +1251,7 @@
     "prefix": "Azure Sql Database",
     "description": "Add Azure Sql Database to diagram",
     "body": [
-      "AzureSqlDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1307,7 +1259,7 @@
     "prefix": "Azure Sql Database with Description",
     "description": "Add Azure Sql Database with Description to diagram",
     "body": [
-      "AzureSqlDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1315,7 +1267,7 @@
     "prefix": "Azure Sql Data Warehouse",
     "description": "Add Azure Sql Data Warehouse to diagram",
     "body": [
-      "AzureSqlDataWarehouse(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlDataWarehouse(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1323,7 +1275,7 @@
     "prefix": "Azure Sql Data Warehouse with Description",
     "description": "Add Azure Sql Data Warehouse with Description to diagram",
     "body": [
-      "AzureSqlDataWarehouse(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlDataWarehouse(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1331,7 +1283,7 @@
     "prefix": "Azure Sql Elastic Pool",
     "description": "Add Azure Sql Elastic Pool to diagram",
     "body": [
-      "AzureSqlElasticPool(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlElasticPool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1339,7 +1291,7 @@
     "prefix": "Azure Sql Elastic Pool with Description",
     "description": "Add Azure Sql Elastic Pool with Description to diagram",
     "body": [
-      "AzureSqlElasticPool(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlElasticPool(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1347,7 +1299,7 @@
     "prefix": "Azure Sql Managed Instance",
     "description": "Add Azure Sql Managed Instance to diagram",
     "body": [
-      "AzureSqlManagedInstance(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlManagedInstance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1355,7 +1307,7 @@
     "prefix": "Azure Sql Managed Instance with Description",
     "description": "Add Azure Sql Managed Instance with Description to diagram",
     "body": [
-      "AzureSqlManagedInstance(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlManagedInstance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1363,7 +1315,7 @@
     "prefix": "Azure Sql Server",
     "description": "Add Azure Sql Server to diagram",
     "body": [
-      "AzureSqlServer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlServer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1371,7 +1323,7 @@
     "prefix": "Azure Sql Server with Description",
     "description": "Add Azure Sql Server with Description to diagram",
     "body": [
-      "AzureSqlServer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlServer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1379,7 +1331,7 @@
     "prefix": "Azure Sql Stretch Database",
     "description": "Add Azure Sql Stretch Database to diagram",
     "body": [
-      "AzureSqlStretchDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlStretchDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1387,7 +1339,7 @@
     "prefix": "Azure Sql Stretch Database with Description",
     "description": "Add Azure Sql Stretch Database with Description to diagram",
     "body": [
-      "AzureSqlStretchDatabase(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlStretchDatabase(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1395,7 +1347,7 @@
     "prefix": "Azure Sql Virtual Machine",
     "description": "Add Azure Sql Virtual Machine to diagram",
     "body": [
-      "AzureSqlVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSqlVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1403,7 +1355,7 @@
     "prefix": "Azure Sql Virtual Machine with Description",
     "description": "Add Azure Sql Virtual Machine with Description to diagram",
     "body": [
-      "AzureSqlVirtualMachine(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSqlVirtualMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1411,7 +1363,7 @@
     "prefix": "Azure S S I S Lift And Shift",
     "description": "Add Azure S S I S Lift And Shift to diagram",
     "body": [
-      "AzureSSISLiftAndShift(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSSISLiftAndShift(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1419,7 +1371,7 @@
     "prefix": "Azure S S I S Lift And Shift with Description",
     "description": "Add Azure S S I S Lift And Shift with Description to diagram",
     "body": [
-      "AzureSSISLiftAndShift(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSSISLiftAndShift(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1427,7 +1379,7 @@
     "prefix": "Azure Virtual Cluster",
     "description": "Add Azure Virtual Cluster to diagram",
     "body": [
-      "AzureVirtualCluster(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1435,7 +1387,7 @@
     "prefix": "Azure Virtual Cluster with Description",
     "description": "Add Azure Virtual Cluster with Description to diagram",
     "body": [
-      "AzureVirtualCluster(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualCluster(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1443,7 +1395,7 @@
     "prefix": "Azure Application Insights",
     "description": "Add Azure Application Insights to diagram",
     "body": [
-      "AzureApplicationInsights(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureApplicationInsights(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1451,7 +1403,7 @@
     "prefix": "Azure Application Insights with Description",
     "description": "Add Azure Application Insights with Description to diagram",
     "body": [
-      "AzureApplicationInsights(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureApplicationInsights(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1459,7 +1411,7 @@
     "prefix": "Azure Artifacts",
     "description": "Add Azure Artifacts to diagram",
     "body": [
-      "AzureArtifacts(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureArtifacts(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1467,7 +1419,7 @@
     "prefix": "Azure Artifacts with Description",
     "description": "Add Azure Artifacts with Description to diagram",
     "body": [
-      "AzureArtifacts(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureArtifacts(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1475,7 +1427,7 @@
     "prefix": "Azure Boards",
     "description": "Add Azure Boards to diagram",
     "body": [
-      "AzureBoards(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBoards(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1483,7 +1435,7 @@
     "prefix": "Azure Boards with Description",
     "description": "Add Azure Boards with Description to diagram",
     "body": [
-      "AzureBoards(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBoards(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1491,7 +1443,7 @@
     "prefix": "Azure Dev Ops",
     "description": "Add Azure Dev Ops to diagram",
     "body": [
-      "AzureDevOps(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDevOps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1499,7 +1451,7 @@
     "prefix": "Azure Dev Ops with Description",
     "description": "Add Azure Dev Ops with Description to diagram",
     "body": [
-      "AzureDevOps(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDevOps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1507,7 +1459,7 @@
     "prefix": "Azure Dev Ops Organisation",
     "description": "Add Azure Dev Ops Organisation to diagram",
     "body": [
-      "AzureDevOpsOrganisation(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDevOpsOrganisation(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1515,7 +1467,7 @@
     "prefix": "Azure Dev Ops Organisation with Description",
     "description": "Add Azure Dev Ops Organisation with Description to diagram",
     "body": [
-      "AzureDevOpsOrganisation(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDevOpsOrganisation(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1523,7 +1475,7 @@
     "prefix": "Azure Dev Test Labs",
     "description": "Add Azure Dev Test Labs to diagram",
     "body": [
-      "AzureDevTestLabs(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDevTestLabs(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1531,7 +1483,7 @@
     "prefix": "Azure Dev Test Labs with Description",
     "description": "Add Azure Dev Test Labs with Description to diagram",
     "body": [
-      "AzureDevTestLabs(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDevTestLabs(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1539,7 +1491,7 @@
     "prefix": "Azure Lab Services",
     "description": "Add Azure Lab Services to diagram",
     "body": [
-      "AzureLabServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLabServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1547,7 +1499,7 @@
     "prefix": "Azure Lab Services with Description",
     "description": "Add Azure Lab Services with Description to diagram",
     "body": [
-      "AzureLabServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLabServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1555,7 +1507,7 @@
     "prefix": "Azure Pipelines",
     "description": "Add Azure Pipelines to diagram",
     "body": [
-      "AzurePipelines(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePipelines(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1563,7 +1515,7 @@
     "prefix": "Azure Pipelines with Description",
     "description": "Add Azure Pipelines with Description to diagram",
     "body": [
-      "AzurePipelines(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePipelines(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1571,7 +1523,7 @@
     "prefix": "Azure Repos",
     "description": "Add Azure Repos to diagram",
     "body": [
-      "AzureRepos(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRepos(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1579,7 +1531,7 @@
     "prefix": "Azure Repos with Description",
     "description": "Add Azure Repos with Description to diagram",
     "body": [
-      "AzureRepos(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRepos(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1587,7 +1539,7 @@
     "prefix": "Azure Test Plans",
     "description": "Add Azure Test Plans to diagram",
     "body": [
-      "AzureTestPlans(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTestPlans(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1595,7 +1547,7 @@
     "prefix": "Azure Test Plans with Description",
     "description": "Add Azure Test Plans with Description to diagram",
     "body": [
-      "AzureTestPlans(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTestPlans(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1603,7 +1555,7 @@
     "prefix": "Azure",
     "description": "Add Azure to diagram",
     "body": [
-      "Azure(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "Azure(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1611,7 +1563,7 @@
     "prefix": "Azure with Description",
     "description": "Add Azure with Description to diagram",
     "body": [
-      "Azure(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "Azure(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1619,7 +1571,7 @@
     "prefix": "Azure Workbook",
     "description": "Add Azure Workbook to diagram",
     "body": [
-      "AzureWorkbook(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWorkbook(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1627,7 +1579,7 @@
     "prefix": "Azure Workbook with Description",
     "description": "Add Azure Workbook with Description to diagram",
     "body": [
-      "AzureWorkbook(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWorkbook(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1635,7 +1587,7 @@
     "prefix": "Azure Workflow",
     "description": "Add Azure Workflow to diagram",
     "body": [
-      "AzureWorkflow(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWorkflow(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1643,7 +1595,7 @@
     "prefix": "Azure Workflow with Description",
     "description": "Add Azure Workflow with Description to diagram",
     "body": [
-      "AzureWorkflow(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWorkflow(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1651,7 +1603,7 @@
     "prefix": "D I C O M Service",
     "description": "Add D I C O M Service to diagram",
     "body": [
-      "DICOMService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "DICOMService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1659,7 +1611,7 @@
     "prefix": "D I C O M Service with Description",
     "description": "Add D I C O M Service with Description to diagram",
     "body": [
-      "DICOMService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "DICOMService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1667,7 +1619,7 @@
     "prefix": "F H I R Service",
     "description": "Add F H I R Service to diagram",
     "body": [
-      "FHIRService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "FHIRService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1675,7 +1627,7 @@
     "prefix": "F H I R Service with Description",
     "description": "Add F H I R Service with Description to diagram",
     "body": [
-      "FHIRService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "FHIRService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1683,7 +1635,7 @@
     "prefix": "Health Data Services",
     "description": "Add Health Data Services to diagram",
     "body": [
-      "HealthDataServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "HealthDataServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1691,7 +1643,7 @@
     "prefix": "Health Data Services with Description",
     "description": "Add Health Data Services with Description to diagram",
     "body": [
-      "HealthDataServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "HealthDataServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1699,7 +1651,7 @@
     "prefix": "Med Tech Service",
     "description": "Add Med Tech Service to diagram",
     "body": [
-      "MedTechService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "MedTechService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1707,23 +1659,7 @@
     "prefix": "Med Tech Service with Description",
     "description": "Add Med Tech Service with Description to diagram",
     "body": [
-      "MedTechService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectory": {
-    "prefix": "Azure Active Directory",
-    "description": "Add Azure Active Directory to diagram",
-    "body": [
-      "AzureActiveDirectory(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectory_Descr": {
-    "prefix": "Azure Active Directory with Description",
-    "description": "Add Azure Active Directory with Description to diagram",
-    "body": [
-      "AzureActiveDirectory(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "MedTechService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1731,7 +1667,7 @@
     "prefix": "Azure Active Directory B2 C",
     "description": "Add Azure Active Directory B2 C to diagram",
     "body": [
-      "AzureActiveDirectoryB2C(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureActiveDirectoryB2C(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1739,7 +1675,7 @@
     "prefix": "Azure Active Directory B2 C with Description",
     "description": "Add Azure Active Directory B2 C with Description to diagram",
     "body": [
-      "AzureActiveDirectoryB2C(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureActiveDirectoryB2C(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1747,7 +1683,7 @@
     "prefix": "Azure Active Directory Connect Health",
     "description": "Add Azure Active Directory Connect Health to diagram",
     "body": [
-      "AzureActiveDirectoryConnectHealth(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureActiveDirectoryConnectHealth(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1755,23 +1691,7 @@
     "prefix": "Azure Active Directory Connect Health with Description",
     "description": "Add Azure Active Directory Connect Health with Description to diagram",
     "body": [
-      "AzureActiveDirectoryConnectHealth(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryDomainServices": {
-    "prefix": "Azure Active Directory Domain Services",
-    "description": "Add Azure Active Directory Domain Services to diagram",
-    "body": [
-      "AzureActiveDirectoryDomainServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryDomainServices_Descr": {
-    "prefix": "Azure Active Directory Domain Services with Description",
-    "description": "Add Azure Active Directory Domain Services with Description to diagram",
-    "body": [
-      "AzureActiveDirectoryDomainServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureActiveDirectoryConnectHealth(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1779,7 +1699,7 @@
     "prefix": "Azure Active Directory Group",
     "description": "Add Azure Active Directory Group to diagram",
     "body": [
-      "AzureActiveDirectoryGroup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureActiveDirectoryGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1787,39 +1707,7 @@
     "prefix": "Azure Active Directory Group with Description",
     "description": "Add Azure Active Directory Group with Description to diagram",
     "body": [
-      "AzureActiveDirectoryGroup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryIdentityProtection": {
-    "prefix": "Azure Active Directory Identity Protection",
-    "description": "Add Azure Active Directory Identity Protection to diagram",
-    "body": [
-      "AzureActiveDirectoryIdentityProtection(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryIdentityProtection_Descr": {
-    "prefix": "Azure Active Directory Identity Protection with Description",
-    "description": "Add Azure Active Directory Identity Protection with Description to diagram",
-    "body": [
-      "AzureActiveDirectoryIdentityProtection(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryRolesAndAdministrators": {
-    "prefix": "Azure Active Directory Roles And Administrators",
-    "description": "Add Azure Active Directory Roles And Administrators to diagram",
-    "body": [
-      "AzureActiveDirectoryRolesAndAdministrators(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureActiveDirectoryRolesAndAdministrators_Descr": {
-    "prefix": "Azure Active Directory Roles And Administrators with Description",
-    "description": "Add Azure Active Directory Roles And Administrators with Description to diagram",
-    "body": [
-      "AzureActiveDirectoryRolesAndAdministrators(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureActiveDirectoryGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1827,7 +1715,7 @@
     "prefix": "Azure Active Directory User",
     "description": "Add Azure Active Directory User to diagram",
     "body": [
-      "AzureActiveDirectoryUser(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureActiveDirectoryUser(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1835,7 +1723,7 @@
     "prefix": "Azure Active Directory User with Description",
     "description": "Add Azure Active Directory User with Description to diagram",
     "body": [
-      "AzureActiveDirectoryUser(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureActiveDirectoryUser(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1843,7 +1731,7 @@
     "prefix": "Azure App Registration",
     "description": "Add Azure App Registration to diagram",
     "body": [
-      "AzureAppRegistration(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppRegistration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1851,7 +1739,7 @@
     "prefix": "Azure App Registration with Description",
     "description": "Add Azure App Registration with Description to diagram",
     "body": [
-      "AzureAppRegistration(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppRegistration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1859,7 +1747,7 @@
     "prefix": "Azure Enterprise Application",
     "description": "Add Azure Enterprise Application to diagram",
     "body": [
-      "AzureEnterpriseApplication(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEnterpriseApplication(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1867,7 +1755,7 @@
     "prefix": "Azure Enterprise Application with Description",
     "description": "Add Azure Enterprise Application with Description to diagram",
     "body": [
-      "AzureEnterpriseApplication(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEnterpriseApplication(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1875,7 +1763,7 @@
     "prefix": "Azure Identity Governance",
     "description": "Add Azure Identity Governance to diagram",
     "body": [
-      "AzureIdentityGovernance(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIdentityGovernance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1883,7 +1771,7 @@
     "prefix": "Azure Identity Governance with Description",
     "description": "Add Azure Identity Governance with Description to diagram",
     "body": [
-      "AzureIdentityGovernance(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIdentityGovernance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1891,7 +1779,7 @@
     "prefix": "Azure Managed Identity",
     "description": "Add Azure Managed Identity to diagram",
     "body": [
-      "AzureManagedIdentity(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagedIdentity(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1899,7 +1787,7 @@
     "prefix": "Azure Managed Identity with Description",
     "description": "Add Azure Managed Identity with Description to diagram",
     "body": [
-      "AzureManagedIdentity(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagedIdentity(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1907,7 +1795,7 @@
     "prefix": "Azure Biz Talk",
     "description": "Add Azure Biz Talk to diagram",
     "body": [
-      "AzureBizTalk(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBizTalk(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1915,7 +1803,7 @@
     "prefix": "Azure Biz Talk with Description",
     "description": "Add Azure Biz Talk with Description to diagram",
     "body": [
-      "AzureBizTalk(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBizTalk(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1923,7 +1811,7 @@
     "prefix": "Azure Event Grid",
     "description": "Add Azure Event Grid to diagram",
     "body": [
-      "AzureEventGrid(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventGrid(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1931,7 +1819,7 @@
     "prefix": "Azure Event Grid with Description",
     "description": "Add Azure Event Grid with Description to diagram",
     "body": [
-      "AzureEventGrid(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventGrid(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1939,7 +1827,7 @@
     "prefix": "Azure Event Grid Domain",
     "description": "Add Azure Event Grid Domain to diagram",
     "body": [
-      "AzureEventGridDomain(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventGridDomain(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1947,7 +1835,7 @@
     "prefix": "Azure Event Grid Domain with Description",
     "description": "Add Azure Event Grid Domain with Description to diagram",
     "body": [
-      "AzureEventGridDomain(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventGridDomain(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1955,7 +1843,7 @@
     "prefix": "Azure Event Grid Subscription",
     "description": "Add Azure Event Grid Subscription to diagram",
     "body": [
-      "AzureEventGridSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventGridSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1963,7 +1851,7 @@
     "prefix": "Azure Event Grid Subscription with Description",
     "description": "Add Azure Event Grid Subscription with Description to diagram",
     "body": [
-      "AzureEventGridSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventGridSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1971,7 +1859,7 @@
     "prefix": "Azure Event Grid Topic",
     "description": "Add Azure Event Grid Topic to diagram",
     "body": [
-      "AzureEventGridTopic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureEventGridTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1979,7 +1867,7 @@
     "prefix": "Azure Event Grid Topic with Description",
     "description": "Add Azure Event Grid Topic with Description to diagram",
     "body": [
-      "AzureEventGridTopic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureEventGridTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -1987,7 +1875,7 @@
     "prefix": "Azure Integration Account",
     "description": "Add Azure Integration Account to diagram",
     "body": [
-      "AzureIntegrationAccount(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIntegrationAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -1995,7 +1883,7 @@
     "prefix": "Azure Integration Account with Description",
     "description": "Add Azure Integration Account with Description to diagram",
     "body": [
-      "AzureIntegrationAccount(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIntegrationAccount(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2003,7 +1891,7 @@
     "prefix": "Azure Logic Apps",
     "description": "Add Azure Logic Apps to diagram",
     "body": [
-      "AzureLogicApps(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLogicApps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2011,7 +1899,7 @@
     "prefix": "Azure Logic Apps with Description",
     "description": "Add Azure Logic Apps with Description to diagram",
     "body": [
-      "AzureLogicApps(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLogicApps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2019,7 +1907,7 @@
     "prefix": "Azure Partner Topic",
     "description": "Add Azure Partner Topic to diagram",
     "body": [
-      "AzurePartnerTopic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePartnerTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2027,23 +1915,7 @@
     "prefix": "Azure Partner Topic with Description",
     "description": "Add Azure Partner Topic with Description to diagram",
     "body": [
-      "AzurePartnerTopic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureServiceBus": {
-    "prefix": "Azure Service Bus",
-    "description": "Add Azure Service Bus to diagram",
-    "body": [
-      "AzureServiceBus(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureServiceBus_Descr": {
-    "prefix": "Azure Service Bus with Description",
-    "description": "Add Azure Service Bus with Description to diagram",
-    "body": [
-      "AzureServiceBus(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePartnerTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2051,7 +1923,7 @@
     "prefix": "Azure Service Bus Queue",
     "description": "Add Azure Service Bus Queue to diagram",
     "body": [
-      "AzureServiceBusQueue(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceBusQueue(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2059,7 +1931,7 @@
     "prefix": "Azure Service Bus Queue with Description",
     "description": "Add Azure Service Bus Queue with Description to diagram",
     "body": [
-      "AzureServiceBusQueue(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceBusQueue(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2067,7 +1939,7 @@
     "prefix": "Azure Service Bus Topic",
     "description": "Add Azure Service Bus Topic to diagram",
     "body": [
-      "AzureServiceBusTopic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceBusTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2075,7 +1947,7 @@
     "prefix": "Azure Service Bus Topic with Description",
     "description": "Add Azure Service Bus Topic with Description to diagram",
     "body": [
-      "AzureServiceBusTopic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceBusTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2083,7 +1955,7 @@
     "prefix": "Azure System Topic",
     "description": "Add Azure System Topic to diagram",
     "body": [
-      "AzureSystemTopic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSystemTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2091,7 +1963,7 @@
     "prefix": "Azure System Topic with Description",
     "description": "Add Azure System Topic with Description to diagram",
     "body": [
-      "AzureSystemTopic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSystemTopic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2099,7 +1971,7 @@
     "prefix": "Azure Device Provisioning Service",
     "description": "Add Azure Device Provisioning Service to diagram",
     "body": [
-      "AzureDeviceProvisioningService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDeviceProvisioningService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2107,7 +1979,7 @@
     "prefix": "Azure Device Provisioning Service with Description",
     "description": "Add Azure Device Provisioning Service with Description to diagram",
     "body": [
-      "AzureDeviceProvisioningService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDeviceProvisioningService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2115,7 +1987,7 @@
     "prefix": "Azure Digital Twins",
     "description": "Add Azure Digital Twins to diagram",
     "body": [
-      "AzureDigitalTwins(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDigitalTwins(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2123,7 +1995,7 @@
     "prefix": "Azure Digital Twins with Description",
     "description": "Add Azure Digital Twins with Description to diagram",
     "body": [
-      "AzureDigitalTwins(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDigitalTwins(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2131,7 +2003,7 @@
     "prefix": "Azure Io T Central",
     "description": "Add Azure Io T Central to diagram",
     "body": [
-      "AzureIoTCentral(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIoTCentral(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2139,7 +2011,7 @@
     "prefix": "Azure Io T Central with Description",
     "description": "Add Azure Io T Central with Description to diagram",
     "body": [
-      "AzureIoTCentral(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIoTCentral(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2147,7 +2019,7 @@
     "prefix": "Azure Io T Central Applications",
     "description": "Add Azure Io T Central Applications to diagram",
     "body": [
-      "AzureIoTCentralApplications(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIoTCentralApplications(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2155,7 +2027,7 @@
     "prefix": "Azure Io T Central Applications with Description",
     "description": "Add Azure Io T Central Applications with Description to diagram",
     "body": [
-      "AzureIoTCentralApplications(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIoTCentralApplications(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2163,7 +2035,7 @@
     "prefix": "Azure Io T Edge",
     "description": "Add Azure Io T Edge to diagram",
     "body": [
-      "AzureIoTEdge(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIoTEdge(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2171,7 +2043,7 @@
     "prefix": "Azure Io T Edge with Description",
     "description": "Add Azure Io T Edge with Description to diagram",
     "body": [
-      "AzureIoTEdge(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIoTEdge(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2179,7 +2051,7 @@
     "prefix": "Azure Io T Hub",
     "description": "Add Azure Io T Hub to diagram",
     "body": [
-      "AzureIoTHub(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIoTHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2187,7 +2059,7 @@
     "prefix": "Azure Io T Hub with Description",
     "description": "Add Azure Io T Hub with Description to diagram",
     "body": [
-      "AzureIoTHub(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIoTHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2195,7 +2067,7 @@
     "prefix": "Azure Maps",
     "description": "Add Azure Maps to diagram",
     "body": [
-      "AzureMaps(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMaps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2203,7 +2075,7 @@
     "prefix": "Azure Maps with Description",
     "description": "Add Azure Maps with Description to diagram",
     "body": [
-      "AzureMaps(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMaps(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2211,7 +2083,7 @@
     "prefix": "Azure Time Series Data Set",
     "description": "Add Azure Time Series Data Set to diagram",
     "body": [
-      "AzureTimeSeriesDataSet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTimeSeriesDataSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2219,7 +2091,7 @@
     "prefix": "Azure Time Series Data Set with Description",
     "description": "Add Azure Time Series Data Set with Description to diagram",
     "body": [
-      "AzureTimeSeriesDataSet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTimeSeriesDataSet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2227,7 +2099,7 @@
     "prefix": "Azure Time Series Insights",
     "description": "Add Azure Time Series Insights to diagram",
     "body": [
-      "AzureTimeSeriesInsights(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTimeSeriesInsights(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2235,7 +2107,7 @@
     "prefix": "Azure Time Series Insights with Description",
     "description": "Add Azure Time Series Insights with Description to diagram",
     "body": [
-      "AzureTimeSeriesInsights(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTimeSeriesInsights(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2243,7 +2115,7 @@
     "prefix": "Azure Time Series Insights Access Policy",
     "description": "Add Azure Time Series Insights Access Policy to diagram",
     "body": [
-      "AzureTimeSeriesInsightsAccessPolicy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTimeSeriesInsightsAccessPolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2251,7 +2123,7 @@
     "prefix": "Azure Time Series Insights Access Policy with Description",
     "description": "Add Azure Time Series Insights Access Policy with Description to diagram",
     "body": [
-      "AzureTimeSeriesInsightsAccessPolicy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTimeSeriesInsightsAccessPolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2259,7 +2131,7 @@
     "prefix": "Azure Time Series Insights Environment",
     "description": "Add Azure Time Series Insights Environment to diagram",
     "body": [
-      "AzureTimeSeriesInsightsEnvironment(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTimeSeriesInsightsEnvironment(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2267,7 +2139,7 @@
     "prefix": "Azure Time Series Insights Environment with Description",
     "description": "Add Azure Time Series Insights Environment with Description to diagram",
     "body": [
-      "AzureTimeSeriesInsightsEnvironment(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTimeSeriesInsightsEnvironment(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2275,7 +2147,7 @@
     "prefix": "Azure Time Series Insights Event Source",
     "description": "Add Azure Time Series Insights Event Source to diagram",
     "body": [
-      "AzureTimeSeriesInsightsEventSource(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTimeSeriesInsightsEventSource(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2283,7 +2155,7 @@
     "prefix": "Azure Time Series Insights Event Source with Description",
     "description": "Add Azure Time Series Insights Event Source with Description to diagram",
     "body": [
-      "AzureTimeSeriesInsightsEventSource(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTimeSeriesInsightsEventSource(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2291,7 +2163,7 @@
     "prefix": "Azure Intune",
     "description": "Add Azure Intune to diagram",
     "body": [
-      "AzureIntune(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIntune(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2299,7 +2171,7 @@
     "prefix": "Azure Intune with Description",
     "description": "Add Azure Intune with Description to diagram",
     "body": [
-      "AzureIntune(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIntune(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2307,7 +2179,7 @@
     "prefix": "Azure Intune Apple",
     "description": "Add Azure Intune Apple to diagram",
     "body": [
-      "AzureIntuneApple(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIntuneApple(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2315,7 +2187,7 @@
     "prefix": "Azure Intune Apple with Description",
     "description": "Add Azure Intune Apple with Description to diagram",
     "body": [
-      "AzureIntuneApple(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIntuneApple(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2323,7 +2195,7 @@
     "prefix": "Azure Intune Google",
     "description": "Add Azure Intune Google to diagram",
     "body": [
-      "AzureIntuneGoogle(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIntuneGoogle(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2331,7 +2203,7 @@
     "prefix": "Azure Intune Google with Description",
     "description": "Add Azure Intune Google with Description to diagram",
     "body": [
-      "AzureIntuneGoogle(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIntuneGoogle(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2339,7 +2211,7 @@
     "prefix": "Azure Intune Windows",
     "description": "Add Azure Intune Windows to diagram",
     "body": [
-      "AzureIntuneWindows(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIntuneWindows(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2347,7 +2219,7 @@
     "prefix": "Azure Intune Windows with Description",
     "description": "Add Azure Intune Windows with Description to diagram",
     "body": [
-      "AzureIntuneWindows(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIntuneWindows(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2355,7 +2227,7 @@
     "prefix": "App Configuration",
     "description": "Add App Configuration to diagram",
     "body": [
-      "AppConfiguration(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AppConfiguration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2363,7 +2235,7 @@
     "prefix": "App Configuration with Description",
     "description": "Add App Configuration with Description to diagram",
     "body": [
-      "AppConfiguration(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AppConfiguration(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2371,7 +2243,7 @@
     "prefix": "Azure Arc",
     "description": "Add Azure Arc to diagram",
     "body": [
-      "AzureArc(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureArc(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2379,7 +2251,7 @@
     "prefix": "Azure Arc with Description",
     "description": "Add Azure Arc with Description to diagram",
     "body": [
-      "AzureArc(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureArc(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2387,7 +2259,7 @@
     "prefix": "Azure Arc Machine",
     "description": "Add Azure Arc Machine to diagram",
     "body": [
-      "AzureArcMachine(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureArcMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2395,7 +2267,7 @@
     "prefix": "Azure Arc Machine with Description",
     "description": "Add Azure Arc Machine with Description to diagram",
     "body": [
-      "AzureArcMachine(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureArcMachine(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2403,7 +2275,7 @@
     "prefix": "Azure Automation",
     "description": "Add Azure Automation to diagram",
     "body": [
-      "AzureAutomation(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAutomation(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2411,7 +2283,7 @@
     "prefix": "Azure Automation with Description",
     "description": "Add Azure Automation with Description to diagram",
     "body": [
-      "AzureAutomation(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAutomation(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2419,7 +2291,7 @@
     "prefix": "Azure Backup",
     "description": "Add Azure Backup to diagram",
     "body": [
-      "AzureBackup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBackup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2427,7 +2299,7 @@
     "prefix": "Azure Backup with Description",
     "description": "Add Azure Backup with Description to diagram",
     "body": [
-      "AzureBackup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBackup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2435,7 +2307,7 @@
     "prefix": "Azure Blueprints",
     "description": "Add Azure Blueprints to diagram",
     "body": [
-      "AzureBlueprints(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBlueprints(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2443,7 +2315,7 @@
     "prefix": "Azure Blueprints with Description",
     "description": "Add Azure Blueprints with Description to diagram",
     "body": [
-      "AzureBlueprints(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBlueprints(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2451,7 +2323,7 @@
     "prefix": "Azure Compliance",
     "description": "Add Azure Compliance to diagram",
     "body": [
-      "AzureCompliance(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCompliance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2459,7 +2331,7 @@
     "prefix": "Azure Compliance with Description",
     "description": "Add Azure Compliance with Description to diagram",
     "body": [
-      "AzureCompliance(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCompliance(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2467,7 +2339,7 @@
     "prefix": "Azure Cost Alert",
     "description": "Add Azure Cost Alert to diagram",
     "body": [
-      "AzureCostAlert(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCostAlert(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2475,7 +2347,7 @@
     "prefix": "Azure Cost Alert with Description",
     "description": "Add Azure Cost Alert with Description to diagram",
     "body": [
-      "AzureCostAlert(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCostAlert(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2483,7 +2355,7 @@
     "prefix": "Azure Cost Analysis",
     "description": "Add Azure Cost Analysis to diagram",
     "body": [
-      "AzureCostAnalysis(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCostAnalysis(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2491,7 +2363,7 @@
     "prefix": "Azure Cost Analysis with Description",
     "description": "Add Azure Cost Analysis with Description to diagram",
     "body": [
-      "AzureCostAnalysis(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCostAnalysis(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2499,7 +2371,7 @@
     "prefix": "Azure Cost Budget",
     "description": "Add Azure Cost Budget to diagram",
     "body": [
-      "AzureCostBudget(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCostBudget(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2507,7 +2379,7 @@
     "prefix": "Azure Cost Budget with Description",
     "description": "Add Azure Cost Budget with Description to diagram",
     "body": [
-      "AzureCostBudget(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCostBudget(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2515,7 +2387,7 @@
     "prefix": "Azure Cost Management",
     "description": "Add Azure Cost Management to diagram",
     "body": [
-      "AzureCostManagement(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCostManagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2523,7 +2395,7 @@
     "prefix": "Azure Cost Management with Description",
     "description": "Add Azure Cost Management with Description to diagram",
     "body": [
-      "AzureCostManagement(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCostManagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2531,7 +2403,7 @@
     "prefix": "Azure Cost Management And Billing",
     "description": "Add Azure Cost Management And Billing to diagram",
     "body": [
-      "AzureCostManagementAndBilling(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCostManagementAndBilling(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2539,7 +2411,7 @@
     "prefix": "Azure Cost Management And Billing with Description",
     "description": "Add Azure Cost Management And Billing with Description to diagram",
     "body": [
-      "AzureCostManagementAndBilling(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCostManagementAndBilling(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2547,7 +2419,7 @@
     "prefix": "Azure Geo Recovery",
     "description": "Add Azure Geo Recovery to diagram",
     "body": [
-      "AzureGeoRecovery(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureGeoRecovery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2555,7 +2427,7 @@
     "prefix": "Azure Geo Recovery with Description",
     "description": "Add Azure Geo Recovery with Description to diagram",
     "body": [
-      "AzureGeoRecovery(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureGeoRecovery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2563,7 +2435,7 @@
     "prefix": "Azure Lighthouse",
     "description": "Add Azure Lighthouse to diagram",
     "body": [
-      "AzureLighthouse(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLighthouse(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2571,7 +2443,7 @@
     "prefix": "Azure Lighthouse with Description",
     "description": "Add Azure Lighthouse with Description to diagram",
     "body": [
-      "AzureLighthouse(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLighthouse(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2579,7 +2451,7 @@
     "prefix": "Azure Log Analytics",
     "description": "Add Azure Log Analytics to diagram",
     "body": [
-      "AzureLogAnalytics(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLogAnalytics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2587,7 +2459,7 @@
     "prefix": "Azure Log Analytics with Description",
     "description": "Add Azure Log Analytics with Description to diagram",
     "body": [
-      "AzureLogAnalytics(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLogAnalytics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2595,7 +2467,7 @@
     "prefix": "Azure Managed Application Center",
     "description": "Add Azure Managed Application Center to diagram",
     "body": [
-      "AzureManagedApplicationCenter(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagedApplicationCenter(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2603,7 +2475,7 @@
     "prefix": "Azure Managed Application Center with Description",
     "description": "Add Azure Managed Application Center with Description to diagram",
     "body": [
-      "AzureManagedApplicationCenter(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagedApplicationCenter(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2611,7 +2483,7 @@
     "prefix": "Azure Managed Applications",
     "description": "Add Azure Managed Applications to diagram",
     "body": [
-      "AzureManagedApplications(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagedApplications(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2619,7 +2491,7 @@
     "prefix": "Azure Managed Applications with Description",
     "description": "Add Azure Managed Applications with Description to diagram",
     "body": [
-      "AzureManagedApplications(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagedApplications(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2627,7 +2499,7 @@
     "prefix": "Azure Management Groups",
     "description": "Add Azure Management Groups to diagram",
     "body": [
-      "AzureManagementGroups(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagementGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2635,7 +2507,7 @@
     "prefix": "Azure Management Groups with Description",
     "description": "Add Azure Management Groups with Description to diagram",
     "body": [
-      "AzureManagementGroups(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagementGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2643,7 +2515,7 @@
     "prefix": "Azure Management Portal",
     "description": "Add Azure Management Portal to diagram",
     "body": [
-      "AzureManagementPortal(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagementPortal(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2651,7 +2523,7 @@
     "prefix": "Azure Management Portal with Description",
     "description": "Add Azure Management Portal with Description to diagram",
     "body": [
-      "AzureManagementPortal(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagementPortal(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2659,7 +2531,7 @@
     "prefix": "Azure Metrics",
     "description": "Add Azure Metrics to diagram",
     "body": [
-      "AzureMetrics(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMetrics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2667,7 +2539,7 @@
     "prefix": "Azure Metrics with Description",
     "description": "Add Azure Metrics with Description to diagram",
     "body": [
-      "AzureMetrics(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMetrics(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2675,7 +2547,7 @@
     "prefix": "Azure Monitor",
     "description": "Add Azure Monitor to diagram",
     "body": [
-      "AzureMonitor(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMonitor(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2683,7 +2555,7 @@
     "prefix": "Azure Monitor with Description",
     "description": "Add Azure Monitor with Description to diagram",
     "body": [
-      "AzureMonitor(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMonitor(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2691,7 +2563,7 @@
     "prefix": "Azure Policy",
     "description": "Add Azure Policy to diagram",
     "body": [
-      "AzurePolicy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2699,7 +2571,7 @@
     "prefix": "Azure Policy with Description",
     "description": "Add Azure Policy with Description to diagram",
     "body": [
-      "AzurePolicy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2707,7 +2579,7 @@
     "prefix": "Azure Recovery Service Vault",
     "description": "Add Azure Recovery Service Vault to diagram",
     "body": [
-      "AzureRecoveryServiceVault(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRecoveryServiceVault(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2715,7 +2587,7 @@
     "prefix": "Azure Recovery Service Vault with Description",
     "description": "Add Azure Recovery Service Vault with Description to diagram",
     "body": [
-      "AzureRecoveryServiceVault(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRecoveryServiceVault(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2723,7 +2595,7 @@
     "prefix": "Azure Resource Graph Explorer",
     "description": "Add Azure Resource Graph Explorer to diagram",
     "body": [
-      "AzureResourceGraphExplorer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureResourceGraphExplorer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2731,7 +2603,7 @@
     "prefix": "Azure Resource Graph Explorer with Description",
     "description": "Add Azure Resource Graph Explorer with Description to diagram",
     "body": [
-      "AzureResourceGraphExplorer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureResourceGraphExplorer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2739,7 +2611,7 @@
     "prefix": "Azure Resource Group List",
     "description": "Add Azure Resource Group List to diagram",
     "body": [
-      "AzureResourceGroupList(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureResourceGroupList(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2747,7 +2619,7 @@
     "prefix": "Azure Resource Group List with Description",
     "description": "Add Azure Resource Group List with Description to diagram",
     "body": [
-      "AzureResourceGroupList(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureResourceGroupList(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2755,7 +2627,7 @@
     "prefix": "Azure Resource Groups",
     "description": "Add Azure Resource Groups to diagram",
     "body": [
-      "AzureResourceGroups(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureResourceGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2763,7 +2635,7 @@
     "prefix": "Azure Resource Groups with Description",
     "description": "Add Azure Resource Groups with Description to diagram",
     "body": [
-      "AzureResourceGroups(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureResourceGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2771,7 +2643,7 @@
     "prefix": "Azure Resource Linked",
     "description": "Add Azure Resource Linked to diagram",
     "body": [
-      "AzureResourceLinked(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureResourceLinked(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2779,7 +2651,7 @@
     "prefix": "Azure Resource Linked with Description",
     "description": "Add Azure Resource Linked with Description to diagram",
     "body": [
-      "AzureResourceLinked(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureResourceLinked(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2787,7 +2659,7 @@
     "prefix": "Azure Scheduler",
     "description": "Add Azure Scheduler to diagram",
     "body": [
-      "AzureScheduler(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureScheduler(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2795,7 +2667,7 @@
     "prefix": "Azure Scheduler with Description",
     "description": "Add Azure Scheduler with Description to diagram",
     "body": [
-      "AzureScheduler(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureScheduler(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2803,7 +2675,7 @@
     "prefix": "Azure Site Recovery",
     "description": "Add Azure Site Recovery to diagram",
     "body": [
-      "AzureSiteRecovery(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSiteRecovery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2811,7 +2683,7 @@
     "prefix": "Azure Site Recovery with Description",
     "description": "Add Azure Site Recovery with Description to diagram",
     "body": [
-      "AzureSiteRecovery(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSiteRecovery(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2819,7 +2691,7 @@
     "prefix": "Azure Solutions",
     "description": "Add Azure Solutions to diagram",
     "body": [
-      "AzureSolutions(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSolutions(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2827,7 +2699,7 @@
     "prefix": "Azure Solutions with Description",
     "description": "Add Azure Solutions with Description to diagram",
     "body": [
-      "AzureSolutions(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSolutions(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2835,7 +2707,7 @@
     "prefix": "Azure Subscription",
     "description": "Add Azure Subscription to diagram",
     "body": [
-      "AzureSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2843,7 +2715,7 @@
     "prefix": "Azure Subscription with Description",
     "description": "Add Azure Subscription with Description to diagram",
     "body": [
-      "AzureSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2851,7 +2723,7 @@
     "prefix": "Azure Tag",
     "description": "Add Azure Tag to diagram",
     "body": [
-      "AzureTag(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTag(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2859,7 +2731,7 @@
     "prefix": "Azure Tag with Description",
     "description": "Add Azure Tag with Description to diagram",
     "body": [
-      "AzureTag(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTag(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2867,7 +2739,7 @@
     "prefix": "Azure User Privacy",
     "description": "Add Azure User Privacy to diagram",
     "body": [
-      "AzureUserPrivacy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureUserPrivacy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2875,7 +2747,7 @@
     "prefix": "Azure User Privacy with Description",
     "description": "Add Azure User Privacy with Description to diagram",
     "body": [
-      "AzureUserPrivacy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureUserPrivacy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2883,7 +2755,7 @@
     "prefix": "Azure Media",
     "description": "Add Azure Media to diagram",
     "body": [
-      "AzureMedia(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMedia(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2891,7 +2763,7 @@
     "prefix": "Azure Media with Description",
     "description": "Add Azure Media with Description to diagram",
     "body": [
-      "AzureMedia(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMedia(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2899,7 +2771,7 @@
     "prefix": "Azure Media File",
     "description": "Add Azure Media File to diagram",
     "body": [
-      "AzureMediaFile(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMediaFile(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2907,7 +2779,7 @@
     "prefix": "Azure Media File with Description",
     "description": "Add Azure Media File with Description to diagram",
     "body": [
-      "AzureMediaFile(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMediaFile(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2915,7 +2787,7 @@
     "prefix": "Azure Media Services",
     "description": "Add Azure Media Services to diagram",
     "body": [
-      "AzureMediaServices(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMediaServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2923,23 +2795,7 @@
     "prefix": "Azure Media Services with Description",
     "description": "Add Azure Media Services with Description to diagram",
     "body": [
-      "AzureMediaServices(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureDataBoxEdge": {
-    "prefix": "Azure Data Box Edge",
-    "description": "Add Azure Data Box Edge to diagram",
-    "body": [
-      "AzureDataBoxEdge(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureDataBoxEdge_Descr": {
-    "prefix": "Azure Data Box Edge with Description",
-    "description": "Add Azure Data Box Edge with Description to diagram",
-    "body": [
-      "AzureDataBoxEdge(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMediaServices(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2947,7 +2803,7 @@
     "prefix": "Azure Migrate",
     "description": "Add Azure Migrate to diagram",
     "body": [
-      "AzureMigrate(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMigrate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2955,7 +2811,7 @@
     "prefix": "Azure Migrate with Description",
     "description": "Add Azure Migrate with Description to diagram",
     "body": [
-      "AzureMigrate(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMigrate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2963,7 +2819,7 @@
     "prefix": "Azure Mobile App",
     "description": "Add Azure Mobile App to diagram",
     "body": [
-      "AzureMobileApp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMobileApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2971,7 +2827,7 @@
     "prefix": "Azure Mobile App with Description",
     "description": "Add Azure Mobile App with Description to diagram",
     "body": [
-      "AzureMobileApp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMobileApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2979,7 +2835,7 @@
     "prefix": "Azure Mobile Engagement",
     "description": "Add Azure Mobile Engagement to diagram",
     "body": [
-      "AzureMobileEngagement(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureMobileEngagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -2987,7 +2843,7 @@
     "prefix": "Azure Mobile Engagement with Description",
     "description": "Add Azure Mobile Engagement with Description to diagram",
     "body": [
-      "AzureMobileEngagement(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureMobileEngagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -2995,7 +2851,7 @@
     "prefix": "Azure Notification Hub",
     "description": "Add Azure Notification Hub to diagram",
     "body": [
-      "AzureNotificationHub(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNotificationHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3003,7 +2859,7 @@
     "prefix": "Azure Notification Hub with Description",
     "description": "Add Azure Notification Hub with Description to diagram",
     "body": [
-      "AzureNotificationHub(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNotificationHub(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3011,7 +2867,7 @@
     "prefix": "Azure Notification Hub Namespace",
     "description": "Add Azure Notification Hub Namespace to diagram",
     "body": [
-      "AzureNotificationHubNamespace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNotificationHubNamespace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3019,7 +2875,7 @@
     "prefix": "Azure Notification Hub Namespace with Description",
     "description": "Add Azure Notification Hub Namespace with Description to diagram",
     "body": [
-      "AzureNotificationHubNamespace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNotificationHubNamespace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3027,7 +2883,7 @@
     "prefix": "Azure Notification Hubs",
     "description": "Add Azure Notification Hubs to diagram",
     "body": [
-      "AzureNotificationHubs(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNotificationHubs(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3035,7 +2891,7 @@
     "prefix": "Azure Notification Hubs with Description",
     "description": "Add Azure Notification Hubs with Description to diagram",
     "body": [
-      "AzureNotificationHubs(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNotificationHubs(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3043,7 +2899,7 @@
     "prefix": "Azure Application Gateway",
     "description": "Add Azure Application Gateway to diagram",
     "body": [
-      "AzureApplicationGateway(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureApplicationGateway(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3051,7 +2907,7 @@
     "prefix": "Azure Application Gateway with Description",
     "description": "Add Azure Application Gateway with Description to diagram",
     "body": [
-      "AzureApplicationGateway(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureApplicationGateway(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3059,7 +2915,7 @@
     "prefix": "Azure Azure D Do S Protection",
     "description": "Add Azure Azure D Do S Protection to diagram",
     "body": [
-      "AzureAzureDDoSProtection(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAzureDDoSProtection(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3067,7 +2923,7 @@
     "prefix": "Azure Azure D Do S Protection with Description",
     "description": "Add Azure Azure D Do S Protection with Description to diagram",
     "body": [
-      "AzureAzureDDoSProtection(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAzureDDoSProtection(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3075,7 +2931,7 @@
     "prefix": "Azure Bastion",
     "description": "Add Azure Bastion to diagram",
     "body": [
-      "AzureBastion(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBastion(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3083,7 +2939,7 @@
     "prefix": "Azure Bastion with Description",
     "description": "Add Azure Bastion with Description to diagram",
     "body": [
-      "AzureBastion(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBastion(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3091,7 +2947,7 @@
     "prefix": "Azure C D N Profile",
     "description": "Add Azure C D N Profile to diagram",
     "body": [
-      "AzureCDNProfile(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCDNProfile(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3099,7 +2955,7 @@
     "prefix": "Azure C D N Profile with Description",
     "description": "Add Azure C D N Profile with Description to diagram",
     "body": [
-      "AzureCDNProfile(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCDNProfile(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3107,7 +2963,7 @@
     "prefix": "Azure D N S",
     "description": "Add Azure D N S to diagram",
     "body": [
-      "AzureDNS(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDNS(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3115,7 +2971,7 @@
     "prefix": "Azure D N S with Description",
     "description": "Add Azure D N S with Description to diagram",
     "body": [
-      "AzureDNS(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDNS(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3123,7 +2979,7 @@
     "prefix": "Azure D N S Server",
     "description": "Add Azure D N S Server to diagram",
     "body": [
-      "AzureDNSServer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDNSServer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3131,7 +2987,7 @@
     "prefix": "Azure D N S Server with Description",
     "description": "Add Azure D N S Server with Description to diagram",
     "body": [
-      "AzureDNSServer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDNSServer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3139,7 +2995,7 @@
     "prefix": "Azure Express Route",
     "description": "Add Azure Express Route to diagram",
     "body": [
-      "AzureExpressRoute(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureExpressRoute(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3147,7 +3003,7 @@
     "prefix": "Azure Express Route with Description",
     "description": "Add Azure Express Route with Description to diagram",
     "body": [
-      "AzureExpressRoute(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureExpressRoute(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3155,7 +3011,7 @@
     "prefix": "Azure Express Route Circuit",
     "description": "Add Azure Express Route Circuit to diagram",
     "body": [
-      "AzureExpressRouteCircuit(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureExpressRouteCircuit(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3163,7 +3019,7 @@
     "prefix": "Azure Express Route Circuit with Description",
     "description": "Add Azure Express Route Circuit with Description to diagram",
     "body": [
-      "AzureExpressRouteCircuit(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureExpressRouteCircuit(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3171,7 +3027,7 @@
     "prefix": "Azure Express Route Direct",
     "description": "Add Azure Express Route Direct to diagram",
     "body": [
-      "AzureExpressRouteDirect(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureExpressRouteDirect(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3179,7 +3035,7 @@
     "prefix": "Azure Express Route Direct with Description",
     "description": "Add Azure Express Route Direct with Description to diagram",
     "body": [
-      "AzureExpressRouteDirect(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureExpressRouteDirect(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3187,7 +3043,7 @@
     "prefix": "Azure Firewall",
     "description": "Add Azure Firewall to diagram",
     "body": [
-      "AzureFirewall(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureFirewall(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3195,7 +3051,7 @@
     "prefix": "Azure Firewall with Description",
     "description": "Add Azure Firewall with Description to diagram",
     "body": [
-      "AzureFirewall(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureFirewall(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3203,7 +3059,7 @@
     "prefix": "Azure Firewall Manager",
     "description": "Add Azure Firewall Manager to diagram",
     "body": [
-      "AzureFirewallManager(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureFirewallManager(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3211,39 +3067,7 @@
     "prefix": "Azure Firewall Manager with Description",
     "description": "Add Azure Firewall Manager with Description to diagram",
     "body": [
-      "AzureFirewallManager(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureFrontDoor": {
-    "prefix": "Azure Front Door",
-    "description": "Add Azure Front Door to diagram",
-    "body": [
-      "AzureFrontDoor(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureFrontDoor_Descr": {
-    "prefix": "Azure Front Door with Description",
-    "description": "Add Azure Front Door with Description to diagram",
-    "body": [
-      "AzureFrontDoor(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureFrontDoorService": {
-    "prefix": "Azure Front Door Service",
-    "description": "Add Azure Front Door Service to diagram",
-    "body": [
-      "AzureFrontDoorService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureFrontDoorService_Descr": {
-    "prefix": "Azure Front Door Service with Description",
-    "description": "Add Azure Front Door Service with Description to diagram",
-    "body": [
-      "AzureFrontDoorService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureFirewallManager(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3251,7 +3075,7 @@
     "prefix": "Azure I P Address Space",
     "description": "Add Azure I P Address Space to diagram",
     "body": [
-      "AzureIPAddressSpace(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIPAddressSpace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3259,7 +3083,7 @@
     "prefix": "Azure I P Address Space with Description",
     "description": "Add Azure I P Address Space with Description to diagram",
     "body": [
-      "AzureIPAddressSpace(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIPAddressSpace(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3267,7 +3091,7 @@
     "prefix": "Azure I P Groups",
     "description": "Add Azure I P Groups to diagram",
     "body": [
-      "AzureIPGroups(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureIPGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3275,7 +3099,7 @@
     "prefix": "Azure I P Groups with Description",
     "description": "Add Azure I P Groups with Description to diagram",
     "body": [
-      "AzureIPGroups(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureIPGroups(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3283,7 +3107,7 @@
     "prefix": "Azure Load Balancer",
     "description": "Add Azure Load Balancer to diagram",
     "body": [
-      "AzureLoadBalancer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLoadBalancer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3291,7 +3115,7 @@
     "prefix": "Azure Load Balancer with Description",
     "description": "Add Azure Load Balancer with Description to diagram",
     "body": [
-      "AzureLoadBalancer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLoadBalancer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3299,7 +3123,7 @@
     "prefix": "Azure N A T",
     "description": "Add Azure N A T to diagram",
     "body": [
-      "AzureNAT(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNAT(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3307,7 +3131,7 @@
     "prefix": "Azure N A T with Description",
     "description": "Add Azure N A T with Description to diagram",
     "body": [
-      "AzureNAT(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNAT(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3315,7 +3139,7 @@
     "prefix": "Azure Network Interface",
     "description": "Add Azure Network Interface to diagram",
     "body": [
-      "AzureNetworkInterface(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNetworkInterface(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3323,7 +3147,7 @@
     "prefix": "Azure Network Interface with Description",
     "description": "Add Azure Network Interface with Description to diagram",
     "body": [
-      "AzureNetworkInterface(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNetworkInterface(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3331,7 +3155,7 @@
     "prefix": "Azure N S G",
     "description": "Add Azure N S G to diagram",
     "body": [
-      "AzureNSG(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNSG(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3339,7 +3163,7 @@
     "prefix": "Azure N S G with Description",
     "description": "Add Azure N S G with Description to diagram",
     "body": [
-      "AzureNSG(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNSG(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3347,7 +3171,7 @@
     "prefix": "Azure Private Link",
     "description": "Add Azure Private Link to diagram",
     "body": [
-      "AzurePrivateLink(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePrivateLink(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3355,23 +3179,7 @@
     "prefix": "Azure Private Link with Description",
     "description": "Add Azure Private Link with Description to diagram",
     "body": [
-      "AzurePrivateLink(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzurePrivateLinkHub": {
-    "prefix": "Azure Private Link Hub",
-    "description": "Add Azure Private Link Hub to diagram",
-    "body": [
-      "AzurePrivateLinkHub(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzurePrivateLinkHub_Descr": {
-    "prefix": "Azure Private Link Hub with Description",
-    "description": "Add Azure Private Link Hub with Description to diagram",
-    "body": [
-      "AzurePrivateLinkHub(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePrivateLink(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3379,7 +3187,7 @@
     "prefix": "Azure Private Link Service",
     "description": "Add Azure Private Link Service to diagram",
     "body": [
-      "AzurePrivateLinkService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePrivateLinkService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3387,7 +3195,7 @@
     "prefix": "Azure Private Link Service with Description",
     "description": "Add Azure Private Link Service with Description to diagram",
     "body": [
-      "AzurePrivateLinkService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePrivateLinkService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3395,7 +3203,7 @@
     "prefix": "Azure Public I P Address",
     "description": "Add Azure Public I P Address to diagram",
     "body": [
-      "AzurePublicIPAddress(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePublicIPAddress(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3403,7 +3211,7 @@
     "prefix": "Azure Public I P Address with Description",
     "description": "Add Azure Public I P Address with Description to diagram",
     "body": [
-      "AzurePublicIPAddress(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePublicIPAddress(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3411,7 +3219,7 @@
     "prefix": "Azure Public I P Address Classic",
     "description": "Add Azure Public I P Address Classic to diagram",
     "body": [
-      "AzurePublicIPAddressClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePublicIPAddressClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3419,7 +3227,7 @@
     "prefix": "Azure Public I P Address Classic with Description",
     "description": "Add Azure Public I P Address Classic with Description to diagram",
     "body": [
-      "AzurePublicIPAddressClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePublicIPAddressClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3427,7 +3235,7 @@
     "prefix": "Azure Public I P Prefix",
     "description": "Add Azure Public I P Prefix to diagram",
     "body": [
-      "AzurePublicIPPrefix(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzurePublicIPPrefix(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3435,7 +3243,7 @@
     "prefix": "Azure Public I P Prefix with Description",
     "description": "Add Azure Public I P Prefix with Description to diagram",
     "body": [
-      "AzurePublicIPPrefix(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzurePublicIPPrefix(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3443,7 +3251,7 @@
     "prefix": "Azure Route Filter",
     "description": "Add Azure Route Filter to diagram",
     "body": [
-      "AzureRouteFilter(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRouteFilter(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3451,7 +3259,7 @@
     "prefix": "Azure Route Filter with Description",
     "description": "Add Azure Route Filter with Description to diagram",
     "body": [
-      "AzureRouteFilter(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRouteFilter(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3459,7 +3267,7 @@
     "prefix": "Azure Route Table",
     "description": "Add Azure Route Table to diagram",
     "body": [
-      "AzureRouteTable(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureRouteTable(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3467,7 +3275,7 @@
     "prefix": "Azure Route Table with Description",
     "description": "Add Azure Route Table with Description to diagram",
     "body": [
-      "AzureRouteTable(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureRouteTable(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3475,7 +3283,7 @@
     "prefix": "Azure Service Endpoint",
     "description": "Add Azure Service Endpoint to diagram",
     "body": [
-      "AzureServiceEndpoint(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceEndpoint(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3483,7 +3291,7 @@
     "prefix": "Azure Service Endpoint with Description",
     "description": "Add Azure Service Endpoint with Description to diagram",
     "body": [
-      "AzureServiceEndpoint(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceEndpoint(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3491,7 +3299,7 @@
     "prefix": "Azure Service Endpoint Policy",
     "description": "Add Azure Service Endpoint Policy to diagram",
     "body": [
-      "AzureServiceEndpointPolicy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureServiceEndpointPolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3499,7 +3307,7 @@
     "prefix": "Azure Service Endpoint Policy with Description",
     "description": "Add Azure Service Endpoint Policy with Description to diagram",
     "body": [
-      "AzureServiceEndpointPolicy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureServiceEndpointPolicy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3507,7 +3315,7 @@
     "prefix": "Azure Subnet",
     "description": "Add Azure Subnet to diagram",
     "body": [
-      "AzureSubnet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSubnet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3515,7 +3323,7 @@
     "prefix": "Azure Subnet with Description",
     "description": "Add Azure Subnet with Description to diagram",
     "body": [
-      "AzureSubnet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSubnet(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3523,7 +3331,7 @@
     "prefix": "Azure Traffic Manager",
     "description": "Add Azure Traffic Manager to diagram",
     "body": [
-      "AzureTrafficManager(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureTrafficManager(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3531,7 +3339,7 @@
     "prefix": "Azure Traffic Manager with Description",
     "description": "Add Azure Traffic Manager with Description to diagram",
     "body": [
-      "AzureTrafficManager(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureTrafficManager(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3539,7 +3347,7 @@
     "prefix": "Azure Virtual Network",
     "description": "Add Azure Virtual Network to diagram",
     "body": [
-      "AzureVirtualNetwork(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualNetwork(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3547,7 +3355,7 @@
     "prefix": "Azure Virtual Network with Description",
     "description": "Add Azure Virtual Network with Description to diagram",
     "body": [
-      "AzureVirtualNetwork(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualNetwork(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3555,7 +3363,7 @@
     "prefix": "Azure Virtual Network Peering",
     "description": "Add Azure Virtual Network Peering to diagram",
     "body": [
-      "AzureVirtualNetworkPeering(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualNetworkPeering(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3563,7 +3371,7 @@
     "prefix": "Azure Virtual Network Peering with Description",
     "description": "Add Azure Virtual Network Peering with Description to diagram",
     "body": [
-      "AzureVirtualNetworkPeering(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualNetworkPeering(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3571,7 +3379,7 @@
     "prefix": "Azure Virtual W A N",
     "description": "Add Azure Virtual W A N to diagram",
     "body": [
-      "AzureVirtualWAN(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVirtualWAN(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3579,7 +3387,7 @@
     "prefix": "Azure Virtual W A N with Description",
     "description": "Add Azure Virtual W A N with Description to diagram",
     "body": [
-      "AzureVirtualWAN(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVirtualWAN(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3587,7 +3395,7 @@
     "prefix": "Azure V P N Gateway",
     "description": "Add Azure V P N Gateway to diagram",
     "body": [
-      "AzureVPNGateway(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureVPNGateway(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3595,7 +3403,7 @@
     "prefix": "Azure V P N Gateway with Description",
     "description": "Add Azure V P N Gateway with Description to diagram",
     "body": [
-      "AzureVPNGateway(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureVPNGateway(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3603,7 +3411,7 @@
     "prefix": "Azure W A F Policies",
     "description": "Add Azure W A F Policies to diagram",
     "body": [
-      "AzureWAFPolicies(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWAFPolicies(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3611,7 +3419,7 @@
     "prefix": "Azure W A F Policies with Description",
     "description": "Add Azure W A F Policies with Description to diagram",
     "body": [
-      "AzureWAFPolicies(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWAFPolicies(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3619,7 +3427,7 @@
     "prefix": "Azure Access Control",
     "description": "Add Azure Access Control to diagram",
     "body": [
-      "AzureAccessControl(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAccessControl(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3627,7 +3435,7 @@
     "prefix": "Azure Access Control with Description",
     "description": "Add Azure Access Control with Description to diagram",
     "body": [
-      "AzureAccessControl(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAccessControl(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3635,7 +3443,7 @@
     "prefix": "Azure Application Security Group",
     "description": "Add Azure Application Security Group to diagram",
     "body": [
-      "AzureApplicationSecurityGroup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureApplicationSecurityGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3643,7 +3451,7 @@
     "prefix": "Azure Application Security Group with Description",
     "description": "Add Azure Application Security Group with Description to diagram",
     "body": [
-      "AzureApplicationSecurityGroup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureApplicationSecurityGroup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3651,7 +3459,7 @@
     "prefix": "Azure Conditional Access",
     "description": "Add Azure Conditional Access to diagram",
     "body": [
-      "AzureConditionalAccess(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureConditionalAccess(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3659,23 +3467,7 @@
     "prefix": "Azure Conditional Access with Description",
     "description": "Add Azure Conditional Access with Description to diagram",
     "body": [
-      "AzureConditionalAccess(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureDefender": {
-    "prefix": "Azure Defender",
-    "description": "Add Azure Defender to diagram",
-    "body": [
-      "AzureDefender(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureDefender_Descr": {
-    "prefix": "Azure Defender with Description",
-    "description": "Add Azure Defender with Description to diagram",
-    "body": [
-      "AzureDefender(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureConditionalAccess(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3683,7 +3475,7 @@
     "prefix": "Azure Key Vault",
     "description": "Add Azure Key Vault to diagram",
     "body": [
-      "AzureKeyVault(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureKeyVault(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3691,23 +3483,7 @@
     "prefix": "Azure Key Vault with Description",
     "description": "Add Azure Key Vault with Description to diagram",
     "body": [
-      "AzureKeyVault(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureSecurityCenter": {
-    "prefix": "Azure Security Center",
-    "description": "Add Azure Security Center to diagram",
-    "body": [
-      "AzureSecurityCenter(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureSecurityCenter_Descr": {
-    "prefix": "Azure Security Center with Description",
-    "description": "Add Azure Security Center with Description to diagram",
-    "body": [
-      "AzureSecurityCenter(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureKeyVault(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3715,7 +3491,7 @@
     "prefix": "Azure Sentinel",
     "description": "Add Azure Sentinel to diagram",
     "body": [
-      "AzureSentinel(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSentinel(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3723,7 +3499,7 @@
     "prefix": "Azure Sentinel with Description",
     "description": "Add Azure Sentinel with Description to diagram",
     "body": [
-      "AzureSentinel(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSentinel(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3731,7 +3507,7 @@
     "prefix": "Azure Stack",
     "description": "Add Azure Stack to diagram",
     "body": [
-      "AzureStack(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStack(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3739,7 +3515,7 @@
     "prefix": "Azure Stack with Description",
     "description": "Add Azure Stack with Description to diagram",
     "body": [
-      "AzureStack(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStack(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3747,7 +3523,7 @@
     "prefix": "Azure Stack Capacity",
     "description": "Add Azure Stack Capacity to diagram",
     "body": [
-      "AzureStackCapacity(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackCapacity(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3755,7 +3531,7 @@
     "prefix": "Azure Stack Capacity with Description",
     "description": "Add Azure Stack Capacity with Description to diagram",
     "body": [
-      "AzureStackCapacity(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackCapacity(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3763,7 +3539,7 @@
     "prefix": "Azure Stack Infrastructure Backup",
     "description": "Add Azure Stack Infrastructure Backup to diagram",
     "body": [
-      "AzureStackInfrastructureBackup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackInfrastructureBackup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3771,7 +3547,7 @@
     "prefix": "Azure Stack Infrastructure Backup with Description",
     "description": "Add Azure Stack Infrastructure Backup with Description to diagram",
     "body": [
-      "AzureStackInfrastructureBackup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackInfrastructureBackup(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3779,7 +3555,7 @@
     "prefix": "Azure Stack Multi Tenancy",
     "description": "Add Azure Stack Multi Tenancy to diagram",
     "body": [
-      "AzureStackMultiTenancy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackMultiTenancy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3787,7 +3563,7 @@
     "prefix": "Azure Stack Multi Tenancy with Description",
     "description": "Add Azure Stack Multi Tenancy with Description to diagram",
     "body": [
-      "AzureStackMultiTenancy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackMultiTenancy(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3795,7 +3571,7 @@
     "prefix": "Azure Stack Offer",
     "description": "Add Azure Stack Offer to diagram",
     "body": [
-      "AzureStackOffer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackOffer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3803,7 +3579,7 @@
     "prefix": "Azure Stack Offer with Description",
     "description": "Add Azure Stack Offer with Description to diagram",
     "body": [
-      "AzureStackOffer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackOffer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3811,7 +3587,7 @@
     "prefix": "Azure Stack Plan",
     "description": "Add Azure Stack Plan to diagram",
     "body": [
-      "AzureStackPlan(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackPlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3819,7 +3595,7 @@
     "prefix": "Azure Stack Plan with Description",
     "description": "Add Azure Stack Plan with Description to diagram",
     "body": [
-      "AzureStackPlan(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackPlan(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3827,7 +3603,7 @@
     "prefix": "Azure Stack Update",
     "description": "Add Azure Stack Update to diagram",
     "body": [
-      "AzureStackUpdate(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackUpdate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3835,7 +3611,7 @@
     "prefix": "Azure Stack Update with Description",
     "description": "Add Azure Stack Update with Description to diagram",
     "body": [
-      "AzureStackUpdate(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackUpdate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3843,7 +3619,7 @@
     "prefix": "Azure Stack User Subscription",
     "description": "Add Azure Stack User Subscription to diagram",
     "body": [
-      "AzureStackUserSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStackUserSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3851,7 +3627,7 @@
     "prefix": "Azure Stack User Subscription with Description",
     "description": "Add Azure Stack User Subscription with Description to diagram",
     "body": [
-      "AzureStackUserSubscription(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStackUserSubscription(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3859,7 +3635,7 @@
     "prefix": "Azure Blob Storage",
     "description": "Add Azure Blob Storage to diagram",
     "body": [
-      "AzureBlobStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureBlobStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3867,7 +3643,7 @@
     "prefix": "Azure Blob Storage with Description",
     "description": "Add Azure Blob Storage with Description to diagram",
     "body": [
-      "AzureBlobStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureBlobStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3875,7 +3651,7 @@
     "prefix": "Azure Data Box",
     "description": "Add Azure Data Box to diagram",
     "body": [
-      "AzureDataBox(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataBox(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3883,7 +3659,7 @@
     "prefix": "Azure Data Box with Description",
     "description": "Add Azure Data Box with Description to diagram",
     "body": [
-      "AzureDataBox(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataBox(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3891,7 +3667,7 @@
     "prefix": "Azure Data Lake Storage",
     "description": "Add Azure Data Lake Storage to diagram",
     "body": [
-      "AzureDataLakeStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDataLakeStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3899,7 +3675,7 @@
     "prefix": "Azure Data Lake Storage with Description",
     "description": "Add Azure Data Lake Storage with Description to diagram",
     "body": [
-      "AzureDataLakeStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDataLakeStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3907,7 +3683,7 @@
     "prefix": "Azure Disk Storage",
     "description": "Add Azure Disk Storage to diagram",
     "body": [
-      "AzureDiskStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDiskStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3915,7 +3691,7 @@
     "prefix": "Azure Disk Storage with Description",
     "description": "Add Azure Disk Storage with Description to diagram",
     "body": [
-      "AzureDiskStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDiskStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3923,7 +3699,7 @@
     "prefix": "Azure Disk Storage Classic",
     "description": "Add Azure Disk Storage Classic to diagram",
     "body": [
-      "AzureDiskStorageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDiskStorageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3931,7 +3707,7 @@
     "prefix": "Azure Disk Storage Classic with Description",
     "description": "Add Azure Disk Storage Classic with Description to diagram",
     "body": [
-      "AzureDiskStorageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDiskStorageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3939,7 +3715,7 @@
     "prefix": "Azure File Storage",
     "description": "Add Azure File Storage to diagram",
     "body": [
-      "AzureFileStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureFileStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3947,7 +3723,7 @@
     "prefix": "Azure File Storage with Description",
     "description": "Add Azure File Storage with Description to diagram",
     "body": [
-      "AzureFileStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureFileStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3955,7 +3731,7 @@
     "prefix": "Azure Managed Disks",
     "description": "Add Azure Managed Disks to diagram",
     "body": [
-      "AzureManagedDisks(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureManagedDisks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3963,7 +3739,7 @@
     "prefix": "Azure Managed Disks with Description",
     "description": "Add Azure Managed Disks with Description to diagram",
     "body": [
-      "AzureManagedDisks(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureManagedDisks(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3971,7 +3747,7 @@
     "prefix": "Azure Net App Files",
     "description": "Add Azure Net App Files to diagram",
     "body": [
-      "AzureNetAppFiles(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureNetAppFiles(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3979,7 +3755,7 @@
     "prefix": "Azure Net App Files with Description",
     "description": "Add Azure Net App Files with Description to diagram",
     "body": [
-      "AzureNetAppFiles(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureNetAppFiles(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -3987,7 +3763,7 @@
     "prefix": "Azure Queue Storage",
     "description": "Add Azure Queue Storage to diagram",
     "body": [
-      "AzureQueueStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureQueueStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -3995,7 +3771,7 @@
     "prefix": "Azure Queue Storage with Description",
     "description": "Add Azure Queue Storage with Description to diagram",
     "body": [
-      "AzureQueueStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureQueueStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4003,7 +3779,7 @@
     "prefix": "Azure Storage",
     "description": "Add Azure Storage to diagram",
     "body": [
-      "AzureStorage(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4011,7 +3787,7 @@
     "prefix": "Azure Storage with Description",
     "description": "Add Azure Storage with Description to diagram",
     "body": [
-      "AzureStorage(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStorage(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4019,7 +3795,7 @@
     "prefix": "Azure Storage Classic",
     "description": "Add Azure Storage Classic to diagram",
     "body": [
-      "AzureStorageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStorageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4027,7 +3803,7 @@
     "prefix": "Azure Storage Classic with Description",
     "description": "Add Azure Storage Classic with Description to diagram",
     "body": [
-      "AzureStorageClassic(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStorageClassic(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4035,7 +3811,7 @@
     "prefix": "Azure Storage Container",
     "description": "Add Azure Storage Container to diagram",
     "body": [
-      "AzureStorageContainer(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStorageContainer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4043,7 +3819,7 @@
     "prefix": "Azure Storage Container with Description",
     "description": "Add Azure Storage Container with Description to diagram",
     "body": [
-      "AzureStorageContainer(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStorageContainer(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4051,7 +3827,7 @@
     "prefix": "Azure Stor Simple",
     "description": "Add Azure Stor Simple to diagram",
     "body": [
-      "AzureStorSimple(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureStorSimple(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4059,7 +3835,7 @@
     "prefix": "Azure Stor Simple with Description",
     "description": "Add Azure Stor Simple with Description to diagram",
     "body": [
-      "AzureStorSimple(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureStorSimple(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4067,7 +3843,7 @@
     "prefix": "Azure Advanced Tools",
     "description": "Add Azure Advanced Tools to diagram",
     "body": [
-      "AzureAdvancedTools(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAdvancedTools(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4075,7 +3851,7 @@
     "prefix": "Azure Advanced Tools with Description",
     "description": "Add Azure Advanced Tools with Description to diagram",
     "body": [
-      "AzureAdvancedTools(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAdvancedTools(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4083,7 +3859,7 @@
     "prefix": "Azure A P I Management",
     "description": "Add Azure A P I Management to diagram",
     "body": [
-      "AzureAPIManagement(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAPIManagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4091,7 +3867,7 @@
     "prefix": "Azure A P I Management with Description",
     "description": "Add Azure A P I Management with Description to diagram",
     "body": [
-      "AzureAPIManagement(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAPIManagement(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4099,7 +3875,7 @@
     "prefix": "Azure App Service Certificate",
     "description": "Add Azure App Service Certificate to diagram",
     "body": [
-      "AzureAppServiceCertificate(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppServiceCertificate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4107,7 +3883,7 @@
     "prefix": "Azure App Service Certificate with Description",
     "description": "Add Azure App Service Certificate with Description to diagram",
     "body": [
-      "AzureAppServiceCertificate(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppServiceCertificate(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4115,7 +3891,7 @@
     "prefix": "Azure App Service Domain",
     "description": "Add Azure App Service Domain to diagram",
     "body": [
-      "AzureAppServiceDomain(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureAppServiceDomain(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4123,7 +3899,7 @@
     "prefix": "Azure App Service Domain with Description",
     "description": "Add Azure App Service Domain with Description to diagram",
     "body": [
-      "AzureAppServiceDomain(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureAppServiceDomain(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4131,7 +3907,7 @@
     "prefix": "Azure C D N",
     "description": "Add Azure C D N to diagram",
     "body": [
-      "AzureCDN(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCDN(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4139,7 +3915,7 @@
     "prefix": "Azure C D N with Description",
     "description": "Add Azure C D N with Description to diagram",
     "body": [
-      "AzureCDN(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCDN(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4147,7 +3923,7 @@
     "prefix": "Azure Container Settings",
     "description": "Add Azure Container Settings to diagram",
     "body": [
-      "AzureContainerSettings(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureContainerSettings(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4155,7 +3931,7 @@
     "prefix": "Azure Container Settings with Description",
     "description": "Add Azure Container Settings with Description to diagram",
     "body": [
-      "AzureContainerSettings(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureContainerSettings(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4163,7 +3939,7 @@
     "prefix": "Azure C O R S",
     "description": "Add Azure C O R S to diagram",
     "body": [
-      "AzureCORS(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureCORS(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4171,7 +3947,7 @@
     "prefix": "Azure C O R S with Description",
     "description": "Add Azure C O R S with Description to diagram",
     "body": [
-      "AzureCORS(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureCORS(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4179,7 +3955,7 @@
     "prefix": "Azure Deployment Credentials",
     "description": "Add Azure Deployment Credentials to diagram",
     "body": [
-      "AzureDeploymentCredentials(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureDeploymentCredentials(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4187,7 +3963,7 @@
     "prefix": "Azure Deployment Credentials with Description",
     "description": "Add Azure Deployment Credentials with Description to diagram",
     "body": [
-      "AzureDeploymentCredentials(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureDeploymentCredentials(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4195,7 +3971,7 @@
     "prefix": "Azure Log Stream",
     "description": "Add Azure Log Stream to diagram",
     "body": [
-      "AzureLogStream(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureLogStream(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4203,7 +3979,7 @@
     "prefix": "Azure Log Stream with Description",
     "description": "Add Azure Log Stream with Description to diagram",
     "body": [
-      "AzureLogStream(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureLogStream(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4211,7 +3987,7 @@
     "prefix": "Azure Properties",
     "description": "Add Azure Properties to diagram",
     "body": [
-      "AzureProperties(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureProperties(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4219,7 +3995,7 @@
     "prefix": "Azure Properties with Description",
     "description": "Add Azure Properties with Description to diagram",
     "body": [
-      "AzureProperties(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureProperties(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4227,7 +4003,7 @@
     "prefix": "Azure Quota",
     "description": "Add Azure Quota to diagram",
     "body": [
-      "AzureQuota(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureQuota(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4235,23 +4011,7 @@
     "prefix": "Azure Quota with Description",
     "description": "Add Azure Quota with Description to diagram",
     "body": [
-      "AzureQuota(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
-      "$0"
-    ]
-  },
-  "AzureSearch": {
-    "prefix": "Azure Search",
-    "description": "Add Azure Search to diagram",
-    "body": [
-      "AzureSearch(${1:alias}, \"${2:label}\", \"${3:technology}\")",
-      "$0"
-    ]
-  },
-  "AzureSearch_Descr": {
-    "prefix": "Azure Search with Description",
-    "description": "Add Azure Search with Description to diagram",
-    "body": [
-      "AzureSearch(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureQuota(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4259,7 +4019,7 @@
     "prefix": "Azure Signal R Service",
     "description": "Add Azure Signal R Service to diagram",
     "body": [
-      "AzureSignalRService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureSignalRService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4267,7 +4027,7 @@
     "prefix": "Azure Signal R Service with Description",
     "description": "Add Azure Signal R Service with Description to diagram",
     "body": [
-      "AzureSignalRService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureSignalRService(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   },
@@ -4275,7 +4035,7 @@
     "prefix": "Azure Web App",
     "description": "Add Azure Web App to diagram",
     "body": [
-      "AzureWebApp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "AzureWebApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022)",
       "$0"
     ]
   },
@@ -4283,7 +4043,7 @@
     "prefix": "Azure Web App with Description",
     "description": "Add Azure Web App with Description to diagram",
     "body": [
-      "AzureWebApp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "AzureWebApp(${1:alias}, \u0022${2:label}\u0022, \u0022${3:technology}\u0022, \u0022${4:description}\u0022)",
       "$0"
     ]
   }

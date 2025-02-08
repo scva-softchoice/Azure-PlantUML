@@ -1,13 +1,19 @@
 sprite $AzureCosmosDb [70x70/16z] {
-pPS7WkCW34MjWX3S_y0x16SLFk0jzfOtlRtH5qI4u_z4df2GqWCMLduYaCeJWVI1IDgudwSXD-DqReHYqK_aUgc8HLw_9ap32YDl3INBNcejxecxG4Taq7yg
-wAqeTI3h2XvIOHcvpfGVQcZehTO0FS9C3PQ5HY8cUJqfRoBNl3rms_LFk0mA41N6Hl3gSIJeG0zZWiLZMWS7UjnICePsplD51WcY_JS9B8EclLrA-5qsWGLm
-aFX9QSWyN1dw4ljaS0J55ZDQLfRoAN508Nq3nm2MuXCy_6fiksqfACc9UqUX6DXqiTzMaaJ71EzAiKKf-GkZzHb8K0e62aU3ZmMq6VWKWGQ9NGtQgKnTIxAk
-BPj3Gnh9_ESiQISvWra9oTQYBwuE-tHfkPQ4vR31OZi9hGv73kLWoRoJ8D2gqMAyQApE9GfOyc39zlb_gKjyiZ2UpwpsqWH9EocTafgMEGyUpJPOidUwBdcj
-iif31q73iyyIqyRh2D-rbY6dEqfII7nL2ZpXZMrpAg8GjIR1jiJ0cWOepBikoULbmVonb-T8mUb8tYLv4KZGWhLO58Abu660dKaH9Wh1Kj22dI5qv7ZcG5iB
-5cFbY-yEDG-97XiBQgX9UZ_EC26nGO3TZGwBUYdP51nTuiSCmwpmsYZU5D6GSDH2sn7A7ve84lq8YLzV0hWZ-a6oK4mI1isQP5vhURrquE6ZX9gr0iaqj8Ad
-XHeGvZmxYk2o70YBg8h4XOLq4EN4Spj3UuMax9ujAM_MX8yxn6M8w7STh0E_NGf9tChkNrZbk0dTbiH-kO_A8nP-mYB7_yWt
+pPS7TkqW34HH0Gdsl-3_Y77mW9poVjfDR_UCnjYGz3VHhv2GqXTOMFaBBABo5GEfVa6t-WKQqOxyxpW3UjR0ebU4F_Rh8WHNUENKK2xcjRNgdda8407zDGcT
+Yje0qmW8pciCQpjL0mJ6XMwr0U0HPkgm16baVeEy3Uh9d6jV7kko6zDLLA2eybe4HtUZW2Fmh1e9dWoA3gIPIZPUwaJBJ59laDGXWXwm6EflRqhE44IOPSKN
+YGz6aXF1NXOK9NwbbZGHN1z8lKfyGM7wMGkz4SKtQDym9AgbtabCU3GAOKY3WMH6SI1Jsk2xfsm9ejY3CYNGB-lRtKv7XrC0tKIXEH18IWhX-3cjiSGqbD3D
+fg7oG8j_pABn1YR3IwM2nEGpajbsHelUIYZeYjE9WQLyM49mvGKisqWq9GZsJMXP5qpMpXvHq98CBQPqIN98VBFGkZ-p5jHOreESXwJb-Eo2kRc0nVp0JacJ
+Q2rJeeGKtoL5JqcBed2tBNAV6WZoSWxmA0eyamTbTEmOf7H9opTHjf7K3o28MdsnK721Hge4Y7SmIFP3Oi5QaT2Yu1ZJr2WARWROJ8PXHX284k-q1AEk3fid
+1uejGPZZZonVXnaIJRSMr53_Ao-l3hz8RfuLZFjC8kaLM56TXKo9tptBQJasjEf5JmeuMgNRHwZGr5GVAT0n9FxsFm5y87eX6oXGmijCCRbuRSVBApbDbC8q
+cCBRXi7VxSS51OJPTaULTOIqmbqa3vZFW22op0c15V8MaitTIbQEhWbede541qpFEbY1tyeIdr-UXq3oD0ADF1-6qnUWz1KMIN-HVm
 }
 
 AzureEntityColoring(AzureCosmosDb)
 !define AzureCosmosDb(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCosmosDb, AzureCosmosDb)
 !define AzureCosmosDb(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCosmosDb, AzureCosmosDb)
+!procedure AzureCosmosDb($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCosmosDb, $stereo=AzureCosmosDb, $tags, $link)
+ !endprocedure
+!procedure AzureCosmosDb($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCosmosDb, $tags, $link, AzureCosmosDb)
+!endprocedure

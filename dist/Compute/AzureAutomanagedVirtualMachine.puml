@@ -1,12 +1,18 @@
 sprite $AzureAutomanagedVirtualMachine [70x70/16z] {
-vTA7ZkiW48NXETF9-p_mDTOeWaIvnjw--wcu_q08VIjuCoA9To0Uxy3ZZpBrU3i0Ol5MnW3uTCSyPgu0z5H2WETnNG0-atWnh2rd35rLNER_k2zdND19_vG8
-7Xs8k38QQwGgJ9trRsc3cgh74WRl5Q49rn0Sp_A9WKF1cKOJpIuObWiOckcSwJIfZnMInnmSkGlQGDsLXqe0aGV6iVY-ZDJUgzjBIv9wAVgNabrb9B8pQ1vY
-U7zLQ3FCdMd3jbSa3m5v_s4bx_I-KGu-Lx6yyw62SnLzMoLUhSWo0vA76D4p1jeCSIB2laiEMTtfMWEFKz4wXUQZziYWTIPxff_j4QxR0c-70bpff4xC5BJn
-kWjaEyRmwj6axXgaBN1mlKyJRLqoeYr8XhLEQSSCwdXnAYLgvKARFdBYNWaWsXgjyHo4R1MqQPuhk3BDMnjFKY1jMGfBjYV9BEqCONwQkbNa16MMQ8FWAJox
-lHBIFulStcWPoioQj_EQ2myaRXSrL-MDQhJRtvBl4j7tg2WHlvGZvvVelzeewA8sShee9x-WWfYyJmLqYVX4w1BpYT8b_e2kK7kWT9xO4w6Je5P62bh7eYy9
-BpRqm5973z4no27Gx_SF
+vTA7Zgim48NXETETzt_WkqOZX8cu6BPllYqnxSUsGZyAter8uWE8nmVmU56c7ky7G2pUonW0--N7F4Ok0EHIGW2BCdJuGgBJU6RJ6KDN5PVnE-xpYvAr8aJa
+qO58AgDNCj8ZdVLd-m0rLOyf35ugIWEkLt0yoyZ-V_Dfu51mfD50b-l1VJAvVsul69hfakaqi5me9Cyv43MYJim4cqhKzMFZktXPHdPAHAZJ0ijZkvj2UoIB
+4P54TWRDKmplgs6grsycHcpzqip60B5khEHAroqEy4mbruhboh-j4aShyghCxMuQwCqcJaJGdDrTHQt3jvFHxPTNSw_jVmnQ8o4YpcMy3EiEWJy_jHT0dKpg
+n5pG1rvdw_e9WLMF1bKnI9lWu1hGG5kNZ6Wp6DuwfGKpg9F9gPG0BoiNUeC-vAKsEvMYgFU2kCuGQKMqJKgkJFDMF8SBancMzYpgz8KC-_wSCckxHfabseOn
+ixKZZuE_aFvOPfz5kZApvEFe_cFDXJSa7ZSrDrqAwktnMl938leH5INYGp7WG_HVsJQ2hlZuojOtLs90z-13AXm3q2tY0wPRr0TATy1tw0wr7Nrdf0XTn1KP
+AMWUH0y99XjwOggZfwQMSmhqz_q3
 }
 
 AzureEntityColoring(AzureAutomanagedVirtualMachine)
 !define AzureAutomanagedVirtualMachine(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAutomanagedVirtualMachine, AzureAutomanagedVirtualMachine)
 !define AzureAutomanagedVirtualMachine(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAutomanagedVirtualMachine, AzureAutomanagedVirtualMachine)
+!procedure AzureAutomanagedVirtualMachine($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAutomanagedVirtualMachine, $stereo=AzureAutomanagedVirtualMachine, $tags, $link)
+ !endprocedure
+!procedure AzureAutomanagedVirtualMachine($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAutomanagedVirtualMachine, $tags, $link, AzureAutomanagedVirtualMachine)
+!endprocedure

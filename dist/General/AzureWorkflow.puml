@@ -1,9 +1,15 @@
 sprite $AzureWorkflow [70x70/16z] {
-xT854i8m48NXrTZz3ypWyb9R7FgDrlx6Q41gg3ejOwsBQH7lL-HjbUGNIh1IwH87AuMk_5bbhQoLHfSaMYb-eOOgu6qLxLTeeLGEwbRPCmfIsoBmjPMrmj9b
-Eoez314BW36AXGXC_oShEhH70dIuikIylAwoLlXoutQcAYnR5qU3Y1pmU8KTzEx9U4KSyDCg-egAzYe9J5KIU7g5zm7ViYs9L1pmyWexa0-gQA2Im9TKCfYg
-PC3qY0gHvHk9noiuUgU-uSeMtw101VrN9OF7L8GMmuDaD6W3
+xTC55eCm403HrKZlV-2-Af1DS8TVmGU70l-mei8myiX264Jp5TwiuhKcZAn4gCEHbG0DT-Mkt9MDtcbZimhdAp2G-F0HNyARPnY9vGMCmrRk2kN96rCM9516
+IIeaev0v_LDMk7IFoE1oPSZpicBbhjHlt0jsLR3QW7ylfHhKNa5DIQx2xHLM0sUfmAugpkYgE6Fn2icBliaBZQceWSChg0OTlE8q-Ooh6CUee3UwAju049VC
+SjXUGUSJ2ddboWicO4J5sgB2srMyUwk6OohU656n3v90qHC
 }
 
 AzureEntityColoring(AzureWorkflow)
 !define AzureWorkflow(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWorkflow, AzureWorkflow)
 !define AzureWorkflow(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWorkflow, AzureWorkflow)
+!procedure AzureWorkflow($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWorkflow, $stereo=AzureWorkflow, $tags, $link)
+ !endprocedure
+!procedure AzureWorkflow($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWorkflow, $tags, $link, AzureWorkflow)
+!endprocedure

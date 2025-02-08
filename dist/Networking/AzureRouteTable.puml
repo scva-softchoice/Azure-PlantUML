@@ -1,11 +1,17 @@
 sprite $AzureRouteTable [70x70/16z] {
-tTL9SiCm34HHD8Q6AlU_R-QmP0faaOfNVdj_QsvvVJo-gFpFsxVNh-3J_ogmuBSmlLk1yoJqLiNOyHiLvqLWj-8i1FOgpf9lLOm3lbC9Zc2zOXmA6M5s5Kv0
-Qdmx7YlA2Hj5-efp8aQHlXASgIFRbJhoMT4lhSABP3PrfEahoQmKaR8IELD4oee_fM8vuQjd93cXgrTNc6CokzEDVCB22LLFNIUoT-Jn9QN6geBsquxA08kA
-w54o6M9H4QiYBXCiAeAiZsGCSWNdOoDTTccGPdbk6EcG3HRyv02Sp2HT0ITtEWZ-m0F-C5dY_6CuCVxolGW39x6pri4JHQCxe-yySpHUhadD-0WDkPm1EzPT
-syQMBaf_VOCTB9nFVtsL5pB2Ao-kxVoSBA-8RymBIerPC7ooB9XKD2k1Jv45IYMof02of5B8cWE-FYgQDG9S7pZF0TETiSs1Y8sTp7siPcnVjMBxL3f-f-BI
-YJkLa0xlL58wyPIAF-MCv4u5ptXWJAxWt1AGb_G1
+tTO7RiCm38LXpaSrzxzlTmM7fWJJnSoNlNul83IzFenFmVG_Zs_w-XNcVrPO7TzSvMw53GVEjogAn6vK32VEtOgZuDoh64hUgWWMh5Dnh33Htjki69QSLe1K
+mGPJ3OzutYB1XguYkMBOy5KaLnmxL8X7lr977aE-p0fEukloYyl8b2jHAo9bnMEdsB7z2gvMD3RywXPnR0XTtBk4MAFTaPw8jfjajCm49OXiV5t62Af5LU7v
+qqHedGdAE4P5QIcA2iae66r4KQdMHcYBwOmDuqaeTOa38ZWs132c1dLyCcOs82BWylsqqs773tvI_E-MyfHNFj3Mq3TCpWVUcTQE0-59EaFVS6GyMMFe2vxn
+r3XtO2IQzksabtPAth-EX7VRaydSjncjuCoAVRlV9WsSB_mDnITKGnIKFsaKb2eI5UTF7WLGnQCap1mbeKBKZDck3nM96fWHDJgpM51f35l4WdjZJaOVolaJ
+tHjbEcuGIcpSO9JukC4fmRWX6klIgDYzBSh63KoPZ3QjJpLQdEabVG
 }
 
 AzureEntityColoring(AzureRouteTable)
 !define AzureRouteTable(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRouteTable, AzureRouteTable)
 !define AzureRouteTable(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRouteTable, AzureRouteTable)
+!procedure AzureRouteTable($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRouteTable, $stereo=AzureRouteTable, $tags, $link)
+ !endprocedure
+!procedure AzureRouteTable($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRouteTable, $tags, $link, AzureRouteTable)
+!endprocedure

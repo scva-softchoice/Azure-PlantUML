@@ -1,10 +1,16 @@
 sprite $AzureDataBox [70x70/16z] {
-xTK7SYCW38LXIQZ0tl--cqOQOtWof2V_DDTl7gxq8R6KsqHuNoWMJxbkGM8nP5SxxD4xS4fC4ifdCKqfcySYEr-INwC1AeIJW371F62MEi_vc43XCIngPkw1
-MX15dpFVUfjOXspZI7eXYpehm90aaqDwKuPfJ7GCCoQZeukiJdC1269w_hodwBgeYnHCGMDw3gQWCRteK_0Ok8OLLzTfFn0e0CEaYGfWBACmKRHLbL88OYI3
-GCOI26O28mcc6a9I349IJ1MCO2P8fnKQuudYNO5MMwN4UguGqRdYT5jA-JUlCTqcXuhX7qsiLEgTA8q9CLXfalkJxGfOqjjIWiROhbMgqANKFAcq6YgqJ5vT
-UNZQwzcK2IdqfPG_HHyKkMzlnHXlpHX2Mp234SnW13COmGn6S0gHF8CHp3ICu0fzJ3S
+xT5NaYGX38JXH0P1tV--qzutfBfg_Sx7-n-f0Bz44TqJsL1GZwjg1Ik8nnF_k5DgNAplQ0m8yZo635ar9dpxalmQ2qB1IL05L0tAK_Ti7nCC7rEA-LwbLqqI
+QZS-3-ceOKzynKdsX7LIGowPDe9NOYF3J25BSXaNFB49RqDLI8HaBch1XTfSj0aZKyYOYqgca34NSPb2nz0rnRWsPu0Q5oG36CKp3kC4YDOdho4L0QBFI2P2
+Cvw8y4muZ_1CSnP9PLWabMd28pmJi275Yq6b8lb9hKyO2gdePSK4WEsLYhrKPUdZLx0dgSgOuqWtLHhEjbHwmSNwIXVSY0tXY2ovM5K9F2iVLvhW7VMzLAMt
+CC6KF9INeyVPo60L_56LxuejHoe7-5nPNgoRyKImFTCBrb4UoMTuX6TuX5CIoMTuX9EbWU84lyOE
 }
 
 AzureEntityColoring(AzureDataBox)
 !define AzureDataBox(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataBox, AzureDataBox)
 !define AzureDataBox(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataBox, AzureDataBox)
+!procedure AzureDataBox($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataBox, $stereo=AzureDataBox, $tags, $link)
+ !endprocedure
+!procedure AzureDataBox($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataBox, $tags, $link, AzureDataBox)
+!endprocedure

@@ -1,12 +1,18 @@
 sprite $AzureApplicationGateway [70x70/16z] {
-rT87hYud341X1Z0stl-28__a3ZeHKhXENZjgKymtjVn9TTNsVo1WiWYOF48cZv398tccAsffX4mQ8PD7p0nC0Z7rQ5gAMOYvZ-4h0_CznATO44Ea3p2to8Zr
-hXA4o1X3mTmXAkfH43hvKFU8oOWd2YICs5OmDuXERSzJkmnx6GDpWwYlMN6VNynKC1U8UVdKOlcGqPy-NU-OflzKgaUVPSFrYccws_SIrRXFLp0NY7ejaIv5
-OdCgc0j4NUjJdcQ-Kb7j0ym5ebDbkeaCj_utfQmT4JP4rbyNmukn0_ClIAdgaJvnDduOuGoPCx9-k2X6kuZqDONg6UbhIqeqFBBwj6ccUqxgaMdsLVziB-Iz
-csMzarAgVQKLoAkKzYAFcgf7qzexAoMKjmhaLKhTY8rIQYtTx6LgeR9laif6Geb2UPbN0QDGW6o531KzA1k10kQWjAEY1cLLgV35d1GvA59EIZjzQJ1Gf50X
-mhzkCr02WKA4ZDITKgcx1WJC8IW829XRXGZhzmeHrkyL8gpVAqHOlr20t39KY5mpL8ZSC5Hk43BuZP_oAJOxa6icXDq39CaGIJ94aWoH94CaoH19CXknNhwN
-xCi3oJ9v998imYIBC26IJO2a4o3fP7u2aaY0fEj0qZtbP_KN
+rTC7Zkug341Xch5X_mj-Cl_CKPx8bHLowva-3fz8I_zILRM-Hfegp3i4vXo1UOl0d2Cmxn6OSmJc9G9pZfWTCY2cSpLWdYCsf_JvoM2U8zDaVUyYhSCyGRgl
+dofEYFJEIJr1LDILuOIEXoS5CgH_8svukZ4HebDhoQL9Dn6kyCO4YCxFiRBsCxZVLoP6RERaLL_UfTVS1ah0L4Mnj2hJMylwr8W1sVVYvVMhnWp8zRfacoj9
+AUdGY051iP9pRgvusaob1mm83HMRAgApVrDAC06YVJqc9bByP9PY6nCYgUhqDFlKnfpIT6CYnE_iglfOH5fA6rFkaTP0E8-IYvdrozjURfbg-lNHKZEr3y9k
+EB7qDSqSxmo8cTggfLH1YfgDPGmVh9fFCyV3WEX7IVM2z9HByHt0-3HpFBifHXy5n5pnsdMqb6kBqKq1GM5sf_HxXHsYCBnJT9tehM8tYfKVdv4pkz9lb9vG
+DWG61GQ5tr4s1CPGO510K41sHaeX_RzI2jKDWRaDvRxjfJvGG0869KHWdYaWCOCI8zGUA20XWo8F49X00GcOu8n00eR7EAUL_zes96Jsfpk7ICp4ICp4ICp4
+ICpio24J8p5pHLfwbXWhD-I4EKTWpX6OzmZCEGBp7e41EMT0NZB31iXnRO2yAQVVrNy
 }
 
 AzureEntityColoring(AzureApplicationGateway)
 !define AzureApplicationGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
 !define AzureApplicationGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
+!procedure AzureApplicationGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureApplicationGateway, $stereo=AzureApplicationGateway, $tags, $link)
+ !endprocedure
+!procedure AzureApplicationGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureApplicationGateway, $tags, $link, AzureApplicationGateway)
+!endprocedure
