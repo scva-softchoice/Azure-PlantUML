@@ -1,0 +1,15 @@
+sprite $AzureWebSlots [70x70/16z] {
+xTPLWkD038HXGPKCzx_lxg32ITDm_q_6pmpo8tCVej27AFGHoWW67C608nYmYr5p1q0sC-fWriWOirP6mQoPIQE3STuDKf0oxbQ4MFmgHECimkqfPGKYF15S
+SmOg43idCfGZaaOInmgbPbTeSX4IAJmhVdqMfR2ulTieHYoMSEdDbr3f3ilwrlAiwTbeuJCTUyRBKIoP5ofngV1pbAbCPIfJSJobad5xJYkLxRcGBBRdx2kK
+gKm5UmQv6FKbitkAEDzoaSjHyxTCxYZbVNS5yHmhE_yNvz8SlwU2TWMIMRGYeVBT-Wy
+}
+
+AzureEntityColoring(AzureWebSlots)
+!define AzureWebSlots(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWebSlots, AzureWebSlots)
+!define AzureWebSlots(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWebSlots, AzureWebSlots)
+!procedure AzureWebSlots($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWebSlots, $stereo=AzureWebSlots, $tags, $link)
+ !endprocedure
+!procedure AzureWebSlots($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWebSlots, $tags, $link, AzureWebSlots)
+!endprocedure

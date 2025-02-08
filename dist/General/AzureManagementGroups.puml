@@ -1,0 +1,17 @@
+sprite $AzureManagementGroups [70x70/16z] {
+xPW7SYCn30I9EDJz_xyNDg3M4Cr5KRxiTXw1pUG4jNyRSNwvaDtTQnPtDse3oFm7Mf7eLchZ1pReNa9-87cVWTrRp0DExg1qAe5HKjVFHTA8R6v5DAyUxhEJ
+9UPXR7w2pOB38yFYZQ7dSE2mR1wR7e2yyoXmjM1OnXxmK8Da6LOv0cy3k68HNE0FiSYofLzOjl3LmgkMrdj_d6zjsMAFmDOj_0XusK90_xBH0Lgq4E2DrLsv
+EPpMB0vlOOmlwXOIKpQ0BX5WhAPSjWXsHYCWDKj8B5rxk4iMd4IIueg5-Wb5bk9VPcbH7acAInPvxEXRYqPSiZGV__nXYxqLBTgx0vejrZjwbwA506uCH729
+5IXQTFkHyLZCcnYGWYKA1SXBaN3TMmGUiY264y2t5b8xHojWIa-nmKqcbeZryjD7ENO0S9fP71iK5R1tufa5Y2y46pw9rosAdTTs916_VhhWkvkENz2YflGS
+cyEuJInr_bhBfqLMB98irNOaDoPXITr46OvkOjxP1DFE1lYuBgk5jRmj6NMEPENkSpejhtR2kjwLjxIPvqEt-jawl_XinVGUrALc4TVsR_CD
+}
+
+AzureEntityColoring(AzureManagementGroups)
+!define AzureManagementGroups(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureManagementGroups, AzureManagementGroups)
+!define AzureManagementGroups(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureManagementGroups, AzureManagementGroups)
+!procedure AzureManagementGroups($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureManagementGroups, $stereo=AzureManagementGroups, $tags, $link)
+ !endprocedure
+!procedure AzureManagementGroups($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureManagementGroups, $tags, $link, AzureManagementGroups)
+!endprocedure

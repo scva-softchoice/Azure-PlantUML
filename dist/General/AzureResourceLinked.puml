@@ -1,0 +1,18 @@
+sprite $AzureResourceLinked [70x70/16z] {
+fTPNSiCm40DGYbkWtF_26Gfkd9MDZuMh2Xzxug5Ym1pTJ81C4o7JHSYq4J8TfCyOjbWR8TD6oBGHCcs4J1iXqq0Kev4vHWX68zXMNs4qaW4WrgchSDun6XdZ
+S9RWPsKqKZUEep02OLlsWD6CbrryU8JNQoQG_Sx9PXtreaQOrHAactdczRqm4echFm5RSPQP8HWYPMWpxGfY6s361Q8LCW81vgWzEXo5gKYzPOAZ2v8bhX0s
+nu3CrzSQLyYh5-a_RdA1eEo0duoVk7lOHdo_pryNpvjNhD4z2CmrC7b_t-bV4Bvyvic5aYVIlY6hDNx-phMRJX4_LMmrjntawefkJ3_V1YRScKXeP8mx1cuV
+2KZabd7p178bt2mKSikaEJwF31gfZ1lsmz18PUnzYB1f76OeP6VmLcp_oIcGdJ4xcLZBVpBhAmIoCMx9BomObW_I1B8nQPxNvnXupH4F1R8n_7-OuRwjbsFu
+ZWWcx9tFiVPjhqi66H7k7X7vEZb7R8XYcDZ_Fc4C54Gps8-Dg4RsoLmtpqZ6Zp7o3j7Ch0sjY6RYxHnH4CtK54GmROHC6o7JHiYq4J9jX4mR8TD6oBGHCds4
+J1yXqqV846aoVqIQpD-VHlu1
+}
+
+AzureEntityColoring(AzureResourceLinked)
+!define AzureResourceLinked(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceLinked, AzureResourceLinked)
+!define AzureResourceLinked(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceLinked, AzureResourceLinked)
+!procedure AzureResourceLinked($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceLinked, $stereo=AzureResourceLinked, $tags, $link)
+ !endprocedure
+!procedure AzureResourceLinked($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceLinked, $tags, $link, AzureResourceLinked)
+!endprocedure

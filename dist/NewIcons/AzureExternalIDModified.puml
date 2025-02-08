@@ -1,0 +1,21 @@
+sprite $AzureExternalIDModified [70x70/16z] {
+fTS7qkCW38RXJw02IFS_xsAd0R7ZRFx7TTgR9ZmJV9IiT8m_oUN6y0UfF2X-HkM5yQiood-8s2kJy0kxAm-4_wTlbOB_9cP_px0TLGp_9TjK-Mrio8ugjH_o
+QsIlD8-DjunlsLgfyUJfjuWLZu7JJn5hCMdVJzl8OrPnYNMLDHO55_9x97E9XUAZP3gpt2jSOo6V1qKNt2l2yfR9E7SOOUdUCkc_8lUAj9WvVHkH_Ag8nwmT
+P_HD7Ylwbi41UOzC5R5OrA-cRQb8YOLzCsrhHUh5z2LTyK55MYmO0r9PDXx8Xqp6YyfCvQIY7ZDFGsJ5ewaV2wUpYF94Dw8t5iTZ8nSHridnsAIh2EkinAOL
+rVfwJAYiZ2UoH3mYIiA6D3e_h8ZgQML_bBS4OYlAXBGr4o17L8uhzVvzYiV66UJxqAWSqeEAUMmILO_xLYX7420dLDPAZPs1f-6j5PsUTgPAgMRLzxVYyTeQ
+EE5ZHlHLOUnISqXF-VDWtB7m2PLx1Q2KSo90e1x39iEQvXEYB6e2PDbb01PZHl6Ipz-ErZ8EU0BxcCaOoLd5Wy3on4ZkuS-3C4b77QaU5La76NLuBuQLl7NC
+tKCXEWBvKyCxcZFIl0k1JW1-Vg2C8sEZkDyhDW6oDTyqJJYc9bl2glkp8ZPGRk4viGfd3yEnr7mI1MoZw2njjjkMS4pcIe3AmADldZQ-tvzbg4uL1RyYxRP-
+f4Sazlk6CpnM7B1IRrllnxQLNgdB8dX7DdmlG6AhNP770yfpolwu9vpApNUtfSX4EIVA8YryspIzrhRX0_MEGRAXdNHb7xcQscizuPDKtUuHoTGbsTZ-KNHO
+JHaVCK5q9zInxWZD7pBKNN61zIuH9TqO4UJnBYe86XKNz869-1vX4h-hu0Jrh_z1Af5Q1-8Up7S9pFtu_ezEpey8fm5lcS_8NbJCZ8XNrvbK5aXy8ECZBWlP
+Ctbm7O6K5MyPmijr15pV26YkP5pImynOIUZ-0G
+}
+
+AzureEntityColoring(AzureExternalIDModified)
+!define AzureExternalIDModified(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExternalIDModified, AzureExternalIDModified)
+!define AzureExternalIDModified(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExternalIDModified, AzureExternalIDModified)
+!procedure AzureExternalIDModified($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExternalIDModified, $stereo=AzureExternalIDModified, $tags, $link)
+ !endprocedure
+!procedure AzureExternalIDModified($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExternalIDModified, $tags, $link, AzureExternalIDModified)
+!endprocedure

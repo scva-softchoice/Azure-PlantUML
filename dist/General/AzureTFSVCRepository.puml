@@ -1,0 +1,18 @@
+sprite $AzureTFSVCRepository [70x70/16z] {
+rTP9UYCv34HXJ16K-lu7RkTWVIHCivXOLVtUFqwm9FbhgKVWIuH9bQCNAWM6BEInm8J9CvXpUK316oBS0_mMiW-ymFJEEdXnsHKyXSaXTKps64zG6VwC9pmw
+3pIxC_vaA_gJy_HWAwOJsDwCTkV9RFjcd0VNAV2m_SmwvxkFZVv0cUrMU0ZznUHwgvMGAIrKai31XmeUdiZmJVkXMzwkJo8f4_tePi63Ie9ENDtLnV3aIR2d
+Sk1fCNIl_vB6ddSN4xzlvPqh7A0x4lstMsavykP8JcW7cYRHJdahyxs8jLFQZQ5TSYFVIyWbsWNMN-pTZf_0diaDxGRNWpdQpMGY7IXb3WJPFbnch7qC8nbj
+wgKoPUmYEPzzlQhAb8978oHHjEHuuZwJgSnOi7qmZaZAR59_7PghYDOpSWsd75AcK4cPOYLdYfMSALPofbZ9cM8bPsgLd34F8AnGwJ8Dbz3zIiwyYGyhLOvC
+GwTM4NsnvxMA10V52ZZGFrVUamf79alQ281UtKl-TLEvbnp96MSFie9Eo63_MfoTnJTDo0fMenNj6sM9oyChhuR9ad4acPgRIhAnbmeEGcho6nKXFL6DjWzA
+dJ8DLf63ZM7op_eV
+}
+
+AzureEntityColoring(AzureTFSVCRepository)
+!define AzureTFSVCRepository(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTFSVCRepository, AzureTFSVCRepository)
+!define AzureTFSVCRepository(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTFSVCRepository, AzureTFSVCRepository)
+!procedure AzureTFSVCRepository($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTFSVCRepository, $stereo=AzureTFSVCRepository, $tags, $link)
+ !endprocedure
+!procedure AzureTFSVCRepository($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTFSVCRepository, $tags, $link, AzureTFSVCRepository)
+!endprocedure

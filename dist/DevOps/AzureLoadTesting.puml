@@ -1,0 +1,18 @@
+sprite $AzureLoadTesting [70x70/16z] {
+vPU9akeW4003pCt-__S-On67eiG1VVVsdYQX6RhE7240nyTaDTFyeKJiZdpY87j0xpgAMUs-odj1wi0RUQG-GJQ3-4ehnVpJHXxebk5v0Jifx0UHuO1Xdk3v
+mRqU1ERdfDKW53JV2E94URO2Pdkv4rMd1Ka3xTHrUcgeNxMs7xgsfO7SRzYUXyEnhmS-PdbYQOW_RyT5idfTwuC0KWT2d-VQjrfoYzNJKs6CrJ7SWlk2Qhtb
+XhToiBUCyEaOBTO6YMPnmBwl1SkT3osbBVWfbl8NMU2FMpBpPM7ExrheiROmqviMPCPEYDkMjZyV5ucPoxx5rxapRLly3FwPjYr5c2UphLkIYEHZy0gdFGkB
+u7ad5u3IT2H2MnOGuIC1NM0vBx88B5dyFAKvBf08HIJ5bluyz0GKuMNB-J0zvTGlMhAgZp8EevhNBAAAD05LPSb2gaelB4eBbg8tX2U8tYYnXJI4PXP_xG0D
+0NzX6Im-JWvfWymireuSKjG6InkkmIbs97x-zfN5h-F66vpawOojtWJGb-V7wHPRGwSXJn0axUuKJplFKvPlnHl6OuPvw6XG42J80-S5Y8B4UN8GP35F72JE
+4mJPo1C5YVF4GM8m2BAH9muIanU2_
+}
+
+AzureEntityColoring(AzureLoadTesting)
+!define AzureLoadTesting(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLoadTesting, AzureLoadTesting)
+!define AzureLoadTesting(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLoadTesting, AzureLoadTesting)
+!procedure AzureLoadTesting($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLoadTesting, $stereo=AzureLoadTesting, $tags, $link)
+ !endprocedure
+!procedure AzureLoadTesting($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLoadTesting, $tags, $link, AzureLoadTesting)
+!endprocedure

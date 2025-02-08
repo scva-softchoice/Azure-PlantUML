@@ -1,0 +1,20 @@
+sprite $AzureDatabasePostgreSQLServerGroup [70x70/16z] {
+rTPfUjmW30RWW5Qa-z-tbXday3Hsv7_jrsqsNWjPG_FrdwHjUR_y8Q-9tZjySZny0IK0W7_bm4hGHy3xBEYtGjAuXTAvBmGBwSdSA5XAAeLI2iNKka94p4HK
+xapV66BLiKLLcBuZy9CoSbGEOTn5E8V6Vb9yjEMGt33Aq5Q6_wYuGyjqP1RLRJlGhe3xdUAZjrBwy7ib7FZTW30UbO2eFrH1GHIKY2d1PlKEo6eUAIffRGdY
+FrVidztHqF5ECM5YjL3YeQYPdkS0Zh9YjCuApOSu1fmFgAhqF74Clp9a_7cnf5mh1ssds68gYkKBEBwszCy5jA1mlg3ujOVcEYueSBtG_ZfKyRK2kRSCQlmj
+1GMpVkqaokrwRdwMDzxqXTsKIEt3i37qSmgyeEXwBiSZnhO6p_00Oo6ykjDAXpIQBgMtsIgfAFvDYJ3d_PdTjP82QqUxmZhd4Bsay5uBVtRKREv8QygQUyDL
+Kevoy-DtJV6bmFuzm16AL1N8TaOinyuGh7bLaJMh-VSCchAKbTmIpeeowkXrvRCGdFUlP3DxeOorAABjKiQ63EZjGN6OY9iPYbmxaeuY59ODbGYtUsLy3aOp
+-khNdWmEcypT9CFzLd4-aS77ChaKDpttf2ACxH0vd7Qh-8W-2dGSbahpCoOI-fbGgFG_R2ezaRmyPJ5b1HSIKq1dFpYK_agXsHDkvsgCwYGOU5PiLoJw9T9F
+X6Sfa4gr5dNtSpdEbPs5Mdb7wrfsbWAp5C3OJ8DWIqeUTkUap9v6GgJuwtli1Z6vsZAlJ8aqETWjx7TCZqh4R2cDr-pJl5UbOan8pPOI3375HlQkvCP_-nbJ
+jqc57ECj_8ZCUqHvKP8qzpHvhiNbO69b0vgjkGcE9sL89Xhxa8PYjmhpVZuzfmEIwB2PeQf2qCvta8JZyJ-QFm
+}
+
+AzureEntityColoring(AzureDatabasePostgreSQLServerGroup)
+!define AzureDatabasePostgreSQLServerGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabasePostgreSQLServerGroup, AzureDatabasePostgreSQLServerGroup)
+!define AzureDatabasePostgreSQLServerGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabasePostgreSQLServerGroup, AzureDatabasePostgreSQLServerGroup)
+!procedure AzureDatabasePostgreSQLServerGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabasePostgreSQLServerGroup, $stereo=AzureDatabasePostgreSQLServerGroup, $tags, $link)
+ !endprocedure
+!procedure AzureDatabasePostgreSQLServerGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabasePostgreSQLServerGroup, $tags, $link, AzureDatabasePostgreSQLServerGroup)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $AzurePowershell [70x70/16z] {
+xTN50SCm341HMrJOV-16FYhbVode3_0IytYjhbD7wSWEPrYaSiQrqaehWVisfHMru8gEQLZnCPBX_v8CK1Yp5C0K1J5B0KnH2WEKmY0bcJcDAg5powdYgHXK
+N3P4WYaBqM1A8c2b2mAKWhoYW3afIa60iaTCQlvOsSt973Lvh7Z-oNr57ojXPNMqCjE--OLjvG1RYb75HYQAal5QNNS1
+}
+
+AzureEntityColoring(AzurePowershell)
+!define AzurePowershell(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePowershell, AzurePowershell)
+!define AzurePowershell(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePowershell, AzurePowershell)
+!procedure AzurePowershell($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePowershell, $stereo=AzurePowershell, $tags, $link)
+ !endprocedure
+!procedure AzurePowershell($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzurePowershell, $tags, $link, AzurePowershell)
+!endprocedure

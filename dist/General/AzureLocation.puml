@@ -1,0 +1,18 @@
+sprite $AzureLocation [70x70/16z] {
+nPG7Tkim30GNXG3b-zytYKM3eelU0_HB9jKimmLKS0gtPcugXEkeJqnn3JPVCRaUP4LHfhadD7L9NIF-6KO5F-DYPvkmD9_8bIX6s34FBdJ54BHwcDO7JfXu
+7pGaEDsXOKQM_c1Dpp58LGjXuPSjQqLKjaHt3GSI5cIn3s6yV8qqB4vlueOit2VoEi18qnTCpVi1yhH-XY4FRsS82lGJIKS5FR4qLA0J2wE4VPGuQd2sj_N-
+TbJHH6yJREyGtgZtrr26vRstZ1h4pFuYSMQcgkJjOZDAcbZTt-wuYeOUQ-LsssxpHsAg9Y7TRWURqcCoNS_-HzKMYwjIp9OaojiHPVyyvYbbeI4HGAUbWNIa
+8UPqb5q2JCiOqrYHYoBx1cfzzdPeE1Ccbj08R-xHMxTHPgupp3oZD7VVHXHtrmYJib2iPh-pMxh_mCEUAMaK554YZDzf0DKjvdTwHDaxCngJiKGNVT2tpGUx
+XH8MEYpaapTBiQ8LksHfBnOjTJUEr1UB01oMv0CW09clM8p7WvHhBzWNZEB1oBmRraTQ_82HltKZBZyUt-XmmnYaL47p91aQi6XJ8OGv-mBdgH6iy1Z8H8cp
+XaOP0OML4fBrCDOVXEa7rb366KbDn0bucSjgua0U8g6eDYHfJH3_XIGFBvxLmIZ1hnwAWHB40o9G_8-WwWd2SLsKhEKR
+}
+
+AzureEntityColoring(AzureLocation)
+!define AzureLocation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLocation, AzureLocation)
+!define AzureLocation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLocation, AzureLocation)
+!procedure AzureLocation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLocation, $stereo=AzureLocation, $tags, $link)
+ !endprocedure
+!procedure AzureLocation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLocation, $tags, $link, AzureLocation)
+!endprocedure

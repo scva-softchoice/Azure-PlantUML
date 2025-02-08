@@ -1,0 +1,20 @@
+sprite $AzureSqlEdge [70x70/16z] {
+nTQ7TkGe48NX2b3Xylxlkq8jDys8JlBkpZTZ-oJzXqAH_WPc4M7-LKAqtAZmvGYNuN96MOf7PePNOQ5hOCmisiTXhkrgfJLuKTLYQErwfSEcjRzKuTi9Lirp
+nOG-ejK6ppygGCe73JkCpbpPwBUDBgRA-upQaZzK0XszKEoPKI75fbo9c6ESQGVWtumpnAWeWAHdx2NSAupDXNawRmsZahJ6zaOwZOdYobAwGeVoP7Ubs7kL
+3WwWdXlLFi9qWutGZAjzI9wVQB6FAUq2W7spfxCgj97pG6hVgRAu_jc-TrxAnKXScsS8RFINIt5iKYwTv06T6ryuoqDY4sQLXdffKs0RlhujViopAQykbg8Y
+l1FHieo4xKR59rPrF_ZGSrBC1tJfDsEaALBwGJCLbke_4fqVPEoB3vLPouamrsN4TLcHPKMPzJ4IYqhvSw1g7f6x2BSUuRgCk2ot5yhSTo7ll0ep5omZVcyG
+MTorviATg9QYAjnfD4J44NbWHwHM8dceRDAAy9qKozPw1RkC1-N-VkkfKJaWOvTeDrX5OhnJUi_dIeURzcCLKTh9ySBczvL5nCPIa3GoRohh28_d7aTsBoiv
+CJhOu-lDtbLoKkb7Jkzhjhs2AYpPK9NLq99Bw-Q8CNNBZw7zWCerQgAmRBbwhun2U64Qolap1gqLxdiSB02OSLHI3YEm-00PbM0sjCe6O2iUbQ1d0e2SAYs4
+1PKTGFsWaW3uNEb3cR42KCRR2fOLotqSuUg5jILhPBvPYonsbrdGKlhVt2eRVL5n07Qg8FOFRC2L7GqHhzTIpYFDzusojSFp2cEJIdTgRQeW0cyhPDXvxIm1
+dE-ZznKAJ2vMoAzMPZ9r7CygJczelL4cAiygGjzGh2h1zAKIc2imeIkac4S26Txd_1_y0m
+}
+
+AzureEntityColoring(AzureSqlEdge)
+!define AzureSqlEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlEdge, AzureSqlEdge)
+!define AzureSqlEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlEdge, AzureSqlEdge)
+!procedure AzureSqlEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlEdge, $stereo=AzureSqlEdge, $tags, $link)
+ !endprocedure
+!procedure AzureSqlEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlEdge, $tags, $link, AzureSqlEdge)
+!endprocedure

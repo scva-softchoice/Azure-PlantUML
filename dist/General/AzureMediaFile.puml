@@ -1,0 +1,16 @@
+sprite $AzureMediaFile [70x70/16z] {
+xT45OWCn34HHMpBV_y1LohMhsGdZ3owz1OKRJ795PQMKN76TOkgMCfHJD7hfJXbAAHAyPASWXbSGmok8uHN4y0fYU0Knl88ONa4Cho26Ln33AuZX5SJmoi90
+HHAZ3CLAgKK9nHYir5fatjg6mm35d3XjRNrXqfPYfL-ELgijwQpOkaan9toNR7jTFeLHVZzcARMjKOevmKrufSOJA4N2uShwM0vN4Y1O9STmj58aRALO0G-4
+Lp9u8BnYNL_Hnr9wwr-AkiM_Ib-L_gMKwlURKJl4LM85AL1EVorMT0k1Kt0NLl2aWNB3ayu-KfvvqfB_bk8XIftBl3Bwy2PTF6MioXZUfDLHx11V2M2yf88x
+N7afMVOg_wSSqAgqGv0wAte0qoJSO6y
+}
+
+AzureEntityColoring(AzureMediaFile)
+!define AzureMediaFile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMediaFile, AzureMediaFile)
+!define AzureMediaFile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMediaFile, AzureMediaFile)
+!procedure AzureMediaFile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMediaFile, $stereo=AzureMediaFile, $tags, $link)
+ !endprocedure
+!procedure AzureMediaFile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMediaFile, $tags, $link, AzureMediaFile)
+!endprocedure

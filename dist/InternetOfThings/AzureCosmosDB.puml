@@ -1,0 +1,19 @@
+sprite $AzureCosmosDB [70x70/16z] {
+pPS7TkqW34HH0Gdsl-3_Y77mW9poVjfDR_UCnjYGz3VHhv2GqXTOMFaBBABo5GEfVa6t-WKQqOxyxpW3UjR0ebU4F_Rh8WHNUENKK2xcjRNgdda8407zDGcT
+Yje0qmW8pciCQpjL0mJ6XMwr0U0HPkgm16baVeEy3Uh9d6jV7kko6zDLLA2eybe4HtUZW2Fmh1e9dWoA3gIPIZPUwaJBJ59laDGXWXwm6EflRqhE44IOPSKN
+YGz6aXF1NXOK9NwbbZGHN1z8lKfyGM7wMGkz4SKtQDym9AgbtabCU3GAOKY3WMH6SI1Jsk2xfsm9ejY3CYNGB-lRtKv7XrC0tKIXEH18IWhX-3cjiSGqbD3D
+fg7oG8j_pABn1YR3IwM2nEGpajbsHelUIYZeYjE9WQLyM49mvGKisqWq9GZsJMXP5qpMpXvHq98CBQPqIN98VBFGkZ-p5jHOreESXwJb-Eo2kRc0nVp0JacJ
+Q2rJeeGKtoL5JqcBed2tBNAV6WZoSWxmA0eyamTbTEmOf7H9opTHjf7K3o28MdsnK721Hge4Y7SmIFP3Oi5QaT2Yu1ZJr2WARWROJ8PXHX284k-q1AEk3fid
+1uejGPZZZonVXnaIJRSMr53_Ao-l3hz8RfuLZFjC8kaLM56TXKo9tptBQJasjEf5JmeuMgNRHwZGr5GVAT0n9FxsFm5y87eX6oXGmijCCRbuRSVBApbDbC8q
+cCBRXi7VxSS51OJPTaULTOIqmbqa3vZFW22op0c15V8MaitTIbQEhWbede541qpFEbY1tyeIdr-UXq3oD0ADF1-6qnUWz1KMIN-HVm
+}
+
+AzureEntityColoring(AzureCosmosDB)
+!define AzureCosmosDB(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCosmosDB, AzureCosmosDB)
+!define AzureCosmosDB(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCosmosDB, AzureCosmosDB)
+!procedure AzureCosmosDB($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCosmosDB, $stereo=AzureCosmosDB, $tags, $link)
+ !endprocedure
+!procedure AzureCosmosDB($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCosmosDB, $tags, $link, AzureCosmosDB)
+!endprocedure

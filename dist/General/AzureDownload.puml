@@ -1,0 +1,15 @@
+sprite $AzureDownload [70x70/16z] {
+xTHbSiOm38HX6IH3wVwdBQeGs8bbfVozltUUSEZNb4NB7eL5uz-bn8oIjp8gAf8Qh8XM6YpHS-9JX9uhFgMyAs7kxiQ5KWaeHGCAsHJnAF9JbOl2sZEY36lZ
+IYwmFAuGLn2RxWiZnA0WXitFY05YKuW1ObE84O8Ln604AvXXpryA8bZ139DB8MwFCNaKPPZS2gL4PYNrtYEXT92Eb7vtTzUneOF_fzGoKFrDYemeWXHRFrzf
+voYrJ5KNYgDpbUXJ8hqKydvriGQZG0VrguyHwFyfLv-WX3aaBfKqf_1IuJcbBfNck23d9OM-Ldeq8rcH1PCjGioYniQH70SD89ZkJxWwB1ZU4fpGJ-u1
+}
+
+AzureEntityColoring(AzureDownload)
+!define AzureDownload(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDownload, AzureDownload)
+!define AzureDownload(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDownload, AzureDownload)
+!procedure AzureDownload($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDownload, $stereo=AzureDownload, $tags, $link)
+ !endprocedure
+!procedure AzureDownload($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDownload, $tags, $link, AzureDownload)
+!endprocedure

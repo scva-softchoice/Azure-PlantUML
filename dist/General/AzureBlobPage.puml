@@ -1,0 +1,14 @@
+sprite $AzureBlobPage [70x70/16z] {
+xTP7ZiGm34HHXIeEVFy3J-TMW0Ytu6ppUoUIRstNbsL5JWdnYSWmCNaem-HCCSKKcTp95HP9gZ7HbU2p0ZB4vqMEA2uLa9QH3tm4EnHGKy0E1TGKi4C1DGNi
+K41D0JiKK5F0NnIFLzGKS5n9owWK5v0OJKdC9mhQWp2gf99IjIV55EvTCSMKLa-bbQ94TRUjnFd_6VvawlTK9ZUV8bCHUIYOgi0z2d5ImVLbMJS
+}
+
+AzureEntityColoring(AzureBlobPage)
+!define AzureBlobPage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBlobPage, AzureBlobPage)
+!define AzureBlobPage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBlobPage, AzureBlobPage)
+!procedure AzureBlobPage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBlobPage, $stereo=AzureBlobPage, $tags, $link)
+ !endprocedure
+!procedure AzureBlobPage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBlobPage, $tags, $link, AzureBlobPage)
+!endprocedure

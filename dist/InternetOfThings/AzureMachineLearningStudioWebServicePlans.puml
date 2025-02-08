@@ -1,0 +1,20 @@
+sprite $AzureMachineLearningStudioWebServicePlans [70x70/16z] {
+xPLNeguW48E5gQ3xNw-5WV-CNMylURB0Hn8itH-ZWCoYAUUaAapm1i4fhwKFGL7ohX8-OAXD4eGO9byHaD933fVX3AkCLE0ftc20BNbYaYyXb6VHuHfBCBs0
+o38ej4d84p3CzRXbKhY4K4KiPpBlsAHMKqo6EUtLHkFYtIX5MAQ61NDUR7GCerHPvrgkxogO4qlcAIOkTkOrS9-YxPRc7Oefjb2xrU379XrJsC8VPVfQ6Pqd
+ieq03t2NDHfcGp48HgicxLOh2steWq7N58E81Ck4Uq_-ShCVXlm5ezF8G5me1X6oBT0r9PcLF0mVZ4ApYWqo2ynCz91w2MU8OGXSP8uBHFFG2viPthn0QbOg
+Pa-K-lckBcPmqwzL1GRPns0gz_hos8Hrf6ZToj3qgIHQecnyhKNBwaD45gXl4AbyJIbXXrfkzKcAeCqoML4kK1yCaXRbSb5PgiWIh6g10C2fIc3I5ALUcPyY
+ZbsG9fiM_OCRUIlej5AqFATcnefHzox10GKR1Mk1xWl1hbxCMGFnMXGxAX0DRSEgGgbNDbi4tiWogvY1mq-iEefiA62FYIOvW7JHFRryJ3cMxOhpaXvJR5Vy
+cH2n5rs9aslN_Xpg89floB-q_8wIugee9A9dWGYDuHNdJekitQSo2jQd-NjJ_bF0KUWT9B2Zl3H3p1oRhKdXNHucXwHtUJZuq-UPtAotcN2JW5Y4dq6YJ0gh
+Y2A2p_A82AphDl9jaOZGxbL-ayTB7cKIdyVJuuDI-32ft8F0oL0H5Re32QAgSDIOkfl7ObNbuzrJrHlRZQfw5btS8cUMyQmrF-1uAHKybkYiyqoKxabEAUck
+JiteTw54kIVe_WoD
+}
+
+AzureEntityColoring(AzureMachineLearningStudioWebServicePlans)
+!define AzureMachineLearningStudioWebServicePlans(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWebServicePlans, AzureMachineLearningStudioWebServicePlans)
+!define AzureMachineLearningStudioWebServicePlans(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWebServicePlans, AzureMachineLearningStudioWebServicePlans)
+!procedure AzureMachineLearningStudioWebServicePlans($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudioWebServicePlans, $stereo=AzureMachineLearningStudioWebServicePlans, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudioWebServicePlans($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudioWebServicePlans, $tags, $link, AzureMachineLearningStudioWebServicePlans)
+!endprocedure

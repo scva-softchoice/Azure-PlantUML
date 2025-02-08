@@ -1,0 +1,15 @@
+sprite $AzureLogicApps [70x70/16z] {
+xTI5iSGm34LHeK7zz_iPF2E_POxFOkY6GrCi0DCH17gKoggeYiu_HrM0ArPMPLNiM_wb8nZoOfLLOGEOZiA_Ik-5Vz6fIaIXv3wL6b7fR3sYqzdYmoKEIuJJ
+UIo-69r1MlneGeVpsWRnHRL_XmRL2U8UIMCYhf5qnYSrSVhYapo8Q4HK7wZG7r4Vr8W0Hyh12i1cEwnKEb1xw0h_yDRIymW-krhpOLPMG2WH1LWXIlG4d7Rd
+sXKpqwzN-iqLKqFp0zCAjF7AggoAeq-ku7cnN77agfLLCKSemH5sG2WH1_WT
+}
+
+AzureEntityColoring(AzureLogicApps)
+!define AzureLogicApps(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLogicApps, AzureLogicApps)
+!define AzureLogicApps(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLogicApps, AzureLogicApps)
+!procedure AzureLogicApps($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLogicApps, $stereo=AzureLogicApps, $tags, $link)
+ !endprocedure
+!procedure AzureLogicApps($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLogicApps, $tags, $link, AzureLogicApps)
+!endprocedure

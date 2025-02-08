@@ -1,0 +1,15 @@
+sprite $AzureTable [70x70/16z] {
+xPS5ieKm301hiTx_lb-UfhXhbj5bM1nQDmx3Y32B-8XGdWd-L_9ih68Lgz1iUYjMGL3WGq7IjAYoufq61wkoukhhNLy5h3BmwaQd20-LWYAsg4MVEgQvowCo
+6rL9Jk7fNq5Kf1PLLa9v3n_XgC4MPPK_e5H3xX7MRmZst2Cc_3B-UP7PB5uXqF1WLLRA6q9rXIsghm8zQg4A7RdIlmbtLl8JHWN9lnBIAjULN7bqA7CZijoC
+R_xiSno6yGi
+}
+
+AzureEntityColoring(AzureTable)
+!define AzureTable(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTable, AzureTable)
+!define AzureTable(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTable, AzureTable)
+!procedure AzureTable($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTable, $stereo=AzureTable, $tags, $link)
+ !endprocedure
+!procedure AzureTable($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTable, $tags, $link, AzureTable)
+!endprocedure

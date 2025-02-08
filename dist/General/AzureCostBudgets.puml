@@ -1,0 +1,20 @@
+sprite $AzureCostBudgets [70x70/16z] {
+lPVfkhCw24RB3FT_m-UObgeOKhyzhLzxN0-y95GVVm8YVDl1ke7VgqDVyBSh-Mure6_aUmqb_pi9lzFG01uKuL_fZ4wra7j4kC2D9fYnoKLy4A4VF5G68eSP
+WISHSgi3ofySpmkGM7eSxmmMchEBRAMSrKYelqVfiSOYghTEFB-wceUi1pwSwLxJrm9G_rvw3PLS4Z4pgd_RPrFlNcz9ZQv63PsbPXmqZJ_RgHQUn3YYQVAl
+tvFOG8NAxspJt5eyOaVEhSBe2Juwo0fOeic0Lw2jBDaJVh3e9mlUI4QijIJg7h5BMOLBJc03nSr6G9AMSlQ2NtylEk1PAlm-TS3NvJtoBTUG9XPCIzAqX6N7
+DRMqkoQmR0IQv08h2xo3qMQlv87LpfB1oCeYbgIb2SQwZhAbHB2nI5xiIxe9sm6bpkAnc7JLcCw7bAE6zY45zQI1PjJj3KZevC6cbeQc7ftcul-wxtWswTiM
+wOgnqxe3Mbee3qztTZCbMLfowZ3PTdHCgLOhVBHGMgw3XjCYDgXhbtQBJ3koSxWU5ysOiD3Oc2oPxcfzGsmMDogM2ark4UxIfyMDbvOQdPyRuaYDD9OsMpwK
+bXR1_lD8yRekFOvPnrCpn0cbfpdzagKacsCK0-MvWqM7GkXHeKmbWTXEvnXsTtQJqWzT7dviqyXTYpNFXn1UDRr5Dydq6OY7XkzOn3FQApghXaG49vNqpr4s
+DFfO0-OPoafZk9AmbqgwfXQlXsZkUPLNcfK7zUd8O5lufN6b55rUrHnllDEdnqq8DuXOhNlzx7jFpuM8gDdta4N4Dnm9Yfz5iIcucTrIPB6JQNy9G68cJC5l
+yXy
+}
+
+AzureEntityColoring(AzureCostBudgets)
+!define AzureCostBudgets(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCostBudgets, AzureCostBudgets)
+!define AzureCostBudgets(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCostBudgets, AzureCostBudgets)
+!procedure AzureCostBudgets($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCostBudgets, $stereo=AzureCostBudgets, $tags, $link)
+ !endprocedure
+!procedure AzureCostBudgets($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCostBudgets, $tags, $link, AzureCostBudgets)
+!endprocedure

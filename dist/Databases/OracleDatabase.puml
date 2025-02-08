@@ -1,0 +1,18 @@
+sprite $OracleDatabase [70x70/16z] {
+tTS9Rkiw38LX3kUGrFut_18rg6jKYYM_Etz5CHf_78aW4Fd6pF7W9lSP3gvoY-BCxaM8yv_VYdopdm47JFOuXsGFnrmsg7DY9p6d6oSoPzjtS_zWU0MszIRt
+tyUu1DlVP__2BLP1vX1hIAXCCTw2Fm2Co8mkCu9mDrsh48oiXtmwAbqz1Fog0bRhYI1m-cGryrU_MbBdvy9ehLNGLQRK4TLQeuYF8zLQc2mmjfOYuqehMQNL
+EFvAsPhB8ilMH2ULLhILXL_jGSI7bQwIC5KPK3KmUg9NXFFAXpuh971CODQ7ezAF9a__HsKoTOEAUEJPSYMfw9NE6PkLZDSEF2fFQlxfVINaax4_AaCNx_Bw
+L1ntDBHwBh-YudiLofZLHWKovRbMoNc3ycHulp4pwA_7XxBywnm181aTIU2qlItdTrHGMQ2U5pTTGRTfIyqHjJml-TeAPgfch-sGFtRgydzNaYvYToj11k4g
+JxnPYUE0aVVFnSmTpAg_PpDmhr8obZkLCfb0hLOACc4Vw_swalJ--53YSo3865No63kncXrBkNobgcRcRcQgUdxlV7VJ5R3hxHArCYz1kAdAYQev67bZwYBu
+4F5FRmRvdvlXmHb_qMR0NYLb33kLa2dKMgMeyeunhof9amNQjtrygmHFlxp-0m
+}
+
+AzureEntityColoring(OracleDatabase)
+!define OracleDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, OracleDatabase, OracleDatabase)
+!define OracleDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, OracleDatabase, OracleDatabase)
+!procedure OracleDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=OracleDatabase, $stereo=OracleDatabase, $tags, $link)
+ !endprocedure
+!procedure OracleDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, OracleDatabase, $tags, $link, OracleDatabase)
+!endprocedure

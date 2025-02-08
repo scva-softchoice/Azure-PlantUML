@@ -1,0 +1,18 @@
+sprite $AzureBizTalk [70x70/16z] {
+rTS7UWCf38RXNu0QoVtFknvI08DSsFwcXvdlGQGQ_n-KIs7cKX9E9TO1PnmekdYxatKhuHsiWOANaMX8wDM8FY9uZNRd6T7k-6oogTdmaadCvi_H2uTYamn0
+RIPuXjV8cibuZFQNwrkRIRn4jXb2gCYwyI1Ji4Tizn96-i98sHPQRWYNSYFJ6dR40eoRP8lWU-JD2ZsCgFpGfJ8kQScOwNPUkQ_8_HqbEfDUuNKYdYhpjqAo
+NON7Sw7-GQ_C-zDTfLWZQVwuhFSGBjbjUDBUTbD2n_DgluTmepvI_D2sFf1fyUuM3oeGmgnWMt46ybfXJ2ZDELu68F1IKLTqYIyqRaFlAmBrYRPF67va-P9w
+vFkY4Smdfkv3XkGRJmUYvfFiUqPzAqtgaPMOxoakB3zoY_gUgGTmANE5FH0kq3nH-r0yaCC5NEHRmSLyp-01nYMDV-390me9-mrnsqd37YZ87b3SIHwXDcpr
+tKl1XABhshPJ3JZFEwcHWXkf4Klu8JLaQAo6J190nRp6yi_4DVJn-L4_RoyncMQEAfS75HlEtquhXf6SLGIpPEzNF6EHxRsAPkmLDQ_L1jyLcwb8mHkiLIe2
+_sob-ZKa_fJK7wETOpNLzb9mZEoN4awnTGMdRA3d0uq8PvAF28TyX5FcdU9KzYxX64z_BOvbhvU-aqD5b3F-H_u
+}
+
+AzureEntityColoring(AzureBizTalk)
+!define AzureBizTalk(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBizTalk, AzureBizTalk)
+!define AzureBizTalk(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBizTalk, AzureBizTalk)
+!procedure AzureBizTalk($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBizTalk, $stereo=AzureBizTalk, $tags, $link)
+ !endprocedure
+!procedure AzureBizTalk($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBizTalk, $tags, $link, AzureBizTalk)
+!endprocedure

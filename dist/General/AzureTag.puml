@@ -1,0 +1,16 @@
+sprite $AzureTag [70x70/16z] {
+xT85UiGm30NX628fSF_prfaoBDYltCuovFzCqwUMMfaArPhxZVcDgex0w0XfY5c4cy5SYzZBVDkFDhTv78dzlh0vISZAUFmg9jdhskNRCPDwl36OVYJQjPbV
+2tCoI_s8hUtIQQAbJSnQtGWJQlCXOqfcgGCvhUGkvEMCucv6gHknvM5rSnlMOgqpY9_gVgVpsjxuKIT2mUbVENRXBUj5QDdlMnob6w7OCBPmcaSGd5W2uwII
+lBCg8oWgGaL5ACi8YefGUed4I4b5I4N8LOJAKoG6gpy4-KToB6Et5yXOJv6a8bHKXD8OKgRd5G5H612L0L4P49K1KHaGbG5H6H2L0L4P49t9qpNbPJrzkn9X
+DEl9c8xAC99houkEmEW8Z8x0w0YCZi3e28oEmEW8Z8x0w0WCY5foJzEdTWC
+}
+
+AzureEntityColoring(AzureTag)
+!define AzureTag(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTag, AzureTag)
+!define AzureTag(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTag, AzureTag)
+!procedure AzureTag($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTag, $stereo=AzureTag, $tags, $link)
+ !endprocedure
+!procedure AzureTag($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTag, $tags, $link, AzureTag)
+!endprocedure

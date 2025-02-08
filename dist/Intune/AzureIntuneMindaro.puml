@@ -1,0 +1,18 @@
+sprite $AzureIntuneMindaro [70x70/16z] {
+xTO7Sjmm38LXL4Bo_U-RmXM4tG6XmasF_rJRyZVpt4Wu3HdUZrMLtZH8Uu8m7ufwyxD4dwFPCTxqB1BDoVG7HATdiPR9LGSrcf-5T8WeNrCGkKRCBYk8CZQQ
+tLAGP6ZSL31_UCpkAccMc4qfxlYOUGN9nqmg7hinftXYlrlvL3uLWciTAGBNgvI6SAUXqlZocOZk94NYcVCpSL_-gYZwCz_Y2sSYEHDA8tz67b5fv7FK5Tx7
+H7H-IH3S7NaQyngUNnBswHnZF8-BCVKrWsGKbRUcF2l6v32DgMOXInrVkAtWDaRREEsp4EK8QVpui3QhQWy5IIf3pJR5wZO5aQeRpq1H_zjJLn2vkAqaXK3C
+J86IqfCqvaLPUaP05l_sGl5PReZPI8btDjuPLpoECKF546Zn6D2oqXCtij8HVWZEjApufT2YK0A9f3CZ1Tb-fhAkwtTcZHImzNzlAS44Cg5qHWAnTKvP5sUQ
+8tSLPxxlC4VkAUl7rjB_kufzU3DAxiwYOmLA9Iu9AD9AP17fpzHAUpeJsxWuHoj58EBo18YIufU42ElJA3kkDCf7UMLaXjEOSXRLjp1EOufP35LTIMFIB1zJ
+CtnwA-OOKqPm6gPdlW8
+}
+
+AzureEntityColoring(AzureIntuneMindaro)
+!define AzureIntuneMindaro(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIntuneMindaro, AzureIntuneMindaro)
+!define AzureIntuneMindaro(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIntuneMindaro, AzureIntuneMindaro)
+!procedure AzureIntuneMindaro($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIntuneMindaro, $stereo=AzureIntuneMindaro, $tags, $link)
+ !endprocedure
+!procedure AzureIntuneMindaro($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIntuneMindaro, $tags, $link, AzureIntuneMindaro)
+!endprocedure

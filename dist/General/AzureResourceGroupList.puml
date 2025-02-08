@@ -1,0 +1,16 @@
+sprite $AzureResourceGroupList [70x70/16z] {
+xTO7Re1034JH6NksmFtlcvvOjeJ2abx-gj6Uw81lc_f80Hmb0qQg2pcESLw9Y9HTKnmf_oRAl_Al_2kKvm6Wp141B_E8Rvlr4i1U8j1wpf3oMG8uImQCcTCN
+AlDNAF_AwAr9hVLnNHbDKR-eF1dkJmwlAFU84m_H7hnbnNGN4RcajgheBW25wMkA94V9L2EWafKDW9e7VIf9F9fzEfFyO7xh8mQ1taSQddQTH_iujyY0hQIq
+CdB1ZxCA3nMJ-eBY7wdmA_P5Xyfu-pNIYkBvUKWxkUtHlRBdsj5ZbFIsdrQWs9coAsD1iNZkijtseXGaAL0mQTvSKbpreAYx-lwQ8aI-JQNTeHVaI64WjctR
+RBhFZQJf8P-l_gbwGkvJYJXV8A0K6QuXTz5STxaJQtaWfIz2sjSZV0y4xJqGi20NQmMv6F5DkWK
+}
+
+AzureEntityColoring(AzureResourceGroupList)
+!define AzureResourceGroupList(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureResourceGroupList, AzureResourceGroupList)
+!define AzureResourceGroupList(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureResourceGroupList, AzureResourceGroupList)
+!procedure AzureResourceGroupList($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureResourceGroupList, $stereo=AzureResourceGroupList, $tags, $link)
+ !endprocedure
+!procedure AzureResourceGroupList($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureResourceGroupList, $tags, $link, AzureResourceGroupList)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureFolderWebsite [70x70/16z] {
+xTLN4jGm48HXoUgUqFS_C5WEPD0i6VnjxUjVIbDkVxu7lgotLVOruuTKZBrIuVYGtL2ezFOX59TZq_Q5oeJL2lg7QEyXnzTjpRu5uzkm45bGZzGh66k-6Rd_
+BrQ8iVeZVfS7FLBACE9b97L9mqiO8bst9EfSKf2HXt0ZKHNdDZWB12VKS6-yHLWGE-uC5MGgTu4JFI8bBqKOEJbsjCYT969PaZvNGkmi8gvCOXLbfDEE2CzC
+TJ4XHziDWEvdvbnCO56AxT3fFZEScTAMfDvEvdV6IKj9M6DIkmoV31XpRIbnjUBjqls4OtcK34jSqIwRNywrILojg5tWfwXMJCAzeKjiHzMIwvFOFrvA-9v1
+OQwb94RV1e0pCdbckXNUBk7dA5fmR8nx0fOh9fBtHC_DRVTGOrcGbjTGj-cgE9RH63c5dHL6QOecOoeFtYQ04ofCkZ9jAaUcqDNntbhtZ0WdgbnJ7hGpr37r
+WIHUOgbR6bvsVaB2YH_cyTX-IAJzyHvl
+}
+
+AzureEntityColoring(AzureFolderWebsite)
+!define AzureFolderWebsite(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFolderWebsite, AzureFolderWebsite)
+!define AzureFolderWebsite(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFolderWebsite, AzureFolderWebsite)
+!procedure AzureFolderWebsite($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFolderWebsite, $stereo=AzureFolderWebsite, $tags, $link)
+ !endprocedure
+!procedure AzureFolderWebsite($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFolderWebsite, $tags, $link, AzureFolderWebsite)
+!endprocedure

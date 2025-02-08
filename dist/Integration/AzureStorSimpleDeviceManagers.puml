@@ -1,0 +1,16 @@
+sprite $AzureStorSimpleDeviceManagers [70x70/16z] {
+xT85WYKn24NH1mJB_lSxBfLV6XdjFWku4S0_XJwP2uZwDoOO8-ODfO66DyOwweSAEf3v2ICynNw1Ho9xj2BYXYVS5sJKRmdka3ymS9M1jQ5umd65YyKZV9xG
+U4nnJ3mwE0vPzC41zkX4s2dHJOOYUrwmnJ5gsubnplX6OuRiLtuyep69yKbC8u1pcW6QEoQy9POt69OxZ1Rd3OVdZlHMaY9tL5gQTqha0kQvW5ik48UJRbdU
+aWMJJiUAIHjiNvQMvvq2pda4MCuA09HrKi4dMbjAs2Ajrm9VU6ti9bsl2RwAtGMtIhram54cJHjPhpX-ideXev7jJRQadjFIYlFNu_JcMSugmTXZouvAkk04
+Iz4dYZ3UFD56mGZo5u8H_e8nWdSlUhVkN_A5O03bYxBaBep_tqS
+}
+
+AzureEntityColoring(AzureStorSimpleDeviceManagers)
+!define AzureStorSimpleDeviceManagers(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorSimpleDeviceManagers, AzureStorSimpleDeviceManagers)
+!define AzureStorSimpleDeviceManagers(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorSimpleDeviceManagers, AzureStorSimpleDeviceManagers)
+!procedure AzureStorSimpleDeviceManagers($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorSimpleDeviceManagers, $stereo=AzureStorSimpleDeviceManagers, $tags, $link)
+ !endprocedure
+!procedure AzureStorSimpleDeviceManagers($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorSimpleDeviceManagers, $tags, $link, AzureStorSimpleDeviceManagers)
+!endprocedure

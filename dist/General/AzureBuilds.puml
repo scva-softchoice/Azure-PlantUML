@@ -1,0 +1,15 @@
+sprite $AzureBuilds [70x70/16z] {
+xT95WiCm44HHOKFkV-19nKmBkOQZhvNe1UpmTwewL2b5HaM-NUbAL_GtAAQlmIglI4Kf9QOXcnhdiKcngvgOT86aq5HYaOdnVK2QcOC2X6M0q0mGWc4HC8zX
+0A4O18HdW70CZw0aG7vFlLJ6Ka1bwcppkbAdC8jrAcqsIrUwGhnr_x5OAbM9K4J9AhwAqk7By4guLEgK8fbcqgJKF2L0vbczgIZwBiNEMYdFsKgnaouLsIX6
+A_QTYf-rKfwpHH4_wLBHwLfnLEufRbCdirE53ig33egpY4CfJY8b_Ae-
+}
+
+AzureEntityColoring(AzureBuilds)
+!define AzureBuilds(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBuilds, AzureBuilds)
+!define AzureBuilds(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBuilds, AzureBuilds)
+!procedure AzureBuilds($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBuilds, $stereo=AzureBuilds, $tags, $link)
+ !endprocedure
+!procedure AzureBuilds($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBuilds, $tags, $link, AzureBuilds)
+!endprocedure

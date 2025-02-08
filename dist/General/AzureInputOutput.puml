@@ -1,0 +1,15 @@
+sprite $AzureInputOutput [70x70/16z] {
+xTS5hiGm38JXIOtBzp_jKlmOPfb_gKBdaqLjWxlerU3hhEsR-Zf5bN5CUH8bQfiuiaTL9ZtPjr4_LygYXtsRz7CNKrxA7FisxWSLsmRRr529WZO8rjacmQzP
+S4QSpLXmHfqn5fnHPum5PzGPOxb9kU9AbJIkk58bzL-5CPwSiQWKLVxP1-Fa2r0AOVY793c3e4no1a6PqNybk19KESak1gxq6Ou0aPb_F3L3a5B-ol1xyO7y
+cJC4pX4OGr2xEBXY-4SPZyR_8p268CRh75nn4CN15GTH75mXCy4Hs8Xkww39pvbMNzYzgo_iQRxsD_yNz59E-WSVn_MmIiPHoIbsILJjY5kvu3vwjG8
+}
+
+AzureEntityColoring(AzureInputOutput)
+!define AzureInputOutput(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureInputOutput, AzureInputOutput)
+!define AzureInputOutput(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureInputOutput, AzureInputOutput)
+!procedure AzureInputOutput($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureInputOutput, $stereo=AzureInputOutput, $tags, $link)
+ !endprocedure
+!procedure AzureInputOutput($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureInputOutput, $tags, $link, AzureInputOutput)
+!endprocedure

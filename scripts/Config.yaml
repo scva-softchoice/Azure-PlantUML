@@ -7,6 +7,196 @@ Categories:
     Target: AzureWorkbook
   - Source: Workflow
     Target: AzureWorkflow
+  - Source: Cost Management and Billing
+    Target: AzureCostManagementAndBilling
+  - Source: Preview Features
+    Target: AzurePreviewFeatures
+  - Source: All Resources
+    Target: AzureAllResources
+  - Source: Subscriptions
+    Target: AzureSubscriptions
+  - Source: Reservations
+    Target: AzureReservations
+  - Source: Service Health
+    Target: AzureServiceHealth
+  - Source: Information
+    Target: AzureInformation
+  - Source: Recent
+    Target: AzureRecent
+  - Source: Resource Groups
+    Target: AzureResourceGroups
+  - Source: Marketplace
+    Target: AzureMarketplace
+  - Source: Templates
+    Target: AzureTemplates
+  - Source: Quickstart Center
+    Target: AzureQuickstartCenter
+  - Source: Management Groups
+    Target: AzureManagementGroups
+  - Source: Help and Support
+    Target: AzureHelpAndSupport
+  - Source: Tag
+    Target: AzureTag
+  - Source: Dashboard
+    Target: AzureDashboard
+  - Source: Free Services
+    Target: AzureFreeServices
+  - Source: Marketplace Management
+    Target: AzureMarketplaceManagement
+  - Source: Region Management
+    Target: AzureRegionManagement
+  - Source: Troubleshoot
+    Target: AzureTroubleshoot
+  - Source: Resource Explorer
+    Target: AzureResourceExplorer
+  - Source: Biz Talk
+    Target: AzureBizTalk
+  - Source: Blob Block
+    Target: AzureBlobBlock
+  - Source: Blob Page
+    Target: AzureBlobPage
+  - Source: Branch
+    Target: AzureBranch
+  - Source: Browser
+    Target: AzureBrowser
+  - Source: Bug
+    Target: AzureBug
+  - Source: Builds
+    Target: AzureBuilds
+  - Source: Cache
+    Target: AzureCache
+  - Source: Code
+    Target: AzureCode
+  - Source: Commit
+    Target: AzureCommit
+  - Source: Controls
+    Target: AzureControls
+  - Source: Controls Horizontal
+    Target: AzureControlsHorizontal
+  - Source: Cost Alerts
+    Target: AzureCostAlerts
+  - Source: Cost Analysis
+    Target: AzureCostAnalysis
+  - Source: Cost Budgets
+    Target: AzureCostBudgets
+  - Source: Counter
+    Target: AzureCounter
+  - Source: Cubes
+    Target: AzureCubes
+  - Source: Dev Console
+    Target: AzureDevConsole
+  - Source: Download
+    Target: AzureDownload
+  - Source: Error
+    Target: AzureError
+  - Source: Extensions
+    Target: AzureExtensions
+  - Source: File
+    Target: AzureFile
+  - Source: Files
+    Target: AzureFiles
+  - Source: Folder Blank
+    Target: AzureFolderBlank
+  - Source: Folder Website
+    Target: AzureFolderWebsite
+  - Source: FTP
+    Target: AzureFTP
+  - Source: Gear
+    Target: AzureGear
+  - Source: Globe Error
+    Target: AzureGlobeError
+  - Source: Globe Success
+    Target: AzureGlobeSuccess
+  - Source: Globe Warning
+    Target: AzureGlobeWarning
+  - Source: Guide
+    Target: AzureGuide
+  - Source: Heart
+    Target: AzureHeart
+  - Source: Image
+    Target: AzureImage
+  - Source: Input Output
+    Target: AzureInputOutput
+  - Source: Journey Hub
+    Target: AzureJourneyHub
+  - Source: Launch Portal
+    Target: AzureLaunchPortal
+  - Source: Learn
+    Target: AzureLearn
+  - Source: Load Test
+    Target: AzureLoadTest
+  - Source: Location
+    Target: AzureLocation
+  - Source: Log Streaming
+    Target: AzureLogStreaming
+  - Source: Management Portal
+    Target: AzureManagementPortal
+  - Source: Media File
+    Target: AzureMediaFile
+  - Source: Mobile
+    Target: AzureMobile
+  - Source: Mobile Engagement
+    Target: AzureMobileEngagement
+  - Source: Power
+    Target: AzurePower
+  - Source: Powershell
+    Target: AzurePowershell
+  - Source: Power Up
+    Target: AzurePowerUp
+  - Source: Feature Previews
+    Target: AzureFeaturePreviews
+  - Source: Process Explorer
+    Target: AzureProcessExplorer
+  - Source: Production Ready Database
+    Target: AzureProductionReadyDatabase
+  - Source: Resource Group List
+    Target: AzureResourceGroupList
+  - Source: Resource Linked
+    Target: AzureResourceLinked
+  - Source: Scheduler
+    Target: AzureScheduler
+  - Source: Search
+    Target: AzureSearch
+  - Source: Server Farm
+    Target: AzureServerFarm
+  - Source: SSD
+    Target: AzureSSD
+  - Source: Storage Azure Files
+    Target: AzureStorageAzureFiles
+  - Source: Storage Container
+    Target: AzureStorageContainer
+  - Source: Storage Queue
+    Target: AzureStorageQueue
+  - Source: Table
+    Target: AzureTable
+  - Source: Tags
+    Target: AzureTags
+  - Source: TFS VC Repository
+    Target: AzureTFSVCRepository
+  - Source: Toolbox
+    Target: AzureToolbox
+  - Source: Versions
+    Target: AzureVersions
+  - Source: Website Power
+    Target: AzureWebsitePower
+  - Source: Website Staging
+    Target: AzureWebsiteStaging
+  - Source: Web Slots
+    Target: AzureWebSlots
+  - Source: Web Test
+    Target: AzureWebTest
+  - Source: Workbooks
+    Target: AzureWorkbooks
+  - Source: Workflow
+    Target: AzureWorkflow
+  - Source: Backlog
+    Target: AzureBacklog
+  - Source: Media
+    Target: AzureMedia
+  - Source: Module
+    Target: AzureModule
+  - Source: Search Grid
+    Target: AzureSearchGrid
 
 - Name: AIMachineLearning
   Services:
@@ -28,6 +218,12 @@ Categories:
     Target: AzureMachineLearningStudioWebServicePlan
   - Source: Translator Text
     Target: AzureTranslatorText
+  - Source: AI at Edge
+    Target: AzureAIAtEdge
+  - Source: Azure Managed Redis
+    Target: AzureManagedRedis
+  - Source: Azure OpenAI
+    Target: AzureOpenAI
 
 - Name: Analytics
   Services:
@@ -63,6 +259,10 @@ Categories:
   - Source: Power BI Embedded
     Target: AzurePowerBIEmbedded
     Fit:    true
+  - Source: Power Platform
+    Target: AzurePowerPlatform
+  - Source: Endpoint Analytics
+    Target: AzureEndpointAnalytics
 
 - Name: Blockchain
   Services:
@@ -76,6 +276,8 @@ Categories:
     Target: AzureBlockchainConsortium
   - Source: Outbound Connection
     Target: AzureBlockchainConnection
+  - Source: Blockchain Applications
+    Target: AzureBlockchainApplications
 
 - Name: Compute
   Services:
@@ -141,6 +343,26 @@ Categories:
     Target: AzureVirtualDesktopHostPool
   - Source: Azure Virtual Desktop Workspace
     Target: AzureVirtualDesktopWorkspace
+  - Source: Maintenance Configuration
+    Target: AzureMaintenanceConfiguration
+  - Source: Host Pools
+    Target: AzureHostPools
+  - Source: Application Group
+    Target: AzureApplicationGroup
+  - Source: Restore Points
+    Target: AzureRestorePoints
+  - Source: Restore Points Collections
+    Target: AzureRestorePointsCollections
+  - Source: Azure Compute Galleries
+    Target: AzureComputeGalleries
+  - Source: Compute Fleet
+    Target: AzureComputeFleet
+  - Source: AKS Automatic
+    Target: AzureAKSAutomatic
+  - Source: Host Groups
+    Target: AzureHostGroups
+  - Source: Hosts
+    Target: AzureHosts
 
 - Name: Containers
   Services:
@@ -203,6 +425,16 @@ Categories:
     Target: AzureInstancePool
   - Source: Azure Data Explorer Clusters
     Target: AzureDataExplorerCluster
+  - Source: Azure SQL Edge
+    Target: AzureSqlEdge
+  - Source: Azure Purview Accounts
+    Target: AzurePurviewAccounts
+  - Source: Oracle Database
+    Target: OracleDatabase
+  - Source: Azure Database PostgreSQL Server Group
+    Target: AzureDatabasePostgreSQLServerGroup
+  - Source: Elastic Job Agents
+    Target: ElasticJobAgents
 
 - Name: DevOps
   Services:
@@ -226,6 +458,26 @@ Categories:
     Target: AzureLabServices
   - Source: Azure DevOps organizations
     Target: AzureDevOpsOrganisation
+  - Source: Change Analysis
+    Target: AzureChangeAnalysis
+  - Source: CloudTest
+    Target: AzureCloudTest
+  - Source: Load Testing
+    Target: AzureLoadTesting
+  - Source: Lab Accounts
+    Target: AzureLabAccounts
+  - Source: DevOps Starter
+    Target: AzureDevOpsStarter
+  - Source: Managed DevOps Pools
+    Target: AzureManagedDevOpsPools
+  - Source: Code Optimization
+    Target: AzureCodeOptimization
+  - Source: Workspace Gateway
+    Target: AzureWorkspaceGateway
+  - Source: API Management Services
+    Target: AzureAPIManagementServices
+  - Source: API Connections
+    Target: AzureAPIConnections
 
 - Name: Health
   Services:
@@ -293,6 +545,46 @@ Categories:
     Target: AzurePartnerTopic
   - Source: Biz Talk
     Target: AzureBizTalk
+  - Source: Integration Service Environments
+    Target: AzureIntegrationServiceEnvironments
+  - Source: Azure Databox Gateway
+    Target: AzureDataboxGateway
+  - Source: Partner Registration
+    Target: AzurePartnerRegistration
+  - Source: Partner Namespace
+    Target: AzurePartnerNamespace
+  - Source: Integration Environments
+    Target: AzureIntegrationEnvironments
+  - Source: Business Process Tracking
+    Target: AzureBusinessProcessTracking
+  - Source: API Management Services
+    Target: AzureAPIManagementServices
+  - Source: API Connections
+    Target: AzureAPIConnections
+  - Source: StorSimple Device Managers
+    Target: AzureStorSimpleDeviceManagers
+  - Source: Azure Stack Edge
+    Target: AzureStackEdge
+  - Source: Data Factories
+    Target: AzureDataFactories
+  - Source: Azure SQL Server Stretch Databases
+    Target: AzureSqlServerStretchDatabases
+  - Source: Event Grid Topics
+    Target: AzureEventGridTopics
+  - Source: Relays
+    Target: AzureRelays
+  - Source: Azure API for FHIR
+    Target: AzureAPIForFHIR
+  - Source: Software as a Service
+    Target: AzureSoftwareAsAService
+  - Source: Azure Data Catalog
+    Target: AzureDataCatalog
+  - Source: App Configuration
+    Target: AzureAppConfiguration
+  - Source: SendGrid Accounts
+    Target: AzureSendGridAccounts
+  - Source: Logic Apps Custom Connector
+    Target: AzureLogicAppsCustomConnector
 
 - Name: InternetOfThings
   Services:
@@ -320,6 +612,64 @@ Categories:
     Target: AzureTimeSeriesInsightsAccessPolicy
   - Source: Device Provisioning Services
     Target: AzureDeviceProvisioningService
+  - Source: Machine Learning Studio (Classic) Web Services
+    Target: AzureMachineLearningStudioClassicWebServices
+  - Source: Event Hubs
+    Target: AzureEventHubs
+  - Source: Stream Analytics Jobs
+    Target: AzureStreamAnalyticsJobs
+  - Source: Azure Databox Gateway
+    Target: AzureDataboxGateway
+  - Source: Digital Twins
+    Target: AzureDigitalTwins
+  - Source: Industrial IoT
+    Target: AzureIndustrialIoT
+  - Source: Logic Apps
+    Target: AzureLogicApps
+  - Source: Azure Stack HCI Sizer
+    Target: AzureStackHCISizer
+  - Source: Stack HCI Premium
+    Target: AzureStackHCIPremium
+  - Source: Azure IoT Operations
+    Target: AzureIoTOperations
+  - Source: Function Apps
+    Target: AzureFunctionApps
+  - Source: Notification Hubs
+    Target: AzureNotificationHubs
+  - Source: Notification Hub Namespaces
+    Target: AzureNotificationHubNamespaces
+  - Source: Azure Stack
+    Target: AzureStack
+  - Source: Azure Cosmos DB
+    Target: AzureCosmosDB
+  - Source: Event Hub Clusters
+    Target: AzureEventHubClusters
+  - Source: Machine Learning Studio Workspaces
+    Target: AzureMachineLearningStudioWorkspaces
+  - Source: Machine Learning Studio Web Service Plans
+    Target: AzureMachineLearningStudioWebServicePlans
+  - Source: Time Series Insights Environments
+    Target: AzureTimeSeriesInsightsEnvironments
+  - Source: IoT Hub
+    Target: AzureIoTHub
+  - Source: IoT Central Applications
+    Target: AzureIoTCentralApplications
+  - Source: Azure Maps Accounts
+    Target: AzureMaps
+  - Source: IoT Edge
+    Target: AzureIoTEdge
+  - Source: Time Series Insights Event Sources
+    Target: AzureTimeSeriesInsightsEventSources
+  - Source: Time Series Insights Access Policies
+    Target: AzureTimeSeriesInsightsAccessPolicies
+  - Source: Time Series Data Sets
+    Target: AzureTimeSeriesDataSets
+  - Source: Windows10 Core Services
+    Target: AzureWindows10CoreServices
+  - Source: Event Grid Subscriptions
+    Target: AzureEventGridSubscriptions
+  - Source: Device Provisioning Services
+    Target: AzureDeviceProvisioningServices
 
 - Name: Intune
   Services:
@@ -331,6 +681,32 @@ Categories:
     Target: AzureIntuneGoogle
   - Source: Device Security Windows
     Target: AzureIntuneWindows
+  - Source: eBooks
+    Target: AzureIntuneEBooks
+  - Source: Client Apps
+    Target: AzureIntuneClientApps
+  - Source: Devices
+    Target: AzureIntuneDevices
+  - Source: Device Compliance
+    Target: AzureIntuneDeviceCompliance
+  - Source: Software Updates
+    Target: AzureIntuneSoftwareUpdates
+  - Source: Security Baselines
+    Target: AzureIntuneSecurityBaselines
+  - Source: Device Enrollment
+    Target: AzureIntuneDeviceEnrollment
+  - Source: Device Configuration
+    Target: AzureIntuneDeviceConfiguration
+  - Source: Exchange Access
+    Target: AzureIntuneExchangeAccess
+  - Source: Tenant Status
+    Target: AzureIntuneTenantStatus
+  - Source: Intune For Education
+    Target: AzureIntuneForEducation
+  - Source: Intune App Protection
+    Target: AzureIntuneAppProtection
+  - Source: Mindaro
+    Target: AzureIntuneMindaro
 
 - Name: Management
   Services:
@@ -606,3 +982,58 @@ Categories:
     Fit:    true
   - Source: Properties
     Target: AzureProperties
+  - Source: Static Apps
+    Target: AzureStaticApps
+  - Source: API Center
+    Target: AzureAPICenter
+  - Source: Power Platform
+    Target: AzurePowerPlatform
+  - Source: App Space
+    Target: AzureAppSpace
+  - Source: App Space Component
+    Target: AzureAppSpaceComponent
+  - Source: App Services
+    Target: AzureAppServices
+  - Source: API Management Services
+    Target: AzureAPIManagementServices
+  - Source: Cognitive Search
+    Target: AzureCognitiveSearch
+  - Source: App Service Environments
+    Target: AzureAppServiceEnvironments
+  - Source: API Connections
+    Target: AzureAPIConnections
+  - Source: SignalR
+    Target: AzureSignalR
+  - Source: Notification Hub Namespaces
+    Target: AzureNotificationHubNamespaces
+  - Source: Front Door and CDN Profiles
+    Target: AzureFrontDoorAndCDNProfiles
+  - Source: Cognitive Services
+    Target: AzureCognitiveServices
+  - Source: Azure Media Service
+    Target: AzureMediaService
+  - Source: Azure Spring Apps
+    Target: AzureSpringApps
+
+- Name: NewIcons
+  Services:
+  - Source: Toolchain Orchestrator
+    Target: AzureToolchainOrchestrator
+  - Source: Edge Actions
+    Target: AzureEdgeActions
+  - Source: Landing Zone
+    Target: AzureLandingZone
+  - Source: External ID
+    Target: AzureExternalID
+  - Source: External ID Modified
+    Target: AzureExternalIDModified
+  - Source: Edge Storage Accelerator
+    Target: AzureEdgeStorageAccelerator
+  - Source: Breeze
+    Target: AzureBreeze
+  - Source: Azure Managed Redis
+    Target: AzureManagedRedis
+  - Source: AI at Edge
+    Target: AzureAIAtEdge
+  - Source: VPN Client Windows
+    Target: AzureVPNClientWindows

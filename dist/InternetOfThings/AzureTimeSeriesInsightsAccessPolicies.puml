@@ -1,0 +1,16 @@
+sprite $AzureTimeSeriesInsightsAccessPolicies [70x70/16z] {
+pTW5RaD140JHWTxx7pbOalbdl1qgaV6fpH37PRNKbU5KeZAGbaJj8cGYr1RIRJ2jqzrQCBj8ye33x25zVNm7KGMLO3QGavAYtdXqhhR0Z96cxMTnOS20q9Gf
+ZAQCoEudcUf73HcMJ9WwHBAFqgayKhgdpDOK6esfkL8ZPTtjfBIXh7vEqVrQLCQzUz9pz4XhtKizUhlwydv1YSFoM15Ane0v3CHaU7nC1iHaAcQbYL2Q2AM9
+K9e8fObGcWYLYL2P2FL5GPPIyTTR98j1MQjFkGfv2fMlj2fiHI2RYa0KjYAvMsYRaOHoOdobJGN4LK1y9SXJqbPWV0N6L_Hljgoq_o9O2sHpZ9RM0jbCQr65
+aKo4168c43CDa5S
+}
+
+AzureEntityColoring(AzureTimeSeriesInsightsAccessPolicies)
+!define AzureTimeSeriesInsightsAccessPolicies(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsAccessPolicies, AzureTimeSeriesInsightsAccessPolicies)
+!define AzureTimeSeriesInsightsAccessPolicies(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTimeSeriesInsightsAccessPolicies, AzureTimeSeriesInsightsAccessPolicies)
+!procedure AzureTimeSeriesInsightsAccessPolicies($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTimeSeriesInsightsAccessPolicies, $stereo=AzureTimeSeriesInsightsAccessPolicies, $tags, $link)
+ !endprocedure
+!procedure AzureTimeSeriesInsightsAccessPolicies($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTimeSeriesInsightsAccessPolicies, $tags, $link, AzureTimeSeriesInsightsAccessPolicies)
+!endprocedure

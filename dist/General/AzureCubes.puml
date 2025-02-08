@@ -1,0 +1,16 @@
+sprite $AzureCubes [70x70/16z] {
+xTP7seCm38JXo2fp_nF_rIb3X71eAxJ-dXVaZNqxQMGFH5KtEqrLjpgYZzbgz6ch3uH7rXt8LaSqdxRHg9rwcVLhDQiL7rFS2oSmhBXhFWPyehZbF_A9GWuP
+dohJjHnOfxZHWQnGs0biKjpxCXiLD-1WvL8kHHOK6xs92iLbY92VJ6n6YTQBWKlarqaLVHOZbyZh8HijGzTIQVHAIOasAOPkn7uyNGbDYiAWgdN5PelwLdqU
+Zz61yBJ2u4fRNV0o-SXOSTE56IX-ngqg33-5riMVuaKLm6BHbTdAWQwuLKLNkE9RjIWS82Mf0gou9ryXXIeoWBfWXN_7yPogO8Khm-iK1IjS1Ih5dOrSyG2F
+l1NOg5pAfMYjs7kHFo8iKUY989OeL735IhJqQOHfmHKheJC5gA3HgMAp1TA2rmfQDolgLvLqXTTzNmjKv5NGkjbQe2AlmfOAsC3hS4EnRRu1
+}
+
+AzureEntityColoring(AzureCubes)
+!define AzureCubes(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCubes, AzureCubes)
+!define AzureCubes(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCubes, AzureCubes)
+!procedure AzureCubes($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCubes, $stereo=AzureCubes, $tags, $link)
+ !endprocedure
+!procedure AzureCubes($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCubes, $tags, $link, AzureCubes)
+!endprocedure

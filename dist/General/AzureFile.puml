@@ -1,0 +1,16 @@
+sprite $AzureFile [70x70/16z] {
+tTC5Tk0m38HXcJJstF--k-KsP2b-AlwXXryIWpnN5TEqYbs6LLTRgRP2TIdbklgeK1sAogGdXHgYK4CKQeX23L6e8GerHA66A4I8Gbmhy2j4Y4A4A4I8GeGe
+H8X23L6848MugQZ1-9GCeFTnIBTAdojIqP_RFVDMwP1f6VsiQYlRKgcx3CKP_hpIbfH-LBeybnoPYiAH6ag2g_Igj5Ebm5MPA67V8bLXfbKCnTlFLqQ4CbwL
+N9jPpI_A6ETAWYj3AN2LvqeEKFoxqL0a5xCiXk8hL1cVfOpPkEIR2iwhjvICy_IMKd1Ho1yrhpBRqoMv5QElKxYaSAjmIU7FLNHLqJ-liDsEEwLnhUqSPIwM
+vMDrSA5HvRd_
+}
+
+AzureEntityColoring(AzureFile)
+!define AzureFile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFile, AzureFile)
+!define AzureFile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFile, AzureFile)
+!procedure AzureFile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFile, $stereo=AzureFile, $tags, $link)
+ !endprocedure
+!procedure AzureFile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFile, $tags, $link, AzureFile)
+!endprocedure

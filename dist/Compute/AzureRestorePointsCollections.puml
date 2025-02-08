@@ -1,0 +1,20 @@
+sprite $AzureRestorePointsCollections [70x70/16z] {
+xTS7aiCs38NXXqQ0jEz_tgoe0j9SEvfuIjg_lNq3KDg6Vsh_H_Ir8CeRmg9gfYfC96eUuSNa7iyg190M7ulsU1xLmlYJn7IJpBE4dcVDFXl601V_lVf8H_4c
+CZC2fR7Mdekp3c80-yVYaOx_ZYYWxlUPM13javZx5qmYNp0T8QZ7dOUHASZOp1WS4Pfm3EKdiqV4CzDKh9-iHpYkP55IRwayUDwdH5TOzposlEmlzAZhqqvr
+kDja_wZFcxWnYSVGeTI1qN4KFnGRzc3QKb-KSQTsZQAGU5LSw8XjKUepi_5KPiMLXhYCIfvC3cC_0J4hnZGdFYljcV5-hmXqKWhJ4kkfB2kLVI56cHHbMfEI
+oh9IBhGb_TuKMHnHBTqliQv4r1MAAH5HcTOHxKflLPJpEa_AD8w8VbHCkgAh8gA7mz8LypXQZrVp4cLwrOqT-Q3uhbZKV1WL4-v8LsgC3uDI3wMEXGwTespA
+rAkYkvAzAFf1oOqCygfOVzXUNaXvhnJf2jSfoxhIaHTbkT86Ugzqf2lnLj5-xnAYxWd7hDYvpwuednCz1eLW_IALsWlqWtRB3kHO2D1LQUYAGGPboykHJVi4
+8Ej21P1zfLEvfafbl3w0hWe3b2kbCZXvfwIoB0HeNkjKSYsplamgwtK-VxqQ8rQbEvP6AiieURwfP97BZ4fRVrFBFapP5T6UHHqptUlACahFylx5bKoRuSfc
+vC70C8n2Mcs2CssrFxJjUU2CeYtxZCC8jBKMVbJRszxyXSXs74sxqteeHt8mrfmuRYCFmfIU3FrKRoA1R6HaUuNu7bAmPZqbCuFTC2hZj-nAuRyRT_wRK3jZ
+rC-6uNrYPyHU5-FkVrbaPm18hRX7H37XvJ--MupYYt8d-KAn37yvjYqL9dmHCU5Vsl_z0G
+}
+
+AzureEntityColoring(AzureRestorePointsCollections)
+!define AzureRestorePointsCollections(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRestorePointsCollections, AzureRestorePointsCollections)
+!define AzureRestorePointsCollections(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRestorePointsCollections, AzureRestorePointsCollections)
+!procedure AzureRestorePointsCollections($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRestorePointsCollections, $stereo=AzureRestorePointsCollections, $tags, $link)
+ !endprocedure
+!procedure AzureRestorePointsCollections($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRestorePointsCollections, $tags, $link, AzureRestorePointsCollections)
+!endprocedure

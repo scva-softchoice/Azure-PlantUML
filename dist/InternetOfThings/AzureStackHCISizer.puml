@@ -1,0 +1,17 @@
+sprite $AzureStackHCISizer [70x70/16z] {
+tT45jkim34LHwmhj-S_tbSFWTEdZAJVM3i5yDvJUpFUBRiQFb8OKfI55QKXH6bAKXXIb8KLfI54QKfI61EMS2Jzuj5ucZcgJaA8qf2WDtodUUfauglOoSPZ7
+FFGgnsgA4fIYu7l5eBsAwo8R4LYl8hJC8u9bWdol48FimdKndUUlCI9BkBfiEVUeHwaH_QyzfLxhpoiM2OgIzYeXFEyvwV50q7qiGilyCOKOa1x55iPhrWZ4
+SU7gXi_xu1m9zyWYvqx_JqgugGepm2ngSLrnvRAAoXN5yPmXW9db4JC3kABuOp54LTSlmPRIQclpL-KxmRhR5jHMeP0inkxfB3fJhD0upZIk9y9euKJXCXXK
+LWrdUg8G7IWqA3XHYjedPKmaYDeGdobGcwSYBs3CvKpXWTdDwxboxzYfjKzXx49UwqgfcygGgFchbn0FOQrmtLNwGrd7r_i7554UqkbtcLpu8uNadheCcScG
+gpnQBYdhSXHEKSgmH7LKTAAOB9QKhVYpn4R5T5HyejYkKaWIb7i0xohQemmHcFbOUMta6m
+}
+
+AzureEntityColoring(AzureStackHCISizer)
+!define AzureStackHCISizer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackHCISizer, AzureStackHCISizer)
+!define AzureStackHCISizer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackHCISizer, AzureStackHCISizer)
+!procedure AzureStackHCISizer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackHCISizer, $stereo=AzureStackHCISizer, $tags, $link)
+ !endprocedure
+!procedure AzureStackHCISizer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackHCISizer, $tags, $link, AzureStackHCISizer)
+!endprocedure

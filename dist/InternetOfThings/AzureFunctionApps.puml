@@ -1,0 +1,16 @@
+sprite $AzureFunctionApps [70x70/16z] {
+xTC7giD040FGQMxtl_1d-MbZiP4pwKMXBiD34LYg-SNNiG9YeEZhLBd9AdABAbgh4kbdfIgHur99h2AtgAAtg6ArAkLHp7CL76KmZYpBcAh0AEEo64UE38oo
+Gu11f2MmIlXE_hymZYoQggHHT66CfGk7KU288mAZu1b774Q1Gu90bSufHHn6uGo-moYSmLU7_yCPV0E4C_ZYC0fb4D4X3h_TAsCG4H_E9e11f5Kv7uSswGDC
+LGYIc1aHfSYQcQUb9MqOcn6nOMcPT6v8X6si4Wc9QCoiedD3JXY_16dCtERGrTUYTXedICImszGJa-CCQM-KuSWnqMES8niOZcnWd2AKoLKeWWnMqHx2cGA2
+Z7E4Crf0a762CCPtLH0H1wJBf2hQEM1CMiKw1oIsEqu876oB0b99t09HGCfL_4f4Ru58t0BHMo0Ijq0Ka5gLk1xHMo3Y8RV9Bty
+}
+
+AzureEntityColoring(AzureFunctionApps)
+!define AzureFunctionApps(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFunctionApps, AzureFunctionApps)
+!define AzureFunctionApps(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFunctionApps, AzureFunctionApps)
+!procedure AzureFunctionApps($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFunctionApps, $stereo=AzureFunctionApps, $tags, $link)
+ !endprocedure
+!procedure AzureFunctionApps($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFunctionApps, $tags, $link, AzureFunctionApps)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $AzureHeart [70x70/16z] {
+xTC7pYmX30DWKuQ0kVzvNnr5GZiWWL_vsxUgMwAr9y4_z2KNgtP5JCJBgfMCbTJe32-ChYLCnCP1ZSEdbOCMyQJoXS7PybFN-A3XnYTjFcJKbf_MUN6Zwc6V
+bB5OJcKWSogCUUO0kcKrcGjcN8XmZSSCZe8Xq36FP1GKfHPNvLh68v4CYwjEINzaIlx_K_mWOwVokgU4Bi6jAnfkx8AAM-k22xUh2oAW5qEufWHogHyBW6C_
+L03zpn1EQ2PZ4AIzTKNQ5KVbARkevJcz0mOygNrBmZDAfPnSfM4g7ZGhZ6a1Ar4Quf8qnAMDJeHG5MubI4DSuCwUp75xOtTkAc5FwSunObVUM9ED9rvnXcEl
+fspezLYQL7AKga1bdaOI0_whBzy1
+}
+
+AzureEntityColoring(AzureHeart)
+!define AzureHeart(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHeart, AzureHeart)
+!define AzureHeart(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHeart, AzureHeart)
+!procedure AzureHeart($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHeart, $stereo=AzureHeart, $tags, $link)
+ !endprocedure
+!procedure AzureHeart($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHeart, $tags, $link, AzureHeart)
+!endprocedure
