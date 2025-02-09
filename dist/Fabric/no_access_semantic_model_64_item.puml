@@ -1,0 +1,17 @@
+sprite $no_access_semantic_model_64_item [70x70/16z] {
+xTFftk8W38NnSqWW9Dx__OvxfUZGqjddVVpazZVXX_YB-Yg9RYgh97o8AiIsc4Jv0U6kkTz_V8Jq3FgIO6UIq2N4iF7lAlP6HLVUZJ0VLmZcFsCM_fXPo1yp
+ot65ixFqoF5PhfNlA2pkXH-UcRiHn50fSQxWdiKvQv-H72eUvxnv5hWNr_OhCQcKReT-evdJjUMPBSXRfUouAKSLyBZ27p4Bb-OLuhXo9uOAnoSoLaWEvjYe
+40Hfh_SiMNZXUyRUAVVQEr_FJqw5kvMu1juU5-JaimhldOqffVtVrZCoir4oTqlBiuWE0J1GXa5ATQz58EYohKQjMKXHgzCASYZkYUT99TU4PnfvIf5uGIGa
+P4PnRH2eJoXgBG9KsQyKMI7Gibk1fnK2yPMInafmXO21fYnRbGNf5SrZnQL5-eremb6cAmJPq9R6ZDOLWYhec2nfTEjQ93dwj5Yr-ZbLrrU4BfWfDuXbp9LT
+bdKoPXCt5J9fMRoPf7Y4bmF6Lrzz0m
+}
+
+AzureEntityColoring(no_access_semantic_model_64_item)
+!define no_access_semantic_model_64_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, no_access_semantic_model_64_item, no_access_semantic_model_64_item)
+!define no_access_semantic_model_64_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, no_access_semantic_model_64_item, no_access_semantic_model_64_item)
+!procedure no_access_semantic_model_64_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=no_access_semantic_model_64_item, $stereo=no_access_semantic_model_64_item, $tags, $link)
+ !endprocedure
+!procedure no_access_semantic_model_64_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, no_access_semantic_model_64_item, $tags, $link, no_access_semantic_model_64_item)
+!endprocedure

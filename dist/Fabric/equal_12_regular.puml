@@ -1,0 +1,11 @@
+sprite $equal_12_regular [70x70/16z] xSy73G0W40Gm51p-rRApKV1f7RJzaVwa-0W000202G
+
+AzureEntityColoring(equal_12_regular)
+!define equal_12_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, equal_12_regular, equal_12_regular)
+!define equal_12_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, equal_12_regular, equal_12_regular)
+!procedure equal_12_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=equal_12_regular, $stereo=equal_12_regular, $tags, $link)
+ !endprocedure
+!procedure equal_12_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, equal_12_regular, $tags, $link, equal_12_regular)
+!endprocedure

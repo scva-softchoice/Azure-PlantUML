@@ -1,0 +1,11 @@
+sprite $shape_ellipse_20_filled [70x70/16z] xTFJ0S1040JGZPtflzhODkVztwrb0Xbk28IkAJle0GgXBbjPQB2sPeAMZTduQF5a4tJS-Ok75k_ExefpmAGJUdZ0rYNCyW8-ZeY8Y8Y8Y2W6
+
+AzureEntityColoring(shape_ellipse_20_filled)
+!define shape_ellipse_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, shape_ellipse_20_filled, shape_ellipse_20_filled)
+!define shape_ellipse_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, shape_ellipse_20_filled, shape_ellipse_20_filled)
+!procedure shape_ellipse_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=shape_ellipse_20_filled, $stereo=shape_ellipse_20_filled, $tags, $link)
+ !endprocedure
+!procedure shape_ellipse_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, shape_ellipse_20_filled, $tags, $link, shape_ellipse_20_filled)
+!endprocedure

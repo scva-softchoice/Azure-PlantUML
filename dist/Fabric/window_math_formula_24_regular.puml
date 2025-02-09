@@ -1,0 +1,14 @@
+sprite $window_math_formula_24_regular [70x70/16z] {
+xTH5GaH130JG-Xwl-vyMTrOqDfAtRudY4asQV2DrmW1Zo1j1mu0olEE50JpmZX03-0a6CEIT6Bj5y8wSo2t6-Fuj6zM_Vulm-n7Dl7Dy-oz7KcPiopSZieHn
+blpUBHum5WLVLu5duK3GlhCP5Y0LIfPyOqjDgjnHnqB3DmGTtz5QQwsrrbfhxHO
+}
+
+AzureEntityColoring(window_math_formula_24_regular)
+!define window_math_formula_24_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, window_math_formula_24_regular, window_math_formula_24_regular)
+!define window_math_formula_24_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, window_math_formula_24_regular, window_math_formula_24_regular)
+!procedure window_math_formula_24_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=window_math_formula_24_regular, $stereo=window_math_formula_24_regular, $tags, $link)
+ !endprocedure
+!procedure window_math_formula_24_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, window_math_formula_24_regular, $tags, $link, window_math_formula_24_regular)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $iot_person_32_regular [70x70/16z] {
+xTD5SWKn30JGDjEt-lwtZIVWccLA3aTlRH3YlKmJgJXLkLHeLDaNXI5Ge92vrFrAv8J2_V_2fK3X_dyX7qbVKN5O71cWr4YXf24Yx3ZW9bzKd4YK2DV8Y0E3
+6Kiz2qReiFYAa7E04kcETm1EM709N1JzxfHQkMIuWanUicRco5vusQzejeW125qutSv8iKM2RN0PgYqgs9ITRfI23-K7Nmq7jGUt0JNUG6roUq0jSKlGYq9U
+PiIHM6ej4R-UCSOOOumnJm
+}
+
+AzureEntityColoring(iot_person_32_regular)
+!define iot_person_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, iot_person_32_regular, iot_person_32_regular)
+!define iot_person_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, iot_person_32_regular, iot_person_32_regular)
+!procedure iot_person_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=iot_person_32_regular, $stereo=iot_person_32_regular, $tags, $link)
+ !endprocedure
+!procedure iot_person_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, iot_person_32_regular, $tags, $link, iot_person_32_regular)
+!endprocedure

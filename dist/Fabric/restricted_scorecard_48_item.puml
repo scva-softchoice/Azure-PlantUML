@@ -1,0 +1,16 @@
+sprite $restricted_scorecard_48_item [70x70/16z] {
+xTC5ZkGm58JXgiU-_u6NqXsGGlRoJ7wBPNqouW_qf7QIc-ajH70QnMuWn5MyPAYupeZpH70PLNvU8LH_oLhqNraBUQqeLbdMLCmuknMfkPWLTYcCMjTAxolB
+12kB5M9PFn3qAh05QR0shMHSQI-5-0cblHJshqLBR44QeW1sAwpC1MdP77nbznLer4ef9qSKW0lYnAW2crT2i4yXbg8cHCW-XUGAqgZLaU1xzvGVOHxU-4uz
+AbmfbufndPfdSpUIa0mJYdeAkvHexnIMWYb9wr6qpOa6vgAqGx4PSION95d4MRQ_5WbP8x2yhon9RX2mSK3Hc94W09GEA6PR1643YleRmPIVAkhSIsAB80Kd
+IN0lr1P18yuAuLwk6yG2fp5irqck41PnaKPbPMqJhS1SA0PRVYFJCPnag83gAHZl1z3IbVZ7UtfwUdfw-We
+}
+
+AzureEntityColoring(restricted_scorecard_48_item)
+!define restricted_scorecard_48_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, restricted_scorecard_48_item, restricted_scorecard_48_item)
+!define restricted_scorecard_48_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, restricted_scorecard_48_item, restricted_scorecard_48_item)
+!procedure restricted_scorecard_48_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=restricted_scorecard_48_item, $stereo=restricted_scorecard_48_item, $tags, $link)
+ !endprocedure
+!procedure restricted_scorecard_48_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, restricted_scorecard_48_item, $tags, $link, restricted_scorecard_48_item)
+!endprocedure

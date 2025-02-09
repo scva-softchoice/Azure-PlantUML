@@ -1,0 +1,11 @@
+sprite $connector_20_filled [70x70/16z] xSor0S0m00D1EQr1-qyRXZfCVmESJeOgsd8d1csMF2sEsipBudkNuiwqkMWZ3pHjTovnMQ8s2t5QOj15000000100m
+
+AzureEntityColoring(connector_20_filled)
+!define connector_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, connector_20_filled, connector_20_filled)
+!define connector_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, connector_20_filled, connector_20_filled)
+!procedure connector_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=connector_20_filled, $stereo=connector_20_filled, $tags, $link)
+ !endprocedure
+!procedure connector_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, connector_20_filled, $tags, $link, connector_20_filled)
+!endprocedure

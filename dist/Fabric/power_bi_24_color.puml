@@ -1,0 +1,14 @@
+sprite $power_bi_24_color [70x70/16z] {
+xSp50K8n40N0aDN-6yRrk09yULF0Z8LYqJCfBdg3vGrTSSj2rh5mmy9yNinA2r-OfPV3l2ekSvcBTopIi8YK5oAvBPvVY1wBPnUwkYsUNkR7eYCB00000000
+JW
+}
+
+AzureEntityColoring(power_bi_24_color)
+!define power_bi_24_color(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, power_bi_24_color, power_bi_24_color)
+!define power_bi_24_color(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, power_bi_24_color, power_bi_24_color)
+!procedure power_bi_24_color($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=power_bi_24_color, $stereo=power_bi_24_color, $tags, $link)
+ !endprocedure
+!procedure power_bi_24_color($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, power_bi_24_color, $tags, $link, power_bi_24_color)
+!endprocedure

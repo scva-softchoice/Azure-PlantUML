@@ -1,0 +1,15 @@
+sprite $calendar_month_prohibited_32_regular [70x70/16z] {
+xTLbOeOm40RXDmdERkR-fwsaxcNh_VBymGS7_K-ByuGlEiPubkc81H_qnE3CEi0fqbC5qm7mylnUcUii9RFKHgELIfKccDfejBAoIhdMt4P_pzKjqrIauX-f
+B3IB5Br7cxB1EeuhM8hUeonZRriNiE0zacPsNKeEpD7hGatNaJfHWvNCUXD9gkHOPM9i4Jn92rEqCjz6ufN2fbnf4Jab-CM4yIQIGUytizzbLcYHLbzqW7Eh
+oA4ras7Hlveh6zYo6bXIKFnjR9v-6Vw-hkkwhkkwhZi7
+}
+
+AzureEntityColoring(calendar_month_prohibited_32_regular)
+!define calendar_month_prohibited_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calendar_month_prohibited_32_regular, calendar_month_prohibited_32_regular)
+!define calendar_month_prohibited_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calendar_month_prohibited_32_regular, calendar_month_prohibited_32_regular)
+!procedure calendar_month_prohibited_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calendar_month_prohibited_32_regular, $stereo=calendar_month_prohibited_32_regular, $tags, $link)
+ !endprocedure
+!procedure calendar_month_prohibited_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calendar_month_prohibited_32_regular, $tags, $link, calendar_month_prohibited_32_regular)
+!endprocedure

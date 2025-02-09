@@ -1,0 +1,14 @@
+sprite $cube_cone_sphere_20_filled [70x70/16z] {
+xTB50O1034JHuB3s-wyMhm2NUVTuxAloBgKksviaCOgsZsVI5eNjmIoBqRRBEYPj2UNE79052BPH9069heJjpK1UkIgVMzdU3D1QExKoAxRVPsh8C_ExiXYh
+xH_NGT4oQssRAWAnj6QwT6sRZJUoXnCH4H4H4H4P
+}
+
+AzureEntityColoring(cube_cone_sphere_20_filled)
+!define cube_cone_sphere_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, cube_cone_sphere_20_filled, cube_cone_sphere_20_filled)
+!define cube_cone_sphere_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, cube_cone_sphere_20_filled, cube_cone_sphere_20_filled)
+!procedure cube_cone_sphere_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=cube_cone_sphere_20_filled, $stereo=cube_cone_sphere_20_filled, $tags, $link)
+ !endprocedure
+!procedure cube_cone_sphere_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, cube_cone_sphere_20_filled, $tags, $link, cube_cone_sphere_20_filled)
+!endprocedure

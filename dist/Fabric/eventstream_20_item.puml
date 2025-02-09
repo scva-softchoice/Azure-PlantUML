@@ -1,0 +1,14 @@
+sprite $eventstream_20_item [70x70/16z] {
+xSutbaGX34HHbK1s__iTqxvJySEwk4Zl85TP-ybihsb4lvCoyZq6an6xigAUbN_lKGMrSNlzfE9RemgOLkvZYToGmugMc0YEAbdbWipIUGNo1zZT7K1CAyY_
+WDxtl78NNRqnhGHkd_7rLz63oeUBAZgi-FwCR9SHzOYCV72L5o8Y8Y8Y8g9V
+}
+
+AzureEntityColoring(eventstream_20_item)
+!define eventstream_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, eventstream_20_item, eventstream_20_item)
+!define eventstream_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, eventstream_20_item, eventstream_20_item)
+!procedure eventstream_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=eventstream_20_item, $stereo=eventstream_20_item, $tags, $link)
+ !endprocedure
+!procedure eventstream_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, eventstream_20_item, $tags, $link, eventstream_20_item)
+!endprocedure

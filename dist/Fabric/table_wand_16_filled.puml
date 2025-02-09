@@ -1,0 +1,14 @@
+sprite $table_wand_16_filled [70x70/16z] {
+xT0t5iH020DGETj3qFrFkpdLmtRMVuyMaF0VinEy0MS4UZdVMv1CTE9ZomPm1L4KAFa9SsGhRNc4CHlQLjboMmFpdBssnGSpp6oeCNjCfPSOYaiG9CRtaa2d
+sHFDy9XaejlwMW8GXItjiQJgeE4KH4H4H4H4HAu
+}
+
+AzureEntityColoring(table_wand_16_filled)
+!define table_wand_16_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, table_wand_16_filled, table_wand_16_filled)
+!define table_wand_16_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, table_wand_16_filled, table_wand_16_filled)
+!procedure table_wand_16_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=table_wand_16_filled, $stereo=table_wand_16_filled, $tags, $link)
+ !endprocedure
+!procedure table_wand_16_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, table_wand_16_filled, $tags, $link, table_wand_16_filled)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $restricted_scorecard_24_item [70x70/16z] {
+pCm5SiKm38JXNT7Qzxzmnthb3aKf_K7JX_yLFTxAo0mRAC5FgYLnDNDypkswObyLdohKMalitwd2Me_4cT978gEHoBYZH2lxA1mhfZp8JXdd2gAHlO9t5F0e
+Y_qxLs3Q8hnAIHie976k3LO0JF6w4kmyToDWILF5zvRLcQY231UBXsAPxj78cPifdKSZ4yMJhzK3WHmNevmlfOe0KhYSbwHrAYe1rY9knIC6djg30m400000
+GVxMWrpz00001
+}
+
+AzureEntityColoring(restricted_scorecard_24_item)
+!define restricted_scorecard_24_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, restricted_scorecard_24_item, restricted_scorecard_24_item)
+!define restricted_scorecard_24_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, restricted_scorecard_24_item, restricted_scorecard_24_item)
+!procedure restricted_scorecard_24_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=restricted_scorecard_24_item, $stereo=restricted_scorecard_24_item, $tags, $link)
+ !endprocedure
+!procedure restricted_scorecard_24_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, restricted_scorecard_24_item, $tags, $link, restricted_scorecard_24_item)
+!endprocedure

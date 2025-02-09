@@ -1,0 +1,14 @@
+sprite $receipt_kql_new_20_filled [70x70/16z] {
+xT950iGm20NG7wl3l_zj9upRAdJ9gqiCmEaMeInmEcWEZ6d2Rfv95hlnp27R1VqG3A6n3ZA0H0xtOkrFcSjaSKaM5qylcWuQWMD5xdhXdTG4fuK6muITWcQy
+ewpidBsaajNVYpPaVVMoOKWkQjs0HhU48KLhhLdWeoqnuwyGGWWXX1122E42
+}
+
+AzureEntityColoring(receipt_kql_new_20_filled)
+!define receipt_kql_new_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, receipt_kql_new_20_filled, receipt_kql_new_20_filled)
+!define receipt_kql_new_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, receipt_kql_new_20_filled, receipt_kql_new_20_filled)
+!procedure receipt_kql_new_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=receipt_kql_new_20_filled, $stereo=receipt_kql_new_20_filled, $tags, $link)
+ !endprocedure
+!procedure receipt_kql_new_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, receipt_kql_new_20_filled, $tags, $link, receipt_kql_new_20_filled)
+!endprocedure

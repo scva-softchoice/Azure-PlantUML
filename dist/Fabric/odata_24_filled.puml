@@ -1,0 +1,14 @@
+sprite $odata_24_filled [70x70/16z] {
+xTIrWGGW50JGmHtwh_PkNIDaVHuMuV3nNaGexK890WDYkn4neBOR5GFQdS5H901vQCP7YTxxU6hQqXrnHqL3b-aTAM65cjuHRBFddKsjPNgKfA3Ix2Yt5l_f
+-VWo7-jUYOY8Y8Y8YFu1
+}
+
+AzureEntityColoring(odata_24_filled)
+!define odata_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, odata_24_filled, odata_24_filled)
+!define odata_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, odata_24_filled, odata_24_filled)
+!procedure odata_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=odata_24_filled, $stereo=odata_24_filled, $tags, $link)
+ !endprocedure
+!procedure odata_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, odata_24_filled, $tags, $link, odata_24_filled)
+!endprocedure

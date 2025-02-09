@@ -1,0 +1,14 @@
+sprite $hint_grid_16_regular [70x70/16z] {
+xTEr0GD150FHELxuP_LVhPb3C-X54oaJ7wMjCwCqCjUMcqKwL0fkjhZAcqrQcxZ706fIQhJ9cmcK8f90xrwPGAI4DdcFhBNCFU8gRnFZeSRWPdqS7X0zBsDc
+PcPcPcPcAm
+}
+
+AzureEntityColoring(hint_grid_16_regular)
+!define hint_grid_16_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, hint_grid_16_regular, hint_grid_16_regular)
+!define hint_grid_16_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, hint_grid_16_regular, hint_grid_16_regular)
+!procedure hint_grid_16_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=hint_grid_16_regular, $stereo=hint_grid_16_regular, $tags, $link)
+ !endprocedure
+!procedure hint_grid_16_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, hint_grid_16_regular, $tags, $link, hint_grid_16_regular)
+!endprocedure

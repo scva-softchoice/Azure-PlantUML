@@ -1,0 +1,14 @@
+sprite $synapse_data_engineering_20_filled [70x70/16z] {
+xT976eCW68HXUkUV-zysZrstf2VpRkoV2gYFqu29t1sPb7iZ4xaxCd5tH2fMOJhoWwdBbpZ8FPLcfdqBOBmYtkZfTt1FfUk8gbJ4FPMYAm1lSKz5j61YmnsB
+fgM8HJ2vLQU6Q5kmakJKi8JT7HKjTqScjcFIZNe28Y8Y8Y8YeXi
+}
+
+AzureEntityColoring(synapse_data_engineering_20_filled)
+!define synapse_data_engineering_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, synapse_data_engineering_20_filled, synapse_data_engineering_20_filled)
+!define synapse_data_engineering_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, synapse_data_engineering_20_filled, synapse_data_engineering_20_filled)
+!procedure synapse_data_engineering_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=synapse_data_engineering_20_filled, $stereo=synapse_data_engineering_20_filled, $tags, $link)
+ !endprocedure
+!procedure synapse_data_engineering_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, synapse_data_engineering_20_filled, $tags, $link, synapse_data_engineering_20_filled)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $real_time_dashboard_48_item [70x70/16z] {
+xT1Najmm38HXPB1n_mERucXdymvHphO-lQh-Qf1-lWkhVS7DU2CYolGLPfMD9VIGydV-iR3H0qO_ek8R4VBlh2pShLWCOAJnoqYlmewxk7UuLr6yecUajyKm
+ZN1Lyr6Jdqiw5SKKwfdfwdNGjMIAtOe066O3Xrb8L45cfbM95S5DmNKSAU9MXG6OFYs1gTL1UXK3XWQM6gewwk2RbQ0b0TVpcfWHhoLxbG6OOt6TK0jw5G3h
+eAeLYJhrAxdkqGFgrByeK7MhP5Np8YQ-lMuOQXhhdjFOhap43enp0b1tpalkL2O1u8fwGteLZYgOlOaaDok2gf5lftGhRFMEyMub-OdN6yxjolirnktA8b5t
+AJpHgL6Pn19LI1TUi5IXLNbBLsJwhWhhPaNu2qIAsgYuyXU6aUrK9Bw8P92mRLJ8N8K_va469jke47kEutidPW32VcJeEnoH32Bxdef0A9E-5nCx_GKkbylb
+Sla6
+}
+
+AzureEntityColoring(real_time_dashboard_48_item)
+!define real_time_dashboard_48_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, real_time_dashboard_48_item, real_time_dashboard_48_item)
+!define real_time_dashboard_48_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, real_time_dashboard_48_item, real_time_dashboard_48_item)
+!procedure real_time_dashboard_48_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=real_time_dashboard_48_item, $stereo=real_time_dashboard_48_item, $tags, $link)
+ !endprocedure
+!procedure real_time_dashboard_48_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, real_time_dashboard_48_item, $tags, $link, real_time_dashboard_48_item)
+!endprocedure

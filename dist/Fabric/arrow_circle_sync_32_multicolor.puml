@@ -1,0 +1,16 @@
+sprite $arrow_circle_sync_32_multicolor [70x70/16z] {
+xTF7eIGn28HXDOM00kKVxxPxRawZlgpJ5y0lI_ipIVU8S5DfZo5uY8C_x6nEqXGYK8k8tXu0arq-gJ_P3Z8Tyfr5p6QsJ9CNFRpDYNH0NbXOcw59x4JGdOmk
+5vyxKrR7mPWyX8gxY4wTIOeuzCnGWJgff8X4RErjLew3ficfCywA1ThRM1qVvEGyApfplrcAxvaWhmfcBgOAtzoLa5t4R8LLcJmoNnYp9wfT4jypuCI9EFfL
+8IvoKqxShequArc6awNAmQZjRJBohFIgwD0UULU2MtjV3GCoqREgScUuFr-ReADmSMPbw3MQfBGP7CGhyVGsPQiHUE79hSt1UDrDP4gRXHfb-6HCIfktSOoA
+hZYVkjBRCrfZ3rqIxR7peIjfqhuiox8iox8io_8B
+}
+
+AzureEntityColoring(arrow_circle_sync_32_multicolor)
+!define arrow_circle_sync_32_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, arrow_circle_sync_32_multicolor, arrow_circle_sync_32_multicolor)
+!define arrow_circle_sync_32_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, arrow_circle_sync_32_multicolor, arrow_circle_sync_32_multicolor)
+!procedure arrow_circle_sync_32_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=arrow_circle_sync_32_multicolor, $stereo=arrow_circle_sync_32_multicolor, $tags, $link)
+ !endprocedure
+!procedure arrow_circle_sync_32_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, arrow_circle_sync_32_multicolor, $tags, $link, arrow_circle_sync_32_multicolor)
+!endprocedure

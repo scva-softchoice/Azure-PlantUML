@@ -1,0 +1,14 @@
+sprite $external_semantic_model_20_item [70x70/16z] {
+xT154WGn34DHAJ6rxt_VOTeEarvLjZ-syLccdRZDMoC3Pvo6cpWkqN-YaWbKRHyPk4aygd94Fg32UoeyRhEJjrQuBTnPIHuSrhglCh8DrZNkgQ2201Y5MuJj
+AysbknSsRZ4YCwjOjfl55znZrluk4qSY8Y8Y8Y8YQm
+}
+
+AzureEntityColoring(external_semantic_model_20_item)
+!define external_semantic_model_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, external_semantic_model_20_item, external_semantic_model_20_item)
+!define external_semantic_model_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, external_semantic_model_20_item, external_semantic_model_20_item)
+!procedure external_semantic_model_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=external_semantic_model_20_item, $stereo=external_semantic_model_20_item, $tags, $link)
+ !endprocedure
+!procedure external_semantic_model_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, external_semantic_model_20_item, $tags, $link, external_semantic_model_20_item)
+!endprocedure

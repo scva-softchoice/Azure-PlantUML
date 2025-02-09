@@ -1,0 +1,15 @@
+sprite $synapse_data_warehouse_32_color [70x70/16z] {
+xTG5aWGX38NXaTY3lVzrHrg1rQIxR2lV0NwSop_701zjt0mlTZiK4ImutY33nkwnnjNGqMjiLqSKszMHtMAxsiJSkwnhGrY6ZlwzKYPGULEKbhDYih9m1Iex
+HQnYshD01VePt1LzixScuwxC0IAnHgZ2znTkAdNcs1SetISa088LOzem5kuAKuF3bKufvrGcvrG-9ewATBgAv-vAosgTLZHLNDzKrx5tPChKCHANKaeffPHI
+UW8
+}
+
+AzureEntityColoring(synapse_data_warehouse_32_color)
+!define synapse_data_warehouse_32_color(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, synapse_data_warehouse_32_color, synapse_data_warehouse_32_color)
+!define synapse_data_warehouse_32_color(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, synapse_data_warehouse_32_color, synapse_data_warehouse_32_color)
+!procedure synapse_data_warehouse_32_color($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=synapse_data_warehouse_32_color, $stereo=synapse_data_warehouse_32_color, $tags, $link)
+ !endprocedure
+!procedure synapse_data_warehouse_32_color($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, synapse_data_warehouse_32_color, $tags, $link, synapse_data_warehouse_32_color)
+!endprocedure

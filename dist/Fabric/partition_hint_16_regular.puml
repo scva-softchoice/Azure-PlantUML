@@ -1,0 +1,11 @@
+sprite $partition_hint_16_regular [70x70/16z] xTAb0S0034JHbE9wsN_QCjao_QVE1UqWhXZ8RRD8RP26RHRBk9dcNdJGNZx19VC8DwauvD8wwD8tAnVnXg_RTIC000000503
+
+AzureEntityColoring(partition_hint_16_regular)
+!define partition_hint_16_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, partition_hint_16_regular, partition_hint_16_regular)
+!define partition_hint_16_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, partition_hint_16_regular, partition_hint_16_regular)
+!procedure partition_hint_16_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=partition_hint_16_regular, $stereo=partition_hint_16_regular, $tags, $link)
+ !endprocedure
+!procedure partition_hint_16_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, partition_hint_16_regular, $tags, $link, partition_hint_16_regular)
+!endprocedure

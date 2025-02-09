@@ -1,0 +1,11 @@
+sprite $equal_20_filled [70x70/16z] xT0n0K00000m083-QG5mks2BiE0DQFkBDhWfBIxIO8LT0000O0G
+
+AzureEntityColoring(equal_20_filled)
+!define equal_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, equal_20_filled, equal_20_filled)
+!define equal_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, equal_20_filled, equal_20_filled)
+!procedure equal_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=equal_20_filled, $stereo=equal_20_filled, $tags, $link)
+ !endprocedure
+!procedure equal_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, equal_20_filled, $tags, $link, equal_20_filled)
+!endprocedure

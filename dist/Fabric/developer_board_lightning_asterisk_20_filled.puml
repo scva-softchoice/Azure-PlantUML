@@ -1,0 +1,14 @@
+sprite $developer_board_lightning_asterisk_20_filled [70x70/16z] {
+pD95WaGX303H-egdxd_QSUarhGzROKbuFOFpP70boHcvnjhyqLQcTVzqfdc1IQ6VOljPhthBjb_rbZEhxi2niJ0fPRK0f6wawwAxq_IpNnNT9Jd4ORhcBSk8
+vUHSObnJTOInieR1dBrVlYMO9fnsiPklEeMcMSV2TLBO4-_jmR400000m21_wvsJg0O00001
+}
+
+AzureEntityColoring(developer_board_lightning_asterisk_20_filled)
+!define developer_board_lightning_asterisk_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, developer_board_lightning_asterisk_20_filled, developer_board_lightning_asterisk_20_filled)
+!define developer_board_lightning_asterisk_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, developer_board_lightning_asterisk_20_filled, developer_board_lightning_asterisk_20_filled)
+!procedure developer_board_lightning_asterisk_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=developer_board_lightning_asterisk_20_filled, $stereo=developer_board_lightning_asterisk_20_filled, $tags, $link)
+ !endprocedure
+!procedure developer_board_lightning_asterisk_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, developer_board_lightning_asterisk_20_filled, $tags, $link, developer_board_lightning_asterisk_20_filled)
+!endprocedure

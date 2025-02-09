@@ -1,0 +1,14 @@
+sprite $restricted_report_20_item [70x70/16z] {
+xT7NWSL024DHYI1m_mLlZh_O6n-dW3i3u7VnU9FXquZX7JqmalY8EQwuhgX4NriXXH4zLp81y6n50dY-Kk3pW2FYKwKAhkxoQONHPALtq7JCCaNcGPOf0MlL
+jE95YarO6tjOUOQcjMDOKV2Pr0vaOS9KLTqjFmJcuJZ7w_EbrrfhhRNMMckjUm
+}
+
+AzureEntityColoring(restricted_report_20_item)
+!define restricted_report_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, restricted_report_20_item, restricted_report_20_item)
+!define restricted_report_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, restricted_report_20_item, restricted_report_20_item)
+!procedure restricted_report_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=restricted_report_20_item, $stereo=restricted_report_20_item, $tags, $link)
+ !endprocedure
+!procedure restricted_report_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, restricted_report_20_item, $tags, $link, restricted_report_20_item)
+!endprocedure

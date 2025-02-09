@@ -1,0 +1,14 @@
+sprite $funnel_add_20_regular [70x70/16z] {
+xT254GCn34JHFKRxzzzjHbO5OTfd71BfqTQJOzQTJiAkcomqSxn3V7GB-dmB8A3e5alf56ZXUhXng1dclAkM39FpwO15TuKv2QV27RDP2tNH7TP3EdhTYzXF
+Yk8e6spwP6PcPcPcPcON
+}
+
+AzureEntityColoring(funnel_add_20_regular)
+!define funnel_add_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, funnel_add_20_regular, funnel_add_20_regular)
+!define funnel_add_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, funnel_add_20_regular, funnel_add_20_regular)
+!procedure funnel_add_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=funnel_add_20_regular, $stereo=funnel_add_20_regular, $tags, $link)
+ !endprocedure
+!procedure funnel_add_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, funnel_add_20_regular, $tags, $link, funnel_add_20_regular)
+!endprocedure

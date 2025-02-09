@@ -1,0 +1,14 @@
+sprite $square_database_24_regular [70x70/16z] {
+xTGr0iGW40NGnPr__zEkLKnBFFclYc8ZhpjIgM7GafeP9QF6GKMU6QKNUL_wp2Y8yZvYmIZ6UxDq5DN-9wkMZUBnvy-m5gr-vwBqib4YIaeLSUaeVmj72VWB
+9pXTcNN7LK2lyhxs5Jl3yYvr928Y8Y8Y8le
+}
+
+AzureEntityColoring(square_database_24_regular)
+!define square_database_24_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, square_database_24_regular, square_database_24_regular)
+!define square_database_24_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, square_database_24_regular, square_database_24_regular)
+!procedure square_database_24_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=square_database_24_regular, $stereo=square_database_24_regular, $tags, $link)
+ !endprocedure
+!procedure square_database_24_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, square_database_24_regular, $tags, $link, square_database_24_regular)
+!endprocedure

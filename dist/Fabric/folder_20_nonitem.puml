@@ -1,0 +1,11 @@
+sprite $folder_20_nonitem [70x70/16z] xSp50S1030InFR3xxpZClp2D2f2-9-L6r2wv4mzPKkoa7KkA0sqGEzSjB2pc2wOd0W00002W1
+
+AzureEntityColoring(folder_20_nonitem)
+!define folder_20_nonitem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, folder_20_nonitem, folder_20_nonitem)
+!define folder_20_nonitem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, folder_20_nonitem, folder_20_nonitem)
+!procedure folder_20_nonitem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=folder_20_nonitem, $stereo=folder_20_nonitem, $tags, $link)
+ !endprocedure
+!procedure folder_20_nonitem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, folder_20_nonitem, $tags, $link, folder_20_nonitem)
+!endprocedure

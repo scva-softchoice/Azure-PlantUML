@@ -1,0 +1,14 @@
+sprite $window_checkmark_20_regular [70x70/16z] {
+xTE50SH024HHuWahl_zgpzrTvnM0Ox-eyCn2zi9kv5xQGkbkDygbhPJPRiGMkn6suPEYT7T7wHEflpTAP2hU5wLZokdkYfAOQ5hYNLS7Jjq2Ttr0f2rQ8Dxp
+ZMq7paHdTqbtxSYEtOk8Y8Y8Y8Z86
+}
+
+AzureEntityColoring(window_checkmark_20_regular)
+!define window_checkmark_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, window_checkmark_20_regular, window_checkmark_20_regular)
+!define window_checkmark_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, window_checkmark_20_regular, window_checkmark_20_regular)
+!procedure window_checkmark_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=window_checkmark_20_regular, $stereo=window_checkmark_20_regular, $tags, $link)
+ !endprocedure
+!procedure window_checkmark_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, window_checkmark_20_regular, $tags, $link, window_checkmark_20_regular)
+!endprocedure

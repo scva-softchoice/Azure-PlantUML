@@ -1,0 +1,14 @@
+sprite $copilot_20_regular [70x70/16z] {
+xT6teI1H24DHyRm3-gzs_3J0xlUSvEOIlfdAUckmwujmu4gSO1MLhYoW35YDUgKT8I4OALtXTL2P5HPvNGbQ6kUKqXmmwFLARHWP1n8OSBoo8XGNXO7Y8aWJ
+fy3sSVD0ApYL3eCnKqfPMb72QILOr2cwrfhyV0KZKW9QmwaFM8tyVaKQOHMP2kD0Qy2kYjuc_Zldd7FEEUUSSsu7
+}
+
+AzureEntityColoring(copilot_20_regular)
+!define copilot_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, copilot_20_regular, copilot_20_regular)
+!define copilot_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, copilot_20_regular, copilot_20_regular)
+!procedure copilot_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=copilot_20_regular, $stereo=copilot_20_regular, $tags, $link)
+ !endprocedure
+!procedure copilot_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, copilot_20_regular, $tags, $link, copilot_20_regular)
+!endprocedure

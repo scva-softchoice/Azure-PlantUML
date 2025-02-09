@@ -1,0 +1,14 @@
+sprite $document_ssis_20_filled [70x70/16z] {
+xT555iCm30HGDIzccFkVjaphZihp0_PAQ9ycuS1Me-38iBf4mUeI1QjB5Anib6WStFcCA7Nnw6ZfE6ZqZewuA9lcKKiwtEYvv7mwk2XhFWJ83qSfnqMlm6h7
+7oC3-VHZ4BLy7X4H4H4H4Ta1
+}
+
+AzureEntityColoring(document_ssis_20_filled)
+!define document_ssis_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, document_ssis_20_filled, document_ssis_20_filled)
+!define document_ssis_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, document_ssis_20_filled, document_ssis_20_filled)
+!procedure document_ssis_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=document_ssis_20_filled, $stereo=document_ssis_20_filled, $tags, $link)
+ !endprocedure
+!procedure document_ssis_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, document_ssis_20_filled, $tags, $link, document_ssis_20_filled)
+!endprocedure

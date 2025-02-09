@@ -1,0 +1,14 @@
+sprite $paginated_report_32_item [70x70/16z] {
+xT473iKW20PWK2EGXdh_qxwzkblrRRwCJlymuEEGfWwDMI41Eo-y4coc7dfysbvDmk4hfHefNZUdZBrAERL4Pew5AGXy143Cmlcry55fBNLIy38N4idlwA32
+Zevgf10Vo551Hzrgi2G5Jm6dk_oEv89pKmOIlZ65HJeTuNTtv6gaQEZ7UFKjR4HDSEuXo8L6OWDRnTIb4bA0pRXRZOyjGGRMRYtkyjuOOumnnXYp1m
+}
+
+AzureEntityColoring(paginated_report_32_item)
+!define paginated_report_32_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, paginated_report_32_item, paginated_report_32_item)
+!define paginated_report_32_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, paginated_report_32_item, paginated_report_32_item)
+!procedure paginated_report_32_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=paginated_report_32_item, $stereo=paginated_report_32_item, $tags, $link)
+ !endprocedure
+!procedure paginated_report_32_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, paginated_report_32_item, $tags, $link, paginated_report_32_item)
+!endprocedure

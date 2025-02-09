@@ -1,0 +1,11 @@
+sprite $orientation_vertical_20_filled [70x70/16z] xT750OLG34JH-rrWalwhHIl0RSwJPPIT-MJh7K9_HiiUZPWb2hD4qInHybGTHSorQRQEyilMZtdSTMUIilkoP1AzW9UOvgCtp_BBv32fBqimCpCpCpCpgm4
+
+AzureEntityColoring(orientation_vertical_20_filled)
+!define orientation_vertical_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, orientation_vertical_20_filled, orientation_vertical_20_filled)
+!define orientation_vertical_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, orientation_vertical_20_filled, orientation_vertical_20_filled)
+!procedure orientation_vertical_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=orientation_vertical_20_filled, $stereo=orientation_vertical_20_filled, $tags, $link)
+ !endprocedure
+!procedure orientation_vertical_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, orientation_vertical_20_filled, $tags, $link, orientation_vertical_20_filled)
+!endprocedure

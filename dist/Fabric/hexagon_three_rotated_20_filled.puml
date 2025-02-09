@@ -1,0 +1,14 @@
+sprite $hexagon_three_rotated_20_filled [70x70/16z] {
+xS-r0SD044JHynxZz5-jcHIAQLxqemKrBJ5gl01KFVQGYeSuRah2oxYlyk6cE3oLKKEilaIWkNiCdr619EBVCMn8mPFznG22b_AD8LCqNefUUyhuZzu27fhv
+nI2w0F4NWsdfnXiH4H4H4H7H3G
+}
+
+AzureEntityColoring(hexagon_three_rotated_20_filled)
+!define hexagon_three_rotated_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, hexagon_three_rotated_20_filled, hexagon_three_rotated_20_filled)
+!define hexagon_three_rotated_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, hexagon_three_rotated_20_filled, hexagon_three_rotated_20_filled)
+!procedure hexagon_three_rotated_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=hexagon_three_rotated_20_filled, $stereo=hexagon_three_rotated_20_filled, $tags, $link)
+ !endprocedure
+!procedure hexagon_three_rotated_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, hexagon_three_rotated_20_filled, $tags, $link, hexagon_three_rotated_20_filled)
+!endprocedure

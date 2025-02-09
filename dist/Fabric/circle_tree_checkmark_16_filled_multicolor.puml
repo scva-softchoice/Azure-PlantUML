@@ -1,0 +1,14 @@
+sprite $circle_tree_checkmark_16_filled_multicolor [70x70/16z] {
+xT955iH020HGyd0gzx_kkEp7fNvarutAW-YCojsmhlYKMnHGkL-4VCujTVZtTDnp2zAaiLVtL6Jgs4luNNqvf6A6kkkMGOuQC78hhtqk9dPNOnRalYy9u8w-
+o6BN6TtXkYy_ZeY8Y8Y8Y6WB
+}
+
+AzureEntityColoring(circle_tree_checkmark_16_filled_multicolor)
+!define circle_tree_checkmark_16_filled_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, circle_tree_checkmark_16_filled_multicolor, circle_tree_checkmark_16_filled_multicolor)
+!define circle_tree_checkmark_16_filled_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, circle_tree_checkmark_16_filled_multicolor, circle_tree_checkmark_16_filled_multicolor)
+!procedure circle_tree_checkmark_16_filled_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=circle_tree_checkmark_16_filled_multicolor, $stereo=circle_tree_checkmark_16_filled_multicolor, $tags, $link)
+ !endprocedure
+!procedure circle_tree_checkmark_16_filled_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, circle_tree_checkmark_16_filled_multicolor, $tags, $link, circle_tree_checkmark_16_filled_multicolor)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $table_column_question_16_filled [70x70/16z] {
+xTAtWGD14CJ0Fhbgvf1_jkzz04jDTWK02tehwm00CLPDYoe124BJq7-5sogtGn9GfUsyiTANccIziR84sPAugL8AbyxbejnIKJ8Eja7SL04e6w19SKfB0Xit
+VBS7d1NeGD5D0au8tUY6Npw7cPcPcPcPsHy
+}
+
+AzureEntityColoring(table_column_question_16_filled)
+!define table_column_question_16_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, table_column_question_16_filled, table_column_question_16_filled)
+!define table_column_question_16_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, table_column_question_16_filled, table_column_question_16_filled)
+!procedure table_column_question_16_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=table_column_question_16_filled, $stereo=table_column_question_16_filled, $tags, $link)
+ !endprocedure
+!procedure table_column_question_16_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, table_column_question_16_filled, $tags, $link, table_column_question_16_filled)
+!endprocedure

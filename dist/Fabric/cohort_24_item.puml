@@ -1,0 +1,14 @@
+sprite $cohort_24_item [70x70/16z] {
+xSx7jGD124JHmWqDat-ytyfh9LfUNDQyKtWkeWVivwGI4S8Haa96SOeC5pEScQfm-EGMTq0p_YBbYcGoT3000YtLBUeZSX1-KAMoVKd19Z9HuG0iZ6YYOk6f
+oCnoXG14EW_nNEgL7sn4e2slLBPYNTSeLfosygUIqnKTERHSEL6hC9tWGiMCJoABeP1nzt70ZL3IMckjjTPQQ-qR
+}
+
+AzureEntityColoring(cohort_24_item)
+!define cohort_24_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, cohort_24_item, cohort_24_item)
+!define cohort_24_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, cohort_24_item, cohort_24_item)
+!procedure cohort_24_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=cohort_24_item, $stereo=cohort_24_item, $tags, $link)
+ !endprocedure
+!procedure cohort_24_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, cohort_24_item, $tags, $link, cohort_24_item)
+!endprocedure

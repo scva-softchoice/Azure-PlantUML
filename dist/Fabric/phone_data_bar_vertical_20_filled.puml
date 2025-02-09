@@ -1,0 +1,11 @@
+sprite $phone_data_bar_vertical_20_filled [70x70/16z] xT230S0m443HsjX_sZ8O84x-gv5J5PVn54QJAATIK1IYRBjfbFLxC8tIRBjfbALktX0cKPP_8aPHFY94u2YpUHHjMyMk0000001m0m
+
+AzureEntityColoring(phone_data_bar_vertical_20_filled)
+!define phone_data_bar_vertical_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, phone_data_bar_vertical_20_filled, phone_data_bar_vertical_20_filled)
+!define phone_data_bar_vertical_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, phone_data_bar_vertical_20_filled, phone_data_bar_vertical_20_filled)
+!procedure phone_data_bar_vertical_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=phone_data_bar_vertical_20_filled, $stereo=phone_data_bar_vertical_20_filled, $tags, $link)
+ !endprocedure
+!procedure phone_data_bar_vertical_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, phone_data_bar_vertical_20_filled, $tags, $link, phone_data_bar_vertical_20_filled)
+!endprocedure

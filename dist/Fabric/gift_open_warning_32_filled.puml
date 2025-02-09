@@ -1,0 +1,15 @@
+sprite $gift_open_warning_32_filled [70x70/16z] {
+xTH5WiKW50NHYqOWh_Q_skywXBGt9pPAHK7_H8pQBq7wtagis9fqbhCwJLmKfnqYbfmBXQAhMjIka6x7h0jGEyEfRadXUZCLe7HKl0gR77QzfQvAPVKHkrLw
+doXojYfIRjdI_Riu5MRjDeFh74UJ0K7oUOCePKXT3N2gW4L91gOs1lLMiJAx-rYOr6Iph9VJifUHCwPcd2NduhGLpH0Zp5sL6--uLd3zbLNBlRBqLxpdNi6h
+ZN6pQ7rMLhMftBZ0MSvqt4paQbRXHMaUYlPoAuJxSTSK7Y8NMLqyRxpwX6b-cBn-jM4OXc4OXc4u0W
+}
+
+AzureEntityColoring(gift_open_warning_32_filled)
+!define gift_open_warning_32_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, gift_open_warning_32_filled, gift_open_warning_32_filled)
+!define gift_open_warning_32_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, gift_open_warning_32_filled, gift_open_warning_32_filled)
+!procedure gift_open_warning_32_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=gift_open_warning_32_filled, $stereo=gift_open_warning_32_filled, $tags, $link)
+ !endprocedure
+!procedure gift_open_warning_32_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, gift_open_warning_32_filled, $tags, $link, gift_open_warning_32_filled)
+!endprocedure

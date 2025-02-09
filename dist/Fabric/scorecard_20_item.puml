@@ -1,0 +1,14 @@
+sprite $scorecard_20_item [70x70/16z] {
+xSp55KCn30LHoKBttt0CeRN2-U-UMGzz5z4hKwbE6jsmA9KOtMDxuE8vn6CNowtR8vVaFU5aTYhnaQr9MZnoOP-JdjuUkGoQwJoKBqoJ6IzHlKmQeOzSWeVe
+GpnwKHlqqSjLArvSxoVgLD8y8lB26pqP00000000m0a
+}
+
+AzureEntityColoring(scorecard_20_item)
+!define scorecard_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, scorecard_20_item, scorecard_20_item)
+!define scorecard_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, scorecard_20_item, scorecard_20_item)
+!procedure scorecard_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=scorecard_20_item, $stereo=scorecard_20_item, $tags, $link)
+ !endprocedure
+!procedure scorecard_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, scorecard_20_item, $tags, $link, scorecard_20_item)
+!endprocedure

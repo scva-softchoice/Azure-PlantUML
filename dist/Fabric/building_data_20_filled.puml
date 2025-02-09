@@ -1,0 +1,14 @@
+sprite $building_data_20_filled [70x70/16z] {
+xTB50KCn30DGXpdQVzfoEq0_9thtW2t9oGIy1La2NwUu9HkOlFYMdf7xAXFrv9PFfCNc1XIpQ28TyUQNJ2GTRtt9H1Bn5fTC9FgvbvQjNZPHaAVm_qHGoniC
+G72cM-pIZ3u-6SaF4H4H4H4HqHq
+}
+
+AzureEntityColoring(building_data_20_filled)
+!define building_data_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, building_data_20_filled, building_data_20_filled)
+!define building_data_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, building_data_20_filled, building_data_20_filled)
+!procedure building_data_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=building_data_20_filled, $stereo=building_data_20_filled, $tags, $link)
+ !endprocedure
+!procedure building_data_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, building_data_20_filled, $tags, $link, building_data_20_filled)
+!endprocedure

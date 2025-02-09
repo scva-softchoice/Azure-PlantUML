@@ -1,0 +1,14 @@
+sprite $nodes_triangle_connected_top_20_filled [70x70/16z] {
+xT35WKCn40DGUJwOhVwhtGt3TSA9dfa1xsLTSBAiy2balgXNk0nU6N2fP4q7ZInmiNLPpj-omijuMBlIuDV6lXmDDvXf-plDk4ayP3Sn9Y3HS9l245Xm8-iX
+TCEjbjuNtAoJ_R6xtFwYsuc8Y8Y8Y8Zy0m
+}
+
+AzureEntityColoring(nodes_triangle_connected_top_20_filled)
+!define nodes_triangle_connected_top_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, nodes_triangle_connected_top_20_filled, nodes_triangle_connected_top_20_filled)
+!define nodes_triangle_connected_top_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, nodes_triangle_connected_top_20_filled, nodes_triangle_connected_top_20_filled)
+!procedure nodes_triangle_connected_top_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=nodes_triangle_connected_top_20_filled, $stereo=nodes_triangle_connected_top_20_filled, $tags, $link)
+ !endprocedure
+!procedure nodes_triangle_connected_top_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, nodes_triangle_connected_top_20_filled, $tags, $link, nodes_triangle_connected_top_20_filled)
+!endprocedure

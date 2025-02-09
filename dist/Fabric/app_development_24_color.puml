@@ -1,0 +1,14 @@
+sprite $app_development_24_color [70x70/16z] {
+xT7L0KD124HHLWPstv3-outhB_64qm1ovPUfoVtWAvLx5JeXzp9tHPFxLFe4KEGkauwjBlVev03kNMRX0joxZ9AAWtf7PKwSI9IHED4UhdpwYkwKQ6NI0EW1
+efLtfkwPMOrLtd6YmGv2bNT6sty8jjD3gooNZvPkOmIMmUXoescJDqeffPHIIYcbj04
+}
+
+AzureEntityColoring(app_development_24_color)
+!define app_development_24_color(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, app_development_24_color, app_development_24_color)
+!define app_development_24_color(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, app_development_24_color, app_development_24_color)
+!procedure app_development_24_color($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=app_development_24_color, $stereo=app_development_24_color, $tags, $link)
+ !endprocedure
+!procedure app_development_24_color($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, app_development_24_color, $tags, $link, app_development_24_color)
+!endprocedure

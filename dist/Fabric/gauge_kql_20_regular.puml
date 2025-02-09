@@ -1,0 +1,14 @@
+sprite $gauge_kql_20_regular [70x70/16z] {
+xSp5OSLG30J05TX-gEs_sZ3SzSFH533uSQoluBmKjsXnkUdHuqBUMjQ3NAPx8gijMSCXfYgp8KUfg-7HILKAKdex9nvrThNUaJ9r6m2PfFZoG4ee0SWcBmWr
+krW0ECaDI4WWPHoXW0GDDxXwctYs-I2G8TlMYISQV80K3pKy4hD8BnXByIWS6YII1iSXW5f0WyZojKctyCDrupRX4eftfPHIIYcbb5BAFG
+}
+
+AzureEntityColoring(gauge_kql_20_regular)
+!define gauge_kql_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, gauge_kql_20_regular, gauge_kql_20_regular)
+!define gauge_kql_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, gauge_kql_20_regular, gauge_kql_20_regular)
+!procedure gauge_kql_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=gauge_kql_20_regular, $stereo=gauge_kql_20_regular, $tags, $link)
+ !endprocedure
+!procedure gauge_kql_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, gauge_kql_20_regular, $tags, $link, gauge_kql_20_regular)
+!endprocedure

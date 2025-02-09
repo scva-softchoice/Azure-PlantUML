@@ -1,0 +1,14 @@
+sprite $home_more_lightning_20_filled [70x70/16z] {
+xT150WCn30D0XxDa_V-rPRokojK4V3FP1uhp58sL7F1ad8A3Oeo6asRhZRWOgIHy6jmXigHqkBP7PCcxw-R4Wd7IAtOoDL5COM7taX4juQ1I4-Nn43nIMSon
+iqHRPy11t-TRWh4Yvc2qDDaT4H4H4H4HaIq
+}
+
+AzureEntityColoring(home_more_lightning_20_filled)
+!define home_more_lightning_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, home_more_lightning_20_filled, home_more_lightning_20_filled)
+!define home_more_lightning_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, home_more_lightning_20_filled, home_more_lightning_20_filled)
+!procedure home_more_lightning_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=home_more_lightning_20_filled, $stereo=home_more_lightning_20_filled, $tags, $link)
+ !endprocedure
+!procedure home_more_lightning_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, home_more_lightning_20_filled, $tags, $link, home_more_lightning_20_filled)
+!endprocedure

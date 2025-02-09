@@ -1,0 +1,11 @@
+sprite $list_kql_20_regular [70x70/16z] xT2r0KCn0CHGVJ33xRzjElTXkhU1n5DPQn3p4hb9Rv3oalXXldko7uG0WJlqE4DjhQ9xxdOb149m-zskWE8GkhFeA5Kwb2Ct2zkn4yzpJpcnc9cPcPcPcLq
+
+AzureEntityColoring(list_kql_20_regular)
+!define list_kql_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, list_kql_20_regular, list_kql_20_regular)
+!define list_kql_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, list_kql_20_regular, list_kql_20_regular)
+!procedure list_kql_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=list_kql_20_regular, $stereo=list_kql_20_regular, $tags, $link)
+ !endprocedure
+!procedure list_kql_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, list_kql_20_regular, $tags, $link, list_kql_20_regular)
+!endprocedure

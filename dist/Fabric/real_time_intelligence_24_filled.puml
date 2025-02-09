@@ -1,0 +1,14 @@
+sprite $real_time_intelligence_24_filled [70x70/16z] {
+xT750GCm30D0XJdQVzeoVkDoVN-Zy9ayAyGiEI1b9baWP0R90A7E7GEPofqEcSAzZDRtciUAn0FhU3In8F2We0YwE1vq69xubNlodZ_b90lSni6ZY0M3zp9M
+v7wB1P0pa35z9qCea1m6GeMS1bA3T12hKzf4AQMKKaeffTGM
+}
+
+AzureEntityColoring(real_time_intelligence_24_filled)
+!define real_time_intelligence_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, real_time_intelligence_24_filled, real_time_intelligence_24_filled)
+!define real_time_intelligence_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, real_time_intelligence_24_filled, real_time_intelligence_24_filled)
+!procedure real_time_intelligence_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=real_time_intelligence_24_filled, $stereo=real_time_intelligence_24_filled, $tags, $link)
+ !endprocedure
+!procedure real_time_intelligence_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, real_time_intelligence_24_filled, $tags, $link, real_time_intelligence_24_filled)
+!endprocedure

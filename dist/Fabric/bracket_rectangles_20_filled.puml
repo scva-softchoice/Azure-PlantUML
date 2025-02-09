@@ -1,0 +1,11 @@
+sprite $bracket_rectangles_20_filled [70x70/16z] xTC35aGn30NGsjZ_QiVyDjyj3iiaf0QmaBCaOuLaD5NvJPD1ihbFNwlkSd-3pMzsn2wZPJFPBeUAaRzdtUWOYRyAE3O000000020Am
+
+AzureEntityColoring(bracket_rectangles_20_filled)
+!define bracket_rectangles_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, bracket_rectangles_20_filled, bracket_rectangles_20_filled)
+!define bracket_rectangles_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, bracket_rectangles_20_filled, bracket_rectangles_20_filled)
+!procedure bracket_rectangles_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=bracket_rectangles_20_filled, $stereo=bracket_rectangles_20_filled, $tags, $link)
+ !endprocedure
+!procedure bracket_rectangles_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, bracket_rectangles_20_filled, $tags, $link, bracket_rectangles_20_filled)
+!endprocedure

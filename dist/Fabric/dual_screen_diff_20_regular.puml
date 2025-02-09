@@ -1,0 +1,14 @@
+sprite $dual_screen_diff_20_regular [70x70/16z] {
+xTC54iGW343Hh6ybm_rFMtTt_Q_2A12J5lYeAT2FJAAlQFd_e-MbCecHuYvY9k_oINVvpDd5ig9TedNwBc9RuIwMBVljKezer-pMAxr4rxrreGcuC0000000
+V
+}
+
+AzureEntityColoring(dual_screen_diff_20_regular)
+!define dual_screen_diff_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, dual_screen_diff_20_regular, dual_screen_diff_20_regular)
+!define dual_screen_diff_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, dual_screen_diff_20_regular, dual_screen_diff_20_regular)
+!procedure dual_screen_diff_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=dual_screen_diff_20_regular, $stereo=dual_screen_diff_20_regular, $tags, $link)
+ !endprocedure
+!procedure dual_screen_diff_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, dual_screen_diff_20_regular, $tags, $link, dual_screen_diff_20_regular)
+!endprocedure

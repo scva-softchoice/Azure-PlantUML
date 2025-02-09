@@ -1,0 +1,14 @@
+sprite $datamart_24_item [70x70/16z] {
+xSp55SL034DHQyYG_kiDSrRp6NoFjdhqWs8wo3cdM1-9e1F4wam2NI1JfV4Gr6OQY71R1MgRS6DbZ6m2K6weY1teRHMs0xwXCXwC5Z3WtWe8pJqLaNuGkRK2
+OAnWL-5RAZ0iRgmmUXenItfx9Qar4qstLG8kGdKbvqicbaorCZCBomvdqFiuvvnppZdddEi
+}
+
+AzureEntityColoring(datamart_24_item)
+!define datamart_24_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, datamart_24_item, datamart_24_item)
+!define datamart_24_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, datamart_24_item, datamart_24_item)
+!procedure datamart_24_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=datamart_24_item, $stereo=datamart_24_item, $tags, $link)
+ !endprocedure
+!procedure datamart_24_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, datamart_24_item, $tags, $link, datamart_24_item)
+!endprocedure

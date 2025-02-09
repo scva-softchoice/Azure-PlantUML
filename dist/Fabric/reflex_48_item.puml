@@ -1,0 +1,15 @@
+sprite $reflex_48_item [70x70/16z] {
+xSv7iWCn28HXcgHm__k-o9IpPIQjzBEblcewlXb4tsIge74ie7S1mXyieM62JHyHb0OfxQ4O3GFP3WfX3mLxA4Whqlwhk23vBRL5VBKagt1Rkbu2U4gnCBhJ
+4l9ANHIvGh8ABqYxGjAA1VAV4-7JBTSFWKGjYAGYWKGCMgFu3IA8aieTGkkKSgK8aDe20lq7jHg88gi05wWzHL0-KG82yJMILoBzGmpR50zacr83IIi5LxNU
+7PiLRuQjodLJOOnY7YecOqIS1h6_9y3CpZHAJVZDZjybIkDWfVxUYug1pcuscyrcizat
+}
+
+AzureEntityColoring(reflex_48_item)
+!define reflex_48_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, reflex_48_item, reflex_48_item)
+!define reflex_48_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, reflex_48_item, reflex_48_item)
+!procedure reflex_48_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=reflex_48_item, $stereo=reflex_48_item, $tags, $link)
+ !endprocedure
+!procedure reflex_48_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, reflex_48_item, $tags, $link, reflex_48_item)
+!endprocedure

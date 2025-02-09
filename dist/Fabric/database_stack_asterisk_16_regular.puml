@@ -1,0 +1,14 @@
+sprite $database_stack_asterisk_16_regular [70x70/16z] {
+xSx7OKCn30DGKFpg1VjFcw854fi-ujrHy37U5vc0ZO2sYnj-405C-35gOge3x-BzylJ3qn-yYpus3HXxu7t4LHPM2RSqWxL0Iy6L4C5rPc-3YmWWlBHM7C4M
+NC4MmsL4GDt5pRpiYWZlcrpTyIyY8Y8Y8Y8YyWq
+}
+
+AzureEntityColoring(database_stack_asterisk_16_regular)
+!define database_stack_asterisk_16_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, database_stack_asterisk_16_regular, database_stack_asterisk_16_regular)
+!define database_stack_asterisk_16_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, database_stack_asterisk_16_regular, database_stack_asterisk_16_regular)
+!procedure database_stack_asterisk_16_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=database_stack_asterisk_16_regular, $stereo=database_stack_asterisk_16_regular, $tags, $link)
+ !endprocedure
+!procedure database_stack_asterisk_16_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, database_stack_asterisk_16_regular, $tags, $link, database_stack_asterisk_16_regular)
+!endprocedure

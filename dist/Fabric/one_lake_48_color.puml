@@ -1,0 +1,17 @@
+sprite $one_lake_48_color [70x70/16z] {
+xT5XZiGW28PX1Qe2zFxNNSRkB6bYHftzs_S0Jpv2Mku9gfXooVz2wldAJEd_oAklcLm2COLlaVP6LCtQbqXHDrJbjoFl8rHhCTD0X7TVbQisLrGl9HpQG0ur
+TgJ8cmcdBYFDJ5ieDqPQNaEgcN6hph0E65vYo15jNMcg0wUjAEgAN4hL8LFc29skyAKKqQ6Jfmgxegwqbz9qoDIfSeRYZDvR7GClHVuKDXr1nqJ1qndc66Cw
+g6qgR4DcfjXBkOqPEV1P0GcbCyr634wKSYanHYmShhM9UlHPoQJdwKOmLT_CaNC6W4EcIY8V8to_gIVeI6TG56SASLU2gPrXSEBDA4mK81BbEyCT2GMEF54o
+4R74cXxNx8M2QHOHOkbEG7H7WAOAE7CvtWNX7V7IqXZlABNwZ5eG88YOiZIc1-DoMWW9Fp4OK-OtZHt4G2Pb2YSe_2sd3OPm645Q3sdCK4ux0Gts4ANTaFxg
+W1T3TfsWmjWj0tO1qdSzFJqzFJqz_G
+}
+
+AzureEntityColoring(one_lake_48_color)
+!define one_lake_48_color(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, one_lake_48_color, one_lake_48_color)
+!define one_lake_48_color(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, one_lake_48_color, one_lake_48_color)
+!procedure one_lake_48_color($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=one_lake_48_color, $stereo=one_lake_48_color, $tags, $link)
+ !endprocedure
+!procedure one_lake_48_color($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, one_lake_48_color, $tags, $link, one_lake_48_color)
+!endprocedure

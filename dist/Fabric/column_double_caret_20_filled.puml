@@ -1,0 +1,11 @@
+sprite $column_double_caret_20_filled [70x70/16z] xTCb5i0m403HeikytF-qPR9bcgzM9Ol9zvJ41kKYse3OOH5j40UBwDPNe7y5Thn2DhwIiVaLqZ1M55AEUUNMYXfXGtTlsvVj5t3yDTvFaYH9agGQ
+
+AzureEntityColoring(column_double_caret_20_filled)
+!define column_double_caret_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, column_double_caret_20_filled, column_double_caret_20_filled)
+!define column_double_caret_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, column_double_caret_20_filled, column_double_caret_20_filled)
+!procedure column_double_caret_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=column_double_caret_20_filled, $stereo=column_double_caret_20_filled, $tags, $link)
+ !endprocedure
+!procedure column_double_caret_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, column_double_caret_20_filled, $tags, $link, column_double_caret_20_filled)
+!endprocedure

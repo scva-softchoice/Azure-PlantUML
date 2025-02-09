@@ -1,0 +1,14 @@
+sprite $beaker_flash_20_regular [70x70/16z] {
+xT853aD120JGMU2xpFrFM_Ss1j5ctafq1S5_wddJeuIFxGVTKcCRJdhKZ2FETf83iXhResq2MJFFsaPoHvRj3ITUwzzvUFdHRiXXU-IMco5fk4UoSskeCguD
+PRxWZOY8Y8Y8YCWH
+}
+
+AzureEntityColoring(beaker_flash_20_regular)
+!define beaker_flash_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, beaker_flash_20_regular, beaker_flash_20_regular)
+!define beaker_flash_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, beaker_flash_20_regular, beaker_flash_20_regular)
+!procedure beaker_flash_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=beaker_flash_20_regular, $stereo=beaker_flash_20_regular, $tags, $link)
+ !endprocedure
+!procedure beaker_flash_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, beaker_flash_20_regular, $tags, $link, beaker_flash_20_regular)
+!endprocedure

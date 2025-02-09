@@ -1,0 +1,14 @@
+sprite $save_phone_20_filled [70x70/16z] {
+xTBL0SC0409GshWT-qyRzx-uyGOu1M_aPGGhO8JLClPLc60jZgemtAKADrJnKV6tLHdRNiN3UiD9VIFDNri5DboNjheAHrNu_2hPBbMyRAZo_vFOo8OVRJ3B
+YuY8Y8Y8Y4W1
+}
+
+AzureEntityColoring(save_phone_20_filled)
+!define save_phone_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, save_phone_20_filled, save_phone_20_filled)
+!define save_phone_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, save_phone_20_filled, save_phone_20_filled)
+!procedure save_phone_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=save_phone_20_filled, $stereo=save_phone_20_filled, $tags, $link)
+ !endprocedure
+!procedure save_phone_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, save_phone_20_filled, $tags, $link, save_phone_20_filled)
+!endprocedure

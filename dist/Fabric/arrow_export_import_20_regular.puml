@@ -1,0 +1,11 @@
+sprite $arrow_export_import_20_regular [70x70/16z] xT654GGn509GXenVIFglzjPrTDru1Nm1t4h47Z80_dQOGd7x5AQ0xLEKHtJjBM3YBXqDTGkh29t8UkX6GTnX2aBYoYcpdg-zPS1TSj7GqLR2pipCpCpCpCmA
+
+AzureEntityColoring(arrow_export_import_20_regular)
+!define arrow_export_import_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, arrow_export_import_20_regular, arrow_export_import_20_regular)
+!define arrow_export_import_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, arrow_export_import_20_regular, arrow_export_import_20_regular)
+!procedure arrow_export_import_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=arrow_export_import_20_regular, $stereo=arrow_export_import_20_regular, $tags, $link)
+ !endprocedure
+!procedure arrow_export_import_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, arrow_export_import_20_regular, $tags, $link, arrow_export_import_20_regular)
+!endprocedure

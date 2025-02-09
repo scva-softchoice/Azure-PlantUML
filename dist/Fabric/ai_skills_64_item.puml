@@ -1,0 +1,16 @@
+sprite $ai_skills_64_item [70x70/16z] {
+xT85aYD134HHfLXx__iED4HDXwlNfMMORwRdDD1Vr6SikfIfCDq45T1QO57S86ZjdZ-zW-pCz3kXPhFlHa2jvk-hr0rA3raRWNs_0eBz6LlmOxO0lIqYqoqj
+XQCgU88q57XjEIR8gg9PPtfbjdn9GNs8BriQ2jye0BvVmMzNv3H-n1QCPeelAQ2sGZeGfUQM-_yk-bkWJ4ISLRbTKUor54rBm_iLFKTfLv5DqDHZLhtt9UMv
+0Zg31nzNaeauT-IjUAO0e2EpCIg83cJBdokW_U1APvo47CX5YPaokYgK0saev7gkmhvbHzfRSCO9v42-Hnb8Hp4VLzlAA6fV8vaCo622lwu4FYQP0ewoOr5j
+HWdGKG2hgB6F_SqmeAk0ZI_hZD5G5cehdmgZ6KyKavO0Pd5wIAsblELA3o6ajOGbG8_n8iDx4aopE4nuRGUhxSWizSZ8XSALVdYVVVRPAm
+}
+
+AzureEntityColoring(ai_skills_64_item)
+!define ai_skills_64_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ai_skills_64_item, ai_skills_64_item)
+!define ai_skills_64_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ai_skills_64_item, ai_skills_64_item)
+!procedure ai_skills_64_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ai_skills_64_item, $stereo=ai_skills_64_item, $tags, $link)
+ !endprocedure
+!procedure ai_skills_64_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ai_skills_64_item, $tags, $link, ai_skills_64_item)
+!endprocedure

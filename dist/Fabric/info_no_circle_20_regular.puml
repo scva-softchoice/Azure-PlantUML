@@ -1,0 +1,11 @@
+sprite $info_no_circle_20_regular [70x70/16z] xSn10K0000Im0m3zwohW1s0BiBm7IvC3D4KEKES8SsNPCfQv4W000B02
+
+AzureEntityColoring(info_no_circle_20_regular)
+!define info_no_circle_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, info_no_circle_20_regular, info_no_circle_20_regular)
+!define info_no_circle_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, info_no_circle_20_regular, info_no_circle_20_regular)
+!procedure info_no_circle_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=info_no_circle_20_regular, $stereo=info_no_circle_20_regular, $tags, $link)
+ !endprocedure
+!procedure info_no_circle_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, info_no_circle_20_regular, $tags, $link, info_no_circle_20_regular)
+!endprocedure

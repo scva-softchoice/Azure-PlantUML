@@ -1,0 +1,15 @@
+sprite $import_notebook_40_nonitem [70x70/16z] {
+xTK5WeGm343Hf4py_kTToKXXlO7r_d7XuHJUQiPgZ_awOnn4Nfe0XM4eGtWXj445NintA7Y8ehXVMMyD1_TbME77IKu2JRf2emfpFfy0I2jARW3XljT9Aqf7
+scMvDBycmf9ouhMI5TP85kXhL520-VAsRztMHfNSqqq1rdiwQ539Y27Rf-XoX6Am2PUbelGQgxjoswMGUsIqGr6_Ag5bXT9WJeQAIlDKY29hDOKVZQvmJT6j
+eZN58vY8MYCYZl2QOX6qNv4uOeregr1jX4NVA0WVIWHVM9ZHemxP_58yPg1now0UnoM6GeKhm-zhDflDPhFPx1u
+}
+
+AzureEntityColoring(import_notebook_40_nonitem)
+!define import_notebook_40_nonitem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, import_notebook_40_nonitem, import_notebook_40_nonitem)
+!define import_notebook_40_nonitem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, import_notebook_40_nonitem, import_notebook_40_nonitem)
+!procedure import_notebook_40_nonitem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=import_notebook_40_nonitem, $stereo=import_notebook_40_nonitem, $tags, $link)
+ !endprocedure
+!procedure import_notebook_40_nonitem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, import_notebook_40_nonitem, $tags, $link, import_notebook_40_nonitem)
+!endprocedure

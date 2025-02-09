@@ -1,0 +1,14 @@
+sprite $bookmark_data_bar_vertical_20_regular [70x70/16z] {
+xSw54GKX54FHh0kI_glzkXtWa8EEtNc8oJf4G88VPWuQXCJNQGC7URu1WuHNoDugrZpxgOG9hh2sods5LnPtNMu9h9n-1JP_1bMSdV0nMHTIEV0uFA8J4H4H
+4H4HUGC
+}
+
+AzureEntityColoring(bookmark_data_bar_vertical_20_regular)
+!define bookmark_data_bar_vertical_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, bookmark_data_bar_vertical_20_regular, bookmark_data_bar_vertical_20_regular)
+!define bookmark_data_bar_vertical_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, bookmark_data_bar_vertical_20_regular, bookmark_data_bar_vertical_20_regular)
+!procedure bookmark_data_bar_vertical_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=bookmark_data_bar_vertical_20_regular, $stereo=bookmark_data_bar_vertical_20_regular, $tags, $link)
+ !endprocedure
+!procedure bookmark_data_bar_vertical_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, bookmark_data_bar_vertical_20_regular, $tags, $link, bookmark_data_bar_vertical_20_regular)
+!endprocedure

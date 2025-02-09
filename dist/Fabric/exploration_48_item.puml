@@ -1,0 +1,16 @@
+sprite $exploration_48_item [70x70/16z] {
+xT05aWGX44JHp7BkV-7j2jQDOMN2U2Fjlm7yluDgtt0pOasK-0wfWXKgbfGttB54muBXBogE9SB_e0B-HOL_KU5VL8ZDYaQbzexbt9aZsQjeDGEicZwDX8oD
+IbHB8Eio4esxbPhcpXY37TcjoElAk2Z0xOhMYz4Sn8sLUEczDAPWswpaIsGgx5Vu4daY-nLzYW1F5TslM5Lur9YLQtSClxr2SEwK090v5Y4f8pSgbmvLe4LN
+WYsAd79TcL3UCVe0XxFvsAumvrxaosxjLwpcObWFOkxwVeLPuJ5ND4TwZkBDbUGphr7-RdUZil3poga8LqIM5TTrH0CB4jydheY4OCLSvUl8HSEmHi_gpnVI
+YNixZkCuZkC1
+}
+
+AzureEntityColoring(exploration_48_item)
+!define exploration_48_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, exploration_48_item, exploration_48_item)
+!define exploration_48_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, exploration_48_item, exploration_48_item)
+!procedure exploration_48_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=exploration_48_item, $stereo=exploration_48_item, $tags, $link)
+ !endprocedure
+!procedure exploration_48_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, exploration_48_item, $tags, $link, exploration_48_item)
+!endprocedure

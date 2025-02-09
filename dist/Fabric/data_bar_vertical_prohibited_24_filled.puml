@@ -1,0 +1,14 @@
+sprite $data_bar_vertical_prohibited_24_filled [70x70/16z] {
+xTI7jSGW30NHPraSJB2c_sf_x83Dkxe531cz9P_HTB49xBeKF-fpLLfClxZYmBYuKlbnSULuhahitYEwNrG96qHlmRYaKXfDaa5Rhvps7uaORCkLNl2_YEsK
+vKgh_4TarDLA7OxzHLJmjP_1vHWzOfEqj2y-eqiwl8D9wdHTOX9jmDHbwWbdrUT9AQMKKaeffMy
+}
+
+AzureEntityColoring(data_bar_vertical_prohibited_24_filled)
+!define data_bar_vertical_prohibited_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, data_bar_vertical_prohibited_24_filled, data_bar_vertical_prohibited_24_filled)
+!define data_bar_vertical_prohibited_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, data_bar_vertical_prohibited_24_filled, data_bar_vertical_prohibited_24_filled)
+!procedure data_bar_vertical_prohibited_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=data_bar_vertical_prohibited_24_filled, $stereo=data_bar_vertical_prohibited_24_filled, $tags, $link)
+ !endprocedure
+!procedure data_bar_vertical_prohibited_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, data_bar_vertical_prohibited_24_filled, $tags, $link, data_bar_vertical_prohibited_24_filled)
+!endprocedure

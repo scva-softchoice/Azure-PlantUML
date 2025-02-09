@@ -1,0 +1,14 @@
+sprite $hint_grid_20_filled [70x70/16z] {
+xTEreKGn44FH-t7aH-g_scKEbq4djuTvIpN0Q8ym_7EkyZ_yINzGBixKDtPQp_dAAyL5_8N4bpdV-8T10lCtSYOBIyCW6VcXlvnMTBRzBnTfNccShnSxwZbJ
+kRON8DSDh_7n8Y8Y8Y8Y8kO
+}
+
+AzureEntityColoring(hint_grid_20_filled)
+!define hint_grid_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, hint_grid_20_filled, hint_grid_20_filled)
+!define hint_grid_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, hint_grid_20_filled, hint_grid_20_filled)
+!procedure hint_grid_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=hint_grid_20_filled, $stereo=hint_grid_20_filled, $tags, $link)
+ !endprocedure
+!procedure hint_grid_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, hint_grid_20_filled, $tags, $link, hint_grid_20_filled)
+!endprocedure

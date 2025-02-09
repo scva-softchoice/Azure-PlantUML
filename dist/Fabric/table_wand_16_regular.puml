@@ -1,0 +1,14 @@
+sprite $table_wand_16_regular [70x70/16z] {
+xTB7WSCm34JHhooH2FrNky7nJlZcUGKW3fynztnOS4RPIG8aH0Q34XBW099H-M_7ASdtCbUqMXKIUf_QKQi2tMArQfNUMRELhcjJxz1xyRh58lYElueuWrQB
+gNLelHHUs1z582bKQRHEsPMTho0Y8Y8Y8YBo2m
+}
+
+AzureEntityColoring(table_wand_16_regular)
+!define table_wand_16_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, table_wand_16_regular, table_wand_16_regular)
+!define table_wand_16_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, table_wand_16_regular, table_wand_16_regular)
+!procedure table_wand_16_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=table_wand_16_regular, $stereo=table_wand_16_regular, $tags, $link)
+ !endprocedure
+!procedure table_wand_16_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, table_wand_16_regular, $tags, $link, table_wand_16_regular)
+!endprocedure

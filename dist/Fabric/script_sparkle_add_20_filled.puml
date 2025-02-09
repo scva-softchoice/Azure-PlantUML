@@ -1,0 +1,14 @@
+sprite $script_sparkle_add_20_filled [70x70/16z] {
+xTAtOGKm24NHfsJa8Ex-q_xes89BJgL6PFsNVJXRIH_SVUXmSwP231Y0BMwckIdW07eKm-TB0T0bTKX5-U2pblOPvJqwbmQOSQEe0uzId9lalRHtxXJNr0so
+KVYqsqi-2ZfDMNCkbeAS9vFvSaksqvoXXMVE1RQsJz-AcNnQ-fnB5lgZb59AAQMKKagv0W
+}
+
+AzureEntityColoring(script_sparkle_add_20_filled)
+!define script_sparkle_add_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, script_sparkle_add_20_filled, script_sparkle_add_20_filled)
+!define script_sparkle_add_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, script_sparkle_add_20_filled, script_sparkle_add_20_filled)
+!procedure script_sparkle_add_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=script_sparkle_add_20_filled, $stereo=script_sparkle_add_20_filled, $tags, $link)
+ !endprocedure
+!procedure script_sparkle_add_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, script_sparkle_add_20_filled, $tags, $link, script_sparkle_add_20_filled)
+!endprocedure

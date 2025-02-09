@@ -1,0 +1,14 @@
+sprite $real_time_hub_24_color [70x70/16z] {
+xSpNOKCn20102uIe-yyRx5U_IK-u0Uxn0x4oZNSlOcQAxrtKdkPx5tVF1jvH040koVWT2wsr-FNO-nPc5Wzth2-BaqWsmUzO96doiFh2ss5c4L1UyiZ7daBA
+2y8BSJPEfMB00H69rNHM5zpDbrLey2fUYAYmm6kuYigIxaLz6HaWvl6E9S5uPNWjxp9WKfgFajPQQwsrrbfhRm
+}
+
+AzureEntityColoring(real_time_hub_24_color)
+!define real_time_hub_24_color(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, real_time_hub_24_color, real_time_hub_24_color)
+!define real_time_hub_24_color(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, real_time_hub_24_color, real_time_hub_24_color)
+!procedure real_time_hub_24_color($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=real_time_hub_24_color, $stereo=real_time_hub_24_color, $tags, $link)
+ !endprocedure
+!procedure real_time_hub_24_color($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, real_time_hub_24_color, $tags, $link, real_time_hub_24_color)
+!endprocedure

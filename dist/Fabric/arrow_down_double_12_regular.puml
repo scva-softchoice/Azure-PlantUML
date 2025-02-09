@@ -1,0 +1,11 @@
+sprite $arrow_down_double_12_regular [70x70/16z] xSot5O1G30D0tcz9-qzBT4tEtDbIgUnPogXzwgXPLjOhwY9gZrIcgFi10000j
+
+AzureEntityColoring(arrow_down_double_12_regular)
+!define arrow_down_double_12_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, arrow_down_double_12_regular, arrow_down_double_12_regular)
+!define arrow_down_double_12_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, arrow_down_double_12_regular, arrow_down_double_12_regular)
+!procedure arrow_down_double_12_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=arrow_down_double_12_regular, $stereo=arrow_down_double_12_regular, $tags, $link)
+ !endprocedure
+!procedure arrow_down_double_12_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, arrow_down_double_12_regular, $tags, $link, arrow_down_double_12_regular)
+!endprocedure

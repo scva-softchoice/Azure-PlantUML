@@ -1,0 +1,14 @@
+sprite $calculator_triangle_20_regular [70x70/16z] {
+xSy5bSL050FGT1ZUQVohBTV0x7xE5H30ct6Tb-ump0eknJ2Co3nay2yfdB2P-CSK7FwOKdceVqkvlKDAxx2ExgRubnGxKfAdnzyV6UtlZnB9-ET7CydvhuyA
+TmM3B67ZU9em9XX9ttXg-8jKJWat4H4H4H4HaHK
+}
+
+AzureEntityColoring(calculator_triangle_20_regular)
+!define calculator_triangle_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calculator_triangle_20_regular, calculator_triangle_20_regular)
+!define calculator_triangle_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calculator_triangle_20_regular, calculator_triangle_20_regular)
+!procedure calculator_triangle_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calculator_triangle_20_regular, $stereo=calculator_triangle_20_regular, $tags, $link)
+ !endprocedure
+!procedure calculator_triangle_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calculator_triangle_20_regular, $tags, $link, calculator_triangle_20_regular)
+!endprocedure

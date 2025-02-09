@@ -1,0 +1,14 @@
+sprite $calendar_checkmark_16_regular_multicolor [70x70/16z] {
+xT950WCn30D0xGOL-V_VBTCvvLOJl0HjV9ILYWDnmJHMd5HYMjnEfyK9gNZ8NTPxTbdouLC6wpsxP0BKNh_lHKLxJUMkkr0xEQlVzIz3RQGi3KnYsNVAoFTy
+JAAYblsdx1JSuVuOxLtovSUPcPcPcPcPRG4
+}
+
+AzureEntityColoring(calendar_checkmark_16_regular_multicolor)
+!define calendar_checkmark_16_regular_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calendar_checkmark_16_regular_multicolor, calendar_checkmark_16_regular_multicolor)
+!define calendar_checkmark_16_regular_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calendar_checkmark_16_regular_multicolor, calendar_checkmark_16_regular_multicolor)
+!procedure calendar_checkmark_16_regular_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calendar_checkmark_16_regular_multicolor, $stereo=calendar_checkmark_16_regular_multicolor, $tags, $link)
+ !endprocedure
+!procedure calendar_checkmark_16_regular_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calendar_checkmark_16_regular_multicolor, $tags, $link, calendar_checkmark_16_regular_multicolor)
+!endprocedure

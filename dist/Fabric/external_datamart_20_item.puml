@@ -1,0 +1,14 @@
+sprite $external_datamart_20_item [70x70/16z] {
+xT3LOGDG34DHwO51sN_UGZY_Jha-0rm3VfIvRlPU4nLhu1xdGi768-vYXQ6p7FLAw2f9grLCTxnQsRgpQnK389nGv3CLlXiyb2iaX5pkMyUA5oiK1z-CUiMF
+bNSuugfMJ3hOS2qinIXMZX160BH0WIqUGKn9IQ5WcB-9OApZBZlnZ1cdlqnSjDPQQwsrrbfhhm
+}
+
+AzureEntityColoring(external_datamart_20_item)
+!define external_datamart_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, external_datamart_20_item, external_datamart_20_item)
+!define external_datamart_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, external_datamart_20_item, external_datamart_20_item)
+!procedure external_datamart_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=external_datamart_20_item, $stereo=external_datamart_20_item, $tags, $link)
+ !endprocedure
+!procedure external_datamart_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, external_datamart_20_item, $tags, $link, external_datamart_20_item)
+!endprocedure

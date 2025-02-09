@@ -1,0 +1,14 @@
+sprite $dataflow_gen2_24_item [70x70/16z] {
+xT073i8m38LXxt7_2nF21YqSDlugFLNhRnFuB2ndT3nSYJ321UH2Hk0QAjnDuKQrGkuyDe9N_YKoux2uMCdj8g0LAppFmfbZiLAnkIBpVImkLDHLrP8Gboj2
+KAxWhEWO7CgLOTuh7dYn4fc1AnL_N4KoPRaohLK8hr2XeafN4LCePDmzphWYbBJMMckjjTPQsm
+}
+
+AzureEntityColoring(dataflow_gen2_24_item)
+!define dataflow_gen2_24_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, dataflow_gen2_24_item, dataflow_gen2_24_item)
+!define dataflow_gen2_24_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, dataflow_gen2_24_item, dataflow_gen2_24_item)
+!procedure dataflow_gen2_24_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=dataflow_gen2_24_item, $stereo=dataflow_gen2_24_item, $tags, $link)
+ !endprocedure
+!procedure dataflow_gen2_24_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, dataflow_gen2_24_item, $tags, $link, dataflow_gen2_24_item)
+!endprocedure

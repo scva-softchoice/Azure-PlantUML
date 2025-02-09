@@ -1,0 +1,15 @@
+sprite $my_location_ribbon_32_regular [70x70/16z] {
+xTL9WkGW34JHRq4QI11n_zFsP5nxJC_5smSp4d-lLc6Tz5-D4h9BlRvOOAx18q-TKa_n8AGcbUU358OiPPumAV8XIe47N1c8xwwMW2ndtaiE9FtGWAuNqueI
+H0qdXCWyLuIgeJ9jX86kmS5AKolsO1JN40dNYDtcT_JMvOrfw0SJiXAOBe6isyc4A8SxVE2wDMOqPI1MgKRekdLcc6HyQ0_NmgcUk9swPMQ7aPz0I0bSbxvG
+fS2wVeZFA-O9HchoP66fUYiTW1MjZI9vaxGwoh3KOIKLAv9OuTK0gyw_RDksRTksRTk-0W
+}
+
+AzureEntityColoring(my_location_ribbon_32_regular)
+!define my_location_ribbon_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, my_location_ribbon_32_regular, my_location_ribbon_32_regular)
+!define my_location_ribbon_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, my_location_ribbon_32_regular, my_location_ribbon_32_regular)
+!procedure my_location_ribbon_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=my_location_ribbon_32_regular, $stereo=my_location_ribbon_32_regular, $tags, $link)
+ !endprocedure
+!procedure my_location_ribbon_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, my_location_ribbon_32_regular, $tags, $link, my_location_ribbon_32_regular)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $add_pipeline_40_nonitem [70x70/16z] {
+xTG7aiCW38LXcK6AUBh_VNSIzswBxT4trUrt0-YdX90rR-ukcMueJQ4DIBXLeUqA_KobOEs7dWM_fWAAogtJSsKbYG8ggQh2U383LrIqZJofky9u4h4dlb6P
+U2Gy6REz9D-pIFisVKLy5PrNr5S1J9Wv9MOMCz0rWjbJ5nZFAYuFUvgzaGFFAqmk3MQLXceUPZRgFDG6XVp4Ea8EwvNX7meXX112-
+}
+
+AzureEntityColoring(add_pipeline_40_nonitem)
+!define add_pipeline_40_nonitem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, add_pipeline_40_nonitem, add_pipeline_40_nonitem)
+!define add_pipeline_40_nonitem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, add_pipeline_40_nonitem, add_pipeline_40_nonitem)
+!procedure add_pipeline_40_nonitem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=add_pipeline_40_nonitem, $stereo=add_pipeline_40_nonitem, $tags, $link)
+ !endprocedure
+!procedure add_pipeline_40_nonitem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, add_pipeline_40_nonitem, $tags, $link, add_pipeline_40_nonitem)
+!endprocedure

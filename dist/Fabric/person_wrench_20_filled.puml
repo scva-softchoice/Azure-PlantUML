@@ -1,0 +1,14 @@
+sprite $person_wrench_20_filled [70x70/16z] {
+xTD50W9134JH6jVEl_zfaSoINUDGxm3nwFFqE-pzlK58TuRPIRlkmY5qbo359tJKa_hxDnrxFnOQtMk0GRNwGcg2JL9xru8GHACnxZoMWBBMBcexWhGBgLEL
+BeCq2n1tl6GNqC_0hBjCg-uFae5kWvYPcPcPcPcT0G
+}
+
+AzureEntityColoring(person_wrench_20_filled)
+!define person_wrench_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, person_wrench_20_filled, person_wrench_20_filled)
+!define person_wrench_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, person_wrench_20_filled, person_wrench_20_filled)
+!procedure person_wrench_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=person_wrench_20_filled, $stereo=person_wrench_20_filled, $tags, $link)
+ !endprocedure
+!procedure person_wrench_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, person_wrench_20_filled, $tags, $link, person_wrench_20_filled)
+!endprocedure

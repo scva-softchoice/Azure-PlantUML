@@ -1,0 +1,14 @@
+sprite $arrow_down_drill_circle_20_filled [70x70/16z] {
+xTBL0SH020HG8bXi-gysNi7k-Stxnv7FO-EoZD58ZSGjwfCSHYbbE6JYu5AcnIa2fxfvF73gfSWCO314m0O0AKLmK7Nl5RjPYk1a8ePJyKG7CvpcwcyvXBnJ
+OgUzzdMjp83rW7R08EK6K-oiSwdYquB9vHc8Y8Y8Y8Y8DW
+}
+
+AzureEntityColoring(arrow_down_drill_circle_20_filled)
+!define arrow_down_drill_circle_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, arrow_down_drill_circle_20_filled, arrow_down_drill_circle_20_filled)
+!define arrow_down_drill_circle_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, arrow_down_drill_circle_20_filled, arrow_down_drill_circle_20_filled)
+!procedure arrow_down_drill_circle_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=arrow_down_drill_circle_20_filled, $stereo=arrow_down_drill_circle_20_filled, $tags, $link)
+ !endprocedure
+!procedure arrow_down_drill_circle_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, arrow_down_drill_circle_20_filled, $tags, $link, arrow_down_drill_circle_20_filled)
+!endprocedure

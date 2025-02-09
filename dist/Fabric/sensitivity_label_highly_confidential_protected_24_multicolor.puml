@@ -1,0 +1,14 @@
+sprite $sensitivity_label_highly_confidential_protected_24_multicolor [70x70/16z] {
+xTBLeSLG24HHuY7Cz5zkN7_XoHLM0Vi8o4igWLAYb3ELY7ff04kd5X-kO3DmvQi0TWAS5TW3FgpIjqEuCbIDDhMhGZlLwjqzq4u5KOBYeEUJj1IggAjId4-g
+b1kDN4Pu40SGuShw9XmLb71MfC3QMIl5Ml7fE8kzQDL7AoVZnkJRf9HIIYcbbD84
+}
+
+AzureEntityColoring(sensitivity_label_highly_confidential_protected_24_multicolor)
+!define sensitivity_label_highly_confidential_protected_24_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, sensitivity_label_highly_confidential_protected_24_multicolor, sensitivity_label_highly_confidential_protected_24_multicolor)
+!define sensitivity_label_highly_confidential_protected_24_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, sensitivity_label_highly_confidential_protected_24_multicolor, sensitivity_label_highly_confidential_protected_24_multicolor)
+!procedure sensitivity_label_highly_confidential_protected_24_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=sensitivity_label_highly_confidential_protected_24_multicolor, $stereo=sensitivity_label_highly_confidential_protected_24_multicolor, $tags, $link)
+ !endprocedure
+!procedure sensitivity_label_highly_confidential_protected_24_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, sensitivity_label_highly_confidential_protected_24_multicolor, $tags, $link, sensitivity_label_highly_confidential_protected_24_multicolor)
+!endprocedure

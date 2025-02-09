@@ -1,0 +1,14 @@
+sprite $progress_circle_20_regular [70x70/16z] {
+xTG5haKn24NHJPKQT_wZ_UwkJrd9YTSB79pOfjbiaTzGgqaawQRyt1p23HcJdzB1Ww7yJ3G1eMmpWLZWHvf2i81aIz0QFp8pz0AGvqr-n0GoryIkiyzPHdfw
+eZJu4QrFRxSgFn8M86IR2MG9FrCx3qRTRmKyLgFfdZl3-vnppZddd7FEkKi
+}
+
+AzureEntityColoring(progress_circle_20_regular)
+!define progress_circle_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, progress_circle_20_regular, progress_circle_20_regular)
+!define progress_circle_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, progress_circle_20_regular, progress_circle_20_regular)
+!procedure progress_circle_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=progress_circle_20_regular, $stereo=progress_circle_20_regular, $tags, $link)
+ !endprocedure
+!procedure progress_circle_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, progress_circle_20_regular, $tags, $link, progress_circle_20_regular)
+!endprocedure

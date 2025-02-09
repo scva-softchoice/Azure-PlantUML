@@ -1,0 +1,14 @@
+sprite $bucket_20_regular [70x70/16z] {
+xT8t4aCX38HXaQFG_K_hR4Ezu-hDVjNVa94hgdOe0ZADtqow1AJ3j0HneQWD5T18lgezQFMf2wYMtQKAABVTFGaepjqp2CYjtIOmEoU4pN0S3jRJST6mKez7
+X-slDgB0d7vhES7bPIyho_yH4H4H4H4HtG4
+}
+
+AzureEntityColoring(bucket_20_regular)
+!define bucket_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, bucket_20_regular, bucket_20_regular)
+!define bucket_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, bucket_20_regular, bucket_20_regular)
+!procedure bucket_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=bucket_20_regular, $stereo=bucket_20_regular, $tags, $link)
+ !endprocedure
+!procedure bucket_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, bucket_20_regular, $tags, $link, bucket_20_regular)
+!endprocedure

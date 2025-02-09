@@ -1,0 +1,14 @@
+sprite $folder_table_20_regular [70x70/16z] {
+xTAr0GDH30DGtMVM_jE6eGapw5MkpFX1ff9i5lTf2O0RTwOXbYBNghaZYz_s4XjkmgLkiM7lcMWgWqkZJ7TaASKi0vfIxiWop2eWpBWZ2_VkoR8E27n_bXOU
+iHVNIDvz8zp_Bqj7VrT4H4H4H4Ha3W
+}
+
+AzureEntityColoring(folder_table_20_regular)
+!define folder_table_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, folder_table_20_regular, folder_table_20_regular)
+!define folder_table_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, folder_table_20_regular, folder_table_20_regular)
+!procedure folder_table_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=folder_table_20_regular, $stereo=folder_table_20_regular, $tags, $link)
+ !endprocedure
+!procedure folder_table_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, folder_table_20_regular, $tags, $link, folder_table_20_regular)
+!endprocedure

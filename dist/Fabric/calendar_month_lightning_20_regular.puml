@@ -1,0 +1,14 @@
+sprite $calendar_month_lightning_20_regular [70x70/16z] {
+xT1L0iCm30DGbO9ETF_JZl7NurMl337X7usL5tM4aoLS98CJxnu-7gLMs7v_B8ez8ygTXwDqal7HkGJkp8_EfN7dqOuc7eJ7eXJkzH4k5gwpPHlXCzkv4x8D
+UDH86_2mgUAEY8Y8Y8Y8o1O
+}
+
+AzureEntityColoring(calendar_month_lightning_20_regular)
+!define calendar_month_lightning_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calendar_month_lightning_20_regular, calendar_month_lightning_20_regular)
+!define calendar_month_lightning_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calendar_month_lightning_20_regular, calendar_month_lightning_20_regular)
+!procedure calendar_month_lightning_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calendar_month_lightning_20_regular, $stereo=calendar_month_lightning_20_regular, $tags, $link)
+ !endprocedure
+!procedure calendar_month_lightning_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calendar_month_lightning_20_regular, $tags, $link, calendar_month_lightning_20_regular)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $developer_board_lightning_sparkle_20_filled [70x70/16z] {
+xT95WiCm44JH4emj_lS_xL0uIuMJVhQaPQEUJzUogEj2A2MXI_ZALlMQrjXhciOHJHhy6s7xNfHBY1VbiYH-HKbVGKwJrWHa_KgTdYxhRbI30EsYxhe4HGNM
+It9ndUIAIxHBjavuLOeycXFR9fVrebn-8LtQbrzi2dFGTA7pVJ7666ECCSOOOtu
+}
+
+AzureEntityColoring(developer_board_lightning_sparkle_20_filled)
+!define developer_board_lightning_sparkle_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, developer_board_lightning_sparkle_20_filled, developer_board_lightning_sparkle_20_filled)
+!define developer_board_lightning_sparkle_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, developer_board_lightning_sparkle_20_filled, developer_board_lightning_sparkle_20_filled)
+!procedure developer_board_lightning_sparkle_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=developer_board_lightning_sparkle_20_filled, $stereo=developer_board_lightning_sparkle_20_filled, $tags, $link)
+ !endprocedure
+!procedure developer_board_lightning_sparkle_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, developer_board_lightning_sparkle_20_filled, $tags, $link, developer_board_lightning_sparkle_20_filled)
+!endprocedure

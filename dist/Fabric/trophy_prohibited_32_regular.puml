@@ -1,0 +1,15 @@
+sprite $trophy_prohibited_32_regular [70x70/16z] {
+xTGtciGW44JX0cI0QNZtl-r-6c-Y9bd7dyY_hAGVADJENQz1GoelgePqakuINMxn1A0d0ASe5-EZSZ2vGD1xHG6y5NrMD2kDvREoO7AfM7glBCOkbzW1Wfwb
+lSWh6oyBsBQa4PdyEEMGvHSXN4uCoheMi22tGWkNKPt2PTUO_1hKg8pf41gmow_2AdguHlf6ru2KGwJS8a6Tg24RwoNIWfJPHYlxBJ9KsHiG4rMnNo9g96-4
+mofORv48Scfa7GeSaTij9xZbheiAXicBYwPeOBdOq08A5_QnHgUFFyDlDqtJD4tJD4rV
+}
+
+AzureEntityColoring(trophy_prohibited_32_regular)
+!define trophy_prohibited_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, trophy_prohibited_32_regular, trophy_prohibited_32_regular)
+!define trophy_prohibited_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, trophy_prohibited_32_regular, trophy_prohibited_32_regular)
+!procedure trophy_prohibited_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=trophy_prohibited_32_regular, $stereo=trophy_prohibited_32_regular, $tags, $link)
+ !endprocedure
+!procedure trophy_prohibited_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, trophy_prohibited_32_regular, $tags, $link, trophy_prohibited_32_regular)
+!endprocedure

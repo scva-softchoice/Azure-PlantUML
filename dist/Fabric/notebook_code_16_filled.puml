@@ -1,0 +1,11 @@
+sprite $notebook_code_16_filled [70x70/16z] xTF50SDG30DGvpDA-qzRXdCPeZU0sVOa2Jn2illnwZkY08SeU2HAOwg9fF61A27IpHWUx2X467r-i1Qs5jZuQ1IE_inDuobH-E6h0y_mncyK4H4H4H4HaIq
+
+AzureEntityColoring(notebook_code_16_filled)
+!define notebook_code_16_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, notebook_code_16_filled, notebook_code_16_filled)
+!define notebook_code_16_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, notebook_code_16_filled, notebook_code_16_filled)
+!procedure notebook_code_16_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=notebook_code_16_filled, $stereo=notebook_code_16_filled, $tags, $link)
+ !endprocedure
+!procedure notebook_code_16_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, notebook_code_16_filled, $tags, $link, notebook_code_16_filled)
+!endprocedure

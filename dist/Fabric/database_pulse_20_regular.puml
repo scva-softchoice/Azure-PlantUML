@@ -1,0 +1,14 @@
+sprite $database_pulse_20_regular [70x70/16z] {
+xTHL0eLG20HG45jWzh_QrzsTSyolMuHy6gtx0AAlLMvdELI5YDL3cjmiIrceGcu6amN37QFCTgHM3NdFAElJlMUKxT_xHodk7wKDH7llA8ufls-K1kYHG7FN
+A85UN1n-roWOr5HrWDncNZsHxZ9u-btLs0AOFiqzdS4rxekH7CaN8Y8Y8Y8YeZ4
+}
+
+AzureEntityColoring(database_pulse_20_regular)
+!define database_pulse_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, database_pulse_20_regular, database_pulse_20_regular)
+!define database_pulse_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, database_pulse_20_regular, database_pulse_20_regular)
+!procedure database_pulse_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=database_pulse_20_regular, $stereo=database_pulse_20_regular, $tags, $link)
+ !endprocedure
+!procedure database_pulse_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, database_pulse_20_regular, $tags, $link, database_pulse_20_regular)
+!endprocedure

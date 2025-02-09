@@ -1,0 +1,14 @@
+sprite $table_multiple_arrow_curved_right_20_filled [70x70/16z] {
+xT3N0SGm309GajYfijX_skljr-KwRm09m97rQ63m-ZFzvapeI8BS-i8ZFaVl4SvNQ2Yoph0UyCiLeeXtE6BT5Q850YHhim2XoHLlSELwu3FMvSSqIhqzNZ4K
+cQTWzoiMKCQc7WtCYITf0jeJ4H4H4H4HsGC
+}
+
+AzureEntityColoring(table_multiple_arrow_curved_right_20_filled)
+!define table_multiple_arrow_curved_right_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, table_multiple_arrow_curved_right_20_filled, table_multiple_arrow_curved_right_20_filled)
+!define table_multiple_arrow_curved_right_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, table_multiple_arrow_curved_right_20_filled, table_multiple_arrow_curved_right_20_filled)
+!procedure table_multiple_arrow_curved_right_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=table_multiple_arrow_curved_right_20_filled, $stereo=table_multiple_arrow_curved_right_20_filled, $tags, $link)
+ !endprocedure
+!procedure table_multiple_arrow_curved_right_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, table_multiple_arrow_curved_right_20_filled, $tags, $link, table_multiple_arrow_curved_right_20_filled)
+!endprocedure

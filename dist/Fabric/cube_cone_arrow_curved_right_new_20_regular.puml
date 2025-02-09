@@ -1,0 +1,14 @@
+sprite $cube_cone_arrow_curved_right_new_20_regular [70x70/16z] {
+xT65RK0n34NH6_uGv-q_RRaBEENwI1QR-Ndk3FlAoa0f-ELRaW5c-CtZTPOwPyLjmSp0h7Mognfi39FETIQu6zJfhc6TPcSp02kuM4z0wceyAxW8kzfb2CRK
+6hW8XWOetNfsuw6t64DIadJiLCbB4f8CX_lA3FALf0na2OzcLxtMmDvccVYqgm7lT-biUV_Hfh4q1tz2226444888OH7
+}
+
+AzureEntityColoring(cube_cone_arrow_curved_right_new_20_regular)
+!define cube_cone_arrow_curved_right_new_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, cube_cone_arrow_curved_right_new_20_regular, cube_cone_arrow_curved_right_new_20_regular)
+!define cube_cone_arrow_curved_right_new_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, cube_cone_arrow_curved_right_new_20_regular, cube_cone_arrow_curved_right_new_20_regular)
+!procedure cube_cone_arrow_curved_right_new_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=cube_cone_arrow_curved_right_new_20_regular, $stereo=cube_cone_arrow_curved_right_new_20_regular, $tags, $link)
+ !endprocedure
+!procedure cube_cone_arrow_curved_right_new_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, cube_cone_arrow_curved_right_new_20_regular, $tags, $link, cube_cone_arrow_curved_right_new_20_regular)
+!endprocedure

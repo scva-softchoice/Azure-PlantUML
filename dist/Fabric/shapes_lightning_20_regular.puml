@@ -1,0 +1,14 @@
+sprite $shapes_lightning_20_regular [70x70/16z] {
+xT95WWKn20JGWdQZxd_QTjsIaI-yw2OAU56ATEL0jfgyII5QMOqalM0cGmc_kZwl1BVIhCHA22zXKL2sgS6hwO6kmKhWfDIjCv8LN8vhr5N9MGwVt0GB6JY3
+qv4Y6LSbFCuCQRamXOVbnuIpGU7Iytm9EGXIANj1igp3GmWXX1122264C04
+}
+
+AzureEntityColoring(shapes_lightning_20_regular)
+!define shapes_lightning_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, shapes_lightning_20_regular, shapes_lightning_20_regular)
+!define shapes_lightning_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, shapes_lightning_20_regular, shapes_lightning_20_regular)
+!procedure shapes_lightning_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=shapes_lightning_20_regular, $stereo=shapes_lightning_20_regular, $tags, $link)
+ !endprocedure
+!procedure shapes_lightning_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, shapes_lightning_20_regular, $tags, $link, shapes_lightning_20_regular)
+!endprocedure

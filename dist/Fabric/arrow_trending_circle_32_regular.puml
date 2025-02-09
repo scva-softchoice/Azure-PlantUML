@@ -1,0 +1,15 @@
+sprite $arrow_trending_circle_32_regular [70x70/16z] {
+xTM5TG0n30DGXTdQVzhIGHcSSfi_W5wi47ucd_iWHyyUquBm905JJ2EbU0jONuHiPcuX8-8KXUAXvScAUngfZR5anWE5Og3IMV58OzELme4dY6ucOS0J8eUg
+se6JIVbACbkwnPjbPfmYRwIjuAJfrjrV2xdb1as_GlCWTKznccB8SxPy4o9rIp7aH4eZstM8FPhIf0pQSn8AnI8ouehLJDJe0PXEEa_ULBt5UasxYNiT5d3D
+uPGrExrjnHZcYL5rDq1nlUPlu_pBKDcWOXIlbFR5TD3ohxxU-f-4P3KVyAjvJFFbYHzsMPPbMPPbMPPB
+}
+
+AzureEntityColoring(arrow_trending_circle_32_regular)
+!define arrow_trending_circle_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, arrow_trending_circle_32_regular, arrow_trending_circle_32_regular)
+!define arrow_trending_circle_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, arrow_trending_circle_32_regular, arrow_trending_circle_32_regular)
+!procedure arrow_trending_circle_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=arrow_trending_circle_32_regular, $stereo=arrow_trending_circle_32_regular, $tags, $link)
+ !endprocedure
+!procedure arrow_trending_circle_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, arrow_trending_circle_32_regular, $tags, $link, arrow_trending_circle_32_regular)
+!endprocedure

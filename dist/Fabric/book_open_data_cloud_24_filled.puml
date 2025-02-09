@@ -1,0 +1,14 @@
+sprite $book_open_data_cloud_24_filled [70x70/16z] {
+xSmb0iG044FHb3d__gTTD0kcuDeyCpmweM8mJtFJB3nvq7O3VmPjPaezTT3fgSJQ3FwJwtp9btmnrVTnXRLPpvjXuQtNTeFvubxxTT3fE92EgsjTLqH4H4H4
+n1q
+}
+
+AzureEntityColoring(book_open_data_cloud_24_filled)
+!define book_open_data_cloud_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, book_open_data_cloud_24_filled, book_open_data_cloud_24_filled)
+!define book_open_data_cloud_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, book_open_data_cloud_24_filled, book_open_data_cloud_24_filled)
+!procedure book_open_data_cloud_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=book_open_data_cloud_24_filled, $stereo=book_open_data_cloud_24_filled, $tags, $link)
+ !endprocedure
+!procedure book_open_data_cloud_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, book_open_data_cloud_24_filled, $tags, $link, book_open_data_cloud_24_filled)
+!endprocedure

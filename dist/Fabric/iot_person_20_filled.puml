@@ -1,0 +1,14 @@
+sprite $iot_person_20_filled [70x70/16z] {
+jC_70GD1349HDayIl_zgdIiOhTzT0lG7g_9sSshQ5koI5i2Q5k3V5pJDlmuT9nOTE2JjNfHJZRqhgG1K9HaOsnrVrDmqwt2StT0EuCZKs5HTibz27wb5nARR
+N01SoZ40Lau7e2jdgK7KHS_su5W00000O92_zSv9L0C008
+}
+
+AzureEntityColoring(iot_person_20_filled)
+!define iot_person_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, iot_person_20_filled, iot_person_20_filled)
+!define iot_person_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, iot_person_20_filled, iot_person_20_filled)
+!procedure iot_person_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=iot_person_20_filled, $stereo=iot_person_20_filled, $tags, $link)
+ !endprocedure
+!procedure iot_person_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, iot_person_20_filled, $tags, $link, iot_person_20_filled)
+!endprocedure

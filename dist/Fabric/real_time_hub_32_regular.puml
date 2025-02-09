@@ -1,0 +1,15 @@
+sprite $real_time_hub_32_regular [70x70/16z] {
+pD1NUaKX201Xx1pRx7-t-KZlYTxwlpi2SfSYiskK4oNCYATMgayTogaL4IcGJwz817zwHPGgUsBJ_FfwUnZ5p2pcG7ShjTG9CzbWzDrAiSjqiAt0RLTCw0md
+ZNH2nNIw58uJAswYddbYHGB4GJon8eLPQRBXO4w0KRCT5vQ7SQbEtkbb0DFBaW5qpT6UXNJmR6Od2phZ_RykDvwjNCU3_sd7bTF-zETInK4ylI9AFxLY9be7
+p5urxbSoxzJazYhIHmuYBkQA6KT9qLjbLsgyaHFuhDe1zA4zE10000004BG_zI9L0G000m
+}
+
+AzureEntityColoring(real_time_hub_32_regular)
+!define real_time_hub_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, real_time_hub_32_regular, real_time_hub_32_regular)
+!define real_time_hub_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, real_time_hub_32_regular, real_time_hub_32_regular)
+!procedure real_time_hub_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=real_time_hub_32_regular, $stereo=real_time_hub_32_regular, $tags, $link)
+ !endprocedure
+!procedure real_time_hub_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, real_time_hub_32_regular, $tags, $link, real_time_hub_32_regular)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $generic_placeholder_20_item [70x70/16z] {
+xSpL0G9G30F09C_Q_GV6xRiuv0OuV9RMBqPlrKIuOkie6RZ5SST2PKftBZEm4_EkXOlOuH8vKJ81uUIk9N34k6lXCRbd8NHAsCXLNQZ5FIsLb_qmWZinUDT2
+jSpMUEToeU8o-stI9qeqrrfnDeK7CpCpCpCpCzi2
+}
+
+AzureEntityColoring(generic_placeholder_20_item)
+!define generic_placeholder_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, generic_placeholder_20_item, generic_placeholder_20_item)
+!define generic_placeholder_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, generic_placeholder_20_item, generic_placeholder_20_item)
+!procedure generic_placeholder_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=generic_placeholder_20_item, $stereo=generic_placeholder_20_item, $tags, $link)
+ !endprocedure
+!procedure generic_placeholder_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, generic_placeholder_20_item, $tags, $link, generic_placeholder_20_item)
+!endprocedure

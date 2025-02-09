@@ -1,0 +1,14 @@
+sprite $healthcare_20_item [70x70/16z] {
+xSv7UiGm34DXGcAncVlVD-FkDUNKmQ-oV1_aT-bwCktLI9CBkag9oHrie08iRx1YcQgPDbJf-MAmx81BYQzJSiQCHRcoR75eMkf8HJmnPxoEbYjOFeKW6u2e
+LXQH7mhKAu7LD66uidYmqeeLrtj4NKgQHyHqy2OF8o8Y8Y8Y8le4
+}
+
+AzureEntityColoring(healthcare_20_item)
+!define healthcare_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, healthcare_20_item, healthcare_20_item)
+!define healthcare_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, healthcare_20_item, healthcare_20_item)
+!procedure healthcare_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=healthcare_20_item, $stereo=healthcare_20_item, $tags, $link)
+ !endprocedure
+!procedure healthcare_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, healthcare_20_item, $tags, $link, healthcare_20_item)
+!endprocedure

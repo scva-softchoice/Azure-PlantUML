@@ -1,0 +1,15 @@
+sprite $copy_job_32_item [70x70/16z] {
+xSn9SaGn28DX2OE1ll-14xippwRUAiMdhUh7loJwYQcg74Q8ByXPHealKOyg-1eD1-pwYiv8DraHL2fAW66357K3mKf5Wb33nWJ8ULoXHJeqZG1695Yfp3b2
+eAOU6NCaIvMW2c26k_FAFYSsOcEn4g1vfeyTuQrIMIAt0R1K8HRB9OIiLjQ4GrNufk9dbItT7eLnoNBbRf8SOSSLVrjPOWvMAv7BJRcKAp8ZmvNboXSkgyXH
+PShNaN5KqJc-Z4p5MSOzF3vmmsLQQwsrrbfh3m
+}
+
+AzureEntityColoring(copy_job_32_item)
+!define copy_job_32_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, copy_job_32_item, copy_job_32_item)
+!define copy_job_32_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, copy_job_32_item, copy_job_32_item)
+!procedure copy_job_32_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=copy_job_32_item, $stereo=copy_job_32_item, $tags, $link)
+ !endprocedure
+!procedure copy_job_32_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, copy_job_32_item, $tags, $link, copy_job_32_item)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $folder_open_data_bar_20_filled [70x70/16z] {
+xT0t5i0m20DGujwv_sdJwuezvUa_Pa2Y7rAPLuxw5DwbiFAQXFZ33zdIn5loHDsOJUGNwPQfyY4fbQfmIxkhKIMh9DoIzHrc7I4E_hsbPDaMatYJbIBvErUv
+AkUEBOckEDU8wBujNuEsb7pE1G0000000601
+}
+
+AzureEntityColoring(folder_open_data_bar_20_filled)
+!define folder_open_data_bar_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, folder_open_data_bar_20_filled, folder_open_data_bar_20_filled)
+!define folder_open_data_bar_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, folder_open_data_bar_20_filled, folder_open_data_bar_20_filled)
+!procedure folder_open_data_bar_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=folder_open_data_bar_20_filled, $stereo=folder_open_data_bar_20_filled, $tags, $link)
+ !endprocedure
+!procedure folder_open_data_bar_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, folder_open_data_bar_20_filled, $tags, $link, folder_open_data_bar_20_filled)
+!endprocedure

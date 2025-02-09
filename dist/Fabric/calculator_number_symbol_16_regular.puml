@@ -1,0 +1,14 @@
+sprite $calculator_number_symbol_16_regular [70x70/16z] {
+xT77bGD130DHZ7VShVoprRI9eAcJ7ZxkjFgI-Q5xPWsBKzqP6eOEgaDagZ3fDP6ieYfPvO9dKGxzKRadeNWKyFycSbM0wGsvZRZrcidEShp8Lfdrkj6es2Nr
+iw1HQy0S_BqXbFAMUiMgtsPcPcPcPcRs0G
+}
+
+AzureEntityColoring(calculator_number_symbol_16_regular)
+!define calculator_number_symbol_16_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calculator_number_symbol_16_regular, calculator_number_symbol_16_regular)
+!define calculator_number_symbol_16_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calculator_number_symbol_16_regular, calculator_number_symbol_16_regular)
+!procedure calculator_number_symbol_16_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calculator_number_symbol_16_regular, $stereo=calculator_number_symbol_16_regular, $tags, $link)
+ !endprocedure
+!procedure calculator_number_symbol_16_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calculator_number_symbol_16_regular, $tags, $link, calculator_number_symbol_16_regular)
+!endprocedure

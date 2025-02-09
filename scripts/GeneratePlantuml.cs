@@ -82,6 +82,15 @@ public class GeneratePlantuml : IHostedService
         File.Copy(Path.Combine(sourceFolder, "AzureC4Integration.puml"), Path.Combine(targetFolder, "AzureC4Integration.puml"));
         File.Copy(Path.Combine(sourceFolder, "AzureSimplified.puml"), Path.Combine(targetFolder, "AzureSimplified.puml"));
 
+                // copy themes to target folder
+        var themesSource = new DirectoryInfo(Path.Combine(sourceFolder, "themes"));
+        Directory.CreateDirectory(Path.Combine(targetFolder, "themes"));
+        foreach (FileInfo file in themesSource.GetFiles())
+        {
+            string targetFilePath = Path.Combine(targetFolder, "themes", file.Name);
+            file.CopyTo(targetFilePath);
+        }
+
         foreach (var service in lookupTable)
         {
             await ProcessService(service);

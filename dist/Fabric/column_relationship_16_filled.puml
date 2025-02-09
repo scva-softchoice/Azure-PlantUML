@@ -1,0 +1,11 @@
+sprite $column_relationship_16_filled [70x70/16z] xTF73O0m44JH9Puyclwh9KC1PF1_ag_U72ThP3Lnb6mhZlBeBR-Cxr1JjryEDNNxvN0xL4MjOxzifHrlgiyOJPiE_Z99TUnoeAb7Zn0000000FG
+
+AzureEntityColoring(column_relationship_16_filled)
+!define column_relationship_16_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, column_relationship_16_filled, column_relationship_16_filled)
+!define column_relationship_16_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, column_relationship_16_filled, column_relationship_16_filled)
+!procedure column_relationship_16_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=column_relationship_16_filled, $stereo=column_relationship_16_filled, $tags, $link)
+ !endprocedure
+!procedure column_relationship_16_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, column_relationship_16_filled, $tags, $link, column_relationship_16_filled)
+!endprocedure

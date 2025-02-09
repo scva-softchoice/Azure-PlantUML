@@ -1,0 +1,15 @@
+sprite $diagram_branch_sync_32_filled [70x70/16z] {
+xTH5OiKm34NHPmgOxlvNM_gSeSgjJi0paq1_LcpSQL4cdGTT9Xp8m6Vvt1ZbpfsUPHKWInc2P5Uffs6LtMKJ8KXsuxA7fGv6BR9O6QVRQPoqOBtQbt5oCSnN
+gmfiKLhdhDLwjGLObTQYj8bYQ50jIWsO0wWAebcIlqkJaweN35CXIb2tRPlCbty5uooTqnMVTECiEmhNITYDioIqPQqrgmF9E8lsEgb9QRjinH8ZQN8nJGsg
+vsCTsLrgUj4RvvnppZddt3C
+}
+
+AzureEntityColoring(diagram_branch_sync_32_filled)
+!define diagram_branch_sync_32_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, diagram_branch_sync_32_filled, diagram_branch_sync_32_filled)
+!define diagram_branch_sync_32_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, diagram_branch_sync_32_filled, diagram_branch_sync_32_filled)
+!procedure diagram_branch_sync_32_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=diagram_branch_sync_32_filled, $stereo=diagram_branch_sync_32_filled, $tags, $link)
+ !endprocedure
+!procedure diagram_branch_sync_32_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, diagram_branch_sync_32_filled, $tags, $link, diagram_branch_sync_32_filled)
+!endprocedure

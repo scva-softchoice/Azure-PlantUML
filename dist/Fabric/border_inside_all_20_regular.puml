@@ -1,0 +1,11 @@
+sprite $border_inside_all_20_regular [70x70/16z] xTEr0GGW44JHJmQizL_jkMVdDY-7TNxI2CYgX1ZSgiy6z0wqsRcHD_Q_q9oxzCxHstw9qr-26rLVS-zhzUPVJYkg7vZHnTQzzm8OVdAD7qf4H4H4H4Ha2G
+
+AzureEntityColoring(border_inside_all_20_regular)
+!define border_inside_all_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, border_inside_all_20_regular, border_inside_all_20_regular)
+!define border_inside_all_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, border_inside_all_20_regular, border_inside_all_20_regular)
+!procedure border_inside_all_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=border_inside_all_20_regular, $stereo=border_inside_all_20_regular, $tags, $link)
+ !endprocedure
+!procedure border_inside_all_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, border_inside_all_20_regular, $tags, $link, border_inside_all_20_regular)
+!endprocedure

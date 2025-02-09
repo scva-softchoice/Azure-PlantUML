@@ -1,0 +1,11 @@
+sprite $list_sql_20_regular [70x70/16z] xT2r0GCm44MnPsRV_jkcSn-chn74KyaOaEkHkSaSKEfH-67QzIL2If2umseZzZ4wTi_kQWa3m-3sNLzsiBmCumwphj2wMR2QxzbDa6FqfHOE4H4H4H4HaGi
+
+AzureEntityColoring(list_sql_20_regular)
+!define list_sql_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, list_sql_20_regular, list_sql_20_regular)
+!define list_sql_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, list_sql_20_regular, list_sql_20_regular)
+!procedure list_sql_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=list_sql_20_regular, $stereo=list_sql_20_regular, $tags, $link)
+ !endprocedure
+!procedure list_sql_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, list_sql_20_regular, $tags, $link, list_sql_20_regular)
+!endprocedure

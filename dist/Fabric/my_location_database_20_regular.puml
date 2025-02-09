@@ -1,0 +1,14 @@
+sprite $my_location_database_20_regular [70x70/16z] {
+xTE56SGm20NWHvJ6s7_QIhwR8FISVm0SVAAKS0DcQ14taPQX4cKBWEFkD9MCW2bqtKYeIi_0fXXnywXooWXrUSKiW5mshCiiX1c4k8vHcHOx2hCZwZ9rBE4A
+TqQ0BeeJnaNN4QBqH429Lu1GLHy0UL2TtXrHSjP7cRfC3GgA7NqWOumnnXXZZ347
+}
+
+AzureEntityColoring(my_location_database_20_regular)
+!define my_location_database_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, my_location_database_20_regular, my_location_database_20_regular)
+!define my_location_database_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, my_location_database_20_regular, my_location_database_20_regular)
+!procedure my_location_database_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=my_location_database_20_regular, $stereo=my_location_database_20_regular, $tags, $link)
+ !endprocedure
+!procedure my_location_database_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, my_location_database_20_regular, $tags, $link, my_location_database_20_regular)
+!endprocedure

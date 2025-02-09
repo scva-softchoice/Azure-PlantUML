@@ -1,0 +1,14 @@
+sprite $folder_checkmark_16_filled_multicolor [70x70/16z] {
+xT8n5iHG10LGVm9W_-kTgD97b_Dk3q0VnDbjj9NTxIUwEvbUKrNvPOzSPT7guaC_eTTwnD78q5sMfAZXgooNrB2IJHQAkZ6NRovDMPONL-NcwquK4wyMCsIM
+SXFQU6wqy_pBXm400000003y0G
+}
+
+AzureEntityColoring(folder_checkmark_16_filled_multicolor)
+!define folder_checkmark_16_filled_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, folder_checkmark_16_filled_multicolor, folder_checkmark_16_filled_multicolor)
+!define folder_checkmark_16_filled_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, folder_checkmark_16_filled_multicolor, folder_checkmark_16_filled_multicolor)
+!procedure folder_checkmark_16_filled_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=folder_checkmark_16_filled_multicolor, $stereo=folder_checkmark_16_filled_multicolor, $tags, $link)
+ !endprocedure
+!procedure folder_checkmark_16_filled_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, folder_checkmark_16_filled_multicolor, $tags, $link, folder_checkmark_16_filled_multicolor)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $stream_settings_bracket_24_regular [70x70/16z] {
+xTH7Ti0W34NHPq37elxzhpPzv9b9JtJ7L3L-b39qCGgtZUKNQt2Rd0iNjqtZJJxT06oohKn9a_SfgfbtM_MeyxsFAKfDmzruZrEimNkrXKuE3lPDgR8ENsCr
+jjbPA4QJj0vscNjLgbgsDD_p8mt6oocTTpbU3cjiUzlVDELicGQOknSuI83DxvWCxvzIxv-OLo6444888OGG7W4
+}
+
+AzureEntityColoring(stream_settings_bracket_24_regular)
+!define stream_settings_bracket_24_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, stream_settings_bracket_24_regular, stream_settings_bracket_24_regular)
+!define stream_settings_bracket_24_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, stream_settings_bracket_24_regular, stream_settings_bracket_24_regular)
+!procedure stream_settings_bracket_24_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=stream_settings_bracket_24_regular, $stereo=stream_settings_bracket_24_regular, $tags, $link)
+ !endprocedure
+!procedure stream_settings_bracket_24_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, stream_settings_bracket_24_regular, $tags, $link, stream_settings_bracket_24_regular)
+!endprocedure

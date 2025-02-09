@@ -1,0 +1,14 @@
+sprite $document_one_page_multiple_text_24_filled [70x70/16z] {
+xT3N0GCn309GhbhdnlxJfXT_o-dX3I01-31pvbNTu9NPcE74LkYu4Ytop3gk060qg_rNHY2IzkP6BLl7ZYmdbJJBxYiJJY9fnkv6dt1bR1jrh_lsHfMDrNjb
+OsE82Jvpi8jrc3Z3QR2hn02toBCQ9xY9Y8Y8Y8Z87W
+}
+
+AzureEntityColoring(document_one_page_multiple_text_24_filled)
+!define document_one_page_multiple_text_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, document_one_page_multiple_text_24_filled, document_one_page_multiple_text_24_filled)
+!define document_one_page_multiple_text_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, document_one_page_multiple_text_24_filled, document_one_page_multiple_text_24_filled)
+!procedure document_one_page_multiple_text_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=document_one_page_multiple_text_24_filled, $stereo=document_one_page_multiple_text_24_filled, $tags, $link)
+ !endprocedure
+!procedure document_one_page_multiple_text_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, document_one_page_multiple_text_24_filled, $tags, $link, document_one_page_multiple_text_24_filled)
+!endprocedure

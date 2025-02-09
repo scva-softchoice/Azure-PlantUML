@@ -1,0 +1,14 @@
+sprite $calendar_ltr_clock_20_filled [70x70/16z] {
+xTD50aCX40FGu7mizpzjtPVKspniXS_W5zdAasengV52moHUmLlnojjNSOxMZs3XuZshU3gOtDdpVJSQfkt6TjUDOjgE9DCzDpAT9EOFmvtT01JodWmm_RuS
+yBjbOkPUmbtwuIXtkeqN4H4H4H4HaJK
+}
+
+AzureEntityColoring(calendar_ltr_clock_20_filled)
+!define calendar_ltr_clock_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, calendar_ltr_clock_20_filled, calendar_ltr_clock_20_filled)
+!define calendar_ltr_clock_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, calendar_ltr_clock_20_filled, calendar_ltr_clock_20_filled)
+!procedure calendar_ltr_clock_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=calendar_ltr_clock_20_filled, $stereo=calendar_ltr_clock_20_filled, $tags, $link)
+ !endprocedure
+!procedure calendar_ltr_clock_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, calendar_ltr_clock_20_filled, $tags, $link, calendar_ltr_clock_20_filled)
+!endprocedure

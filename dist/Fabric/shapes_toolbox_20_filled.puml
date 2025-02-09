@@ -1,0 +1,14 @@
+sprite $shapes_toolbox_20_filled [70x70/16z] {
+xS_73SD050DHAcTD_zKw45O3Vsy67p1tKdziFkxxcDHcmcQrwFWPLRUktOtjAbjWMS3QxdGNfgeDO1idIUEceXxh5c1HrG5mZQ9JXuf6liO5gwwv-18FLSoO
+OC2fuiRKviG47KujUAZ51hRf4H4H4H4H4V46
+}
+
+AzureEntityColoring(shapes_toolbox_20_filled)
+!define shapes_toolbox_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, shapes_toolbox_20_filled, shapes_toolbox_20_filled)
+!define shapes_toolbox_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, shapes_toolbox_20_filled, shapes_toolbox_20_filled)
+!procedure shapes_toolbox_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=shapes_toolbox_20_filled, $stereo=shapes_toolbox_20_filled, $tags, $link)
+ !endprocedure
+!procedure shapes_toolbox_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, shapes_toolbox_20_filled, $tags, $link, shapes_toolbox_20_filled)
+!endprocedure

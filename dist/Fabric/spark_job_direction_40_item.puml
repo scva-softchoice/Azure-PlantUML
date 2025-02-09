@@ -1,0 +1,15 @@
+sprite $spark_job_direction_40_item [70x70/16z] {
+xT9LaWCn34LHFQ6L_Uytu0gZrSCJt_vLdJRHusOGlPTjFrMC8aycmQECW9x4IaCz7uFHKFRr2XOgPf-nbeWBv3CKqASeW9SKngN2JAWhddQcm388A2jasVIW
+QAQXf3ZjWsVmJk6MmGHKbNtSqblpR4AeAwSqjoc8W0yhXBe2EYHzHv5DK5T07K8_a8WjjWgkAptBfY2A0A2P3lIYfCJ-XNG5y5KiKOG1d1Imb9LzUsLVIOdV
+gxX_XWByfC9u4WygBayCLgUXE9GV6Qp1D1PxR6lt2cVwocQpsMmscyrc6m
+}
+
+AzureEntityColoring(spark_job_direction_40_item)
+!define spark_job_direction_40_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, spark_job_direction_40_item, spark_job_direction_40_item)
+!define spark_job_direction_40_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, spark_job_direction_40_item, spark_job_direction_40_item)
+!procedure spark_job_direction_40_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=spark_job_direction_40_item, $stereo=spark_job_direction_40_item, $tags, $link)
+ !endprocedure
+!procedure spark_job_direction_40_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, spark_job_direction_40_item, $tags, $link, spark_job_direction_40_item)
+!endprocedure

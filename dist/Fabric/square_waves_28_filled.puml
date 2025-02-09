@@ -1,0 +1,14 @@
+sprite $square_waves_28_filled [70x70/16z] {
+xTG5ZWGn40D03uJ1_t_jtJ9ZHxXo3OW3JVX9hl96TVYMvmCUNsfyeE5BV0ZlQHMj4YCtSkeZgop0ilyFh1AGq-4rhn8dE785Lj9PLobmYQqnv-q_Ejig2Oq9
+So7pXCngMwLZ18zQdFPnjKItdJCq45rlZExZwHrjqRKJ4H4H4H7v1m
+}
+
+AzureEntityColoring(square_waves_28_filled)
+!define square_waves_28_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, square_waves_28_filled, square_waves_28_filled)
+!define square_waves_28_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, square_waves_28_filled, square_waves_28_filled)
+!procedure square_waves_28_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=square_waves_28_filled, $stereo=square_waves_28_filled, $tags, $link)
+ !endprocedure
+!procedure square_waves_28_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, square_waves_28_filled, $tags, $link, square_waves_28_filled)
+!endprocedure

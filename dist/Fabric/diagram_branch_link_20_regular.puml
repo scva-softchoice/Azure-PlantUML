@@ -1,0 +1,14 @@
+sprite $diagram_branch_link_20_regular [70x70/16z] {
+xTAt4iGm20JGDVZ4QioW___Qow4_Eiy-fKe9m3dbUZhGidxBIKwPwscYnshRoj2K0nY9blS1UK77-pDMtP8xqBG-auV1mdkdiEXmLhHEAHyaXzV_9KUWB4Y6
+5Jfcqc3CYPOz71uxlaH4H4H4H4Hk
+}
+
+AzureEntityColoring(diagram_branch_link_20_regular)
+!define diagram_branch_link_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, diagram_branch_link_20_regular, diagram_branch_link_20_regular)
+!define diagram_branch_link_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, diagram_branch_link_20_regular, diagram_branch_link_20_regular)
+!procedure diagram_branch_link_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=diagram_branch_link_20_regular, $stereo=diagram_branch_link_20_regular, $tags, $link)
+ !endprocedure
+!procedure diagram_branch_link_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, diagram_branch_link_20_regular, $tags, $link, diagram_branch_link_20_regular)
+!endprocedure

@@ -1,0 +1,11 @@
+sprite $progress_bar_20_filled [70x70/16z] xT730S1054NHE9kW_sfZcyDxzf_FsGK_6FZEKsa-aJhF-7ajQCMvBxFB-gBttpKaeyxBZ3hAPMGq0000001A
+
+AzureEntityColoring(progress_bar_20_filled)
+!define progress_bar_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, progress_bar_20_filled, progress_bar_20_filled)
+!define progress_bar_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, progress_bar_20_filled, progress_bar_20_filled)
+!procedure progress_bar_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=progress_bar_20_filled, $stereo=progress_bar_20_filled, $tags, $link)
+ !endprocedure
+!procedure progress_bar_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, progress_bar_20_filled, $tags, $link, progress_bar_20_filled)
+!endprocedure

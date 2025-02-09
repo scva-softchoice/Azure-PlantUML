@@ -1,0 +1,29 @@
+@startuml theme-DefaultMonospacedFontName
+
+' !define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!define AzurePuml ../dist
+
+' IMPORT THEME HERE 👇🏽
+!includeurl AzurePuml/themes/blueprint.puml
+
+!includeurl AzurePuml/Analytics/EventHub.puml
+!includeurl AzurePuml/Analytics/StreamAnalyticsJob.puml
+!includeurl AzurePuml/Databases/AzureCosmosDB.puml
+
+left to right direction
+
+agent "Device Simulator" as devices
+
+EventHub(fareDataEventHub, "Fare Data", "PK: Medallion HackLicense VendorId; 3 TUs", "testing 1234")
+note right: this is a note
+EventHub(tripDataEventHub, "Trip Data", "PK: Medallion HackLicense VendorId; 3 TUs")
+StreamAnalyticsJob(streamAnalytics, "Stream Processing", "6 SUs")
+AzureCosmosDB(outputCosmosDb, "Output Database", "1,000 RUs")
+
+devices --> fareDataEventHub : "test arrow"
+devices --> tripDataEventHub
+fareDataEventHub --> streamAnalytics
+tripDataEventHub --> streamAnalytics
+streamAnalytics --> outputCosmosDb
+
+@enduml

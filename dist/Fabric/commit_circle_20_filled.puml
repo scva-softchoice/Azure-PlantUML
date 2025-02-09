@@ -1,0 +1,14 @@
+sprite $commit_circle_20_filled [70x70/16z] {
+xTH50eGm30NGKFVS_xGZEDlYyD-w6gFBaJwLahoaDHpt7DLBF4ehN-BzgjT8Rbd7BK5LFBUKvfPV4PL2IZLbHMHA-mBDh4DxtefJmjfJOhktCQRxKLnLSagl
+AZonp7H3TMpt1jSTjci7hE_6zPDXFG000000080l
+}
+
+AzureEntityColoring(commit_circle_20_filled)
+!define commit_circle_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, commit_circle_20_filled, commit_circle_20_filled)
+!define commit_circle_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, commit_circle_20_filled, commit_circle_20_filled)
+!procedure commit_circle_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=commit_circle_20_filled, $stereo=commit_circle_20_filled, $tags, $link)
+ !endprocedure
+!procedure commit_circle_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, commit_circle_20_filled, $tags, $link, commit_circle_20_filled)
+!endprocedure

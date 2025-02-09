@@ -1,0 +1,11 @@
+sprite $column_uneven_20_regular [70x70/16z] xSz15G0W24H14wpzqwfofm1lHe7pNmsoy-Qfax55YXGf0W00W0i
+
+AzureEntityColoring(column_uneven_20_regular)
+!define column_uneven_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, column_uneven_20_regular, column_uneven_20_regular)
+!define column_uneven_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, column_uneven_20_regular, column_uneven_20_regular)
+!procedure column_uneven_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=column_uneven_20_regular, $stereo=column_uneven_20_regular, $tags, $link)
+ !endprocedure
+!procedure column_uneven_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, column_uneven_20_regular, $tags, $link, column_uneven_20_regular)
+!endprocedure

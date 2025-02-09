@@ -1,0 +1,14 @@
+sprite $home_waves_20_regular [70x70/16z] {
+xT150a8n30JGgNjo_zFY3glYCE-xD8RFurKzxXKr1esuJr8FE4cuHn6B5JiAvjLXi65wdG_IJkwdm-ZjX_T7yVT62M5pkY-A5ma8elwUA4rY494GfTqHnM75
+RkxUE9SsUky9Pcpc8WPp_0hgOIuLisxFXOY8Y8Y8Y6W9
+}
+
+AzureEntityColoring(home_waves_20_regular)
+!define home_waves_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, home_waves_20_regular, home_waves_20_regular)
+!define home_waves_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, home_waves_20_regular, home_waves_20_regular)
+!procedure home_waves_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=home_waves_20_regular, $stereo=home_waves_20_regular, $tags, $link)
+ !endprocedure
+!procedure home_waves_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, home_waves_20_regular, $tags, $link, home_waves_20_regular)
+!endprocedure

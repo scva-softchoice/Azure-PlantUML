@@ -1,0 +1,15 @@
+sprite $real_time_dashboard_24_item [70x70/16z] {
+xTD7OWGn24HHK251SVy3UtBgbMbdyxJ_olApm1xCmq0b0fKdYaB6v9LEURSf6_KALiIoVMlHHHwaguYMAqvEM98XUaZMAY2nc6vC4wrKrcafSv4BdkbQhWJ1
+NB3CvBuAWTXHqTEEF2Fo8AeLLP2MPwQgNgkevuL9ZUl1o0i9aibIvS2ST3lqo4EiKdc4KQiClPE031OgSpvc1gY7JE4ZkNjSO130eEn3A8VyFwsrrbfhhRNs
+1W
+}
+
+AzureEntityColoring(real_time_dashboard_24_item)
+!define real_time_dashboard_24_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, real_time_dashboard_24_item, real_time_dashboard_24_item)
+!define real_time_dashboard_24_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, real_time_dashboard_24_item, real_time_dashboard_24_item)
+!procedure real_time_dashboard_24_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=real_time_dashboard_24_item, $stereo=real_time_dashboard_24_item, $tags, $link)
+ !endprocedure
+!procedure real_time_dashboard_24_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, real_time_dashboard_24_item, $tags, $link, real_time_dashboard_24_item)
+!endprocedure

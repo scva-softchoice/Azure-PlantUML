@@ -1,0 +1,14 @@
+sprite $slide_text_accept_dismiss_20_filled [70x70/16z] {
+xT750SKm30DGjGsJzf_sCpEZNkWIieqZfC_Sa7lSf71BmKsuu-PRUW0z5zxybnXcudstX8Kx8yeTxaIoH-OKE9LnWyNnpUK6PN4yEOB9sapSm1GI3Bwh1Dbr
+96x5sbVE_vA86zsPbuN3DH8H4H4H4H4P0m
+}
+
+AzureEntityColoring(slide_text_accept_dismiss_20_filled)
+!define slide_text_accept_dismiss_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, slide_text_accept_dismiss_20_filled, slide_text_accept_dismiss_20_filled)
+!define slide_text_accept_dismiss_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, slide_text_accept_dismiss_20_filled, slide_text_accept_dismiss_20_filled)
+!procedure slide_text_accept_dismiss_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=slide_text_accept_dismiss_20_filled, $stereo=slide_text_accept_dismiss_20_filled, $tags, $link)
+ !endprocedure
+!procedure slide_text_accept_dismiss_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, slide_text_accept_dismiss_20_filled, $tags, $link, slide_text_accept_dismiss_20_filled)
+!endprocedure

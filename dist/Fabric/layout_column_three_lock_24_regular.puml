@@ -1,0 +1,14 @@
+sprite $layout_column_three_lock_24_regular [70x70/16z] {
+xTGr0WCn44DHJSXitV-qorGxdEWPgryEVf65meCI30qYi_UPVZ3_8XhKF5oU6D0FLwveGBzMrkzpAgfSpkvylhVYF4ddxgnOJPQgtL5P_yFllehZpDrLuUfj
+bPeEbMI9v3sJuQxADgN05Uxme4hWBE3lY8Y8Y8Y8z
+}
+
+AzureEntityColoring(layout_column_three_lock_24_regular)
+!define layout_column_three_lock_24_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, layout_column_three_lock_24_regular, layout_column_three_lock_24_regular)
+!define layout_column_three_lock_24_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, layout_column_three_lock_24_regular, layout_column_three_lock_24_regular)
+!procedure layout_column_three_lock_24_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=layout_column_three_lock_24_regular, $stereo=layout_column_three_lock_24_regular, $tags, $link)
+ !endprocedure
+!procedure layout_column_three_lock_24_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, layout_column_three_lock_24_regular, $tags, $link, layout_column_three_lock_24_regular)
+!endprocedure

@@ -343,6 +343,2948 @@ Categories:
     Target: DevTestLab
   - Source: Lab Services
     Target: LabService
+- Name: Fabric
+  Services:
+  - Source: add_circle_32_multi color
+    Target: add_circle_32_multicolor
+  - Source: add_pipeline_20_non item
+    Target: add_pipeline_20_nonitem
+  - Source: add_pipeline_24_non item
+    Target: add_pipeline_24_nonitem
+  - Source: add_pipeline_32_non item
+    Target: add_pipeline_32_nonitem
+  - Source: add_pipeline_40_non item
+    Target: add_pipeline_40_nonitem
+  - Source: add_pipeline_48_non item
+    Target: add_pipeline_48_nonitem
+  - Source: add_pipeline_64_non item
+    Target: add_pipeline_64_nonitem
+  - Source: ai_skills_20_item
+    Target: ai_skills_20_item
+  - Source: ai_skills_24_item
+    Target: ai_skills_24_item
+  - Source: ai_skills_32_item
+    Target: ai_skills_32_item
+  - Source: ai_skills_40_item
+    Target: ai_skills_40_item
+  - Source: ai_skills_48_item
+    Target: ai_skills_48_item
+  - Source: ai_skills_64_item
+    Target: ai_skills_64_item
+  - Source: apps_20_item
+    Target: apps_20_item
+  - Source: apps_24_item
+    Target: apps_24_item
+  - Source: apps_32_item
+    Target: apps_32_item
+  - Source: apps_40_item
+    Target: apps_40_item
+  - Source: apps_48_item
+    Target: apps_48_item
+  - Source: apps_64_item
+    Target: apps_64_item
+  - Source: app_development_16_color
+    Target: app_development_16_color
+  - Source: app_development_20_color
+    Target: app_development_20_color
+  - Source: app_development_24_color
+    Target: app_development_24_color
+  - Source: app_development_28_color
+    Target: app_development_28_color
+  - Source: app_development_32_color
+    Target: app_development_32_color
+  - Source: app_development_48_color
+    Target: app_development_48_color
+  - Source: arrow_circle_sync_32_multi color
+    Target: arrow_circle_sync_32_multicolor
+  - Source: arrow_circle_trending_32_multi color
+    Target: arrow_circle_trending_32_multicolor
+  - Source: arrow_circle_up_32_multi color
+    Target: arrow_circle_up_32_multicolor
+  - Source: arrow_curved_right_circle_20_filled
+    Target: arrow_curved_right_circle_20_filled
+  - Source: arrow_curved_right_circle_20_regular
+    Target: arrow_curved_right_circle_20_regular
+  - Source: arrow_down_double_12_filled
+    Target: arrow_down_double_12_filled
+  - Source: arrow_down_double_12_regular
+    Target: arrow_down_double_12_regular
+  - Source: arrow_down_double_16_filled
+    Target: arrow_down_double_16_filled
+  - Source: arrow_down_double_16_regular
+    Target: arrow_down_double_16_regular
+  - Source: arrow_down_double_20_filled
+    Target: arrow_down_double_20_filled
+  - Source: arrow_down_double_20_regular
+    Target: arrow_down_double_20_regular
+  - Source: arrow_down_double_24_filled
+    Target: arrow_down_double_24_filled
+  - Source: arrow_down_double_24_regular
+    Target: arrow_down_double_24_regular
+  - Source: arrow_down_double_wrap_12_filled
+    Target: arrow_down_double_wrap_12_filled
+  - Source: arrow_down_double_wrap_12_regular
+    Target: arrow_down_double_wrap_12_regular
+  - Source: arrow_down_double_wrap_20_filled
+    Target: arrow_down_double_wrap_20_filled
+  - Source: arrow_down_double_wrap_20_regular
+    Target: arrow_down_double_wrap_20_regular
+  - Source: arrow_down_drill_circle_20_filled
+    Target: arrow_down_drill_circle_20_filled
+  - Source: arrow_down_drill_circle_20_regular
+    Target: arrow_down_drill_circle_20_regular
+  - Source: arrow_exit_multiple_20_filled
+    Target: arrow_exit_multiple_20_filled
+  - Source: arrow_exit_multiple_20_regular
+    Target: arrow_exit_multiple_20_regular
+  - Source: arrow_export_import_20_filled
+    Target: arrow_export_import_20_filled
+  - Source: arrow_export_import_20_regular
+    Target: arrow_export_import_20_regular
+  - Source: arrow_forward_circle_20_filled
+    Target: arrow_forward_circle_20_filled
+  - Source: arrow_forward_circle_20_regular
+    Target: arrow_forward_circle_20_regular
+  - Source: arrow_right_double_12_filled
+    Target: arrow_right_double_12_filled
+  - Source: arrow_right_double_12_regular
+    Target: arrow_right_double_12_regular
+  - Source: arrow_right_double_20_filled
+    Target: arrow_right_double_20_filled
+  - Source: arrow_right_double_20_regular
+    Target: arrow_right_double_20_regular
+  - Source: arrow_right_double_wrap_12_filled
+    Target: arrow_right_double_wrap_12_filled
+  - Source: arrow_right_double_wrap_12_regular
+    Target: arrow_right_double_wrap_12_regular
+  - Source: arrow_right_double_wrap_20_filled
+    Target: arrow_right_double_wrap_20_filled
+  - Source: arrow_right_double_wrap_20_regular
+    Target: arrow_right_double_wrap_20_regular
+  - Source: arrow_sync_settings_16_filled
+    Target: arrow_sync_settings_16_filled
+  - Source: arrow_sync_settings_16_regular
+    Target: arrow_sync_settings_16_regular
+  - Source: arrow_trending_circle_32_regular
+    Target: arrow_trending_circle_32_regular
+  - Source: asterisk_circle_20_filled
+    Target: asterisk_circle_20_filled
+  - Source: asterisk_circle_20_regular
+    Target: asterisk_circle_20_regular
+  - Source: beaker_flash_20_filled
+    Target: beaker_flash_20_filled
+  - Source: beaker_flash_20_regular
+    Target: beaker_flash_20_regular
+  - Source: beaker_flash_32_filled
+    Target: beaker_flash_32_filled
+  - Source: beaker_flash_32_regular
+    Target: beaker_flash_32_regular
+  - Source: binoculars_16_filled
+    Target: binoculars_16_filled
+  - Source: binoculars_16_regular
+    Target: binoculars_16_regular
+  - Source: binoculars_20_filled
+    Target: binoculars_20_filled
+  - Source: binoculars_20_regular
+    Target: binoculars_20_regular
+  - Source: binoculars_24_filled
+    Target: binoculars_24_filled
+  - Source: binoculars_24_regular
+    Target: binoculars_24_regular
+  - Source: binoculars_32_filled
+    Target: binoculars_32_filled
+  - Source: binoculars_32_regular
+    Target: binoculars_32_regular
+  - Source: bookmark_data_bar_vertical_20_filled
+    Target: bookmark_data_bar_vertical_20_filled
+  - Source: bookmark_data_bar_vertical_20_regular
+    Target: bookmark_data_bar_vertical_20_regular
+  - Source: book_database_20_filled
+    Target: book_database_20_filled
+  - Source: book_database_20_regular
+    Target: book_database_20_regular
+  - Source: book_open_data_cloud_12_filled
+    Target: book_open_data_cloud_12_filled
+  - Source: book_open_data_cloud_12_regular
+    Target: book_open_data_cloud_12_regular
+  - Source: book_open_data_cloud_20_filled
+    Target: book_open_data_cloud_20_filled
+  - Source: book_open_data_cloud_20_regular
+    Target: book_open_data_cloud_20_regular
+  - Source: book_open_data_cloud_24_filled
+    Target: book_open_data_cloud_24_filled
+  - Source: book_open_data_cloud_24_regular
+    Target: book_open_data_cloud_24_regular
+  - Source: border_inside_all_20_filled
+    Target: border_inside_all_20_filled
+  - Source: border_inside_all_20_regular
+    Target: border_inside_all_20_regular
+  - Source: border_inside_horizontal_20_filled
+    Target: border_inside_horizontal_20_filled
+  - Source: border_inside_horizontal_20_regular
+    Target: border_inside_horizontal_20_regular
+  - Source: border_inside_vertical_20_filled
+    Target: border_inside_vertical_20_filled
+  - Source: border_inside_vertical_20_regular
+    Target: border_inside_vertical_20_regular
+  - Source: border_none_eye_20_filled
+    Target: border_none_eye_20_filled
+  - Source: border_none_eye_20_regular
+    Target: border_none_eye_20_regular
+  - Source: bracket_rectangles_20_filled
+    Target: bracket_rectangles_20_filled
+  - Source: bracket_rectangles_20_regular
+    Target: bracket_rectangles_20_regular
+  - Source: branch_fork_link_20_filled
+    Target: branch_fork_link_20_filled
+  - Source: branch_fork_link_20_regular
+    Target: branch_fork_link_20_regular
+  - Source: branch_fork_link_24_filled
+    Target: branch_fork_link_24_filled
+  - Source: branch_fork_link_24_regular
+    Target: branch_fork_link_24_regular
+  - Source: branch_fork_link_32_filled
+    Target: branch_fork_link_32_filled
+  - Source: branch_fork_link_32_regular
+    Target: branch_fork_link_32_regular
+  - Source: branch_fork_signal_20_filled
+    Target: branch_fork_signal_20_filled
+  - Source: branch_fork_signal_20_regular
+    Target: branch_fork_signal_20_regular
+  - Source: branch_fork_signal_24_filled
+    Target: branch_fork_signal_24_filled
+  - Source: branch_fork_signal_24_regular
+    Target: branch_fork_signal_24_regular
+  - Source: branch_fork_signal_32_filled
+    Target: branch_fork_signal_32_filled
+  - Source: branch_fork_signal_32_regular
+    Target: branch_fork_signal_32_regular
+  - Source: briefcase_report_20_filled
+    Target: briefcase_report_20_filled
+  - Source: briefcase_report_20_regular
+    Target: briefcase_report_20_regular
+  - Source: briefcase_report_24_filled
+    Target: briefcase_report_24_filled
+  - Source: briefcase_report_24_regular
+    Target: briefcase_report_24_regular
+  - Source: bucket_20_filled
+    Target: bucket_20_filled
+  - Source: bucket_20_regular
+    Target: bucket_20_regular
+  - Source: building_data_20_filled
+    Target: building_data_20_filled
+  - Source: building_data_20_regular
+    Target: building_data_20_regular
+  - Source: building_retail_more_link_20_filled
+    Target: building_retail_more_link_20_filled
+  - Source: building_retail_more_link_20_regular
+    Target: building_retail_more_link_20_regular
+  - Source: building_retail_more_link_24_filled
+    Target: building_retail_more_link_24_filled
+  - Source: building_retail_more_link_24_regular
+    Target: building_retail_more_link_24_regular
+  - Source: building_retail_more_link_32_filled
+    Target: building_retail_more_link_32_filled
+  - Source: building_retail_more_link_32_regular
+    Target: building_retail_more_link_32_regular
+  - Source: calculator_brackets_16_filled
+    Target: calculator_brackets_16_filled
+  - Source: calculator_brackets_16_regular
+    Target: calculator_brackets_16_regular
+  - Source: calculator_brackets_20_filled
+    Target: calculator_brackets_20_filled
+  - Source: calculator_brackets_20_regular
+    Target: calculator_brackets_20_regular
+  - Source: calculator_brackets_number_symbol_16_filled
+    Target: calculator_brackets_number_symbol_16_filled
+  - Source: calculator_brackets_number_symbol_16_regular
+    Target: calculator_brackets_number_symbol_16_regular
+  - Source: calculator_brackets_number_symbol_20_filled
+    Target: calculator_brackets_number_symbol_20_filled
+  - Source: calculator_brackets_number_symbol_20_regular
+    Target: calculator_brackets_number_symbol_20_regular
+  - Source: calculator_multiple_brackets_16_filled
+    Target: calculator_multiple_brackets_16_filled
+  - Source: calculator_multiple_brackets_16_regular
+    Target: calculator_multiple_brackets_16_regular
+  - Source: calculator_multiple_brackets_20_filled
+    Target: calculator_multiple_brackets_20_filled
+  - Source: calculator_multiple_brackets_20_regular
+    Target: calculator_multiple_brackets_20_regular
+  - Source: calculator_multiple_brackets_checkmark_16_filled_multi color
+    Target: calculator_multiple_brackets_checkmark_16_filled_multicolor
+  - Source: calculator_multiple_brackets_checkmark_16_regular_multi color
+    Target: calculator_multiple_brackets_checkmark_16_regular_multicolor
+  - Source: calculator_multiple_brackets_number_symbol_16_filled
+    Target: calculator_multiple_brackets_number_symbol_16_filled
+  - Source: calculator_multiple_brackets_number_symbol_16_regular
+    Target: calculator_multiple_brackets_number_symbol_16_regular
+  - Source: calculator_multiple_brackets_number_symbol_20_filled
+    Target: calculator_multiple_brackets_number_symbol_20_filled
+  - Source: calculator_multiple_brackets_number_symbol_20_regular
+    Target: calculator_multiple_brackets_number_symbol_20_regular
+  - Source: calculator_multiple_checkmark_16_filled_multi color
+    Target: calculator_multiple_checkmark_16_filled_multicolor
+  - Source: calculator_multiple_checkmark_16_regular_multi color
+    Target: calculator_multiple_checkmark_16_regular_multicolor
+  - Source: calculator_number_symbol_16_filled
+    Target: calculator_number_symbol_16_filled
+  - Source: calculator_number_symbol_16_regular
+    Target: calculator_number_symbol_16_regular
+  - Source: calculator_number_symbol_20_filled
+    Target: calculator_number_symbol_20_filled
+  - Source: calculator_number_symbol_20_regular
+    Target: calculator_number_symbol_20_regular
+  - Source: calculator_triangle_16_filled
+    Target: calculator_triangle_16_filled
+  - Source: calculator_triangle_16_regular
+    Target: calculator_triangle_16_regular
+  - Source: calculator_triangle_20_filled
+    Target: calculator_triangle_20_filled
+  - Source: calculator_triangle_20_regular
+    Target: calculator_triangle_20_regular
+  - Source: calendar_checkmark_16_filled_multi color
+    Target: calendar_checkmark_16_filled_multicolor
+  - Source: calendar_checkmark_16_regular_multi color
+    Target: calendar_checkmark_16_regular_multicolor
+  - Source: calendar_ltr_clock_20_filled
+    Target: calendar_ltr_clock_20_filled
+  - Source: calendar_ltr_clock_20_regular
+    Target: calendar_ltr_clock_20_regular
+  - Source: calendar_month_arrow_up_16_filled
+    Target: calendar_month_arrow_up_16_filled
+  - Source: calendar_month_arrow_up_16_regular
+    Target: calendar_month_arrow_up_16_regular
+  - Source: calendar_month_arrow_up_20_filled
+    Target: calendar_month_arrow_up_20_filled
+  - Source: calendar_month_arrow_up_20_regular
+    Target: calendar_month_arrow_up_20_regular
+  - Source: calendar_month_lightning_20_filled
+    Target: calendar_month_lightning_20_filled
+  - Source: calendar_month_lightning_20_regular
+    Target: calendar_month_lightning_20_regular
+  - Source: calendar_month_link_20_filled
+    Target: calendar_month_link_20_filled
+  - Source: calendar_month_link_20_regular
+    Target: calendar_month_link_20_regular
+  - Source: calendar_month_link_24_filled
+    Target: calendar_month_link_24_filled
+  - Source: calendar_month_link_24_regular
+    Target: calendar_month_link_24_regular
+  - Source: calendar_month_link_32_filled
+    Target: calendar_month_link_32_filled
+  - Source: calendar_month_link_32_regular
+    Target: calendar_month_link_32_regular
+  - Source: calendar_month_person_20_filled
+    Target: calendar_month_person_20_filled
+  - Source: calendar_month_person_20_regular
+    Target: calendar_month_person_20_regular
+  - Source: calendar_month_person_24_filled
+    Target: calendar_month_person_24_filled
+  - Source: calendar_month_person_24_regular
+    Target: calendar_month_person_24_regular
+  - Source: calendar_month_person_32_filled
+    Target: calendar_month_person_32_filled
+  - Source: calendar_month_person_32_regular
+    Target: calendar_month_person_32_regular
+  - Source: calendar_month_prohibited_20_filled
+    Target: calendar_month_prohibited_20_filled
+  - Source: calendar_month_prohibited_20_regular
+    Target: calendar_month_prohibited_20_regular
+  - Source: calendar_month_prohibited_24_filled
+    Target: calendar_month_prohibited_24_filled
+  - Source: calendar_month_prohibited_24_regular
+    Target: calendar_month_prohibited_24_regular
+  - Source: calendar_month_prohibited_32_filled
+    Target: calendar_month_prohibited_32_filled
+  - Source: calendar_month_prohibited_32_regular
+    Target: calendar_month_prohibited_32_regular
+  - Source: calendar_month_signal_20_filled
+    Target: calendar_month_signal_20_filled
+  - Source: calendar_month_signal_20_regular
+    Target: calendar_month_signal_20_regular
+  - Source: calendar_month_signal_24_filled
+    Target: calendar_month_signal_24_filled
+  - Source: calendar_month_signal_24_regular
+    Target: calendar_month_signal_24_regular
+  - Source: calendar_month_signal_32_filled
+    Target: calendar_month_signal_32_filled
+  - Source: calendar_month_signal_32_regular
+    Target: calendar_month_signal_32_regular
+  - Source: categorize_20_filled
+    Target: categorize_20_filled
+  - Source: categorize_20_regular
+    Target: categorize_20_regular
+  - Source: circle_chart_20_filled
+    Target: circle_chart_20_filled
+  - Source: circle_chart_20_regular
+    Target: circle_chart_20_regular
+  - Source: circle_group_16_filled
+    Target: circle_group_16_filled
+  - Source: circle_group_16_regular
+    Target: circle_group_16_regular
+  - Source: circle_group_20_filled
+    Target: circle_group_20_filled
+  - Source: circle_group_20_regular
+    Target: circle_group_20_regular
+  - Source: circle_group_32_filled
+    Target: circle_group_32_filled
+  - Source: circle_group_32_regular
+    Target: circle_group_32_regular
+  - Source: circle_tree_16_filled
+    Target: circle_tree_16_filled
+  - Source: circle_tree_16_regular
+    Target: circle_tree_16_regular
+  - Source: circle_tree_20_filled
+    Target: circle_tree_20_filled
+  - Source: circle_tree_20_regular
+    Target: circle_tree_20_regular
+  - Source: circle_tree_checkmark_16_filled_multi color
+    Target: circle_tree_checkmark_16_filled_multicolor
+  - Source: circle_tree_checkmark_16_regular_multi color
+    Target: circle_tree_checkmark_16_regular_multicolor
+  - Source: cloud_arrow_up_down_20_filled
+    Target: cloud_arrow_up_down_20_filled
+  - Source: cloud_arrow_up_down_20_regular
+    Target: cloud_arrow_up_down_20_regular
+  - Source: cloud_endpoint_20_filled
+    Target: cloud_endpoint_20_filled
+  - Source: cloud_endpoint_20_regular
+    Target: cloud_endpoint_20_regular
+  - Source: code_text_flash_20_filled
+    Target: code_text_flash_20_filled
+  - Source: code_text_flash_20_regular
+    Target: code_text_flash_20_regular
+  - Source: cohort_20_item
+    Target: cohort_20_item
+  - Source: cohort_24_item
+    Target: cohort_24_item
+  - Source: cohort_32_item
+    Target: cohort_32_item
+  - Source: cohort_40_item
+    Target: cohort_40_item
+  - Source: cohort_48_item
+    Target: cohort_48_item
+  - Source: cohort_64_item
+    Target: cohort_64_item
+  - Source: column_double_caret_20_filled
+    Target: column_double_caret_20_filled
+  - Source: column_double_caret_20_regular
+    Target: column_double_caret_20_regular
+  - Source: column_inline_20_filled
+    Target: column_inline_20_filled
+  - Source: column_inline_20_regular
+    Target: column_inline_20_regular
+  - Source: column_relationship_16_filled
+    Target: column_relationship_16_filled
+  - Source: column_relationship_16_regular
+    Target: column_relationship_16_regular
+  - Source: column_relationship_20_filled
+    Target: column_relationship_20_filled
+  - Source: column_relationship_20_regular
+    Target: column_relationship_20_regular
+  - Source: column_single_20_filled
+    Target: column_single_20_filled
+  - Source: column_single_20_regular
+    Target: column_single_20_regular
+  - Source: column_uneven_20_filled
+    Target: column_uneven_20_filled
+  - Source: column_uneven_20_regular
+    Target: column_uneven_20_regular
+  - Source: commit_20_filled
+    Target: commit_20_filled
+  - Source: commit_20_regular
+    Target: commit_20_regular
+  - Source: commit_circle_20_filled
+    Target: commit_circle_20_filled
+  - Source: commit_circle_20_regular
+    Target: commit_circle_20_regular
+  - Source: connector_20_filled
+    Target: connector_20_filled
+  - Source: connector_20_regular
+    Target: connector_20_regular
+  - Source: copilot_16_color
+    Target: copilot_16_color
+  - Source: copilot_16_filled
+    Target: copilot_16_filled
+  - Source: copilot_16_regular
+    Target: copilot_16_regular
+  - Source: copilot_20_color
+    Target: copilot_20_color
+  - Source: copilot_20_filled
+    Target: copilot_20_filled
+  - Source: copilot_20_regular
+    Target: copilot_20_regular
+  - Source: copilot_24_color
+    Target: copilot_24_color
+  - Source: copilot_24_filled
+    Target: copilot_24_filled
+  - Source: copilot_24_regular
+    Target: copilot_24_regular
+  - Source: copilot_28_color
+    Target: copilot_28_color
+  - Source: copilot_28_filled
+    Target: copilot_28_filled
+  - Source: copilot_28_regular
+    Target: copilot_28_regular
+  - Source: copilot_32_color
+    Target: copilot_32_color
+  - Source: copilot_32_filled
+    Target: copilot_32_filled
+  - Source: copilot_32_regular
+    Target: copilot_32_regular
+  - Source: copilot_48_color
+    Target: copilot_48_color
+  - Source: copilot_48_filled
+    Target: copilot_48_filled
+  - Source: copilot_48_regular
+    Target: copilot_48_regular
+  - Source: copy_job_20_item
+    Target: copy_job_20_item
+  - Source: copy_job_24_item
+    Target: copy_job_24_item
+  - Source: copy_job_32_item
+    Target: copy_job_32_item
+  - Source: copy_job_40_item
+    Target: copy_job_40_item
+  - Source: copy_job_48_item
+    Target: copy_job_48_item
+  - Source: copy_job_64_item
+    Target: copy_job_64_item
+  - Source: cube_cone_arrow_curved_right_20_filled
+    Target: cube_cone_arrow_curved_right_20_filled
+  - Source: cube_cone_arrow_curved_right_20_regular
+    Target: cube_cone_arrow_curved_right_20_regular
+  - Source: cube_cone_arrow_curved_right_new_20_filled
+    Target: cube_cone_arrow_curved_right_new_20_filled
+  - Source: cube_cone_arrow_curved_right_new_20_regular
+    Target: cube_cone_arrow_curved_right_new_20_regular
+  - Source: cube_cone_sphere_20_filled
+    Target: cube_cone_sphere_20_filled
+  - Source: cube_cone_sphere_20_regular
+    Target: cube_cone_sphere_20_regular
+  - Source: dashboard_20_item
+    Target: dashboard_20_item
+  - Source: dashboard_24_item
+    Target: dashboard_24_item
+  - Source: dashboard_32_item
+    Target: dashboard_32_item
+  - Source: dashboard_40_item
+    Target: dashboard_40_item
+  - Source: dashboard_48_item
+    Target: dashboard_48_item
+  - Source: dashboard_64_item
+    Target: dashboard_64_item
+  - Source: databases_16_color
+    Target: databases_16_color
+  - Source: databases_16_filled
+    Target: databases_16_filled
+  - Source: databases_16_regular
+    Target: databases_16_regular
+  - Source: databases_20_color
+    Target: databases_20_color
+  - Source: databases_20_filled
+    Target: databases_20_filled
+  - Source: databases_20_regular
+    Target: databases_20_regular
+  - Source: databases_24_color
+    Target: databases_24_color
+  - Source: databases_24_filled
+    Target: databases_24_filled
+  - Source: databases_24_regular
+    Target: databases_24_regular
+  - Source: databases_28_color
+    Target: databases_28_color
+  - Source: databases_28_filled
+    Target: databases_28_filled
+  - Source: databases_28_regular
+    Target: databases_28_regular
+  - Source: databases_32_color
+    Target: databases_32_color
+  - Source: databases_32_filled
+    Target: databases_32_filled
+  - Source: databases_32_regular
+    Target: databases_32_regular
+  - Source: databases_48_color
+    Target: databases_48_color
+  - Source: databases_48_filled
+    Target: databases_48_filled
+  - Source: databases_48_regular
+    Target: databases_48_regular
+  - Source: database_arrow_right_enter_20_filled
+    Target: database_arrow_right_enter_20_filled
+  - Source: database_arrow_right_enter_20_regular
+    Target: database_arrow_right_enter_20_regular
+  - Source: database_asterisk_20_filled
+    Target: database_asterisk_20_filled
+  - Source: database_asterisk_20_regular
+    Target: database_asterisk_20_regular
+  - Source: database_checkmark_20_filled
+    Target: database_checkmark_20_filled
+  - Source: database_checkmark_20_regular
+    Target: database_checkmark_20_regular
+  - Source: database_crown_20_filled
+    Target: database_crown_20_filled
+  - Source: database_crown_20_regular
+    Target: database_crown_20_regular
+  - Source: database_kql_20_filled
+    Target: database_kql_20_filled
+  - Source: database_kql_20_regular
+    Target: database_kql_20_regular
+  - Source: database_kql_24_filled
+    Target: database_kql_24_filled
+  - Source: database_kql_24_regular
+    Target: database_kql_24_regular
+  - Source: database_kql_32_filled
+    Target: database_kql_32_filled
+  - Source: database_kql_32_regular
+    Target: database_kql_32_regular
+  - Source: database_money_20_filled
+    Target: database_money_20_filled
+  - Source: database_money_20_regular
+    Target: database_money_20_regular
+  - Source: database_multiple_kql_20_filled
+    Target: database_multiple_kql_20_filled
+  - Source: database_multiple_kql_20_regular
+    Target: database_multiple_kql_20_regular
+  - Source: database_pulse_20_filled
+    Target: database_pulse_20_filled
+  - Source: database_pulse_20_regular
+    Target: database_pulse_20_regular
+  - Source: database_ribbon_20_filled
+    Target: database_ribbon_20_filled
+  - Source: database_ribbon_20_regular
+    Target: database_ribbon_20_regular
+  - Source: database_sql_20_filled
+    Target: database_sql_20_filled
+  - Source: database_sql_20_regular
+    Target: database_sql_20_regular
+  - Source: database_sql_24_filled
+    Target: database_sql_24_filled
+  - Source: database_sql_24_regular
+    Target: database_sql_24_regular
+  - Source: database_sql_32_filled
+    Target: database_sql_32_filled
+  - Source: database_sql_32_regular
+    Target: database_sql_32_regular
+  - Source: database_stack_asterisk_16_filled
+    Target: database_stack_asterisk_16_filled
+  - Source: database_stack_asterisk_16_regular
+    Target: database_stack_asterisk_16_regular
+  - Source: database_stack_asterisk_20_filled
+    Target: database_stack_asterisk_20_filled
+  - Source: database_stack_asterisk_20_regular
+    Target: database_stack_asterisk_20_regular
+  - Source: database_stack_pulse_16_filled
+    Target: database_stack_pulse_16_filled
+  - Source: database_stack_pulse_16_regular
+    Target: database_stack_pulse_16_regular
+  - Source: database_stack_pulse_20_filled
+    Target: database_stack_pulse_20_filled
+  - Source: database_stack_pulse_20_regular
+    Target: database_stack_pulse_20_regular
+  - Source: database_stack_pulse_24_filled
+    Target: database_stack_pulse_24_filled
+  - Source: database_stack_pulse_24_regular
+    Target: database_stack_pulse_24_regular
+  - Source: database_stack_pulse_32_filled
+    Target: database_stack_pulse_32_filled
+  - Source: database_stack_pulse_32_regular
+    Target: database_stack_pulse_32_regular
+  - Source: database_swap_20_filled
+    Target: database_swap_20_filled
+  - Source: database_swap_20_regular
+    Target: database_swap_20_regular
+  - Source: dataflow_20_item
+    Target: dataflow_20_item
+  - Source: dataflow_24_item
+    Target: dataflow_24_item
+  - Source: dataflow_32_item
+    Target: dataflow_32_item
+  - Source: dataflow_40_item
+    Target: dataflow_40_item
+  - Source: dataflow_48_item
+    Target: dataflow_48_item
+  - Source: dataflow_64_item
+    Target: dataflow_64_item
+  - Source: dataflow_gen2_20_item
+    Target: dataflow_gen2_20_item
+  - Source: dataflow_gen2_24_item
+    Target: dataflow_gen2_24_item
+  - Source: dataflow_gen2_32_item
+    Target: dataflow_gen2_32_item
+  - Source: dataflow_gen2_40_item
+    Target: dataflow_gen2_40_item
+  - Source: dataflow_gen2_48_item
+    Target: dataflow_gen2_48_item
+  - Source: dataflow_gen2_64_item
+    Target: dataflow_gen2_64_item
+  - Source: datamart_20_item
+    Target: datamart_20_item
+  - Source: datamart_24_item
+    Target: datamart_24_item
+  - Source: datamart_32_item
+    Target: datamart_32_item
+  - Source: datamart_40_item
+    Target: datamart_40_item
+  - Source: datamart_48_item
+    Target: datamart_48_item
+  - Source: datamart_64_item
+    Target: datamart_64_item
+  - Source: datatype_any_20_filled
+    Target: datatype_any_20_filled
+  - Source: datatype_any_20_regular
+    Target: datatype_any_20_regular
+  - Source: datatype_binary_16_filled
+    Target: datatype_binary_16_filled
+  - Source: datatype_binary_16_regular
+    Target: datatype_binary_16_regular
+  - Source: datatype_binary_20_filled
+    Target: datatype_binary_20_filled
+  - Source: datatype_binary_20_regular
+    Target: datatype_binary_20_regular
+  - Source: datatype_boolean_16_filled
+    Target: datatype_boolean_16_filled
+  - Source: datatype_boolean_16_regular
+    Target: datatype_boolean_16_regular
+  - Source: datatype_boolean_20_filled
+    Target: datatype_boolean_20_filled
+  - Source: datatype_boolean_20_regular
+    Target: datatype_boolean_20_regular
+  - Source: datatype_byte_20_filled
+    Target: datatype_byte_20_filled
+  - Source: datatype_byte_20_regular
+    Target: datatype_byte_20_regular
+  - Source: datatype_decimal_16_filled
+    Target: datatype_decimal_16_filled
+  - Source: datatype_decimal_16_regular
+    Target: datatype_decimal_16_regular
+  - Source: datatype_decimal_20_filled
+    Target: datatype_decimal_20_filled
+  - Source: datatype_decimal_20_regular
+    Target: datatype_decimal_20_regular
+  - Source: datatype_double_16_filled
+    Target: datatype_double_16_filled
+  - Source: datatype_double_16_regular
+    Target: datatype_double_16_regular
+  - Source: datatype_double_20_filled
+    Target: datatype_double_20_filled
+  - Source: datatype_double_20_regular
+    Target: datatype_double_20_regular
+  - Source: datatype_float_16_filled
+    Target: datatype_float_16_filled
+  - Source: datatype_float_16_regular
+    Target: datatype_float_16_regular
+  - Source: datatype_float_20_filled
+    Target: datatype_float_20_filled
+  - Source: datatype_float_20_regular
+    Target: datatype_float_20_regular
+  - Source: datatype_integer_16_filled
+    Target: datatype_integer_16_filled
+  - Source: datatype_integer_16_regular
+    Target: datatype_integer_16_regular
+  - Source: datatype_integer_20_filled
+    Target: datatype_integer_20_filled
+  - Source: datatype_integer_20_regular
+    Target: datatype_integer_20_regular
+  - Source: datatype_long_16_filled
+    Target: datatype_long_16_filled
+  - Source: datatype_long_16_regular
+    Target: datatype_long_16_regular
+  - Source: datatype_long_20_filled
+    Target: datatype_long_20_filled
+  - Source: datatype_long_20_regular
+    Target: datatype_long_20_regular
+  - Source: datatype_short_16_filled
+    Target: datatype_short_16_filled
+  - Source: datatype_short_16_regular
+    Target: datatype_short_16_regular
+  - Source: datatype_short_20_filled
+    Target: datatype_short_20_filled
+  - Source: datatype_short_20_regular
+    Target: datatype_short_20_regular
+  - Source: datatype_string_16_filled
+    Target: datatype_string_16_filled
+  - Source: datatype_string_16_regular
+    Target: datatype_string_16_regular
+  - Source: datatype_string_20_filled
+    Target: datatype_string_20_filled
+  - Source: datatype_string_20_regular
+    Target: datatype_string_20_regular
+  - Source: datatype_unique_identifier_16_filled
+    Target: datatype_unique_identifier_16_filled
+  - Source: datatype_unique_identifier_16_regular
+    Target: datatype_unique_identifier_16_regular
+  - Source: datatype_unique_identifier_20_filled
+    Target: datatype_unique_identifier_20_filled
+  - Source: datatype_unique_identifier_20_regular
+    Target: datatype_unique_identifier_20_regular
+  - Source: data_area_location_20_filled
+    Target: data_area_location_20_filled
+  - Source: data_area_location_20_regular
+    Target: data_area_location_20_regular
+  - Source: data_bar_vertical_edit_20px_filled
+    Target: data_bar_vertical_edit_20px_filled
+  - Source: data_bar_vertical_edit_20px_regular
+    Target: data_bar_vertical_edit_20px_regular
+  - Source: data_bar_vertical_edit_20_filled
+    Target: data_bar_vertical_edit_20_filled
+  - Source: data_bar_vertical_edit_20_regular
+    Target: data_bar_vertical_edit_20_regular
+  - Source: data_bar_vertical_highlight_20_filled
+    Target: data_bar_vertical_highlight_20_filled
+  - Source: data_bar_vertical_highlight_20_regular
+    Target: data_bar_vertical_highlight_20_regular
+  - Source: data_bar_vertical_lightning_20_filled
+    Target: data_bar_vertical_lightning_20_filled
+  - Source: data_bar_vertical_lightning_20_regular
+    Target: data_bar_vertical_lightning_20_regular
+  - Source: data_bar_vertical_phone_20_filled
+    Target: data_bar_vertical_phone_20_filled
+  - Source: data_bar_vertical_phone_20_regular
+    Target: data_bar_vertical_phone_20_regular
+  - Source: data_bar_vertical_prohibited_16_filled
+    Target: data_bar_vertical_prohibited_16_filled
+  - Source: data_bar_vertical_prohibited_16_regular
+    Target: data_bar_vertical_prohibited_16_regular
+  - Source: data_bar_vertical_prohibited_20_filled
+    Target: data_bar_vertical_prohibited_20_filled
+  - Source: data_bar_vertical_prohibited_20_regular
+    Target: data_bar_vertical_prohibited_20_regular
+  - Source: data_bar_vertical_prohibited_24_filled
+    Target: data_bar_vertical_prohibited_24_filled
+  - Source: data_bar_vertical_prohibited_24_regular
+    Target: data_bar_vertical_prohibited_24_regular
+  - Source: data_bar_vertical_prohibited_32_filled
+    Target: data_bar_vertical_prohibited_32_filled
+  - Source: data_bar_vertical_prohibited_32_regular
+    Target: data_bar_vertical_prohibited_32_regular
+  - Source: data_factory_16_color
+    Target: data_factory_16_color
+  - Source: data_factory_16_filled
+    Target: data_factory_16_filled
+  - Source: data_factory_16_regular
+    Target: data_factory_16_regular
+  - Source: data_factory_20_color
+    Target: data_factory_20_color
+  - Source: data_factory_20_filled
+    Target: data_factory_20_filled
+  - Source: data_factory_20_regular
+    Target: data_factory_20_regular
+  - Source: data_factory_24_color
+    Target: data_factory_24_color
+  - Source: data_factory_24_filled
+    Target: data_factory_24_filled
+  - Source: data_factory_24_regular
+    Target: data_factory_24_regular
+  - Source: data_factory_28_color
+    Target: data_factory_28_color
+  - Source: data_factory_28_filled
+    Target: data_factory_28_filled
+  - Source: data_factory_28_regular
+    Target: data_factory_28_regular
+  - Source: data_factory_32_color
+    Target: data_factory_32_color
+  - Source: data_factory_32_filled
+    Target: data_factory_32_filled
+  - Source: data_factory_32_regular
+    Target: data_factory_32_regular
+  - Source: data_factory_48_color
+    Target: data_factory_48_color
+  - Source: data_factory_48_filled
+    Target: data_factory_48_filled
+  - Source: data_factory_48_regular
+    Target: data_factory_48_regular
+  - Source: data_graph_20_filled
+    Target: data_graph_20_filled
+  - Source: data_graph_20_regular
+    Target: data_graph_20_regular
+  - Source: data_histogram_function_16_filled
+    Target: data_histogram_function_16_filled
+  - Source: data_histogram_function_16_regular
+    Target: data_histogram_function_16_regular
+  - Source: data_histogram_function_20_filled
+    Target: data_histogram_function_20_filled
+  - Source: data_histogram_function_20_regular
+    Target: data_histogram_function_20_regular
+  - Source: data_tree_20_filled
+    Target: data_tree_20_filled
+  - Source: data_tree_20_regular
+    Target: data_tree_20_regular
+  - Source: data_warehouse_20_item
+    Target: data_warehouse_20_item
+  - Source: data_warehouse_24_item
+    Target: data_warehouse_24_item
+  - Source: data_warehouse_32_item
+    Target: data_warehouse_32_item
+  - Source: data_warehouse_40_item
+    Target: data_warehouse_40_item
+  - Source: data_warehouse_48_item
+    Target: data_warehouse_48_item
+  - Source: data_warehouse_64_item
+    Target: data_warehouse_64_item
+  - Source: developer_board_lightning_asterisk_20_filled
+    Target: developer_board_lightning_asterisk_20_filled
+  - Source: developer_board_lightning_asterisk_20_regular
+    Target: developer_board_lightning_asterisk_20_regular
+  - Source: developer_board_lightning_kql_20_filled
+    Target: developer_board_lightning_kql_20_filled
+  - Source: developer_board_lightning_kql_20_regular
+    Target: developer_board_lightning_kql_20_regular
+  - Source: developer_board_lightning_sparkle_20_filled
+    Target: developer_board_lightning_sparkle_20_filled
+  - Source: developer_board_lightning_sparkle_20_regular
+    Target: developer_board_lightning_sparkle_20_regular
+  - Source: diagram_arrow_circle_20_filled
+    Target: diagram_arrow_circle_20_filled
+  - Source: diagram_arrow_circle_20_regular
+    Target: diagram_arrow_circle_20_regular
+  - Source: diagram_branch_20_filled
+    Target: diagram_branch_20_filled
+  - Source: diagram_branch_20_regular
+    Target: diagram_branch_20_regular
+  - Source: diagram_branch_24_filled
+    Target: diagram_branch_24_filled
+  - Source: diagram_branch_24_regular
+    Target: diagram_branch_24_regular
+  - Source: diagram_branch_32_fille
+    Target: diagram_branch_32_fille
+  - Source: diagram_branch_32_filled
+    Target: diagram_branch_32_filled
+  - Source: diagram_branch_32_regular
+    Target: diagram_branch_32_regular
+  - Source: diagram_branch_link_20_filled
+    Target: diagram_branch_link_20_filled
+  - Source: diagram_branch_link_20_regular
+    Target: diagram_branch_link_20_regular
+  - Source: diagram_branch_sync_20_filled
+    Target: diagram_branch_sync_20_filled
+  - Source: diagram_branch_sync_20_regular
+    Target: diagram_branch_sync_20_regular
+  - Source: diagram_branch_sync_24_filled
+    Target: diagram_branch_sync_24_filled
+  - Source: diagram_branch_sync_24_regular
+    Target: diagram_branch_sync_24_regular
+  - Source: diagram_branch_sync_32_filled
+    Target: diagram_branch_sync_32_filled
+  - Source: diagram_branch_sync_32_regular
+    Target: diagram_branch_sync_32_regular
+  - Source: document_hint_20_filled
+    Target: document_hint_20_filled
+  - Source: document_hint_20_regular
+    Target: document_hint_20_regular
+  - Source: document_multiple_checkmark_16_filled
+    Target: document_multiple_checkmark_16_filled
+  - Source: document_multiple_checkmark_16_regular
+    Target: document_multiple_checkmark_16_regular
+  - Source: document_multiple_checkmark_20_filled
+    Target: document_multiple_checkmark_20_filled
+  - Source: document_multiple_checkmark_20_regular
+    Target: document_multiple_checkmark_20_regular
+  - Source: document_multiple_checkmark_24_filled
+    Target: document_multiple_checkmark_24_filled
+  - Source: document_multiple_checkmark_24_regular
+    Target: document_multiple_checkmark_24_regular
+  - Source: document_multiple_dax_16_filled
+    Target: document_multiple_dax_16_filled
+  - Source: document_multiple_dax_16_regular
+    Target: document_multiple_dax_16_regular
+  - Source: document_multiple_dax_20_filled
+    Target: document_multiple_dax_20_filled
+  - Source: document_multiple_dax_20_regular
+    Target: document_multiple_dax_20_regular
+  - Source: document_multiple_pulse_16_filled
+    Target: document_multiple_pulse_16_filled
+  - Source: document_multiple_pulse_16_regular
+    Target: document_multiple_pulse_16_regular
+  - Source: document_multiple_pulse_20_filled
+    Target: document_multiple_pulse_20_filled
+  - Source: document_multiple_pulse_20_regular
+    Target: document_multiple_pulse_20_regular
+  - Source: document_multiple_question_20_filled
+    Target: document_multiple_question_20_filled
+  - Source: document_multiple_question_20_regular
+    Target: document_multiple_question_20_regular
+  - Source: document_one_page_multiple_text_20_filled
+    Target: document_one_page_multiple_text_20_filled
+  - Source: document_one_page_multiple_text_20_regular
+    Target: document_one_page_multiple_text_20_regular
+  - Source: document_one_page_multiple_text_24_filled
+    Target: document_one_page_multiple_text_24_filled
+  - Source: document_one_page_multiple_text_24_regular
+    Target: document_one_page_multiple_text_24_regular
+  - Source: document_one_page_multiple_text_32_filled
+    Target: document_one_page_multiple_text_32_filled
+  - Source: document_one_page_multiple_text_32_regular
+    Target: document_one_page_multiple_text_32_regular
+  - Source: document_one_page_sparkles_20_filled
+    Target: document_one_page_sparkles_20_filled
+  - Source: document_one_page_sparkles_20_regular
+    Target: document_one_page_sparkles_20_regular
+  - Source: document_people_20_filled
+    Target: document_people_20_filled
+  - Source: document_people_20_regular
+    Target: document_people_20_regular
+  - Source: document_pq_16_filled
+    Target: document_pq_16_filled
+  - Source: document_pq_16_regular
+    Target: document_pq_16_regular
+  - Source: document_pq_20_filled
+    Target: document_pq_20_filled
+  - Source: document_pq_20_regular
+    Target: document_pq_20_regular
+  - Source: document_pq_24_filled
+    Target: document_pq_24_filled
+  - Source: document_pq_24_regular
+    Target: document_pq_24_regular
+  - Source: document_pq_32_filled
+    Target: document_pq_32_filled
+  - Source: document_pq_32_regular
+    Target: document_pq_32_regular
+  - Source: document_shapes_20_filled
+    Target: document_shapes_20_filled
+  - Source: document_shapes_20_regular
+    Target: document_shapes_20_regular
+  - Source: document_sql_20_filled
+    Target: document_sql_20_filled
+  - Source: document_sql_20_regular
+    Target: document_sql_20_regular
+  - Source: document_ssis_20_filled
+    Target: document_ssis_20_filled
+  - Source: document_ssis_20_regular
+    Target: document_ssis_20_regular
+  - Source: document_ssis_play_20_filled
+    Target: document_ssis_play_20_filled
+  - Source: document_ssis_play_20_regular
+    Target: document_ssis_play_20_regular
+  - Source: document_tmdl_16_filled
+    Target: document_tmdl_16_filled
+  - Source: document_tmdl_16_regular
+    Target: document_tmdl_16_regular
+  - Source: document_tmdl_20_filled
+    Target: document_tmdl_20_filled
+  - Source: document_tmdl_20_regular
+    Target: document_tmdl_20_regular
+  - Source: document_tree_20_filled
+    Target: document_tree_20_filled
+  - Source: document_tree_20_regular
+    Target: document_tree_20_regular
+  - Source: dual_screen_diff_20_filled
+    Target: dual_screen_diff_20_filled
+  - Source: dual_screen_diff_20_regular
+    Target: dual_screen_diff_20_regular
+  - Source: endpoint_20_filled
+    Target: endpoint_20_filled
+  - Source: endpoint_20_regular
+    Target: endpoint_20_regular
+  - Source: environment_20_item
+    Target: environment_20_item
+  - Source: environment_24_item
+    Target: environment_24_item
+  - Source: environment_32_item
+    Target: environment_32_item
+  - Source: environment_40_item
+    Target: environment_40_item
+  - Source: environment_48_item
+    Target: environment_48_item
+  - Source: environment_64_item
+    Target: environment_64_item
+  - Source: equal_12_filled
+    Target: equal_12_filled
+  - Source: equal_12_regular
+    Target: equal_12_regular
+  - Source: equal_16_filled
+    Target: equal_16_filled
+  - Source: equal_16_regular
+    Target: equal_16_regular
+  - Source: equal_20_filled
+    Target: equal_20_filled
+  - Source: equal_20_regular
+    Target: equal_20_regular
+  - Source: equal_off_circle_20_filled
+    Target: equal_off_circle_20_filled
+  - Source: equal_off_circle_20_regular
+    Target: equal_off_circle_20_regular
+  - Source: eventstream_20_item
+    Target: eventstream_20_item
+  - Source: eventstream_24_item
+    Target: eventstream_24_item
+  - Source: eventstream_32_item
+    Target: eventstream_32_item
+  - Source: eventstream_40_item
+    Target: eventstream_40_item
+  - Source: eventstream_48_item
+    Target: eventstream_48_item
+  - Source: eventstream_64_item
+    Target: eventstream_64_item
+  - Source: event_house_20_item
+    Target: event_house_20_item
+  - Source: event_house_20_non item
+    Target: event_house_20_nonitem
+  - Source: event_house_24_item
+    Target: event_house_24_item
+  - Source: event_house_24_non item
+    Target: event_house_24_nonitem
+  - Source: event_house_32_item
+    Target: event_house_32_item
+  - Source: event_house_32_non item
+    Target: event_house_32_nonitem
+  - Source: event_house_40_item
+    Target: event_house_40_item
+  - Source: event_house_40_non item
+    Target: event_house_40_nonitem
+  - Source: event_house_48_item
+    Target: event_house_48_item
+  - Source: event_house_48_non item
+    Target: event_house_48_nonitem
+  - Source: event_house_64_item
+    Target: event_house_64_item
+  - Source: event_house_64_non item
+    Target: event_house_64_nonitem
+  - Source: event_schema_set_20
+    Target: event_schema_set_20
+  - Source: event_schema_set_24
+    Target: event_schema_set_24
+  - Source: event_schema_set_32
+    Target: event_schema_set_32
+  - Source: event_schema_set_40
+    Target: event_schema_set_40
+  - Source: event_schema_set_48
+    Target: event_schema_set_48
+  - Source: event_schema_set_64
+    Target: event_schema_set_64
+  - Source: experiments_20_item
+    Target: experiments_20_item
+  - Source: experiments_24_item
+    Target: experiments_24_item
+  - Source: experiments_32_item
+    Target: experiments_32_item
+  - Source: experiments_40_item
+    Target: experiments_40_item
+  - Source: experiments_48_item
+    Target: experiments_48_item
+  - Source: experiments_64_item
+    Target: experiments_64_item
+  - Source: exploration_20_item
+    Target: exploration_20_item
+  - Source: exploration_24_item
+    Target: exploration_24_item
+  - Source: exploration_32_item
+    Target: exploration_32_item
+  - Source: exploration_40_item
+    Target: exploration_40_item
+  - Source: exploration_48_item
+    Target: exploration_48_item
+  - Source: exploration_64_item
+    Target: exploration_64_item
+  - Source: external_dataflow_20_item
+    Target: external_dataflow_20_item
+  - Source: external_dataflow_24_item
+    Target: external_dataflow_24_item
+  - Source: external_dataflow_32_item
+    Target: external_dataflow_32_item
+  - Source: external_dataflow_40_item
+    Target: external_dataflow_40_item
+  - Source: external_dataflow_48_item
+    Target: external_dataflow_48_item
+  - Source: external_dataflow_64_item
+    Target: external_dataflow_64_item
+  - Source: external_datamart_20_item
+    Target: external_datamart_20_item
+  - Source: external_datamart_24_item
+    Target: external_datamart_24_item
+  - Source: external_datamart_32_item
+    Target: external_datamart_32_item
+  - Source: external_datamart_40_item
+    Target: external_datamart_40_item
+  - Source: external_datamart_48_item
+    Target: external_datamart_48_item
+  - Source: external_datamart_64_item
+    Target: external_datamart_64_item
+  - Source: external_semantic_model_20_item
+    Target: external_semantic_model_20_item
+  - Source: external_semantic_model_24_item
+    Target: external_semantic_model_24_item
+  - Source: external_semantic_model_32_item
+    Target: external_semantic_model_32_item
+  - Source: external_semantic_model_40_item
+    Target: external_semantic_model_40_item
+  - Source: external_semantic_model_48_item
+    Target: external_semantic_model_48_item
+  - Source: external_semantic_model_64_item
+    Target: external_semantic_model_64_item
+  - Source: fabric_16_color
+    Target: fabric_16_color
+  - Source: fabric_16_filled
+    Target: fabric_16_filled
+  - Source: fabric_16_regular
+    Target: fabric_16_regular
+  - Source: fabric_20_color
+    Target: fabric_20_color
+  - Source: fabric_20_filled
+    Target: fabric_20_filled
+  - Source: fabric_20_regular
+    Target: fabric_20_regular
+  - Source: fabric_24_color
+    Target: fabric_24_color
+  - Source: fabric_24_filled
+    Target: fabric_24_filled
+  - Source: fabric_24_regular
+    Target: fabric_24_regular
+  - Source: fabric_28_color
+    Target: fabric_28_color
+  - Source: fabric_28_filled
+    Target: fabric_28_filled
+  - Source: fabric_28_regular
+    Target: fabric_28_regular
+  - Source: fabric_32_color
+    Target: fabric_32_color
+  - Source: fabric_32_filled
+    Target: fabric_32_filled
+  - Source: fabric_32_regular
+    Target: fabric_32_regular
+  - Source: fabric_48_color
+    Target: fabric_48_color
+  - Source: fabric_48_filled
+    Target: fabric_48_filled
+  - Source: fabric_48_regular
+    Target: fabric_48_regular
+  - Source: filter_checkmark_20_filled_multi color
+    Target: filter_checkmark_20_filled_multicolor
+  - Source: filter_checkmark_20_regular_multi color
+    Target: filter_checkmark_20_regular_multicolor
+  - Source: filter_settings_20_filled
+    Target: filter_settings_20_filled
+  - Source: filter_settings_20_regular
+    Target: filter_settings_20_regular
+  - Source: folder_20_non item
+    Target: folder_20_nonitem
+  - Source: folder_24_non item
+    Target: folder_24_nonitem
+  - Source: folder_32_non item
+    Target: folder_32_nonitem
+  - Source: folder_40_non item
+    Target: folder_40_nonitem
+  - Source: folder_48_non item
+    Target: folder_48_nonitem
+  - Source: folder_64_non item
+    Target: folder_64_nonitem
+  - Source: folder_checkmark_16_filled_multi color
+    Target: folder_checkmark_16_filled_multicolor
+  - Source: folder_checkmark_16_regular_multi color
+    Target: folder_checkmark_16_regular_multicolor
+  - Source: folder_open_data_bar_20_filled
+    Target: folder_open_data_bar_20_filled
+  - Source: folder_open_data_bar_20_regular
+    Target: folder_open_data_bar_20_regular
+  - Source: folder_share_20_filled
+    Target: folder_share_20_filled
+  - Source: folder_share_20_regular
+    Target: folder_share_20_regular
+  - Source: folder_table_16_filled
+    Target: folder_table_16_filled
+  - Source: folder_table_16_regular
+    Target: folder_table_16_regular
+  - Source: folder_table_20_filled
+    Target: folder_table_20_filled
+  - Source: folder_table_20_regular
+    Target: folder_table_20_regular
+  - Source: folder_table_24_filled
+    Target: folder_table_24_filled
+  - Source: folder_table_24_regular
+    Target: folder_table_24_regular
+  - Source: function_20_item
+    Target: function_20_item
+  - Source: function_24_item
+    Target: function_24_item
+  - Source: function_32_item
+    Target: function_32_item
+  - Source: function_40_item
+    Target: function_40_item
+  - Source: function_48_item
+    Target: function_48_item
+  - Source: function_64_item
+    Target: function_64_item
+  - Source: function_set_16_filled
+    Target: function_set_16_filled
+  - Source: function_set_16_regular
+    Target: function_set_16_regular
+  - Source: function_set_20_filled
+    Target: function_set_20_filled
+  - Source: function_set_20_item
+    Target: function_set_20_item
+  - Source: function_set_20_regular
+    Target: function_set_20_regular
+  - Source: function_set_24_filled
+    Target: function_set_24_filled
+  - Source: function_set_24_item
+    Target: function_set_24_item
+  - Source: function_set_24_regular
+    Target: function_set_24_regular
+  - Source: function_set_32_filled
+    Target: function_set_32_filled
+  - Source: function_set_32_item
+    Target: function_set_32_item
+  - Source: function_set_32_regular
+    Target: function_set_32_regular
+  - Source: function_set_40_item
+    Target: function_set_40_item
+  - Source: function_set_48_item
+    Target: function_set_48_item
+  - Source: function_set_64_item
+    Target: function_set_64_item
+  - Source: funnel_20_filled
+    Target: funnel_20_filled
+  - Source: funnel_20_regular
+    Target: funnel_20_regular
+  - Source: funnel_add_20_filled
+    Target: funnel_add_20_filled
+  - Source: funnel_add_20_regular
+    Target: funnel_add_20_regular
+  - Source: gauge_kql_20_filled
+    Target: gauge_kql_20_filled
+  - Source: gauge_kql_20_regular
+    Target: gauge_kql_20_regular
+  - Source: gauge_kql_24_filled
+    Target: gauge_kql_24_filled
+  - Source: gauge_kql_24_regular
+    Target: gauge_kql_24_regular
+  - Source: gauge_kql_32_filled
+    Target: gauge_kql_32_filled
+  - Source: gauge_kql_32_regular
+    Target: gauge_kql_32_regular
+  - Source: generic_placeholder_20_item
+    Target: generic_placeholder_20_item
+  - Source: generic_placeholder_24_item
+    Target: generic_placeholder_24_item
+  - Source: generic_placeholder_32_item
+    Target: generic_placeholder_32_item
+  - Source: generic_placeholder_40_item
+    Target: generic_placeholder_40_item
+  - Source: generic_placeholder_48_item
+    Target: generic_placeholder_48_item
+  - Source: generic_placeholder_64_item
+    Target: generic_placeholder_64_item
+  - Source: gift_open_warning_16_filled
+    Target: gift_open_warning_16_filled
+  - Source: gift_open_warning_16_regular
+    Target: gift_open_warning_16_regular
+  - Source: gift_open_warning_20_filled
+    Target: gift_open_warning_20_filled
+  - Source: gift_open_warning_20_regular
+    Target: gift_open_warning_20_regular
+  - Source: gift_open_warning_24_filled
+    Target: gift_open_warning_24_filled
+  - Source: gift_open_warning_24_regular
+    Target: gift_open_warning_24_regular
+  - Source: gift_open_warning_32_filled
+    Target: gift_open_warning_32_filled
+  - Source: gift_open_warning_32_regular
+    Target: gift_open_warning_32_regular
+  - Source: group_workspace_20_non item
+    Target: group_workspace_20_nonitem
+  - Source: group_workspace_24_non item
+    Target: group_workspace_24_nonitem
+  - Source: group_workspace_32_non item
+    Target: group_workspace_32_nonitem
+  - Source: group_workspace_40_non item
+    Target: group_workspace_40_nonitem
+  - Source: group_workspace_48_non item
+    Target: group_workspace_48_nonitem
+  - Source: group_workspace_64_non item
+    Target: group_workspace_64_nonitem
+  - Source: healthcare_20_item
+    Target: healthcare_20_item
+  - Source: healthcare_24_item
+    Target: healthcare_24_item
+  - Source: healthcare_32_item
+    Target: healthcare_32_item
+  - Source: healthcare_40_item
+    Target: healthcare_40_item
+  - Source: healthcare_48_item
+    Target: healthcare_48_item
+  - Source: healthcare_64_item
+    Target: healthcare_64_item
+  - Source: hexagon_three_rotated_12_filled
+    Target: hexagon_three_rotated_12_filled
+  - Source: hexagon_three_rotated_12_regular
+    Target: hexagon_three_rotated_12_regular
+  - Source: hexagon_three_rotated_16_filled
+    Target: hexagon_three_rotated_16_filled
+  - Source: hexagon_three_rotated_16_regular
+    Target: hexagon_three_rotated_16_regular
+  - Source: hexagon_three_rotated_20_filled
+    Target: hexagon_three_rotated_20_filled
+  - Source: hexagon_three_rotated_20_regular
+    Target: hexagon_three_rotated_20_regular
+  - Source: hexagon_three_rotated_24_filled
+    Target: hexagon_three_rotated_24_filled
+  - Source: hexagon_three_rotated_24_regular
+    Target: hexagon_three_rotated_24_regular
+  - Source: hexagon_three_rotated_32_filled
+    Target: hexagon_three_rotated_32_filled
+  - Source: hexagon_three_rotated_32_regular
+    Target: hexagon_three_rotated_32_regular
+  - Source: hint_grid_16_filled
+    Target: hint_grid_16_filled
+  - Source: hint_grid_16_regular
+    Target: hint_grid_16_regular
+  - Source: hint_grid_20_filled
+    Target: hint_grid_20_filled
+  - Source: hint_grid_20_regular
+    Target: hint_grid_20_regular
+  - Source: home_kql_16_filled
+    Target: home_kql_16_filled
+  - Source: home_kql_16_regular
+    Target: home_kql_16_regular
+  - Source: home_kql_20_filled
+    Target: home_kql_20_filled
+  - Source: home_kql_20_regular
+    Target: home_kql_20_regular
+  - Source: home_kql_24_filled
+    Target: home_kql_24_filled
+  - Source: home_kql_24_regular
+    Target: home_kql_24_regular
+  - Source: home_kql_32_filled
+    Target: home_kql_32_filled
+  - Source: home_kql_32_regular
+    Target: home_kql_32_regular
+  - Source: home_more_lightning_20_filled
+    Target: home_more_lightning_20_filled
+  - Source: home_more_lightning_20_regular
+    Target: home_more_lightning_20_regular
+  - Source: home_tree_line_20_filled
+    Target: home_tree_line_20_filled
+  - Source: home_tree_line_20_regular
+    Target: home_tree_line_20_regular
+  - Source: home_waves_16_filled
+    Target: home_waves_16_filled
+  - Source: home_waves_16_regular
+    Target: home_waves_16_regular
+  - Source: home_waves_20_filled
+    Target: home_waves_20_filled
+  - Source: home_waves_20_regular
+    Target: home_waves_20_regular
+  - Source: home_waves_24_filled
+    Target: home_waves_24_filled
+  - Source: home_waves_24_regular
+    Target: home_waves_24_regular
+  - Source: home_waves_32_filled
+    Target: home_waves_32_filled
+  - Source: home_waves_32_regular
+    Target: home_waves_32_regular
+  - Source: home_waves_48_filled
+    Target: home_waves_48_filled
+  - Source: home_waves_48_regular
+    Target: home_waves_48_regular
+  - Source: import_notebook_20_non item
+    Target: import_notebook_20_nonitem
+  - Source: import_notebook_24_non item
+    Target: import_notebook_24_nonitem
+  - Source: import_notebook_32_non item
+    Target: import_notebook_32_nonitem
+  - Source: import_notebook_40_non item
+    Target: import_notebook_40_nonitem
+  - Source: import_notebook_48_non item
+    Target: import_notebook_48_nonitem
+  - Source: import_notebook_64_non item
+    Target: import_notebook_64_nonitem
+  - Source: industry_solutions_16_color
+    Target: industry_solutions_16_color
+  - Source: industry_solutions_20_color
+    Target: industry_solutions_20_color
+  - Source: industry_solutions_24_color
+    Target: industry_solutions_24_color
+  - Source: industry_solutions_28_color
+    Target: industry_solutions_28_color
+  - Source: industry_solutions_32_color
+    Target: industry_solutions_32_color
+  - Source: industry_solutions_48_color
+    Target: industry_solutions_48_color
+  - Source: info_no_circle_20_filled
+    Target: info_no_circle_20_filled
+  - Source: info_no_circle_20_regular
+    Target: info_no_circle_20_regular
+  - Source: iot_person_16_filled
+    Target: iot_person_16_filled
+  - Source: iot_person_16_regular
+    Target: iot_person_16_regular
+  - Source: iot_person_20_filled
+    Target: iot_person_20_filled
+  - Source: iot_person_20_regular
+    Target: iot_person_20_regular
+  - Source: iot_person_24_filled
+    Target: iot_person_24_filled
+  - Source: iot_person_24_regular
+    Target: iot_person_24_regular
+  - Source: iot_person_32_filled
+    Target: iot_person_32_filled
+  - Source: iot_person_32_regular
+    Target: iot_person_32_regular
+  - Source: kql_database_20_item
+    Target: kql_database_20_item
+  - Source: kql_database_24_item
+    Target: kql_database_24_item
+  - Source: kql_database_32_item
+    Target: kql_database_32_item
+  - Source: kql_database_40_item
+    Target: kql_database_40_item
+  - Source: kql_database_48_item
+    Target: kql_database_48_item
+  - Source: kql_database_64_item
+    Target: kql_database_64_item
+  - Source: kql_queryset_20_item
+    Target: kql_queryset_20_item
+  - Source: kql_queryset_24_item
+    Target: kql_queryset_24_item
+  - Source: kql_queryset_32_item
+    Target: kql_queryset_32_item
+  - Source: kql_queryset_40_item
+    Target: kql_queryset_40_item
+  - Source: kql_queryset_48_item
+    Target: kql_queryset_48_item
+  - Source: kql_queryset_64_item
+    Target: kql_queryset_64_item
+  - Source: kql_script_20_item
+    Target: kql_script_20_item
+  - Source: kql_script_24_item
+    Target: kql_script_24_item
+  - Source: kql_script_32_item
+    Target: kql_script_32_item
+  - Source: kql_script_40_item
+    Target: kql_script_40_item
+  - Source: kql_script_48_item
+    Target: kql_script_48_item
+  - Source: kql_script_64_item
+    Target: kql_script_64_item
+  - Source: lakehouse_20_item
+    Target: lakehouse_20_item
+  - Source: lakehouse_24_item
+    Target: lakehouse_24_item
+  - Source: lakehouse_32_item
+    Target: lakehouse_32_item
+  - Source: lakehouse_40_item
+    Target: lakehouse_40_item
+  - Source: lakehouse_48_item
+    Target: lakehouse_48_item
+  - Source: lakehouse_64_item
+    Target: lakehouse_64_item
+  - Source: layout_column_three_lock_20_filled
+    Target: layout_column_three_lock_20_filled
+  - Source: layout_column_three_lock_20_regular
+    Target: layout_column_three_lock_20_regular
+  - Source: layout_column_three_lock_24_filled
+    Target: layout_column_three_lock_24_filled
+  - Source: layout_column_three_lock_24_regular
+    Target: layout_column_three_lock_24_regular
+  - Source: layout_row_three_lock_20_filled
+    Target: layout_row_three_lock_20_filled
+  - Source: layout_row_three_lock_20_regular
+    Target: layout_row_three_lock_20_regular
+  - Source: layout_row_three_lock_24_filled
+    Target: layout_row_three_lock_24_filled
+  - Source: layout_row_three_lock_24_regular
+    Target: layout_row_three_lock_24_regular
+  - Source: library_globe_20_filled
+    Target: library_globe_20_filled
+  - Source: library_globe_20_regular
+    Target: library_globe_20_regular
+  - Source: library_people_20_filled
+    Target: library_people_20_filled
+  - Source: library_people_20_regular
+    Target: library_people_20_regular
+  - Source: library_person_20_filled
+    Target: library_person_20_filled
+  - Source: library_person_20_regular
+    Target: library_person_20_regular
+  - Source: links_20_item
+    Target: links_20_item
+  - Source: links_24_item
+    Target: links_24_item
+  - Source: links_32_item
+    Target: links_32_item
+  - Source: links_40_item
+    Target: links_40_item
+  - Source: links_48_item
+    Target: links_48_item
+  - Source: links_64_item
+    Target: links_64_item
+  - Source: list_asterisk_20_filled
+    Target: list_asterisk_20_filled
+  - Source: list_asterisk_20_regular
+    Target: list_asterisk_20_regular
+  - Source: list_kql_20_filled
+    Target: list_kql_20_filled
+  - Source: list_kql_20_regular
+    Target: list_kql_20_regular
+  - Source: list_sql_20_filled
+    Target: list_sql_20_filled
+  - Source: list_sql_20_regular
+    Target: list_sql_20_regular
+  - Source: lock_circle_20_filled
+    Target: lock_circle_20_filled
+  - Source: lock_circle_20_regular
+    Target: lock_circle_20_regular
+  - Source: lock_circle_32_multi color
+    Target: lock_circle_32_multicolor
+  - Source: lock_circle_32_regular
+    Target: lock_circle_32_regular
+  - Source: match_category_20_filled
+    Target: match_category_20_filled
+  - Source: match_category_20_regular
+    Target: match_category_20_regular
+  - Source: metric_sets_20_item
+    Target: metric_sets_20_item
+  - Source: metric_sets_20_items
+    Target: metric_sets_20_item
+  - Source: metric_sets_24_item
+    Target: metric_sets_24_item
+  - Source: metric_sets_24_items
+    Target: metric_sets_24_item
+  - Source: metric_sets_32_item
+    Target: metric_sets_32_item
+  - Source: metric_sets_32_items
+    Target: metric_sets_32_item
+  - Source: metric_sets_40_item
+    Target: metric_sets_40_item
+  - Source: metric_sets_40_items
+    Target: metric_sets_40_item
+  - Source: metric_sets_48_item
+    Target: metric_sets_48_item
+  - Source: metric_sets_48_items
+    Target: metric_sets_48_item
+  - Source: metric_sets_64_item
+    Target: metric_sets_64_item
+  - Source: metric_sets_64_items
+    Target: metric_sets_64_item
+  - Source: mirrored_generic_database_20_item
+    Target: mirrored_generic_database_20_item
+  - Source: mirrored_generic_database_24_item
+    Target: mirrored_generic_database_24_item
+  - Source: mirrored_generic_database_32_item
+    Target: mirrored_generic_database_32_item
+  - Source: mirrored_generic_database_40_item
+    Target: mirrored_generic_database_40_item
+  - Source: mirrored_generic_database_48_item
+    Target: mirrored_generic_database_48_item
+  - Source: mirrored_generic_database_64_item
+    Target: mirrored_generic_database_64_item
+  - Source: model_20_item
+    Target: model_20_item
+  - Source: model_24_item
+    Target: model_24_item
+  - Source: model_32_item
+    Target: model_32_item
+  - Source: model_40_item
+    Target: model_40_item
+  - Source: model_48_item
+    Target: model_48_item
+  - Source: model_64_item
+    Target: model_64_item
+  - Source: my_location_arrow_down_20_filled
+    Target: my_location_arrow_down_20_filled
+  - Source: my_location_arrow_down_20_regular
+    Target: my_location_arrow_down_20_regular
+  - Source: my_location_database_20_filled
+    Target: my_location_database_20_filled
+  - Source: my_location_database_20_regular
+    Target: my_location_database_20_regular
+  - Source: my_location_radar_20_filled
+    Target: my_location_radar_20_filled
+  - Source: my_location_radar_20_regular
+    Target: my_location_radar_20_regular
+  - Source: my_location_ribbon_20_filled
+    Target: my_location_ribbon_20_filled
+  - Source: my_location_ribbon_20_regular
+    Target: my_location_ribbon_20_regular
+  - Source: my_location_ribbon_32_filled
+    Target: my_location_ribbon_32_filled
+  - Source: my_location_ribbon_32_regular
+    Target: my_location_ribbon_32_regular
+  - Source: my_workspace_20_non item
+    Target: my_workspace_20_nonitem
+  - Source: my_workspace_24_non item
+    Target: my_workspace_24_nonitem
+  - Source: my_workspace_32_non item
+    Target: my_workspace_32_nonitem
+  - Source: my_workspace_40_non item
+    Target: my_workspace_40_nonitem
+  - Source: my_workspace_48_non item
+    Target: my_workspace_48_nonitem
+  - Source: my_workspace_64_non item
+    Target: my_workspace_64_nonitem
+  - Source: nodes_connected_20_filled
+    Target: nodes_connected_20_filled
+  - Source: nodes_connected_20_regular
+    Target: nodes_connected_20_regular
+  - Source: nodes_triangle_connected_top_20_filled
+    Target: nodes_triangle_connected_top_20_filled
+  - Source: nodes_triangle_connected_top_20_regular
+    Target: nodes_triangle_connected_top_20_regular
+  - Source: notebook_20_item
+    Target: notebook_20_item
+  - Source: notebook_24_item
+    Target: notebook_24_item
+  - Source: notebook_32_item
+    Target: notebook_32_item
+  - Source: notebook_40_item
+    Target: notebook_40_item
+  - Source: notebook_48_item
+    Target: notebook_48_item
+  - Source: notebook_64_item
+    Target: notebook_64_item
+  - Source: notebook_code_16_filled
+    Target: notebook_code_16_filled
+  - Source: notebook_code_16_regular
+    Target: notebook_code_16_regular
+  - Source: notebook_code_20_filled
+    Target: notebook_code_20_filled
+  - Source: notebook_code_20_regular
+    Target: notebook_code_20_regular
+  - Source: notebook_code_24_filled
+    Target: notebook_code_24_filled
+  - Source: notebook_code_24_regular
+    Target: notebook_code_24_regular
+  - Source: notebook_code_32_filled
+    Target: notebook_code_32_filled
+  - Source: notebook_code_32_regular
+    Target: notebook_code_32_regular
+  - Source: no_access_semantic_model_20_item
+    Target: no_access_semantic_model_20_item
+  - Source: no_access_semantic_model_24_item
+    Target: no_access_semantic_model_24_item
+  - Source: no_access_semantic_model_32_item
+    Target: no_access_semantic_model_32_item
+  - Source: no_access_semantic_model_40_item
+    Target: no_access_semantic_model_40_item
+  - Source: no_access_semantic_model_48_item
+    Target: no_access_semantic_model_48_item
+  - Source: no_access_semantic_model_64_item
+    Target: no_access_semantic_model_64_item
+  - Source: odata_20_filled
+    Target: odata_20_filled
+  - Source: odata_20_regular
+    Target: odata_20_regular
+  - Source: odata_24_filled
+    Target: odata_24_filled
+  - Source: odata_24_regular
+    Target: odata_24_regular
+  - Source: one_lake_16_filled
+    Target: one_lake_16_filled
+  - Source: one_lake_16_regular
+    Target: one_lake_16_regular
+  - Source: one_lake_20_color
+    Target: one_lake_20_color
+  - Source: one_lake_20_filled
+    Target: one_lake_20_filled
+  - Source: one_lake_20_regular
+    Target: one_lake_20_regular
+  - Source: one_lake_24_color
+    Target: one_lake_24_color
+  - Source: one_lake_24_filled
+    Target: one_lake_24_filled
+  - Source: one_lake_24_regular
+    Target: one_lake_24_regular
+  - Source: one_lake_28_filled
+    Target: one_lake_28_filled
+  - Source: one_lake_28_regular
+    Target: one_lake_28_regular
+  - Source: one_lake_32_filled
+    Target: one_lake_32_filled
+  - Source: one_lake_32_regular
+    Target: one_lake_32_regular
+  - Source: one_lake_48_color
+    Target: one_lake_48_color
+  - Source: one_lake_48_filled
+    Target: one_lake_48_filled
+  - Source: one_lake_48_regular
+    Target: one_lake_48_regular
+  - Source: orientation_vertical_20_filled
+    Target: orientation_vertical_20_filled
+  - Source: orientation_vertical_20_regular
+    Target: orientation_vertical_20_regular
+  - Source: paginated_report_20_item
+    Target: paginated_report_20_item
+  - Source: paginated_report_24_item
+    Target: paginated_report_24_item
+  - Source: paginated_report_32_item
+    Target: paginated_report_32_item
+  - Source: paginated_report_40_item
+    Target: paginated_report_40_item
+  - Source: paginated_report_48_item
+    Target: paginated_report_48_item
+  - Source: paginated_report_64_item
+    Target: paginated_report_64_item
+  - Source: partition_hint_16_filled
+    Target: partition_hint_16_filled
+  - Source: partition_hint_16_regular
+    Target: partition_hint_16_regular
+  - Source: partition_hint_20_filled
+    Target: partition_hint_20_filled
+  - Source: partition_hint_20_regular
+    Target: partition_hint_20_regular
+  - Source: person_warning_20_filled
+    Target: person_warning_20_filled
+  - Source: person_warning_20_regular
+    Target: person_warning_20_regular
+  - Source: person_wrench_20_filled
+    Target: person_wrench_20_filled
+  - Source: person_wrench_20_regular
+    Target: person_wrench_20_regular
+  - Source: phone_data_bar_vertical_20_filled
+    Target: phone_data_bar_vertical_20_filled
+  - Source: phone_data_bar_vertical_20_regular
+    Target: phone_data_bar_vertical_20_regular
+  - Source: pie_double_20_filled
+    Target: pie_double_20_filled
+  - Source: pie_double_20_regular
+    Target: pie_double_20_regular
+  - Source: pipeline_20_item
+    Target: pipeline_20_item
+  - Source: pipeline_24_item
+    Target: pipeline_24_item
+  - Source: pipeline_32_item
+    Target: pipeline_32_item
+  - Source: pipeline_40_item
+    Target: pipeline_40_item
+  - Source: pipeline_48_item
+    Target: pipeline_48_item
+  - Source: pipeline_64_item
+    Target: pipeline_64_item
+  - Source: policy_16_dark_multi color
+    Target: policy_16_dark_multicolor
+  - Source: policy_16_light_multi color
+    Target: policy_16_light_multicolor
+  - Source: policy_20_dark_multi color
+    Target: policy_20_dark_multicolor
+  - Source: policy_20_light_multi color
+    Target: policy_20_light_multicolor
+  - Source: power_bi_16_color
+    Target: power_bi_16_color
+  - Source: power_bi_16_filled
+    Target: power_bi_16_filled
+  - Source: power_bi_16_regular
+    Target: power_bi_16_regular
+  - Source: power_bi_20_color
+    Target: power_bi_20_color
+  - Source: power_bi_20_filled
+    Target: power_bi_20_filled
+  - Source: power_bi_20_regular
+    Target: power_bi_20_regular
+  - Source: power_bi_24_color
+    Target: power_bi_24_color
+  - Source: power_bi_24_filled
+    Target: power_bi_24_filled
+  - Source: power_bi_24_regular
+    Target: power_bi_24_regular
+  - Source: power_bi_28_color
+    Target: power_bi_28_color
+  - Source: power_bi_28_filled
+    Target: power_bi_28_filled
+  - Source: power_bi_28_regular
+    Target: power_bi_28_regular
+  - Source: power_bi_32_color
+    Target: power_bi_32_color
+  - Source: power_bi_32_filled
+    Target: power_bi_32_filled
+  - Source: power_bi_32_regular
+    Target: power_bi_32_regular
+  - Source: power_bi_48_filled
+    Target: power_bi_48_filled
+  - Source: power_bi_48_regular
+    Target: power_bi_48_regular
+  - Source: progress_bar_20_filled
+    Target: progress_bar_20_filled
+  - Source: progress_bar_20_regular
+    Target: progress_bar_20_regular
+  - Source: progress_circle_12_filled
+    Target: progress_circle_12_filled
+  - Source: progress_circle_12_regular
+    Target: progress_circle_12_regular
+  - Source: progress_circle_20_filled
+    Target: progress_circle_20_filled
+  - Source: progress_circle_20_regular
+    Target: progress_circle_20_regular
+  - Source: progress_circle_24_filled
+    Target: progress_circle_24_filled
+  - Source: progress_circle_24_regular
+    Target: progress_circle_24_regular
+  - Source: pulse_square_person_20_filled
+    Target: pulse_square_person_20_filled
+  - Source: pulse_square_person_20_regular
+    Target: pulse_square_person_20_regular
+  - Source: pulse_square_person_24_filled
+    Target: pulse_square_person_24_filled
+  - Source: pulse_square_person_24_regular
+    Target: pulse_square_person_24_regular
+  - Source: pulse_square_person_32_filled
+    Target: pulse_square_person_32_filled
+  - Source: pulse_square_person_32_regular
+    Target: pulse_square_person_32_regular
+  - Source: real_time_dashboard_20_item
+    Target: real_time_dashboard_20_item
+  - Source: real_time_dashboard_24_item
+    Target: real_time_dashboard_24_item
+  - Source: real_time_dashboard_32_item
+    Target: real_time_dashboard_32_item
+  - Source: real_time_dashboard_40_item
+    Target: real_time_dashboard_40_item
+  - Source: real_time_dashboard_48_item
+    Target: real_time_dashboard_48_item
+  - Source: real_time_dashboard_64_item
+    Target: real_time_dashboard_64_item
+  - Source: real_time_hub_16_color
+    Target: real_time_hub_16_color
+  - Source: real_time_hub_16_filled
+    Target: real_time_hub_16_filled
+  - Source: real_time_hub_16_regular
+    Target: real_time_hub_16_regular
+  - Source: real_time_hub_20_color
+    Target: real_time_hub_20_color
+  - Source: real_time_hub_20_filled
+    Target: real_time_hub_20_filled
+  - Source: real_time_hub_20_regular
+    Target: real_time_hub_20_regular
+  - Source: real_time_hub_24_color
+    Target: real_time_hub_24_color
+  - Source: real_time_hub_24_filled
+    Target: real_time_hub_24_filled
+  - Source: real_time_hub_24_regular
+    Target: real_time_hub_24_regular
+  - Source: real_time_hub_28_color
+    Target: real_time_hub_28_color
+  - Source: real_time_hub_28_filled
+    Target: real_time_hub_28_filled
+  - Source: real_time_hub_28_regular
+    Target: real_time_hub_28_regular
+  - Source: real_time_hub_32_color
+    Target: real_time_hub_32_color
+  - Source: real_time_hub_32_filled
+    Target: real_time_hub_32_filled
+  - Source: real_time_hub_32_regular
+    Target: real_time_hub_32_regular
+  - Source: real_time_hub_48_color
+    Target: real_time_hub_48_color
+  - Source: real_time_hub_48_filled
+    Target: real_time_hub_48_filled
+  - Source: real_time_hub_48_regular
+    Target: real_time_hub_48_regular
+  - Source: real_time_intelligence_16_color
+    Target: real_time_intelligence_16_color
+  - Source: real_time_intelligence_16_filled
+    Target: real_time_intelligence_16_filled
+  - Source: real_time_intelligence_16_regular
+    Target: real_time_intelligence_16_regular
+  - Source: real_time_intelligence_20_color
+    Target: real_time_intelligence_20_color
+  - Source: real_time_intelligence_20_filled
+    Target: real_time_intelligence_20_filled
+  - Source: real_time_intelligence_20_regular
+    Target: real_time_intelligence_20_regular
+  - Source: real_time_intelligence_24_color
+    Target: real_time_intelligence_24_color
+  - Source: real_time_intelligence_24_filled
+    Target: real_time_intelligence_24_filled
+  - Source: real_time_intelligence_24_regular
+    Target: real_time_intelligence_24_regular
+  - Source: real_time_intelligence_28_color
+    Target: real_time_intelligence_28_color
+  - Source: real_time_intelligence_28_filled
+    Target: real_time_intelligence_28_filled
+  - Source: real_time_intelligence_28_regular
+    Target: real_time_intelligence_28_regular
+  - Source: real_time_intelligence_32_color
+    Target: real_time_intelligence_32_color
+  - Source: real_time_intelligence_32_filled
+    Target: real_time_intelligence_32_filled
+  - Source: real_time_intelligence_32_regular
+    Target: real_time_intelligence_32_regular
+  - Source: real_time_intelligence_48_color
+    Target: real_time_intelligence_48_color
+  - Source: real_time_intelligence_48_filled
+    Target: real_time_intelligence_48_filled
+  - Source: real_time_intelligence_48_regular
+    Target: real_time_intelligence_48_regular
+  - Source: receipt_kql_20_filled
+    Target: receipt_kql_20_filled
+  - Source: receipt_kql_20_regular
+    Target: receipt_kql_20_regular
+  - Source: receipt_kql_24_filled
+    Target: receipt_kql_24_filled
+  - Source: receipt_kql_24_regular
+    Target: receipt_kql_24_regular
+  - Source: receipt_kql_32_filled
+    Target: receipt_kql_32_filled
+  - Source: receipt_kql_32_regular
+    Target: receipt_kql_32_regular
+  - Source: receipt_kql_new_20_filled
+    Target: receipt_kql_new_20_filled
+  - Source: receipt_kql_new_20_regular
+    Target: receipt_kql_new_20_regular
+  - Source: receipt_sparkle_20_filled
+    Target: receipt_sparkle_20_filled
+  - Source: receipt_sparkle_20_regular
+    Target: receipt_sparkle_20_regular
+  - Source: receipt_sparkle_new_20_filled
+    Target: receipt_sparkle_new_20_filled
+  - Source: receipt_sparkle_new_20_regular
+    Target: receipt_sparkle_new_20_regular
+  - Source: rectangle_arrow_down_exit_20_filled
+    Target: rectangle_arrow_down_exit_20_filled
+  - Source: rectangle_arrow_down_exit_20_regular
+    Target: rectangle_arrow_down_exit_20_regular
+  - Source: rectangle_arrow_up_20_filled
+    Target: rectangle_arrow_up_20_filled
+  - Source: rectangle_arrow_up_20_regular
+    Target: rectangle_arrow_up_20_regular
+  - Source: rectangle_arrow_up_exit_20_filled
+    Target: rectangle_arrow_up_exit_20_filled
+  - Source: rectangle_arrow_up_exit_20_regular
+    Target: rectangle_arrow_up_exit_20_regular
+  - Source: rectangle_list_asterisk_20_filled
+    Target: rectangle_list_asterisk_20_filled
+  - Source: rectangle_list_asterisk_20_regular
+    Target: rectangle_list_asterisk_20_regular
+  - Source: rectangle_multiple_arrow_curved_left_20_filled
+    Target: rectangle_multiple_arrow_curved_left_20_filled
+  - Source: rectangle_multiple_arrow_curved_left_20_regular
+    Target: rectangle_multiple_arrow_curved_left_20_regular
+  - Source: rectangle_multiple_arrow_curved_right_20_filled
+    Target: rectangle_multiple_arrow_curved_right_20_filled
+  - Source: rectangle_multiple_arrow_curved_right_20_regular
+    Target: rectangle_multiple_arrow_curved_right_20_regular
+  - Source: reflex_16_color
+    Target: reflex_16_color
+  - Source: reflex_16_filled
+    Target: reflex_16_filled
+  - Source: reflex_16_regular
+    Target: reflex_16_regular
+  - Source: reflex_20_color
+    Target: reflex_20_color
+  - Source: reflex_20_filled
+    Target: reflex_20_filled
+  - Source: reflex_20_item
+    Target: reflex_20_item
+  - Source: reflex_20_regular
+    Target: reflex_20_regular
+  - Source: reflex_24_color
+    Target: reflex_24_color
+  - Source: reflex_24_filled
+    Target: reflex_24_filled
+  - Source: reflex_24_item
+    Target: reflex_24_item
+  - Source: reflex_24_regular
+    Target: reflex_24_regular
+  - Source: reflex_28_color
+    Target: reflex_28_color
+  - Source: reflex_28_filled
+    Target: reflex_28_filled
+  - Source: reflex_28_regular
+    Target: reflex_28_regular
+  - Source: reflex_32_color
+    Target: reflex_32_color
+  - Source: reflex_32_filled
+    Target: reflex_32_filled
+  - Source: reflex_32_item
+    Target: reflex_32_item
+  - Source: reflex_32_regular
+    Target: reflex_32_regular
+  - Source: reflex_40_item
+    Target: reflex_40_item
+  - Source: reflex_48_color
+    Target: reflex_48_color
+  - Source: reflex_48_filled
+    Target: reflex_48_filled
+  - Source: reflex_48_item
+    Target: reflex_48_item
+  - Source: reflex_48_regular
+    Target: reflex_48_regular
+  - Source: reflex_64_item
+    Target: reflex_64_item
+  - Source: report_20_item
+    Target: report_20_item
+  - Source: report_24_item
+    Target: report_24_item
+  - Source: report_32_item
+    Target: report_32_item
+  - Source: report_40_item
+    Target: report_40_item
+  - Source: report_48_item
+    Target: report_48_item
+  - Source: report_64_item
+    Target: report_64_item
+  - Source: restricted_report_20_item
+    Target: restricted_report_20_item
+  - Source: restricted_report_24_item
+    Target: restricted_report_24_item
+  - Source: restricted_report_32_item
+    Target: restricted_report_32_item
+  - Source: restricted_report_40_item
+    Target: restricted_report_40_item
+  - Source: restricted_report_48_item
+    Target: restricted_report_48_item
+  - Source: restricted_report_64_item
+    Target: restricted_report_64_item
+  - Source: restricted_scorecard_20_item
+    Target: restricted_scorecard_20_item
+  - Source: restricted_scorecard_24_item
+    Target: restricted_scorecard_24_item
+  - Source: restricted_scorecard_32_item
+    Target: restricted_scorecard_32_item
+  - Source: restricted_scorecard_40_item
+    Target: restricted_scorecard_40_item
+  - Source: restricted_scorecard_48_item
+    Target: restricted_scorecard_48_item
+  - Source: restricted_scorecard_64_item
+    Target: restricted_scorecard_64_item
+  - Source: restriction_16_dark_multi color
+    Target: restriction_16_dark_multicolor
+  - Source: restriction_16_light_multi color
+    Target: restriction_16_light_multicolor
+  - Source: restriction_20_dark_multi color
+    Target: restriction_20_dark_multicolor
+  - Source: restriction_20_light_multi color
+    Target: restriction_20_light_multicolor
+  - Source: retail_20_item
+    Target: retail_20_item
+  - Source: retail_24_item
+    Target: retail_24_item
+  - Source: retail_32_item
+    Target: retail_32_item
+  - Source: retail_40_item
+    Target: retail_40_item
+  - Source: retail_48_item
+    Target: retail_48_item
+  - Source: retail_64_item
+    Target: retail_64_item
+  - Source: sample_20_non item
+    Target: sample_20_nonitem
+  - Source: sample_24_non item
+    Target: sample_24_nonitem
+  - Source: sample_32_non item
+    Target: sample_32_nonitem
+  - Source: sample_40_non item
+    Target: sample_40_nonitem
+  - Source: sample_48_non item
+    Target: sample_48_nonitem
+  - Source: sample_64_non item
+    Target: sample_64_nonitem
+  - Source: save_phone_20_filled
+    Target: save_phone_20_filled
+  - Source: save_phone_20_regular
+    Target: save_phone_20_regular
+  - Source: scan_categorize_20_filled
+    Target: scan_categorize_20_filled
+  - Source: scan_categorize_20_regular
+    Target: scan_categorize_20_regular
+  - Source: schema_20_filled
+    Target: schema_20_filled
+  - Source: schema_20_regular
+    Target: schema_20_regular
+  - Source: schema_model_20_item
+    Target: schema_model_20_item
+  - Source: schema_model_24_item
+    Target: schema_model_24_item
+  - Source: schema_model_32_item
+    Target: schema_model_32_item
+  - Source: schema_model_40_item
+    Target: schema_model_40_item
+  - Source: schema_model_48_item
+    Target: schema_model_48_item
+  - Source: schema_model_64_item
+    Target: schema_model_64_item
+  - Source: scorecard_20_item
+    Target: scorecard_20_item
+  - Source: scorecard_24_item
+    Target: scorecard_24_item
+  - Source: scorecard_32_item
+    Target: scorecard_32_item
+  - Source: scorecard_40_item
+    Target: scorecard_40_item
+  - Source: scorecard_48_item
+    Target: scorecard_48_item
+  - Source: scorecard_64_item
+    Target: scorecard_64_item
+  - Source: script_kql_20_filled
+    Target: script_kql_20_filled
+  - Source: script_kql_20_regular
+    Target: script_kql_20_regular
+  - Source: script_kql_24_filled
+    Target: script_kql_24_filled
+  - Source: script_kql_24_regular
+    Target: script_kql_24_regular
+  - Source: script_kql_32_filled
+    Target: script_kql_32_filled
+  - Source: script_kql_32_regular
+    Target: script_kql_32_regular
+  - Source: script_kql_add_20_filled
+    Target: script_kql_add_20_filled
+  - Source: script_kql_add_20_regular
+    Target: script_kql_add_20_regular
+  - Source: script_sparkle_20_filled
+    Target: script_sparkle_20_filled
+  - Source: script_sparkle_20_regular
+    Target: script_sparkle_20_regular
+  - Source: script_sparkle_add_20_filled
+    Target: script_sparkle_add_20_filled
+  - Source: script_sparkle_add_20_regular
+    Target: script_sparkle_add_20_regular
+  - Source: semantic_model_20_item
+    Target: semantic_model_20_item
+  - Source: semantic_model_24_item
+    Target: semantic_model_24_item
+  - Source: semantic_model_32_item
+    Target: semantic_model_32_item
+  - Source: semantic_model_40_item
+    Target: semantic_model_40_item
+  - Source: semantic_model_48_item
+    Target: semantic_model_48_item
+  - Source: semantic_model_64_item
+    Target: semantic_model_64_item
+  - Source: send_circle_20_filled
+    Target: send_circle_20_filled
+  - Source: send_circle_20_regular
+    Target: send_circle_20_regular
+  - Source: sensitivity_label_confidential_16_multi color
+    Target: sensitivity_label_confidential_16_multicolor
+  - Source: sensitivity_label_confidential_20_multi color
+    Target: sensitivity_label_confidential_20_multicolor
+  - Source: sensitivity_label_confidential_24_multi color
+    Target: sensitivity_label_confidential_24_multicolor
+  - Source: sensitivity_label_confidential_protected_16_multi color
+    Target: sensitivity_label_confidential_protected_16_multicolor
+  - Source: sensitivity_label_confidential_protected_20_multi color
+    Target: sensitivity_label_confidential_protected_20_multicolor
+  - Source: sensitivity_label_confidential_protected_24_multi color
+    Target: sensitivity_label_confidential_protected_24_multicolor
+  - Source: sensitivity_label_general_16_multi color
+    Target: sensitivity_label_general_16_multicolor
+  - Source: sensitivity_label_general_20_multi color
+    Target: sensitivity_label_general_20_multicolor
+  - Source: sensitivity_label_general_24_multi color
+    Target: sensitivity_label_general_24_multicolor
+  - Source: sensitivity_label_highly_confidential_16_multi color
+    Target: sensitivity_label_highly_confidential_16_multicolor
+  - Source: sensitivity_label_highly_confidential_20_multi color
+    Target: sensitivity_label_highly_confidential_20_multicolor
+  - Source: sensitivity_label_highly_confidential_24_multi color
+    Target: sensitivity_label_highly_confidential_24_multicolor
+  - Source: sensitivity_label_highly_confidential_protected_16_multi color
+    Target: sensitivity_label_highly_confidential_protected_16_multicolor
+  - Source: sensitivity_label_highly_confidential_protected_20_multi color
+    Target: sensitivity_label_highly_confidential_protected_20_multicolor
+  - Source: sensitivity_label_highly_confidential_protected_24_multi color
+    Target: sensitivity_label_highly_confidential_protected_24_multicolor
+  - Source: sensitivity_label_non_business_16_multi color
+    Target: sensitivity_label_non_business_16_multicolor
+  - Source: sensitivity_label_non_business_20_multi color
+    Target: sensitivity_label_non_business_20_multicolor
+  - Source: sensitivity_label_non_business_24_multi color
+    Target: sensitivity_label_non_business_24_multicolor
+  - Source: sensitivity_label_public_16_multi color
+    Target: sensitivity_label_public_16_multicolor
+  - Source: sensitivity_label_public_20_multi color
+    Target: sensitivity_label_public_20_multicolor
+  - Source: sensitivity_label_public_24_multi color
+    Target: sensitivity_label_public_24_multicolor
+  - Source: settings_person_16_filled
+    Target: settings_person_16_filled
+  - Source: settings_person_16_regular
+    Target: settings_person_16_regular
+  - Source: settings_person_20_filled
+    Target: settings_person_20_filled
+  - Source: settings_person_20_regular
+    Target: settings_person_20_regular
+  - Source: settings_person_24_filled
+    Target: settings_person_24_filled
+  - Source: settings_person_24_regular
+    Target: settings_person_24_regular
+  - Source: shapes_20_filled
+    Target: shapes_20_filled
+  - Source: shapes_20_regular
+    Target: shapes_20_regular
+  - Source: shapes_lightning_20_filled
+    Target: shapes_lightning_20_filled
+  - Source: shapes_lightning_20_regular
+    Target: shapes_lightning_20_regular
+  - Source: shapes_settings_20_filled
+    Target: shapes_settings_20_filled
+  - Source: shapes_settings_20_regular
+    Target: shapes_settings_20_regular
+  - Source: shapes_three_16_filled
+    Target: shapes_three_16_filled
+  - Source: shapes_three_16_regular
+    Target: shapes_three_16_regular
+  - Source: shapes_three_20_filled
+    Target: shapes_three_20_filled
+  - Source: shapes_three_20_regular
+    Target: shapes_three_20_regular
+  - Source: shapes_three_24_filled
+    Target: shapes_three_24_filled
+  - Source: shapes_three_24_regular
+    Target: shapes_three_24_regular
+  - Source: shapes_three_32_filled
+    Target: shapes_three_32_filled
+  - Source: shapes_three_32_regular
+    Target: shapes_three_32_regular
+  - Source: shapes_toolbox_20_filled
+    Target: shapes_toolbox_20_filled
+  - Source: shapes_toolbox_20_regular
+    Target: shapes_toolbox_20_regular
+  - Source: shape_ellipse_20_filled
+    Target: shape_ellipse_20_filled
+  - Source: shape_ellipse_20_regular
+    Target: shape_ellipse_20_regular
+  - Source: shared_semantic_model_20_item
+    Target: shared_semantic_model_20_item
+  - Source: shared_semantic_model_24_item
+    Target: shared_semantic_model_24_item
+  - Source: shared_semantic_model_32_item
+    Target: shared_semantic_model_32_item
+  - Source: shared_semantic_model_40_item
+    Target: shared_semantic_model_40_item
+  - Source: shared_semantic_model_48_item
+    Target: shared_semantic_model_48_item
+  - Source: shared_semantic_model_64_item
+    Target: shared_semantic_model_64_item
+  - Source: shopping_bag_data_bar_vertical_20_filled
+    Target: shopping_bag_data_bar_vertical_20_filled
+  - Source: shopping_bag_data_bar_vertical_20_regular
+    Target: shopping_bag_data_bar_vertical_20_regular
+  - Source: slide_text_accept_dismiss_20_filled
+    Target: slide_text_accept_dismiss_20_filled
+  - Source: slide_text_accept_dismiss_20_regular
+    Target: slide_text_accept_dismiss_20_regular
+  - Source: slide_text_ribbon_20_filled
+    Target: slide_text_ribbon_20_filled
+  - Source: slide_text_ribbon_20_regular
+    Target: slide_text_ribbon_20_regular
+  - Source: slide_text_window_20_filled
+    Target: slide_text_window_20_filled
+  - Source: slide_text_window_20_regular
+    Target: slide_text_window_20_regular
+  - Source: spark_job_direction_20_item
+    Target: spark_job_direction_20_item
+  - Source: spark_job_direction_24_item
+    Target: spark_job_direction_24_item
+  - Source: spark_job_direction_32_item
+    Target: spark_job_direction_32_item
+  - Source: spark_job_direction_40_item
+    Target: spark_job_direction_40_item
+  - Source: spark_job_direction_48_item
+    Target: spark_job_direction_48_item
+  - Source: spark_job_direction_64_item
+    Target: spark_job_direction_64_item
+  - Source: sql_database_20_item
+    Target: sql_database_20_item
+  - Source: sql_database_24_item
+    Target: sql_database_24_item
+  - Source: sql_database_32_item
+    Target: sql_database_32_item
+  - Source: sql_database_40_item
+    Target: sql_database_40_item
+  - Source: sql_database_48_item
+    Target: sql_database_48_item
+  - Source: sql_database_64_item
+    Target: sql_database_64_item
+  - Source: square_arrow_up_down_20_filled
+    Target: square_arrow_up_down_20_filled
+  - Source: square_arrow_up_down_20_regular
+    Target: square_arrow_up_down_20_regular
+  - Source: square_arrow_up_down_24_filled
+    Target: square_arrow_up_down_24_filled
+  - Source: square_arrow_up_down_24_regular
+    Target: square_arrow_up_down_24_regular
+  - Source: square_arrow_up_down_28_filled
+    Target: square_arrow_up_down_28_filled
+  - Source: square_arrow_up_down_28_regular
+    Target: square_arrow_up_down_28_regular
+  - Source: square_database_20_filled
+    Target: square_database_20_filled
+  - Source: square_database_20_regular
+    Target: square_database_20_regular
+  - Source: square_database_24_filled
+    Target: square_database_24_filled
+  - Source: square_database_24_regular
+    Target: square_database_24_regular
+  - Source: square_database_28_filled
+    Target: square_database_28_filled
+  - Source: square_database_28_regular
+    Target: square_database_28_regular
+  - Source: square_database_arrow_up_down_20_filled
+    Target: square_database_arrow_up_down_20_filled
+  - Source: square_database_arrow_up_down_20_regular
+    Target: square_database_arrow_up_down_20_regular
+  - Source: square_database_arrow_up_down_24_filled
+    Target: square_database_arrow_up_down_24_filled
+  - Source: square_database_arrow_up_down_24_regular
+    Target: square_database_arrow_up_down_24_regular
+  - Source: square_database_arrow_up_down_28_filled
+    Target: square_database_arrow_up_down_28_filled
+  - Source: square_database_arrow_up_down_28_regular
+    Target: square_database_arrow_up_down_28_regular
+  - Source: square_globe_arrow_up_down_20_filled
+    Target: square_globe_arrow_up_down_20_filled
+  - Source: square_globe_arrow_up_down_20_regular
+    Target: square_globe_arrow_up_down_20_regular
+  - Source: square_globe_arrow_up_down_24_filled
+    Target: square_globe_arrow_up_down_24_filled
+  - Source: square_globe_arrow_up_down_24_regular
+    Target: square_globe_arrow_up_down_24_regular
+  - Source: square_globe_arrow_up_down_28_filled
+    Target: square_globe_arrow_up_down_28_filled
+  - Source: square_globe_arrow_up_down_28_regular
+    Target: square_globe_arrow_up_down_28_regular
+  - Source: square_multiple_20_filled
+    Target: square_multiple_20_filled
+  - Source: square_multiple_20_regular
+    Target: square_multiple_20_regular
+  - Source: square_multiple_arrow_up_20_filled
+    Target: square_multiple_arrow_up_20_filled
+  - Source: square_multiple_arrow_up_20_regular
+    Target: square_multiple_arrow_up_20_regular
+  - Source: square_multiple_data_bar_vertical_20_filled
+    Target: square_multiple_data_bar_vertical_20_filled
+  - Source: square_multiple_data_bar_vertical_20_regular
+    Target: square_multiple_data_bar_vertical_20_regular
+  - Source: square_multiple_diagram_20_filled
+    Target: square_multiple_diagram_20_filled
+  - Source: square_multiple_diagram_20_regular
+    Target: square_multiple_diagram_20_regular
+  - Source: square_multiple_diagram_new_20_filled
+    Target: square_multiple_diagram_new_20_filled
+  - Source: square_multiple_diagram_new_20_regular
+    Target: square_multiple_diagram_new_20_regular
+  - Source: square_multiple_overlap_20_filled
+    Target: square_multiple_overlap_20_filled
+  - Source: square_multiple_overlap_20_regular
+    Target: square_multiple_overlap_20_regular
+  - Source: square_multiple_overlap_24_filled
+    Target: square_multiple_overlap_24_filled
+  - Source: square_multiple_overlap_24_regular
+    Target: square_multiple_overlap_24_regular
+  - Source: square_multiple_overlap_32_filled
+    Target: square_multiple_overlap_32_filled
+  - Source: square_multiple_overlap_32_regular
+    Target: square_multiple_overlap_32_regular
+  - Source: square_multiple_overlap_add_32_filled
+    Target: square_multiple_overlap_add_32_filled
+  - Source: square_multiple_overlap_add_32_regular
+    Target: square_multiple_overlap_add_32_regular
+  - Source: square_multiple_overlap_eye_20_filled
+    Target: square_multiple_overlap_eye_20_filled
+  - Source: square_multiple_overlap_eye_20_regular
+    Target: square_multiple_overlap_eye_20_regular
+  - Source: square_multiple_overlap_kql_20_filled
+    Target: square_multiple_overlap_kql_20_filled
+  - Source: square_multiple_overlap_kql_20_regular
+    Target: square_multiple_overlap_kql_20_regular
+  - Source: square_multiple_overlap_kql_24_filled
+    Target: square_multiple_overlap_kql_24_filled
+  - Source: square_multiple_overlap_kql_24_regular
+    Target: square_multiple_overlap_kql_24_regular
+  - Source: square_multiple_overlap_kql_32_filled
+    Target: square_multiple_overlap_kql_32_filled
+  - Source: square_multiple_overlap_kql_32_regular
+    Target: square_multiple_overlap_kql_32_regular
+  - Source: square_multiple_overlap_line_20_filled
+    Target: square_multiple_overlap_line_20_filled
+  - Source: square_multiple_overlap_line_20_regular
+    Target: square_multiple_overlap_line_20_regular
+  - Source: square_text_lines_32_filled
+    Target: square_text_lines_32_filled
+  - Source: square_text_lines_32_regular
+    Target: square_text_lines_32_regular
+  - Source: square_waves_20_filled
+    Target: square_waves_20_filled
+  - Source: square_waves_20_regular
+    Target: square_waves_20_regular
+  - Source: square_waves_24_filled
+    Target: square_waves_24_filled
+  - Source: square_waves_24_regular
+    Target: square_waves_24_regular
+  - Source: square_waves_28_filled
+    Target: square_waves_28_filled
+  - Source: square_waves_28_regular
+    Target: square_waves_28_regular
+  - Source: streaming_dataflow_20_item
+    Target: streaming_dataflow_20_item
+  - Source: streaming_dataflow_24_item
+    Target: streaming_dataflow_24_item
+  - Source: streaming_dataflow_32_item
+    Target: streaming_dataflow_32_item
+  - Source: streaming_dataflow_40_item
+    Target: streaming_dataflow_40_item
+  - Source: streaming_dataflow_48_item
+    Target: streaming_dataflow_48_item
+  - Source: streaming_dataflow_64_item
+    Target: streaming_dataflow_64_item
+  - Source: streaming_semantic_model_20_item
+    Target: streaming_semantic_model_20_item
+  - Source: streaming_semantic_model_24_item
+    Target: streaming_semantic_model_24_item
+  - Source: streaming_semantic_model_32_item
+    Target: streaming_semantic_model_32_item
+  - Source: streaming_semantic_model_40_item
+    Target: streaming_semantic_model_40_item
+  - Source: streaming_semantic_model_48_item
+    Target: streaming_semantic_model_48_item
+  - Source: streaming_semantic_model_64_item
+    Target: streaming_semantic_model_64_item
+  - Source: stream_bracket_20_filled
+    Target: stream_bracket_20_filled
+  - Source: stream_bracket_20_regular
+    Target: stream_bracket_20_regular
+  - Source: stream_bracket_24_filled
+    Target: stream_bracket_24_filled
+  - Source: stream_bracket_24_regular
+    Target: stream_bracket_24_regular
+  - Source: stream_bracket_32_filled
+    Target: stream_bracket_32_filled
+  - Source: stream_bracket_32_regular
+    Target: stream_bracket_32_regular
+  - Source: stream_settings_20_filled
+    Target: stream_settings_20_filled
+  - Source: stream_settings_20_regular
+    Target: stream_settings_20_regular
+  - Source: stream_settings_24_filled
+    Target: stream_settings_24_filled
+  - Source: stream_settings_24_regular
+    Target: stream_settings_24_regular
+  - Source: stream_settings_32_filled
+    Target: stream_settings_32_filled
+  - Source: stream_settings_32_regular
+    Target: stream_settings_32_regular
+  - Source: stream_settings_bracket_20_filled
+    Target: stream_settings_bracket_20_filled
+  - Source: stream_settings_bracket_20_regular
+    Target: stream_settings_bracket_20_regular
+  - Source: stream_settings_bracket_24_filled
+    Target: stream_settings_bracket_24_filled
+  - Source: stream_settings_bracket_24_regular
+    Target: stream_settings_bracket_24_regular
+  - Source: stream_settings_bracket_32_filled
+    Target: stream_settings_bracket_32_filled
+  - Source: stream_settings_bracket_32_regular
+    Target: stream_settings_bracket_32_regular
+  - Source: subtract_circle_32_multi color
+    Target: subtract_circle_32_multicolor
+  - Source: sustainability_20_item
+    Target: sustainability_20_item
+  - Source: sustainability_24_item
+    Target: sustainability_24_item
+  - Source: sustainability_32_item
+    Target: sustainability_32_item
+  - Source: sustainability_40_item
+    Target: sustainability_40_item
+  - Source: sustainability_48_item
+    Target: sustainability_48_item
+  - Source: sustainability_64_item
+    Target: sustainability_64_item
+  - Source: 'synapse_16_color '
+    Target: synapse_16_color
+  - Source: synapse_16_filled
+    Target: synapse_16_filled
+  - Source: synapse_16_regular
+    Target: synapse_16_regular
+  - Source: 'synapse_20_color '
+    Target: synapse_20_color
+  - Source: synapse_20_filled
+    Target: synapse_20_filled
+  - Source: synapse_20_regular
+    Target: synapse_20_regular
+  - Source: 'synapse_24_color '
+    Target: synapse_24_color
+  - Source: synapse_24_filled
+    Target: synapse_24_filled
+  - Source: synapse_24_regular
+    Target: synapse_24_regular
+  - Source: 'synapse_28_color '
+    Target: synapse_28_color
+  - Source: synapse_28_filled
+    Target: synapse_28_filled
+  - Source: synapse_28_regular
+    Target: synapse_28_regular
+  - Source: 'synapse_32_color '
+    Target: synapse_32_color
+  - Source: synapse_32_filled
+    Target: synapse_32_filled
+  - Source: synapse_32_regular
+    Target: synapse_32_regular
+  - Source: 'synapse_48_color '
+    Target: synapse_48_color
+  - Source: synapse_48_filled
+    Target: synapse_48_filled
+  - Source: synapse_48_regular
+    Target: synapse_48_regular
+  - Source: synapse_data_engineering_16_color
+    Target: synapse_data_engineering_16_color
+  - Source: synapse_data_engineering_16_filled
+    Target: synapse_data_engineering_16_filled
+  - Source: synapse_data_engineering_16_regular
+    Target: synapse_data_engineering_16_regular
+  - Source: synapse_data_engineering_20_color
+    Target: synapse_data_engineering_20_color
+  - Source: synapse_data_engineering_20_filled
+    Target: synapse_data_engineering_20_filled
+  - Source: synapse_data_engineering_20_regular
+    Target: synapse_data_engineering_20_regular
+  - Source: synapse_data_engineering_24_color
+    Target: synapse_data_engineering_24_color
+  - Source: synapse_data_engineering_24_filled
+    Target: synapse_data_engineering_24_filled
+  - Source: synapse_data_engineering_24_regular
+    Target: synapse_data_engineering_24_regular
+  - Source: synapse_data_engineering_28_color
+    Target: synapse_data_engineering_28_color
+  - Source: synapse_data_engineering_28_filled
+    Target: synapse_data_engineering_28_filled
+  - Source: synapse_data_engineering_28_regular
+    Target: synapse_data_engineering_28_regular
+  - Source: synapse_data_engineering_32_filled
+    Target: synapse_data_engineering_32_filled
+  - Source: synapse_data_engineering_32_regular
+    Target: synapse_data_engineering_32_regular
+  - Source: synapse_data_engineering_48_filled
+    Target: synapse_data_engineering_48_filled
+  - Source: synapse_data_engineering_48_regular
+    Target: synapse_data_engineering_48_regular
+  - Source: synapse_data_science_16_color
+    Target: synapse_data_science_16_color
+  - Source: synapse_data_science_16_filled
+    Target: synapse_data_science_16_filled
+  - Source: synapse_data_science_16_regular
+    Target: synapse_data_science_16_regular
+  - Source: synapse_data_science_20_color
+    Target: synapse_data_science_20_color
+  - Source: synapse_data_science_20_filled
+    Target: synapse_data_science_20_filled
+  - Source: synapse_data_science_20_regular
+    Target: synapse_data_science_20_regular
+  - Source: synapse_data_science_24_color
+    Target: synapse_data_science_24_color
+  - Source: synapse_data_science_24_filled
+    Target: synapse_data_science_24_filled
+  - Source: synapse_data_science_24_regular
+    Target: synapse_data_science_24_regular
+  - Source: synapse_data_science_28_color
+    Target: synapse_data_science_28_color
+  - Source: synapse_data_science_28_filled
+    Target: synapse_data_science_28_filled
+  - Source: synapse_data_science_28_regular
+    Target: synapse_data_science_28_regular
+  - Source: synapse_data_science_32_color
+    Target: synapse_data_science_32_color
+  - Source: synapse_data_science_32_filled
+    Target: synapse_data_science_32_filled
+  - Source: synapse_data_science_32_regular
+    Target: synapse_data_science_32_regular
+  - Source: synapse_data_science_48_color
+    Target: synapse_data_science_48_color
+  - Source: synapse_data_science_48_filled
+    Target: synapse_data_science_48_filled
+  - Source: synapse_data_science_48_regular
+    Target: synapse_data_science_48_regular
+  - Source: synapse_data_warehouse_16_color
+    Target: synapse_data_warehouse_16_color
+  - Source: synapse_data_warehouse_16_filled
+    Target: synapse_data_warehouse_16_filled
+  - Source: synapse_data_warehouse_16_regular
+    Target: synapse_data_warehouse_16_regular
+  - Source: synapse_data_warehouse_20_color
+    Target: synapse_data_warehouse_20_color
+  - Source: synapse_data_warehouse_20_filled
+    Target: synapse_data_warehouse_20_filled
+  - Source: synapse_data_warehouse_20_regular
+    Target: synapse_data_warehouse_20_regular
+  - Source: synapse_data_warehouse_24_color
+    Target: synapse_data_warehouse_24_color
+  - Source: synapse_data_warehouse_24_filled
+    Target: synapse_data_warehouse_24_filled
+  - Source: synapse_data_warehouse_24_regular
+    Target: synapse_data_warehouse_24_regular
+  - Source: synapse_data_warehouse_28_color
+    Target: synapse_data_warehouse_28_color
+  - Source: synapse_data_warehouse_28_filled
+    Target: synapse_data_warehouse_28_filled
+  - Source: synapse_data_warehouse_28_regular
+    Target: synapse_data_warehouse_28_regular
+  - Source: synapse_data_warehouse_32_color
+    Target: synapse_data_warehouse_32_color
+  - Source: synapse_data_warehouse_32_filled
+    Target: synapse_data_warehouse_32_filled
+  - Source: synapse_data_warehouse_32_regular
+    Target: synapse_data_warehouse_32_regular
+  - Source: synapse_data_warehouse_48_color
+    Target: synapse_data_warehouse_48_color
+  - Source: synapse_data_warehouse_48_filled
+    Target: synapse_data_warehouse_48_filled
+  - Source: synapse_data_warehouse_48_regular
+    Target: synapse_data_warehouse_48_regular
+  - Source: table_border_left_20_filled
+    Target: table_border_left_20_filled
+  - Source: table_border_left_20_regular
+    Target: table_border_left_20_regular
+  - Source: table_broom_20_filled
+    Target: table_broom_20_filled
+  - Source: table_broom_20_regular
+    Target: table_broom_20_regular
+  - Source: table_checkmark_16_filled_multi color
+    Target: table_checkmark_16_filled_multicolor
+  - Source: table_checkmark_16_regular_multi color
+    Target: table_checkmark_16_regular_multicolor
+  - Source: table_column_brackets_16_filled
+    Target: table_column_brackets_16_filled
+  - Source: table_column_brackets_16_regular
+    Target: table_column_brackets_16_regular
+  - Source: table_column_brackets_20_filled
+    Target: table_column_brackets_20_filled
+  - Source: table_column_brackets_20_regular
+    Target: table_column_brackets_20_regular
+  - Source: table_column_function_16_filled
+    Target: table_column_function_16_filled
+  - Source: table_column_function_16_regular
+    Target: table_column_function_16_regular
+  - Source: table_column_function_20_filled
+    Target: table_column_function_20_filled
+  - Source: table_column_function_20_regular
+    Target: table_column_function_20_regular
+  - Source: table_column_function_checkmark_16_filled_multi color
+    Target: table_column_function_checkmark_16_filled_multicolor
+  - Source: table_column_function_checkmark_16_regular_multi color
+    Target: table_column_function_checkmark_16_regular_multicolor
+  - Source: table_column_question_16_filled
+    Target: table_column_question_16_filled
+  - Source: table_column_question_16_regular
+    Target: table_column_question_16_regular
+  - Source: table_column_question_20_filled
+    Target: table_column_question_20_filled
+  - Source: table_column_question_20_regular
+    Target: table_column_question_20_regular
+  - Source: table_column_sigma_16_filled
+    Target: table_column_sigma_16_filled
+  - Source: table_column_sigma_16_regular
+    Target: table_column_sigma_16_regular
+  - Source: table_column_sigma_20_filled
+    Target: table_column_sigma_20_filled
+  - Source: table_column_sigma_20_regular
+    Target: table_column_sigma_20_regular
+  - Source: table_database_32_filled
+    Target: table_database_32_filled
+  - Source: table_database_32_regular
+    Target: table_database_32_regular
+  - Source: table_header_20_filled
+    Target: table_header_20_filled
+  - Source: table_header_20_regular
+    Target: table_header_20_regular
+  - Source: table_key_20_filled
+    Target: table_key_20_filled
+  - Source: table_key_20_regular
+    Target: table_key_20_regular
+  - Source: table_link_20_filled
+    Target: table_link_20_filled
+  - Source: table_link_20_regular
+    Target: table_link_20_regular
+  - Source: table_link_triangle_20_filled
+    Target: table_link_triangle_20_filled
+  - Source: table_link_triangle_20_regular
+    Target: table_link_triangle_20_regular
+  - Source: table_multiple_arrow_curved_right_20_filled
+    Target: table_multiple_arrow_curved_right_20_filled
+  - Source: table_multiple_arrow_curved_right_20_regular
+    Target: table_multiple_arrow_curved_right_20_regular
+  - Source: table_multiple_arrow_curved_right_new_20_filled
+    Target: table_multiple_arrow_curved_right_new_20_filled
+  - Source: table_multiple_arrow_curved_right_new_20_regular
+    Target: table_multiple_arrow_curved_right_new_20_regular
+  - Source: table_triangle_20_filled
+    Target: table_triangle_20_filled
+  - Source: table_triangle_20_regular
+    Target: table_triangle_20_regular
+  - Source: table_wand_16_filled
+    Target: table_wand_16_filled
+  - Source: table_wand_16_regular
+    Target: table_wand_16_regular
+  - Source: table_wand_20_filled
+    Target: table_wand_20_filled
+  - Source: table_wand_20_regular
+    Target: table_wand_20_regular
+  - Source: text_abc_20_filled
+    Target: text_abc_20_filled
+  - Source: text_abc_20_regular
+    Target: text_abc_20_regular
+  - Source: text_any_20_filled
+    Target: text_any_20_filled
+  - Source: text_any_20_regular
+    Target: text_any_20_regular
+  - Source: text_bullet_list_square_pulse_20_filled
+    Target: text_bullet_list_square_pulse_20_filled
+  - Source: text_bullet_list_square_pulse_20_regular
+    Target: text_bullet_list_square_pulse_20_regular
+  - Source: text_bullet_list_square_pulse_24_filled
+    Target: text_bullet_list_square_pulse_24_filled
+  - Source: text_bullet_list_square_pulse_24_regular
+    Target: text_bullet_list_square_pulse_24_regular
+  - Source: text_byte_20_filled
+    Target: text_byte_20_filled
+  - Source: text_byte_20_regular
+    Target: text_byte_20_regular
+  - Source: text_lambda_32_filled
+    Target: text_lambda_32_filled
+  - Source: text_lambda_32_regular
+    Target: text_lambda_32_regular
+  - Source: text_number_01_20_filled
+    Target: text_number_01_20_filled
+  - Source: text_number_01_20_regular
+    Target: text_number_01_20_regular
+  - Source: text_number_123_20_filled
+    Target: text_number_123_20_filled
+  - Source: text_number_123_20_regular
+    Target: text_number_123_20_regular
+  - Source: text_number_12l_20_filled
+    Target: text_number_12l_20_filled
+  - Source: text_number_12l_20_regular
+    Target: text_number_12l_20_regular
+  - Source: text_number_12s_20_filled
+    Target: text_number_12s_20_filled
+  - Source: text_number_12s_20_regular
+    Target: text_number_12s_20_regular
+  - Source: text_number_1_2f_20_filled
+    Target: text_number_1_2f_20_filled
+  - Source: text_number_1_2f_20_regular
+    Target: text_number_1_2f_20_regular
+  - Source: text_number_1_2_20_filled
+    Target: text_number_1_2_20_filled
+  - Source: text_number_1_2_20_regular
+    Target: text_number_1_2_20_regular
+  - Source: text_number_field_20_filled
+    Target: text_number_field_20_filled
+  - Source: text_number_field_20_regular
+    Target: text_number_field_20_regular
+  - Source: text_number_sequence_20_filled
+    Target: text_number_sequence_20_filled
+  - Source: text_number_sequence_20_regular
+    Target: text_number_sequence_20_regular
+  - Source: tooltip_data_bar_vertical_20_filled
+    Target: tooltip_data_bar_vertical_20_filled
+  - Source: tooltip_data_bar_vertical_20_regular
+    Target: tooltip_data_bar_vertical_20_regular
+  - Source: trophy_data_bar_vertical_20_filled
+    Target: trophy_data_bar_vertical_20_filled
+  - Source: trophy_data_bar_vertical_20_regular
+    Target: trophy_data_bar_vertical_20_regular
+  - Source: trophy_prohibited_20_filled
+    Target: trophy_prohibited_20_filled
+  - Source: trophy_prohibited_20_regular
+    Target: trophy_prohibited_20_regular
+  - Source: trophy_prohibited_24_filled
+    Target: trophy_prohibited_24_filled
+  - Source: trophy_prohibited_24_regular
+    Target: trophy_prohibited_24_regular
+  - Source: trophy_prohibited_32_filled
+    Target: trophy_prohibited_32_filled
+  - Source: trophy_prohibited_32_regular
+    Target: trophy_prohibited_32_regular
+  - Source: variables_20_item
+    Target: variables_20_item
+  - Source: variables_24_item
+    Target: variables_24_item
+  - Source: variables_32_item
+    Target: variables_32_item
+  - Source: variables_40_item
+    Target: variables_40_item
+  - Source: variables_48_item
+    Target: variables_48_item
+  - Source: variables_64_item
+    Target: variables_64_item
+  - Source: window_asterisk_20_filled
+    Target: window_asterisk_20_filled
+  - Source: window_asterisk_20_regular
+    Target: window_asterisk_20_regular
+  - Source: window_asterisk_24_filled
+    Target: window_asterisk_24_filled
+  - Source: window_asterisk_24_regular
+    Target: window_asterisk_24_regular
+  - Source: window_asterisk_32_filled
+    Target: window_asterisk_32_filled
+  - Source: window_asterisk_32_regular
+    Target: window_asterisk_32_regular
+  - Source: window_asterisk_new_20_filled
+    Target: window_asterisk_new_20_filled
+  - Source: window_asterisk_new_20_regular
+    Target: window_asterisk_new_20_regular
+  - Source: window_bullet_list_filter_20_filled
+    Target: window_bullet_list_filter_20_filled
+  - Source: window_bullet_list_filter_20_regular
+    Target: window_bullet_list_filter_20_regular
+  - Source: window_checkmark_20_filled
+    Target: window_checkmark_20_filled
+  - Source: window_checkmark_20_regular
+    Target: window_checkmark_20_regular
+  - Source: window_checkmark_32_filled
+    Target: window_checkmark_32_filled
+  - Source: window_checkmark_32_regular
+    Target: window_checkmark_32_regular
+  - Source: window_code_20_filled
+    Target: window_code_20_filled
+  - Source: window_code_20_regular
+    Target: window_code_20_regular
+  - Source: window_database_arrow_up_20_filled
+    Target: window_database_arrow_up_20_filled
+  - Source: window_database_arrow_up_20_regular
+    Target: window_database_arrow_up_20_regular
+  - Source: window_gauge_20_filled
+    Target: window_gauge_20_filled
+  - Source: window_gauge_20_regular
+    Target: window_gauge_20_regular
+  - Source: window_interface_20_filled
+    Target: window_interface_20_filled
+  - Source: window_interface_20_regular
+    Target: window_interface_20_regular
+  - Source: window_interface_24_filled
+    Target: window_interface_24_filled
+  - Source: window_interface_24_regular
+    Target: window_interface_24_regular
+  - Source: window_math_formula_24_filled
+    Target: window_math_formula_24_filled
+  - Source: window_math_formula_24_regular
+    Target: window_math_formula_24_regular
+  - Source: window_person_20_filled
+    Target: window_person_20_filled
+  - Source: window_person_20_regular
+    Target: window_person_20_regular
+  - Source: window_relationship_16_filled
+    Target: window_relationship_16_filled
+  - Source: window_relationship_16_regular
+    Target: window_relationship_16_regular
+  - Source: window_relationship_20_filled
+    Target: window_relationship_20_filled
+  - Source: window_relationship_20_regular
+    Target: window_relationship_20_regular
+  - Source: window_relationship_off_16_filled
+    Target: window_relationship_off_16_filled
+  - Source: window_relationship_off_16_regular
+    Target: window_relationship_off_16_regular
+  - Source: window_relationship_off_20_filled
+    Target: window_relationship_off_20_filled
+  - Source: window_relationship_off_20_regular
+    Target: window_relationship_off_20_regular
+  - Source: window_sparkle_20_filled
+    Target: window_sparkle_20_filled
+  - Source: window_sparkle_20_regular
+    Target: window_sparkle_20_regular
+  - Source: window_sparkle_new_20_filled
+    Target: window_sparkle_new_20_filled
+  - Source: window_sparkle_new_20_regular
+    Target: window_sparkle_new_20_regular
+  - Source: window_synapse_link_20_filled
+    Target: window_synapse_link_20_filled
+  - Source: window_synapse_link_20_regular
+    Target: window_synapse_link_20_regular
+  - Source: window_tree_20_filled
+    Target: window_tree_20_filled
+  - Source: window_tree_20_regular
+    Target: window_tree_20_regular
 - Name: General
   Services:
   - Source: Cost Management and Billing

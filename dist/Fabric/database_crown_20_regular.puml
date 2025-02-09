@@ -1,0 +1,14 @@
+sprite $database_crown_20_regular [70x70/16z] {
+xTGt4aCn20HG6AKV17l_qpepwkLixwke54ZoQRHk1jXMLUObtsiIINNt9DCyHrHCfY55b737AUD7zvmoidlFAIFya5F2_QUewTsdc3OqjJjFmUR5DznxYdNf
+DdjAJ0zIafHmrpJ6ct3VPhZpbE2ua414H4H4H4Hq1
+}
+
+AzureEntityColoring(database_crown_20_regular)
+!define database_crown_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, database_crown_20_regular, database_crown_20_regular)
+!define database_crown_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, database_crown_20_regular, database_crown_20_regular)
+!procedure database_crown_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=database_crown_20_regular, $stereo=database_crown_20_regular, $tags, $link)
+ !endprocedure
+!procedure database_crown_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, database_crown_20_regular, $tags, $link, database_crown_20_regular)
+!endprocedure

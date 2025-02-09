@@ -1,0 +1,11 @@
+sprite $policy_16_dark_multicolor [70x70/16z] xSn70KCn34H1kLkFFz_q8DZBBpi09gwfxinTGzCXWHwA2hG6b10i81DO8KXWJY3LPGnrMVzbXQ3-bnAApaSFJPcPiyJvc9cPcPcPcTaJ
+
+AzureEntityColoring(policy_16_dark_multicolor)
+!define policy_16_dark_multicolor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, policy_16_dark_multicolor, policy_16_dark_multicolor)
+!define policy_16_dark_multicolor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, policy_16_dark_multicolor, policy_16_dark_multicolor)
+!procedure policy_16_dark_multicolor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=policy_16_dark_multicolor, $stereo=policy_16_dark_multicolor, $tags, $link)
+ !endprocedure
+!procedure policy_16_dark_multicolor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, policy_16_dark_multicolor, $tags, $link, policy_16_dark_multicolor)
+!endprocedure

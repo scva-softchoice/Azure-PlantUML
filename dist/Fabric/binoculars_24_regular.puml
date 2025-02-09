@@ -1,0 +1,14 @@
+sprite $binoculars_24_regular [70x70/16z] {
+t98t6eKm6CD2JViTt_-qzCw4H_mAcaG-WVldEYFw6NhGUbN24a7ld2Sc43LMfZzW_Jc3Pc6O_W8tw5afaeRjrTAmKophpGEdXUremXBSpOAiM93kbaGfhhzP
+jBmjin5-hUj1YqfUJ-QGoTcoef8tivx-wzMoef2t9BStvOP5UdFNkZVyEjiEO1TKwgun_0q_pvO7OpSK5a245uxjmG4100040x3-hRK0tpO500200W
+}
+
+AzureEntityColoring(binoculars_24_regular)
+!define binoculars_24_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, binoculars_24_regular, binoculars_24_regular)
+!define binoculars_24_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, binoculars_24_regular, binoculars_24_regular)
+!procedure binoculars_24_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=binoculars_24_regular, $stereo=binoculars_24_regular, $tags, $link)
+ !endprocedure
+!procedure binoculars_24_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, binoculars_24_regular, $tags, $link, binoculars_24_regular)
+!endprocedure

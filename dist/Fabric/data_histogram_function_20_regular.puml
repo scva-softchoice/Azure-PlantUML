@@ -1,0 +1,14 @@
+sprite $data_histogram_function_20_regular [70x70/16z] {
+xT65aKCn38JX_u7Pkks_skEaW6WmivzXMCYxAY558Iakk88aFRzy52bAFWfSaOvo0ShiHm134sNs8-3Qd2ZJZO0o81rbIyf7eNLWPgFqnWgkbOioAcMDE7c9
+ViKz2nGLCau-JiuOYunGXtso6mzcPcPcPcPcNm
+}
+
+AzureEntityColoring(data_histogram_function_20_regular)
+!define data_histogram_function_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, data_histogram_function_20_regular, data_histogram_function_20_regular)
+!define data_histogram_function_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, data_histogram_function_20_regular, data_histogram_function_20_regular)
+!procedure data_histogram_function_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=data_histogram_function_20_regular, $stereo=data_histogram_function_20_regular, $tags, $link)
+ !endprocedure
+!procedure data_histogram_function_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, data_histogram_function_20_regular, $tags, $link, data_histogram_function_20_regular)
+!endprocedure

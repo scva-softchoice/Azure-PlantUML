@@ -1,0 +1,15 @@
+sprite $schema_model_48_item [70x70/16z] {
+xT67RiKW341HNzi4a___u2hYxUKITPVpziWLOFby4-Ol57SafuQy0gQImIHbxF_76Iu9bu-e54aXvGCgmaTK-8WA7r5XU2rMsq6OTC1efRQJEAy4bg5Ako0T
+7r7X8ohabVnSUEzQhlvWSJKZOBJI4R4zw2lPMrcQYcYhVIKxAzvyUodD1TbReTNZCIkCL10kPaIlqMAm0ZraSPgDnRgkuHpLlD89qJQ1GAoR6Az0wm3Mxjig
+fnsnOqULetww3k1Rflb89RM_CYjAHZMj5CiZjaX2bzS9L7LHoNWnVR6ERIKkEKgDxVP4BSXNcwPfcgRf3G
+}
+
+AzureEntityColoring(schema_model_48_item)
+!define schema_model_48_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, schema_model_48_item, schema_model_48_item)
+!define schema_model_48_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, schema_model_48_item, schema_model_48_item)
+!procedure schema_model_48_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=schema_model_48_item, $stereo=schema_model_48_item, $tags, $link)
+ !endprocedure
+!procedure schema_model_48_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, schema_model_48_item, $tags, $link, schema_model_48_item)
+!endprocedure

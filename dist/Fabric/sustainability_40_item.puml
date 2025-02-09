@@ -1,0 +1,15 @@
+sprite $sustainability_40_item [70x70/16z] {
+xT05TiGm34LHVqMIQV_xxR1Iyh6LSlK6GzUGtY_2ncybfnSpPf71dQ1PPXlUHpodZ6-3p2do-Gf-_rnG2ksEV7D1RQqQ0q1N54ECWKUv8SO0BgMqM-LiB2bs
+6xT79nhmASMK0hTIsodLqrTlm255nAV0LdHJUY_h2X9iTqLEI6U7Skas6P6-dmhoce84d1ZH4q8UnPAJKmJmAPOgu50odYLoNB528GoYIKMtWK6iSmfbflSC
+uanfBj9yghnLLagVMHH5KHH5KVG4
+}
+
+AzureEntityColoring(sustainability_40_item)
+!define sustainability_40_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, sustainability_40_item, sustainability_40_item)
+!define sustainability_40_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, sustainability_40_item, sustainability_40_item)
+!procedure sustainability_40_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=sustainability_40_item, $stereo=sustainability_40_item, $tags, $link)
+ !endprocedure
+!procedure sustainability_40_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, sustainability_40_item, $tags, $link, sustainability_40_item)
+!endprocedure

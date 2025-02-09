@@ -1,0 +1,14 @@
+sprite $square_multiple_overlap_32_filled [70x70/16z] {
+xT8tWeKm38JXSHOFyDp_jjijgH8vwEl0zbyDRYhtvA2s3Yi8Pwg7MYHh8uEMxA3MiM8Yam5QP8C9HsPeYSH5Lx31tfLDEnagstT2ogQT39NjEo5buqxq5Ld-
+kM6bRAy4CcskX9PqMoiaMR2zKZCsLqe4jbU0crGAj7gs60mxqMd8x30OTg9IELUWvrfEr8nLV9P_9U8jZ37666EC-GC
+}
+
+AzureEntityColoring(square_multiple_overlap_32_filled)
+!define square_multiple_overlap_32_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, square_multiple_overlap_32_filled, square_multiple_overlap_32_filled)
+!define square_multiple_overlap_32_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, square_multiple_overlap_32_filled, square_multiple_overlap_32_filled)
+!procedure square_multiple_overlap_32_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=square_multiple_overlap_32_filled, $stereo=square_multiple_overlap_32_filled, $tags, $link)
+ !endprocedure
+!procedure square_multiple_overlap_32_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, square_multiple_overlap_32_filled, $tags, $link, square_multiple_overlap_32_filled)
+!endprocedure

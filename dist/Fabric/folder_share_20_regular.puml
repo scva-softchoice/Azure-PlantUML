@@ -1,0 +1,14 @@
+sprite $folder_share_20_regular [70x70/16z] {
+xSv55aCX04FHu4xslzgwpAdtvoB3Tu8_P1l9xl2OdW7u-M26E4eyQ_Q1IhXkoHrBU3JSFRg4EFkoIke6ZrSowSE35HCQoVnO9V2iFL9nF5eUqoEE1iyYblXE
+ibco-Km6F28o09aE3t7s-js9Y8Y8Y8Y8x04
+}
+
+AzureEntityColoring(folder_share_20_regular)
+!define folder_share_20_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, folder_share_20_regular, folder_share_20_regular)
+!define folder_share_20_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, folder_share_20_regular, folder_share_20_regular)
+!procedure folder_share_20_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=folder_share_20_regular, $stereo=folder_share_20_regular, $tags, $link)
+ !endprocedure
+!procedure folder_share_20_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, folder_share_20_regular, $tags, $link, folder_share_20_regular)
+!endprocedure

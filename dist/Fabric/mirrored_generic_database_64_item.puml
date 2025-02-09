@@ -1,0 +1,17 @@
+sprite $mirrored_generic_database_64_item [70x70/16z] {
+xSxNZaCn28JX6S0Dl__pRdhGMPyejhQNdrlqQV23-a_KfagcWWVHb9YBeiO72B6GxB_F8i5WJ1IBgM18YSL4CMHOZOQXj8mmlLqXcBx75hxF5fAJ2ZNNvgTg
+CRxQCgbOyKtLDiYKmkf3ZO7CASLtAhZ6S_cfqdols3AdP1_h9PRCAQmZqXZ8d5AehvngKbOLRudKbClHgYKdfMJl9sD9ELQp2iw9vjQF8OXz9O-AH_qIY3Sg
+tsLBlyPeNUdleVGLXG-KlgAGt5Nwga9SxjY8Z4hPKw9G0bbMGF0jIXJ8rojj3_5LnGA9qbEbS616P5cXrAtHX2jAE5QQNuIQmfXHvdkx0X18RrLAHQryerBT
+uTxu9gNvMN7de0Wd4_URue9jIJcN-btflIisMU9SVbVwAMuK5kLKzQfSa8fjCiiq3wK10vDK-2mXGt5Yp7AffJxBr8_2MI7UaFIBedXJTbOCRombMCRNzjz_
+1m
+}
+
+AzureEntityColoring(mirrored_generic_database_64_item)
+!define mirrored_generic_database_64_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, mirrored_generic_database_64_item, mirrored_generic_database_64_item)
+!define mirrored_generic_database_64_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, mirrored_generic_database_64_item, mirrored_generic_database_64_item)
+!procedure mirrored_generic_database_64_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=mirrored_generic_database_64_item, $stereo=mirrored_generic_database_64_item, $tags, $link)
+ !endprocedure
+!procedure mirrored_generic_database_64_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, mirrored_generic_database_64_item, $tags, $link, mirrored_generic_database_64_item)
+!endprocedure

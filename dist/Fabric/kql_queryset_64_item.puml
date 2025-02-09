@@ -1,0 +1,16 @@
+sprite $kql_queryset_64_item [70x70/16z] {
+xT1NaiCW48JXRe94SC7zRxi5cmEZMU5i_tgblceDhZE6NAfOoG4RkP8y8MPyAcu3SL3anMSi5gfS4GQl4SgIy38vAFDv_5E5K6QA7p8LwYfSuQp22gJb25lW
+qvp2liMKoIri2kenjh1UonPERo5PmNdb25juZ2qynXRsAgUs41FAiRSSG-4n51vZ2ybvXLUZy1WAGQr2K22K2bi2ebVGl-y4-2_besyCkLF1bs-d8ZUlF9Md
+ybGWf5UM-5707nLBJUidWp_AdZf6L6AchY0ffcwFCJID4HJuiiKOOsW3tfY40PCMA-qmf0q6w4mQA60wb2grDCH4CiGqK3ItSGsnW14KnMqwmjKq1WAJvTiq
+92nz3SOn7EgmO89bHm2pOc_U0ixZSNls0W
+}
+
+AzureEntityColoring(kql_queryset_64_item)
+!define kql_queryset_64_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, kql_queryset_64_item, kql_queryset_64_item)
+!define kql_queryset_64_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, kql_queryset_64_item, kql_queryset_64_item)
+!procedure kql_queryset_64_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=kql_queryset_64_item, $stereo=kql_queryset_64_item, $tags, $link)
+ !endprocedure
+!procedure kql_queryset_64_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, kql_queryset_64_item, $tags, $link, kql_queryset_64_item)
+!endprocedure

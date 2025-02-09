@@ -1,0 +1,14 @@
+sprite $sample_40_nonitem [70x70/16z] {
+xTA5WGCm34DHXMFV_lDUcRbHMN-05x3nbMLRvaSpN9NXN3qHb5enhYJ3k18i4fHUCAwKXd4b6WYAHLoVutYjObn97GJ54aD91hpqN_WpGdI6Wj8P2dfXAC4Z
+GK4oXeBQ2ChrA-o7_MtbZBi0twL8aQAKKaeffIO
+}
+
+AzureEntityColoring(sample_40_nonitem)
+!define sample_40_nonitem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, sample_40_nonitem, sample_40_nonitem)
+!define sample_40_nonitem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, sample_40_nonitem, sample_40_nonitem)
+!procedure sample_40_nonitem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=sample_40_nonitem, $stereo=sample_40_nonitem, $tags, $link)
+ !endprocedure
+!procedure sample_40_nonitem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, sample_40_nonitem, $tags, $link, sample_40_nonitem)
+!endprocedure

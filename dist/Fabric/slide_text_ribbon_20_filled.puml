@@ -1,0 +1,14 @@
+sprite $slide_text_ribbon_20_filled [70x70/16z] {
+xT155WH120FGbBHtmVrFE-u-P9l_M0C9tf2y-8qb8sJrEoj2_45uImQGwIrNpU9Rfl5WQWMeuItZKPzdipcHYUhiEpFJBhB1VCV8NvWjgvyL8b6zh5dJfLrA
+sG_DTq2pMWqN8Y8Y8Y8Y8bi
+}
+
+AzureEntityColoring(slide_text_ribbon_20_filled)
+!define slide_text_ribbon_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, slide_text_ribbon_20_filled, slide_text_ribbon_20_filled)
+!define slide_text_ribbon_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, slide_text_ribbon_20_filled, slide_text_ribbon_20_filled)
+!procedure slide_text_ribbon_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=slide_text_ribbon_20_filled, $stereo=slide_text_ribbon_20_filled, $tags, $link)
+ !endprocedure
+!procedure slide_text_ribbon_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, slide_text_ribbon_20_filled, $tags, $link, slide_text_ribbon_20_filled)
+!endprocedure

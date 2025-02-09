@@ -1,0 +1,14 @@
+sprite $briefcase_report_24_filled [70x70/16z] {
+xTF76G8m34DX1USZtTf_Mdhdvj3nFy0xIVX0iNEZHqpfcZUqOmepDZBVN0bbyC8e0GQLDoeCb3SK1hmpNT5IRPLERWaWL02B2ejbti96bg0A4y458GKMt1Di
+HJ96DbFbtDbM4cclL3JAjf99--eoo6Ikr8jADbUsRvold959I4bpbQg2CI1QOU6SSyuvvvnpRWq
+}
+
+AzureEntityColoring(briefcase_report_24_filled)
+!define briefcase_report_24_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, briefcase_report_24_filled, briefcase_report_24_filled)
+!define briefcase_report_24_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, briefcase_report_24_filled, briefcase_report_24_filled)
+!procedure briefcase_report_24_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=briefcase_report_24_filled, $stereo=briefcase_report_24_filled, $tags, $link)
+ !endprocedure
+!procedure briefcase_report_24_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, briefcase_report_24_filled, $tags, $link, briefcase_report_24_filled)
+!endprocedure

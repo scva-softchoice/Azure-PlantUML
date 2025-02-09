@@ -1,0 +1,17 @@
+sprite $variables_64_item [70x70/16z] {
+xTG5ekCm34LHFO5bo_jVxq1Qf-GqyZ3yMwPJ1UalwYCMJMKgJ0T11PGBB8e314jppx-UHmOpNIUqs6pT9DP9ud-LLiFa9xQCmBvV0Pqg1ti3JFApe4O8JTA8
+Tk5nFeitnT4A3H-JdCtId0whRSnofeJHOHO3-Mu5XAo2GWyLR5_hOwq09Q5mb0SaU5T0QOLAAEtfrInzJ99Kg0RJDOvAGy6QWjPeVuPlLKZ27wRwDeKiR3pi
+2jufPQQGXuoHjl1D2be0qK3Bit0exN7Ksqe1mJgdbD8Q7iy6Cf2lHNXAYMT5noGJPNM9i7MwH7YpTd6Tv7GR0JZQqjqnIYYWxVAqru6isqpngJBQ5OcAROtK
+Bj-YR3DnDEnRXjSLRDLWNEFUlb4feTZJNhv9aN3SvLqMbSjpnqFE2SKVb6c_HQauh4LMgQ6CQMozPXLkFHIJjFVWh0AeCIPnKI2X9FeL2cCndYWcImAOfT1B
+QalAbuhIIt1PceJ5GQznak5Buaops4quDmUhRSWqBLwz9lAYzCFxwAEFFWC
+}
+
+AzureEntityColoring(variables_64_item)
+!define variables_64_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, variables_64_item, variables_64_item)
+!define variables_64_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, variables_64_item, variables_64_item)
+!procedure variables_64_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=variables_64_item, $stereo=variables_64_item, $tags, $link)
+ !endprocedure
+!procedure variables_64_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, variables_64_item, $tags, $link, variables_64_item)
+!endprocedure

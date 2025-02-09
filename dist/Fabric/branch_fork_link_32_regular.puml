@@ -1,0 +1,15 @@
+sprite $branch_fork_link_32_regular [70x70/16z] {
+xTK5TiGm30JGKJQ6bqYU-v-sh1GMjULM_w6PBVmupKYhUwcOXG-MlLH4vIWYPR3kfGAK1NSArxrK02cu8nnxgI_lPVWQnbugeFj-zltK-qywgXgfTIyLHkwb
+tjEBdy_xUobStjsBbC7fsbvUAdXdBss2Uy-AvjO4ABtDr_SY-hWW8wc2aAf-prOhsqdPYW1HFb31ZZiuJroe-VjhQ0JATawXxyxyBp0K2gJrEqqWeHCVtExz
+n8vD3rs-yU9tgzJ-UDBTM16mllolP_MJrlaTaMHFyAypl4yrqhfWNqeffPHIIkaM
+}
+
+AzureEntityColoring(branch_fork_link_32_regular)
+!define branch_fork_link_32_regular(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, branch_fork_link_32_regular, branch_fork_link_32_regular)
+!define branch_fork_link_32_regular(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, branch_fork_link_32_regular, branch_fork_link_32_regular)
+!procedure branch_fork_link_32_regular($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=branch_fork_link_32_regular, $stereo=branch_fork_link_32_regular, $tags, $link)
+ !endprocedure
+!procedure branch_fork_link_32_regular($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, branch_fork_link_32_regular, $tags, $link, branch_fork_link_32_regular)
+!endprocedure

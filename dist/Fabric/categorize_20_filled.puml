@@ -1,0 +1,11 @@
+sprite $categorize_20_filled [70x70/16z] xTB50O0m30NGrBtTVrhyYZlyTu-7fa4gdKIxADjHj1MZ0-WYQIykPTwV9fT6RhSxI7jwKNQWTknbF_x8tqsqanes-sa000000000DG
+
+AzureEntityColoring(categorize_20_filled)
+!define categorize_20_filled(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, categorize_20_filled, categorize_20_filled)
+!define categorize_20_filled(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, categorize_20_filled, categorize_20_filled)
+!procedure categorize_20_filled($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=categorize_20_filled, $stereo=categorize_20_filled, $tags, $link)
+ !endprocedure
+!procedure categorize_20_filled($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, categorize_20_filled, $tags, $link, categorize_20_filled)
+!endprocedure

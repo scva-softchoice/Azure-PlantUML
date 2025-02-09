@@ -1,0 +1,14 @@
+sprite $kql_database_20_item [70x70/16z] {
+xSp7OKKn20J0NK09zL_lZo-TaREP0WO_YzgXc4OJmObg22cuOealhCFTAzUMxYzZRM5fO_HAa1KX5K0p8SKwbnP_cdEkBtDj8VXEAk8gkIti_eI8HhBxV50P
+powyI7qqZIgF9BfiC1GINQfn8-eKZorIMslzGSNLL1nhXj45fvHIIYcbb59AwGu
+}
+
+AzureEntityColoring(kql_database_20_item)
+!define kql_database_20_item(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, kql_database_20_item, kql_database_20_item)
+!define kql_database_20_item(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, kql_database_20_item, kql_database_20_item)
+!procedure kql_database_20_item($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=kql_database_20_item, $stereo=kql_database_20_item, $tags, $link)
+ !endprocedure
+!procedure kql_database_20_item($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, kql_database_20_item, $tags, $link, kql_database_20_item)
+!endprocedure
