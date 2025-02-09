@@ -1,0 +1,20 @@
+sprite $Fiji [70x70/16z] {
+fPS9jkeu44FX4KiriV_bzc2I8awrstoU5d3FqIsBuRR8VIEtso-piUVn6yOFk0S_tpBkZQUq-o_APBxIy-0HC7izlXQYp-TJa7g-4G9vlZBNiox3U1u9JFGi
+o_Zp72jw5cLIo92FzMp9O65ygkU1X4G1VAZdNeIKhFNCXNokvuS9UIwZir4q7j4_eM2aS2sb2YPqfAZ9-a0zn7iUuLUA6T8QvsNU37fKoh_1uav-AkCH4NQb
+z6ZHCnFoByCd51lqJ8MmCqGh9KEalIeaoxYI4qgffLK8R6VCA1aPzGGpa2wLN5EoLa_8UDrmuOGYTarZfWXvHJpqkiQ2aUIShviCMeILDJOnczNAwuRbQ3qC
+rpK2HBl86KOHhrYMYUxwQXSWC20qhmwBCqKikd9utP62R3n1jgRTZsXax2L46WclEzfzOjCtPTiwrED4wK8Q29klaIyzITdqGd4F1xhhEQNxRB2UWP8O8X-E
+JYccZNmrGQM4jltXk2qMa7gaNIZUS2n9rZlAgmzs7HYMj5vZmt7rf0Y69QqegQVfcsADR3QCW7QbFAo4ZS1ESHn2N4vBydPPOxx-giU3832kKIoSn8N2z33K
+0W7mA9EKlW8MYlOLoUH31feBE7qi45hNADSFXusT0rpMA1vE4lBV2-3--dD7JUiQtnyBqnrXrvDhB9I3OV-tHWMnoNpJiGlPYHFAMK-hb2ua7uxEA8CU50f1
+eZDqlO3Zweh1YwOG-sX7chNU56SA4QufgGTdokaN1pcXR0CYzV2Wo5b8BYbm_S4hLqhgyL0UGfn7D8BtMyb32wRhf22Nb6jK3vtyCMbM8c0AIKfVqdQRvSwX
+K2_9rkWnK2oYJHcf9tS4AplgPQGAgNgIihL2qLfchcU-HiVjmy0cQopNNUlHLYZbkZNrCNEaUBlzQUwmonenAxEkbHIPCDRPzA3OTlj5sek2hm4v2b-N-Hi
+}
+
+AzureEntityColoring(Fiji)
+!define Fiji(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Fiji, Fiji)
+!define Fiji(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Fiji, Fiji)
+!procedure Fiji($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Fiji, $stereo=Fiji, $tags, $link)
+ !endprocedure
+!procedure Fiji($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Fiji, $tags, $link, Fiji)
+!endprocedure

@@ -1,0 +1,20 @@
+sprite $DeviceUpdateIoTHub [70x70/16z] {
+nPU9bgGw34DbMquW__-_lGKVsX0eAk_DpEsrDXrBpehdg2-juZzXPMtV4BC8QmiCS_ZITbRCqOq4ZZcMf2AOmzel5ioo91d57D8IipgbPGgcQ0SMcN04jYE6
+vwWQlv0OC-PlZnin1j0Ojr92fk89nXtj0HCAwFgy6cMY1moG2iJC95x00mQsLdwq3OXq57S8JmXCutc9IR4-5R4zcjsbH3NbaOXyeJm3b5UUaiYbp78_nRaZ
+7Puno6sVz94A5NuNC7dlA03MyuJYKkGuOgcfb8o1fuaWqJScJ4NKE2IImGwtwfGdz496KO-MuWaEKEMGewL82i81Tb6Cu619jgwfZp0rcj4Fw3Ro96yv1VGH
+Mw_CCxPD0ytX4Zv6P2H3U1w-_Q652YrzmAIZde7bDIzAYq_rJ_HipIJm3BG7aHijyik0xbofY4IhhrNCZ5yaHs-hy9mkNpZAwL941l6QNwQRErsyVx7_ZKT6
+fvkvb_G5vav7QIm3tCpxdvBWrbhBCs21bG4qfh-1OSbZD-QL3WfHxTgdOj9iJ2l3IKI-i5HK4E5M8CTRJy5Gll7meBeBMGetMP9R5VbTcG1Bn98jENpWID83
+2KDVMCsRBA-BsGtzLX6CQ5T3nfDYg113F0xeNg_ekUZFl_UNXWLIwXMk8bf-z30cagdG-X9vUTntMErGe4D_YckqTMoJSK0nYAaexl3MSVoO5wnjXPmpnZrr
+Fn2p-ezgWTM4Fxy9BGBHtZL1ILrwwux8o6dPUrOexzxBLgiHjdyhkCdiZIgk47WRjWEE6NHj6S4KtX8LYLaTmoIQ0lwtnUI4YIaifMkOeuR2MWopnEt75S6a
+eqgymIS
+}
+
+AzureEntityColoring(DeviceUpdateIoTHub)
+!define DeviceUpdateIoTHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DeviceUpdateIoTHub, DeviceUpdateIoTHub)
+!define DeviceUpdateIoTHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DeviceUpdateIoTHub, DeviceUpdateIoTHub)
+!procedure DeviceUpdateIoTHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DeviceUpdateIoTHub, $stereo=DeviceUpdateIoTHub, $tags, $link)
+ !endprocedure
+!procedure DeviceUpdateIoTHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DeviceUpdateIoTHub, $tags, $link, DeviceUpdateIoTHub)
+!endprocedure

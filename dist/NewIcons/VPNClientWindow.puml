@@ -1,0 +1,18 @@
+sprite $VPNClientWindow [70x70/16z] {
+nTK7aeGW48NX9jFX_kVT3EKJHApTdR_Yf4zi6QMBNCYriZ3NaeEZHyKgXqgWtLoMStNJIIp3ggVR1PPfvUPyV9LvQfffNInobRqdoIskBCjbQb-DvknyY2dN
+cS3IifxKd688VHybkIeuFYm5IhUKGDGOsr0GQOpkA8WqnlOKH8WyY-Y6WaXZr3OKH1hpKE7oNlxyGYcboeQ2LNelmsWVA_ehYls6eh-Ys6ye-XjAiTSfp4Ub
+sa-gzvNgUQoebms5_51HJrjAOxWKPlr60cqg5E1c-ubSAL4-AhrCr9a3SbOYlTU-puI5mr8q4gRsNhXIsXhncAXu-ivF5EA-574JfRy_KMfRIcTGqSCnXLCl
+DaGDc9HxQcPChJBwyrHy1Cde6XLgfO5Ipqz37YY9MW6LZY23YgSUerBbMr5wBpS65I6Q3eOR0eenA1ctwJb3vPo7_NLEruhGeJnPoa99TCYT4LqhIb0HpDPA
+9iWZecj57M4u6LihYJ2SZAuLeK49aAKIQ1JlAPM6EJuY2XiJpsTImAlivuWwcfLnj1wHLgHvfIq5c1i8Cch8y7Idp1apODO8baKD640qqhgWy2D0nDETdDX5
+bUvMfeQsaUoT5PxDJgwEa4Ax9KL30-td1SRgw54Pnlgme33MXrMusJyiAeprMOwPbhq1
+}
+
+AzureEntityColoring(VPNClientWindow)
+!define VPNClientWindow(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VPNClientWindow, VPNClientWindow)
+!define VPNClientWindow(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VPNClientWindow, VPNClientWindow)
+!procedure VPNClientWindow($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VPNClientWindow, $stereo=VPNClientWindow, $tags, $link)
+ !endprocedure
+!procedure VPNClientWindow($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VPNClientWindow, $tags, $link, VPNClientWindow)
+!endprocedure

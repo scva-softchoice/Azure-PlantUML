@@ -1,0 +1,16 @@
+sprite $VirtualNetworks [70x70/16z] {
+xT87QaKX48LXfzYo__scE6FAoJCSGd_uKyNXkogtF7ktsysxd3TjD0gfSuuZetFEpY7000BC2LdCuzqnWs6Gyro7RHB11WnGo9bfFC8pF88CZ_0CZsGT608X
+60RX6KHuXaDuffqHda54JQLy9cPQejm4fZv2fFNtl6J-iMgoZRMflq_JuIIjhonM5giyjlH8aC7hMCzoCChFrn4rl1GWSOFFx-bUnGtxo0emqV3_AJxcoWDn
+Psw4rtSFnee7aWo-hlzytLHq8y5yp5eWcz4VxnUNw9Ah-l9HtKWm5b_mpQJZTlphnEhUz2oMm90980H380H380H380J38SZm2Clm238ymZCyWWo5y0oFy0o1
+hFIlEI6HFQd7RmH2CNeyAeN4f12RJzpjTdi3
+}
+
+AzureEntityColoring(VirtualNetworks(Classic))
+!define VirtualNetworks(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualNetworks(Classic), VirtualNetworks(Classic))
+!define VirtualNetworks(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualNetworks(Classic), VirtualNetworks(Classic))
+!procedure VirtualNetworks(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualNetworks(Classic), $stereo=VirtualNetworks(Classic), $tags, $link)
+ !endprocedure
+!procedure VirtualNetworks(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualNetworks(Classic), $tags, $link, VirtualNetworks(Classic))
+!endprocedure

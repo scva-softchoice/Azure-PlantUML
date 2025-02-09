@@ -1,0 +1,16 @@
+sprite $DataLakeStoreGen1 [70x70/16z] {
+xT57beKm34JHaeq2OV_hxP-J6emb9XrUJJaNiD7LV__nlAnaXDqj6t54yOtKeqoYZ6VbmSpSeSogYfVSv-nJH0NFgFjqbkrcbKRSLYPfXrDfH0X01F5A2F7A
+jDOe-nMJG4wH8nII7N4zGi5mW58WUMK07Q00DQyGm6bb021f1K1jA_fzSXi1O9NNYQXNDgiu9RfPKs6SAffK2AUeNkEWKl4QnHJ6Mn9JyDQW8QNWjQ8XXV6M
+nXIynJ6buhMgCKNv6hbBRYi-d9EMOglfUUmkkQtu2jQUqTkBzYWufRPPMn40R5cb0iNI2W6QLXGGIoi3gkMLGdQ4eWd5rLJ6SJItWDARdUQKTBzIGLx1APkI
+6Rhwxxyl
+}
+
+AzureEntityColoring(DataLakeStoreGen1)
+!define DataLakeStoreGen1(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DataLakeStoreGen1, DataLakeStoreGen1)
+!define DataLakeStoreGen1(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DataLakeStoreGen1, DataLakeStoreGen1)
+!procedure DataLakeStoreGen1($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DataLakeStoreGen1, $stereo=DataLakeStoreGen1, $tags, $link)
+ !endprocedure
+!procedure DataLakeStoreGen1($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DataLakeStoreGen1, $tags, $link, DataLakeStoreGen1)
+!endprocedure

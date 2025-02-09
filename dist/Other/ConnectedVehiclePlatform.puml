@@ -1,0 +1,17 @@
+sprite $ConnectedVehiclePlatform [70x70/16z] {
+xT9NWjim30JGGITy_mCdekH60uwr-vFstDiGnVZB_FSViPgPChv1uyRvondZaHFEenYBu6-7J78-fC8u9KOfS8QEXk64qI9yp4RBy1cn66-SdKYDllHNyzFB
+fh5m0Y3ZaVuw99yv9Xvv5qfuA_BPRGQMJqBGqrm43fmBHIjNtgQaeM6v6ZX8VXmpyWNN0vi85SfiY_5y5QX85eOG5NNs4zPiU7D4rCFjIDDJNKkBwgbHFPUJ
+FN6xexwd-6pN8oyv5O-pf_LzLFpIcZsnkqUCl1m6AdHf35Sb0AAJ7Kc6aZLrw0O_wPL5NXADKMI4xWG0wrqO6fGlpTWD0I1YjOFIXp7fTgVOYLqnFcXgX3qX
+p6f8b-2AvZ4FMoWTnEwOqD2OysXJU7bVX51YArDu4dl5AAWL-A1Mg3Pc5MrBcR0Ydum997wZiZ6_4mAn-IHOg6yKwc42yoipDRypOWjNY4zO7D_ns1XvWoGs
+Vfp3LGfhx4Yzf1GxvRAbcKqUEn4lYSJEuHkgfeiu6BSfXvcYM96Ou5OBMOduLWkhC6eIEqB7OnAyOx5Xj7Z66DvZDIMyGMeg-FFzzzyF
+}
+
+AzureEntityColoring(ConnectedVehiclePlatform)
+!define ConnectedVehiclePlatform(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ConnectedVehiclePlatform, ConnectedVehiclePlatform)
+!define ConnectedVehiclePlatform(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ConnectedVehiclePlatform, ConnectedVehiclePlatform)
+!procedure ConnectedVehiclePlatform($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ConnectedVehiclePlatform, $stereo=ConnectedVehiclePlatform, $tags, $link)
+ !endprocedure
+!procedure ConnectedVehiclePlatform($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ConnectedVehiclePlatform, $tags, $link, ConnectedVehiclePlatform)
+!endprocedure

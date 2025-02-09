@@ -1,0 +1,18 @@
+sprite $AzureOpenAI [70x70/16z] {
+bTPfcjiW48JXOkk5-nyuOQB718k2di__RElL3k2dtDIxlpBMyxEsZ4z9-zykXhwTaQG7ANr43APCft34Nean9WD8_aPiKpN6602D8LQCCWqvY5WopgIs8DGm
+nK6fjY9RO7mgJ2aZVa7qAKD7UyQEYCu0tJB-YXjQXh9rpeWkOIgg9-LWQE5A714iokemHB_BGn6YH962iCAHXf-QKkQEo8EWwih44P4FWh9N9XD1a8Gh795H
+nOmfLwG0iof1PKLQmlzbsJFyqWuZuoiHVYnxP1gpicSeKXDsyJDQ4McjbWHI4QAOYhIQ4KlEXw8j16NzH4v8Ie2fzyiY-SwqoCLDLqPEoXoHBYLP5TyfMd5B
+0egqoBMnhQ9J2J1rGRPAXCbwLwJYMj6h4dm07uGgaX0eYnFbOHfYvTf4ZIcI-NPZmtNufqhR4-queMdaO8he7d5ZJDiRQX5bCj_JY1A4AQFl6KrFIByiECZO
+j2hzeEX4X29t9Jz6kYBTE5E2Hp8KpjG3mXNRNjus3OfquupCTPXnP2h46SeqA3ALsQfKKxiZtUtTLA1sGQR20beCwUudXHehqkt0e51ZHLoTCv0OqgqwPn14
+UalEcRmO7Ea9ZJDrCJWYG39t0ib2KCG183jZT24OqZD6nPr07Z1wmR-IEkbkQ5hcFFizufzLyXy
+}
+
+AzureEntityColoring(AzureOpenAI)
+!define AzureOpenAI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOpenAI, AzureOpenAI)
+!define AzureOpenAI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOpenAI, AzureOpenAI)
+!procedure AzureOpenAI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOpenAI, $stereo=AzureOpenAI, $tags, $link)
+ !endprocedure
+!procedure AzureOpenAI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOpenAI, $tags, $link, AzureOpenAI)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $NetworkInterface [70x70/16z] {
+xTK7bi8W481Xo5Gqzp_lCYmfBmM3sFMtpAjVUd0FwPUlpgqZgOvN3ieLOTkkvEY0ekT-gxDMAQ7VBjnQ0Skl5S8nlQnWQgKmJBKeD1tH2oXqaoEYvhChISb7
+z1fA-GceKTOXIswjKB3uW0Aqh_IfLrImHk47AjHvZmM5EikN5N0M51INAoXveV3SfD1iaM64s3KAkF_05A2OBEAb8llxGabXoLKgai-Bj2daB6nKXA43beA2
+5XILgRA2Rwh8-ocQ5OsAdl_VzISRMR69VdeuTKjHLOcVfAZsCKrO7-9CIfoTtOKgwQEwhLXpHRCIIufcPMnN8NoCGcjbMjNQb1pD5UQrmXAhK1W0JGapHI3b
+BoWyAIeYIqKvrLKeiQMIEwwmDLDELoWC5ZOgAgb69NTCaVTHmkCLs5FIkougfpIcx5qdCwMpt4gfIzmYqb3_eQNY9LGdtgtoNMNUFQHVVm
+}
+
+AzureEntityColoring(NetworkInterface)
+!define NetworkInterface(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkInterface, NetworkInterface)
+!define NetworkInterface(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkInterface, NetworkInterface)
+!procedure NetworkInterface($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkInterface, $stereo=NetworkInterface, $tags, $link)
+ !endprocedure
+!procedure NetworkInterface($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkInterface, $tags, $link, NetworkInterface)
+!endprocedure

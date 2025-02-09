@@ -1,0 +1,18 @@
+sprite $VideoAnalyzer [70x70/16z] {
+xT5PTkGm28LX188Bx7_17Z98gfBQRZ_raCydZ_aFTKN_f1y_YgWP0DFAz0nN3BGyECFGFErK1_3-L-btc2zOeRiAV0dbUMJCF8yqe3lW5uokLR_4TANuDJnz
+ur6zVShpOxZ2R-5rmZp63_2OVxfg8Dvm4SGKQCfYefJ2rMDclcbql5Lsh35HBY8G5hJAZYtU2BtnQ8mFw2jbDe_LGWD4H_WWVbQQsJp6r6Zq-8Eg6aepdyVe
+2yUWya7qK9h5FC7jz_HSZWXWPsKaomp72w-YSVBoWfTlZbWh8qPCEEtYReK57ZDA9B447HgwCqIuIXrpXJIdmiTrgmTCJy8xPCS8EVBuREoi3PA7m5U49Nla
+OqDO4D038ZyRLIC_kGcVF3jZq_bGFmR8F2kihjhzZ_8ficEHdSe7KVCy7OD4XYgwnOHtbZr7TbwlhUAvKxLieh8W1p54jItNWxPXfg9c9zehzlooGfcBQvis
+p88JyffMpLynahpamYoUQqBakJ2k9P5BHCHv0NooN37QuLv5SwNGhiH5HlZWwrDEV6COGIu4VPAh32no8GfzuSY7WgafdezueK5zSevIyxI3GZEbmk-b7Chq
+z_lnOmC
+}
+
+AzureEntityColoring(VideoAnalyzer)
+!define VideoAnalyzer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VideoAnalyzer, VideoAnalyzer)
+!define VideoAnalyzer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VideoAnalyzer, VideoAnalyzer)
+!procedure VideoAnalyzer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VideoAnalyzer, $stereo=VideoAnalyzer, $tags, $link)
+ !endprocedure
+!procedure VideoAnalyzer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VideoAnalyzer, $tags, $link, VideoAnalyzer)
+!endprocedure

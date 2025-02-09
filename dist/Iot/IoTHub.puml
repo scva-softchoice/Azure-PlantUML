@@ -1,0 +1,17 @@
+sprite $IoTHub [70x70/16z] {
+tPS5hkim44KzUF_-D_ofS1Mdbc54VKVqy0ngqhHlnj0HSc19z6J5GYR_8NMBUcQ6rIoU3q8A5iiNSMwH97xDSSDYcQGByCBsB39e_q4k9nQjM4XGOkSMfQMT
+MvXC52nSNbZ5qaJ_aW3aq49aV41auxuOCAf9xJ_I5c1D1LXJ_LvxNHC0jAv984NDhUHI89zKFDvTlZCYYPrAB6UdZuYEVfyNl4qEIkWdkUM5c2Vzq8YecNja
+uXzvPU7v4v7eMBOmQM0cYUb2K9CHRgOYj-xQWYLCLGudhVoRsTRfmdRwRErYjkIKz2JOjScQk_iWMmTWvcwLWoK0WZuvlNMiWyBz6mNZ4GRqz5vst-tZZCxC
+zX0BTe9TskyhfyA9-O645OodBSDdjk41_udJrkuVnfz272_qaptfQS9ueuBwaeJoBOiENWLaP9dtnV0cvXO6ZU7xn8f5aXAI83AnFB28sz69IIvhsAyt1Kl3
+ss8tYygBvMIoqNB3fvf7Dj76bgKhP1ukhM0XFzhI4ZrnO95Uazg-cJy
+}
+
+AzureEntityColoring(IoTHub)
+!define IoTHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IoTHub, IoTHub)
+!define IoTHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IoTHub, IoTHub)
+!procedure IoTHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IoTHub, $stereo=IoTHub, $tags, $link)
+ !endprocedure
+!procedure IoTHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IoTHub, $tags, $link, IoTHub)
+!endprocedure

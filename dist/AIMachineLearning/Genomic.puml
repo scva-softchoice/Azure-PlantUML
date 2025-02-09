@@ -1,0 +1,18 @@
+sprite $Genomic [70x70/16z] {
+pTU7SS0m20LGEeRz1qvaaMev9zBV0FymM0t-DRGCXHji9WWRB1ynB94_KjYGWy4I-_0zARYR4iUIRzTovBqpnc23vc2qm3u8RA0ymO9MMtP43WuNueF25ixr
+DubNANlyhhE3mAx8oVM5-SbW6sSHA6m-8UoJBA4uCjGB0JHZYgfxEwHGzSRDdnb25_gOY_aBWS_WDnb6y2bigYyXmV09U2RC7FEppT36NipCSpgm7rACEB84
+DWTKZD_yFGTqc4yA4qPE3ll49xwkSswNGjUDD8zsQuytSg9UAKSkEUoXcWwzrog6gxCNceDs9WHNc8CtscAq48qfLMzlDVv-quKPtQX5Roy20LliMxehTvEs
+70Isq6K1b3nXRp7caZRsgEiQq3m5R9FhuQ7z_GNK9uNYEGbqc1UfGfeXHRqOIsPXADqOiyY8F17qaTMXM0BXK_Iux9Hz4YyfOIxm2JGY8YgZbbQNPOcHKHHw
+8hCueVZdOeuiXZ3mPs8i9qU08kqONltlQ7xYPbFYUCCdwvLoLSLqMgjq8OrYwFwUellNUCs1x_TrsHypqueF-diluVYMLtaEshhQNE57ATohXM69jll27ssF
+ilrYGuA_yG
+}
+
+AzureEntityColoring(Genomic)
+!define Genomic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Genomic, Genomic)
+!define Genomic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Genomic, Genomic)
+!procedure Genomic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Genomic, $stereo=Genomic, $tags, $link)
+ !endprocedure
+!procedure Genomic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Genomic, $tags, $link, Genomic)
+!endprocedure

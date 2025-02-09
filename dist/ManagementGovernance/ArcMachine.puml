@@ -1,0 +1,16 @@
+sprite $ArcMachine [70x70/16z] {
+xTDNWkCW381XYWh8llzvLoOTXHZPssV-bCUF7ao9-6EKmaJ4Ez6CmhjzPQM8B5qYrQcKjK-Aw9zFaHvX0A1rBTDAqS_I8GjiYIfbLj56IYsbd51G4LpMub9a
+xH92adNnAShO5F4fMZMLubV6_MjAQLLPJ5ATIXsy8v-o3DwHInc_WBz0kRuZbp9-HnwbbYghhI5rKgcNn5GlEPHHtyguhwdKlr_vLaJauszVIHcgx5G1SeeZ
+8IRGPfHMVWSrmgDeoHhJYa3BE16U4ey2-OvaEAneqI175BXkoKab1mswgbU1jhDTB3inT2Mp80tfOmZl58IJuQOGd8msXH7EXCHDESKWyrLXmkCJkIiQub53
+YrVbm7nGZMj18zQk4BfcSGs2blafsfKGYVWv32tWBjeieo4YNG6BQ8d7KOk7vN0l8XyBOj3EEH1C4OWT4QGmA07oH6W4Kyn8F8mmnp1RJ2a3Fd64a7CQ0Zy
+}
+
+AzureEntityColoring(ArcMachine)
+!define ArcMachine(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ArcMachine, ArcMachine)
+!define ArcMachine(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ArcMachine, ArcMachine)
+!procedure ArcMachine($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ArcMachine, $stereo=ArcMachine, $tags, $link)
+ !endprocedure
+!procedure ArcMachine($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ArcMachine, $tags, $link, ArcMachine)
+!endprocedure

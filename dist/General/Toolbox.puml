@@ -1,0 +1,15 @@
+sprite $Toolbox [70x70/16z] {
+xTDLOiGm34NHaAKdJVU_tevL39XT75_zdyGq_Sb6YwDWRir4PegsvIahnSjJDl_VeKgKBRZQlwmCPTxdxieSQBahoxnhibPkRFKASMFa5MwkL1dAK5npNbcQ
+-v-Asox7qRdDNOvNS9qydRhXkXzIXWAz7HFiOxPCOKZLdDuqGqhZJyrUiGY5o5afXX1GYY1mL36eGIc2EArOwA983uKa5Z8LTFaNALQ4wRIWSaLL1Ni86ayk
+bICacYYa6CJE8aqbGSKo25h0d1LBMBICCQKoy6kOJAbDu1Fr2hGnU6L58x9EVw3HCm
+}
+
+AzureEntityColoring(Toolbox)
+!define Toolbox(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Toolbox, Toolbox)
+!define Toolbox(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Toolbox, Toolbox)
+!procedure Toolbox($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Toolbox, $stereo=Toolbox, $tags, $link)
+ !endprocedure
+!procedure Toolbox($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Toolbox, $tags, $link, Toolbox)
+!endprocedure

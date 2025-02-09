@@ -1,0 +1,17 @@
+sprite $SSHKey [70x70/16z] {
+xT85bkCm48JXajoWdllVTy7UDuPAET4o_M7mzqJuLVslTVE8p0Yt_hM6vobhtsBi6IQpVDY2cJn5FZ6RI5aql5ZaJJ61V3FZISrlLS-dpSn7PzD32NTs9uSI
+jXOpXwyjdia8Cm7P4fc42AOf8zS8YKyHewOKWzekFhxRiod4nffT6GVNKY4-rlpAvD984SXfB3Ifj3Fa6h7SBY26vjKbik-HOBBHV0YXc1aTMmiXQJSbCM8e
+RZVH8gwJQeEoBRzaMpHzVCgaadNETuNc5Ao8_J2X980iokzcv4LreBYycr4MvQj2XPvH51V040mbaHgqBiGmmW5Hcc54ALQAqGZFg9Ke617HWI664Su1BAKP
+tszHievF3StuUr4wVAwNx2N4iHPlebt9DrdXIqChyPHPG0mf8vymWRsSLnW1N2gtYEDS7tTAg3MXh1ufmzUAYN8yp68yKfYf6jvnKslzlUMWMD_3NBjYuEOL
+V4CHOyJQzr7ykoXXltei7l7j21eXtyA0csSQlWFJy2lxtqS
+}
+
+AzureEntityColoring(SSHKey)
+!define SSHKey(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SSHKey, SSHKey)
+!define SSHKey(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SSHKey, SSHKey)
+!procedure SSHKey($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SSHKey, $stereo=SSHKey, $tags, $link)
+ !endprocedure
+!procedure SSHKey($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SSHKey, $tags, $link, SSHKey)
+!endprocedure

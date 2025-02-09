@@ -1,0 +1,15 @@
+sprite $Alert [70x70/16z] {
+xT87ReH038LXjx7D_G-SCbeJDUfBihGVMHLzC8NkqnCh57V47CpeAuSxasBqoX15If43AOeekbw9YAdvKIActwElOgPHiPZfVnGhfHr8SKHfHrJY_Oh_gi87
+K6AraZEL8ZdN_oZvKlH0Yc4AKwzXYbil8QMwak8geWugGTyng3JgnNMKx0Z_snb1FShy_RRC8O49ePxCfqEEZzFkE8Qg4P1ZIgLP2XH7ALXU2fPbAL2IfM0P
+qwrx-WG
+}
+
+AzureEntityColoring(Alert)
+!define Alert(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Alert, Alert)
+!define Alert(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Alert, Alert)
+!procedure Alert($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Alert, $stereo=Alert, $tags, $link)
+ !endprocedure
+!procedure Alert($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Alert, $tags, $link, Alert)
+!endprocedure

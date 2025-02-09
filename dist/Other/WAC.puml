@@ -1,0 +1,16 @@
+sprite $WAC [70x70/16z] {
+xTLdSeGm38RX1LkIstV_usxl8f75EZtl37yVm7KpiDdEHgYZQ24pzVIQygz8gRh2FYK3hKANFKe2E4RAK8b3QSZn45JLeG1oLAfIsgSh5UM0q6j_9CVPaFhA
+w1wPvSIvTbFM9VhVqomwTYfSiLHbZy90JPAXQjob13fKKEC-XYgxzhJ4GqqfpV4j01-LibQnpXU7aazdNO4gEHGgG6lhpztmxXqWv52CFarXOZOVMp4Re-HI
+yrqohL5gUwhEVgKsLVKhhTN7SKcj1QyYG7bK222ladwJ8iTIIY9q5r_kXZZRYdGqHfc7AC5IP8oIElg32iqzMKhST3Gv_-ZoLaxtnS6Al55-A5oKV9zNaNYC
+yh8o6OfAAqScB4PzYb7uVKhfQANohqpKqRmPrWu
+}
+
+AzureEntityColoring(WAC)
+!define WAC(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WAC, WAC)
+!define WAC(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WAC, WAC)
+!procedure WAC($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WAC, $stereo=WAC, $tags, $link)
+ !endprocedure
+!procedure WAC($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WAC, $tags, $link, WAC)
+!endprocedure

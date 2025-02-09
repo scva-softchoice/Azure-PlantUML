@@ -1,0 +1,18 @@
+sprite $Advisor [70x70/16z] {
+xTO5ikqW30PW9099zh_TPzIWabD6djtlkfn_GY1CmuGlAGCY4IBa62PbEi8y4H61HfZcwXZXktK1tNYpBAHRC1CoNmtGeyzwdCWHWo-I1oRMCrSC-VnYCldm
+kIKPoE5kKqPo-6Sc-Xb-OpAzWNCXeycGMec8HQYvklkI7sAcfQXPlR_xoAMsqDix2-XHAIosqIfQnXttnwybI244AiiF5rkEVeeoB4XQoXWJoKsfS52w54eV
+RH2h2NJ4b6ddzvQugYb11zLKU9WfTuS51hLlJKlnMbjWm7rASbDOpGW6Q5rdm4sXQWedQfLsE9aYNGgvXwwe6S98ptiD_43jkYyclFcLald1xHwDAO6VY9hY
+gIqglCCsZVpaF07LjF11ReF4ZsHO4xVbx6Bu1RqK4uG5YWqf69heffWkvR3--eaFKWjnjgc8535J5L4rKn4fOoaDy1D2L6ksnevTyLk3YDLCQr4pkGxngo7y
+GOIGYewbfD1BNAunheWNPT4gwS5r3k6AXnHi8QDCvGp7b1R349-Uff0wU9K2QOZm0AuItJJL5t4JSJXgCwNWyOZ7sLBWEFmGtiYuoTrz5jx0NGg1veg9k8jj
+J6Rwct3JtI0KmrGC_2pD2V7xcyCFJeWVqvuCdDFYnRJv1IV4ZMdVEKFaZG6qdNT2l9ZSlc7EOLvQlwRmf_iE
+}
+
+AzureEntityColoring(Advisor)
+!define Advisor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Advisor, Advisor)
+!define Advisor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Advisor, Advisor)
+!procedure Advisor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Advisor, $stereo=Advisor, $tags, $link)
+ !endprocedure
+!procedure Advisor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Advisor, $tags, $link, Advisor)
+!endprocedure

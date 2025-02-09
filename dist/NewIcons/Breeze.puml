@@ -1,0 +1,18 @@
+sprite $Breeze [70x70/16z] {
+rT59ckCW38PXOH0QtFS_RuTIPl8BfxogBvjCVXy9wA-qrTguZxXjz9jAvNvB8YvV4gq_9O_g5ukCAG0ZVDJW3fIeqRh6AqMqBGSPBH0tfQpAeQICkPcLV9jS
+2MIq9SXQKNSB1YFH2eaAGD0i4nB1WyNAZ9Y2AmRAZ4H2hnK62aAYYWu5pw8-AGRsmOgvsrG7em0ba3bmF-1SF91ic0QL226Z1x9I52F6T8qvLooGV9YIpnBd
+YYkXy3l2U1kyae1PW05MKZHB6AkSHflnnrd43XdcPIZTTPv5rFqGSec7elxAN0G3XBllZ_oQ3CNyagdqBg81V382y9VYi_uevdCV24TPABOaFCbkYc729WBE
+WlDehMXkhDDKyOF9K2GtrlMXzBCA3wNbnBfAexDA0Of_5VsafmoNKFWKuesYRv5zdnPwMSaJPB_qBrwZ6oLqhQsGVIgWkETR5W4058pHlHu44613gVJ8315v
+hlHKWqIUR_IS8IDFwQKD67bERtLiu9ZUOtVp_TytYDASA31GHf_o_HmI5JkxJgJ74I5SFufqogf-26cKLtHjMA5bRM5ueoCLzhD6rC1U5iO9oAKL-aMLHKSY
+dMkXFz9_
+}
+
+AzureEntityColoring(Breeze)
+!define Breeze(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Breeze, Breeze)
+!define Breeze(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Breeze, Breeze)
+!procedure Breeze($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Breeze, $stereo=Breeze, $tags, $link)
+ !endprocedure
+!procedure Breeze($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Breeze, $tags, $link, Breeze)
+!endprocedure

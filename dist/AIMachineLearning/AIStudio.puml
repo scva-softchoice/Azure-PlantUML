@@ -1,0 +1,16 @@
+sprite $AIStudio [70x70/16z] {
+lTHNakCm38HXCOX4D_V-vzrn3eGDGeEQt-zVgLqIDgEojtwFWprjtdAJKtVat_WfEv6JySoCSt0PgSkZ9sLK3oAlFHHnA5tUkYjSHtPWOiQrlBm7mEHS7uMx
+ur5cvqISabK5K1ZosY9Iy4XHofhIyDoaDD-WQ--AE0PD3k-b5QK3caFV7mEjXmAqpQv2xmHSymxIooQIO5SNtdwxRYf24bOY4002QIgIUGhh5NKGdKpL5F3Q
+RvJCHyULngSEA-1p1vN2zuueZLC75539gnJg-PJE3xaKVioXL7vfMUaHIkBN5fLgAvn_xugO2fMgQn1rX4MvJ_wo_VRRGRbF_bh8e1Gng4KCaka-MOqn-5RV
+tg9VcJ_4ubGWhTW7TqusEqOeXMRTLdg8mWYbXYWIeIH6A3L44IxK8WQn6ihklAzwyD_NkSo8lwLv7-Nue1eng6y1Wn3nEIFzpNsgD99Y2DQPW_IQDhl_
+}
+
+AzureEntityColoring(AIStudio)
+!define AIStudio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AIStudio, AIStudio)
+!define AIStudio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AIStudio, AIStudio)
+!procedure AIStudio($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AIStudio, $stereo=AIStudio, $tags, $link)
+ !endprocedure
+!procedure AIStudio($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AIStudio, $tags, $link, AIStudio)
+!endprocedure

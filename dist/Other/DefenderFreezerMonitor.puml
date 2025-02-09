@@ -1,0 +1,16 @@
+sprite $DefenderFreezerMonitor [70x70/16z] {
+xTW5pYCn38PXOnBt_WVU3CbIEVbcVtvLeQMdmqHNiRmLqxEaXpeiSW8ZGp62PFzPmLU9VuL2FLJXwwrkfHOTLQvtdhTUrJ65hvMsvZDAJcnJAgR8fXHGyLLH
+K14hnLKmvT7yJocjDKEL6ak6AHfh5LDiKnfw1goAWugjAmIV0UfkKsS0dt6ykFCfYfolUC4LAxMvJoXccv87xvp2nyHSjNN47LAYQGdrG1IFk2o_ooNQgAAQ
+nqiDAw4rJ035mpkasXgYg4hfgpDu7Z5jIewyjMXrI25AXKYsQgYCA9JAsjHvHDSAJIXqgp2Wc37jZIevPpF9-Q2II8zHnRndj3UfiA-12fsZYFTaKicvg7BE
+PvJhWACEKkG1CgZmpNH64RuUJYZNAtN6C-R7lpVId_8_lvmGGqW68FZNhNy
+}
+
+AzureEntityColoring(DefenderFreezerMonitor)
+!define DefenderFreezerMonitor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderFreezerMonitor, DefenderFreezerMonitor)
+!define DefenderFreezerMonitor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderFreezerMonitor, DefenderFreezerMonitor)
+!procedure DefenderFreezerMonitor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderFreezerMonitor, $stereo=DefenderFreezerMonitor, $tags, $link)
+ !endprocedure
+!procedure DefenderFreezerMonitor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderFreezerMonitor, $tags, $link, DefenderFreezerMonitor)
+!endprocedure

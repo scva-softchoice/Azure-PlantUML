@@ -1,0 +1,17 @@
+sprite $AzureOperator5GCore [70x70/16z] {
+xTHNckiW38RXNrra__izPMmo6EJKMxzJqxv7u88pbyk52DzXqHr_cYBH0yO7H1U4TsdtnJYaQjMNu1rg9-IxI4TubTWvnOl87f7lHkderL6-7KRKdlfYBI_l
+B-ah3G98r4o5KM0x8KJzyZG5sAEJbrUp5xOI0HO3fvSc4G3Y-qU408uZUk7m4iXYO0Jo63a6Lb50OsA0pKzqV1AnMFZyB3qU1V0eEE0vCEp82mJBZ5n_79I3
+m4vyfP0yeT0S43PQZXAvCBNy1uVN61khHj4Y0Y3MOLpFAenoAVlEWl8WkAw0SsMz8ijofQeeB8-O-RTYi9mmr6S2pmC7OFTAGDea84Kb7bKIt6QCQdCVLeZQ
+p615fNK9mE-LQFyLbG0NAnfU1dIgWDi2iANYZoe9QRDShqU3RIz5jEmLlrSSrcPUN93xo02qg2YopQIu8Xcz8aM5w3RBwlQWi74MYtwWSblG76cC3NiCNq3x
+9yrR2-s_NBTHqEQAu4xYbq3R2OFEamX6uj4H_DQghm1DMsAO4RFyO21kXGI81tWggiZxV8u4Fi4vxUA7nDkUSC5NY9dmoELo-Gi
+}
+
+AzureEntityColoring(AzureOperator5GCore)
+!define AzureOperator5GCore(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperator5GCore, AzureOperator5GCore)
+!define AzureOperator5GCore(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperator5GCore, AzureOperator5GCore)
+!procedure AzureOperator5GCore($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperator5GCore, $stereo=AzureOperator5GCore, $tags, $link)
+ !endprocedure
+!procedure AzureOperator5GCore($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperator5GCore, $tags, $link, AzureOperator5GCore)
+!endprocedure

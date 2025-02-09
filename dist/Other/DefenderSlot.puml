@@ -1,0 +1,16 @@
+sprite $DefenderSlot [70x70/16z] {
+L8tL0S0m44BZjAJ7_jlMO-_d570XerEoTuregdUfUWjbiP_y8Tq5QgK4B9J-kelRNJPolmiezbDHvLF8fsIQPQpqHCejMEqj59SJzKdzGthQr4uPRg7ataRu
+vPJn4jxXQiSyK228OHYOdiZ_V_1Xs4xNAjU7Pjg0bPxaPGqCaonKBczdgTcfYuKTemK-tKaMFfS5IRfDED8lN4V3MInUQYnSBXzXwNQssDZ7n58uqcrMkWoY
+ZZv_ZFvZz1-ZhB7m7G43M2nUS-a2E5Y0fh6G7Lqj371wS_fDoyBDZXRuTFKMVKTyklynKblUUeoec-exfMiNL1Q6EHPkZ6RcyXyZICPes9b2vPBj1BWVfP37
+mT79twq7
+}
+
+AzureEntityColoring(DefenderSlot)
+!define DefenderSlot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderSlot, DefenderSlot)
+!define DefenderSlot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderSlot, DefenderSlot)
+!procedure DefenderSlot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderSlot, $stereo=DefenderSlot, $tags, $link)
+ !endprocedure
+!procedure DefenderSlot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderSlot, $tags, $link, DefenderSlot)
+!endprocedure

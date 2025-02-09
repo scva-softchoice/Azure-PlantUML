@@ -1,0 +1,15 @@
+sprite $Commit [70x70/16z] {
+xSm5OiCm44JH5IpOzxzlmQ3fbji99zyeUd9D5RF28_vIuH4m1C8pnKU5GL1X45GO11K6GOL020O8mG0X62040uHWW31CKTlo6Fa-fqN-M8LI1LsIyb2cs2zA
+6HrSUIZjGCgyNumoZzf3GKL7HGxMeqUrqLNfVe2w-G4ol-MibhrgoupsaVfIclYqBgYlCstKLxOXyqzJGVgvOab1WIifoqnINcUo4hXGLbvAoZAHb43NgtX3
+Vd1bGabPPjugoqHIfaypGVPlnGNvwhRHoaO76zEXcm_op0Sf3e5uEm0JLIwePm
+}
+
+AzureEntityColoring(Commit)
+!define Commit(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Commit, Commit)
+!define Commit(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Commit, Commit)
+!procedure Commit($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Commit, $stereo=Commit, $tags, $link)
+ !endprocedure
+!procedure Commit($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Commit, $tags, $link, Commit)
+!endprocedure

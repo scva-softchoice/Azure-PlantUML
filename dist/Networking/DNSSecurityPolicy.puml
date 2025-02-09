@@ -1,0 +1,22 @@
+sprite $DNSSecurityPolicy [70x70/16z] {
+fTK7Tkiw38JXOPq1zh_WTq3H2iN8ljRBVsiAlmCYBhYfT9cvczXgnl-goIyP2nwM-ZngainiVbJnf66On4ZZNutHxFjvYeqBKEHhYl71S9JmLPo6YNOM7qxd
+ct5IVAUea7GY8SOTXzF-ZTWuVXonfK7wPBv3tEUvizCaxP-CpTlCOslKShUA3_6SP1jbLKdxkE8w48xpsfN9YXJT3UzAxaxv-4QHSUIdK2GoBCczVtZ4whKJ
+ahh6Q0uOTyflHp5Q8CCHjqJ9PdJNsr7YFgUojswAUZTCZE8lXT9dnfsugQwZcDvqAkQURXJDhUm8ez-CxXzwxk90nDux9z4wHxqV7zOs7Tx-i8kxD1ICKfF4
+3XmCYgIAY1R9xXvvpNrU2CMaNf39KD9Kg8xSnVQwyzrY66iPeIXgAA5ar9TIeEXdCULskUwBeepEZfhG3uK5N1JUhTVSvd9VIaCDfI5DfG7ztugk2f53OKOz
+55OWjrCnRm-K3lH3KSz0-L7w5pVgA4DXHPwAn8psOHRzKYhQeJ2X7Kg4F1M_KRWhHE9KEd8g4r5A7xRRtMcBmeJ-KbY0bzBcOdJxsb12yQ6aMaj6wZeL9XGg
+fHAVrw6m9FmgdS-Zd85KsXY8gJ5ggLAz9gGoaJ8EfNS_f4Yl-9Dc5ZKWbSwebL-BkMLsX1L0vLalsvNkNdPvVa2rd12bphMACyOmgx8Zcj-TwiMutgkimr3Y
+biY4payr07PkHeoqnYWbVgm3o7wyKWs0fZqALwNNKdTbliMAL52otQ5TbOAexKhSQHXJMHqpRah6KTsLxEvJ4UsQg8lI0cWnJzyKb5WDps7MIBie6UW7LdSb
+62TlXX5rA1AFJIDV_fL2MHZD_UwZXA9NG56KaJKBPM6CrChCoPI-Lf1jZ4E92oAHtojHyvX734ddOrdcE1LM8DSe8LNUADC9I1n95WCkIa7w2UrEYQhvdjLL
+mMdWLfdbnaLIom2mADF1eZJSbdAfhPQSCEkhWZ1MfUAx6bSbMfM2xyeV5NnRVw-muTiAtoi93uTfUOsFTZitSn_nfCPx9EDH_HQfU5QYP6QNFsp0SyQk1VAS
+wVepiZCwaUSC_un4ZPf8mH-gL1Wzuq_bJhBYpzLzaFy
+}
+
+AzureEntityColoring(DNSSecurityPolicy)
+!define DNSSecurityPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSSecurityPolicy, DNSSecurityPolicy)
+!define DNSSecurityPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSSecurityPolicy, DNSSecurityPolicy)
+!procedure DNSSecurityPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSSecurityPolicy, $stereo=DNSSecurityPolicy, $tags, $link)
+ !endprocedure
+!procedure DNSSecurityPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSSecurityPolicy, $tags, $link, DNSSecurityPolicy)
+!endprocedure

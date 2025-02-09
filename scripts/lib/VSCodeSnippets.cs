@@ -1,6 +1,7 @@
 using System.Text.RegularExpressions;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
 
 /// <summary>
 /// Provides functionality to generate VS Code snippets for PlantUML diagrams.
@@ -12,54 +13,65 @@ public static class VSCodeSnippets
     /// </summary>
     /// <param name="distFolder">The directory containing the PlantUML files.</param>
     /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the snippet generation was successful.</returns>
-    public static async Task<bool> GenerateSnippets(string distFolder)
+    public static async Task<bool> GenerateSnippets(string distFolder, ILogger logger)
     {
-        Console.WriteLine("Generating VSCode Snippets...");
+        logger.LogInformation("Generating VSCode Snippets...");
 
         var snippets = new Dictionary<string, Snippet>();
 
-        foreach (var filePath in Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories))
+        try
         {
-            var entityName = Path.GetFileNameWithoutExtension(filePath);
-            if (entityName == "all")
+            foreach (var filePath in Directory.GetFiles(distFolder, "*.puml", SearchOption.AllDirectories))
             {
-                continue;
+                var entityName = Path.GetFileNameWithoutExtension(filePath);
+                if (entityName == "all" || snippets.ContainsKey(entityName))
+                {
+                    continue;
+                }
+
+                logger.LogInformation($"Processing PlantUML file: {filePath}");
+
+                snippets.Add($"{entityName}", new Snippet{
+                    prefix = $"{SplitCamelCase(entityName)}",
+                    description = $"Add {SplitCamelCase(entityName)} to diagram",
+                    body = new List<string>{
+                        $"{entityName}(${{1:alias}}, \"${{2:label}}\", \"${{3:technology}}\")",
+                        "$0"
+                    }
+                });
+
+                snippets.Add($"{entityName}_Descr", new Snippet{
+                    prefix = $"{SplitCamelCase(entityName)} with Description",
+                    description = $"Add {SplitCamelCase(entityName)} with Description to diagram",
+                    body = new List<string>{
+                        $"{entityName}(${{1:alias}}, \"${{2:label}}\", \"${{3:technology}}\", \"${{4:description}}\")",
+                        "$0"
+                    }
+                });
             }
 
-            snippets.Add($"{entityName}", new Snippet{
-                prefix = $"{SplitCamelCase(entityName)}",
-                description = $"Add {SplitCamelCase(entityName)} to diagram",
-                body = new List<string>{
-                    $"{entityName}(${{1:alias}}, \"${{2:label}}\", \"${{3:technology}}\")",
-                    "$0"
-                }
-            });
+            var snippetsDirectory = Path.Combine(distFolder, ".vscode", "snippets");
+            Directory.CreateDirectory(snippetsDirectory);
 
-            snippets.Add($"{entityName}_Descr", new Snippet{
-                prefix = $"{SplitCamelCase(entityName)} with Description",
-                description = $"Add {SplitCamelCase(entityName)} with Description to diagram",
-                body = new List<string>{
-                    $"{entityName}(${{1:alias}}, \"${{2:label}}\", \"${{3:technology}}\", \"${{4:description}}\")",
-                    "$0"
-                }
-            });
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+            };
+
+            using (FileStream fileStream = File.Create(Path.Combine(snippetsDirectory, "diagram.json")))
+            {
+                await JsonSerializer.SerializeAsync(fileStream, snippets, options);
+            }
+
+            logger.LogInformation("VSCode Snippets generated successfully.");
+            return await Task.FromResult(true);
         }
-
-        var snippetsDirectory = Path.Combine(distFolder, ".vscode", "snippets");
-        Directory.CreateDirectory(snippetsDirectory);
-
-        var options = new JsonSerializerOptions
+        catch (Exception ex)
         {
-            WriteIndented = true,
-            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-        };
-
-        using (FileStream fileStream = File.Create(Path.Combine(snippetsDirectory, "diagram.json")))
-        {
-            await JsonSerializer.SerializeAsync(fileStream, snippets, options);
+            logger.LogError($"Error generating VSCode Snippets: {ex.Message}");
+            return await Task.FromResult(false);
         }
-
-        return await Task.FromResult(true);
     }
 
     /// <summary>

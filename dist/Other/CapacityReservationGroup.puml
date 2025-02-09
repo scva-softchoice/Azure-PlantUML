@@ -1,0 +1,18 @@
+sprite $CapacityReservationGroup [70x70/16z] {
+fPGBaeGm20Nz942S-vztFzIkE3maKjC7w4g3kCnOztrTYg13-SopxNzi7py4dbDsWASS0soVED1JZy6i-aEGhUB8FVMOrgfPApw4c0cVivPYEYiTFOKOFaco
+m04n1cI19uanvbbR5fDbRPca4OSGUipIafWygz75qbhYm2np4Arc-IMAoRCweQN1ThCiTO15SJ6PvpScjdGMUIQHO_2DXKLvulXbWCKaSuqCbQW6BKCUUKx7
+yGejOyX96gEyNZSMy62CEMuj2cPXZ3fI2pu7OwOMzA0ZitHH1MPXZ78mM1IAdkEsUoBXjwjmv8bY1j6zXIJ8GiTnoBs5j43yStpCeO4tHVq_m6UvXvn3uiWY
+9oxhVJCNuk-58u_8ED2XvkGQCSl7g2EznYWhYfbU8tZ0KRX6sxewNCpCWkEnWSokqJv_pC8OPH1O_5KBkpE23vYJEugoefZuZhAh3YywiSG_g-3tb5iKSbVj
+1c8nYGMpeXXZETcRWLbN1tj9MupD19Y50p7svOqTFTuYuEZhubWnYw-MWOxDEomBnpEFUPBbOd2gGHPk7MDm8FEi9ARWIM8AMKbCxhctm7QVPXK6acmzZ2bd
+HPzgFIkAgMVfTeinkFKeffxr8EOR
+}
+
+AzureEntityColoring(CapacityReservationGroup)
+!define CapacityReservationGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CapacityReservationGroup, CapacityReservationGroup)
+!define CapacityReservationGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CapacityReservationGroup, CapacityReservationGroup)
+!procedure CapacityReservationGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CapacityReservationGroup, $stereo=CapacityReservationGroup, $tags, $link)
+ !endprocedure
+!procedure CapacityReservationGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CapacityReservationGroup, $tags, $link, CapacityReservationGroup)
+!endprocedure

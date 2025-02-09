@@ -1,0 +1,17 @@
+sprite $SQLElasticPool [70x70/16z] {
+hTY9QcmX48JXg5Mjrli_y3qSd6dm2jCq_jaZV5d7xUzNaF2NpX5dyiWRBY3Ef15dyeY72qYQWRQGH_AC8sneRrnC0XcbOTNAs9We8YkDj2Uo5TF6114PqT2U
+QWDD6nD4PC0J-RunEHD3NF5CpaIHin9de1zAXA5-Aq88EIjXXeefGXZPbI13nHKXYAW3NbU4SSGpHqoACDIfqT-cJk609EA6c5BnY4mZdcXJv_eQxyxio4J5
+ghLnCEZZrPnnPCrju1jG8EsDKh_ZjNxa3L5dg-0JMZtzQITRRPzno9c5BEKpin4uAkyuGGAkY0jnnJihy2HdgBJYKJSKtL5uG-6Ltwx_aVAA_yFa5V_dJIkE
+E3E9RvpwFuFN7TddgDdjhU_6FZxaY4UbugKPCyICOKzZI4el0YorlTN28n9XM7mljPZ4ucYrDEjFraer9HTg0z7UG6mAhkuyxk-2F4GKNDuTtj-ftjyrExCh
+kOF0hcGE9MS5YLCMu8tqOMrssajOdzc3ushEguTON3wLvnbSlgt8CxXwYvDd7Cc72F8F
+}
+
+AzureEntityColoring(SQLElasticPool)
+!define SQLElasticPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SQLElasticPool, SQLElasticPool)
+!define SQLElasticPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SQLElasticPool, SQLElasticPool)
+!procedure SQLElasticPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SQLElasticPool, $stereo=SQLElasticPool, $tags, $link)
+ !endprocedure
+!procedure SQLElasticPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SQLElasticPool, $tags, $link, SQLElasticPool)
+!endprocedure

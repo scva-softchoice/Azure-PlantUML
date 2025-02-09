@@ -1,0 +1,15 @@
+sprite $Bastion [70x70/16z] {
+xSzPbiKW28HXY08c-zzlZsNF4i-jdgy_xzyfvFBSLUWy8bHuX6UyFHJA8SWu16qBGV7Fa1tz1WIzHnPIP5mjmYCUKMLScq8i8cFQWSuGC3boP4WDL0a4oeYf
+fmYorlk0iOwuoYnZyZO54cPdZ2TCxSW4apnLEiAjAK18HiskczbxNyuinlyHS-muakbj31DTCRcSATQUjsHCZXWO5qcP7043PCXeYe0naPJ94LHbdCuYcsHf
+8H7qAv65B6GXGYAeq0WO82G3X6Kev1O
+}
+
+AzureEntityColoring(Bastion)
+!define Bastion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Bastion, Bastion)
+!define Bastion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Bastion, Bastion)
+!procedure Bastion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Bastion, $stereo=Bastion, $tags, $link)
+ !endprocedure
+!procedure Bastion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Bastion, $tags, $link, Bastion)
+!endprocedure

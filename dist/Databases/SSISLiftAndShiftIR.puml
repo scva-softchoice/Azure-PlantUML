@@ -1,0 +1,18 @@
+sprite $SSISLiftAndShiftIR [70x70/16z] {
+xPK5jkCm34K5jcH8zx_S0QNld30Dp_-tJBVFaXBJ7Wpe0RpFZol0TOM8ggO9gYBNF31esaC5eXC756SYsWIESnIQXn8Wq6nQ987xQPvRpajhPkvUlkFkPfQN
+ArfRqaoJlTGDYkTfbvIMc69Or63On164fQqj7MbOibUmog8Cf6zPklE4PDD5bUAMnn0WzsrBRucladhVjWGkV8xatlSjGJCvLk2RknPGBQciPAAvT71k0QqL
+jw2qxtHmppAd_x3bFyi2FklocUKlj7psQ1Y67ymolDuC_2mB5A388yjhIRblGP0fxQO5achAnABb5VHxbb7IX0ZOQBrZ6MjYD4N3R3SiaCpWqCXbItpTQOcW
+KUSMH1dYxpdk0YBA27DgGLMKYDrTYP87HaGTOIvOXlTe95X6X2WXv0KBIhkmA15XIHSjkcc99QLp2yh2f6hnqwZkTrDMfHenBrk84I1G3yBYJxB04bdQlIoe
+Y-MSTRIWBlbsZu842tfqSrwMbXZUExChH6nJ2sQtNZwECEZCJ1CYIiABIyTqsZwcErxfcQM_qAOfl93N9-SwxkyeWDkrysvb8k3hpOtBiGKQR6NYxzT2CxHU
+t8-6K8vqI9QU_NrwEDaR0ITlr_VffhIB9A-RMQfdLOTeA49di6WsBu5RJYfCRoHbiyIqu2i
+}
+
+AzureEntityColoring(SSISLiftAndShiftIR)
+!define SSISLiftAndShiftIR(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SSISLiftAndShiftIR, SSISLiftAndShiftIR)
+!define SSISLiftAndShiftIR(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SSISLiftAndShiftIR, SSISLiftAndShiftIR)
+!procedure SSISLiftAndShiftIR($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SSISLiftAndShiftIR, $stereo=SSISLiftAndShiftIR, $tags, $link)
+ !endprocedure
+!procedure SSISLiftAndShiftIR($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SSISLiftAndShiftIR, $tags, $link, SSISLiftAndShiftIR)
+!endprocedure

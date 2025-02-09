@@ -1,4 +1,4 @@
-sprite $AzureAPIForFHIR [70x70/16z] {
+sprite $AzureAPIforFHIR [70x70/16z] {
 xP89sgiw34CTMmfl_oj-7-1MRS3Gt7aw_rWm1ybWFuv_D0yWl5sSpu4I1uMVA882vo8FlXE30tm7TYIKv3HFy8WV9KvnZ0EACgwxHpacoRKcAWjzbDIb7AM5
 BNTI8GlJKemrYhgJRnOlCuEY3iFTKWqhIXrc3-ogD0lqFeKgpOAMXKXyHHX_MXYv6SGAM50knjEuWl07cBD4rlEHc6aKb6RM8mkOXAv4VEw1jz4Iv13jKqll
 dUlFTitwV_wa9y-NFv6M7UGLujcnN-7k9akuUn_8E5SQxfQG9OupSQU1Uwii8d8v5RvRlB8aaAOkP4qMBmTFxg1xsmfrJqveTCfCYs6Tcr6LybpBHIM18Wny
@@ -7,12 +7,12 @@ dv9c9r2TFBPnL6MsCswdz5VDw-CY0d9ar31HR3XvlJ_oU4Q4YLgZzRZGGKdkDD2wvQ0a9TwNbKs3PUFT
 Of3CQPYI_QZRn_0z3SB1PP1CQ-HhDWLE9JPB72MqUTee2IkOULHkNmYBlKuI5okPRnNsbV2_PMdsrGJjj-9_
 }
 
-AzureEntityColoring(AzureAPIForFHIR)
-!define AzureAPIForFHIR(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAPIForFHIR, AzureAPIForFHIR)
-!define AzureAPIForFHIR(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAPIForFHIR, AzureAPIForFHIR)
-!procedure AzureAPIForFHIR($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAPIForFHIR, $stereo=AzureAPIForFHIR, $tags, $link)
+AzureEntityColoring(AzureAPIforFHIR)
+!define AzureAPIforFHIR(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAPIforFHIR, AzureAPIforFHIR)
+!define AzureAPIforFHIR(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAPIforFHIR, AzureAPIforFHIR)
+!procedure AzureAPIforFHIR($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAPIforFHIR, $stereo=AzureAPIforFHIR, $tags, $link)
  !endprocedure
-!procedure AzureAPIForFHIR($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureAPIForFHIR, $tags, $link, AzureAPIForFHIR)
+!procedure AzureAPIforFHIR($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAPIforFHIR, $tags, $link, AzureAPIforFHIR)
 !endprocedure

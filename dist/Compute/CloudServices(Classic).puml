@@ -1,0 +1,18 @@
+sprite $CloudServices [70x70/16z] {
+xTC7al8w40JWdjopzp_mKtcfif3PHV3IdpvoQiOj2p-vFyGYQyXqnNlKwqueNYPP5wbuZTT3WLTaVI6nJUeRiXt28h-w5VOK5vKvlPVOaLmPu3mvdZDUOE14
+TagPU93CsuHbldjCmOa34eQ3-VcfuWdESB4rZCPIwyAVD-F5HU8WflXKI_nAWWzWaEGG67I9NpaVIGnak0ThdeLFb_SK0Y1fCZXzxarsGnm7fiYWpFbKqDr9
+11Y4AOSY3dQEUIUvay9Q6WpvhjZA8eSqO2Yg3CR4OCLJdJdA1Q1pDSeoLV-ShHvtT_qWvsrm5b4AGBXA78od5A_KO-vK8MzLI6Ge3hp8TPJ27I5jOo42WFI9
+kEDDhBIl5B2U10QD3C70fW0mmK7rIBuY46jAD8kq8wMfpcx7KDsbreyugaybW7QeQFAeU3fIwQyHxBv9mP0bWxPZ4FP1bvbNUgRulFSOmC0-b3lx6p6dN6PH
+zfQigHO7O9-zj01QlQco9tvResu3qDiOFKaCTZjVfBVHUYAOPUygzAbmHtjN8ljaq7GCbWPKxmfOJ-fMSNUpUfjU_x80wzSyMelmwfV4j1Rlmu7zjpZ-WPZ2
+ZV2ZtxqGf_nu4mKJxxT22lSaNyzfnuK4Nyj8F2OUMPiCFvu__lZZBm
+}
+
+AzureEntityColoring(CloudServices(Classic))
+!define CloudServices(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CloudServices(Classic), CloudServices(Classic))
+!define CloudServices(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CloudServices(Classic), CloudServices(Classic))
+!procedure CloudServices(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CloudServices(Classic), $stereo=CloudServices(Classic), $tags, $link)
+ !endprocedure
+!procedure CloudServices(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CloudServices(Classic), $tags, $link, CloudServices(Classic))
+!endprocedure

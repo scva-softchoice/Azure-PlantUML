@@ -1,0 +1,18 @@
+sprite $QuickstartCenter [70x70/16z] {
+pTG7jgCm38LXPEjUX-n_lzF4Gn0Z5vZsdvxo7LcKvVz8N-_rAL7UFtj2vFAsoeCnrlTNUjU06tSF97JZze7CyFA3dNet303Et3jGmi-qF3gG6g8dPfqUn90p
+Wnk3G2tU6YN1aHF3wK4SSMRS43ZYSMwKv4Z5oCoDXc2QChiIMZWnCeUGo4bIFZ78WyW-YCgseoCpXu2GnH9IBI0jZKJa4s7oPHEReY6GVOj9u8glCPc2S9G4
+7eChM2m_4e9H1Bn6LAjP0E1w48Q8ucClYCwJ6uY2UfWOG70UZH5Zylv3_6eIiKWaMIHX-oxD8XP8OlzA1nPBHpoO4IBIHJpxGYuKF40yJ28vkFEp7gGZmb8Z
+kZHAUaJKa7KjWuYdnqaCEJ2mbbv-UpkoOXBnr-npv3m9Ro3e83AC0272F8u04K8E8DoP2E40Gi8g4KBf8FR6x21CRKHejH5gzppMXXGS4N98oTpR4A12kWht
+Nby8K2Fj6qQvPuYdvAZ2lRAkBuO8qzXMNgzoUcdotCWeteQutr-ky9hHwisUndRh6RAayGELIyQ-nE21SYanSXm6IoEKKZjwiNffAQmLf7fhdHTTiQBpfyvI
+h5Iiy7hs4LkknU3ddSrQMewCIlq3tqbdkPOjjLRWTDG-IOv-wtOS2g79XN_OTm
+}
+
+AzureEntityColoring(QuickstartCenter)
+!define QuickstartCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, QuickstartCenter, QuickstartCenter)
+!define QuickstartCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, QuickstartCenter, QuickstartCenter)
+!procedure QuickstartCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=QuickstartCenter, $stereo=QuickstartCenter, $tags, $link)
+ !endprocedure
+!procedure QuickstartCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, QuickstartCenter, $tags, $link, QuickstartCenter)
+!endprocedure

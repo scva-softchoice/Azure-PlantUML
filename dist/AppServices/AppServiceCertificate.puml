@@ -1,0 +1,16 @@
+sprite $AppServiceCertificate [70x70/16z] {
+xTG5iYCn34LHkqNMy_xN6mQ58tlcymaMtMfZ-N4gopGEaGaiNmpL2IG7PSeNhEXaHKLKTF9PTDlOcAnil57vgop-FdjO8KzuFAAwlAt-hVIrlqfLUqJkLYg9
+cWdLM5boUxSgZYnsY1-fjnL6n6Fp8jXe9YpMjdzbfC80N7XF703dAmQWyPa1e7J50UUe0IsxqWP0E180b5nf1vGlAM39bGR0rnn8pWlWzoerLR6mG75-bsp5
+PokFvwMcAy9N04_EhWDs5J504vN7kuwJ5SMT4-13fr7vJ5EdST63TdCp6BzBL6Cctb9DXpH4fbcqh_IEezxpaL9fGtl4b5FB7lUebZ7o7ohBO4N_GuK6A_PF
+Agr7_AaLxpk77vcgK6bJ5HmcTP_HmSfvPNokGkV1sUWQWS8SKVcp1W
+}
+
+AzureEntityColoring(AppServiceCertificate)
+!define AppServiceCertificate(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AppServiceCertificate, AppServiceCertificate)
+!define AppServiceCertificate(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AppServiceCertificate, AppServiceCertificate)
+!procedure AppServiceCertificate($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AppServiceCertificate, $stereo=AppServiceCertificate, $tags, $link)
+ !endprocedure
+!procedure AppServiceCertificate($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AppServiceCertificate, $tags, $link, AppServiceCertificate)
+!endprocedure

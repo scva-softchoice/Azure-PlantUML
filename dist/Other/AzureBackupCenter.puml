@@ -1,0 +1,18 @@
+sprite $AzureBackupCenter [70x70/16z] {
+xPJRjl8W48E1ESBxl-z_O5MZxO15zkN-Bbqq9676jCClcLZCL8KsDCG0Rsc0R_mKko0R8XioPBOlamrytutOYBrIrXyygurP7PEOic1ZAn9RmEfZYt_cOp7g
+Tx3vWhFVnSOwsHUGdLA0fXXVWrC4-I9v4iXKH5HjEHEUMOMVw5Tc31etTIXI4JuZNcT4hyqTAYNdNEZGiJh11YA4g9axCpSQYxpNrVt8Ig9o4e4ThKCei08H
+QCypuI3CG_dzTxqNYDGgbltgyOQLREs9vj2CjH32AMrlXAtZpE2ejnCQF5EemZXIZvzSrI5pBaRQ1IyuKTz-AHw5EjQoWUfI4j2JjIHe3Ie79SMK_ar-Qw7V
+5QemfH37nVZcS0ToBey5J-3zNdiqf9266K0ZD_BCuwQjYai_ZfIJRGLz8X7juGin0vcu5ZlqdEHHHyLZVzvw7C_UBzVZOyNaNQUut5APWdudYIOYY1IsMmzN
+7Vr6HV16Pgsfhtd1r275r0ZQfS46FFOvfvJJ5C8RNRQnujjP94nTFBsDu8rdUK8h-Aip9EHn75W92kvKfL9ARGEPNBY3y86RDvI7JDgtsp9fHlRsXgmP0Qpc
+_-WDCGMKd6vJCJqRL8XiK6lw0JJz5B_y1G
+}
+
+AzureEntityColoring(AzureBackupCenter)
+!define AzureBackupCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBackupCenter, AzureBackupCenter)
+!define AzureBackupCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBackupCenter, AzureBackupCenter)
+!procedure AzureBackupCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBackupCenter, $stereo=AzureBackupCenter, $tags, $link)
+ !endprocedure
+!procedure AzureBackupCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBackupCenter, $tags, $link, AzureBackupCenter)
+!endprocedure

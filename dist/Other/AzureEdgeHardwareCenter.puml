@@ -1,0 +1,16 @@
+sprite $AzureEdgeHardwareCenter [70x70/16z] {
+xT856i8m38RXv6ygSF_x8kc3LzBYi0_cspkLE5AWSd4iF4GHMfH54QVbULJgAfmBEa-LGaD9-mwApbCbtVf9YcyeJX54dQTAiQCO-pybXdqnQQ5ILm5hoc3w
+JSFolVXlLJ2jUBTFyZmgVSrNjqh9FjIKrLX2HCnybv9aRsZpIb3Zq9mIIP5J4qf2rR0hhchO5KyLv31tpmDXpQQWPMW69H0t4StmJD0pM2mAS32AY1EZafsY
+0H6xWgenf80BYCYmmdppGAQKqirewrvPEJX0mHXJi5So8pAl730d3r0WtwSiYkyfmQ9GjuzIgAimMUAc0jA6dIb3AokEHYieJEFnbGBIPfrx3EsWEBelLPZk
+ZG6wQWi
+}
+
+AzureEntityColoring(AzureEdgeHardwareCenter)
+!define AzureEdgeHardwareCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEdgeHardwareCenter, AzureEdgeHardwareCenter)
+!define AzureEdgeHardwareCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEdgeHardwareCenter, AzureEdgeHardwareCenter)
+!procedure AzureEdgeHardwareCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEdgeHardwareCenter, $stereo=AzureEdgeHardwareCenter, $tags, $link)
+ !endprocedure
+!procedure AzureEdgeHardwareCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEdgeHardwareCenter, $tags, $link, AzureEdgeHardwareCenter)
+!endprocedure

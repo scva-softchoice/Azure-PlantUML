@@ -1,0 +1,18 @@
+sprite $MultiTenancy [70x70/16z] {
+jTPRZkim281XiBdP-r_mERaD3iLAtD5yVVy5LB82VmaHuNSAYMw4olSDKSS8Ns6zg_05qOY_YqG4YqWJgqiLpU7YFZbU7IK70opBLucNgTfwxyRh2_bAgFtK
+2ipe1rFRAMng7p3aK5Nj-BcnqlgeJYesju_QRnhap6Mpz81MA-9NSG8fiHa60Ed1P2MocR9DsYDSMqdz7nhXsZ3L_w8HJDYeMJieRBW71XFLMgB01kDA5MOu
+YTHhttwZCCUJoCRYRUUetLY17zW717DLbBGvOQdZsVgfqSCp9LXORHj32N5uexZVyBonAUYgRgJuRPrVpA7eYT297Yht1460wZnIz68zG_E8LhoGFcJA_E4M
+lAZBCst-eQ35RpjeFS4UgUh6-uPuptX58x_juquyVrOgRiY2QoVDBgCMCMx4ehupjkwAZnALRI6pT9Z6RErZ9RLFX8XibWx3n6RnoIkMK4IqlA94R6F65qfM
+8akqtcYlg6VG5ueOnJATpugss_jhkM8feQkYuopLSceP9Q_Oy8gJjOKV3nKL_g_2Hje2fh6Y21TTY2ZTAm8NQwyPUILyt2_j4ojQbcSH-gm8mewNzeaLvSLX
+EAluPpdRoZwneWZlaGiLWTVAlA84R_6yebAMz_7AyaurgJWHXXUG7ofIuLbvh1Hu0ucd5I64rogdbR3Cma1UuG9VgEoLCCRwG6mMnbXNcPKGVWtXR_m3
+}
+
+AzureEntityColoring(MultiTenancy)
+!define MultiTenancy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MultiTenancy, MultiTenancy)
+!define MultiTenancy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MultiTenancy, MultiTenancy)
+!procedure MultiTenancy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MultiTenancy, $stereo=MultiTenancy, $tags, $link)
+ !endprocedure
+!procedure MultiTenancy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MultiTenancy, $tags, $link, MultiTenancy)
+!endprocedure

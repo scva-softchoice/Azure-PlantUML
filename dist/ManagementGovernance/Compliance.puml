@@ -1,0 +1,16 @@
+sprite $Compliance [70x70/16z] {
+xTDNOkKW40LHn0Mwkxp_zJed2Tb6cCbJBtuT4TDlMAxsMKr3oXxfYo76lYZGcABje_IWe24bVxneZmfQeg0b2bgYe2KAMgAW9GfQeg0b2bgYe2KAMgAW9GfQ
+eg0b2hgg93EdgrnNB4wOYuhCpFkwIRdx9qegVbQxgAJSpFi65LMBiAepTrJ9mNE-JIiLm9-tfqmg3QXwh7NCg2BmekTAm3QZ11IzLi0db09LxpB8rvL6w7qF
+wdKbSEqAxBe2JRkCkAm8YdPLs2R6Ojhb4sD9lcHTsc5ATMIFmcElPFQ3wGvlzkYLE2YfxOwTTHSfHyJNIegt1IuEdgQK34IhfTG6iCqe3ztmcgTZ6bPUcPis
+ggXNth9fPLkYv7UA_s95xvJunKfPejHt2jzK5DzJsYEIaZ_y3YgSAdhuu-SAdGAzOe_8yxzUOKp9RvDivKnXGEcRL_uhDL-gdYaJzOepaHsLFC5uJhzXTm
+}
+
+AzureEntityColoring(Compliance)
+!define Compliance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Compliance, Compliance)
+!define Compliance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Compliance, Compliance)
+!procedure Compliance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Compliance, $stereo=Compliance, $tags, $link)
+ !endprocedure
+!procedure Compliance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Compliance, $tags, $link, Compliance)
+!endprocedure

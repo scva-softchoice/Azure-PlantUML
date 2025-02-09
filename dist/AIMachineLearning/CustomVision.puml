@@ -1,0 +1,20 @@
+sprite $CustomVision [70x70/16z] {
+fPXPclCg34HBY442xt-zry7X-v55S3htlFHyN591J_XCY2aNqQfIKcJ23t2fDpJpJmgF97nBrBhXEmzhtQCHJv3KPvIn9TVlABiWMhz5y8bG_u3IBn9Fm0Ak
+7fMEgdwf2Gj5cH5dKZZKAJpwj69nZYMwBJpL6UFOUg9RYfEiiQd9BSLBdZLbDOywoLgZYxhVXewJYAg8UzV9hQVuKQAr7Prc8-gaORCLxPZWnqmJfvd3y5hI
+7GQzpwHJ61aMCqyxF7KP9kCahAA8aUmrEcfsKLh_afooEetlATY1PaahgNCRJHUM160HvHMWfZUwQCgE9AOXcUUHOIc7rIp2498Vg3-z34i-B2RCwBhuAFsa
+o2TBzID5YBTSQnmMEHv7Ielbwj79xoZkv7XBndej_qhILesdNI5t5dk1gfJJSOkJGIUWsL9sbexO8zD0yIHWjiZR8YfxInFjYIf2V85OH4KbfNyMUR6sj99B
+Ene3uUN9Y1r24H6-RdE1EeiUZXOG2239eDXXS6Q08Y6Sbj8jiqQSf1AuBmCWZXSqtY1mkcw0cZ3kX30uTaASO1u-0djBzPQueKTq5Z-I8cmiE1abxS8qmZuA
+8DvIsX_2e9FzI4Lyc7qKXCjYDRgryFmwu4PQQsf6i0ydlaqqTMqqRUHG1X07X8jWh2TgmzYcgdromE3-lcZ3s1_t4UmQwL2SC4UcQwo8uHkvi1ORHeebV6qP
+5_lYPmlLZnex4Q_tmbFRLShBO2tPL1J9TyG1W_pMB4ZcmIuAOKAjnX8HRcc2qtPegp6xvC1s9LwZpc2QSZ1ko6UDQSG2h-d8Bifp69JgF2wA0mxMbSVUI1_6
+anP_huMj9JpzZq1LvQJWqX3izxnWJvqbv7eZ0-EPPBP17F2Pg4upM2zZ7yXhWhizUqBCSb5o97iDyNzP3VGV
+}
+
+AzureEntityColoring(CustomVision)
+!define CustomVision(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CustomVision, CustomVision)
+!define CustomVision(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CustomVision, CustomVision)
+!procedure CustomVision($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CustomVision, $stereo=CustomVision, $tags, $link)
+ !endprocedure
+!procedure CustomVision($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CustomVision, $tags, $link, CustomVision)
+!endprocedure

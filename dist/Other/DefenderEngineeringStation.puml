@@ -1,0 +1,17 @@
+sprite $DefenderEngineeringStation [70x70/16z] {
+xTBPajqm28JXRWG2vVqVE4vcaSM4i-badz-tgg-gNQ3eCr7RIm3GjoFGzfK6oBuYVw7I-pEKHkdx2W7RLWpWOukwdGQzd9NMzz8AXBGqI26rKY00rq4TW9HA
+YLXwrHAJb099WnAJbFYGVqVYhGxGurilJEIcKYEXW4Gafb1A90XOrCnKCj9ZrW5uB4oX54WUb9cir4W8O4c5N5OQG5jT09xVe5zKEgdgzQ2ZhW9U-IzTRMK4
+qFM1MlD2cHrAyt9GRuTooxqSocGCOCoijHSaAoFdXo8-NX90nticXn8ZzQBa_51UcI3W4w4a92c94TB7aG4y8OSIerOo8tnXsccGWKn8LZ93GjP10L1YL4h5
+-1Xz6OI9b4fc8Wqwp8GafMmEAhkk-1oqeOmmsr2gQkNBTazJT5_HFqbvrd_Xla80uh6L2ovcuvJXmIp6_3QKK_gR5JzblrVfIxzLaLKHF9JQakAHn59y0A5-
+w7wcwGyIt16bbGbnMyd8oOrZhiJRzbo9kB7FlW8
+}
+
+AzureEntityColoring(DefenderEngineeringStation)
+!define DefenderEngineeringStation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderEngineeringStation, DefenderEngineeringStation)
+!define DefenderEngineeringStation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderEngineeringStation, DefenderEngineeringStation)
+!procedure DefenderEngineeringStation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderEngineeringStation, $stereo=DefenderEngineeringStation, $tags, $link)
+ !endprocedure
+!procedure DefenderEngineeringStation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderEngineeringStation, $tags, $link, DefenderEngineeringStation)
+!endprocedure

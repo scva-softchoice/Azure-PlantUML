@@ -1,0 +1,18 @@
+sprite $ElasticSAN [70x70/16z] {
+xTNNWeCs48NXC-NCW7VV_tdZ9WVBGWpENkRJ5Usd0pRaIZVa2YU8w4obfIMO4gt2FZtXRog2FQvbjb_9CArXJYgPuSSXO-Qyae-IxGMSaJT7bIP8khlTk3iP
+aSsyKdQ-yd_5ioo0_vu9mOIKEguu8iR8VJJ1CMDEr3gU9Pnr9BBAi8jvB88t8TzNQ3XsYPm8HydbiaRiDGntZr-coAHoiqGCKeuRDNyntQqqwn9DHWGLL-OT
+dLPwgm0G7v0J5UqEP7uuauXpXnKhR94nBLLM04RMC-keOe1o2k_qix440CuPtacy9LRAFSu3WfxbfI4UUCJmGJtNrwC6gF4OtaciJ_ueiaIm5MjZ0CHPfDZ8
+juYnpB2nj0ZFHUYZIhP8dIcQdpNN6m6Kfrch_Fx-BCj2GFWDQPMh7m6S7zpPStRqtyeoF1I75MRfg-A01RlXW5NcIQi8mEWu0AlCvBDo0MIqFgmqLn-LvND9
+-ndToPNTAGOPFYe9M1_PCyf8tYe1-3mopnYMKKLmfD-fn2LRl9nXR14t0cYyePGY3PeOPImwFenmDy_z2iVj6utUNeNHCxn4Z-CAuuDWSZ0SL4OHOeFH8wD2
+i27n7GV-88EEnXS4FOayEK8mu7cAOqmyieg2VMBEmrJGyF8F
+}
+
+AzureEntityColoring(ElasticSAN)
+!define ElasticSAN(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ElasticSAN, ElasticSAN)
+!define ElasticSAN(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ElasticSAN, ElasticSAN)
+!procedure ElasticSAN($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ElasticSAN, $stereo=ElasticSAN, $tags, $link)
+ !endprocedure
+!procedure ElasticSAN($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ElasticSAN, $tags, $link, ElasticSAN)
+!endprocedure

@@ -1,0 +1,15 @@
+sprite $ResourceExplorer [70x70/16z] {
+xSy7hi0W38FX5Zi9tF_0RxzkTu1cnI-XYJx5mwDwFKGM-NXVoIUXLT7dQ2LoYM5kd9Z04wMK8WxqyS6YahUtJE6keWktYtYjX5rtgOJNA1gfLy9lzQE4pEyh
+hdkfOe0rAqnViKsnz9VLAuOqXLg5QHLh54kxJ2jwp3uyKv14L4guRn-JZFl_tqeS18fZGCOkgU3G0VbG0RWRmyVAxXomGfcSoQXM04v8Ym9oCcgKAO9iLy3N
+AbsXLko-4awXU0ZbECEKE4GeQfOmXA9cYJ52KRE48HGrIumHYfeb3X6Ao8GX55crqXMFoD7oV7XKh_S9
+}
+
+AzureEntityColoring(ResourceExplorer)
+!define ResourceExplorer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ResourceExplorer, ResourceExplorer)
+!define ResourceExplorer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ResourceExplorer, ResourceExplorer)
+!procedure ResourceExplorer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ResourceExplorer, $stereo=ResourceExplorer, $tags, $link)
+ !endprocedure
+!procedure ResourceExplorer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ResourceExplorer, $tags, $link, ResourceExplorer)
+!endprocedure

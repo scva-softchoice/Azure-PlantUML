@@ -1,0 +1,18 @@
+sprite $AzureObjectUnderstanding [70x70/16z] {
+xPY7TkCm30G9x691_Fy7N-LTP5gq53ElPrBSvmtTGGCViNQ9yn4OE7DjuGouOrc3Qmju1lm3QpSm_m0SUDl0lotmBx0mmhOj5X7SjZ1-OPiMYzzmqyBuWszP
+B0PR5iR0pomWQRTI5Z4stgPmCsKmNnt4oBYNCcZtSRG3SGIt9QoAWpBYhPYiweSK7N_knbXaLSh-fMZ2xaWekhj1CL8qmMi756v_S0fJoiqO6uxX2VcSSXrZ
+8TW3qE1-34It6Ug4M3fyB6R6cNh25q-GbDi2ZwpAwnXMbRsWL_Nh6A-gUD7oRD5fJ29oVRz4fYPm5XFka6XFG0fIpomixfGmXIY3FBLWPV5fMSuKkR1eOHaU
+-d4nmvAViOnb7HQpjjZQCZozAqNkM1ozgaR8EoiQg2fvOObBYsUFoPAIyi_FEBHh2yN9CeEsPncIVOkyxLlOsgubO6q14oyjcOnKqAsjyQh-of9LSUlJlR2s
+HAzIMsEWjrza3mKM5gLwzuK1H3j-8uE84qj8zYA391w_7OOuMqB2PwS9at2qX9Blp2HGuBz56VRcP4CHVomX-VlpaOMe32NsfYplLPtRivggUjksME--RVcU
+f_TtAxvsvsH_5mTVOS4xkrls9Fa9
+}
+
+AzureEntityColoring(AzureObjectUnderstanding)
+!define AzureObjectUnderstanding(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureObjectUnderstanding, AzureObjectUnderstanding)
+!define AzureObjectUnderstanding(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureObjectUnderstanding, AzureObjectUnderstanding)
+!procedure AzureObjectUnderstanding($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureObjectUnderstanding, $stereo=AzureObjectUnderstanding, $tags, $link)
+ !endprocedure
+!procedure AzureObjectUnderstanding($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureObjectUnderstanding, $tags, $link, AzureObjectUnderstanding)
+!endprocedure

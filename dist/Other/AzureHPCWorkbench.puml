@@ -1,0 +1,19 @@
+sprite $AzureHPCWorkbench [70x70/16z] {
+fTY7TeCm38LXNLdp_L-us0OEY0nAFixe_97ScT0NFD0FM2DNeGzB4daIZVuDdbtuC8D6_pHsSJlmtXJw1-wDi6A4GJV1raOr5bEwercMI1adbUaTCBEeHvP6
+iNs0QsDcq9dbBjog6jePdMGN4UvsWtl4RD4HtcuXMCZRKqAfl1a2jC2RaUvMb0RzhT9eQBzLcAOd5UmtfvNO8DnkLx0j8Q3X-2hVh80cq0bZxzse27sXjsQX
+B-vjrEYDknlLOS2DKKVvLgd3i9gPeepoiJ8CjaMiAndptRsAsYIFAa83ZWV5J9FShN0z0S0p0zJnlOerAhCeMIvyZUlNYZRGJcngo04qWSK-LPYEO9qRa0FJ
+ZZzLG4SisiTZ8iz5q8CAn8m1D9Cv37-hqBK2NVy2wFOtCVXQeL89Np1sOXt0rkKWs3HVHAt4h2XZOqDRQvx3rb2VbQ0JxvL16xfcWyAi3CFggqYd4nsL5HPg
+azWKsHa0tqKgdRHCtma0svMA-2wpqGdoCCouOs6jAwCawCpBIbu8kb9nAYJp_1djXB7Hmq92z7ubVCA7XUZ2zehY8ojVeUim_NB6Hyt7nntEjWmp6Bw88TDe
+LOSP6gQ6gRmgCUoZ5BfcV7oyUBWoLgmUBWn0juZGL4N6r7gZSwmy1cMDAOFUuCme6eOMHIRJEth9A0QzH8JUyqk6qNcD67s0g1N1WciaQBXzDAuBgnNGPr8p
+LvcDlj7Ckv7dcSmKkiCoyrcaJfDV8yypESxaGUPfP91hflobll_0l4GSpvveE4MCdj3iObmBeMTQv2wOdeBdogXuibMZtx1d6kXdpFJL7m
+}
+
+AzureEntityColoring(AzureHPCWorkbench)
+!define AzureHPCWorkbench(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHPCWorkbench, AzureHPCWorkbench)
+!define AzureHPCWorkbench(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHPCWorkbench, AzureHPCWorkbench)
+!procedure AzureHPCWorkbench($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHPCWorkbench, $stereo=AzureHPCWorkbench, $tags, $link)
+ !endprocedure
+!procedure AzureHPCWorkbench($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHPCWorkbench, $tags, $link, AzureHPCWorkbench)
+!endprocedure

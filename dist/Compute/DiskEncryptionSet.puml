@@ -1,0 +1,19 @@
+sprite $DiskEncryptionSet [70x70/16z] {
+pTW7Wfqm34LHoROiwKtslzqf2700sx-ct6Gw77gb_oe0GcI8Y2WZAaJaM38YAeWo4I7I6FXzIWoUrgXzpyTVStS8pg74uCyNxlyKmFH22VWx2dDYVbhXB5Mj
+fLKoFwHmKL-obYzfuJkLRFXkLrHrP_2TbJkKua1FyKM9X7kA26qfeb02QGpMxC2m6HrId1NhAN2QL71HVEcieD8uFIdu-BNsWQFYTCcsvVIZ4iRc71GmxR78
+OHlPGJam7pWgaorjQ7bq-I7oYG8_ARQr8gsPSfcNXjolEE1DQOn7k6-956YEdqEqVDM9ahRnkmoYcebpEYc3dTVzfAouCL5YcfVnUzSPiPXXJpIDAoRPFfrq
+uwh4uXZaop9x5GVopIj94kiY_8DWtPhvndatbQfgfztCNGEnRVtbYS95Zvb6DP3OuGJ139Hcj1go9FjtUQ28ZifKS2bVb3bIAQ4JTvIivonIBQJeL3jN4ZaH
+tX9Qhsbx5T_fViPiLJtatgenBwvxFheMrEi2RISPYLtVP6zHcQwPZcFIuxmO0EbUINHS9LASgjiLzdZ6TDDXSc7gu4hYxlSpGdr5_ASx6Q61GkRH7OpGK4dc
+MwQNt2kHDMIa4AjFsmy47YbHrbjAZVFUIJcNnAPAQOiqBnNrQreBRuhHVQMyd7xDbrjcAOcMLYM_y7pJ5AJp-00_hkI60CygGkzGwbiKo8kAl66z93JaUOLo
+Gvho-FDmFY1n9NcYt92t9y8lZXzhzuVXoTkAwQyp40fAEwEshOdIdZ0y1j-tiXzk5z-a_5Tz0G
+}
+
+AzureEntityColoring(DiskEncryptionSet)
+!define DiskEncryptionSet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DiskEncryptionSet, DiskEncryptionSet)
+!define DiskEncryptionSet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DiskEncryptionSet, DiskEncryptionSet)
+!procedure DiskEncryptionSet($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DiskEncryptionSet, $stereo=DiskEncryptionSet, $tags, $link)
+ !endprocedure
+!procedure DiskEncryptionSet($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DiskEncryptionSet, $tags, $link, DiskEncryptionSet)
+!endprocedure

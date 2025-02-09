@@ -1,0 +1,15 @@
+sprite $IPGroup [70x70/16z] {
+xSy5MiLG34JXL3AHj__zGWKdP72xVztEryWt60Rrdahdmk0guPNWAp59oUbAIYtvYMQfJEH4XA-gW24TPNnBnIw4fQiuKm5L2PIIhwYKzAihlfISh12-e49R
+lgU2v-XyNrz9GX0L0bTPbyhALq9gV2K_fWAjWAmqk4eypn-GpNJVeW-08KzyGsLKBCAnyN2xExwkudaj0EG6G6n7VsKbpgyjDtxMufMLt1ayDt7MignCB_uB
+pXhomKGTtCiO03y7iVF8LavcEBZTtQ0hXBzG6HLZI6VHtYBVO1Yk
+}
+
+AzureEntityColoring(IPGroup)
+!define IPGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IPGroup, IPGroup)
+!define IPGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IPGroup, IPGroup)
+!procedure IPGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IPGroup, $stereo=IPGroup, $tags, $link)
+ !endprocedure
+!procedure IPGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IPGroup, $tags, $link, IPGroup)
+!endprocedure

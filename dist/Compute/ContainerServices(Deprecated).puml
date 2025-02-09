@@ -1,0 +1,18 @@
+sprite $ContainerServices [70x70/16z] {
+xPO7ikGW34G_mKWjmVslkpXe66EpR8vMvKVxbHDTV7p5FEE-z_f8qAoy-7vX8ScQmamGrklBDXb04uMqBXYVYB07LQIczzb4V9XrvnCHYe2pCFFB8e9OBIhe
+ECWFBKHqIaiT-k1RpbziGRDS-K-xb-TUddj9Ntilr_s2LBSBt-mlB6vawVSknuspOPY5FbSEaUIjNv8_iESD6-Ts6nDLfjWttQRAfsgPZKLxLPhUXlU38ew3
+lEk395gAK7JN8g-SKnZaZIniZLq4m4k47Hk7YVhyZdUW0gbq6uxkuBcYod4CXKlUSCbW56P-KH5Xzr6KwU1uSV7tUIf2TA4IgkLh-2-pu5VTo_DU_bQB7xmN
+FxAKB7AcMzrMhjeiZMVjyqX-t-QgeZkr2h02rdnOaZzporCuZdx7YXojOFK8VUE6QxxnhiaZIowI_6sLuyATvUSzEkTVL-HVFv7GYldIvLZyLC3I5RCj96Ws
+pXDHRcTlQMVizd6pRdmYoXdC1SmmYmYIgnOLNFdGGjHRHEA0B_-QvR4ybYBeqnnMEwuyViMUTc-yiXCVZFLrto-H3HkVJjXEyT8Vq_tU_8tFnwNbbdlZ_y5y
+0W
+}
+
+AzureEntityColoring(ContainerServices(Deprecated))
+!define ContainerServices(Deprecated)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ContainerServices(Deprecated), ContainerServices(Deprecated))
+!define ContainerServices(Deprecated)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ContainerServices(Deprecated), ContainerServices(Deprecated))
+!procedure ContainerServices(Deprecated)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ContainerServices(Deprecated), $stereo=ContainerServices(Deprecated), $tags, $link)
+ !endprocedure
+!procedure ContainerServices(Deprecated)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ContainerServices(Deprecated), $tags, $link, ContainerServices(Deprecated))
+!endprocedure

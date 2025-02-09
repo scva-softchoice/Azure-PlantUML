@@ -1,0 +1,18 @@
+sprite $UserSetting [70x70/16z] {
+xTO7ZdCX30HWrw7S_xvRaS9R6nBoz_AfRHtXUKu8_HB_CTEt4NLyC7qwYXqJewSOhboU2WcKtab_1tg40uiOz0-79va94RN-GUaknGAFWHuPYR7YX3uSp1D8
+wuFI85KfWpNlVQWZeonA4cpq6_1xnWVP3XIrFXdVf36EZTfJbjHoda9dAQLd_Bka49tsKej_dSjFKvocFTdjiMA3YGQR5p1YRD2Dj6bRZaPIcaWVG0b1hXJG
+XOTYyiEKAwMhEb8Q96kcf9o6s71l7eAaP413R2P_LbeIJ46VDRf_6b2YRbF4lZOBPuhA9aKTWCYKuspfzTXYofm163EBcRiflna_s_LIiqkUPpejR_wCYgPx
+gpnn39RMKcsr_Cut0YGnchyS1JEvfHYoc9Qk6-F2ve6I6FH1jsy9eTkvOYxvdXY6q6-87vqCQIcntpjNWOTvidxrtkKMZfBrc-IlhX97vDTbkNyOHaR7iZnw
+64F6GxVvOR2_dKUtKUdDsTerH91JPjzTJLgd438iy3AVQEJW_iSDCUIS8gmuLYYGSev3YfPp6bAidBEGukKSOhdb2TydXPE9pdsNP-GKe9u29RmUAKOvES3q
+i_tt2W
+}
+
+AzureEntityColoring(UserSetting)
+!define UserSetting(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, UserSetting, UserSetting)
+!define UserSetting(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, UserSetting, UserSetting)
+!procedure UserSetting($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=UserSetting, $stereo=UserSetting, $tags, $link)
+ !endprocedure
+!procedure UserSetting($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, UserSetting, $tags, $link, UserSetting)
+!endprocedure

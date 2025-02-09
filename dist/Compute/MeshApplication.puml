@@ -1,0 +1,18 @@
+sprite $MeshApplication [70x70/16z] {
+pPQ7ahKW38MJGuhl_y9_kSiOFACCozPlwoNcKsb1lWKqimRv4EhnmbNsGPn0jea1sSL7YyiU6XVq9osuMl2BtWXxainHaeaj2LiIMvBCKRAZoHSurz6xDJ1h
+RqagWkRU829lBMQ6TyoIBXdmymsnFjLAKfhbGP_C3rrUu2rEsdgCiJYnMUnRBVCtcbiq9xsBYcLRN3kPIi4nbbXQEvcaqMiiCPMammmjIpC46yoWZneqQ9Vq
+Xgj6BudHbGqt9QCafM59QQh0KD-VajA0_ZqrD9RAfOirBE7weC8LK6uq9IcuQY97m9hxGACaQZ0XpQr4B4UQYET826bOKcDK-A95vnP-EB-Ji8PlRToxZIMb
+cVQkP1xdLpwDD6k6dEFL2teKzZJhM8EZq7xrsP3jHdAdYKg1TBotz2oMY2Xf8hEdk0neWqJbaOGq_Sf0As_HDRLBeM9QCUqIUI2kko9cEwQBJ3IFPoUj64kO
+MAma_XbrsdzJdVwEauVGk--TWgHHLRcj7bW_7PQ6AnbMJwgr5Ng4jtUULBdoHxu816s5gngY9FiQbknh83jWyYJR5loWXJj6POyy1b8syT5YialIe-pHoWBP
+H_lJLDVk0NCtoBVm5m
+}
+
+AzureEntityColoring(MeshApplication)
+!define MeshApplication(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MeshApplication, MeshApplication)
+!define MeshApplication(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MeshApplication, MeshApplication)
+!procedure MeshApplication($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MeshApplication, $stereo=MeshApplication, $tags, $link)
+ !endprocedure
+!procedure MeshApplication($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MeshApplication, $tags, $link, MeshApplication)
+!endprocedure

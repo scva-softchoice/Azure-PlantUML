@@ -1,0 +1,21 @@
+sprite $WebTest [70x70/16z] {
+dTPPWjmW34LHWwOdzh_WG1aQOr5jT-vFvXC4devjYGrUQWwJVFnFYRoiGTCVZKn4LaAMZ_UHQrNOImnldOHId6fQTjahH4hBg0QVJSRpCu9onf-PRi5KX9cU
+fl6EEAWcLq7v9tg9k0lLR19KUyLa7qQBgOPEZ9wP9DEeWMeC2FMkZl0tXSMlYYl5H0tud9Zk4H91Dtf2EQLC8nQxddhU8Lb4R55W5HaCwqbCnhURKjC54QBK
+6JO0DwL8L5IbTZ70H8DHr2AJWb9CQbYGpcHIR1cDTm-afWCn6cMgANehSrUykBJS8RWWR4g3YGgl2BVrYGYTewRyW-0t1l5EDf4qZunQOhNEo8tPxE_cCPOx
+KfE-heM9XvtdycQaDbBwP471RLlYwMUpBUEm_IbPtE-Qs2KUUqpd_-0URYQVQbpCkZbZnHBFkcoLPACvrHpRFeoiYk-KmEJxqrLN1KVCxYrx9q5vs9SUz7Qm
+KKb1eQ24Yome3oVTWZrEv4-RQm2MYN0xet1eBTieiZodrGlTNyvE2y8x1PIv9otboqPeQTcL8TQ8rFHUdl-aj6HUtvbhiYAFIcg8znSwyKW24XYcsqrjFBuI
+8DmpT6BcfZEPH1z9k3BilZ1YW58wiWmaAEjPSutKRmmRzQdjH7vJjE2Ze2jGxitTQyZlIYxABH_1mkTEWhSGb9bnIxinbvEEsREIX6lmAsF2l8mz5APFKJc8
+Qrxy6apMxoGrm5IFCudAeSnIIl6rwqJS4bcLE9ELmEIR8b5PI-obt1sxd6D3WXBAfKH6BciL2SfRnj8vpdbihH-b_sp7HCYOTBxWhuh9dl79JAWJBJSp6ZEE
+dyUaNEl2h0yqdwhfU5fE3Ek_qsc662KKvWapnR9j3LdcYJF5IB0IcWy6xlz6WTMDPL63cShvhCe0g8yo7pe07t_90AqMYxRwnp43wEQhfCr3eZEXpAg0lHJw
+FAmn0I2l5G3QYqn-YIXW-YK0xn1oXtnLtFML0dVzchWxlPd7BqhCtV5gdXg-vQtdcSIVmwEI_3d-1m
+}
+
+AzureEntityColoring(WebTest)
+!define WebTest(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WebTest, WebTest)
+!define WebTest(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WebTest, WebTest)
+!procedure WebTest($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WebTest, $stereo=WebTest, $tags, $link)
+ !endprocedure
+!procedure WebTest($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WebTest, $tags, $link, WebTest)
+!endprocedure

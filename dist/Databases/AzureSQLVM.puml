@@ -1,0 +1,16 @@
+sprite $AzureSQLVM [70x70/16z] {
+xTS5jkmW383XnaXu-r_mEuI1GnbBvNh_gqM-SLkUTOLqA724z61KbAG7arEKj5Mvb4jvD7vS4GG09DOQ-w5e3H4feZ3SgYIqafQA-5YnCT-6vVJBKILhOcQk
+sDG3XSh9bYagl-gPi8H-vkBAQXdUIDFo7pzHT5RgnZQIV6l_5-8ArQl0uq7qYnHM54gOcZXTkA1Y2JogExj2SSLJRCnyNZIgUE9ESaM3YZs8_DQHTXkr6oUi
+QBzrfDumqX18BvKyP23QxhCv-r-IH7wx-NH_7ENU8wM5vP2XXxQQffXIXwKTikMuaWNxfbgYOPDHYtFF9iKprMc82fldPkLTXiuSLEhLmKULh8MHeqhjuvLy
+ZlBlO1-fN4ekYXnLP2cXF2dfK98duV8wpaEyx8njw1o5llYywD1kHSvHqf3iLTAgdGZEzwvTiQpYNGZ95Er1-Awj320_YX1E-h2FGOJU54A0tWGnvarBjAl_
+}
+
+AzureEntityColoring(AzureSQLVM)
+!define AzureSQLVM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSQLVM, AzureSQLVM)
+!define AzureSQLVM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSQLVM, AzureSQLVM)
+!procedure AzureSQLVM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSQLVM, $stereo=AzureSQLVM, $tags, $link)
+ !endprocedure
+!procedure AzureSQLVM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSQLVM, $tags, $link, AzureSQLVM)
+!endprocedure

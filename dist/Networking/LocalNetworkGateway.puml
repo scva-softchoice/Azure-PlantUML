@@ -1,0 +1,17 @@
+sprite $LocalNetworkGateway [70x70/16z] {
+rT87sgCm30PXMKOsvlu7NZzEOxBvjkZlaz3XfTfFghRcxu3CwjiHC5a4J1O1aqN0P14mQOHC7Y6JHqe1aqJC7epd4J1fX4mQ8PD5Ll5W4aY20LBBp5Pbvaqm
+6k4H3u2CHhIY6OrGqOn6jA8PZMX5CxM_wABqtmCZ4A4WLuXMDAEGSAruWD583tEbk4K7GuIAlWSgtObG4OmR530BeGA6HqHdJYJAFGF3_Skzg-VOUpEsDX1X
+stb3Lmhlj9fIsf-LTbRQdnLNIdGKIl7pXRTwoucGyNghFR-a7R-s4AnRlyKqhCC7iwEsa1V5KixnuwL2X0oLYIYcdP3AhK6b0Y7Jusa_tnzC9w8OvceR4Stm
+ZZJ2DgreH35QqGWPfIX4CLhHY6QeI4GpMj68Pi9djl9P5OXYnXXhA7QgxBVrco5HZ1MOYOoLHZJZQOHC4Y4pF8qyCpw0v1WWQGP8YY6IAR882oBPsWC9ozV6
+COK3I8OvLa0o391qSHoRlRrYdzKl
+}
+
+AzureEntityColoring(LocalNetworkGateway)
+!define LocalNetworkGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LocalNetworkGateway, LocalNetworkGateway)
+!define LocalNetworkGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LocalNetworkGateway, LocalNetworkGateway)
+!procedure LocalNetworkGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LocalNetworkGateway, $stereo=LocalNetworkGateway, $tags, $link)
+ !endprocedure
+!procedure LocalNetworkGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LocalNetworkGateway, $tags, $link, LocalNetworkGateway)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $ManagedDesktop [70x70/16z] {
+rTHdalCW48JX1WGJVF_pVc7AsMQxf67Jg_-FoFXHbNH0amMriK8PigpU4dKvXrHdP23L-FLAbmNAC1EkS2GOfd3455pXI2NAVWHoBeM4eggo3obuJ3II3C8L
+Zd258rpX25SumfNMAqEuqdhlbI1KgRq7Gn2Ye4UL84mf3mn3eESmPpWIIhmMSuOZK8iKKuOWH3apIX2ce524Ay5mX2ke1E5Ar3IUnvGI34UuWbAGKtZh5VUq
+ub5ICO_i1oakFP7uidG9igrGDg1EKxjBwpHyc9_kSj1-ld9QgqGuLl67SApsg5GSgZyg6mubZugaboKgYPVmbgJd4mtiR3D_axOTH1lcayz6GBngf0hmZ0PU
+uqe3hLHQmK_kBm
+}
+
+AzureEntityColoring(ManagedDesktop)
+!define ManagedDesktop(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagedDesktop, ManagedDesktop)
+!define ManagedDesktop(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagedDesktop, ManagedDesktop)
+!procedure ManagedDesktop($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagedDesktop, $stereo=ManagedDesktop, $tags, $link)
+ !endprocedure
+!procedure ManagedDesktop($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagedDesktop, $tags, $link, ManagedDesktop)
+!endprocedure

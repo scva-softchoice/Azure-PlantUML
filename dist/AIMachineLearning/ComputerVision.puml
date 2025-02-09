@@ -1,0 +1,19 @@
+sprite $ComputerVision [70x70/16z] {
+nPXNOiCW44HD4LlG_SyRN1GOZGdfVldcPNQHLw2GCX8kIs96qas2h2sq9ENVi31fRKdF5yPEu4LCY9rtPRpyWFWlbf2BgBcRIjdYjoofc0DMqbSjcp-bX2zO
+ilcCRM5XnzopjeWlqB2sg2-niB04SuQ97rXOOlh0M3EtA2fa04LsigHXC0avfXxjJNYCgKIF6ZdO8yESI4Exmo2H2ODcCeS494kDag17iGP8kAh6F8myavZN
+1hJ93erTcCWIzVqTLzPajkXXKNbWTHzngidOGb5yFr7r72RGQ3j7QK5yIxdKGNCAmyEc79QUHE_z6ZIEONYp3QDeMnCVUxTt3C9GIS7HuYt_CVfshkcmfCa-
+zoXsT6mVC2mfeoLZ5DiRnsyKjXjBskZDWGKr7l_8ORVHKj1Iq59lAsuQKQrJYw95sTAevbMm9hGOMeGi1sqR0ba4B5YHghB5Or2kI1jSqOOMtmco67SteyLc
+5aVBXfQ45frP32sPVm7UBUApWj0IUKYvBiCODjT1mUqLctG5BC9Z5otYatgeBO11IOrA4eKeC5xukOCqb8IVETubqAWF3YC9x124GOseyLjDkRSS1ZMCKbSc
+cwswiXX6uI6Zeg9pn-sFXq98EOwdEfCbfzR6nuqlZ6y2_PGauOaCJeVPrsdwktLwtYrBZU6X3YsGndLU3IP1IoVQtADu56DB9-Z7vrsBgpi9NcsicrGDBZOh
+2r_Lp3lbQ_V6JPsm4hvyXmrPV41o-FPzEiHqk_k7bzpAlsxvdQyLl_Vbv7U-ugJViAJV-Rhr1W
+}
+
+AzureEntityColoring(ComputerVision)
+!define ComputerVision(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ComputerVision, ComputerVision)
+!define ComputerVision(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ComputerVision, ComputerVision)
+!procedure ComputerVision($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ComputerVision, $stereo=ComputerVision, $tags, $link)
+ !endprocedure
+!procedure ComputerVision($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ComputerVision, $tags, $link, ComputerVision)
+!endprocedure

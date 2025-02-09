@@ -1,0 +1,19 @@
+sprite $DiskPool [70x70/16z] {
+nPYBaYCX24K5WQjs_lzxjzDZRvDnTDYjF4uzypg5X9iKfgSZHYa8cQGVOJFJg4NDZ2VF7wz4OBkZD1oc4xDOHqRrGOuriEEA9pL7l1JpntAEQ6EoUVJx4n8V
+2ayUYWimjW4O3XE4dMDdykM4suFEzw4bpbb4L5KaPwRL2EF2IrZCJ1-HcKdnauKKvYLU5BO8d6Jm12sza2aXItwG650AdDDC8nPrahBTljZgATc9MdHYiJkW
+W4KkYJkHarZ4ebEw96R1KX8z4M0JISzBfBi439uUfPsSHK9JnzZn9f_4U8x8u93pMIBU8OfO3bZHuKEGnTIJAM1Xj5OB03iKVWwzQ6snzaNDgny95LvPIkl8
+FPfOv5lc5csTUkLxWkd4uahHbBm4jRPjs-LmSvX_jKXYBxdznULRWnOzGMrjsukfk2IGY4LjdUzOBLXB5XQxkik0p2McXgc5MmSf7S-EejC1vEdKvTP9INgu
+nPkEPXdks2hJlJLsQ3fsSJr7oqndd7EN3LDadgCE2MghxYqELyZCug6UgbhmI2drEF72ua6xg2Vjf538WhQcHYpS77k6RdVsA5r8m29UScNQQInWoSspdRGB
+H2qZ7x5mcnFlI_hLmX6B14gPMEATaM024c7gK8hag4DQsaYHoR_zOWNELbm6JPZ6RIAwsH0nqsnX0_2SBUiv6zzpji__seJPFFAKhVmPDmJFkArunir96g5d
+tEBiv7-xKNewVm
+}
+
+AzureEntityColoring(DiskPool)
+!define DiskPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DiskPool, DiskPool)
+!define DiskPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DiskPool, DiskPool)
+!procedure DiskPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DiskPool, $stereo=DiskPool, $tags, $link)
+ !endprocedure
+!procedure DiskPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DiskPool, $tags, $link, DiskPool)
+!endprocedure

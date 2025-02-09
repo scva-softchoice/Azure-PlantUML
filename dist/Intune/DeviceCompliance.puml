@@ -1,0 +1,15 @@
+sprite $DeviceCompliance [70x70/16z] {
+xT85TiGm301HeQNS_y15bVHgBjUp6qv-47vQL6mWwIY1zAAsaazAKT9vIYaQsPAIcrUadGufWkreID4lK-HNAqSvob6Eubs5pNkActSLD-zUIrynxoa-eFY8
+Kdw1SXIg_vXPAbz3KXg8DIf98QJt1xPMIQdqdnG5sLSK07HNKLXNChAd1BAd1BAd1BAd1BAW26TaGH40oaXMhklgA0p196HEUMOaa3Kbc40MbM0m8LcnZX9C
+81kAKI1rnQMUFOK9IKepj-T8RLF9zHL307vUMbKK0F1x5C-ACtEPLJWngHQYyDEw1G
+}
+
+AzureEntityColoring(DeviceCompliance)
+!define DeviceCompliance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DeviceCompliance, DeviceCompliance)
+!define DeviceCompliance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DeviceCompliance, DeviceCompliance)
+!procedure DeviceCompliance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DeviceCompliance, $stereo=DeviceCompliance, $tags, $link)
+ !endprocedure
+!procedure DeviceCompliance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DeviceCompliance, $tags, $link, DeviceCompliance)
+!endprocedure

@@ -1,0 +1,11 @@
+sprite $ManagementPortal [70x70/16z] xSw53GGn4CNG7qxwB_Xm1Simef7y2h0inu3SnsCzQJ9Cz1U6IV1TeK95QQ7SeabSAFKE_GLxXHTUpb6XGeKAbThk20ugpNj5oLJH92P39Sinu0q
+
+AzureEntityColoring(ManagementPortal)
+!define ManagementPortal(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagementPortal, ManagementPortal)
+!define ManagementPortal(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagementPortal, ManagementPortal)
+!procedure ManagementPortal($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagementPortal, $stereo=ManagementPortal, $tags, $link)
+ !endprocedure
+!procedure ManagementPortal($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagementPortal, $tags, $link, ManagementPortal)
+!endprocedure

@@ -1,0 +1,19 @@
+sprite $BotService [70x70/16z] {
+rTU7Tjim30NGa9Zy_m_k84o_ce4YUBKDplAy0Hwa4_FZcrGZ5ZLtKs5g3n4alfNSAx7vAdC3P7o74T-uhGKL7J8GAKGF62gY6sHdZZeCvNwDitLMEAv595b8
+8q4xnqQpgz7pJtHTZhKpH66aJhHpm2paP9Uyc3oJG9HErnXCcerSaAJHRAfyKno8jD9j6ipWdOyLXrwe2zEpPBLLbROIJkQvfSNIYg5xCfDxic8xA5uBtveH
+X7Acu7Cwcn4CkSyJrIMfYuAPsktr9hNbX89cz7P1xLwbJyNNCxHILQ9aNJDOSxzVeRLi38HGYLfDQLEnUBmD54yAIkGxOaiq5S8Vg2iyco4exH6b8HX1B6Lb
+5IvV_Qte4uh6emE5LMEBUBmhUbNyjoAV5SRzYyUPubyfYliNZpT5VYlZ_KfzecVJnIsWprul-hghZcSm_H6bpt3dg3GLVaJXgT1yF1KjAlAdefT58zvMKneH
+RlyLBeAXJIaKNMAPrQOYzoiobTMQOqir1HlouJ2HRr51jd9D2Ss4Of8K9QqC38HcbfAM7hI2SiUQjAOmKi5BcAbBhiY-PQmPpTJ_u-E2YrPGD11DfG8Pb9oi
+wem6mjaRrTyEtI8KJPiCfl0BFX1B0tCFXokdIYIRCtvoiWbZU3jCVWG39pLyO9oiPFXoiXEV-aBaw-J6yAXFfq_pgp7EDj1qER4nKzKuvC6e73h8uQ1W67sK
+YkSESiEvHC092W2CSZMsiPKnyhW74jMuBrGbY6zGFm4
+}
+
+AzureEntityColoring(BotService)
+!define BotService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, BotService, BotService)
+!define BotService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, BotService, BotService)
+!procedure BotService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=BotService, $stereo=BotService, $tags, $link)
+ !endprocedure
+!procedure BotService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, BotService, $tags, $link, BotService)
+!endprocedure

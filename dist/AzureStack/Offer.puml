@@ -1,0 +1,18 @@
+sprite $Offer [70x70/16z] {
+rTH7kkiW38PX44t2sVzwhom6M0-NFuNH-Kull8ajGlYZnJlIaXP_079RokU8CSU8LOuHvY-PiX1olLwlgpDcCC9gM9Tm-HLfbmdsMRZ-Y7Gb98MOrRaOC0XX
+VGejt2Lbn3COySeLHl9wTTum66dtqZ1g2hBs3i4AUmKZDJfbNb5Nq2a82U71y7rtnxfaesPkdo76677NTN4laQfDMgiOiT9yAV58Ly_DQmf6BA8MqpIqxX0k
+EwIks-IPz4lhFCg_8LwKZ94QqeEerFwBICA8VfydSazgDJHwXv0XLWiB8wFu3Z5ZnuXJLiGYHLXpJ5eHmTF9XZWcjiKGXWXxn9Zc3AUiI26qGrXSROU4G00X
+pwGT0XKAaRT8_0mH6pZla3dXFI9tzHxu6uIv4KGuZkU24MNWP9WWOdqotOmHRZ51n4V_GyO1cX7Iw0t20w4zORkKq6RZgK1aAXHyDs8PatU68N67X7a0h7TN
+7cL5s26kmfDP4CSu131ul1x1JAM5QBmYcAasAO-4k2AOiO4lfrb626RmFi6CrETZ2q-aEmGoTX2HEnDN13FhJBGy38SWHhPrXs36ZuQa5OHWPfu38HGp008P
+KxHi1aGmm-F7WSI0mamn0oAOiJf4C7EE67EE66F44MBCEMBCEMBCEMBCEMAC8STH3d-nVm
+}
+
+AzureEntityColoring(Offer)
+!define Offer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Offer, Offer)
+!define Offer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Offer, Offer)
+!procedure Offer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Offer, $stereo=Offer, $tags, $link)
+ !endprocedure
+!procedure Offer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Offer, $tags, $link, Offer)
+!endprocedure

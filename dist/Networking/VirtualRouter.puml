@@ -1,0 +1,18 @@
+sprite $VirtualRouter [70x70/16z] {
+rTI9qYCh28RX3z1kWNF_jtjcnkgA4SdcF-kRFI5FzOv_9c8ftnCcR2Q7sbrwo0PXIPz1HUr1Ml1c4WoTFybRHhEvAgTDDSQh3ei8SsJimDEe9KZ2D3o9DK5w
+aL76eyGo96TCtaOAywSCfyZei10ZIPyZAwDOQndod6clZvF6Is8lZXknFELUiJnPrYVlkTB2ekmeSM5qLr6CYkqgLeQY-ug6etPF6KTm_OfI7wnGVQxKV9Ke
+wCJF55x6ynKYy6E5GVagjHLdjIlfIhsxn55-_DggT2RMaLMnI_7vHkYCMxnr11I_xmZrWNRh90ncHK1jr6VwF9kx4vP8tTt6GxCPS_UEYmzbOKQQZlZtvAa2
+ie4OuJSe_DKrujixof5dJFYlV-yyRjM8HAQEsTE_Xvxv70KaCEHpXfv69I21YOgYTwxAGAwpSJ2BSg9N5cKWpfSocAWKz2Wg7GdAO9PneDTyIjHNPJ3YKmrN
+rKEvabTnnLzH6BYoVSLmg-mh1IFTLHHtoQuYkA_jAGrJx7d6lU9vZBd3GusNn7pkGAnvg73iMDSdHhOopn4ZhB77weIS7c9abPLvXWZov0dJCYIFRMLon1YF
+8qqPYOZYUUVAhCY9Ludwt14H5RnHF4Hj_bJmPYKu6qPF3ak8G_1fL9gv_tVTh1N2RiHIgp3Xt-aR
+}
+
+AzureEntityColoring(VirtualRouter)
+!define VirtualRouter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualRouter, VirtualRouter)
+!define VirtualRouter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualRouter, VirtualRouter)
+!procedure VirtualRouter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualRouter, $stereo=VirtualRouter, $tags, $link)
+ !endprocedure
+!procedure VirtualRouter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualRouter, $tags, $link, VirtualRouter)
+!endprocedure

@@ -1,4 +1,4 @@
-sprite $AzureSqlEdge [70x70/16z] {
+sprite $AzureSQLEdge [70x70/16z] {
 nTQ7TkGe48NX2b3Xylxlkq8jDys8JlBkpZTZ-oJzXqAH_WPc4M7-LKAqtAZmvGYNuN96MOf7PePNOQ5hOCmisiTXhkrgfJLuKTLYQErwfSEcjRzKuTi9Lirp
 nOG-ejK6ppygGCe73JkCpbpPwBUDBgRA-upQaZzK0XszKEoPKI75fbo9c6ESQGVWtumpnAWeWAHdx2NSAupDXNawRmsZahJ6zaOwZOdYobAwGeVoP7Ubs7kL
 3WwWdXlLFi9qWutGZAjzI9wVQB6FAUq2W7spfxCgj97pG6hVgRAu_jc-TrxAnKXScsS8RFINIt5iKYwTv06T6ryuoqDY4sQLXdffKs0RlhujViopAQykbg8Y
@@ -9,12 +9,12 @@ CJhOu-lDtbLoKkb7Jkzhjhs2AYpPK9NLq99Bw-Q8CNNBZw7zWCerQgAmRBbwhun2U64Qolap1gqLxdiS
 dE-ZznKAJ2vMoAzMPZ9r7CygJczelL4cAiygGjzGh2h1zAKIc2imeIkac4S26Txd_1_y0m
 }
 
-AzureEntityColoring(AzureSqlEdge)
-!define AzureSqlEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlEdge, AzureSqlEdge)
-!define AzureSqlEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlEdge, AzureSqlEdge)
-!procedure AzureSqlEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlEdge, $stereo=AzureSqlEdge, $tags, $link)
+AzureEntityColoring(AzureSQLEdge)
+!define AzureSQLEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSQLEdge, AzureSQLEdge)
+!define AzureSQLEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSQLEdge, AzureSQLEdge)
+!procedure AzureSQLEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSQLEdge, $stereo=AzureSQLEdge, $tags, $link)
  !endprocedure
-!procedure AzureSqlEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlEdge, $tags, $link, AzureSqlEdge)
+!procedure AzureSQLEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSQLEdge, $tags, $link, AzureSQLEdge)
 !endprocedure

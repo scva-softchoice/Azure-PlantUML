@@ -1,0 +1,17 @@
+sprite $IcMTroubleshooting [70x70/16z] {
+xPQ7pY8n38IPcOHUtlzjpugiTHOkmk7w_Vkff0W-RAUn-tlPsDW0YPSv47CEoS1gJWta9N8mc4j1YU3wApBG9lEXm7-TovmhcGw6mX9I7vxRE6V1YyL8M_1z
+2-PYWOY1nTiK565GhKNqMpEnwOOG4tjtnEGPC6YW4VsFJYG7f_DFMF1LBPi5rS2FMbGDJLb0FFTBDGgcBC1J7xN1poog8bhRa4ygRObgaAKwXL3eSXRL8SnR
+M8TW8gF8H3GKutn64OpWq3r8MsAR40jKX9AsgEsr5MNQWceG7IAdCwBN92HLqDH-yLBoIG9uhHAQ7KpHM4kyCfcp2SGYbxKaB9cq-gqYhYJGlAK0fJ8aKx7q
+TQ5f5abOXDoVcVPXDaqdOGkHRvDPaEyNbf0azmiKU32Wi0e5KvRoyJc22_Qdo_rONyz0rb8Ef-lzOToMszPXoLwOfGdkbzEXT7UTo9QWyzPIJR0lNjmHp5Ut
+Zb7AKe_ds-DngiP-zHvboylZnGJ6xNni5O7DzH6mX6JCzV6uca1EAq5S_McAEjWzaxifs4iQY8JoC2HE6IRq3G
+}
+
+AzureEntityColoring(IcMTroubleshooting)
+!define IcMTroubleshooting(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IcMTroubleshooting, IcMTroubleshooting)
+!define IcMTroubleshooting(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IcMTroubleshooting, IcMTroubleshooting)
+!procedure IcMTroubleshooting($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IcMTroubleshooting, $stereo=IcMTroubleshooting, $tags, $link)
+ !endprocedure
+!procedure IcMTroubleshooting($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IcMTroubleshooting, $tags, $link, IcMTroubleshooting)
+!endprocedure

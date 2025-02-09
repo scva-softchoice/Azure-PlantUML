@@ -1,0 +1,17 @@
+sprite $PartnerRegistration [70x70/16z] {
+xTO5UiCm341XaINPzp_meZRxQchhP0p_i84N1lXEa3i0m8EOa7PyXN0ZraC0wobC1bOPFL_XMyNELz9FhjYvod_5pTgVgFJ3eZ8CQogTgAXtR3Rb5rRyJrLO
+UW0Wsaani4VmBSa0Jl01lcC5cPdmEOhfxbN4Zj0x5RL3Vaf5qu97bQGRXkTGW-VikVavL-byqmgzjK8Ymh13yLnS1MPOH6XMwMXvfN37qmhbKk5p5IeXMz8n
+irw9DN62m1uPtEj7xdMn1WbU-MtViC8oZ3M1cxJPAxQUaL8kMqYI1A76PegBMsJNBI0BmfNKl3Vd0RRxDghgSuPBbNAjcD-HLjSbFQhWKiMlXqXoiDhbPhIu
+Nz9-cYNFBb2JEW8bzr_uu7oXpLvf9Ym3X7QJYZIhPlk_4LcjO7r3qFewGbYl0CUWh4AiURYcLolZ_ULePRpN6SAn2csg--vbiwOD928SAsUU0Oyg_CaLUvSA
+vVUe0507WeR4pybUcR9ZVa15xGY5EKmRuGMoGVX6NW
+}
+
+AzureEntityColoring(PartnerRegistration)
+!define PartnerRegistration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PartnerRegistration, PartnerRegistration)
+!define PartnerRegistration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PartnerRegistration, PartnerRegistration)
+!procedure PartnerRegistration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PartnerRegistration, $stereo=PartnerRegistration, $tags, $link)
+ !endprocedure
+!procedure PartnerRegistration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PartnerRegistration, $tags, $link, PartnerRegistration)
+!endprocedure

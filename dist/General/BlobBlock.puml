@@ -1,0 +1,14 @@
+sprite $BlobBlock [70x70/16z] {
+xTH50eH034JHj4JlVrzqsVZuK2yxvEFGEG257r9efF4WeK4y31LKK967xLPGKLishEAoZDjAh1WoYPQbBw-WWaf-QIMt5VLbmofEo_Yx_o_copPMQLFHZRlh
+iSnFFQFuoOgYWigXBq1b6bkXw-jKffah3tjUHVH1GeEg3weqokKXcSu1w04
+}
+
+AzureEntityColoring(BlobBlock)
+!define BlobBlock(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, BlobBlock, BlobBlock)
+!define BlobBlock(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, BlobBlock, BlobBlock)
+!procedure BlobBlock($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=BlobBlock, $stereo=BlobBlock, $tags, $link)
+ !endprocedure
+!procedure BlobBlock($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, BlobBlock, $tags, $link, BlobBlock)
+!endprocedure

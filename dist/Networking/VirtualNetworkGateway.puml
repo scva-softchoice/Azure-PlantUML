@@ -1,0 +1,17 @@
+sprite $VirtualNetworkGateway [70x70/16z] {
+xTFfUjiW48LXpohb_c-u4b4FFFYOCltjBpl4hqVRQvMOHsIucxogWOZiXVyNv3bNTonPLXs45qMam1IGCcEvolSGoNMwfSHq21uJ8zMJOlBSWCLZako5zEKe
+3UEVBaTKXfaGplmBqMbkpkZs0TdY7NptCWVRt3qaDWhIpQiaw__RF36wdZcgolhSszxZ7Ejj_ofVvQlmLDNZRyh2jkiLCyojt1iY4LN6NMP5uoEZtBWofd3d
+skC8LpZJDgd15UeykmJX2cMmJGok84CgSc-AA4EuGiUv6JB8MW735TzIa5F52meOA32A2fokU55n1GF5MwRxYistCf2NL9I9mQls59MxTXJHdV55qbehWWKm
+z9q_Adb_38h_hbpvquQIhNvrFNyxhc9WjBLGa0z8Ay68j_OKXv4HsSSfATxdq6jl64VtbGG21UFiAZ3E-wCfvzsHPUKudsxbV3gYeC20WhAW0862ZbWgr0ZL
+jgash6qeG339dHna7A8OCHu628g50cHcWA1SA30cXYq7LVIuEcbyEQ6CmU3zjA_numn_lMNdJx6pZ_87
+}
+
+AzureEntityColoring(VirtualNetworkGateway)
+!define VirtualNetworkGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualNetworkGateway, VirtualNetworkGateway)
+!define VirtualNetworkGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualNetworkGateway, VirtualNetworkGateway)
+!procedure VirtualNetworkGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualNetworkGateway, $stereo=VirtualNetworkGateway, $tags, $link)
+ !endprocedure
+!procedure VirtualNetworkGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualNetworkGateway, $tags, $link, VirtualNetworkGateway)
+!endprocedure

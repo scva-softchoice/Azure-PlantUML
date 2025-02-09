@@ -1,0 +1,20 @@
+sprite $MachineLearningStudio [70x70/16z] {
+rPO9aXiX34KbDWdkV-1O3VEBfjooiYSlcHbwuQ45ogO_3AV4z3CKqJ7fKZFz25d6WV1tXz776-Ix0cB5H4jAjaiAKp6fPv8nAXNSwIaOo9LCCrLdcXRAOmoT
+zae1qh09oVueqx9CJM6v5WXAwZLv989bfiapjHfAfwobQRUmMXHJayb7RVQSgxHRffYMnYznMsdp5JSi2BCictwkx8i-_wvXdwEnHZDfBvyedHx9GONVRh7D
+QbXNyy9QaoVjwtcvklu0IbeGCgfh94pMvyfW1MkLlB4mjafzRfDYBfQ2vRZFpoaDpCMQXwLPLVsK4lOas-Z18hll1CSDLJmiHpaAHW1w9LZei1ozInW1lAxr
+GgpbNtJStXzOuCxsZ_BBB7nqfnXDHDf4fEi4Pnh76gCpbWQ0lArkHgUJQm5FFHBupauNp0MQDalPzalRHYUfxLWRtreQuiBT7RvR-lqqdcESHjyYYFTkGOpO
+n9u5vmMMep6APHnBHi2me4Kuhgx569yH-XMM5B04G_7hSdMoe90Pdx1r_UtqPCbyKSn23M_2iahEQlayMhPjFBkGxnRRH4jIAMAPmUZDagyGKfz52LXaIBBA
+jCt20zyIXM8Mcr5D0ukLL9Fwd_DfjynEzslPD2sfppkkXDlTqWPerby9VTsjLj7TKdhuMml8DZ7JeXcSPPpqoew4ct5trclGDmMMSV9fV5pFEPnBgRLaLCFF
+fz16Qm9j49ONxTvtt0hJR0eVETgzGd7ADk5GkyLmW_Tl-_cu8VgW09b0BATuuAoY8XH1L1Nv71HzKIFvs8lPMG9F7RAzzjm8LWEHkczvMmchEBIFB-ddd8fs
+GzeZymK_9-r1t3xrACtDA210Hly1tm
+}
+
+AzureEntityColoring(MachineLearningStudio(Classic)WebService)
+!define MachineLearningStudio(Classic)WebService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MachineLearningStudio(Classic)WebService, MachineLearningStudio(Classic)WebService)
+!define MachineLearningStudio(Classic)WebService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MachineLearningStudio(Classic)WebService, MachineLearningStudio(Classic)WebService)
+!procedure MachineLearningStudio(Classic)WebService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MachineLearningStudio(Classic)WebService, $stereo=MachineLearningStudio(Classic)WebService, $tags, $link)
+ !endprocedure
+!procedure MachineLearningStudio(Classic)WebService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MachineLearningStudio(Classic)WebService, $tags, $link, MachineLearningStudio(Classic)WebService)
+!endprocedure

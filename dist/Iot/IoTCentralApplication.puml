@@ -1,0 +1,18 @@
+sprite $IoTCentralApplication [70x70/16z] {
+fPO7aYj124ENfBx_YN-WjjWWCmpZLy7vqH9E7nC2oCUxnFb7lEVmyua_TzZvXZrp2CuF88yA8M9VI06SmfyMugdSroEW4B6jXr_1vW4wVPVo4gMdDWFqNY6G
+zUDSI3DBftgSmwoVfeU7B8uy1XPLkLMFyNOBJVYzpTioT4b5Fv6k7jYN1NWTfcXY0JyjuEtgBtZh80ieJD75GcCX1tas5csvRz5BhYr2OHhambAtrVMIi4iB
+GjFYRjhYvmmM82GjhSVEQIqIA2Gjhps6qraIBOkc9Q52pcaiXRF5xLSXaoLZaIKzLSXiIJJ8afuiPBOKnXRtAcIsL2osM62oCByJcRh7cnPJpTjuQgaLvTN0
+tbAEigHdRqb7MP9OMqpPuew5fHnayS1TIphOKfvR5Z5jBOcIPTImHRflRx_qq44Q2vzBxQN5Xb-re7yNoXQPVs53cbWS9f4WI-AlOr6On96mXUlvij3tMTBy
+aeHoB0wZWKBvRd0zQXM6Xb89HezqE7XY8GxEoXWeFQNb9_I5s3283yl7zPkXVJMZNu0j2XdgMHJIRrrMXVHRNnNIhxGfP1ThKKYxTIfaZKHVoBOUBcIFDOLi
+SP_3_0K
+}
+
+AzureEntityColoring(IoTCentralApplication)
+!define IoTCentralApplication(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IoTCentralApplication, IoTCentralApplication)
+!define IoTCentralApplication(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IoTCentralApplication, IoTCentralApplication)
+!procedure IoTCentralApplication($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IoTCentralApplication, $stereo=IoTCentralApplication, $tags, $link)
+ !endprocedure
+!procedure IoTCentralApplication($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IoTCentralApplication, $tags, $link, IoTCentralApplication)
+!endprocedure

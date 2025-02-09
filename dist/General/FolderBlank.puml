@@ -1,0 +1,14 @@
+sprite $FolderBlank [70x70/16z] {
+xSn55W1130BHJY1z_oFFQjpT-3osbPvF76CyBHPvN2pkv4bSLGcqrHrVKR7KnZh3vHNlLsg-j49hYzmGz6cMyXnYWKCYE2I2Go9O6LbV2MAf80wmFo8Y9B5y
+QBt6rL2ztjU9Y8Y8uG2M7ayA
+}
+
+AzureEntityColoring(FolderBlank)
+!define FolderBlank(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FolderBlank, FolderBlank)
+!define FolderBlank(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FolderBlank, FolderBlank)
+!procedure FolderBlank($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FolderBlank, $stereo=FolderBlank, $tags, $link)
+ !endprocedure
+!procedure FolderBlank($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FolderBlank, $tags, $link, FolderBlank)
+!endprocedure

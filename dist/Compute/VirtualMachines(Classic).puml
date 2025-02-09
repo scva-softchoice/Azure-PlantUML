@@ -1,0 +1,16 @@
+sprite $VirtualMachines [70x70/16z] {
+xT07SiGm28LX98eGkVzz4xOhwmfEp-yo_Pjvm6J_aRHiGj2Eg1oYeFyuqrL1o4GNfQIKUb5gIi4_gX1ZMgdirPHI-HALi5A8lQiJKv37S45HrRemPgXEAggp
+2l5KDAteZ5BQf69bfzA4tXlTzYjlpZ16pGAATpV4BAGCZbbAyVDGjmqABYZkcAqfzFkKtdjESU47A80oeNI2FOf7Jue0x5QWoA1eXOXodINNCI7bEakkOyAA
+pn8VarDy5W5a5MzTiMuvnGKoIolsxHJ56W_reYJxPWfWqsnIO25-UGmXqBTMAAZ8GOezF1nKr1wJe6936aEgZSKKjZ6C8ANRc2PkcxflLNkkbLq4DvjEg6uq
+g2_7Mn3kQn6ifwjAW_NQQW8Vr2i
+}
+
+AzureEntityColoring(VirtualMachines(Classic))
+!define VirtualMachines(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualMachines(Classic), VirtualMachines(Classic))
+!define VirtualMachines(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualMachines(Classic), VirtualMachines(Classic))
+!procedure VirtualMachines(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualMachines(Classic), $stereo=VirtualMachines(Classic), $tags, $link)
+ !endprocedure
+!procedure VirtualMachines(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualMachines(Classic), $tags, $link, VirtualMachines(Classic))
+!endprocedure

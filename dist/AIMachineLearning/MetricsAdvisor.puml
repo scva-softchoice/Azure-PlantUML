@@ -1,0 +1,19 @@
+sprite $MetricsAdvisor [70x70/16z] {
+fPU7akiW34NLa6Z__xrFzaOJXqSA-6p3pCxnbKGQ1BW4J46rDHWcY2sYzop17GiJiTwrm4cwPOcMuZrB3FYU1HxeBGjzovBjXwy49toivvPVi90u-nP1P7N7
+BOiXeZjkMWHHyYTB6cyRmQyGeYrO57qBTP0aHCuB5ZZ1IPG5IueZEedokqLYSn9btS8sHbcnAFo1A7QDeakMZ65vUZIY_6uX16BDGkYmvSJ7IjSiXd7VT7fY
+y6iMGVJhy8G5Vh2K2uIOIv0rB5gkVBCO8fSBVFcVMWxg3vQ4-18jZhALKdklfRRUlbkYe20ULhvi_K7zPic8L5uuEqEbLe_IMwtj-6sP9vPvGM6sNBlJLDX9
+kJlbauKHhVpFOId23zJpsDGo5ZHQcl4JgHyj6WKDj5w5BrXlChUyB-XeQE8Ngc_nEmiHpPjI-HNrFNrZKI8fqonvi2JFWdDBPgGt4p8UQ5rWPh7JRVFc9Xwe
+dQOMX0FyBOkqdWUBbbgAneMloylFSUZB_ttfQR1K9_PI7PdDo7nF9fPdbf4pZF8LgRq8J2nHPgupXcDNeYkZfVwvfSujlSbBFJQrE2eaMkTqrsHvFgIdMRxI
+3rhDQgNrWxHZgKKymeEMcM3BeYB51MUIR0nRbY8YsfgAjLxd7v3eboXEyX-pR0x114bVa0V9_b3OW2Im1mJhIC1XINUYa0Mu7qN00e55K0A6P04imX8GY0My
+6qKGo0BTxQsuqcnps5SBw91bNSE-JY7P7ZKTosq9O3GNehqXsT2Sg-ZijWOET5CIysOuI27Pr10Si37S08U_mJy
+}
+
+AzureEntityColoring(MetricsAdvisor)
+!define MetricsAdvisor(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MetricsAdvisor, MetricsAdvisor)
+!define MetricsAdvisor(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MetricsAdvisor, MetricsAdvisor)
+!procedure MetricsAdvisor($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MetricsAdvisor, $stereo=MetricsAdvisor, $tags, $link)
+ !endprocedure
+!procedure MetricsAdvisor($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MetricsAdvisor, $tags, $link, MetricsAdvisor)
+!endprocedure

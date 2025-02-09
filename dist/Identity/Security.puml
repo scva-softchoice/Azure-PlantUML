@@ -1,0 +1,15 @@
+sprite $Security [70x70/16z] {
+xT9LOa0X34JHWIZT_txhtZmPwYs7_ui5KvPswrq5zRZdEbkoUC4mGU8D0QbP5Ao1eL7WZYCMExGVVceNzJXaAdth-pr8NfqaQCLfUj3wZwYiogfaaAkkqDvP
+MPLLQKbhU2jf-BIA9ybHq2Gf2fr_t4ea9L1IzaArp44iRB11K6neH2InITcZr98yIgsFaphs67kVMemJ74UIUvJvxsuu9ipBJa-Du1mb8tn6S9vSr4O7euyg
+aWsSbcyZ0LwyZZXcsCk8OewCfqPs5CXR6Tv3gW_cjQYUbTSQ9YrN
+}
+
+AzureEntityColoring(Security)
+!define Security(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Security, Security)
+!define Security(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Security, Security)
+!procedure Security($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Security, $stereo=Security, $tags, $link)
+ !endprocedure
+!procedure Security($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Security, $tags, $link, Security)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $TestBase [70x70/16z] {
+xT5PiiGW28NXWnm1i__ztj6A9ANfxZpdksDFVu5YvV5uI64rSpUhB7SRz0FYXkh3tOxwZ9NxWsHwFv9LlCly0czCSdif-Wk2ryHViVk7akdzKRBFZjO6pmek
+59fdgaLLoz-NULAn8jNFg8CVV7I_fbrzxx8jPdoln56PNqnSLooEE8zyM76gNApZh6Q-hhXPvV_hLf3bfG68C5NaHwge283-e68eSL4f-26Zmbm9b_dr28Iq
+DCkfOgH0OYUpKKBourmPogYCZ5rK-5yfgikAuq-SAXexK-tdebnLWdsXMMMCqeUnLINmW-iAINHABYiLG6q70csTaGMTaBLr1TAo062hIf2ANI4jLx9oKQbz
+dxJJeiBfHcEVRD-feBI32d1M6VjCTj9pnG2TLl8-UQTL1UUJqja--PvqiX5yKWd-q3EIDgiGW4ugpeKwgnJyYCb6lX2JIk2NJYfBaqh5dsZRtrThMw-CnvE_
+Yf8VDy4VQTjE8AHlIquAP4k8hemC016kAnG1aBFOQPe58dLTgIB8imGIRTijJP19t8c4u8IVZsEOO7pM42nezTXQlE1kjQ1xF1xV
+}
+
+AzureEntityColoring(TestBase)
+!define TestBase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, TestBase, TestBase)
+!define TestBase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, TestBase, TestBase)
+!procedure TestBase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=TestBase, $stereo=TestBase, $tags, $link)
+ !endprocedure
+!procedure TestBase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, TestBase, $tags, $link, TestBase)
+!endprocedure

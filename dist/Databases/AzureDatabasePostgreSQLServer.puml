@@ -1,0 +1,19 @@
+sprite $AzureDatabasePostgreSQLServer [70x70/16z] {
+rTO7RYWx28NX0nWCUF_xVPfcnNhn3QDRywUtJzYPXcyIBVtadw-z9fXPxfZv1JG1aVQ_HBW4tKBRzq1V3JADNJAT_I2j44zcexHIK_c9KUOmrLrHLJDLBUyC
+BuoQUoovTzEFYE2JOXugQXwxkis39l59us68jMyODw6d69ygOmZDk9brzsKvGZIJCNRA2API76Eh78NGbybXx9IdKAPjh0THK8xILHQBMPfvZgEQCikbINnN
+PO_y_HM5vpibkrdtE9Ik8iqoEm2mPLb9mHM54wxQ_IbxKKd6dJfXfi4uyfhISCTv8PEXQy2AadWomr9t74b5wRYZ92nHdYnL5CMT1B2cWruhre4rElUCAuhX
+piqYq_aXZg_izRxaS1NDeEVOKJd7iueIy-i6D5ZASxYawQ54HHdpQm7K-5RC8J03U9GK_g00bEsU1K1NGDyTkxaeV7oq1aHDwRYAHK5pG0rIFHkVMVXHvjTg
+w3LbRioWQoM2A-qmewmgYhCuDKqy1VTcewh4nrCw34_YAQEep2LHCY0fc6dlBnJ3MSk67lYGZnTAFigHCvxQA2jpVsMCp6pTyPHcxjwhIZ90UIYo_9C0a6PL
+6S7aOuGn9AT2wUxLusMMAj9pAf2VkiCkc_lJYluInNxg-OLmvJyrY-0gVafHNELFAHrdKb9oWsHWFYii9Jx9nevH0bfaZZL3SPWdpwF2A03bcsVC86ooEgBO
+Hxt66E77jVXA2ILy7RMUEoLCy2AMfjrZFdUxTnN2D-W_
+}
+
+AzureEntityColoring(AzureDatabasePostgreSQLServer)
+!define AzureDatabasePostgreSQLServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabasePostgreSQLServer, AzureDatabasePostgreSQLServer)
+!define AzureDatabasePostgreSQLServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabasePostgreSQLServer, AzureDatabasePostgreSQLServer)
+!procedure AzureDatabasePostgreSQLServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabasePostgreSQLServer, $stereo=AzureDatabasePostgreSQLServer, $tags, $link)
+ !endprocedure
+!procedure AzureDatabasePostgreSQLServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabasePostgreSQLServer, $tags, $link, AzureDatabasePostgreSQLServer)
+!endprocedure

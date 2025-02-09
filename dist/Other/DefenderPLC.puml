@@ -1,0 +1,16 @@
+sprite $DefenderPLC [70x70/16z] {
+xTW7Ua8X44LX0ynSslxN6_NrVbzBvIpW_oQKg3oCe9TIoI3tyJ30Wi8pOlI88gCSPXJuAimtLMIg8ERr4WZ5vws2NgB8hOgAQz9DnPiwErASQPDjnLPD56kS
+r87-YsOK8TQ5KjG9joxksQBYs7Mf5dPHiUmingmeZZsx2xE83q5OHHOKv6V92ZsBcLD2VWNmiroXMEjZ33YfIBMJEADeSq_ygLa8fSpoGvIoH-My86qfs5QU
+-R0ML8br8P8Bb38BhvHrARF00z0gF3kcn9npqghyB5oZSEkIM6NfknJYim1-5WdncNPA5xswNGiArIMAV8-2c58uhQJyB9vS5v_VuTmieLB23vY5M9SBzsZx
+5GV4AuwvujIPGwzREdxT-WG
+}
+
+AzureEntityColoring(DefenderPLC)
+!define DefenderPLC(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderPLC, DefenderPLC)
+!define DefenderPLC(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderPLC, DefenderPLC)
+!procedure DefenderPLC($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderPLC, $stereo=DefenderPLC, $tags, $link)
+ !endprocedure
+!procedure DefenderPLC($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderPLC, $tags, $link, DefenderPLC)
+!endprocedure

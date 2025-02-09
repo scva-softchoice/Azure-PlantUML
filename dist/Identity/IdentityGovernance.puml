@@ -1,0 +1,21 @@
+sprite $IdentityGovernance [70x70/16z] {
+rPU9dlCc3CHrIxZl_xujBjanO6UFdjz_JuTVfD78Le1-4LZDFJ8pt9Nf9uZNCPFsrUmqyEEMii-Jd-ADEdmyqAolcaUuCMre3k9SjAEJuQQYPfw8evO3eGLF
+eFs5IfUvMXj69R2bdEo4n_c77k3eMX8iQkAbmP3YbZXUSYNMX39MNc7e6H_MZTHAeB_LBxBuVHH5Rj-MyB_G8t6HkfJaC6EBmhEmXDGrYZvLf9vzIMSjUqMx
+kqZ0iRVq30jtRUkqCR4X7baMC2H4fvS-82bKSaq8-WcKBl1HEK3yh8b4nYaVoEDewuhNWczk6LsHumzCpyTTQ50RQ6cF4-jag3w025oZDC04fWWOIKept3Q4
+Tc8QZqK_YI9rE0rQTuLMsWO1-5bNRsaZsqBHHdydew2a3M_Ww7A3DX9L9BoTZJacximr2411Cte09Dgx-_5Veply05izQCn7ogHRjE53Y6wfbxtsb4YZD8-J
+iWgc7NZgyFcAPbKvivYfi6F2JCHuC_u1UAA5JwGwoRTDybSKVGXInYTM2BFrCPwYM0sIJx86V1VbmHUf3afI3BoRYWAbFJr2tgC4hktM5uW2sa0N8tMvVkYH
+R7TTjGl6REt2BBjUfl8wewHTIUPiLnv6m_eqUfiGQHEwFOrGjHO48fRh-ydWYxt7J5ldp6ABRxA6s-_XkI2v30dPXjCZEXNKC8rAjjdqZEy5TIG8V1ube1f5
+h7il-t953NVQz0cUeKJrsrkIr3p2rNOfVjbuiBo1s7FGraSdyeEWjt22cgLONZ1w1_BTRk13Y1GxiXtaSoRMBOf_lC2VYS6whcUImBKYmvChiMtOaU1g7js2
+xJOI-jyNPQ_8lbUH4h3PNV-PkpntkYN_fDDz3LGVW_gbkqwUruu_IPiLYVlv9u7jIWScDSBWLAxZL2xJCI0slTEfN_Eufp4ES6xq6UprVbWoVGssN8Iuq8yG
+YwpANgao_IBy3W
+}
+
+AzureEntityColoring(IdentityGovernance)
+!define IdentityGovernance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IdentityGovernance, IdentityGovernance)
+!define IdentityGovernance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IdentityGovernance, IdentityGovernance)
+!procedure IdentityGovernance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IdentityGovernance, $stereo=IdentityGovernance, $tags, $link)
+ !endprocedure
+!procedure IdentityGovernance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IdentityGovernance, $tags, $link, IdentityGovernance)
+!endprocedure

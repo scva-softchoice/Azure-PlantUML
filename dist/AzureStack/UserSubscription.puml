@@ -1,0 +1,17 @@
+sprite $UserSubscription [70x70/16z] {
+rTO7qgH028PXmWVC_K-yPUYbrPOnR7p-C9NcBR02qd-1HG6e2Zsdves1wH4ntm0z0DypePlOV00t8pw6DvCafUlCJmbTfLwuDyhRdSGhHjV0IqoNU4rVB9Ji
+3rRKI-4F7suiFyszIfoWApHgJbV8Bwbmr8mkyIW9NO8eqJNyPg5aSUOJmVHqc4y2NQQVc7-Ed6x0PomeiQeobMmSwRub06129VcoZcAXL62nE4Hq5v7vtta3
+xYwwwHYREpWZkgubHSCTpEfBA5oPrITeaILuEWrynLlcCvCbaXL8TQALU-8D9hbHPaOHD-vfHbOg2emouZtPBvGHNQ3XquXZi91bOvCftdqu8IlzjmV3-9vc
+nLUsHAophS3tZ1ljAkKiuaUIepI7MJ3Hwjq7l11F_IW_A_MHpsURTAUBaCVeHzf2qVtiA_hj8XfFD7g7pFTJnXEBAdFX1e6P9QB8NBc7pio80zFcscqMvXX0
+HbASCjQh5ObpRECAK3sMFSIuOdC5VF6LfQf0A4MxovS_fyg44dzkCzZ-Dihp2gIit9z5drVeRMMVaHSLoKpShlXQKNev30ocrEEudp5haIIuAoDliD2_wWS
+}
+
+AzureEntityColoring(UserSubscription)
+!define UserSubscription(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, UserSubscription, UserSubscription)
+!define UserSubscription(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, UserSubscription, UserSubscription)
+!procedure UserSubscription($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=UserSubscription, $stereo=UserSubscription, $tags, $link)
+ !endprocedure
+!procedure UserSubscription($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, UserSubscription, $tags, $link, UserSubscription)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $RouteTable [70x70/16z] {
+tTO7RiCm38LXpaSrzxzlTmM7fWJJnSoNlNul83IzFenFmVG_Zs_w-XNcVrPO7TzSvMw53GVEjogAn6vK32VEtOgZuDoh64hUgWWMh5Dnh33Htjki69QSLe1K
+mGPJ3OzutYB1XguYkMBOy5KaLnmxL8X7lr977aE-p0fEukloYyl8b2jHAo9bnMEdsB7z2gvMD3RywXPnR0XTtBk4MAFTaPw8jfjajCm49OXiV5t62Af5LU7v
+qqHedGdAE4P5QIcA2iae66r4KQdMHcYBwOmDuqaeTOa38ZWs132c1dLyCcOs82BWylsqqs773tvI_E-MyfHNFj3Mq3TCpWVUcTQE0-59EaFVS6GyMMFe2vxn
+r3XtO2IQzksabtPAth-EX7VRaydSjncjuCoAVRlV9WsSB_mDnITKGnIKFsaKb2eI5UTF7WLGnQCap1mbeKBKZDck3nM96fWHDJgpM51f35l4WdjZJaOVolaJ
+tHjbEcuGIcpSO9JukC4fmRWX6klIgDYzBSh63KoPZ3QjJpLQdEabVG
+}
+
+AzureEntityColoring(RouteTable)
+!define RouteTable(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, RouteTable, RouteTable)
+!define RouteTable(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, RouteTable, RouteTable)
+!procedure RouteTable($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=RouteTable, $stereo=RouteTable, $tags, $link)
+ !endprocedure
+!procedure RouteTable($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, RouteTable, $tags, $link, RouteTable)
+!endprocedure

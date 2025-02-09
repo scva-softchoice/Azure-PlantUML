@@ -1,0 +1,15 @@
+sprite $CostExport [70x70/16z] {
+xTO5SWGn34HHkSSotV--0PSMEyCA-mSMkkejW_oJHZ4_bq8VGg8bpYgPGn-cp7szCXrHXZB1GGcgp9Jy_fFptQ4fTFvLOQPGLuMwAWe7XPbSAAmfp4pfERL5
+QPbCCUPCGIsuA0eNHU6YA5mKXOkYM7caG_muLMRcdxlGRS55KRWe2XT5uQ9eABMKfx_zYbRkknHuA1071UAWGCugXaWYfDYte1t8_a38ptYNmezvzuRtfneY
+PGiFcFs4hPnzslDGJ25a_haRApVxpQEzLrlF3asXyvifZ4YZhWfrLI0dbCRV3kULEA_q0UAWM5-c3AKs2dq03qLcmtF1Xa2Bk3GQlG8
+}
+
+AzureEntityColoring(CostExport)
+!define CostExport(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CostExport, CostExport)
+!define CostExport(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CostExport, CostExport)
+!procedure CostExport($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CostExport, $stereo=CostExport, $tags, $link)
+ !endprocedure
+!procedure CostExport($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CostExport, $tags, $link, CostExport)
+!endprocedure

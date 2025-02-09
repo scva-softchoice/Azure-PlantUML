@@ -1,0 +1,17 @@
+sprite $APIConnection [70x70/16z] {
+xTL1kcGH30NW4o89lV_zzgLUgG4I2xZ_bEy80DFhzQ8L5gx4eZl22RUog8Dn8ua6Ca9POtmRuYjm9PsaB2wheTahxTjdgGbdeeCGZbW_mlamF1HragNT6Uiy
+Ygcf8YAZNy8UMvSHITOLx8az534T7Rr6WOCIbuSCvIidmezrZ2CMFIaPN_woiBeaNwIGQAI4AQGNv9TI_90uHkj3lUcKJ7ZKVztcVIq0f3xCkQG90usGjdkM
+Ci2rowUBKsReIB7jEqj07MXVoWoXrdeAdwworCvejxI2hzfwJ3jUTQeV2UkS4px8MhUK0fHlFwuVlBRYWsiRAbRpTTBwH_BQY5oirayCOLNcybaxg5EFISUR
+9d1ZMctVbChENuP1szbS_QsqBA1JaH0GrTAnCosXuAl23t5H-rCxUwWmmI7s4FyvZgdtDHJh295i7RkjWeZwezaooBba3TejmSCM_AnaKG-GsA3nE2O9EvJ5
+_WGdOPA5sfJX4hkH4IYt8JwsW18kKAaEOrmYjher_xjRb1Q4wVLw_GS
+}
+
+AzureEntityColoring(APIConnection)
+!define APIConnection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, APIConnection, APIConnection)
+!define APIConnection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, APIConnection, APIConnection)
+!procedure APIConnection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=APIConnection, $stereo=APIConnection, $tags, $link)
+ !endprocedure
+!procedure APIConnection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, APIConnection, $tags, $link, APIConnection)
+!endprocedure

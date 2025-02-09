@@ -1,0 +1,16 @@
+sprite $DedicatedHSM [70x70/16z] {
+xTG5eiCW383X60Hw_mEFCSca1kby_vFwLozyJ4Z4p4G8_H5Rv38iX8xuBd8W7eP7eyvhuhasQ9lXVjBGdlEXEnRR3uL6uFQhCYOtdn2EpcnLHa-JV0hqAVG4
+nNTTq7UFg4cn3MYCVlQp2_Tl3TcSddVQZ5htHuhOmgT-w-oSvEw7e3LakOsW8_OW5hB7i92anWYkZWfykV9NyAaA1Pqic88wKp34eUWSed6jek-af9akbVqa
+CySor3AKL0hCF0T4XDgL8eWeTM4fbRWCmpIY05UAN2cwKea04cg7GQ-2uPGfiOp5L0gbT9oXhSfuRwVaiKQKt9u2RA0aE8OU9GUNOcafE1HBtqe1gT6ICioK
+uPmC_IaTupmyeRG98bie0a3ku0lR0G
+}
+
+AzureEntityColoring(DedicatedHSM)
+!define DedicatedHSM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DedicatedHSM, DedicatedHSM)
+!define DedicatedHSM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DedicatedHSM, DedicatedHSM)
+!procedure DedicatedHSM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DedicatedHSM, $stereo=DedicatedHSM, $tags, $link)
+ !endprocedure
+!procedure DedicatedHSM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DedicatedHSM, $tags, $link, DedicatedHSM)
+!endprocedure

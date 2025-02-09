@@ -1,0 +1,15 @@
+sprite $DefenderRelay [70x70/16z] {
+xT05ZaCn38JX2HYI-zztuM5QUosbWgLyvQZ_5F1RBSkov58g7Mef6Iz8B4yuOHgBmPYLnP5X69Hmg-8e9Z18U6B517V6uriSrGJUYj2zeYhwVACWED33AQk3
+W-0XhE5A45n4FvHunGz6QJlDuOeVrD6UvcZ53zIHWXK_K0VFhd2pZk_Ix8K1k44TRPl7_zAiRSK6BMEKz3uJVmL-CDhEAhvU4VZ1uGu9yOeDd3D6lE87D-uV
+1E4AEu5TKLmuNh71GNfBk53lhJ_Vo0Q698mh3h91B7T7nYpjXc9QKZEIy89CnA8ROQACdsrPbcLPtW4
+}
+
+AzureEntityColoring(DefenderRelay)
+!define DefenderRelay(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderRelay, DefenderRelay)
+!define DefenderRelay(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderRelay, DefenderRelay)
+!procedure DefenderRelay($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderRelay, $stereo=DefenderRelay, $tags, $link)
+ !endprocedure
+!procedure DefenderRelay($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderRelay, $tags, $link, DefenderRelay)
+!endprocedure

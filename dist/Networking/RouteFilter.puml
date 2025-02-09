@@ -1,0 +1,16 @@
+sprite $RouteFilter [70x70/16z] {
+xTG5hiGm34LH1mp9_lVxqNaQScaORfcEB2ezI9y-VKg5brOJHR4kJoXAT4MPWdHDwN8AZqufjNXLfXNfNZvMX52TLaZELFmxkuHIpfq5o5aAaBCK82MVenIC
+KROhG7ugH6cJKe7ybLg6ujNaPOtxDHecI01rLOv06Op65KmdwW61qikq8eGo52FF5MSqZb21Odlrl-fgvMJrF0NCHPHs2QKbCxLWsr7ydWO8MTYkCcvruPra
+8CkK2gKbscaWP74g8uEoppYoevGyKWlh-mokp9FT-QFqu4y9SfLIsZxZo4ebfnr6247HHGg18MlR5ShzhsBz30LCFqS1Swv2ELQC4Cyer695gWSaKZIOPMaP
+oA7Ip9PjhYJs2X5gQyeK92iGewXKPMcSwT7xzEdJDm
+}
+
+AzureEntityColoring(RouteFilter)
+!define RouteFilter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, RouteFilter, RouteFilter)
+!define RouteFilter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, RouteFilter, RouteFilter)
+!procedure RouteFilter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=RouteFilter, $stereo=RouteFilter, $tags, $link)
+ !endprocedure
+!procedure RouteFilter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, RouteFilter, $tags, $link, RouteFilter)
+!endprocedure

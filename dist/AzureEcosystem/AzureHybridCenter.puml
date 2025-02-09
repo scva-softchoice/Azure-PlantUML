@@ -1,0 +1,17 @@
+sprite $AzureHybridCenter [70x70/16z] {
+xTL7TiGm281XG3H9llzrqt4lSjaacM-sUl-3SOC_wkK5ANqWkb4GjPucX0j8R4Rm_1osWk4KidMAq8vjKu9MOdO_mxQBe4Kokvz1Ew9mJEqGmn6o1dXxbEDX
+IAnyodxvdv5SkrxDbrRYI0mTFtlhOUcMghjj_0HMK0oo66U3mX9tMxOoTZ19rToI4IQOm3fgM2AIshAK6oCClEivqwTaTSZuZWG1kr240Wzh5T-XKOdpLHED
+I6aP9Z8KPwCHajOOvZXZtoUPbb9k6COPFdmFxihBY7fSxLtO_xVEecdQ4BEsYW98L9X5QC1gVQNuFWADoYVbVXcpKINlKx2eVDFqiyouKWyg3Zwji4XYjSPA
+G8jAYCQP2iaJ5UP7Ab0Vg2Ge3rG8v84AmFTAMTOgkQrY0A3V9srHyTArLHW-n6j4ffLe75Sctv6QPQXClhPb5yzUtzL-AXwDXeh3Zs7uegonJ5ibuzfNEiSo
+RPMy_2Q5zeh31DSh5OKvhsShXh24MavKN10s8Alvaimm8Vm9Bo_l
+}
+
+AzureEntityColoring(AzureHybridCenter)
+!define AzureHybridCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHybridCenter, AzureHybridCenter)
+!define AzureHybridCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHybridCenter, AzureHybridCenter)
+!procedure AzureHybridCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHybridCenter, $stereo=AzureHybridCenter, $tags, $link)
+ !endprocedure
+!procedure AzureHybridCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHybridCenter, $tags, $link, AzureHybridCenter)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $CacheRedi [70x70/16z] {
+xPI7haCX34CXay3__-zhRhfdwD1w7ErRop6Mwl8cYqKzyPwaEW203W24Rago_Onq2Mwof2GKIFV0qAGaVeNkuxVoaZZ4B0UOur1U8jkRIVGIeUtLafIC1b4_
+xa_n3jn_QoCh6SEmtWDjZBp4QKnXVZpQXZCb2Vg14ToHZ5b9-j3xMSONi_pRNinSOlPk5XCch4UGM6oo5sE8NJkoRHkmvRCOnR3TcpQoP2y6_e2xU4BBPM4_
+-G2Varmljb_gc19rObFYJSaiiKb0B7g6C46CKgAN42WUHyJ1mwwWXYYJnJ69_44OYfsf4bdszAQ2EqJRuMi-o_E_PwANXCiti_IVP6cVzgB5QPzbqHA0lj-B
+G3a1h3QRnPIWt59XGv-xA3YrbkV8SnSfBrakosMvq7CNAZdicOkLBDmVkNGg4v3QhOi9bcc0HPjPxzPKXQ1yXyNY3m
+}
+
+AzureEntityColoring(CacheRedi)
+!define CacheRedi(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CacheRedi, CacheRedi)
+!define CacheRedi(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CacheRedi, CacheRedi)
+!procedure CacheRedi($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CacheRedi, $stereo=CacheRedi, $tags, $link)
+ !endprocedure
+!procedure CacheRedi($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CacheRedi, $tags, $link, CacheRedi)
+!endprocedure

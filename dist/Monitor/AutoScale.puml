@@ -1,0 +1,16 @@
+sprite $AutoScale [70x70/16z] {
+xTS5ciCm34JXM93a_YTU5QVW-JnUfbUclo2NbhVtNrllsWwjoxdBySFPIvLrQ7KOTUXtJ3mYrLMf10KCY3a538WtA7KcWZ9T28fGleiI7_cCSBpr8WXJFBiP
+GOWIOyMtDoX0kD8gGG52PmGb7cjzn9Cgk6VKHwokpvKc8qS6IbPNHLjiXZExCn8VoRdaYeuKinD5GL3hhXS9uK7H4QxeYAxeY5TGPX4o8uhiG0H5GtJ5GUn0
+fbuN83j1f1aP28B8IW6FIBDAL2hVBssDN4zPBmQaftWbJHh8Wu8V6LH11cHUGGQ4ADBdhZKwXQn6Cz9c-IsLLaqhkA7-JS9dzAqK-NjwVhsqiPBZIViGCK4H
+-aW5CvB3Z3v8iTHpeim7XVVVMj7_iESl_JX_uoR6WHjYHfCAxlOxARp_NW
+}
+
+AzureEntityColoring(AutoScale)
+!define AutoScale(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AutoScale, AutoScale)
+!define AutoScale(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AutoScale, AutoScale)
+!procedure AutoScale($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AutoScale, $stereo=AutoScale, $tags, $link)
+ !endprocedure
+!procedure AutoScale($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AutoScale, $tags, $link, AutoScale)
+!endprocedure

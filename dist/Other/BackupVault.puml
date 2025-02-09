@@ -1,0 +1,17 @@
+sprite $BackupVault [70x70/16z] {
+xT85OkGm50FGZxApzx_le0USV4Cco-qhaohPeR_3DrPLuKC9XdG7-pH8FBqp-eId5SZ1a49f9wI87cnICEqWgG47znHwi4en6s58DUm-6KiRHXvDsl-K-9v7
+c5FAsnUzfZ-_yd58ZWZTOXums8Iy0fFNrlpYr6QvaeofsCIqRufpnMYjsgjJLOJMD5UOGgaVOha62aLzrL6-y5pqDqb-GRN1mv2SAA2RpVQwL-H0cB8yuHwo
+54vfYKYqQCa9RkOElL_yKkIyX2nASNiH8Yo1GOhOYYn3sWnHjIitIyi8KqtzmeJfYaNzQXIJeX2fgWKnWq5IGZR1kwfO2Tby4p_QCcshAAtnhKmpf1njVGPC
+HHsUcasuccz-PHJmYqOHh_zT8HI89oMuh0-me4XPEb12b2ccuQc7psiGKUyreGuffpfAwS_oOL_s1-dkeH4MwyOu0AO9x02SGXp-A6O0Z28I_wJTco8AG6YI
+0933AGH0M_6w9yLRAKw73mONXxkGnvDsNgZYWkS72OLmDLq5tFcPCmqnog2G0JDdewLqFmQkeYtck17gnwIPDncqJHCWD20-p52QmQ9jmlI7V3i3
+}
+
+AzureEntityColoring(BackupVault)
+!define BackupVault(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, BackupVault, BackupVault)
+!define BackupVault(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, BackupVault, BackupVault)
+!procedure BackupVault($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=BackupVault, $stereo=BackupVault, $tags, $link)
+ !endprocedure
+!procedure BackupVault($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, BackupVault, $tags, $link, BackupVault)
+!endprocedure

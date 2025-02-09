@@ -1,0 +1,16 @@
+sprite $LogAnalyticsWorkspace [70x70/16z] {
+xT05OiCm38NXPw5p_mklAWUSMdF6-ugXtu0Vg12p21CLl1E9sXFXWZIsDIcZZNodg3LHTyJsCBgGxPFnI93CSaRsHgr3mJwnBkFh2J8-bL2IKybFHjpTjZyc
+uN5Sq6JU90X-nsWXxwyeMYHHSRHOfa9ey4n56f7ol775vxItGgcAVcY5_KAwAlRP5GgQMr7r6gzh9VuZIFnJXEhtbpGh5vTA3GWQ_wwLkuCgX1DUobOGR2bP
+qKCgV4W52ERc5-OXMP5RPIPRmSkAbXEgWUAlnJyheLxnNgMNOwSoTQgbLV54XN10HN10HR5RaQu8OxnI2yOh0WnN54jMvrvLgZ7MMEOO8DqcmapuzdozBrGN
+v8igzVjL_YlJN5IcXS-gr4-hw8-g-24LdHRobI0-Oq3n1SRFyGO
+}
+
+AzureEntityColoring(LogAnalyticsWorkspace)
+!define LogAnalyticsWorkspace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LogAnalyticsWorkspace, LogAnalyticsWorkspace)
+!define LogAnalyticsWorkspace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LogAnalyticsWorkspace, LogAnalyticsWorkspace)
+!procedure LogAnalyticsWorkspace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LogAnalyticsWorkspace, $stereo=LogAnalyticsWorkspace, $tags, $link)
+ !endprocedure
+!procedure LogAnalyticsWorkspace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LogAnalyticsWorkspace, $tags, $link, LogAnalyticsWorkspace)
+!endprocedure

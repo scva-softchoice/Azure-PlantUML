@@ -1,0 +1,17 @@
+sprite $Firewall [70x70/16z] {
+xTC5kkiu38RXtoHmvFrlTyfosOapbzzpYkhp1OsVvv-GSYwbv1onLIpSAGaRP7v4gpk1-0MAM2Fn6mdZ2h-LCOhuWpAp9owlkpWpvoRoLs7YfBWoSpmkuWiU
+GIEtszIP2PbuKC8RYNXS6LXz0_1AbfNm0ibQ0Oy2osgK4-wnRC8PdI9RiUzFb0danpFZSXSdcHJy8azW7CYqx0Sq8w38l08IdVy3wmwIw0vebmgpxa2AxY7f
+3WIw0mPhfreRObLxXAoTfGrQj9U1-uejhbM-qNvY3nK0-RvIRmuLkf6sT9Fx2k50gbx-LbIg-b_0GL0VZrTSmKdKcOhW8lcucMlMwIUjgsZ0BNFPcyFyygiR
+3_l4lA8HBiYbOkSNScRLDQC3RUPxSYVhXWhZIPAL5ObuIKShYt2EU8ERdS-UEBixrIO7jJ4-u3RcMyKMrw-Msa_iIsNmtlqBAvtxf7K-LqeRLF19eI45Fyu_
+_m4
+}
+
+AzureEntityColoring(Firewall)
+!define Firewall(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Firewall, Firewall)
+!define Firewall(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Firewall, Firewall)
+!procedure Firewall($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Firewall, $stereo=Firewall, $tags, $link)
+ !endprocedure
+!procedure Firewall($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Firewall, $tags, $link, Firewall)
+!endprocedure

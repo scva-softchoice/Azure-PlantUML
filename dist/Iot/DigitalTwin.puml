@@ -1,0 +1,19 @@
+sprite $DigitalTwin [70x70/16z] {
+fTC9RkL8281XTl3zBposnYXbNDjpVq-jfPFyeK21CLPtDo7u1-B963vYRnd21sHU2FmADKSW1CgNySU5y1srRC8sjjSZq6-Ai0MRXVHMBRkFITgq_OUhy_0g
+-rSdyqKbwVAwynSb7Y-ami5NHrT7xx7fbtMqrKgnLYPR9XzIHa14wMVgSyOCBxxCc4ynbc7wf_A8yFmCXY7lKaWKZLw89iD0ugZ-vehLC90aHlpwbyEedrHE
+sYmInvKwbrwpqDt8ph9IELqLQMdkRByIYaWb8_fpnUd2ycHjHTSHPRf8eHRR5JSHoM4AtQsON7AOGeLtAddTtZ0gUX8gbN6Z3gFN9mbcPHn9RKKBcbLK6fnF
+qWu4dUwr3gDT0ZeTfGwZVUDAEUfq65fMyXvqGaJYNofU3o84DzAAPnMLvpqJogXYGe-Yrw6XDQWGND175OO7x5OGRjwl21JSgSZxbmYt20hiLDel_w4_2DMx
+uiiAR5JYGqKU5OaZZcw5DcSnC-RZ993GRoOj6bNCBWnnLWAI7t7J5dTlP8d1ZfF2__Yun54hYgKYrcB0E4uX1CX-f5eHU20h5U2Z9olTDw6-Ai2hIfs6rDuL
+e9XM4fMTb0g0BYjsKc4MDHjL0ArcIcAA875vbfN433Gata-o7G8FrcPSROz2GTvczYCLnuyPWQfUFPOT9QWwLm-ROfYWsEe8BCXwougmfaSAKNiZs2D-9Om6
+VyNx4E76vJ5VIRdkHoZ3ndy
+}
+
+AzureEntityColoring(DigitalTwin)
+!define DigitalTwin(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DigitalTwin, DigitalTwin)
+!define DigitalTwin(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DigitalTwin, DigitalTwin)
+!procedure DigitalTwin($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DigitalTwin, $stereo=DigitalTwin, $tags, $link)
+ !endprocedure
+!procedure DigitalTwin($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DigitalTwin, $tags, $link, DigitalTwin)
+!endprocedure

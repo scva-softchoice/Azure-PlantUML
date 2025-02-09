@@ -1,0 +1,16 @@
+sprite $IoTEdge [70x70/16z] {
+xTDLWkGm34NH9rRsl-1cKdLifvGCp_aik6RCaOW-4M5qiVeNsWg9tpB1dSXyXt5t8fNWEFKXxKOgRKJQYn9VOAoHBn6Mp9UqkvwApazbFHbIFmHZOduKDsz9
+PTrDhUxRKpDLMrIM4HxDb8xVLYEyOR-XZ1ksZ00q_nhGs5UFK-AxBnsE0K5XiKFnncE0K73iiSLK7DDApTZH2aLH5nNhodh_98O8XSG8e374A3H651P3JdLR
+nk0nfbyZ7cCSEI7uO3cXaJCVRthnCyyvLsQDd0lB1JUBN94hAe4hAWw_e6AG2oe2N5018AShXYUnpRXPR5D9U49vhc9umQSgWJToefA4akbL69yeUfKa59AD
+YkCRYK4bHnDXx1BFtAhOhMIw4euJCyR8_qeVcxyp9VIGVsNeOI_eLrRaTwf4yJTKicXMD0l-bHNP2a9FYGIQoEA3OkOH
+}
+
+AzureEntityColoring(IoTEdge)
+!define IoTEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IoTEdge, IoTEdge)
+!define IoTEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IoTEdge, IoTEdge)
+!procedure IoTEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IoTEdge, $stereo=IoTEdge, $tags, $link)
+ !endprocedure
+!procedure IoTEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IoTEdge, $tags, $link, IoTEdge)
+!endprocedure

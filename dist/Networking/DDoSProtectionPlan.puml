@@ -1,0 +1,17 @@
+sprite $DDoSProtectionPlan [70x70/16z] {
+vT87jfmX28PXH1JuvcR_sutf-7T9JnvEdV8U6rsfwlZ8jL8EAoRAjAvZfzCYTWnkfX-PEGOljA9XC9qu1g77n05u28IELNgYT8I5p0o3jt8TO5473XSIjmNl
+maUfPewlNCzDlxD6aSIlz8Q7a6mVXxkRwKDc_Z7MDnLDs5LS4_osqcIdBLTgEI2h5Iu7-BTLAjxUVOEQgwXB2ndDLT14Nc4nsRMq_lrhOKMWdAhi_DQAQ239
+IdypXDFj3ofGcsPKq4N2k_DHCPrcNx7Pg9YAXBNOgDWC3ohrXR2KLqrL1WbAoLQY_xBIifL6WMGhGa7DLYf5WAzN7A29vofEamwiLu1EamhuQiM1IhDSXJOK
+C0zpN74B0tJQOC2Zaqe4C6qPi5O1b7RgUeLfpu25IbnAL00yhm0eTAIjLHeTyv2HSa12nEW4XprPRplTJlSJjP2v0a3ed07F8aeNYWDFAawN6C1z18MkLG2t
+4QOxSft1K8aUPP2Ep1duuGnCprISYf5ynfcUuxD8eHNiE625rXJ3ZjAwXWsX3FRyRYB5LutovEI2KuVSwNi9KEdEUm
+}
+
+AzureEntityColoring(DDoSProtectionPlan)
+!define DDoSProtectionPlan(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DDoSProtectionPlan, DDoSProtectionPlan)
+!define DDoSProtectionPlan(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DDoSProtectionPlan, DDoSProtectionPlan)
+!procedure DDoSProtectionPlan($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DDoSProtectionPlan, $stereo=DDoSProtectionPlan, $tags, $link)
+ !endprocedure
+!procedure DDoSProtectionPlan($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DDoSProtectionPlan, $tags, $link, DDoSProtectionPlan)
+!endprocedure

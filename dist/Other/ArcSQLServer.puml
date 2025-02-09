@@ -1,0 +1,17 @@
+sprite $ArcSQLServer [70x70/16z] {
+xT67jfim381XRPc-_mCtaebE1Zx1fhltJzZuOq6FpHSoXgTyiI_5_KinDQ_CbXI523j1kSxt8N9M4UWL6E4vfTr_5kUgChYtG90P0O2zfTBywGTFjKe1C9RU
+SXZ7QZ3UMYhFZPKOaSaEzlkRKlA0f8Cr2W5eJY68j9zYjG_d51U8v57XMILAn-8vjEw59fLwdHnZi-ctw_UZd9Rj3mHjIX5KpqVI_gB5D1Vxbv9RDbAsIg27
+RTjYN8_Z4Ep9LeqKXOnRR3JkecqHdbIYPYhMQai3wefR_xMnCgwOQbg9A9XhIiH4v9ULx2zJlYrsHlbIsXhIu3dHWymhquC4pYHR9R2Sj6fLGIHjbH8XJWqd
+PidCAvCzfiyOiMG3vGI592_PG_8Q7q51p2WHdJ14dv9F3eeiAiA5i5m9hoFH4E5XeuSQ81CC0E1rXG18vlfPYePYSZ4BnVKYugbSOjHzLzoM3VDR64gawqOg
+w3tJIIAD36wPUq4wUHUPXCB-a7sKL2s9IY4JVyd2UjDKrGfuHZBoSPRvC8OArTSIXEYI8_0MYlb49WI3IDHFf2KCGrRpOQQCS3OaOX4jpao5YOR0Tm
+}
+
+AzureEntityColoring(ArcSQLServer)
+!define ArcSQLServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ArcSQLServer, ArcSQLServer)
+!define ArcSQLServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ArcSQLServer, ArcSQLServer)
+!procedure ArcSQLServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ArcSQLServer, $stereo=ArcSQLServer, $tags, $link)
+ !endprocedure
+!procedure ArcSQLServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ArcSQLServer, $tags, $link, ArcSQLServer)
+!endprocedure

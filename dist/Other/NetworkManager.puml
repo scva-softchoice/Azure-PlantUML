@@ -1,0 +1,18 @@
+sprite $NetworkManager [70x70/16z] {
+nTC7Sjmm38LXT82-_u6pWhAYB7EOb_wvb_r7OA47AQS5hY2SZ35Y5HaZ2OySZ9vgl2GUMLTop0mO2I8W0qI031R1CtXaPi08ai4ZU0QFj9eP809aa0YUMKSi
+mfcQHeHG4u-mLMOTYNo9pbWUEYDvy5rcD3-BsVGAfizWqe5hDRxUsvgj7pvR_xVdV2wIpjHYmT8KVXRpMjnxhf5cfZHVUbiNVQmBcvdt0ZnmcBqpx14kr2mo
+b9fwX7573kwqeDPehoDDY80C404oI0JFu14yewqZG0Rm_pEycGZFQ1u8p2YjULSKoEmgsPomp6QW0m5KwHC9dGFTHs8pGac-MByeyvRXe-buf7dadHyDF9Er
+PuImsXD2S6q5OQ9sb31QDvcHTPE4gelpsSt5ew2xbFnboV4AhzPHwkG4icgvNYq2vVfS13uIMwmtOyvKhhHbkJleDIM3LqYtVzrMniJqv6FwjvN5H635QroS
+dgu_bWjjYUKu5JteE8KGejOZvVmrmaOhNlwMG3nEIJSobmjKN_Sfvgz0CYwbJCGIzwq3vTY1bsNB218VO_TMXE2F7n12rCVf_VNnus1mNVf5IXopaUyVXn2X
+cQ6Vf_l-OtG4n3vNkethBxS8JizAqEyPSw3V45sXtoIzNxJm3G
+}
+
+AzureEntityColoring(NetworkManager)
+!define NetworkManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkManager, NetworkManager)
+!define NetworkManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkManager, NetworkManager)
+!procedure NetworkManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkManager, $stereo=NetworkManager, $tags, $link)
+ !endprocedure
+!procedure NetworkManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkManager, $tags, $link, NetworkManager)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AvailabilitySet [70x70/16z] {
+xTW75kCW38HXQKQYtV_0Qnk_1wcGa6p_qjpuqvlbjr9ASP5K3bb4M2eJaLmdauXOgTWjhXj_ik8geYVPT9FZnQmLG6K581-Z-fddQ2cZfSnL_bSme3ELL4Rq
+KSLTv9JB26yh8KYrKgc-NybfkXA2FgW4gEN9nwMK-vL4tI2CAgKygRYUcDwlH8DMzFSh0JJTm6sf0XXXcyKAw6kL77qN3hbndj1NgjjA799ceQBVg01h5TNs
+w0ugReygMifa9L0LOR5Yq9szN4bDW9uGKlDYnGndn7ogmfXkENXqQ9ELvg82a3HxMZ6JOGLuL6dVHEEAAi6Rob1k7D2z0j9pys8bG6i538yhCUhJIawi5Klv
+JaLZVFWSvGiHIiPyOUQPpbVCSpDTANbmcAiC_RnABYCoKL7lX7W8ta5VcO9qe8nzln8FJoka330SJEu2vdvx-sdf5ppinBSh2dQ0zogyel_C_oDIbfZ9RyOT
+Y-FRtWgmaWqhbOl5sYrcXNsottCIsqSOIcLoiqDbjFybv6glv6gln3gPkiNSutKojihlumS
+}
+
+AzureEntityColoring(AvailabilitySet)
+!define AvailabilitySet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AvailabilitySet, AvailabilitySet)
+!define AvailabilitySet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AvailabilitySet, AvailabilitySet)
+!procedure AvailabilitySet($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AvailabilitySet, $stereo=AvailabilitySet, $tags, $link)
+ !endprocedure
+!procedure AvailabilitySet($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AvailabilitySet, $tags, $link, AvailabilitySet)
+!endprocedure

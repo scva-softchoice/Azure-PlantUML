@@ -1,0 +1,17 @@
+sprite $FaceAPI [70x70/16z] {
+jTW7UYin24NXYou2nllVx-ilRc84-SP_UZigSPLGdmcsXZwZK5zXIrzHBwWi45lK5OuxGO6Ckw_amDhWd6RkPZOrwu-pofZchuozoZ1VKwbNp7CiLiJyZ9Og
+z8rPgAXlcUmgz0BRLRn4polgDN9M4I-QPvNfLV9KuTCDavSH_yY_codUP-VUNnALWaVgTKYPrmral86VhOWtw2ML-Tcvu9fAU7X4UELZNl6e8p8pwWGPZJga
+HfGPKX9bywAvV7Pt6GtMYBGp8vfciYbDMB3eae_DHI-fZAF9i1BD2h5YpOfWXRs8OwrNKQpP1GjgBicHYKQ5o8X_CoBKyVIrxGl1WJigmRUdYkpjYFn_nZTw
+kpDApoQuMG-oIcSoB5R6SJjkjrzlguzUVvProqcvWYEDAEeLPf50euAPHAHLmKmYZKgoA0Uw5OW_Dmv5etB7U6XCh8tzQOLCFtubmfYVLbntSdBDAGwlgF0x
+frlo5la9
+}
+
+AzureEntityColoring(FaceAPI)
+!define FaceAPI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FaceAPI, FaceAPI)
+!define FaceAPI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FaceAPI, FaceAPI)
+!procedure FaceAPI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FaceAPI, $stereo=FaceAPI, $tags, $link)
+ !endprocedure
+!procedure FaceAPI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FaceAPI, $tags, $link, FaceAPI)
+!endprocedure

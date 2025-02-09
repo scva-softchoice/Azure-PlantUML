@@ -1,0 +1,18 @@
+sprite $EntraIdentityCustomRole [70x70/16z] {
+lTO7TkmW38LXbQko_ms_XkPvIC26a9CllSnFESMYEMOHOQO3hB02-Me3rb7Q9zKuwh2DWBQeJV3PJWhE8ljtOtw3QGtx7HnkfV36Laute_vWuq2dH_8d-cCL
+zd9qlH9FZ1R44tnBHN-kOl60wHkkrsd9uO4AuXOjYepCsOVI8kHSq3BFAQ5b73a1sY0vvbHETWFQ98ECqXPMCrFFZi6KjqSEPKPaSMNUccFK6l1V8ghIldlz
+UkyPBTn1_wXcqwMHGxdJ3mxmF-GsKhf8zoVrndWMcHp9Blv6do86liYmCJYMs4TymQ0nF9P_elooFDDWjCgBBZvrnGU4Y_a3u_d00Mwa_UTT1JUp3pVjj6Os
+QqJYsihiVlrLiKaZ4zUjJEvNNvLHnpopAkOJxtThfOzaWxlHH-jkgrBwmxmgwZ5vSsP6VM-VCjMeYiUKC7iqzgurkahCWJMAzIBxYiGDjc45vX5T1N43CQW0
+i8_tuh6aYy3w-mN5NWMeodi7l5L1CUyoa8qAq5Mk3dIzWa6bTO1S4WRCAXwhbVIRYh7cgkc9f2QdxLFPnsU0vLwdhnWLomtULvZ-4yyDTbM4lewh0ZeZC3Sw
+fqoTtm
+}
+
+AzureEntityColoring(EntraIdentityCustomRole)
+!define EntraIdentityCustomRole(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIdentityCustomRole, EntraIdentityCustomRole)
+!define EntraIdentityCustomRole(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIdentityCustomRole, EntraIdentityCustomRole)
+!procedure EntraIdentityCustomRole($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIdentityCustomRole, $stereo=EntraIdentityCustomRole, $tags, $link)
+ !endprocedure
+!procedure EntraIdentityCustomRole($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIdentityCustomRole, $tags, $link, EntraIdentityCustomRole)
+!endprocedure

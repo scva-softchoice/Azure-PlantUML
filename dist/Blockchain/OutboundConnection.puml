@@ -1,0 +1,17 @@
+sprite $OutboundConnection [70x70/16z] {
+vTHNrjmW38PXYWhI_lURGlxssSI0ICzxFJp74fn9_s6bdXkPcBaS8fLxb4-6uRTgU1Y6IdWXM8uk1ACSNGXMmyDW9J1CTAp2qsZdTcDZuKBY3l5oyds5bHTp
+Vr9qoJ6VAIeyITsdoknpn7skp1ppHULXhEQ-hFJ6m-meOySzegZWC16b1xSRKtgma2sbjGPZcGSKStVJzve7bEQzTgQOVokgPEc7pAnB0QMmGkRUTfKYUitT
+DnLM7IbjHS5rOFsexIXZP5N1SQJcn9TZwqhL7dKGzsbp1UUfkENclhNTeb_ZrAFtlNnuB-Q339H-KCRNzQ3GOBS4QvehChpc2bytKrf9r_HhvV4LecBqjjBR
+js1LK1aF8uGAfMi4odWOKOAVSxgL-QvOlQwKuRtayRy5Adoxc7T6uS50z55fEGqKVAyCly6n38O1vPtHdi1jmrW6mrmLPNYjmbG7iJQbEahq8qCQxMSmLSyI
+UFD7I2zNuhq02GT8E43E54w70H8Ea720X0Ca7AL_kCy
+}
+
+AzureEntityColoring(OutboundConnection)
+!define OutboundConnection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, OutboundConnection, OutboundConnection)
+!define OutboundConnection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, OutboundConnection, OutboundConnection)
+!procedure OutboundConnection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=OutboundConnection, $stereo=OutboundConnection, $tags, $link)
+ !endprocedure
+!procedure OutboundConnection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, OutboundConnection, $tags, $link, OutboundConnection)
+!endprocedure

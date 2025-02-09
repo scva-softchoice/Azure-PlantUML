@@ -1,0 +1,17 @@
+sprite $DefenderIndustrialRobot [70x70/16z] {
+xTO54cCX381XGe3O_U-xaphMadNxErRxcgSq_L51HipVQEJ6p4JqJKvbpvdwzOWFSdSQV2loBLlLHBwTgIeZWs6agCh4H15KLxnN9eouCZ8bXcJrP61g776b
+PreC0TK5Gyb38ZX3H5UCxvHwUIiVJM8sA9vQRNeB0qZdF5xrQQmU82-CtHX4lKGv5Vz4Uw-8zSgLAPTpMQyZP6VAEuHjL9pnRpVL-m0WxuTXcnL1k0of-lZz
+PaPl41zVUqNXSGx1Yy9RX9WyxevIVbxYwLurantIw9vCYE-MvqRWNgdqZ4SaiQhavzIx4m-9Nn_ZILhEpjd6VSEtd36h2I3dDmhpn9JXTc6tzYC1JzNn8t9J
+AABmD3gv8PpFjyYRHWS8xjtuxTf3NbMZ32sP5bI0br6KeJK3tyvuGIPj60moJPRL85FN30UP8kiWng3qFMzOeVB2C3F58CCFm-wA5vm6-8vqYgIlOgnNhAHW
+vAECYdpDVsOR5KjnPg50dA5PmRXIVupoNy7QQ5Ch-SmezA4Jf_B7yFCaV52EhBJx8BoOn1Vmp8T5Lf9zER2ixSDt2fqg9R0QUL-pokLwKd7aj-mB
+}
+
+AzureEntityColoring(DefenderIndustrialRobot)
+!define DefenderIndustrialRobot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialRobot, DefenderIndustrialRobot)
+!define DefenderIndustrialRobot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialRobot, DefenderIndustrialRobot)
+!procedure DefenderIndustrialRobot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialRobot, $stereo=DefenderIndustrialRobot, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialRobot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialRobot, $tags, $link, DefenderIndustrialRobot)
+!endprocedure

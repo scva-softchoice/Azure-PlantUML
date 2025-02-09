@@ -1,0 +1,17 @@
+sprite $AzureVMwareSolution [70x70/16z] {
+xT85bjim543Hfu_wsVz-I_6PEgvasMMw0o7b7H5_klz4pTtDLFXQwhdZodtDyoXkTon7ed53YvnGBfESy-yGkPvfcTyXaolAclULP4dwch4I_OAsdCeLleX4
+loAPQfQZByGeBBD6Z18AWFZ5_RN5MHmwmK3BFh1DvFcWourfVHRHpxTL-jxLqqt0SnF7HON9bPbq0SlSP_ghD7QoZmIqt168amEtwVNqt8dXI6VJnnGYzq3c
+jzYg3ty4yb1fet7FJA-XOQL60j2QiCEA0gI65Bmc0YHt3Ao6EcJDDF33VPbEkwQI_PeQI4rqQau1VNQySJhjckl2Spe1fv6oEgE0PpeWlUQYJWbRHUfCvgeI
+cR6i-AgI7wmg8T-ZudoFYkBVeGBKO_wpgvoCIi0UKxlAutmKz6-i902jlgtI0Dw6LFWDKLl4sEXpPdvB728WTQDYhRMtYh6NroiAR9KINcbcNAE0HyIZd2zP
+NEEjINnWiAgiETzKSLNz3XKH-LqgeMedbOmRFxEAHDuGmjVvxx_t
+}
+
+AzureEntityColoring(AzureVMwareSolution)
+!define AzureVMwareSolution(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVMwareSolution, AzureVMwareSolution)
+!define AzureVMwareSolution(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVMwareSolution, AzureVMwareSolution)
+!procedure AzureVMwareSolution($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVMwareSolution, $stereo=AzureVMwareSolution, $tags, $link)
+ !endprocedure
+!procedure AzureVMwareSolution($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVMwareSolution, $tags, $link, AzureVMwareSolution)
+!endprocedure

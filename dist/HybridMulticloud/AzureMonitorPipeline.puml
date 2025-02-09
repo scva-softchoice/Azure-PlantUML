@@ -1,0 +1,17 @@
+sprite $AzureMonitorPipeline [70x70/16z] {
+xTO7ZkCm38NXnoPIvltlknOyGQ8qoMDlp-U6vXyagl3F-VWW5X5c723c5oRVRNZF2BjnyGUAdTIVARiZnpFYVZp3_ffYbhz3cAF-ZasF4kykmWJMUC_6YH93
+1aGUR6oHPBnIOa9faJSLZmc-HLBvpfv8A2AV2ffSfn7aAmfOZ7c9C4Y-i81Yg1003juoZ9vc9cmS0OW9r39zXHYho4GC4SJC2Ane6SA5cYa0pvIeWoj0jb8q
+BNKXjXAqYjMH0hQ6-kK1_OhNJDzHyUK6RHLZoymuM2cvgcTK5XvlvADA0Sf4HKhpM2ahOwnqJoLlN2few9GAujiLkrR6AvMtbOAPOO8nLU6wR9vzWy359ohG
+vQLAiCpgpMEbFmEKbnM3vcm5zgf2M3BJvogG-dmXI6QoV5LAlT5LteuJiCm5x0rmGNGzO1WwfFwyKe7Idu6M5Ap8Lum79DRHRHP0J72LkMMWnfWXsn-zN0ds
+M39pYLxkpcY-GdipnoiWktVTw8XJ8ZWbWdf614JuxJu-VW
+}
+
+AzureEntityColoring(AzureMonitorPipeline)
+!define AzureMonitorPipeline(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorPipeline, AzureMonitorPipeline)
+!define AzureMonitorPipeline(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorPipeline, AzureMonitorPipeline)
+!procedure AzureMonitorPipeline($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorPipeline, $stereo=AzureMonitorPipeline, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorPipeline($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorPipeline, $tags, $link, AzureMonitorPipeline)
+!endprocedure

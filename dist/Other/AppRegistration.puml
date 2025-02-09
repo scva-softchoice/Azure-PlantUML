@@ -1,0 +1,16 @@
+sprite $AppRegistration [70x70/16z] {
+xTQ5igj048JXsUuHoFi_y2LMi5sHXMl7_ZZoLOQeVQmygujcigJIh4L4NhiieNMXQaWfoRfuK44_q0TInYVwKU8BAZyA8YAt5pnMKhQ3VTGQf0VBsdbooRfy
+acXMigZCC4du0igFalz9uMTM7FxRIX00uxUK9AunASeyJTlBMT5bPcsvBSUcNfabDmjPT5Rcyp1TpTQQIp23IsP6CSGP2uyxQcZ3_poIq7IiU71qPKa6dXS-
+ghYJU9XNZIjByS1Xrax5mo55rLv5dmwzQg-Y3gFgeBAEvLcYdERbT5ekjzkpShvTbvTxv_1ig29TbAxohgZwVOKUMPjuG27WlZg75699njgha3Zdr_ATSdge
+4DWg7hag75G8Y79sxehbFA0GQ_AgqyR2YgZYaMvZDKAKRR3Hm6SARKzFb6RIy5W3mmoC9SFihbDCsZcM7923ZXoGOy5f7xXV
+}
+
+AzureEntityColoring(AppRegistration)
+!define AppRegistration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AppRegistration, AppRegistration)
+!define AppRegistration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AppRegistration, AppRegistration)
+!procedure AppRegistration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AppRegistration, $stereo=AppRegistration, $tags, $link)
+ !endprocedure
+!procedure AppRegistration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AppRegistration, $tags, $link, AppRegistration)
+!endprocedure

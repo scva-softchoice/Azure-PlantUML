@@ -1,0 +1,17 @@
+sprite $NetworkSecurityGroup [70x70/16z] {
+xPS5biGW34033KJkVzyLwYdXJRekVvwCzSSg02Cc4cq8JN2FJ7g2CiIfUg664scbS2s8IA-qpv8WGccXSOPcM5z0U1WKLIN4asN9XnzhSseDaOB6qfX_IcD1
+nXPlJyHQbf-bOkwf2ejkK47Fqjgp8bpEdTX_QNCn5kCHqHKq9uVK5up0M8oCHRKQ2xgGoyKYTonYBVn5bdyBUw-8XJs-h-NVyc_vjyWxMCfTIp7FHdP15_Di
+dEvQpkiGLHOFz2YgS4BkMAgANGjAtD96P1eJjjYsZ1lZ5wHW83-PKK66x2VZJoY3XQEvY19ScDnaXgbOsElCC1LB2bb8DNcBV-dXr5EWZ_Gr_NeO7FB35lRg
+yMlgdhK83jwSUaqX692ae-b818PalMgk4aqmPdhLw0aZaVsazS6BvfB9113NE9AWnaZSSiQzSIH1pV5a4qVY3znQEBovpx9hzWbpWXY9TVMirIX1dB9gbceK
+uGvPPazBn5GJWPgc9LBWFgWDPy2n9ck5jsAUwNsU0G
+}
+
+AzureEntityColoring(NetworkSecurityGroup)
+!define NetworkSecurityGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkSecurityGroup, NetworkSecurityGroup)
+!define NetworkSecurityGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkSecurityGroup, NetworkSecurityGroup)
+!procedure NetworkSecurityGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkSecurityGroup, $stereo=NetworkSecurityGroup, $tags, $link)
+ !endprocedure
+!procedure NetworkSecurityGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkSecurityGroup, $tags, $link, NetworkSecurityGroup)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureTokenService [70x70/16z] {
+xTDNOcin28HX99ZXMFlVRtg27KuHrjCjtrFgRyP5ZZMLTGQWonh5fxRGwFZnzAnckDUNneIsCYPOMnaJT6bCw0jZghCQaleiGrAUfPZLIaz8VHPgP9yxfldW
+OSM9EMESLUREkOshodLd6sEYuZGSunZNbKyy6NDT2OTZIXKd4X-ZMicTCIgLa9wGKYMaCPLAO8mfLB8OKwbauw-f_A_yhzoSX9bgxzLA961tzAcAMzZhs4m5
+jgF9dORB2csNFEZqRDkSTDzkOzmiowFoBDvDmBRP0Gbv5kqHhYinAnhrIb3_O0dFAXdS7PRm8EEohz4jetCtud94TolvH8MVL9fboAy-_GrB5VDl_E1VxBZ2
+WsCoog7ci8oU4VsauhGCJ14paqF-XgeM5Ab3mauhZ8TwRu5n7C0FW7sIGzqJsW4vPfwWNX5boXG-HuVdqAcMqUM26hx7Q5DtnsD7FmwMYlxxoL6ZlvCInZWW
+lZ4f7vDHYjGpDgbg-DrGUKO7LngXwQV7AQy
+}
+
+AzureEntityColoring(AzureTokenService)
+!define AzureTokenService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTokenService, AzureTokenService)
+!define AzureTokenService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTokenService, AzureTokenService)
+!procedure AzureTokenService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTokenService, $stereo=AzureTokenService, $tags, $link)
+ !endprocedure
+!procedure AzureTokenService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTokenService, $tags, $link, AzureTokenService)
+!endprocedure

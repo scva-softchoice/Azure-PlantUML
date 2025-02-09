@@ -1,0 +1,20 @@
+sprite $Aquila [70x70/16z] {
+fTQ7akkg4eNXrNI2rdt_vxsIZO8DVIpD_dQOYdyjy1Hb_41KDeI_Aw87OVh7H2UFEwJkEX0y8hun7HJSPzwfsXT-5kc6ZE0UzQi_hX7liap1RyM_sNU77bnA
+dX7ymZvXJyUOtyZ8aobv1hbYDS8JUkzZaXgRFEDs_j5aHukT9ynFXXcBYpfdVe49Zwjs8qCOrFYKLMIZAYkcRCd9XuARkLl-z45ZzBsY7qRIfuzY6V-qApVl
+B7twV9bfXuzBpLxYiap5TSZlZ2zpjRsOVz9v9fPqJ5mZUQO0l6Hgn2JYEW9iIRNcCpfWU5xnEHsXfP5eFcKweCWZONV7S5h9dpqTICiZ3p8rYpogw3JIugNU
+hPIiqiVKuO-RYghfzi_UFmKnEq_sMfaKl16h7HWsYMpbsFwqUkMCgwBM5T0GYSkywnZ1YeemM0fXnVQYiwUXBcEbHqXN3DOL7Hb-lvWVsaVnm014BnNTigLF
+0VW_Ab4x1S3wKT5N-FY6fiDvXZ4Eq6GB0Mg2DrjEs_d6Yo50kMSOfI-HBNH-9_9iIgyOmFhEC65LUfC1CKOdoPH-eW8wpj3rOGGomuvyEgLVxtwpZ1EhkIi3
+PWM7Kl_NfmnZTBzOmabgQqsb7-b2V1buQqq0tKWVKK2wDgghAi0c-5Bu2w6s_gbesJ_Gjh9zNZ75RwqnBjhhd4BO5JFyLiTAe7jIaNuYtdyf1AUR9_8ceClj
+aX9Em-qch1cWBmKJQepVk3M0zOKmCYFS_91e-4AON6xAcmEIHA0ckAFiOmZJAOIROogXJ2DaBhY7MZX0c50tmaqIePWHzuBRBCBc4SO37k64JwHv95_JZAuD
+iVGuEOcL2s53hEukXCV8ObDDpNnbX3yXyGZpZJ7X7vHIk7mN_Wy
+}
+
+AzureEntityColoring(Aquila)
+!define Aquila(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Aquila, Aquila)
+!define Aquila(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Aquila, Aquila)
+!procedure Aquila($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Aquila, $stereo=Aquila, $tags, $link)
+ !endprocedure
+!procedure Aquila($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Aquila, $tags, $link, Aquila)
+!endprocedure

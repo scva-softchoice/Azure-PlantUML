@@ -1,0 +1,18 @@
+sprite $CognitiveService [70x70/16z] {
+xTA7ajqW38LXwQZo_W-yXUlHScFZEYNjIxRZVmI6_ah__SSGjI-gGdTfZ5oUDShb3ZosWAuGyjYaT1h7j1BEfoCxbV2paKmXpvbp6S_zIYeTqwpA3DCHpgey
+s9EVgAJGFcHLRWy3ZLyhOQeMvqy6dgKg8VZc9r-JHEP6HM4H3Zcr9VRCpOh8g-Nn9KjCpdIx4j3yOkY6UMbDSbP9BBFOD-ZqU2ioEHUDC4XjR-4gwziwchyZ
+bHmvXafCAzrmNtJ-gZJdbLALsVNB6nKJY6M7-IYf9Dx5LaKX2kWmJMuAfWLYLN5OJtbTGEI4loZfgcAe2_dDtZRaAXgheGYhYYuLgHFsMc8G5V4J5OFtVMcz
+xsYBW6LBGxOtGMX5PLaASmFgMQw7Niy7rCqzfvMkNsZn-hsqzqgYasWlniGIOwLBXMOhNYiStZzRH1YiTKhVECPArrUKgB5InC94NXFfiXts3ArDANx4KCcV
+PFRDPXigJlRz4_Eg8ju6AUDWvjd6Yb5VZ9zAjYr1RMMSHVeiSb1nyacbOrOta1zKZ6Il4Y0YjdPG0L5CAdLMhKmgIKIOLygyKhVABrIsH-doMKMfutnI2Lhm
+WqfIuRXRIQQ1tQiulOFVg2YjiEMrYj4sLlFueXfhuw_TbEdFzzz_dm
+}
+
+AzureEntityColoring(CognitiveService)
+!define CognitiveService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CognitiveService, CognitiveService)
+!define CognitiveService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CognitiveService, CognitiveService)
+!procedure CognitiveService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CognitiveService, $stereo=CognitiveService, $tags, $link)
+ !endprocedure
+!procedure CognitiveService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CognitiveService, $tags, $link, CognitiveService)
+!endprocedure

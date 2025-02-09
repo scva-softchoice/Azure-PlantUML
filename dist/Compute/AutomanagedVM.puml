@@ -1,0 +1,18 @@
+sprite $AutomanagedVM [70x70/16z] {
+vTA7Zgim48NXETETzt_WkqOZX8cu6BPllYqnxSUsGZyAter8uWE8nmVmU56c7ky7G2pUonW0--N7F4Ok0EHIGW2BCdJuGgBJU6RJ6KDN5PVnE-xpYvAr8aJa
+qO58AgDNCj8ZdVLd-m0rLOyf35ugIWEkLt0yoyZ-V_Dfu51mfD50b-l1VJAvVsul69hfakaqi5me9Cyv43MYJim4cqhKzMFZktXPHdPAHAZJ0ijZkvj2UoIB
+4P54TWRDKmplgs6grsycHcpzqip60B5khEHAroqEy4mbruhboh-j4aShyghCxMuQwCqcJaJGdDrTHQt3jvFHxPTNSw_jVmnQ8o4YpcMy3EiEWJy_jHT0dKpg
+n5pG1rvdw_e9WLMF1bKnI9lWu1hGG5kNZ6Wp6DuwfGKpg9F9gPG0BoiNUeC-vAKsEvMYgFU2kCuGQKMqJKgkJFDMF8SBancMzYpgz8KC-_wSCckxHfabseOn
+ixKZZuE_aFvOPfz5kZApvEFe_cFDXJSa7ZSrDrqAwktnMl938leH5INYGp7WG_HVsJQ2hlZuojOtLs90z-13AXm3q2tY0wPRr0TATy1tw0wr7Nrdf0XTn1KP
+AMWUH0y99XjwOggZfwQMSmhqz_q3
+}
+
+AzureEntityColoring(AutomanagedVM)
+!define AutomanagedVM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AutomanagedVM, AutomanagedVM)
+!define AutomanagedVM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AutomanagedVM, AutomanagedVM)
+!procedure AutomanagedVM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AutomanagedVM, $stereo=AutomanagedVM, $tags, $link)
+ !endprocedure
+!procedure AutomanagedVM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AutomanagedVM, $tags, $link, AutomanagedVM)
+!endprocedure

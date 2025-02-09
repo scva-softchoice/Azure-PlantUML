@@ -1,0 +1,20 @@
+sprite $AnomalyDetector [70x70/16z] {
+rPM7TYCX34NLG93__-0TmpiZUKNwrflcUdag4zD_0jCleBKcz5saNQn8_8rGsXvqt_IcGf-7byIVCFwimtjOWgwVSZWi5QEFOUvXgNIcGgLxiNmw3dTFbjvC
+HKJjsTVUaxXd2mMioTG_8sbC6RQYUQydGBbCxprD3qUWbD5tMzo6Zt04GWdniR-OZkWOMM9czysVD0kd8mv9xeOSD3esHWTiZD5h9wG-PD1GXHyXOxm1rzxq
+iMYdreuHaggX1DSmm56FbAOlpR4cFGqe-fXG8rA42HnZgWNviHup8KB8CYSv57IEOagavQdZi1bZLjuGOBj0WwcEgHFWXRdxNbWGKQ8a1gcaF4MGBH9HJ9Sb
+8VUmTsYj5e0ekDq2jCXJUwqz8mlT0OZlOEsPsw9nbIIO5dR1-BECzLzEpqDYMJYwotaqIx2gucGGOInOkPG69grfDhAYR1TQXahVidXU2jlelfaRptbX3gkO
+zrnYKcht-2J2-C7YOuxPSvY8puXoDmddpkjBATFc1IxgtE357ONJesC-OChOVE1PesOIcwbuksAlPIxe2Pu8apGuD7M5KAcgubWA8k3J1v08Wa1YkUs-NqzK
+6pC7txl5p8BfH9JOWRaGIaITnjOA9eYoOBt0eKJ7aWPgo2YQKTg8WZA6C9Gzw17M9EXpmLIOAIH3fEdghELtgjZCmsFa0BktW4T4AOmueLZKwWiRdT2vQGSB
+foW-DtIcpKqFIuKXcKgP6dKw5qjkxBcUt3PWi1pY0YhaRG9-ijWCd0erpQWM6pCptjN0qWqUbgoecehFbyTNkrYtXe_rjtozhR7vSZ5w7oydXlXzazw0yR8Z
+ZOXwqHp1SOM93y-QvWotMMjf1DvD4sZpSOVmRapW4nh0Si4KL0tJD_Zb6leb6leb6leLca6_G3EOlejqfL_43m
+}
+
+AzureEntityColoring(AnomalyDetector)
+!define AnomalyDetector(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AnomalyDetector, AnomalyDetector)
+!define AnomalyDetector(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AnomalyDetector, AnomalyDetector)
+!procedure AnomalyDetector($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AnomalyDetector, $stereo=AnomalyDetector, $tags, $link)
+ !endprocedure
+!procedure AnomalyDetector($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AnomalyDetector, $tags, $link, AnomalyDetector)
+!endprocedure

@@ -1,0 +1,14 @@
+sprite $OperationLog [70x70/16z] {
+xTO53WDH24LH-6xxtsxT6T9vTU4IuZaX3dreiGseugQGWTPP8BwlT3-_zUNn4d5hX93268dEuvLS2OgbKiTeJ5X2IQMK56SNU5e1YmzHqhye6HjDWNgiOeef
+WPGSeZZIoYVzYP9_MV4QmeYIarA-hXGiKqnHCWNfMnLJQYqLM4t1UhPY2Zz4yK8fkCBj0SeQ6VvEnVKL4aaeM2ka1xfNMI7oNKgmqXs965KAqrGEQKSyk2K
+}
+
+AzureEntityColoring(OperationLog(Classic))
+!define OperationLog(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, OperationLog(Classic), OperationLog(Classic))
+!define OperationLog(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, OperationLog(Classic), OperationLog(Classic))
+!procedure OperationLog(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=OperationLog(Classic), $stereo=OperationLog(Classic), $tags, $link)
+ !endprocedure
+!procedure OperationLog(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, OperationLog(Classic), $tags, $link, OperationLog(Classic))
+!endprocedure

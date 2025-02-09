@@ -1,0 +1,19 @@
+sprite $ArcSQLManagedInstance [70x70/16z] {
+tTM9agCw38NXs9REaPta_L_t8eZe10EDqxNT-MVBuldAMpMtgEXPvNQfhEUbIqhvHnMq-xPcemgUZtP_RhD1fTr5nBRAOr2vLn7HRZAZIXCH_5MfJogwZMc3
+YhPdtnsZYeBRy3-_krQt6KOLJbVisSNH-_9GaTeTqeW2uB5_Tw6ugk14cHfGslwA010Y-QB2nyxkLgvflgB0Jxfz_39-X7H1wM9N6bUuKnfLk5iQKqZR-uKX
+XNPG6L7iA5vNI3iiNrDef-62qXbz5nJQzqg7y8tZXjRycs9pdCTbyzJlMPAOnGiwLJuFCxmWG_7oiS9rX02IbfTPeJxcKp4vLAnwq-0q_rkhJeX_wAVBMgU_
+wret6y7Ip_UwlaAya8rY1mhhalZq-1fOFPzK2INIVSNgafNvmrhfQvl3ZbAFb4ZJpDYgw9wIZfHeFWBEXnABb4uffqeCWV-bCvgwC-etHaYGj01iKLZz_gbL
+-hMfdIBlHX9mQTsrNFAo9ReESZbUxymbIwzuYMyZioET8YcG8ZyAvuTPCvKYMjlypjGtqVppfgzU3pqHoO6yAxNjHLzGwu9CfK12EMPqZp6PSqKs2jjkqZDL
+LoLr2ckxL21I_7n26MGeaL-bHLHooAcGI5t1w_McpySQFuFAcj8LGlwISb7-n82XaFhrHBpqKWZznW13IUHNZYgZsnGOGNLa5f6ualWMeEUKgW9yBtvmi0kO
+kLLK3rFqUiHBuDULsq_bIqUsJv9lZ5jV5l1wa7mxAXV5xu2MJkXAMVHi2kbslPHoAQ8A452HKd8w_l__0G
+}
+
+AzureEntityColoring(ArcSQLManagedInstance)
+!define ArcSQLManagedInstance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ArcSQLManagedInstance, ArcSQLManagedInstance)
+!define ArcSQLManagedInstance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ArcSQLManagedInstance, ArcSQLManagedInstance)
+!procedure ArcSQLManagedInstance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ArcSQLManagedInstance, $stereo=ArcSQLManagedInstance, $tags, $link)
+ !endprocedure
+!procedure ArcSQLManagedInstance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ArcSQLManagedInstance, $tags, $link, ArcSQLManagedInstance)
+!endprocedure

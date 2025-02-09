@@ -1,0 +1,16 @@
+sprite $UniversalPrint [70x70/16z] {
+xTO5UiCm341XiMH_lVzrXobN3ccylmnvOO2lyuzOH5L5Q7j2_O8oR21-orPts1ynWZNK4mABeNdA2Y999eta59Omdy5hrauEOGxwF5szZaqU8C2tMyfl20xC
+xZf7J9ZVu04slySq0BTG_MXxXJqXAoeMcUKLzDXLEKOAAdcazJwic2bCD5A7mq5fuELtWJSKgRQWOl36AoeS5HKhgSH8xzruuFLtnD4C-NAi5HMrQAt5w-tc
+rTU8blYn5Mk9y7bAEhtPKn6SAhodukRl8A-i05PIuP8AH4c5IYfWlJsuhQr0z7l7YerTLB2b5LEL0TLp1QXb5LMcWQiAO5HK0Aoa0XIFAcR3YjcnSi9nKvc_
+Vl49N4BnQ7t5DKDC87DSRKe3VVB1bIYfQCboEK8QWAC_M1c1YWnyXd_F
+}
+
+AzureEntityColoring(UniversalPrint)
+!define UniversalPrint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, UniversalPrint, UniversalPrint)
+!define UniversalPrint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, UniversalPrint, UniversalPrint)
+!procedure UniversalPrint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=UniversalPrint, $stereo=UniversalPrint, $tags, $link)
+ !endprocedure
+!procedure UniversalPrint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, UniversalPrint, $tags, $link, UniversalPrint)
+!endprocedure

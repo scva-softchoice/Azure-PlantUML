@@ -1,0 +1,16 @@
+sprite $AzureStackEdge [70x70/16z] {
+xTI7RYjH28JX0UO0UVy7lcLxZG-hcjXVgjglCLuPlzJ7Xrfh7X7UQ897XB7ZXhgryRoZ7bTQSSWD5tHhSSkVB7cUqVWMqILUaE9HdhycZPUiCENv6B6MyVfB
+S4yOsOUurRARtnyr-mMkMPRW4hE6UhEagXr3aeyuTY8p8zmz8aiKAylmnadpB30imhdLuad66WygSmG3uLdBRd4JAMPi7r6Wbbd7S2M0aZGEel1sAmU0Zi-q
+KQ35CSIoOijgOtog67RcotprVONoOenob5zzqZZ2Vs8csqhqLZWmMHuSdJALIcnVZcqkLAeu_zlTTFE_TrOuqDCMBLLW7DWoO6fKAex3EorJhLGH24TOLRSq
+0EjbDYgLN4xAvvNS7a5rFB6I9fnuTmJAnTBihZJCxEgphklPJSMA6uMA6tQCrqnl2SwKbnH5TbEfKhD2vNVu-FWB
+}
+
+AzureEntityColoring(AzureStackEdge)
+!define AzureStackEdge(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStackEdge, AzureStackEdge)
+!define AzureStackEdge(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStackEdge, AzureStackEdge)
+!procedure AzureStackEdge($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStackEdge, $stereo=AzureStackEdge, $tags, $link)
+ !endprocedure
+!procedure AzureStackEdge($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStackEdge, $tags, $link, AzureStackEdge)
+!endprocedure

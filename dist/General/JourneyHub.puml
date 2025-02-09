@@ -1,0 +1,14 @@
+sprite $JourneyHub [70x70/16z] {
+xTW50eCm50DGsYyhzp_mt0ZkbaofF5op-Z3H8A6gC3uABn3vALhLGR1G7eMesFuLAbIYGCA3hjfbeaEqhwBJA5IeKC72tIioZsAxKbBnrQwewl_dgIH8gwAG
+2HKgScO52zTIgCIdGiKW-rHy8IKlleOfEMIGOfKAJ5z_nPuAn5kUCvGwoADbnGJMtQp9iz0BpT_JRgauAI6h3tC3
+}
+
+AzureEntityColoring(JourneyHub)
+!define JourneyHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, JourneyHub, JourneyHub)
+!define JourneyHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, JourneyHub, JourneyHub)
+!procedure JourneyHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=JourneyHub, $stereo=JourneyHub, $tags, $link)
+ !endprocedure
+!procedure JourneyHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, JourneyHub, $tags, $link, JourneyHub)
+!endprocedure

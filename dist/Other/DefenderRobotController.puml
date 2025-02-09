@@ -1,0 +1,19 @@
+sprite $DefenderRobotController [70x70/16z] {
+xTO7SkKW44NHrn7G_XSy-j2cX8mGaohwJ73a5ZGEmlz09_mbxlwyHL9n4na_IdPJnYu9aSA77g4Gjh0CMgKSNpAswAHYvt9HytI-JDX0sbmhT2us87A6TwmX
+MYgCSmi5pMStUASt-QW48KTmpKm7vJvJ9hnpQpIaN8uuq3wAIc_X52VQntxBuEIN-zMTdlgOaPe-DqFzZXolpCErWdokfNXbf-8Z6xwDIjdx5Y2_8LH7s8f0
+V608d4gB96nG7mWkYCKKEym7Z3yodShS_d3nHtWwtBNzuUxR7wxOQN-ucFDquhyTRlemF14t5HOrhnHJaYeyKUL6R35SIvMWOTme1n7H-t1xDJKMGqYE0VL4
+CuuifUG2YATW3BBUwrhYWWa8iROdXhU6Z4mGchGmL4WcL3WkPe6M5Mrg9-L7Xgj98WYWkKkcwfSAFrNq3dqp7ekalmC37XFpYg7pQGMHc13mP4c42GFIEI70
+saXmHRbIl6PC2035S0K3Ymmj7wNCJDiW0qQKGr9ww5YbaDmvRbBkPlknC5OKDpwj1FhRIY2PLMpxH9r4XKkNS5EwZ2SSTwIf18ou19UN9n6bsYkLOc1j6qeR
+lxXhABK5DDcAxlxwLyXaChbKsAruNv88WUCzlbqnKFdYZ1FPydOwEh4q58CCARRnEXSU06K13qW612qBkXMHFjkvZ2dvNkbFtytmbcE6zOP1vRDA0Sr7I09O
+UNwIrcy8r8zVXaTvAmyHqcccRPBWhM9OOvkW-Dcbu5PXh8dDi5eLHoeWmWhx2iFQlJ3MM1S4r4v8sFJZ5m
+}
+
+AzureEntityColoring(DefenderRobotController)
+!define DefenderRobotController(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderRobotController, DefenderRobotController)
+!define DefenderRobotController(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderRobotController, DefenderRobotController)
+!procedure DefenderRobotController($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderRobotController, $stereo=DefenderRobotController, $tags, $link)
+ !endprocedure
+!procedure DefenderRobotController($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderRobotController, $tags, $link, DefenderRobotController)
+!endprocedure

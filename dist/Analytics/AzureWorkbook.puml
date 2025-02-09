@@ -1,0 +1,16 @@
+sprite $AzureWorkbook [70x70/16z] {
+pT5Nijmm30LHZPv2z_utxCcP0Yt0uVB_L1Su73UEFxk6kixZS5gJY97BbZnoOGvvH7_60iIb0f4AH1D8GfcE3vFAD7r3_AsA5a8_SbmBeRDY6w6pOXiXh0YH
+K5cTfXw4hOvLxK9e6XT4Un0QrxWZse7G-f8xeZ72HyK7eY72HyOdeX72SqKBqG3XgQAD621SAf88HoAFK89GWb22K89GWb22K89GWh29G1_2DW9T2042FGWH
+0Xs88G818XeZi8seTY0G8MuWySJBzYC-4AVT9JvjTqamuld_8AOHIn3JY2M8QSGIn3HY2M8QiGGnZLY2c4OiAJ5T8ffGoX3t8AxlofunlPVisJIaGvHXE4Jt
+Y7SOZbio7ReSYLy
+}
+
+AzureEntityColoring(AzureWorkbook)
+!define AzureWorkbook(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWorkbook, AzureWorkbook)
+!define AzureWorkbook(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWorkbook, AzureWorkbook)
+!procedure AzureWorkbook($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWorkbook, $stereo=AzureWorkbook, $tags, $link)
+ !endprocedure
+!procedure AzureWorkbook($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureWorkbook, $tags, $link, AzureWorkbook)
+!endprocedure

@@ -1,0 +1,18 @@
+sprite $DefenderProgramableBoard [70x70/16z] {
+xTFhSXen38RXJsTvx_-2MmTDJ1dZ5VtDanEmvXrf9s3BmgWUQZZNG_PGz5b4UBqp_ggCHuIXBIQgKI9g0ee9Ez_Ajw8o-NpeCkad5V4uScaqek6kOz5YEF6O
+t0_xr96xIJnk-7aQMP4ZFzwRo4pFXdaeiAShqid8sr4YUo8o7JlK7gKEOY7FvPFA4WRB_nBvh1TniNFJiq60E5OeyXw1yuG1uWTxEwO3bkcHfHWNFD7NAScV
+5p9w7LkneIyHG9yNKe2YNLaHMGlfdAWoxKf5rkd8bMbNAb88bBaosmghgfcvn-wUh8Kgm-kOQo58Bhj8BRJBB1Bdo5fekrJPX0cGNAAQJvdDC9iAMouAU2x6
+cug2pDtDJ7sCaVD7J3NhyHZpNQCUZrGroNeS_c2CHKT9qvbvI416cH6r74NneYeh8rA73V1HKgGYvqf95QxCNEWtmg8vMfNAC7F-kr0oSKMQbP52HFcyK1BL
+VDiA5nilcTcLtuKK9FMm63yGm3dsadaE01c5tn-b62TU2zquHcgX1Xyd8J8QWl8mMdE782oVLh1LYQx0bZI7gME2lVhyzoA9DsJqCZ5gbBseCqSPzV_uLeuf
+3g6w5ZZftbsSwRXk3SKTiZmtKj52r-Gs_IJJ9hycGjSrCIR_2MBYQyABR-LRYNLSvaDTyK2VNydhWsNraF9ARFq1
+}
+
+AzureEntityColoring(DefenderProgramableBoard)
+!define DefenderProgramableBoard(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderProgramableBoard, DefenderProgramableBoard)
+!define DefenderProgramableBoard(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderProgramableBoard, DefenderProgramableBoard)
+!procedure DefenderProgramableBoard($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderProgramableBoard, $stereo=DefenderProgramableBoard, $tags, $link)
+ !endprocedure
+!procedure DefenderProgramableBoard($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderProgramableBoard, $tags, $link, DefenderProgramableBoard)
+!endprocedure

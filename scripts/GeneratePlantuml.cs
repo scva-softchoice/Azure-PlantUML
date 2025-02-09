@@ -95,7 +95,7 @@ public class GeneratePlantuml : IHostedService
             CombineMultipleFilesIntoSingleFile(categoryDirectoryPath, "*.puml", catAllFilePath);
         }
 
-        await VSCodeSnippets.GenerateSnippets(targetFolder);
+        await VSCodeSnippets.GenerateSnippets(targetFolder, logger);
         await MarkdownTable.GenerateTable(targetFolder);
         await this.StopAsync(new System.Threading.CancellationToken());
     }

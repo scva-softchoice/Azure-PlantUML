@@ -1,0 +1,18 @@
+sprite $AzureRedHatOpenShift [70x70/16z] {
+vTW73kCw30JGOP4eKlS_xo-9OSM4PHDOz7teBgFE5FnbIBHr6sQzAI6faUxnoxjWAM6BEvrG9oDsXg26FPuCHa6FDnrlnAE02nqf43omgEhO6b4t2Y45enxo
+sVtDXcy7HRXeaJN6eXQP0khJy4FYoXMPvaTy_ezmejmFtEafuiDmijgsulZo-OFItSCWx917c23c4dAxFeud2W0hnlX-QftmZZwz6BhTAeGAdNaLAHsq4aRI
+OXbuHyrlclF26YywuiFs0p8y4ujJ2Y_EIdvMjmKERxPJwDN2d5TY5wzuGxkLIDS9sQxdiac7-1nuPAbyAAVpF3zdR9GdnY1ZJhqUnVdLy4ZYv37dIZak73eU
+yOhuakEoDnhpP8MKSKIi5680TbuSWftLgCnJ44vyH2WUh4Rx_CfxRyxfZL0qZeXSNqTdrCMSDrL0BGXr54kxr0n5dUR3n3trh6B4ahw0eKnIaU4qm1gFHVC5
+5BNuWNobeuGZLVjqYQkhl70QuxaDoGgJaWgufeizBWSiev6wShFsm-SNlwrndab9tx6-MkMhkUUDw7t-s7mxzBZYwygP0Buo3YPOk4Mc-2NuY3DYyTwOHLkF
+P7lmU6LKsFxxOvrXgnxJyS2YHkjLR8-nKvySesfHtND6JVDzXg1Eh91HG6gU8Xh_oJydOrXlGlYB_0i
+}
+
+AzureEntityColoring(AzureRedHatOpenShift)
+!define AzureRedHatOpenShift(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRedHatOpenShift, AzureRedHatOpenShift)
+!define AzureRedHatOpenShift(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRedHatOpenShift, AzureRedHatOpenShift)
+!procedure AzureRedHatOpenShift($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRedHatOpenShift, $stereo=AzureRedHatOpenShift, $tags, $link)
+ !endprocedure
+!procedure AzureRedHatOpenShift($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRedHatOpenShift, $tags, $link, AzureRedHatOpenShift)
+!endprocedure

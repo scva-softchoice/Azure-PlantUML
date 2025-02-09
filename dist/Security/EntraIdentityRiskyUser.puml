@@ -1,0 +1,16 @@
+sprite $EntraIdentityRiskyUser [70x70/16z] {
+vPK7rjH038F7JVU_CJKFazM4Q0tyLQ-dV96B9klDAx80LFeSOObMJ7tWh96VmgDY1FbxJA8rBigmrwGULawiiAPTcNS6byePPLwIVJZA-j-K6kxBF92EAzbw
+Gaf1SpCs3pNcnzIa7fPD82mhESxwhwHyJPKubCsOoBvhVMhPIVTFcBAj6uYoXBTBLWCA_4zBY3GnVrIFagcRzD4NB5oX83WCNMq028M2hjt9vV60GC75a7zv
+IucIso57UpE5Semxo4hNfb2mgST-nxf4ARgJPwn4GQmYTuLMI1GaTSe1eCmis0mKTOMv3bpg56vj7HJ0T4ftmTfKypGAjxOfS9N2MriTKSWKdd9J43gb3mGc
+MbFaAJEbD0e72ATNNADmWCnsSLAivAd0tUdwf9LwIAK9b7sMdVyOyiBjAN25SZn15RK4Ij3fYw97RYak356Yr3-X15XwHNsqPLmhVRqjVGK
+}
+
+AzureEntityColoring(EntraIdentityRiskyUser)
+!define EntraIdentityRiskyUser(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIdentityRiskyUser, EntraIdentityRiskyUser)
+!define EntraIdentityRiskyUser(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIdentityRiskyUser, EntraIdentityRiskyUser)
+!procedure EntraIdentityRiskyUser($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIdentityRiskyUser, $stereo=EntraIdentityRiskyUser, $tags, $link)
+ !endprocedure
+!procedure EntraIdentityRiskyUser($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIdentityRiskyUser, $tags, $link, EntraIdentityRiskyUser)
+!endprocedure

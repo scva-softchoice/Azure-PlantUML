@@ -1,0 +1,15 @@
+sprite $Subnet [70x70/16z] {
+xTH7ZWKX40HHJ1Kqzp_m68p69P_Gh8bjIazg0m5rkzrkxeUDL5ghkwssLYWo68qmfhIUoSTflKAHbjIOccOueXcEQ8OZdD48PpYY6OHmHYESuGXdDC8PZN06
+8jdS4c7g7adUotkcdf7WPPHUCEV7AJDNu_U7Ue44BwlmWWaVFGFyXvB6OppX8-k8cMAipef2pChNjMWTaKnSIfP8PsmzNqSaav-UIwGpNtwqBHEzFgvu6yMm
+-c9o02b4Cnn134Sqmn7DS8Gp7D4CHpI34CPmX3CSqOVXg_I5G4PjNmXauc52J3nCXCaHJljkjzlj7G
+}
+
+AzureEntityColoring(Subnet)
+!define Subnet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Subnet, Subnet)
+!define Subnet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Subnet, Subnet)
+!procedure Subnet($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Subnet, $stereo=Subnet, $tags, $link)
+ !endprocedure
+!procedure Subnet($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Subnet, $tags, $link, Subnet)
+!endprocedure

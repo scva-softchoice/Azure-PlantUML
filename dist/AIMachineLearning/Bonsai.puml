@@ -1,0 +1,21 @@
+sprite $Bonsai [70x70/16z] {
+vTRNWgGg58NXjGERLINl_xm744hjiVB9yztWJ7V_PW6_3-NatrMYoPzKH3k1Cje0O-hZMu9TG5dbLgdYxKfuPP28t2eIbRzTKS0x4MOT08pnvOgmS-6DGzaa
+lCHS0A-23X_wVQfZl5wfPaMyCi17CJ6yCJoHVpcBw1NXJdvUIPv8hmJGp3Q8gv0-f8SLzOe4X0706rBCAmWpO5498k6-n6vKb2i9LjehmSfUUlX71Rf2q88A
+5K1KWmOsfty_G1IQIEy0H92Ic6F8DDJXh1AS49JW903PApk6whoIlBDM4Pq0h8DgOdA6LcZotOhjWm9Nc4_gT2LZPNSgtMwJhapWJR9U6VoqebxDYgjgMYiw
+E1CsJeV8wSkZ8BtALC1YhLGU4JgspHkrxJqLx0GPuA30UaO1KSrpks8NjhrLTgoOWDpV6D4PDfrl9McaYT6XJUmgaH0KW0Gq9csLQ83vzIIHAR1-hnH8p6ti
+cDUA6s2SRCm1anmgbRLAvOTAP-Dc9DgS0zZfhhBdkuevV9l2B8Aq-UrFqSYj4YlvMQ5McIiV1_fpAXCoUcNGnCgsog1RUeGWkgzK4EqoDSQb7No0RnTBlT9-
+_w1XifkED2gsYkB83DMix1M_5CMUtSv8a08xcUF6e17SI2d5TWKPjt78F5PMXewOScck5qRa7DvBT4myhIWwlyhOg8c5oIf5DIiUAn96soeuk2oAAcg4E16S
+uFJzrHqyNwwNfTICi5I2S-CYZiePPodkfTEpIIlQgF9qsIUfhAw2WzWgoivmLohJah0H10t0g6Gyf6LdoJeQ2GXsrYl3uqD9W7g-rArBKY02W4T56dIkPUzN
+l5GB1asjTBrYIdG0jwynxbbAvTZufNOILix3UXRtMAaMFzusBaiIL1QHoGY7H8MxeZGNmO4cCjp6j_K5kNI1SyR9y0Ytv-M4nAHuw38VNyStbZ8xYizPkQ5y
+UJ13V5yPT_qZMWuMnGVaMdxGxoFL8dYJB-LNrpSRrt8guMMIbtB7WfTPtFTguhbNdv77NiYKv-IrhzDZn0jYAOyi6QzHUm3_Tdy
+}
+
+AzureEntityColoring(Bonsai)
+!define Bonsai(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Bonsai, Bonsai)
+!define Bonsai(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Bonsai, Bonsai)
+!procedure Bonsai($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Bonsai, $stereo=Bonsai, $tags, $link)
+ !endprocedure
+!procedure Bonsai($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Bonsai, $tags, $link, Bonsai)
+!endprocedure

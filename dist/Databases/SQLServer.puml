@@ -1,0 +1,19 @@
+sprite $SQLServer [70x70/16z] {
+xPNP6lCg24K51GJF-p_l2I69hKsR-C_Jkkcylkr6Q_h5WKVIDF2UUGDYta6SCHs2dCiBtNN3WODWC5rvBXr1U3vBoZNvWmPMIcSopRUtv790HCmi2yn4L3eV
+9fMX5qCiLKUgCFLQ07CwmM0Zixv7Ca9GJot_6S865gxwIfM2iAFjrD9Q8tWW5_9Mwi9QZ1iEIcjlBSqAt25R-s1nAbueK5fmtalRwSiVm4oRuYBBWGaVXnWn
+5nPjpfp5iMTcBDUIYrv-I9PVfvT_lMXLwnAjTRuNAyc1icgKm5zb2GqkJ-zaKKW1kaGWRHINtBQWvo0guD-MDHGLz3WJMTHJc2-6MpDO9DKMNCCzorKlrSEt
+3LvUY3aXdye2sWBqdmPUUPtiXMFGQwc1n-A96Q4_HzboaGNIBJFx9TkBHMvdwN7AiAAPNlfmalblm8BiJoSjZPRNskXOKco0sxqe7PQeDv76UbATsIz8Kcax
+HvmSJ0vPP87iS5WA4PnQTghFotK1xMSwA64HaNnYyHgTx18l95wZkkJ5WYB2f_j5XO_Br1ob_JYrZbPRB2GBRaQu_j_rCSkpH4GgiQmKP7TT_k_Yg95NBhEO
+WcjQnsI4Rzn7MXUiTQeCu9VSHoe1iGHVT1-9i-uLu7WwdyNguozN3UFaFQt3M502nfaiTHXBaeqyqyjeWMwPo6BwlA8iAvHdPsJYq16b1wip-wM61bB2vqbZ
+cz2e343QA1DPP8JI3kfTZSeBc0x8PWx0kAHE5hlIU9FiEpN7ti_-1DC0KhLt4lEvEFdOAPZUWiHIxG6jmfJ7NxWbNGE03gHpo8VpzG10-kRy3m
+}
+
+AzureEntityColoring(SQLServer)
+!define SQLServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SQLServer, SQLServer)
+!define SQLServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SQLServer, SQLServer)
+!procedure SQLServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SQLServer, $stereo=SQLServer, $tags, $link)
+ !endprocedure
+!procedure SQLServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SQLServer, $tags, $link, SQLServer)
+!endprocedure

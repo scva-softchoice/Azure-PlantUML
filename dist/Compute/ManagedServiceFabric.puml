@@ -1,0 +1,18 @@
+sprite $ManagedServiceFabric [70x70/16z] {
+nTW7Okim20PWDhBlVzykcoomOln6l-uXDAZ-je7_0mdX3x5k6Av3lIEuIEoHm2LepmYkK7kcS07PAxvwAdzyCce9z5c6ruxbpxjadi3Vg6A_LSKywnulUOsX
+GVo8DgwXJz0qqLWOuHjx42dVtKUmC64PHm9WJxEIc9jyluTFXomn026GtjbnNzM3524ezkIu6x7NwggJvIg6itElhfTQAgFJdm4hGf3jrRoPkOhnXKopQe0b
+sWz1jAmVWcmPTKEGqHDhPmQ2TU-jvcchJqetDhGA98GfBCD2kdd6vTejdqhdPApuh7GJLQkmxgOxGTWpROn6oYFh7eBLeUcRiSodElZsN0ccB6qqoQljR0db
+uJlmvrt3pfQY9OB8U-moVBzdtIrvIMTR4aXiLAYv9Hm5QtV9wgKqjyGZWoFezas53zP222XZm--JMPzlsTZWuoavGGMr_Dr6wiicXico6OgGIFdF0orXm0wN
+8CVR2VXInI1CgjWhVQdY9whmmUz8r2N0ZfUTOSvIUttY66NFMngna4mz4GYFUwAzY4B1PfTMrytYEjOTmRcrC0HPaxgAU48GbZNpa_z0OBsKGASEHW-M4iQf
+nI04-ndawyxPOosP3dzy4hZpTJ00RltXdobNXfeV1o9lhzTly0FXY8pW39KbzQQ2jYy48Oa3KZW1lqmVrq7uLpu1
+}
+
+AzureEntityColoring(ManagedServiceFabric)
+!define ManagedServiceFabric(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagedServiceFabric, ManagedServiceFabric)
+!define ManagedServiceFabric(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagedServiceFabric, ManagedServiceFabric)
+!procedure ManagedServiceFabric($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagedServiceFabric, $stereo=ManagedServiceFabric, $tags, $link)
+ !endprocedure
+!procedure ManagedServiceFabric($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagedServiceFabric, $tags, $link, ManagedServiceFabric)
+!endprocedure

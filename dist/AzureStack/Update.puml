@@ -1,0 +1,17 @@
+sprite $Update [70x70/16z] {
+xTM7akCW3CPnIP-4mE__m1V6grbo0a_wbVK_lVrS8VJ6j6thAjDjROVPInH_LZcLIhqIl_5j0rtYTfVYrBDjAy49zUfVevnAirwD9_q0M-ySHoyTH_QISQJf
+I7z6OH50X9zHHAFI7bQWbm1ehowLTgXq8bRAL6skC53yS4sOecQgCOuAUfSdXg-KLh6gZCV8j6mvtnbU8L3GgBHQ5yYI4Rt4en8bPCrq0q9NIclrKaj8n1Ca
+YAXvL1CoPw1fdviFjOnaHjP8C0d9JDuSzTzAI6RogdWga2N3IL7F0SUCA6XC9eXX6S_M1SKFaHndfVYzI32gF3_2nQmaPCM8wcotslvXISY2YSc9hn22zWyO
+k8sHBqOmr94URYhcXJH6TK_OBBecXR-BAMgLa7fKC4OvnfDAn7ALxX7PNGfXidU5oEzJp8T0il-ru4v5V4pYJBn7oQF8833tknKE9hLMxcTCyNq1hLDVfwn3
+eAFKV5OnfgGSnZdg9UNU_cdbL4w5alBYVW4
+}
+
+AzureEntityColoring(Update)
+!define Update(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Update, Update)
+!define Update(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Update, Update)
+!procedure Update($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Update, $stereo=Update, $tags, $link)
+ !endprocedure
+!procedure Update($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Update, $tags, $link, Update)
+!endprocedure

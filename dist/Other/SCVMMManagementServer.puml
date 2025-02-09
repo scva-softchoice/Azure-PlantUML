@@ -1,0 +1,17 @@
+sprite $SCVMMManagementServer [70x70/16z] {
+tTG73g0u341HTpkmzp_l1WAAH3TCVrP7_gB3Z2K3uH1h3XpI988ZeZdubrI4vMkb7UAl5O4ALPLmmHyg0YjwKT6JnMH54EdVULzCKtDMIVan5OL3g9OX0DzF
+HWaEQUJ0eKXYEEAHGtz-fKI9CFKIZ-QiKaeW06XvvBnYK56jqKhVLh0KXvNaAssRlrvHCIAESYKYt2CkAlV2L_6oqY8TvoizSftnJAH1sD7RYcyPx53gL1f-
+yPlotSW-CbmuwHfibN4ucHxPGTY8yKoFx9ayhPIuOiygGrppVSMj94wbaKrb803mR2MeLwPp2AYeBZ8j_4d52HOyLHmgRBL6Q-MM2yC4HQPAcNlRk_kW8j8Y
+CeoL4ydmgi80qYedRYic5V6kaZgPa0bBgxpDg7Izaioup7IEbV7ArKrfpAIoyRyBut1yFgxIgBajjMlkdSrKLkhcBVE1riJKrYyDyrRvSZhBlZUlpaVxjlTE
+Fh5WzCwUbdJpq03OcrvIlGgiXSuGMcR79ggjgBF-skmZ5Pb_8B3YjnrZQ7hdVQD35iiKX15E4AlT1vG9xY29dHU449v39ERvxMWl8pFX-Vx_
+}
+
+AzureEntityColoring(SCVMMManagementServer)
+!define SCVMMManagementServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SCVMMManagementServer, SCVMMManagementServer)
+!define SCVMMManagementServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SCVMMManagementServer, SCVMMManagementServer)
+!procedure SCVMMManagementServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SCVMMManagementServer, $stereo=SCVMMManagementServer, $tags, $link)
+ !endprocedure
+!procedure SCVMMManagementServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SCVMMManagementServer, $tags, $link, SCVMMManagementServer)
+!endprocedure

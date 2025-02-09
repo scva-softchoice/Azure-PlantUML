@@ -1,0 +1,19 @@
+sprite $Cere [70x70/16z] {
+hTO7cjmW341XTGEw_tdJn2GWs-39vxUz_Mi4K-19PANMrcejnWZ_5LgRAW9VHqSxf_1TtSXLXkTHRNSPF4tQeWAxCDulZ2t3egh2c8Ro5KEYFHwPeiB4Ehi7
+tCGwX51YHsIOLHaOtIDc6gEH-vaZN8GJOiQWhJ7aodfDCYDc04O02uRWN4OCeOTYjHxA45LtRx_VRBKWw_67RxqIBdclmIdAYCLWQTmN2TPx33dEY6aQGtFt
+64Npo2176OaLwOHuZHkxHnLoc16Zt_QCz7ylteDJ6JaG02mXyOVeFOGS9qHZAWc9oGnVv6H2Od8dn6KShy2IEUBCuGbnZODthm3_HGIYcX6dyLeOha9DX__8
+I6oBPoM7E0vU4nAddjCUxS8Qo3nS6yX7qQmSC8wbm7L4_2l2OKrfFUFHrKk2HJGIWa_StETRNrkCXKG2wJ5yAlr2UFZoUa4eWOmHz9146KzBP4XH82c6iOnK
+I757SW8vIwTuivo8O-Wgp9Xsx5WWEHaUQ0M7qJP8BH2pDgO8UhCUMY5sjDa1kjwV9M9MJymLWcl4Ifipm4AGepLYzkX9vWwnbcCujqEijXoSmXrY9IEk3nLR
+AEuD8KKR92lNTq-uHBBYKNcWsAtYdt2hs8tY_n3ddM8tYe_fHh5BnMV4RQtOfUAvOwdOfU9RXNQ85VzEiJSKUqEnDnIxxZY-KUmDvTRuHh4tb8NnNB4Nb0No
+NDaXHtsYB8oelABKBvLiF5TWgpG_9v1YNHhxiVm4
+}
+
+AzureEntityColoring(Cere)
+!define Cere(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Cere, Cere)
+!define Cere(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Cere, Cere)
+!procedure Cere($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Cere, $stereo=Cere, $tags, $link)
+ !endprocedure
+!procedure Cere($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Cere, $tags, $link, Cere)
+!endprocedure

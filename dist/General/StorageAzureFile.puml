@@ -1,0 +1,14 @@
+sprite $StorageAzureFile [70x70/16z] {
+xSm53W0n24JH6jAz_ttNtTtAJuWoJsrBaWmSokG8H0U3JE6Z2cUAFwhuhOeeeX0VZ385y60GXaBTzYi8UGMuLucyAWBAswSmwJnJ8ixsSokKRg3L8BrLoN-s
+Az39gLrAVnQa8eeeek2V5BnS4OKGs-VMrDwKoi5Ufy1H1JB57bMiojBsK5fjIv8I
+}
+
+AzureEntityColoring(StorageAzureFile)
+!define StorageAzureFile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, StorageAzureFile, StorageAzureFile)
+!define StorageAzureFile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, StorageAzureFile, StorageAzureFile)
+!procedure StorageAzureFile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=StorageAzureFile, $stereo=StorageAzureFile, $tags, $link)
+ !endprocedure
+!procedure StorageAzureFile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, StorageAzureFile, $tags, $link, StorageAzureFile)
+!endprocedure

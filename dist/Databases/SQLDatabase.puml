@@ -1,0 +1,18 @@
+sprite $SQLDatabase [70x70/16z] {
+xTM7jYCX283X0GGfx_--kmoJ7ZDwSigM-s-vrU-WAMv_IV3G-l8FBHE8I4U8k01T0QBs4X5EGIKWjM649PqDGkqaWhsFWxI9Feq3MPiAieLH5eOPdmepYp3p
+zCdW0yEYQW-fTk5xXDuf1XKIYzgeBeHG-Jib38wG-u1H8RXayLQ98BY6JNfNVTWEmIsA62bX25EXnL39ZE0qIcEiLCO8mv2Jc50oLwO72v6Qg4SshLJ-M6H_
+aRAA_9nBzdCkpWY0n8Ne_bNJGZe0s8oYSEJ9D3XgoKmhNc-zM0hML_a_hIW203qYh7a4rshtT6H1oIr4Tio5dkqJBYWC01ftSvMIdygqKeShTftBAykzJIkv
+D6ElYmKBgIqjA27NkmA_KCBRpaJGuuvmGSaqr_T8JKkHnNEfycZsDLGAhZr6lLyK2QV44g75vqi7Oksrex2wznja_L1epq-K8_G8LxZMlPGZEttMPIr_pTtu
+ygMlAE7okswtDodBfP983bUPhR_N9SFVlsDoxkbRfTxowFlxQ3-Cdtlwvvw-vQk8lrDaTHRPlXbcF4e6lg8OR8Da7k5j7FGvHc3xNBCpnHYsyw1r7oacj2s4
+rBYhUMMgsfbW-mlw1G
+}
+
+AzureEntityColoring(SQLDatabase)
+!define SQLDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SQLDatabase, SQLDatabase)
+!define SQLDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SQLDatabase, SQLDatabase)
+!procedure SQLDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SQLDatabase, $stereo=SQLDatabase, $tags, $link)
+ !endprocedure
+!procedure SQLDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SQLDatabase, $tags, $link, SQLDatabase)
+!endprocedure

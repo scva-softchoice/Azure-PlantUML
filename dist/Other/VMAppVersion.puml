@@ -1,0 +1,18 @@
+sprite $VMAppVersion [70x70/16z] {
+xTS50gH838NXbqegKdl_ywwWOO6UGiRdQxU_SQ5g3rK2n1uJGEqnVRlof_Ad4gi7bRRoYvMwwAhO8S92RHAVAduaLtpsR-NGXqhPVH0tAkpT5VjOCPtPWugK
+6RzIaQaIFqmbmXzNiliLG5-fr4-Ls5-6IgHA39Nmmui17aS879jA39L3doeIKL-fkCrygEYjojPvnSyha2s-LTcvKM4Si8vAFtVpPnKJme2A-CrA7N__Bo80
+R4kbHKGRBbzwD09Owem9A1vjh7GA1hXk207QseLAbDJ87Gu5uaOa4O3GNIaGFLI1xeg2zOG0WBKEWQAPQC80k6zyD6DeHW1GpcXC5A8Pm9fKVA9_JPWq4u0q
+uvvAWrXM05HBQaz5ePOe12YMuGDRHiWo9YlOXhcZKjWoY5M0BH6Sywdo_r-O6G6z4oOE9-xGbEtqLPoYDa7rLOMDk-RYAyCfMIhYgyB30mFg2yMfQ1FY_Ays
+_uxp09wnDYl55pm_9y0NWcDaRI7a2-ZwzxAsSK3KegqCwfCK1DBpFHuA6KcCd6hCqewxOeTYH-0nK7ZC3E3plRh4Zivl5hOLOMegzehi5C2dlz-gQL1wb3Z5
+mFECu8hYjuSa8p_SPLvMesqfxY1jYH7kOXrFb4oG_0C
+}
+
+AzureEntityColoring(VMAppVersion)
+!define VMAppVersion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VMAppVersion, VMAppVersion)
+!define VMAppVersion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VMAppVersion, VMAppVersion)
+!procedure VMAppVersion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VMAppVersion, $stereo=VMAppVersion, $tags, $link)
+ !endprocedure
+!procedure VMAppVersion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VMAppVersion, $tags, $link, VMAppVersion)
+!endprocedure

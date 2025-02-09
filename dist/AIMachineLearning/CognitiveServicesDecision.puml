@@ -1,0 +1,17 @@
+sprite $CognitiveServicesDecision [70x70/16z] {
+vTW5OYCn38LXqPEQlVzzmngmrntRvVOhXlvXj5Wm3U5OMAoCXbXiEPv6nmLF7bUWDy9VhV2RAwo6AvEtL1GBdgsmOKFR5OHIas57w4bfIyE83oTdjQwrsZtt
+6INRl23Knr3XJTwO6aHLpG1tZ_0QxExLsSsPY9UNq-daXo1Kawfo24m57ggazwWO7LJ-kTTY1qoDYeggsXMy9doZSUT2rAe89MwDFzSx-tQ5r0kqLi3_JuZe
+dTpG7Nn7bah-Mz8zMOyvdZzokFc95l9v7pdcrPN42eS9zT22KENBAamJ-1jLH0lqTHNzhXKpa_bA9cOhd8d4anNBn7n5h43lNH4rc0hJ8RKzfSH8IaUiLL5i
+yE2uSDQnmqFpHV9f5AXsV3n2IISgYaftHVbARk0Elrd_CjN6pnbqk7BochrB1NJikA9qZ0_dYr07bcqblC8qZ0TcBbEJUg6PG1WreMkkM202lTDayrTydkQk
+-98OtA7yrLV2wKzM74yq24yUyJvtb3IICmrXNoCN
+}
+
+AzureEntityColoring(CognitiveServicesDecision)
+!define CognitiveServicesDecision(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CognitiveServicesDecision, CognitiveServicesDecision)
+!define CognitiveServicesDecision(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CognitiveServicesDecision, CognitiveServicesDecision)
+!procedure CognitiveServicesDecision($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CognitiveServicesDecision, $stereo=CognitiveServicesDecision, $tags, $link)
+ !endprocedure
+!procedure CognitiveServicesDecision($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CognitiveServicesDecision, $tags, $link, CognitiveServicesDecision)
+!endprocedure

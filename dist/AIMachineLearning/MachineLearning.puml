@@ -1,0 +1,16 @@
+sprite $MachineLearning [70x70/16z] {
+xTG5aiGm34JHc5h9_G-yEAHVZaQRWgLqyS0pjRtyYXGpMp-pVQJyLkLKJkLKJkLKJaLGnX5ac5Tq1Edc5Jk2DFFAUWIfvfMrNBueNqAWjDiKQnefWj8Vz997
+l38Ulr2I4HGzDiXCAMJ8d6AkGKbc27CfGCp6KwGBIdKrp35DKEvd_9WU5qLG1XjqIGiHABgVCLA3ea1nPuoKPuZuoqeYQDyWKd75oOI8X1tSOwP5WN8vpO0P
+8IBy9CqqGT7q3MLwW0XR5p3DjOqA433JzXKXb-zYXkqJaNNRoHgSTwSo5SXmWmkH8C5zYf6OOValYH4ocjTbtT8C2qCapompnRPCTfG19CsCsOExPJD_Ve6a
+cSK5Evjbv9KE9CaChnJiR9BXtGUIP1Ogsu5e-O5v1G
+}
+
+AzureEntityColoring(MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MachineLearning, MachineLearning)
+!define MachineLearning(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MachineLearning, MachineLearning)
+!procedure MachineLearning($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MachineLearning, $stereo=MachineLearning, $tags, $link)
+ !endprocedure
+!procedure MachineLearning($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MachineLearning, $tags, $link, MachineLearning)
+!endprocedure

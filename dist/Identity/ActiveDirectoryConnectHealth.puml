@@ -1,0 +1,19 @@
+sprite $ActiveDirectoryConnectHealth [70x70/16z] {
+vTRNkeGc58RX7rWTx_zwepmoKTJDbBFatMME-6ZJyF-JYJ9-LAmf-0NPZdvToQ-hoNQGyPra9mbVCJNLzSzs-8PszaD6hnN5f-IcOeBFaDvLZF69efVAvy--
+h9VAvy--fDUAHwrBhU7fy-lfbLXUukD8hzJbmB-AQ8zqXZdHKLq6WXbM4Jdz4LyoD7ssoPbo8Lb6PV9iar4fH3fMQiQpV1SfT9T9U98k4IqhPYORC_6OkOyK
+tiIOySyYXUypXZioKZfMhlUjk68PKUcLXmnZH3BYCbHa-kmhpv72tUpPb-MYN2lyzxCltKIebFsFDsBcxbOFXTZaOuIt7-RN8nsqXkzYRuJl9EqLuO7IkI9-
+KFT8P-a-8ZHKp8UC7zaiqh3wIVILT0JmB4BYW-e3b7b5VOQ4fndp6UDRTEGN1Zy9lYL_LmXqhWXFEtwH0FEDxlY9y4s5Nq-Gugk2ZX_9fKAGriBAMgrBmi_E
+5GEohpAGaDiZwqO05AOdRLiMkm908mmW0LI04erWyvnXwPKsketZhPMG07ZFD_clvUXUQHk1RO_xzDpp7JsofSP60H607A28I43UyuINn7H7eYvBR19I6qk0
+jYXiM4fJhXtsMjTApJcdDbYmYKscrqxFnepMJV_Uist0iQ8u8emodpVJAmlbdDi6kDtsWU06oQdHAqli74XnOBYLBDoy9NhbbA7JXZpXGMc9iT8p1fj4Ehch
+z8nF8rtseTB4m18c-APIFOuKSyd6YYVOUCLp9OwLIbZ9vSas9_zM-l8f6iyOJ4vvgqH6b_ro97FaTHbMBy70xnB--_u1
+}
+
+AzureEntityColoring(ActiveDirectoryConnectHealth)
+!define ActiveDirectoryConnectHealth(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ActiveDirectoryConnectHealth, ActiveDirectoryConnectHealth)
+!define ActiveDirectoryConnectHealth(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ActiveDirectoryConnectHealth, ActiveDirectoryConnectHealth)
+!procedure ActiveDirectoryConnectHealth($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ActiveDirectoryConnectHealth, $stereo=ActiveDirectoryConnectHealth, $tags, $link)
+ !endprocedure
+!procedure ActiveDirectoryConnectHealth($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ActiveDirectoryConnectHealth, $tags, $link, ActiveDirectoryConnectHealth)
+!endprocedure

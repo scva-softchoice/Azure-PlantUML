@@ -1,0 +1,17 @@
+sprite $EntraIDProtection [70x70/16z] {
+vTLLOWGX381X94RkV-2onaW82-Mj_UkotnWI_bq9QsaJmLUmXG0sPWlPPpAUoXl8DfFmLWhhHJJ53MI7mTO6WqwB0yK9jX4YMc5oHv1Fk31GhD62BQIL5mQA
+HLhf5qX6kSLV6Oi0MIQE4R08K8TPGw16DRb5gmXGZy7vqGPDgGoBd3zmUg3aayBtOFOPGrDwJ5v0ceA6ILC3fIaU4-SH89-P66r6iGnD31IZM0Q70-Mkj2pZ
+8xchD4RA8sd3nXjjla8igbfggaydkmDbf1Gj_4fUtwKP16udKeG_INd-5Fs1OfMYseWpf2ePJPwYmlr40Msh2YjsouiAO3V8IrUKqMb92MZorfUH4j7jeY2h
+24ltGys4jgVpD8YhugLc8jcxN0ra_gPyEnsgnemoFXtYLrfyvLD69_vKFAKKisoQ4vbGUBmvudLOU0g6IzannZT6KxWM0Ll4jugJTFTy06Z6xMHwAOHEm5v5
+UuY4Rf7OgQl4u9I9ks-YW-knHQHU2VMEK1YLo9JhhrdLt9HXG9SWF6CzPP7nPM6xXtH2ECoKJnVJWePWc0oQSRBrLGxpnMX_9TMG67O3WV2d-m4
+}
+
+AzureEntityColoring(EntraIDProtection)
+!define EntraIDProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIDProtection, EntraIDProtection)
+!define EntraIDProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIDProtection, EntraIDProtection)
+!procedure EntraIDProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIDProtection, $stereo=EntraIDProtection, $tags, $link)
+ !endprocedure
+!procedure EntraIDProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIDProtection, $tags, $link, EntraIDProtection)
+!endprocedure

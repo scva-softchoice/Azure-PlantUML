@@ -1,0 +1,15 @@
+sprite $VMAppDefinition [70x70/16z] {
+xTLLciCm34NXQnHq_-iTdeP9Shb_lhoUW0bt9RW1YHf8bHgeT8_UtbZEcCn4ExUeH9nb_hTSuNbOgF0XG2Zr5tagYJjtKAdvZEoL4izgamhTMuL5t1NAXTbT
+oS3nIZvIaNb05kbNH38WIwvPIOxAKBbT1Naa62gpvA286K5UXwgezxwiDsuIoTf01k8YwUEu2AjEVOf5BrO9fm7OH1s0JTA129EY0nach0Fa-IsTO7mL_ykG
+JbGSb4LdSC9-gOekN5BJpeRXzBKSnfvNwIHi2d5Jm3tx1
+}
+
+AzureEntityColoring(VMAppDefinition)
+!define VMAppDefinition(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VMAppDefinition, VMAppDefinition)
+!define VMAppDefinition(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VMAppDefinition, VMAppDefinition)
+!procedure VMAppDefinition($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VMAppDefinition, $stereo=VMAppDefinition, $tags, $link)
+ !endprocedure
+!procedure VMAppDefinition($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VMAppDefinition, $tags, $link, VMAppDefinition)
+!endprocedure

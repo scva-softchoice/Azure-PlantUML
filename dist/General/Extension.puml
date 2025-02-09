@@ -1,0 +1,14 @@
+sprite $Extension [70x70/16z] {
+xSo5TKCn40J0rS6d_ljDpEnz8lDD0OCF8yueyamBDI3Bp9SvT-6-T54Z5C2OiPXJWdliTF7Q1LENnRiizkJ5KBG8YEm5FHPxnX9BOdAND32QkGXTxCLBBB78
+j36sB4VViSX6w-8RqhOatz1OOhabbf79NP8pah5ag5fYSHJHEukfv3E_Mch4GWdsnElXA4ajlAD_
+}
+
+AzureEntityColoring(Extension)
+!define Extension(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Extension, Extension)
+!define Extension(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Extension, Extension)
+!procedure Extension($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Extension, $stereo=Extension, $tags, $link)
+ !endprocedure
+!procedure Extension($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Extension, $tags, $link, Extension)
+!endprocedure

@@ -1,0 +1,16 @@
+sprite $ManagedFileShare [70x70/16z] {
+xTTNsgKW383XL0BP_uA7yUGqEsRAtruVRZ-x0YGG8MIXTeBvI2UGmdf3a25HuGzmB1WLoD49Geut5OOazGPfwAwGLjmXZTmDqiozGXPxnt0EgLbH9fmz-CKd
+TkeT82iYMkotej9ZM7sfmIvJc23nFLPhRSrdO0yQGvZ7B69x5UA96E6RUQpjLRYewjfGd5twjbCHBUlRB0DMzohbP4RtAzlUCiKEAhevzAaKcsnK1lrKkf_A
+JmM9C5j1dN2gmdg7juYDYYC9qfFctYvKz4Nnxae55vLMnokahuGGGCShhA_Yqsvc0sD-HXALGREhovSh_5B1onMO7Sh52kaTHAKDUbaO24AkqaKYMO4_N_51
+i8PyJ8Nhchj16hexGHh7kIIfkq2UrHBlJOO6o60DaZoKWBbbUQ3_MycVKP3arGt9GmcOZGGa8kX-0G
+}
+
+AzureEntityColoring(ManagedFileShare)
+!define ManagedFileShare(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagedFileShare, ManagedFileShare)
+!define ManagedFileShare(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagedFileShare, ManagedFileShare)
+!procedure ManagedFileShare($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagedFileShare, $stereo=ManagedFileShare, $tags, $link)
+ !endprocedure
+!procedure ManagedFileShare($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagedFileShare, $tags, $link, ManagedFileShare)
+!endprocedure

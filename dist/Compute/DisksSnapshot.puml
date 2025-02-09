@@ -1,0 +1,17 @@
+sprite $DisksSnapshot [70x70/16z] {
+xTX5OkGm443HOb3F_QyRJamgJGMMVgl6RoO18Ez1n_4l203i1mWDSlcF-W51m-a_362-Pz31VY1l5OLVk2klxWeIYwYPlp1J5IRyPeN5VCAKiQp8AM6-O7of
+C03oiI_-NuAmcPrDnAF11HRGeicnZdZq4HHcaSmS-U8wDp17byBZt-QHlPcHE7cBR4uPWIbTpyk88wqg5paUxyR8E36OienloAeoClkHKLP6jesgekDLh_52
+OOf7CpFU4Cp5-11Psdu31SoncHLozpN28jFa20iwEb9W3JKQZGQoN2ICeGV58wU9SC5cmln3H7wA2FzWZT3MM11O8lCUXffwcpPkG7-nLEXN4R6jszQTCLqI
+kNSESNEjv94VQNUrH5IpKbVKbxgLy6-8gfBXRP5b9TERCgkAP3Ox-OfXYegjKUn5KD3y5Cl46uQAvKx4TUVP2DGaUu9WXRpJaEl_LEduFdB9ZmrMXTczDx15
+cL2yti5JzJI1Odv8XPiopPycUFraW_G64KfrfNPNxihlnr_eN7641hrK_c1S2k0P
+}
+
+AzureEntityColoring(DisksSnapshot)
+!define DisksSnapshot(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DisksSnapshot, DisksSnapshot)
+!define DisksSnapshot(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DisksSnapshot, DisksSnapshot)
+!procedure DisksSnapshot($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DisksSnapshot, $stereo=DisksSnapshot, $tags, $link)
+ !endprocedure
+!procedure DisksSnapshot($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DisksSnapshot, $tags, $link, DisksSnapshot)
+!endprocedure

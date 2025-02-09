@@ -1,4 +1,4 @@
-sprite $AzureApplicationGateway [70x70/16z] {
+sprite $ApplicationGateway [70x70/16z] {
 rTC7Zkug341Xch5X_mj-Cl_CKPx8bHLowva-3fz8I_zILRM-Hfegp3i4vXo1UOl0d2Cmxn6OSmJc9G9pZfWTCY2cSpLWdYCsf_JvoM2U8zDaVUyYhSCyGRgl
 dofEYFJEIJr1LDILuOIEXoS5CgH_8svukZ4HebDhoQL9Dn6kyCO4YCxFiRBsCxZVLoP6RERaLL_UfTVS1ah0L4Mnj2hJMylwr8W1sVVYvVMhnWp8zRfacoj9
 AUdGY051iP9pRgvusaob1mm83HMRAgApVrDAC06YVJqc9bByP9PY6nCYgUhqDFlKnfpIT6CYnE_iglfOH5fA6rFkaTP0E8-IYvdrozjURfbg-lNHKZEr3y9k
@@ -7,177 +7,73 @@ DWG61GQ5tr4s1CPGO510K41sHaeX_RzI2jKDWRaDvRxjfJvGG0869KHWdYaWCOCI8zGUA20XWo8F49X0
 ICpio24J8p5pHLfwbXWhD-I4EKTWpX6OzmZCEGBp7e41EMT0NZB31iXnRO2yAQVVrNy
 }
 
-AzureEntityColoring(AzureApplicationGateway)
-!define AzureApplicationGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
-!define AzureApplicationGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
-!procedure AzureApplicationGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureApplicationGateway, $stereo=AzureApplicationGateway, $tags, $link)
+AzureEntityColoring(ApplicationGateway)
+!define ApplicationGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ApplicationGateway, ApplicationGateway)
+!define ApplicationGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ApplicationGateway, ApplicationGateway)
+!procedure ApplicationGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ApplicationGateway, $stereo=ApplicationGateway, $tags, $link)
  !endprocedure
-!procedure AzureApplicationGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureApplicationGateway, $tags, $link, AzureApplicationGateway)
+!procedure ApplicationGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ApplicationGateway, $tags, $link, ApplicationGateway)
 !endprocedure
 
-sprite $AzureAzureDDoSProtection [70x70/16z] {
-vT87jfmX28PXH1JuvcR_sutf-7T9JnvEdV8U6rsfwlZ8jL8EAoRAjAvZfzCYTWnkfX-PEGOljA9XC9qu1g77n05u28IELNgYT8I5p0o3jt8TO5473XSIjmNl
-maUfPewlNCzDlxD6aSIlz8Q7a6mVXxkRwKDc_Z7MDnLDs5LS4_osqcIdBLTgEI2h5Iu7-BTLAjxUVOEQgwXB2ndDLT14Nc4nsRMq_lrhOKMWdAhi_DQAQ239
-IdypXDFj3ofGcsPKq4N2k_DHCPrcNx7Pg9YAXBNOgDWC3ohrXR2KLqrL1WbAoLQY_xBIifL6WMGhGa7DLYf5WAzN7A29vofEamwiLu1EamhuQiM1IhDSXJOK
-C0zpN74B0tJQOC2Zaqe4C6qPi5O1b7RgUeLfpu25IbnAL00yhm0eTAIjLHeTyv2HSa12nEW4XprPRplTJlSJjP2v0a3ed07F8aeNYWDFAawN6C1z18MkLG2t
-4QOxSft1K8aUPP2Ep1duuGnCprISYf5ynfcUuxD8eHNiE625rXJ3ZjAwXWsX3FRyRYB5LutovEI2KuVSwNi9KEdEUm
+sprite $ApplicationGatewayContainer [70x70/16z] {
+rPK75kCW30KDQaRQ-vzt2Ibwo4PfMoSzvWtb2xpzouW-HPvAI5-0jfoYBr7Ud4zZ06hlpQbgWBS1Qg1cbXObg-NQ4qdiigtzkBPe0BCELl0YYcJ5ifHpIvws
+Q984lbZ1a9RwhWTgdh83Fg4ZBKavQg8aJrljz3663UVNz9YodGDNopanxMgVM6BQ-qSMs-UKBRFabntzrD8sX-nJYv5leELGbCfrnc9F5rZiUPAmwaayvNoq
+-O3hDcYPn84qRKoNlr87qedZI3cxI3TACdDDDf2ESV8DpATUik8k_A0aKz8YbYHOtG9PSOfb5d0B9ZcOjinIt5ApiRIQxZFYEscDu_hI25TkZ09DEYpf9a8P
+SBhpQr8mKiRsGIAiQUrASaG9uZQ1ACkfTt0XcJNOaMpJjXC9OCSznDY14uskRoC208YafbnBgQncX0W0V9Bowh3ROLXqd9cTDhx01LuVt-L40aDYYfrchf6O
+iiCBoSsotxuUD2DbHnSIQz3PRQKfamLTWkWIjxW6KHP7iwVTiECIjrn1m8x4b4FQZGWxQWkB4Y8IxOUxjAUjrfXeIAB5eOk5swNrlXs0Bk0E4Qav6Yr6ztPy
+70hIW3jggSM6Ou3bC9BROqXIYmdVM-DiuGVD7A-wcUa6uvJS4l_prZ1FwC7-tDAyDIx6ekRudfwPRp0EyOt38K6T-AVmdL2wmjT7w5Pe826uU-jOCIXNmaZk
+aUxXVx_1p1HaneesiLeklBRULhH5f2qSapdLVlYZkMNtV_sOJ007tOBWR6yIIlr3m6lqOxm0QFiEZ_H_uIS
 }
 
-AzureEntityColoring(AzureAzureDDoSProtection)
-!define AzureAzureDDoSProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAzureDDoSProtection, AzureAzureDDoSProtection)
-!define AzureAzureDDoSProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAzureDDoSProtection, AzureAzureDDoSProtection)
-!procedure AzureAzureDDoSProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAzureDDoSProtection, $stereo=AzureAzureDDoSProtection, $tags, $link)
+AzureEntityColoring(ApplicationGatewayContainer)
+!define ApplicationGatewayContainer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ApplicationGatewayContainer, ApplicationGatewayContainer)
+!define ApplicationGatewayContainer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ApplicationGatewayContainer, ApplicationGatewayContainer)
+!procedure ApplicationGatewayContainer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ApplicationGatewayContainer, $stereo=ApplicationGatewayContainer, $tags, $link)
  !endprocedure
-!procedure AzureAzureDDoSProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureAzureDDoSProtection, $tags, $link, AzureAzureDDoSProtection)
+!procedure ApplicationGatewayContainer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ApplicationGatewayContainer, $tags, $link, ApplicationGatewayContainer)
 !endprocedure
 
-sprite $AzureBastion [70x70/16z] {
-xSzPbiKW28HXY08c-zzlZsNF4i-jdgy_xzyfvFBSLUWy8bHuX6UyFHJA8SWu16qBGV7Fa1tz1WIzHnPIP5mjmYCUKMLScq8i8cFQWSuGC3boP4WDL0a4oeYf
-fmYorlk0iOwuoYnZyZO54cPdZ2TCxSW4apnLEiAjAK18HiskczbxNyuinlyHS-muakbj31DTCRcSATQUjsHCZXWO5qcP7043PCXeYe0naPJ94LHbdCuYcsHf
-8H7qAv65B6GXGYAeq0WO82G3X6Kev1O
+sprite $ATMMultistack [70x70/16z] {
+rTK9sfem483XsMUIt_kVjy6cJvCO6Irs-zm5NdQ0FAGqoAEygyk20FWHXQuglUiAul-efC4hJ1RyiL2o2F9Opn9fRrSL1f1_HL4YFLD4fvBjSX4vNHOrKnbJ
+Q-NAYXXDeKpCt0d2DgQenxlimWGPkpC4hsRk3V6rnhJtxHRU8qw0zeI9yjWp19upPSm16liKQOo_m1Y0FoeMuSJQcOXGZY57RU-34aJbGP68eFQcs1b5Zfcn
+XOcjmXAjlZG2mB4mFYecuZk5B8uCuTwg1Dcek4Zi5BRep1F5qpNIAEnHxW_hIlkEBIAv_z-KigIhKfeo3-FsjM_hSiIRFVjSKLWKA_Ve7SLWLJ3ULkO8VZ9y
+GN7kp0Nb-AypMuLrocTbsAcTyQsYSr4hU_rHG0l9-i_l34Ujxol0fVRaOF1TfK0B6p8oy9BYL2O5k4uCrrInEZ9DmOMXuuSboimKaC8J8yTNXqoP6UrxXiyH
+q5EcrPbJ1EWnsJCpaiTRvWmHsnGx1fyZKBOTWACF5tw00md8bPNXCUb8ggpCMa2khAL8hlIYlLnxy8kAi4utcx-fX4UZ84yi2-5FnPQa27drbgMGTmwmtMvs
+LI7W3oZA-W7bgtvzG56n3oZs4QNM-feIjwHAaFSD
 }
 
-AzureEntityColoring(AzureBastion)
-!define AzureBastion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBastion, AzureBastion)
-!define AzureBastion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBastion, AzureBastion)
-!procedure AzureBastion($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBastion, $stereo=AzureBastion, $tags, $link)
+AzureEntityColoring(ATMMultistack)
+!define ATMMultistack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ATMMultistack, ATMMultistack)
+!define ATMMultistack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ATMMultistack, ATMMultistack)
+!procedure ATMMultistack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ATMMultistack, $stereo=ATMMultistack, $tags, $link)
  !endprocedure
-!procedure AzureBastion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureBastion, $tags, $link, AzureBastion)
+!procedure ATMMultistack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ATMMultistack, $tags, $link, ATMMultistack)
 !endprocedure
 
-sprite $AzureCDNProfile [70x70/16z] {
-xT55OWCn30NGBvPx__kMmOa6bQxQUGFU2RxnJrqk5oB2GrZDuuqheqay9iveO8yxZjCqAgTEaOfnXiKAmd4Igt1ShBDEAFreA2RTOSXY4_QnHKP4HgwUidyt
-kS-mpV88Hy6Yto8F2TGaVqGU93NCMcHV6A_CudbAq68kUPPqhgTo55bqKiwEkb270IoJo1QepxA7_KRsw5sLqUBo6rKIe8ctgynaj0HkZHR3BHiTWa_47t8q
-u0FbU82LL3jA71sCJppw5Dz89z4fKj7XEYdO836Utf-nTOPW3ukghLDb_56No-K5
+sprite $AzureCommunicationsGateway [70x70/16z] {
+x9S7akiu30MHvVBz3xpY6mEK0qTnV-vAJ6g0W2EjShlHUMxt--qA2JHd9T2Sbq1pNWBDUGaqnoNdDN5_8UWmTq3WzxUmS5cOZg5cLXOsKpxaUBOqPAV36ogz
+Bg9OeUsmkJi2fwNKnhGHMKQTRZFJ8aNTAXc7vBQtMK8ZU93DsZ5pazsQnI4sRf8P8L9PQ6IznLP3mxpH7ZRkclNxr4sSsnmOvleKQOn7I8sSoE81aqI4rXxJ
+68wmF8Xd8h6liTInWQ0Ti0oY6RzuvCKPWsRaBIDnRk4yWytWT29DcVk2HDdbtU8jjc8YEjFQss5YRH1eLlPF5cYODc6GVB900nXWqEdBW7reWIRB8QXnKSjT
+qYrUT4q09ekYJwqaGw3X2J3PLFIfhqkWaNpC1nRsgothD_AZDq9rlwtBn-f-wdJWk90kBVH8hJfzzQlk-dS0kcFztQZVlHkdqRkHssPWWYu5Af48INQ8sj3m
+oV3vKogBXtPmbRShcHgEmUZ-Z63P9crpWD2zGO9ZOv0CY1w_NqXhZsa8aediP3wQ5og9LYeZh9_GDl9CXQTW0bBb6UEe0M1dP8yaJ7CrC5yXKfEg25tEOtoV
+RSUsIr1XrE0JiabIyIRxy8kCVO9a8-rqwEklG_igz7O4hN7j5dMiCEr2uP6qo5JfxKFysU92Xs3bj70g_ltB-c-OlK_wzeG9zyhfFqA0ELenq2CdY54S-eqe
+KJww1G
 }
 
-AzureEntityColoring(AzureCDNProfile)
-!define AzureCDNProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCDNProfile, AzureCDNProfile)
-!define AzureCDNProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCDNProfile, AzureCDNProfile)
-!procedure AzureCDNProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCDNProfile, $stereo=AzureCDNProfile, $tags, $link)
+AzureEntityColoring(AzureCommunicationsGateway)
+!define AzureCommunicationsGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCommunicationsGateway, AzureCommunicationsGateway)
+!define AzureCommunicationsGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCommunicationsGateway, AzureCommunicationsGateway)
+!procedure AzureCommunicationsGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCommunicationsGateway, $stereo=AzureCommunicationsGateway, $tags, $link)
  !endprocedure
-!procedure AzureCDNProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureCDNProfile, $tags, $link, AzureCDNProfile)
-!endprocedure
-
-sprite $AzureDNS [70x70/16z] {
-rTXdWgim30HWkSx8zp_m8pO8OKpA-xUpdV955irP-Hi9gO2gJObQudyHiMgxXYNzM4LnX4_zeQJQHfHRi8LRTfTV5fGF0YEqNmQavRCHw0ZgCR9T6dyoV33A
-sAm3W3Rx85HfJdgBg1cj0UeoJ7Fg1qI7qGYgJ_zxh7unV49YQxQLwbJAkO2Z7Bv1s0lPNthAlkHu8Io7Cv1HoA8KluYF31soBCMM6LENvoi1-jUTuvNEv4LJ
-5A_mfb1vx6i6s5iShefsP42a5Sypnv18s3avjGQRsnUhOeH6k02NSgUJE1oTjO97QF7BV8TrQkr0R0DOl0cgfH7N1lTIr105k0uyew0_XSjKYeBFYcDwCV5G
-T2g5u5D0pu3dgPVcKlWXrywS0r8hPLOmSbKiKEilMqTN24h5dbhPKtCky4F2KDo0SWWY4cB6GB98sH49tGZZ13iK6r9o0qeIQoabYYGGU2bY2aY8n59BJ7OS
-TB-OoaN9sei84h0hqHGmIU8hKsEiBQPm94ZgIX8ffY1ATOe_rhfKgaXzAJbBSCgntYiuJdzwnOhf2e8aK_9ctnIUYivAaZYK8b8F1K4aUuLEmQAMB64eezD3
-8Q9qnrzAUYfwL-AkL95yr4AMpGcObCU-fAClG1Afff284kX6r1LrVOcd4YKV2aIYKqYHuXIw8pqf484fHQHqvQnpFj9OAa7AgI1Az4g-A7Mw0an1a0YdL14_
-eY3LNG79haPJKgsrP944ho0FHM8kVUtjQWpkK4SPYI3fb77I445wydoWjxIpCK2jfO0Zm7cNggNsHIKNK1TtgJhTCMc13y-ixfZHXcIAPOci7oNwxg46Wd3g
-V7VHwQdsy_E8Dg3pOQyt1Jwcw5IA1TTYYEVC3zWYbkWVznp8szcBbTBcMHtWwg1obTiigDvdPEm6RUgrddZODkgwCiqEwMQJat7E6G6mZoSkPwgqnirdu3JX
-HKVAuwnPhPYFas_AFUePu8uGk20jB9ImCu_50BmWyUtR8stM6H-2VlQkXao9EyEv63z807sp84y9FD_npSp00T0ZwvJZ7In9pAtbOJGOyZoguMov8313atmC
-MdCGUnnXryw7X7V_8MYCycsAjdLgabyICsuIZFXHeWaboT_8Fm
-}
-
-AzureEntityColoring(AzureDNS)
-!define AzureDNS(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNS, AzureDNS)
-!define AzureDNS(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNS, AzureDNS)
-!procedure AzureDNS($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNS, $stereo=AzureDNS, $tags, $link)
- !endprocedure
-!procedure AzureDNS($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNS, $tags, $link, AzureDNS)
-!endprocedure
-
-sprite $AzureDNSServer [70x70/16z] {
-xP7NskiW30Hd9UJKzt_TKuJ-IcxyfIVibJqiGsDTPcPyEIiEmFPuPZO0ntDpIClP-M7PxrPbVz9o4AkYmodBdfNPFRhbmCeShl16P-GnBPkp0x2SdMdfcPPf
-QU19EX1oQ9seY7KIO7t0Xhs0kepenIf_4Q-L_BFQ1elooyXcxaEeI4iIjPAwro06IzOIM3Q-YB0yKE4WlQaSB06-DCWcM6sv8KVVYODXUP6Z9LSp28XizvcE
-VP5SILX3jTF1Of3pX6UZ4z4MQ0QrKf0ab6ImDF2-OnCg4l3VPc1rUTw9WusM-Y7drf43X1LfHS3ILcIm66058ubwDqwJ18EbLTS-eTUNGBNIBp9QGhAqIVwJ
-kDGIr5YHmN9MfcLQfcLpTW3YN4a0oFoic5YLcPc_
-}
-
-AzureEntityColoring(AzureDNSServer)
-!define AzureDNSServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDNSServer, AzureDNSServer)
-!define AzureDNSServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDNSServer, AzureDNSServer)
-!procedure AzureDNSServer($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDNSServer, $stereo=AzureDNSServer, $tags, $link)
- !endprocedure
-!procedure AzureDNSServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureDNSServer, $tags, $link, AzureDNSServer)
-!endprocedure
-
-sprite $AzureExpressRoute [70x70/16z] {
-xTP7UiGm241XG1It-vyt-c9Sy4eYFQD_DVMv6yDVCGm3bKBmCIZsJX3oo4u4MMWt24bgDvBUde0WPT-p3CZ-8b-Hy2gxMmfKR9N-vBfmt2_b1uyHBfFTJ2kb
-8jiQ8jjAcSYshTCjijLC9bBj3TNwqZE9YDQN5O1ScKJ4XKmYail4I38J8ybCZ2GpCPBCn4Wo4oF9J8maCp6Ioo26I6C64IwiLkbyHLeoy_ulzjLGSvD7cZAJ
-ESN769qyqf2PxF8Seuj24vdZy2qMO2CBI7nAuFvYsPei_bJZAt4RmMhLt5QPhT9hR5wZHdehSWqj_PHr-PJz8cH1QMG1nVE5-vu4dCPpLtBFV1Yk8u4EOaxn
-ldfAqANeSoTG8OHkM0h1hp8Cmni
-}
-
-AzureEntityColoring(AzureExpressRoute)
-!define AzureExpressRoute(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRoute, AzureExpressRoute)
-!define AzureExpressRoute(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRoute, AzureExpressRoute)
-!procedure AzureExpressRoute($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRoute, $stereo=AzureExpressRoute, $tags, $link)
- !endprocedure
-!procedure AzureExpressRoute($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRoute, $tags, $link, AzureExpressRoute)
-!endprocedure
-
-sprite $AzureExpressRouteCircuit [70x70/16z] {
-rPO7SkKm34CjYSrx__jkiyAne1G6wPmQvVCP14oFZfzLxSs4BcfcEju44RLPFAVh0yJTbHti3d6NDuxZLtLg7e2uKr804i68cLAI4S7aX4eYXA4W99IP223S
-H08Gpjs1a3YOiXLoAaNfgn8dDs1HSlOtI8cKehmjII6tSVWizLd6ICbUyLc3jFQQmzXFGyjvqcVYSvTch7-rEW6U3ieeQz4b9kLCXKaR1W1kEMKqaqYxRS4o
-QIi-bacxRnOmQHl6mQGzzXzZsapAEr-ObFUqcPHttvL9UVzlBoxGyqgDINbtRLIixON742cNqgwlYhtmcyBQGjhKpEWTaN9jdVe0AI-BaT5N6LgzOkVaDYiz
-RFyPLbxOVa5cZxLBo7gnBTq-4vBFJILbIaj8lZe2jsEtQcMB7GqW4RzUB814z06G0kL4I8WW9CwNA86G02KbYYCaGW5Iqe8Gbme4VS4M6tXIe6mjSXYS55ux
-XPPenrXFpbPuTw55hXMzdMZncfGjKts_dyHHgdlBsUUSYxPIIRPOderfR7lDvVmo5gvAlOJ0bczOVm
-}
-
-AzureEntityColoring(AzureExpressRouteCircuit)
-!define AzureExpressRouteCircuit(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRouteCircuit, AzureExpressRouteCircuit)
-!define AzureExpressRouteCircuit(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRouteCircuit, AzureExpressRouteCircuit)
-!procedure AzureExpressRouteCircuit($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRouteCircuit, $stereo=AzureExpressRouteCircuit, $tags, $link)
- !endprocedure
-!procedure AzureExpressRouteCircuit($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRouteCircuit, $tags, $link, AzureExpressRouteCircuit)
-!endprocedure
-
-sprite $AzureExpressRouteDirect [70x70/16z] {
-xTQ9SgOg48RXhw7t-x_WCmOgIkk_nEJiyzGwa-Ir4QWIx_kjiKXltsp8mFW64lc13CkdzirH9jpLVgJIvU1lNX5an_Y99H5k4_s1KIZJPACHkCqoCrpCCrDm
-Ky-DmND3k6V-zMVj5icDp9LbDjoHcnXlUUEuGNF3Xx4O2oAyr9RdnvXheYvg7vGRdl7bNN1k51jMMqXxkSjrly0sg8gg3Sgu5hcXia3hjf5Ec6XErf_kyZHt
-s-qNnee-Ee9gRctK__BHA6IyQaLbkUbbFF-bdIERgqo_F6NkRdIE35epTPSdUHAP6SPK3iUEtVr9P2ogdNOP2tBtVeuScPlL2oIdzGYgBaTwV53BJPn78LGa
-PHYtlQwHsTyO1Hgo6CFGNZtlykK1rxecENuYb56Qkrv575GgjhmiZuKxNqP0BZjMzoNhUHJdTykP1b2axn6mEyk1rGeAcv7i90EFbJ-P9Gm5yOm0Cp8EXBBi
-ebHqJG0OaGPenem0xjParuyaGd2WuxxBZAGruVr4y8DlmRREelEgait8Ugv89iQ28co9EAOImRW3F2Sf8Xm3quYqyJzjZP3FeQaHJY9YFjeiqyUB7LDgMRhW
-8OkW6J6RaOupZc1KzQTg7sX6H2-VLjJNgpQDY6QsPxjmvX5DxTEC65PI5tJ-kTi1NKKeweAgYB03dP7wACLJ6Xbsb8etHgaYq-s8BjwTu0NEaj7JjE5uoKg6
-Jv4WlEPBXa_dBHhU4PaPbn7oyWdwQfhmSqGYC_hNle73rmX_p4XuNu_S63SYWAY9vqRmMfs-KiANiIuX5y8zJTGYmqtvpSHlVm
-}
-
-AzureEntityColoring(AzureExpressRouteDirect)
-!define AzureExpressRouteDirect(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRouteDirect, AzureExpressRouteDirect)
-!define AzureExpressRouteDirect(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRouteDirect, AzureExpressRouteDirect)
-!procedure AzureExpressRouteDirect($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRouteDirect, $stereo=AzureExpressRouteDirect, $tags, $link)
- !endprocedure
-!procedure AzureExpressRouteDirect($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRouteDirect, $tags, $link, AzureExpressRouteDirect)
-!endprocedure
-
-sprite $AzureFirewall [70x70/16z] {
-xTC5kkiu38RXtoHmvFrlTyfosOapbzzpYkhp1OsVvv-GSYwbv1onLIpSAGaRP7v4gpk1-0MAM2Fn6mdZ2h-LCOhuWpAp9owlkpWpvoRoLs7YfBWoSpmkuWiU
-GIEtszIP2PbuKC8RYNXS6LXz0_1AbfNm0ibQ0Oy2osgK4-wnRC8PdI9RiUzFb0danpFZSXSdcHJy8azW7CYqx0Sq8w38l08IdVy3wmwIw0vebmgpxa2AxY7f
-3WIw0mPhfreRObLxXAoTfGrQj9U1-uejhbM-qNvY3nK0-RvIRmuLkf6sT9Fx2k50gbx-LbIg-b_0GL0VZrTSmKdKcOhW8lcucMlMwIUjgsZ0BNFPcyFyygiR
-3_l4lA8HBiYbOkSNScRLDQC3RUPxSYVhXWhZIPAL5ObuIKShYt2EU8ERdS-UEBixrIO7jJ4-u3RcMyKMrw-Msa_iIsNmtlqBAvtxf7K-LqeRLF19eI45Fyu_
-_m4
-}
-
-AzureEntityColoring(AzureFirewall)
-!define AzureFirewall(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFirewall, AzureFirewall)
-!define AzureFirewall(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFirewall, AzureFirewall)
-!procedure AzureFirewall($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFirewall, $stereo=AzureFirewall, $tags, $link)
- !endprocedure
-!procedure AzureFirewall($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureFirewall, $tags, $link, AzureFirewall)
+!procedure AzureCommunicationsGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCommunicationsGateway, $tags, $link, AzureCommunicationsGateway)
 !endprocedure
 
 sprite $AzureFirewallManager [70x70/16z] {
@@ -197,40 +93,288 @@ AzureEntityColoring(AzureFirewallManager)
    AzureEntity($alias, $label, $color, $techn, $descr, AzureFirewallManager, $tags, $link, AzureFirewallManager)
 !endprocedure
 
-sprite $AzureIPAddressSpace [70x70/16z] {
-xT09ZiOW28RXYYnw_mFFWZAX-N7o7S0tQuDzIdsWRhVRJGIUdTCvxJIpEHL5WgaGZD7fSJMJwIcAJAg6D8E14O114Pp1aSn02CxW2Cva16Tm16SoWZC0WZ0G
-WZCrqhe8jtIcip3znzWdqiMZFrGyBfWpGhgIPoUwAhQnuvs8xdYlfb7-nxnDHYBTnJAiKIkOvwUnm5hHsArIQFt6yEyumanPiLtiOb56c9tXTSIH5zDjjp_T
-RCSln1cETnnvCJoy7iza_YmPyRG_KUCFXcIOv4jW6vgtvLKSoOp3G1a1600160116Hp938u038ZW38va1a9m1aTm9YCGGzMG4e8nrGn6Wgb7WO1CWqTdfZTm
-TEvskzs-0G
+sprite $AzureFirewallPolicy [70x70/16z] {
+xTG5ZiD0343H3fhY-lwttJ9O4mMNvmL4rW_dyFMwBjNrIhX5K3UvPGRTf5mhkWqyAaWEgfRgDUTUA-oCLTZvkaglW7UgPETK0U-biiN-5S8hrLeSKCKdFmV-
+xexVKs87ddC_lj8hvQU-kumEgM9z8Xb7U9Pd_1bisaYb_kbAcJQZ4gRjLX7sL9cUmZJHIQSfaXmYO4iD9p2daitaj6jBfyeXqvJJ56aEaOSMZkVAj33XYoin
+xr29PXZIqLgESLd5scPNGghnj2ijAVplPxJztIrcmmxFg7Bw0yzeU-NdwxeF
 }
 
-AzureEntityColoring(AzureIPAddressSpace)
-!define AzureIPAddressSpace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIPAddressSpace, AzureIPAddressSpace)
-!define AzureIPAddressSpace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIPAddressSpace, AzureIPAddressSpace)
-!procedure AzureIPAddressSpace($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIPAddressSpace, $stereo=AzureIPAddressSpace, $tags, $link)
+AzureEntityColoring(AzureFirewallPolicy)
+!define AzureFirewallPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureFirewallPolicy, AzureFirewallPolicy)
+!define AzureFirewallPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureFirewallPolicy, AzureFirewallPolicy)
+!procedure AzureFirewallPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureFirewallPolicy, $stereo=AzureFirewallPolicy, $tags, $link)
  !endprocedure
-!procedure AzureIPAddressSpace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureIPAddressSpace, $tags, $link, AzureIPAddressSpace)
+!procedure AzureFirewallPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureFirewallPolicy, $tags, $link, AzureFirewallPolicy)
 !endprocedure
 
-sprite $AzureIPGroups [70x70/16z] {
+sprite $Bastion [70x70/16z] {
+xSzPbiKW28HXY08c-zzlZsNF4i-jdgy_xzyfvFBSLUWy8bHuX6UyFHJA8SWu16qBGV7Fa1tz1WIzHnPIP5mjmYCUKMLScq8i8cFQWSuGC3boP4WDL0a4oeYf
+fmYorlk0iOwuoYnZyZO54cPdZ2TCxSW4apnLEiAjAK18HiskczbxNyuinlyHS-muakbj31DTCRcSATQUjsHCZXWO5qcP7043PCXeYe0naPJ94LHbdCuYcsHf
+8H7qAv65B6GXGYAeq0WO82G3X6Kev1O
+}
+
+AzureEntityColoring(Bastion)
+!define Bastion(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Bastion, Bastion)
+!define Bastion(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Bastion, Bastion)
+!procedure Bastion($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Bastion, $stereo=Bastion, $tags, $link)
+ !endprocedure
+!procedure Bastion($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Bastion, $tags, $link, Bastion)
+!endprocedure
+
+sprite $CDNProfile [70x70/16z] {
+xT55OWCn30NGBvPx__kMmOa6bQxQUGFU2RxnJrqk5oB2GrZDuuqheqay9iveO8yxZjCqAgTEaOfnXiKAmd4Igt1ShBDEAFreA2RTOSXY4_QnHKP4HgwUidyt
+kS-mpV88Hy6Yto8F2TGaVqGU93NCMcHV6A_CudbAq68kUPPqhgTo55bqKiwEkb270IoJo1QepxA7_KRsw5sLqUBo6rKIe8ctgynaj0HkZHR3BHiTWa_47t8q
+u0FbU82LL3jA71sCJppw5Dz89z4fKj7XEYdO836Utf-nTOPW3ukghLDb_56No-K5
+}
+
+AzureEntityColoring(CDNProfile)
+!define CDNProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CDNProfile, CDNProfile)
+!define CDNProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CDNProfile, CDNProfile)
+!procedure CDNProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CDNProfile, $stereo=CDNProfile, $tags, $link)
+ !endprocedure
+!procedure CDNProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CDNProfile, $tags, $link, CDNProfile)
+!endprocedure
+
+sprite $ConnectedCache [70x70/16z] {
+xTP7beGm34NHhonx_mikuAWZmQOOTb_6UcGm_hP_n2B2U48yYWlUfF63uWtayOlJmqZXkv4uHBWbJk0EYHEA6-8Kfh7bAS4KyRpYc42H0nZZ77eOAKguHZab
+55SY9mNZbEQyyqoMHnd9Mt3CsYs6Gz7cPBZf0eToFEycZ6ivI1ZNBw4m5wBH6SLgxIj0DNgiKjxsb5RS6a6KHx3GYuf3U081rFQCLj9ihi80_AgYF46n7Kp_
+jNcTaI5ys15tBAJ_bhJfZbYugPucB28SA-s_DDhaMYdkjb3PHXUgvb4SnncXbLPbf2hWrdymsjXqfTZHXQ5l5T9HPSCQhMSHMk5R1P1HPQyg_Aq2Vgk21VjN
+1NGS8Lnbi67RGgUB9CKLEahYHyPD26-n-CwL7sQAoyDAKGpmrAeD0sdoCwInbnZeFJpSpEGiuj7xiB9eQyLtaItkhVUPIcce2viPgypMUfclT03HT-vNeZ-l
+QFP7bJ4Cj3uXCS3jOQHezaiXc48MhHzeOSguXOX5rOggCFwWVoy
+}
+
+AzureEntityColoring(ConnectedCache)
+!define ConnectedCache(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ConnectedCache, ConnectedCache)
+!define ConnectedCache(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ConnectedCache, ConnectedCache)
+!procedure ConnectedCache($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ConnectedCache, $stereo=ConnectedCache, $tags, $link)
+ !endprocedure
+!procedure ConnectedCache($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ConnectedCache, $tags, $link, ConnectedCache)
+!endprocedure
+
+sprite $Connection [70x70/16z] {
+rPT9jkiW34G3gD__WlynCP4LYnFvprwDNXEkeKfIpEkFg0yW5bLXWj7_Xz06QP0fGNl6GD54Pe8F6EeI4GaxAdB00OG0e_S1W2GV3XGOZXZnFuDaSSOF2AS8
+1vt-y6-82FTj-Fpco9xHP4ASaMbCZkakzJuPWfK8znYPa558G2Pcwub8gT2xxBoXQKcnnXiV64xhHAG0yI3CC77MZrCybDcNYJEUyNgWiHoEuGbK6XN2cdYc
+wMojsnqppzI-yXd5LktXJEI67n0gGYHKc5aBzTQAa1Yi6LzTmK8e3d4dJ1sfeLIWbI3dPlebvXX4Inl-_dVn0fPu8F2Ffv3yICrZzgrh1kdPCStQMYLP5gwM
+GQPcCwr5V1zcyWqP-L0oWxM6NWacGY23J6DerHpU_-aR50tF2S8rhCJRESUWxXi4rkJCEv4l658Xp35ZHHqhDsBen11YmCJgJIWv1YCcfwGfIex9JoJR63tX
+W4dTvHsbqRNOSEgUj1clK36Z89B_PuCXDQEyTdqL-QeSmsiq33khFOfkQrg2aSzNMzAlqSs8WIpes4Wv96A-p1MV9xA3HFK02HEpcm_32Cam-VG-ZQ4I9CbP
+FxzOy1SB4DyAVKmptyokI7VZqjehtSo4jFfMudZcYosjl9LGxNPjIIf1uFvcfmVcuHlPt4hGiF3sKJJ5lf-Bpp1D3WZUlJ9tkEXizcavCEKtU3EJT9CwCQDg
+h6wUO0T6ApSR2qMR7Kfv_BXb-N5oaKtEZnkVUU7dWZT6DxVFas7mq_wJazo4zMHKWXmpW2b6VD_AaLWNezeeO9CJT28AD_iuswyeE-LbK5EVe231_dgk1iGi
+QgR2JD1UVqF_
+}
+
+AzureEntityColoring(Connection)
+!define Connection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Connection, Connection)
+!define Connection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Connection, Connection)
+!procedure Connection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Connection, $stereo=Connection, $tags, $link)
+ !endprocedure
+!procedure Connection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Connection, $tags, $link, Connection)
+!endprocedure
+
+sprite $DDoSProtectionPlan [70x70/16z] {
+vT87jfmX28PXH1JuvcR_sutf-7T9JnvEdV8U6rsfwlZ8jL8EAoRAjAvZfzCYTWnkfX-PEGOljA9XC9qu1g77n05u28IELNgYT8I5p0o3jt8TO5473XSIjmNl
+maUfPewlNCzDlxD6aSIlz8Q7a6mVXxkRwKDc_Z7MDnLDs5LS4_osqcIdBLTgEI2h5Iu7-BTLAjxUVOEQgwXB2ndDLT14Nc4nsRMq_lrhOKMWdAhi_DQAQ239
+IdypXDFj3ofGcsPKq4N2k_DHCPrcNx7Pg9YAXBNOgDWC3ohrXR2KLqrL1WbAoLQY_xBIifL6WMGhGa7DLYf5WAzN7A29vofEamwiLu1EamhuQiM1IhDSXJOK
+C0zpN74B0tJQOC2Zaqe4C6qPi5O1b7RgUeLfpu25IbnAL00yhm0eTAIjLHeTyv2HSa12nEW4XprPRplTJlSJjP2v0a3ed07F8aeNYWDFAawN6C1z18MkLG2t
+4QOxSft1K8aUPP2Ep1duuGnCprISYf5ynfcUuxD8eHNiE625rXJ3ZjAwXWsX3FRyRYB5LutovEI2KuVSwNi9KEdEUm
+}
+
+AzureEntityColoring(DDoSProtectionPlan)
+!define DDoSProtectionPlan(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DDoSProtectionPlan, DDoSProtectionPlan)
+!define DDoSProtectionPlan(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DDoSProtectionPlan, DDoSProtectionPlan)
+!procedure DDoSProtectionPlan($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DDoSProtectionPlan, $stereo=DDoSProtectionPlan, $tags, $link)
+ !endprocedure
+!procedure DDoSProtectionPlan($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DDoSProtectionPlan, $tags, $link, DDoSProtectionPlan)
+!endprocedure
+
+sprite $DNSMultistack [70x70/16z] {
+tTO7iXen44NH7gL-xzhxtww3XYhICC8vdF_9S4ijOgnjPUdlg6mHsq-f_3KJbMtxtofJl9DPYTzcQoirrce_qzgNen-jr8ZsjrHwhQk9jfOosDButdsfOZBJ
+SQYLSbPf1YjJNsJAWBwrKWnAIKmffS6lvef35Po2P6V1xFHsfBoAI83CRZydGOrtDKW15XUNiquu6gh4ip8ZTqk11409-5ayCrAc8RcoGPdIGoKZT5GPbxtC
+55VElIpVPqP47bGsI02SN-W6qyDCAkLeee5yVtycwthg6z9H1PB9uexPvLsbbvBFbORDAVisawN8FXW8zbT50cG7o0ItKX90i9h8940CPTq4BGRG6ewMEMOI
+ybvxVeOqAm8oJAlXMHaR5u8uL_2rGcsqtigiP9YTpBQi-5hfXTOSWzQWHTixDkLRAvqUxWrGZGJmDwwbLbg3hSqAZ5XKZdStPqLHzufdHIOUb7RlfjAZGUlC
+BK6U4mB2yQ0_C3ahNvJaKc5hZ8Yj6I39LKN8dBBegyh0Ol93JUnaoghIGSVlwMINA9QLnDehgNjCCdLTwKO6PURDJ7Pc2h1ml54Pa4xjiQi4fqWegyead7xS
+60j0QVgRFqE54o2vaY_7YdSPfv-_6_qoqiQ115AGvY819IWEoOS0fvpi92iD6SVy2c1bolP-2hHOL8uxsFfYR_PuoLvqTiuQnzOLINRsLhSuiQoCeNsGFr-n
+vBSgRQniyRlKiT2tMEFZoeYrqu1hvSSh6U6_PIqVu2ViYth_6HFr_dCc-l1MPPnLPgd4scS
+}
+
+AzureEntityColoring(DNSMultistack)
+!define DNSMultistack(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSMultistack, DNSMultistack)
+!define DNSMultistack(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSMultistack, DNSMultistack)
+!procedure DNSMultistack($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSMultistack, $stereo=DNSMultistack, $tags, $link)
+ !endprocedure
+!procedure DNSMultistack($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSMultistack, $tags, $link, DNSMultistack)
+!endprocedure
+
+sprite $DNSPrivateResolver [70x70/16z] {
+xPO7TYuX28Mn3SLa_zjzGHGFRyRqqtDJ_ndvl625tzAVIiafmKzLfqhEdu6bUY6n23DXou7Y-WZHIAAetYdvVTUiSKo4GqGy7g2cKDw557zMU23Gv7_PEEK8
+CQC5L9aSuKcnWRH8aD-7MAsk6QCWSP4-61n8vzAMzHX5hBMCNov4iZTfKye1aZJQmad30iOy5JXLrr9Da4OsjAA2oAnH6vJfA4ox1UO5yI2NOviQJwlda8yb
+IQE88UPk1g7K13bxr5IQ7ozXXx1PCeL7392Ww9yISYfchOgioTLdnptyJ7iNG4KId8M8Lf8s8pAGHlJ_lmYPvti5LiXknedOUOHoN3jcH9Z9LuBqFZ0hrAra
+io9zI1WFqco72Aato1QxguBZnPAQr-xTrt16ser9eXamN3OhI_P_aB6xAPXP2IMuhCccz0UnDTbcLlIYIR0YICyKYiOgsFZEFzbRUAT13eyVqAgwB3L5Fr9U
+t_Joc2Zkb6P27Ej9A0unZ3-FAMKRd4anitVAowlfJh4gjKqfa69Pjh7N0oKM9XSlBWTAFrDSJYa31ULEEMJ4iHN1ICPcRjszH4gixhslSAvS9ufX3lE8KEJJ
+5BTofbXTsf7o4YYdZ6oCQkSpPQTqxujiZC98dwjxebn6iRcRkZpDklSf6j9-PGLKewIz6YFbQUxU6-L1ISQ2wx0pd2XnY01MUUKxkrI3OfIPaYZwkNc0Fsul
+0B1sR_xoxjtPTszOvwj7HegyAHPz4wkV993TJ3pL_4ZrWuqHevLb0Q8PkH-mH856lAjIzd7lrn2qcWh58tbdnkGWzHsj-64hdP2iMHYnCCt4MgZjF8VPj7pb
+tl42ACSPOsG3SR_y3XRDrDu04bo76UDWKGXvs3PZqAnle1ncZ1SVaRhCUcROyfkqmlDZIkwE5T8J5BSICMk1eWGpSShHW1J8TmYaQZ8AKhXcB0ls6xbBcW49
+eWnjZcmCl0vU5MKecW308GTC0RJcv3bP8ZplbzU-nzsKDgMOzNM3rdbB-uwQL_DoXbZ5clHryNKHAwF0UwfRzbazA6d8B7Mgy4c8romtwgw0EAb4YgkqwxfQ
+qzCFFg6KivCo_519QGb-IN_w1m
+}
+
+AzureEntityColoring(DNSPrivateResolver)
+!define DNSPrivateResolver(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSPrivateResolver, DNSPrivateResolver)
+!define DNSPrivateResolver(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSPrivateResolver, DNSPrivateResolver)
+!procedure DNSPrivateResolver($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSPrivateResolver, $stereo=DNSPrivateResolver, $tags, $link)
+ !endprocedure
+!procedure DNSPrivateResolver($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSPrivateResolver, $tags, $link, DNSPrivateResolver)
+!endprocedure
+
+sprite $DNSSecurityPolicy [70x70/16z] {
+fTK7Tkiw38JXOPq1zh_WTq3H2iN8ljRBVsiAlmCYBhYfT9cvczXgnl-goIyP2nwM-ZngainiVbJnf66On4ZZNutHxFjvYeqBKEHhYl71S9JmLPo6YNOM7qxd
+ct5IVAUea7GY8SOTXzF-ZTWuVXonfK7wPBv3tEUvizCaxP-CpTlCOslKShUA3_6SP1jbLKdxkE8w48xpsfN9YXJT3UzAxaxv-4QHSUIdK2GoBCczVtZ4whKJ
+ahh6Q0uOTyflHp5Q8CCHjqJ9PdJNsr7YFgUojswAUZTCZE8lXT9dnfsugQwZcDvqAkQURXJDhUm8ez-CxXzwxk90nDux9z4wHxqV7zOs7Tx-i8kxD1ICKfF4
+3XmCYgIAY1R9xXvvpNrU2CMaNf39KD9Kg8xSnVQwyzrY66iPeIXgAA5ar9TIeEXdCULskUwBeepEZfhG3uK5N1JUhTVSvd9VIaCDfI5DfG7ztugk2f53OKOz
+55OWjrCnRm-K3lH3KSz0-L7w5pVgA4DXHPwAn8psOHRzKYhQeJ2X7Kg4F1M_KRWhHE9KEd8g4r5A7xRRtMcBmeJ-KbY0bzBcOdJxsb12yQ6aMaj6wZeL9XGg
+fHAVrw6m9FmgdS-Zd85KsXY8gJ5ggLAz9gGoaJ8EfNS_f4Yl-9Dc5ZKWbSwebL-BkMLsX1L0vLalsvNkNdPvVa2rd12bphMACyOmgx8Zcj-TwiMutgkimr3Y
+biY4payr07PkHeoqnYWbVgm3o7wyKWs0fZqALwNNKdTbliMAL52otQ5TbOAexKhSQHXJMHqpRah6KTsLxEvJ4UsQg8lI0cWnJzyKb5WDps7MIBie6UW7LdSb
+62TlXX5rA1AFJIDV_fL2MHZD_UwZXA9NG56KaJKBPM6CrChCoPI-Lf1jZ4E92oAHtojHyvX734ddOrdcE1LM8DSe8LNUADC9I1n95WCkIa7w2UrEYQhvdjLL
+mMdWLfdbnaLIom2mADF1eZJSbdAfhPQSCEkhWZ1MfUAx6bSbMfM2xyeV5NnRVw-muTiAtoi93uTfUOsFTZitSn_nfCPx9EDH_HQfU5QYP6QNFsp0SyQk1VAS
+wVepiZCwaUSC_un4ZPf8mH-gL1Wzuq_bJhBYpzLzaFy
+}
+
+AzureEntityColoring(DNSSecurityPolicy)
+!define DNSSecurityPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSSecurityPolicy, DNSSecurityPolicy)
+!define DNSSecurityPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSSecurityPolicy, DNSSecurityPolicy)
+!procedure DNSSecurityPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSSecurityPolicy, $stereo=DNSSecurityPolicy, $tags, $link)
+ !endprocedure
+!procedure DNSSecurityPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSSecurityPolicy, $tags, $link, DNSSecurityPolicy)
+!endprocedure
+
+sprite $DNSZone [70x70/16z] {
+rTXdWgim30HWkSx8zp_m8pO8OKpA-xUpdV955irP-Hi9gO2gJObQudyHiMgxXYNzM4LnX4_zeQJQHfHRi8LRTfTV5fGF0YEqNmQavRCHw0ZgCR9T6dyoV33A
+sAm3W3Rx85HfJdgBg1cj0UeoJ7Fg1qI7qGYgJ_zxh7unV49YQxQLwbJAkO2Z7Bv1s0lPNthAlkHu8Io7Cv1HoA8KluYF31soBCMM6LENvoi1-jUTuvNEv4LJ
+5A_mfb1vx6i6s5iShefsP42a5Sypnv18s3avjGQRsnUhOeH6k02NSgUJE1oTjO97QF7BV8TrQkr0R0DOl0cgfH7N1lTIr105k0uyew0_XSjKYeBFYcDwCV5G
+T2g5u5D0pu3dgPVcKlWXrywS0r8hPLOmSbKiKEilMqTN24h5dbhPKtCky4F2KDo0SWWY4cB6GB98sH49tGZZ13iK6r9o0qeIQoabYYGGU2bY2aY8n59BJ7OS
+TB-OoaN9sei84h0hqHGmIU8hKsEiBQPm94ZgIX8ffY1ATOe_rhfKgaXzAJbBSCgntYiuJdzwnOhf2e8aK_9ctnIUYivAaZYK8b8F1K4aUuLEmQAMB64eezD3
+8Q9qnrzAUYfwL-AkL95yr4AMpGcObCU-fAClG1Afff284kX6r1LrVOcd4YKV2aIYKqYHuXIw8pqf484fHQHqvQnpFj9OAa7AgI1Az4g-A7Mw0an1a0YdL14_
+eY3LNG79haPJKgsrP944ho0FHM8kVUtjQWpkK4SPYI3fb77I445wydoWjxIpCK2jfO0Zm7cNggNsHIKNK1TtgJhTCMc13y-ixfZHXcIAPOci7oNwxg46Wd3g
+V7VHwQdsy_E8Dg3pOQyt1Jwcw5IA1TTYYEVC3zWYbkWVznp8szcBbTBcMHtWwg1obTiigDvdPEm6RUgrddZODkgwCiqEwMQJat7E6G6mZoSkPwgqnirdu3JX
+HKVAuwnPhPYFas_AFUePu8uGk20jB9ImCu_50BmWyUtR8stM6H-2VlQkXao9EyEv63z807sp84y9FD_npSp00T0ZwvJZ7In9pAtbOJGOyZoguMov8313atmC
+MdCGUnnXryw7X7V_8MYCycsAjdLgabyICsuIZFXHeWaboT_8Fm
+}
+
+AzureEntityColoring(DNSZone)
+!define DNSZone(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSZone, DNSZone)
+!define DNSZone(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSZone, DNSZone)
+!procedure DNSZone($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSZone, $stereo=DNSZone, $tags, $link)
+ !endprocedure
+!procedure DNSZone($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSZone, $tags, $link, DNSZone)
+!endprocedure
+
+sprite $ExpressRouteCircuit [70x70/16z] {
+rPO7SkKm34CjYSrx__jkiyAne1G6wPmQvVCP14oFZfzLxSs4BcfcEju44RLPFAVh0yJTbHti3d6NDuxZLtLg7e2uKr804i68cLAI4S7aX4eYXA4W99IP223S
+H08Gpjs1a3YOiXLoAaNfgn8dDs1HSlOtI8cKehmjII6tSVWizLd6ICbUyLc3jFQQmzXFGyjvqcVYSvTch7-rEW6U3ieeQz4b9kLCXKaR1W1kEMKqaqYxRS4o
+QIi-bacxRnOmQHl6mQGzzXzZsapAEr-ObFUqcPHttvL9UVzlBoxGyqgDINbtRLIixON742cNqgwlYhtmcyBQGjhKpEWTaN9jdVe0AI-BaT5N6LgzOkVaDYiz
+RFyPLbxOVa5cZxLBo7gnBTq-4vBFJILbIaj8lZe2jsEtQcMB7GqW4RzUB814z06G0kL4I8WW9CwNA86G02KbYYCaGW5Iqe8Gbme4VS4M6tXIe6mjSXYS55ux
+XPPenrXFpbPuTw55hXMzdMZncfGjKts_dyHHgdlBsUUSYxPIIRPOderfR7lDvVmo5gvAlOJ0bczOVm
+}
+
+AzureEntityColoring(ExpressRouteCircuit)
+!define ExpressRouteCircuit(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ExpressRouteCircuit, ExpressRouteCircuit)
+!define ExpressRouteCircuit(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ExpressRouteCircuit, ExpressRouteCircuit)
+!procedure ExpressRouteCircuit($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ExpressRouteCircuit, $stereo=ExpressRouteCircuit, $tags, $link)
+ !endprocedure
+!procedure ExpressRouteCircuit($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ExpressRouteCircuit, $tags, $link, ExpressRouteCircuit)
+!endprocedure
+
+sprite $Firewall [70x70/16z] {
+xTC5kkiu38RXtoHmvFrlTyfosOapbzzpYkhp1OsVvv-GSYwbv1onLIpSAGaRP7v4gpk1-0MAM2Fn6mdZ2h-LCOhuWpAp9owlkpWpvoRoLs7YfBWoSpmkuWiU
+GIEtszIP2PbuKC8RYNXS6LXz0_1AbfNm0ibQ0Oy2osgK4-wnRC8PdI9RiUzFb0danpFZSXSdcHJy8azW7CYqx0Sq8w38l08IdVy3wmwIw0vebmgpxa2AxY7f
+3WIw0mPhfreRObLxXAoTfGrQj9U1-uejhbM-qNvY3nK0-RvIRmuLkf6sT9Fx2k50gbx-LbIg-b_0GL0VZrTSmKdKcOhW8lcucMlMwIUjgsZ0BNFPcyFyygiR
+3_l4lA8HBiYbOkSNScRLDQC3RUPxSYVhXWhZIPAL5ObuIKShYt2EU8ERdS-UEBixrIO7jJ4-u3RcMyKMrw-Msa_iIsNmtlqBAvtxf7K-LqeRLF19eI45Fyu_
+_m4
+}
+
+AzureEntityColoring(Firewall)
+!define Firewall(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Firewall, Firewall)
+!define Firewall(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Firewall, Firewall)
+!procedure Firewall($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Firewall, $stereo=Firewall, $tags, $link)
+ !endprocedure
+!procedure Firewall($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Firewall, $tags, $link, Firewall)
+!endprocedure
+
+sprite $FrontDoorandCDNProfile [70x70/16z] {
+xTK74Y8X48NXrtJ4-zztWzKRfe09mERzpDhrgnCnupzY4LKLAPXLrB-ZZ0dYZSSTzhJIKHzGt4RcGqPhaMIu9oCZjXX9ChDsMeGhvDTiOXtFR3P-XztVTPA9
+FLeoRDwX8dfxDL6EzYfjnqRhDmONbJVpmxleiHZAYkXX1YtoEAqa_MwCdaIoqdPC2euyRbIInJVwVKZZGIKpIO5KeikbJuzJTFv_38a7bSDYvbYgPCQYp-zL
+SZ1MAo40hrU2e1ig1gi3mqfj8NPKU4j5jrJCTbH2rog9TrG2JolMdRKD5GLlg1GWrYi0od950S1Uh_fgRZ6gDBCLR_5gZIlDfE2Dwah5aKgThEHSefYj1E4x
+DbTn71LxNgc21caygbH37ucPnvkLr3l3kfaKFC5om6ZyuHNQK65WlK9OhnJCuwOnNs5WlK9OhnGi8yQa_pu2
+}
+
+AzureEntityColoring(FrontDoorandCDNProfile)
+!define FrontDoorandCDNProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FrontDoorandCDNProfile, FrontDoorandCDNProfile)
+!define FrontDoorandCDNProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FrontDoorandCDNProfile, FrontDoorandCDNProfile)
+!procedure FrontDoorandCDNProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FrontDoorandCDNProfile, $stereo=FrontDoorandCDNProfile, $tags, $link)
+ !endprocedure
+!procedure FrontDoorandCDNProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FrontDoorandCDNProfile, $tags, $link, FrontDoorandCDNProfile)
+!endprocedure
+
+sprite $IPAddressmanager [70x70/16z] {
+xT5NWgim38NX8zbgtl-2RmpADD84jm_VbEJmyDDmqudKznAyyR6VuceS4FzyvQoS5Jr0ZbVEobdnYB3tQPVfc_ciCXQcoSSKc_cu4cELqtBwvncFApQIVuwE
+pNnKyV7vREFADlELoYXKZj_HyQTx_4rBMyYcaYp2Fy-mxHGiU5Cf4R284FPMEekgDdGpw-ZxAWA0HGbseQ1TbGum00BRn9YZOIf5n6ocr2Pbq3nGgm3Yvcxc
+xkkVBTzxgT8Wlb6k2DXleL952UR9r3n9-HtrDT480At3EIl51sD8x5EhLAG1i7mEgSsfXGe1OCbNah8g_785fBuYlEk-CjENVi0Uwm_mZlEOgxq47Ebp9N6r
+mdZNOkLuMRUO1EzaIGYZWcAYpzjHPN5XkF8vEwfwJCwOsFCvLNciN4MktmL5BMv1aOzRsa-fTDJG9MDCFSPa3Tt7K5IH4YxQc30rmMupOZXAyt4Sm-vEUEhq
+0m
+}
+
+AzureEntityColoring(IPAddressmanager)
+!define IPAddressmanager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IPAddressmanager, IPAddressmanager)
+!define IPAddressmanager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IPAddressmanager, IPAddressmanager)
+!procedure IPAddressmanager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IPAddressmanager, $stereo=IPAddressmanager, $tags, $link)
+ !endprocedure
+!procedure IPAddressmanager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IPAddressmanager, $tags, $link, IPAddressmanager)
+!endprocedure
+
+sprite $IPGroup [70x70/16z] {
 xSy5MiLG34JXL3AHj__zGWKdP72xVztEryWt60Rrdahdmk0guPNWAp59oUbAIYtvYMQfJEH4XA-gW24TPNnBnIw4fQiuKm5L2PIIhwYKzAihlfISh12-e49R
 lgU2v-XyNrz9GX0L0bTPbyhALq9gV2K_fWAjWAmqk4eypn-GpNJVeW-08KzyGsLKBCAnyN2xExwkudaj0EG6G6n7VsKbpgyjDtxMufMLt1ayDt7MignCB_uB
 pXhomKGTtCiO03y7iVF8LavcEBZTtQ0hXBzG6HLZI6VHtYBVO1Yk
 }
 
-AzureEntityColoring(AzureIPGroups)
-!define AzureIPGroups(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIPGroups, AzureIPGroups)
-!define AzureIPGroups(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIPGroups, AzureIPGroups)
-!procedure AzureIPGroups($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIPGroups, $stereo=AzureIPGroups, $tags, $link)
+AzureEntityColoring(IPGroup)
+!define IPGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IPGroup, IPGroup)
+!define IPGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IPGroup, IPGroup)
+!procedure IPGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IPGroup, $stereo=IPGroup, $tags, $link)
  !endprocedure
-!procedure AzureIPGroups($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureIPGroups, $tags, $link, AzureIPGroups)
+!procedure IPGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IPGroup, $tags, $link, IPGroup)
 !endprocedure
 
-sprite $AzureLoadBalancer [70x70/16z] {
+sprite $LoadBalancer [70x70/16z] {
 fTM7hlCW341Xm83f-p_mFvpBTNAa8iivtUkJgmmAOw8gvMrDLRMzHzupeWecZLZo1W6JGyZaaJ70f10HC3a4J0u1aqF0914o6IJ544anHFACw6x-JonxgZi9
 8fvOV3EAK24JHAYG2I5KuapNe4A6I5pH7aIea0aZlPPIQjCpSqP6sTLnOeZqgLx3DxnkA9c-TAsbscN-VxJBCiHh-_sbgykmHsCSiRIBALTIhcejLx9-wo9Z
 MSOGSMKKo_vYlw1vKnuC4LVQOsSMc-gXE4F4iy-g_cRJZFwJ21WWEnjbk39jDBGP85xrKNoOzerPLqDEojvvgg2kwz48pE8AaNvZg9IxOZlUDwI06NebsElx
@@ -239,17 +383,53 @@ cnwHCwErx6O88SEDq8Z4cN9BWOIPYIq89CWCl0qan5014cIe00apYcCQI8ZXbYOIPzf-NNKZ6MRiLuva
 0iXV
 }
 
-AzureEntityColoring(AzureLoadBalancer)
-!define AzureLoadBalancer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLoadBalancer, AzureLoadBalancer)
-!define AzureLoadBalancer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLoadBalancer, AzureLoadBalancer)
-!procedure AzureLoadBalancer($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLoadBalancer, $stereo=AzureLoadBalancer, $tags, $link)
+AzureEntityColoring(LoadBalancer)
+!define LoadBalancer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LoadBalancer, LoadBalancer)
+!define LoadBalancer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LoadBalancer, LoadBalancer)
+!procedure LoadBalancer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LoadBalancer, $stereo=LoadBalancer, $tags, $link)
  !endprocedure
-!procedure AzureLoadBalancer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureLoadBalancer, $tags, $link, AzureLoadBalancer)
+!procedure LoadBalancer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LoadBalancer, $tags, $link, LoadBalancer)
 !endprocedure
 
-sprite $AzureNAT [70x70/16z] {
+sprite $LoadBalancerHub [70x70/16z] {
+xTU7giGW48NXCrtp_WzyiqE49OP5CtJklxtair35LtRirGrpSMmdo6upSLvFst44Ria7mKvq7Ets5HyfRzNl2Xq95nK_CrsFdXNRR4VvLtRRKhIg90AkAmg0
+QqeYoLIKH9AfA8eHhIhXKtIM1f6-KURThId_ocEfn6E_5UCh_tmOYZ1digeG201Pf498nGdvFIyhcOqFn94CqwSzXUEcXBvGY6-AKYPx2l7u80FPL4mkvb86
+OhoXUCHWKhcG_7vLSOyOpAKamlczBIhPO58PIBQb32OV5xAWj8bH_YfYJMdHRW_vGjhq-xCozSLucrfMcb-8jehIXBEeASwd8zfAIWW-aPSKnfKL504aMXY1
+uhq2IBu6eAyL1toiZ5yh2iHO6hrMh3wNx-q8WYmh_NPh3BBpDHY8wTV-hFIf882O06YVMbQIEIFh5QKt5MA9_jJZYQ_l1g3LbKGEAohKJoHGL0PIKnvFtsrV
+CKp9jg9uYFYJZvH_Xr_PI51e825rnQEcv9Pur1K6ULaXd5NtXP39fl87
+}
+
+AzureEntityColoring(LoadBalancerHub)
+!define LoadBalancerHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LoadBalancerHub, LoadBalancerHub)
+!define LoadBalancerHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LoadBalancerHub, LoadBalancerHub)
+!procedure LoadBalancerHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LoadBalancerHub, $stereo=LoadBalancerHub, $tags, $link)
+ !endprocedure
+!procedure LoadBalancerHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LoadBalancerHub, $tags, $link, LoadBalancerHub)
+!endprocedure
+
+sprite $LocalNetworkGateway [70x70/16z] {
+rT87sgCm30PXMKOsvlu7NZzEOxBvjkZlaz3XfTfFghRcxu3CwjiHC5a4J1O1aqN0P14mQOHC7Y6JHqe1aqJC7epd4J1fX4mQ8PD5Ll5W4aY20LBBp5Pbvaqm
+6k4H3u2CHhIY6OrGqOn6jA8PZMX5CxM_wABqtmCZ4A4WLuXMDAEGSAruWD583tEbk4K7GuIAlWSgtObG4OmR530BeGA6HqHdJYJAFGF3_Skzg-VOUpEsDX1X
+stb3Lmhlj9fIsf-LTbRQdnLNIdGKIl7pXRTwoucGyNghFR-a7R-s4AnRlyKqhCC7iwEsa1V5KixnuwL2X0oLYIYcdP3AhK6b0Y7Jusa_tnzC9w8OvceR4Stm
+ZZJ2DgreH35QqGWPfIX4CLhHY6QeI4GpMj68Pi9djl9P5OXYnXXhA7QgxBVrco5HZ1MOYOoLHZJZQOHC4Y4pF8qyCpw0v1WWQGP8YY6IAR882oBPsWC9ozV6
+COK3I8OvLa0o391qSHoRlRrYdzKl
+}
+
+AzureEntityColoring(LocalNetworkGateway)
+!define LocalNetworkGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LocalNetworkGateway, LocalNetworkGateway)
+!define LocalNetworkGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LocalNetworkGateway, LocalNetworkGateway)
+!procedure LocalNetworkGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LocalNetworkGateway, $stereo=LocalNetworkGateway, $tags, $link)
+ !endprocedure
+!procedure LocalNetworkGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LocalNetworkGateway, $tags, $link, LocalNetworkGateway)
+!endprocedure
+
+sprite $NAT [70x70/16z] {
 hTI9ahGg343X41BqllyBNrdcb9d5HlZFx7JwAv4fvMCvotxcRly2WTb3ODOHc1radt62MKPe3w4zXFOGMaPCD32BY0Hc6H59WLb48hECH6OPYSmo4fbLPFQa
 G53IbVJIbVeiuruyV77IOVsPyVAzeV0t-Gi4PO81cL78fn6K2GPaJY6VH53c67-OGtbWG1OKc82OfcmV5COYmuoDF_rPyHJ678G_fKtuW_BBMBfFY4XszoII
 hFLDSMkDCMshC6oslTePRNbKJ5ktCUC2SXbb7WiYwMyb2MEtz_ARIdghA8gylnRx6cD7uOZIt7rXB1xIKIljSFh3JSsBbxhU5Mq3NjopofMvrUc3DzuO-KfL
@@ -258,34 +438,34 @@ lK-Wz4fMLSOAI63g03SbAY1NgQy51EQgUBQi2eC2qZBFNjWEmOJPe8GN2EI9GNb09XYKtn4X-eNn0-Lt
 MMT0TfZ_pki3P9sv0bbdGBOoau_z3m
 }
 
-AzureEntityColoring(AzureNAT)
-!define AzureNAT(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNAT, AzureNAT)
-!define AzureNAT(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNAT, AzureNAT)
-!procedure AzureNAT($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNAT, $stereo=AzureNAT, $tags, $link)
+AzureEntityColoring(NAT)
+!define NAT(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NAT, NAT)
+!define NAT(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NAT, NAT)
+!procedure NAT($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NAT, $stereo=NAT, $tags, $link)
  !endprocedure
-!procedure AzureNAT($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNAT, $tags, $link, AzureNAT)
+!procedure NAT($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NAT, $tags, $link, NAT)
 !endprocedure
 
-sprite $AzureNetworkInterface [70x70/16z] {
+sprite $NetworkInterface [70x70/16z] {
 xTK7bi8W481Xo5Gqzp_lCYmfBmM3sFMtpAjVUd0FwPUlpgqZgOvN3ieLOTkkvEY0ekT-gxDMAQ7VBjnQ0Skl5S8nlQnWQgKmJBKeD1tH2oXqaoEYvhChISb7
 z1fA-GceKTOXIswjKB3uW0Aqh_IfLrImHk47AjHvZmM5EikN5N0M51INAoXveV3SfD1iaM64s3KAkF_05A2OBEAb8llxGabXoLKgai-Bj2daB6nKXA43beA2
 5XILgRA2Rwh8-ocQ5OsAdl_VzISRMR69VdeuTKjHLOcVfAZsCKrO7-9CIfoTtOKgwQEwhLXpHRCIIufcPMnN8NoCGcjbMjNQb1pD5UQrmXAhK1W0JGapHI3b
 BoWyAIeYIqKvrLKeiQMIEwwmDLDELoWC5ZOgAgb69NTCaVTHmkCLs5FIkougfpIcx5qdCwMpt4gfIzmYqb3_eQNY9LGdtgtoNMNUFQHVVm
 }
 
-AzureEntityColoring(AzureNetworkInterface)
-!define AzureNetworkInterface(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNetworkInterface, AzureNetworkInterface)
-!define AzureNetworkInterface(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNetworkInterface, AzureNetworkInterface)
-!procedure AzureNetworkInterface($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNetworkInterface, $stereo=AzureNetworkInterface, $tags, $link)
+AzureEntityColoring(NetworkInterface)
+!define NetworkInterface(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkInterface, NetworkInterface)
+!define NetworkInterface(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkInterface, NetworkInterface)
+!procedure NetworkInterface($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkInterface, $stereo=NetworkInterface, $tags, $link)
  !endprocedure
-!procedure AzureNetworkInterface($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNetworkInterface, $tags, $link, AzureNetworkInterface)
+!procedure NetworkInterface($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkInterface, $tags, $link, NetworkInterface)
 !endprocedure
 
-sprite $AzureNSG [70x70/16z] {
+sprite $NetworkSecurityGroup [70x70/16z] {
 xPS5biGW34033KJkVzyLwYdXJRekVvwCzSSg02Cc4cq8JN2FJ7g2CiIfUg664scbS2s8IA-qpv8WGccXSOPcM5z0U1WKLIN4asN9XnzhSseDaOB6qfX_IcD1
 nXPlJyHQbf-bOkwf2ejkK47Fqjgp8bpEdTX_QNCn5kCHqHKq9uVK5up0M8oCHRKQ2xgGoyKYTonYBVn5bdyBUw-8XJs-h-NVyc_vjyWxMCfTIp7FHdP15_Di
 dEvQpkiGLHOFz2YgS4BkMAgANGjAtD96P1eJjjYsZ1lZ5wHW83-PKK66x2VZJoY3XQEvY19ScDnaXgbOsElCC1LB2bb8DNcBV-dXr5EWZ_Gr_NeO7FB35lRg
@@ -293,17 +473,56 @@ yMlgdhK83jwSUaqX692ae-b818PalMgk4aqmPdhLw0aZaVsazS6BvfB9113NE9AWnaZSSiQzSIH1pV5a
 uGvPPazBn5GJWPgc9LBWFgWDPy2n9ck5jsAUwNsU0G
 }
 
-AzureEntityColoring(AzureNSG)
-!define AzureNSG(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNSG, AzureNSG)
-!define AzureNSG(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNSG, AzureNSG)
-!procedure AzureNSG($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNSG, $stereo=AzureNSG, $tags, $link)
+AzureEntityColoring(NetworkSecurityGroup)
+!define NetworkSecurityGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkSecurityGroup, NetworkSecurityGroup)
+!define NetworkSecurityGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkSecurityGroup, NetworkSecurityGroup)
+!procedure NetworkSecurityGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkSecurityGroup, $stereo=NetworkSecurityGroup, $tags, $link)
  !endprocedure
-!procedure AzureNSG($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNSG, $tags, $link, AzureNSG)
+!procedure NetworkSecurityGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkSecurityGroup, $tags, $link, NetworkSecurityGroup)
 !endprocedure
 
-sprite $AzurePrivateLink [70x70/16z] {
+sprite $NetworkWatcher [70x70/16z] {
+xPQ9biIg2aL1aNFm_p_uBKpAjDLMUdnttZrcsW91LidV3RK6Hkz1j2BVmzWNQF9LrFj198__cto9DWsE25ogBtWi7WweU4HHdnwgV0u_gf21Y0nBYYCmx7dq
+2P2tck2GY9FvN8q8EnQeyZ4ymhO8wXkB-3XHKrC-9yc_GPDfISXe8YNxH-MUTaegILajuzIfaLjAFrS2sPuiGhAU6iWTkOwRMIC97m3m0vBCOtvGOJlRX0ym
+uOEyVfzJh18iB9PURqEn0Kapgua3LXCp9s69tmN3tbqI9I4d3IXoKEVfUDqqEXkgaBwnbElrlzwNDkCqqZOM0LaU7S7N6yXbqCYwipXPPqegMs9MtWbTBTDk
+SqLxKPRf1o4xYu5jxXH_rVqX7rfS1dM_2yQ5i0C2zO43LKyCX0rQxxnhVmxmWdKJx2sf-Aa5xOosWMWFVBNSPrJiBMrVtNfVtMBFLDrORCuksxnfjQGM7GVr
+EBhjEk_TTfAgJw7LxGwmkVtBHgAoKATcknkbzouh-S2sKkNPGbANigpBocGvlPil-uHqJMSDSRKOYPBOkswfIpvrpGa3RyqJa8pzz5v2KQnNd0GlBWdVLr4c
+1ijpDSae6xcLXBv8oCSlGFDtebcnKfniPG26dQMjyivIZYYgI873n8w1Cb9wCuCr8fRnl2aBuAagZeBszjhiUaJu8Q6yi1WSHTob0D3hMfcM4X4goetal5CK
+hcW5baMfiiGIPpKYcjHO94jTj6OW3IsZABx6wOS54LJqHR9OQa6MeW13KEH4BuioWzX_u9tzKiTOSDZp0YtCUs-jdyoIxGkJLEZp5UzlYIgliAjv_TscZdxX
+LLwZrtZHv_C63k1Mv9vwvNG_0E-nZKOt9-zHkv9Qn_TNKBUah5gphqaYO8DQ1kV1LoKHj8NlI19MMz3lI495oXGLbUzAbiRxfcJ7VvBlWz-GoAz8n1V9jq5G
+vUUe_3Nu7m
+}
+
+AzureEntityColoring(NetworkWatcher)
+!define NetworkWatcher(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NetworkWatcher, NetworkWatcher)
+!define NetworkWatcher(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NetworkWatcher, NetworkWatcher)
+!procedure NetworkWatcher($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NetworkWatcher, $stereo=NetworkWatcher, $tags, $link)
+ !endprocedure
+!procedure NetworkWatcher($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NetworkWatcher, $tags, $link, NetworkWatcher)
+!endprocedure
+
+sprite $OnPremisesDataGateway [70x70/16z] {
+xT5Nkfum38JXKRC4-z_lwTKd7lH3UlBw_dj6W9z2r1weNYXOv9lXWXCqSX8tTsJav4J7Sa7H5xdaw1f9nFKb_JMU1mp7D0z9ywDmqRhd-fZi230Y7W_6uLKa
+OVukUCXM3P_4YPFyLRD3XyoPMi5NwYlBZ90b_Kme9av4BGqbaNwcXk2LEPT5-3I5Z646cT8VKpbDeMFu6l5ZnVbq43c90Rp1Hb7HgGWmQYElq8e0OsFKZoXm
+c8bc14XIoUX5UAQY6U6PPeHdIdcabqduaW6pHMMW-PDg8npYdBsk801ShmmyQ5NsRVq43xHLMGiyiKkLmeihbKtmwdnbKxnJNy8JkkJTgKfY9ZTNIl4j5WzQ
+bQtI5PH-AkzFFiz63w_Wjwhyh_Z-nFGHRYVx5-TcJ1JNCvlW76EHFcEHFcEHFcEHFcEHFjqBk4xnSzm3
+}
+
+AzureEntityColoring(OnPremisesDataGateway)
+!define OnPremisesDataGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, OnPremisesDataGateway, OnPremisesDataGateway)
+!define OnPremisesDataGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, OnPremisesDataGateway, OnPremisesDataGateway)
+!procedure OnPremisesDataGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=OnPremisesDataGateway, $stereo=OnPremisesDataGateway, $tags, $link)
+ !endprocedure
+!procedure OnPremisesDataGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, OnPremisesDataGateway, $tags, $link, OnPremisesDataGateway)
+!endprocedure
+
+sprite $PrivateLink [70x70/16z] {
 xTU5ikj0281XO5cax__0DzGe4Uvn_qTBPxzufeLl50wcLnlg4RyA8Rychr4iXDVkZNY6BrRyeVaZ5FDil5ZXHEnDhlJuzBikdu1NPiz7_fG_vKz1LNorWkPk
 s2bpFWLPqaRH_Bf7N8uLATztY3RdfMocHne52zCXZV9_fY1LwPWUmNDcLfJAz0XEVKZeWEcHeQluQKmPiswIbgb8xWbZhk1-R_OHL5MgIqHLyNzC7N3Ty0sU
 q3DQFqhTxaqMw9Xg1geAsU159OeXZIDcYw1PAYGQ3JGp6ghpWAb8T5Rg9ITQ51nwm2ZiFCLcc9TSUI02czbbnsIF4Gk4gRw7-7vbv0BgPNSfZcwF0LiGVcJG
@@ -312,100 +531,151 @@ fpjla9QnsuewemtIChpzSnMZ1accU__F66oHdY5VCfdN0dNPGtfc-6dLt4Tw1hKOHXNfc796aNXUOa9e
 zmy
 }
 
-AzureEntityColoring(AzurePrivateLink)
-!define AzurePrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
-!define AzurePrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePrivateLink, AzurePrivateLink)
-!procedure AzurePrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePrivateLink, $stereo=AzurePrivateLink, $tags, $link)
+AzureEntityColoring(PrivateLink)
+!define PrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PrivateLink, PrivateLink)
+!define PrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PrivateLink, PrivateLink)
+!procedure PrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PrivateLink, $stereo=PrivateLink, $tags, $link)
  !endprocedure
-!procedure AzurePrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzurePrivateLink, $tags, $link, AzurePrivateLink)
+!procedure PrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PrivateLink, $tags, $link, PrivateLink)
 !endprocedure
 
-sprite $AzurePrivateLinkService [70x70/16z] {
-xTA7pkim28PXm8EFtly5do8xggaeP_rQLLxDh2U9CNrvTtTt_1E8cCbF83N3glnxn4DnXvg1VujuWpuspMgcHdPg1LCZDLCZDVCVICRK2EygfaPawD6G3qoD
-T7rhS39lGuxqVOy-csEdtgIKAP2kgksywkeec0mHLMKAZUrM30V4_wVJM-6V0gCNWe2G0anlDK2fOiGYml61rgUgC01kGr8c89dILBtcYZJLoJc3W7W0pbNr
-M00iCcD0vasA2byZXyx6VhShF1IgwK-f8_qSuxYsi03evCb-4olGCuRc4-admzSV3c2yfYZnGtVSTUsQxftCyFDFHzS2oR3bRha5f7TTMwzbZArXJLkDryRf
-9-9DefJfZuVv0uFmy23qKaP0zdCfmnqaiEaAnd6X6MQ6v8ndXcpNjmGf65nFnFbnWXHCt_EDdp8Jf6JKXyF7BNuYGMg6pJnTmRoM8ZMZZrY150mD70RADQa7
-phAZdHH8O8eAf61Af6R-3zaCqyS2KZ4LGXAGkfgX7uZfsxkxk_i5
+sprite $PrivateLinkService [70x70/16z] {
+fPU9jkeW34Kp4zBt_z_xIbTPjeA6UlSTZM4JZZDaS0J37w4QEnNXBvGuAV0p5XSKVa9Ykn7yIo3RmEDu_3B3PQP7yTZsmcuNGty9nCVH-6aWGT2hCSIJ1TAH
+suJRSZpshRKC6qoHP6mS3Zj2aKV8r-1d-rm3KVY8ZcUU1-A_v_-lVmL10iMqsxP_dMRFaTa2ZUqi6InYVKNeon9Rgph2CbYROukR9U9-3o3MZZ1-YYVYtHAN
+NYrlC4p0-6RXCg9FBL9c63woqB7ccWN9C4rgcQr0ksMJMsIKT3UkMwmKWv6MkAnR9jszhikMbYtTMeb5X42F6HdNBEv-jR0SC8Xx0MZ_FhQGd31OjmZd5jmj
+-YvXHjZhrYoDF5tVwNLf8FGPfOivjLYjLK-9glRJ-LxcOwdkO6R1sZIzlotixW87rCgP1RHf2X_jPmTxgs7ltaajOBM186rFBiNh0S49fPRND01gnarvu0WT
+D3FCBI0H0M3DKgAttYoKMXginopQhd9Zk4A9vOwO6NI6-gg5vy_Qk9UJT9Ddfbxb1nPsz_TfgBGYFB20-Ou9KqVC6_Z8WiLdCAIMEre72i9J2v3NEv8yOph1
+32IPl-vBZ9Q6uREFNtDBB-LW6POqRwSoBA3nWeSpdl4aS8te5FpqwSw-1-BVTaIFD9xxRbLW0kVnI2nifT_ZeI6Gz1OC6wvRlmdeKpnw2oH5Pl587UGPzZuw
+-KeWtsvr6wphS8s1CP0SZG65vw35ZJoG_5Ql13yZDGraFHw3lu9b8P3_
 }
 
-AzureEntityColoring(AzurePrivateLinkService)
-!define AzurePrivateLinkService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePrivateLinkService, AzurePrivateLinkService)
-!define AzurePrivateLinkService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePrivateLinkService, AzurePrivateLinkService)
-!procedure AzurePrivateLinkService($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePrivateLinkService, $stereo=AzurePrivateLinkService, $tags, $link)
+AzureEntityColoring(PrivateLinkService)
+!define PrivateLinkService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PrivateLinkService, PrivateLinkService)
+!define PrivateLinkService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PrivateLinkService, PrivateLinkService)
+!procedure PrivateLinkService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PrivateLinkService, $stereo=PrivateLinkService, $tags, $link)
  !endprocedure
-!procedure AzurePrivateLinkService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzurePrivateLinkService, $tags, $link, AzurePrivateLinkService)
+!procedure PrivateLinkService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PrivateLinkService, $tags, $link, PrivateLinkService)
 !endprocedure
 
-sprite $AzurePublicIPAddress [70x70/16z] {
+sprite $ProximityPlacementGroup [70x70/16z] {
+xPY9hceX34LRQ3TdvFx_txxdN3rDJYNEkZApRrQWSDMMRew0AGX3o2K1K0gY098ZLy1BV18sA2yEiuT2O8-Uguza2f2TlsU5uPgjc2AeixP2XaKl5p854LZo
+XJIEmb0A3Z1THJevKFxZ5IHUdesWR024cX2KShGKfKR2bfz5koNRXCioAEnR-CzZatHUqFcMv5gOY0Ol6EvlgIUCvJnPizIfw-SZrLZceOodPCNIYHYDjOY8
+yJTQ9X6DMlwchlDFL0CdQgxkwx-NEf-ePvOwdOAwSjE3oEY_5mZ2xwM85E-cwoWYPZStsKjhNMguBl4x-XRBp_Ap_2nqaryUnBA4QKEM1VcXl-j-5g1H8y31
+Ojgqzix6QHb3iEcoBCgj7P_0el73M9AHnikJO15dZGBuPSWtc11iqBPfXTnaSdB3AKxxH8aqqytv1m
+}
+
+AzureEntityColoring(ProximityPlacementGroup)
+!define ProximityPlacementGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ProximityPlacementGroup, ProximityPlacementGroup)
+!define ProximityPlacementGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ProximityPlacementGroup, ProximityPlacementGroup)
+!procedure ProximityPlacementGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ProximityPlacementGroup, $stereo=ProximityPlacementGroup, $tags, $link)
+ !endprocedure
+!procedure ProximityPlacementGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ProximityPlacementGroup, $tags, $link, ProximityPlacementGroup)
+!endprocedure
+
+sprite $PublicIPAddress [70x70/16z] {
 xPI5RiKm302DWV__uPKj5r95snxwX5UuGW3w20AINq5J9DLVac2W_fPYbT_WAYLtKKuh1Q4BBASLw2H_NANymnZzWjUif5yJbHrHYOeA4wkvLnrCzBOY20F8
 vygpoar54MRuJ7anr7Q5m5ter9f0pOfT1pAwLzaCsnNOuAEogTvN_BjOHTeL0_rrvABQ_YA3_VyJhsJDPYMH7qjsgcZDPYK98I9VAGz64Zl3nrUY4fNyQs10
 VnjH643YNq48NGJ13m
 }
 
-AzureEntityColoring(AzurePublicIPAddress)
-!define AzurePublicIPAddress(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePublicIPAddress, AzurePublicIPAddress)
-!define AzurePublicIPAddress(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePublicIPAddress, AzurePublicIPAddress)
-!procedure AzurePublicIPAddress($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePublicIPAddress, $stereo=AzurePublicIPAddress, $tags, $link)
+AzureEntityColoring(PublicIPAddress)
+!define PublicIPAddress(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PublicIPAddress, PublicIPAddress)
+!define PublicIPAddress(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PublicIPAddress, PublicIPAddress)
+!procedure PublicIPAddress($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PublicIPAddress, $stereo=PublicIPAddress, $tags, $link)
  !endprocedure
-!procedure AzurePublicIPAddress($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzurePublicIPAddress, $tags, $link, AzurePublicIPAddress)
+!procedure PublicIPAddress($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PublicIPAddress, $tags, $link, PublicIPAddress)
 !endprocedure
 
-sprite $AzurePublicIPAddressClassic [70x70/16z] {
+sprite $PublicIPAddresses [70x70/16z] {
 xPC55iGW34GJakcslV-1zq7TtVDvDiZ7wKCORXCKGBeHU4korP9uIxgP0omgYz1UIqmBYViioRiisqzt0s-sH9jvbSKiPW6cuhH5c8YbxAe-kY8YQvsqE0em
 -Y8uYsx28aJrZbf4hfmU6RSm5Q0PrI-bJ3ng0PLeqoBLoZnOOC64PUkE5fskD8VnpDC5DvTSH6rS6MFYlS25RjeVDLWTfd-0YYXgKUiHllNEVzeiPZ7BBzfQ
 mbf-6maMYJPAX2x0CFu
 }
 
-AzureEntityColoring(AzurePublicIPAddressClassic)
-!define AzurePublicIPAddressClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePublicIPAddressClassic, AzurePublicIPAddressClassic)
-!define AzurePublicIPAddressClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePublicIPAddressClassic, AzurePublicIPAddressClassic)
-!procedure AzurePublicIPAddressClassic($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePublicIPAddressClassic, $stereo=AzurePublicIPAddressClassic, $tags, $link)
+AzureEntityColoring(PublicIPAddresses(Classic))
+!define PublicIPAddresses(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PublicIPAddresses(Classic), PublicIPAddresses(Classic))
+!define PublicIPAddresses(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PublicIPAddresses(Classic), PublicIPAddresses(Classic))
+!procedure PublicIPAddresses(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PublicIPAddresses(Classic), $stereo=PublicIPAddresses(Classic), $tags, $link)
  !endprocedure
-!procedure AzurePublicIPAddressClassic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzurePublicIPAddressClassic, $tags, $link, AzurePublicIPAddressClassic)
+!procedure PublicIPAddresses(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PublicIPAddresses(Classic), $tags, $link, PublicIPAddresses(Classic))
 !endprocedure
 
-sprite $AzurePublicIPPrefix [70x70/16z] {
+sprite $PublicIPPrefix [70x70/16z] {
 xT05SWCn38LXiTRtlt37PNLYzONn2wtfJxBqB5u4mTJB0M5g3Om25TSrWojAZGjNukX_1BXKnJ52hS3mDIhRRba4zvLjG1ofP6DC0LIC6evMWXfnsKhlOfLS
 YCgQIklwbTmjh93e3SWMhHmOfCAqPd256WfN-2ILyBM4AfZ8ui0AQU5n4AhiRYklYZABVbxmlF0vO_jLx7FnvqBc9_jU5QL98-JhWccoHIMB-2GqoQyBwYhi
 rT_VelMtUAciI7nm_hmBtnV6dyjmPJApUk5c7cW5S_-LLoKZW1UrE25E_s04FOkNDm
 }
 
-AzureEntityColoring(AzurePublicIPPrefix)
-!define AzurePublicIPPrefix(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzurePublicIPPrefix, AzurePublicIPPrefix)
-!define AzurePublicIPPrefix(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzurePublicIPPrefix, AzurePublicIPPrefix)
-!procedure AzurePublicIPPrefix($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzurePublicIPPrefix, $stereo=AzurePublicIPPrefix, $tags, $link)
+AzureEntityColoring(PublicIPPrefix)
+!define PublicIPPrefix(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PublicIPPrefix, PublicIPPrefix)
+!define PublicIPPrefix(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PublicIPPrefix, PublicIPPrefix)
+!procedure PublicIPPrefix($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PublicIPPrefix, $stereo=PublicIPPrefix, $tags, $link)
  !endprocedure
-!procedure AzurePublicIPPrefix($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzurePublicIPPrefix, $tags, $link, AzurePublicIPPrefix)
+!procedure PublicIPPrefix($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PublicIPPrefix, $tags, $link, PublicIPPrefix)
 !endprocedure
 
-sprite $AzureRouteFilter [70x70/16z] {
+sprite $ReservedIPAddresses [70x70/16z] {
+xPG54e0m3C26Llx_NzpQ7UxGd0O9Cd6_mGXtKqIGTuFE4U-67bg9t4gY4ojMYOyPwKzNadGtYLKKLh4A4i90eV0H7QyWLq2ZK2igdQaGyp03hPAlunLWUHrr
+3fwELv0xAkyLFHsl48kdGQ-azVXtERuYhaDLrJfP0VNTr3We7Qd83Cfl9EYqY-YA1c16FxGpMCKgwG5yiWAxEQmI783x2qOE
+}
+
+AzureEntityColoring(ReservedIPAddresses(Classic))
+!define ReservedIPAddresses(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ReservedIPAddresses(Classic), ReservedIPAddresses(Classic))
+!define ReservedIPAddresses(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ReservedIPAddresses(Classic), ReservedIPAddresses(Classic))
+!procedure ReservedIPAddresses(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ReservedIPAddresses(Classic), $stereo=ReservedIPAddresses(Classic), $tags, $link)
+ !endprocedure
+!procedure ReservedIPAddresses(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ReservedIPAddresses(Classic), $tags, $link, ReservedIPAddresses(Classic))
+!endprocedure
+
+sprite $ResourceManagementPrivateLink [70x70/16z] {
+xTK7ZkCm341HKQHLxd_WBKQO-Bj147UdVvIuFeYQalGcYPLY4aIMlbP2IEsFMW2n_coPLrf_DQ_qJNaMoLj5trNXH1BxROd_nhJGKZnrn5AeieuZALWf9Ohy
+A3_AZr9BZIlrJt4b9z6ZybFEMQA6v3K96bvW63JyLbCi174iANBpvQumBXrflSabqfShWsDPx-UCRBxJJm4uou7nDJeY-JO1SuKakqNqyLG1GsHLJA-DfTO4
+veYuGeU6AsI8k69sObYfhe010kMudDLm1GmGAEvW62XW787YmO12HZeHAgQ-8LJ8T4Ueq7432bVZWq5X8AZuZcXlPZAlY5dhcjJCcGb5rg7zG2OKl0jcJ262
+at65oF5qN3aYk32i4C6bOOK8cH5bEI3dJBvHIhv3U4El5BqOXupwiPufpnUp4I6ZDAaic_SKo5qPIibfCdqfEcluzlY6H1mptv1GMTCRzHi
+}
+
+AzureEntityColoring(ResourceManagementPrivateLink)
+!define ResourceManagementPrivateLink(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ResourceManagementPrivateLink, ResourceManagementPrivateLink)
+!define ResourceManagementPrivateLink(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ResourceManagementPrivateLink, ResourceManagementPrivateLink)
+!procedure ResourceManagementPrivateLink($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ResourceManagementPrivateLink, $stereo=ResourceManagementPrivateLink, $tags, $link)
+ !endprocedure
+!procedure ResourceManagementPrivateLink($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ResourceManagementPrivateLink, $tags, $link, ResourceManagementPrivateLink)
+!endprocedure
+
+sprite $RouteFilter [70x70/16z] {
 xTG5hiGm34LH1mp9_lVxqNaQScaORfcEB2ezI9y-VKg5brOJHR4kJoXAT4MPWdHDwN8AZqufjNXLfXNfNZvMX52TLaZELFmxkuHIpfq5o5aAaBCK82MVenIC
 KROhG7ugH6cJKe7ybLg6ujNaPOtxDHecI01rLOv06Op65KmdwW61qikq8eGo52FF5MSqZb21Odlrl-fgvMJrF0NCHPHs2QKbCxLWsr7ydWO8MTYkCcvruPra
 8CkK2gKbscaWP74g8uEoppYoevGyKWlh-mokp9FT-QFqu4y9SfLIsZxZo4ebfnr6247HHGg18MlR5ShzhsBz30LCFqS1Swv2ELQC4Cyer695gWSaKZIOPMaP
 oA7Ip9PjhYJs2X5gQyeK92iGewXKPMcSwT7xzEdJDm
 }
 
-AzureEntityColoring(AzureRouteFilter)
-!define AzureRouteFilter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRouteFilter, AzureRouteFilter)
-!define AzureRouteFilter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRouteFilter, AzureRouteFilter)
-!procedure AzureRouteFilter($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRouteFilter, $stereo=AzureRouteFilter, $tags, $link)
+AzureEntityColoring(RouteFilter)
+!define RouteFilter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, RouteFilter, RouteFilter)
+!define RouteFilter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, RouteFilter, RouteFilter)
+!procedure RouteFilter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=RouteFilter, $stereo=RouteFilter, $tags, $link)
  !endprocedure
-!procedure AzureRouteFilter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureRouteFilter, $tags, $link, AzureRouteFilter)
+!procedure RouteFilter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, RouteFilter, $tags, $link, RouteFilter)
 !endprocedure
 
-sprite $AzureRouteTable [70x70/16z] {
+sprite $RouteTable [70x70/16z] {
 tTO7RiCm38LXpaSrzxzlTmM7fWJJnSoNlNul83IzFenFmVG_Zs_w-XNcVrPO7TzSvMw53GVEjogAn6vK32VEtOgZuDoh64hUgWWMh5Dnh33Htjki69QSLe1K
 mGPJ3OzutYB1XguYkMBOy5KaLnmxL8X7lr977aE-p0fEukloYyl8b2jHAo9bnMEdsB7z2gvMD3RywXPnR0XTtBk4MAFTaPw8jfjajCm49OXiV5t62Af5LU7v
 qqHedGdAE4P5QIcA2iae66r4KQdMHcYBwOmDuqaeTOa38ZWs132c1dLyCcOs82BWylsqqs773tvI_E-MyfHNFj3Mq3TCpWVUcTQE0-59EaFVS6GyMMFe2vxn
@@ -413,36 +683,17 @@ r3XtO2IQzksabtPAth-EX7VRaydSjncjuCoAVRlV9WsSB_mDnITKGnIKFsaKb2eI5UTF7WLGnQCap1mb
 tHjbEcuGIcpSO9JukC4fmRWX6klIgDYzBSh63KoPZ3QjJpLQdEabVG
 }
 
-AzureEntityColoring(AzureRouteTable)
-!define AzureRouteTable(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRouteTable, AzureRouteTable)
-!define AzureRouteTable(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRouteTable, AzureRouteTable)
-!procedure AzureRouteTable($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRouteTable, $stereo=AzureRouteTable, $tags, $link)
+AzureEntityColoring(RouteTable)
+!define RouteTable(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, RouteTable, RouteTable)
+!define RouteTable(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, RouteTable, RouteTable)
+!procedure RouteTable($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=RouteTable, $stereo=RouteTable, $tags, $link)
  !endprocedure
-!procedure AzureRouteTable($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureRouteTable, $tags, $link, AzureRouteTable)
+!procedure RouteTable($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, RouteTable, $tags, $link, RouteTable)
 !endprocedure
 
-sprite $AzureServiceEndpoint [70x70/16z] {
-jTQ7pgGm30HWN0dl_yA7M6yPdOUYt8tQxmtwv3-Gilolo3g4ZUbORoCZs62EUuoCFSP6VUoCF40c60M4CKCc463c4CvmX3DA1eqWv4cTG83Xo1JZ7E6C4MIA
-2VX9eLMiH91XY8rj6xwqbMzx_9Vn7idjIDOGL3Y6tJXqibME7nGg60Ec_em5MjcJLnL-nG6lVcoLSLR1FkAVrVFHrwsoOjNt4j-52Onk5V-xSgWGgPb9d9Yr
-gzQg4859Ya-nFnXBMyLM5Kve9U0zgSbtoEeVg9WrSz8oUq21rK8Hpd0bu2oW35SuWbFCbNC4bm9N4E6CCuKZd475JQL1I1GPiNWfaNjS-4dD6V68KZApdAV7
-lKM0SiGEvFRzHI8w9TS6OSmgGPHSxr_9FAYIiToCnecIVbE9KoNr5c9KgJnfXIl-e1MYq6RmAFVu9dl5g50jkCMraiJmQC8LwH0ZHZ956yHx8RdYJISS-TrV
-pfU1zaOzdCVXxfSAHt97wc3En9W9ji8HVz_8Oh5iOYTJ-_icnllQezabf1294qMsIYcq7UL8slTMoPIK_ZN3cv1nABe4Kw9L4lkLzRWrQzBefPBwMkYIFDRD
-Is9yTzJp946KXu5FTqxnVwBef1Am19uhkDNCALAAp2XMo1GJ7mIPXmZ47Z7yT5FtHqpyx9b_
-}
-
-AzureEntityColoring(AzureServiceEndpoint)
-!define AzureServiceEndpoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
-!define AzureServiceEndpoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceEndpoint, AzureServiceEndpoint)
-!procedure AzureServiceEndpoint($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceEndpoint, $stereo=AzureServiceEndpoint, $tags, $link)
- !endprocedure
-!procedure AzureServiceEndpoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceEndpoint, $tags, $link, AzureServiceEndpoint)
-!endprocedure
-
-sprite $AzureServiceEndpointPolicy [70x70/16z] {
+sprite $ServiceEndpointPolicy [70x70/16z] {
 vTS56cCX34NX6o39XVtlTuGnKYCVVUEdRd-V2_xOIbNFPQRgLd2VgAUpCQC0iUhvEBxM8mFnV7ryZr4nppUMQfYmXyZmLMcdIbyLFLN6gdW-nc6vHF5Bb7g5
 GboWE9uhghxKB2eDJujV4msl8gCffSM5i20mEIKYaSah6f30v1MLW3nYRAj493999IBtJ59f0bHtBTBcAwdkNgLOO5ue9AcV4P854ASB8AHXlZaPv-SsIWMA
 S_uSIWK0OyF4Q09eHd4fgause70EKfccA6dQf3AZq5KdOyhFYVXyqxz-mhqI6Cu4tvwQgXeJIcIYuXF9A-HaWXAGX1AOgGGaeKHcKImW6oKozaE9I5wXsJ8i
@@ -450,33 +701,70 @@ S_uSIWK0OyF4Q09eHd4fgause70EKfccA6dQf3AZq5KdOyhFYVXyqxz-mhqI6Cu4tvwQgXeJIcIYuXF9
 FIXwg30ezOhfql6eSduQVZvvYT3PzEs2qD6aSRn86hVrJgluu_i8
 }
 
-AzureEntityColoring(AzureServiceEndpointPolicy)
-!define AzureServiceEndpointPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceEndpointPolicy, AzureServiceEndpointPolicy)
-!define AzureServiceEndpointPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceEndpointPolicy, AzureServiceEndpointPolicy)
-!procedure AzureServiceEndpointPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceEndpointPolicy, $stereo=AzureServiceEndpointPolicy, $tags, $link)
+AzureEntityColoring(ServiceEndpointPolicy)
+!define ServiceEndpointPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ServiceEndpointPolicy, ServiceEndpointPolicy)
+!define ServiceEndpointPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ServiceEndpointPolicy, ServiceEndpointPolicy)
+!procedure ServiceEndpointPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ServiceEndpointPolicy, $stereo=ServiceEndpointPolicy, $tags, $link)
  !endprocedure
-!procedure AzureServiceEndpointPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceEndpointPolicy, $tags, $link, AzureServiceEndpointPolicy)
+!procedure ServiceEndpointPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ServiceEndpointPolicy, $tags, $link, ServiceEndpointPolicy)
 !endprocedure
 
-sprite $AzureSubnet [70x70/16z] {
-xSz7aiKW40JH1hf1tF_0O-1xbPYCMPCRcLAy48RQxNQxYEN6ghqtkwZrNYao6OqmflQHcoZwg5AaPnFbhXcEQ8OZck48PpJ26Ove1Y6SqGXdEC8PZN168vo1
-IF7mJ9XsZUGObJMZaMTHP_cQQNyVfzuADRx-pGAngFTimVpU7nFyXvBdCOxVUn-8ksAytQeASH-Cpqy78fbqLuf41kCsAmEHJ3b68P71FFtabqoATeJYVPRi
-tfCf1bA8PZY268veXYEQuGXdEA8PZcY68vpH26Suefbieln486EY9m8PFJqHnAJbn9YILXDgjzljlW4
+sprite $SpotVM [70x70/16z] {
+xT074kCe443HtmbesFkVTqSoLSuMzkJmgA3u2JpnZtfy5LT0wbSJi7gar0C6MeyW1nqzhfG0ucignOGJ_xZYmbdvh5BsXaKn8BAtJoe647sCuLh7fhUtAmfu
+7zUoUbckp4WRTmAUhDiUHwIFAS-v2hfSSP0S9pr4FCVaOAiL86UZg7oXqUUzGbch6CJODPD9wzWbwCDAkr51nYPTBbWR6uFIRZog1DHv8DUyRscmbOh2s2fc
+SiMYpSMiLC3sYgfVT3JSzqg1UbmfK6P5pNL6F7nM4cAfqcPbxsmDsngpCi2EAm4vApittHhdYg3lLzJ2ftn_BQawVLAfK0ygVbnf4ESTtLSQb0ULl27Ogqf0
+oskFAWPzgzXj9VfMKIGNAXNAs5IxgjInIOYLIWeoTZtEbTB7JY6NAW4nJj9FbSXnKi7NAYdGnbHDm-kO4iZ5IWDoJ3rg7rCNAAkLB40RrsR4SxcI0THnem6M
+ovMv6crN2t70ywrALW29_6ziOpG7AFcqqXzhnaxTbPsr_jYiFDQKC_7ipnXuVowBYG0QhR_WitBiDwhmzHK0AUsh5E6bo0l1XwBbUNn5vOB_v4gz43-tKgxy
+r8gMAyf7FAuudz2u8RnF_Cxx6VC7b3U8sbCgh55xILaXTa2MAdf0MFJF_m
 }
 
-AzureEntityColoring(AzureSubnet)
-!define AzureSubnet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSubnet, AzureSubnet)
-!define AzureSubnet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSubnet, AzureSubnet)
-!procedure AzureSubnet($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSubnet, $stereo=AzureSubnet, $tags, $link)
+AzureEntityColoring(SpotVM)
+!define SpotVM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpotVM, SpotVM)
+!define SpotVM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpotVM, SpotVM)
+!procedure SpotVM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpotVM, $stereo=SpotVM, $tags, $link)
  !endprocedure
-!procedure AzureSubnet($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureSubnet, $tags, $link, AzureSubnet)
+!procedure SpotVM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpotVM, $tags, $link, SpotVM)
 !endprocedure
 
-sprite $AzureTrafficManager [70x70/16z] {
+sprite $SpotVMS [70x70/16z] {
+xT45WgGm48NXLvfKQkv_tXr8AwIt2UlouVPZ-0kn-IJ63dtC4spvYKh1bfwe-BzKoUEghNXVoJQFlql5lql5PYl_At6SqM9KATDyNwbbdXol67-7YWjWtrHn
+PQpqVCK900a1MklPYW7Go3HlcTdELGoGbdVDsTzNOXVnN5rJ1JHTkKQQizHS2NYo8j1S5APFsjOWmTvMwWC7bWj3gMDl_PtgapSLWMMcqHtNp2JuJ8LGCvle
+FMA-PA4JbG9aPcDMePMQBfKAdgfmhx0e4ucfhfK6cgWuf5VMpjBebPoiwAt2gb-hK7jPgP1XfUqh0Cl2HnKCAmMohtHwgJpY_gSVAoKp5HwFtbIylvBTAbRp
+4r1dAa5OBmljbP8BWyRhoY3ZGCj54LNlgm74N2K4d5s9N3N0NrSeHfLAe9OFWg0nhdIyyDXWmFF608ijnPR5bW1ajUL750Men95AY-rG6LTaqVR3g39GZGaa
+Ljh8i3Bdzwzmj5c10TxpScMyXuCywcKmdEVrId6UbwlVe79ZtwNYE8tjZd2MsftY9D57WXDOT4jukZ56c26lO0QzWh_T5m
+}
+
+AzureEntityColoring(SpotVMS)
+!define SpotVMS(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpotVMS, SpotVMS)
+!define SpotVMS(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpotVMS, SpotVMS)
+!procedure SpotVMS($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpotVMS, $stereo=SpotVMS, $tags, $link)
+ !endprocedure
+!procedure SpotVMS($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpotVMS, $tags, $link, SpotVMS)
+!endprocedure
+
+sprite $Subnet [70x70/16z] {
+xTH7ZWKX40HHJ1Kqzp_m68p69P_Gh8bjIazg0m5rkzrkxeUDL5ghkwssLYWo68qmfhIUoSTflKAHbjIOccOueXcEQ8OZdD48PpYY6OHmHYESuGXdDC8PZN06
+8jdS4c7g7adUotkcdf7WPPHUCEV7AJDNu_U7Ue44BwlmWWaVFGFyXvB6OppX8-k8cMAipef2pChNjMWTaKnSIfP8PsmzNqSaav-UIwGpNtwqBHEzFgvu6yMm
+-c9o02b4Cnn134Sqmn7DS8Gp7D4CHpI34CPmX3CSqOVXg_I5G4PjNmXauc52J3nCXCaHJljkjzlj7G
+}
+
+AzureEntityColoring(Subnet)
+!define Subnet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Subnet, Subnet)
+!define Subnet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Subnet, Subnet)
+!procedure Subnet($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Subnet, $stereo=Subnet, $tags, $link)
+ !endprocedure
+!procedure Subnet($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Subnet, $tags, $link, Subnet)
+!endprocedure
+
+sprite $TrafficManagerProfile [70x70/16z] {
 pTG7hkCm38HXqYeaTVy3hsaemMpYSGIXlJyz9ZwuonzFQwDLNKNQOxg1R397_zblHljLgxSrO7wlIH5IMM7qXMYvJGb3a4u2PWC1fWB3aKeHpY1YMIBsK3Bp
 onrY1A6CwGEYrJOPH4Isc4zaY_b4WE41Gv0zHisp4wdohlgi7NwN7NF4596MN-3UKIOYwlUCIWC64FzYcZ35xPXCbpD4Ffage53cfPWSYLmoC8camXb3fQSA
 3COLRzA90ioEWiooOgWOAC2WObTK2OzB2NYOefB_T73xQ-vKylDIpaub0YkWH0PAyPYbSiQK9aG1X2Y8SAL4h2bLjXM6JCK4c1Mb_5y51Hcky4o0sLPSHBG1
@@ -485,53 +773,88 @@ DupUAAF3B2YSyOlf8vlSP8X2cOauZ23pNgW7PLmd4YgSIKKzW258Jd36hqCC34LUpBXX8X5a648P31b4
 vfeKYY3JlgeKuGo988Hn4a48Gm9aaq5acq5abq7aZ_SF
 }
 
-AzureEntityColoring(AzureTrafficManager)
-!define AzureTrafficManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTrafficManager, AzureTrafficManager)
-!define AzureTrafficManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTrafficManager, AzureTrafficManager)
-!procedure AzureTrafficManager($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTrafficManager, $stereo=AzureTrafficManager, $tags, $link)
+AzureEntityColoring(TrafficManagerProfile)
+!define TrafficManagerProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, TrafficManagerProfile, TrafficManagerProfile)
+!define TrafficManagerProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, TrafficManagerProfile, TrafficManagerProfile)
+!procedure TrafficManagerProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=TrafficManagerProfile, $stereo=TrafficManagerProfile, $tags, $link)
  !endprocedure
-!procedure AzureTrafficManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureTrafficManager, $tags, $link, AzureTrafficManager)
+!procedure TrafficManagerProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, TrafficManagerProfile, $tags, $link, TrafficManagerProfile)
 !endprocedure
 
-sprite $AzureVirtualNetwork [70x70/16z] {
+sprite $VirtualNetwork [70x70/16z] {
 xTL7keKm28RX14Y0_I_ubY0MJll7v_6R1b-xjc_lxkvEjBUNiKq86UxsaY5tLmmfJ44GPlZAsjFCWq6GrtDQba6aPW1Ja7VCn16SmP7Am0ZEu4YcoG08mk08
 pbG4Pp04P-Ph16SgGipzcExCr8w8g33Z6TAdcjauFbbcfZt9CV-YSZHFNjE5kCi9CTSJeggzChCW74X-O09nvp03qLbFgY1jn5RkQtyKI9xy2CIi5IOoEIb-
 LVoa178eiWrB898Cs-MJcIR7HXio4v5WkCb23YRrRUvw_m8nIYGONdkNwEbdNY-_15x8I2GOZZr8CX79zQaJQaUSYub8pXO6gXS4O004O004O004O32aCZY2
 CZXI6Hp16Hof38JW38xW382iwDrS1v6Sf1VxG91W2b8O18d93Yn-SNTtTxy
 }
 
-AzureEntityColoring(AzureVirtualNetwork)
-!define AzureVirtualNetwork(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualNetwork, AzureVirtualNetwork)
-!define AzureVirtualNetwork(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualNetwork, AzureVirtualNetwork)
-!procedure AzureVirtualNetwork($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualNetwork, $stereo=AzureVirtualNetwork, $tags, $link)
+AzureEntityColoring(VirtualNetwork)
+!define VirtualNetwork(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualNetwork, VirtualNetwork)
+!define VirtualNetwork(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualNetwork, VirtualNetwork)
+!procedure VirtualNetwork($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualNetwork, $stereo=VirtualNetwork, $tags, $link)
  !endprocedure
-!procedure AzureVirtualNetwork($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualNetwork, $tags, $link, AzureVirtualNetwork)
+!procedure VirtualNetwork($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualNetwork, $tags, $link, VirtualNetwork)
 !endprocedure
 
-sprite $AzureVirtualNetworkPeering [70x70/16z] {
-xTLdTkmW38RXJmqXt_tlz-AgZ0-UO_rEtbGN7i0fWr_SNw9uJ0NlqWZ3GnQXRv57ncAaBv6HVBccRv6v8f7C2-HvHpd7Sv98aPaZHMQE59avKcJcI96P8qLc
-ZXIPEL9bvaYTgIFqoDWdmch6E1i7IZXYEuvoaCuHiMRDhelR4Hr8suumOVIsahQthqRtWtFWVgGJfdyWaFRprdP4vmHf9fEAC_OqRqKgd1ECiCUUYcw8wi68
-x-ck-1xje_RiG5Gz7unjoCNak3GDFqqwaOsvzZUGPCXxxxd1FchOepOEJb-tzWcIpTM82gv8bFE8cP183famBveXoGY-nw9cEagaof1vPecK6F6FcZ5GPfhV
-OrGPzabQPNoQr9ZMfpbL6EqZ4ruJwvcZmEHVmHfvClALuVjI0B6sPWnAfM4QwTxjgIWqvuSbWsyCtJR4o6TXuASjPNH7E7gdTHSnFWmZ6gpcyGD3kB_c4SMM
-0CJ33O0yHWqlquXG76EuHrlFk623lQ9qm7e4eQ_Z-hwiLb4aHhPf82QWnRuAg-o8zq5YqK40zqXbw6-BM69PnaU0VFr-EsveuwlYRRwSINuVX3w-4DwcbnA0
--fOHP9peU5zSJC-vARR5eR2Oh0cFHDjwuAZaopn2gVWtQM7KecMY2ChrsKhgsUTod91LihZMqGXPEJ7lJGc_ix_-0m
+sprite $VirtualNetworkGateway [70x70/16z] {
+xTFfUjiW48LXpohb_c-u4b4FFFYOCltjBpl4hqVRQvMOHsIucxogWOZiXVyNv3bNTonPLXs45qMam1IGCcEvolSGoNMwfSHq21uJ8zMJOlBSWCLZako5zEKe
+3UEVBaTKXfaGplmBqMbkpkZs0TdY7NptCWVRt3qaDWhIpQiaw__RF36wdZcgolhSszxZ7Ejj_ofVvQlmLDNZRyh2jkiLCyojt1iY4LN6NMP5uoEZtBWofd3d
+skC8LpZJDgd15UeykmJX2cMmJGok84CgSc-AA4EuGiUv6JB8MW735TzIa5F52meOA32A2fokU55n1GF5MwRxYistCf2NL9I9mQls59MxTXJHdV55qbehWWKm
+z9q_Adb_38h_hbpvquQIhNvrFNyxhc9WjBLGa0z8Ay68j_OKXv4HsSSfATxdq6jl64VtbGG21UFiAZ3E-wCfvzsHPUKudsxbV3gYeC20WhAW0862ZbWgr0ZL
+jgash6qeG339dHna7A8OCHu628g50cHcWA1SA30cXYq7LVIuEcbyEQ6CmU3zjA_numn_lMNdJx6pZ_87
 }
 
-AzureEntityColoring(AzureVirtualNetworkPeering)
-!define AzureVirtualNetworkPeering(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualNetworkPeering, AzureVirtualNetworkPeering)
-!define AzureVirtualNetworkPeering(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualNetworkPeering, AzureVirtualNetworkPeering)
-!procedure AzureVirtualNetworkPeering($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualNetworkPeering, $stereo=AzureVirtualNetworkPeering, $tags, $link)
+AzureEntityColoring(VirtualNetworkGateway)
+!define VirtualNetworkGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualNetworkGateway, VirtualNetworkGateway)
+!define VirtualNetworkGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualNetworkGateway, VirtualNetworkGateway)
+!procedure VirtualNetworkGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualNetworkGateway, $stereo=VirtualNetworkGateway, $tags, $link)
  !endprocedure
-!procedure AzureVirtualNetworkPeering($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualNetworkPeering, $tags, $link, AzureVirtualNetworkPeering)
+!procedure VirtualNetworkGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualNetworkGateway, $tags, $link, VirtualNetworkGateway)
 !endprocedure
 
-sprite $AzureVirtualWAN [70x70/16z] {
+sprite $VirtualNetworks [70x70/16z] {
+xT87QaKX48LXfzYo__scE6FAoJCSGd_uKyNXkogtF7ktsysxd3TjD0gfSuuZetFEpY7000BC2LdCuzqnWs6Gyro7RHB11WnGo9bfFC8pF88CZ_0CZsGT608X
+60RX6KHuXaDuffqHda54JQLy9cPQejm4fZv2fFNtl6J-iMgoZRMflq_JuIIjhonM5giyjlH8aC7hMCzoCChFrn4rl1GWSOFFx-bUnGtxo0emqV3_AJxcoWDn
+Psw4rtSFnee7aWo-hlzytLHq8y5yp5eWcz4VxnUNw9Ah-l9HtKWm5b_mpQJZTlphnEhUz2oMm90980H380H380H380J38SZm2Clm238ymZCyWWo5y0oFy0o1
+hFIlEI6HFQd7RmH2CNeyAeN4f12RJzpjTdi3
+}
+
+AzureEntityColoring(VirtualNetworks(Classic))
+!define VirtualNetworks(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualNetworks(Classic), VirtualNetworks(Classic))
+!define VirtualNetworks(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualNetworks(Classic), VirtualNetworks(Classic))
+!procedure VirtualNetworks(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualNetworks(Classic), $stereo=VirtualNetworks(Classic), $tags, $link)
+ !endprocedure
+!procedure VirtualNetworks(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualNetworks(Classic), $tags, $link, VirtualNetworks(Classic))
+!endprocedure
+
+sprite $VirtualRouter [70x70/16z] {
+rTI9qYCh28RX3z1kWNF_jtjcnkgA4SdcF-kRFI5FzOv_9c8ftnCcR2Q7sbrwo0PXIPz1HUr1Ml1c4WoTFybRHhEvAgTDDSQh3ei8SsJimDEe9KZ2D3o9DK5w
+aL76eyGo96TCtaOAywSCfyZei10ZIPyZAwDOQndod6clZvF6Is8lZXknFELUiJnPrYVlkTB2ekmeSM5qLr6CYkqgLeQY-ug6etPF6KTm_OfI7wnGVQxKV9Ke
+wCJF55x6ynKYy6E5GVagjHLdjIlfIhsxn55-_DggT2RMaLMnI_7vHkYCMxnr11I_xmZrWNRh90ncHK1jr6VwF9kx4vP8tTt6GxCPS_UEYmzbOKQQZlZtvAa2
+ie4OuJSe_DKrujixof5dJFYlV-yyRjM8HAQEsTE_Xvxv70KaCEHpXfv69I21YOgYTwxAGAwpSJ2BSg9N5cKWpfSocAWKz2Wg7GdAO9PneDTyIjHNPJ3YKmrN
+rKEvabTnnLzH6BYoVSLmg-mh1IFTLHHtoQuYkA_jAGrJx7d6lU9vZBd3GusNn7pkGAnvg73iMDSdHhOopn4ZhB77weIS7c9abPLvXWZov0dJCYIFRMLon1YF
+8qqPYOZYUUVAhCY9Ludwt14H5RnHF4Hj_bJmPYKu6qPF3ak8G_1fL9gv_tVTh1N2RiHIgp3Xt-aR
+}
+
+AzureEntityColoring(VirtualRouter)
+!define VirtualRouter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualRouter, VirtualRouter)
+!define VirtualRouter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualRouter, VirtualRouter)
+!procedure VirtualRouter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualRouter, $stereo=VirtualRouter, $tags, $link)
+ !endprocedure
+!procedure VirtualRouter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualRouter, $tags, $link, VirtualRouter)
+!endprocedure
+
+sprite $VirtualWAN [70x70/16z] {
 rTG7agGm44JHodAIylu7NheHHkt447RVManyIfYH_mVKV646kKiZ3s6usnYvobzvVk1t1na5v3hBh_HkP0IvHdDmRr78tqAkY9pG6-kvDqpab5qVvVumvda9
 v2lqH4JaL-incxrgeJy-08S8_FkI4CDZHFpu63rpygRvEDa8-ycJ1sC_7bL85-a6UHD_hIp2laPIhwmeFdsNTee0yxiB-33vQeW0ioVzu4Dt7CK1ZUbR5mfe
 l6Po4m0YvmA0lTn8vCRwmIa3a9lN1UbnR3wCZ-z6d8vfNcE0ZiESxwtdDNvUaWuLkrmPn_PPfTJQ5hMM7vLuhTYOQ3mC8HzkeIoYT05eELI-Q6LdW9UTB8vD
@@ -542,35 +865,36 @@ qe-HPlfPbJ5MbDJZAZF1sWSVAxwkCKYv0DlPRQpq7RNNPofBH9JNdmoDN3TLhb3-LEMQ93EYah5ODoB8
 9NsheD4anyWSAfc5zBM2ocBrnt8cttOnKgtoePdycHPsZKyftOrErrpkWqKf6GRvR_m3
 }
 
-AzureEntityColoring(AzureVirtualWAN)
-!define AzureVirtualWAN(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualWAN, AzureVirtualWAN)
-!define AzureVirtualWAN(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualWAN, AzureVirtualWAN)
-!procedure AzureVirtualWAN($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualWAN, $stereo=AzureVirtualWAN, $tags, $link)
+AzureEntityColoring(VirtualWAN)
+!define VirtualWAN(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualWAN, VirtualWAN)
+!define VirtualWAN(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualWAN, VirtualWAN)
+!procedure VirtualWAN($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualWAN, $stereo=VirtualWAN, $tags, $link)
  !endprocedure
-!procedure AzureVirtualWAN($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualWAN, $tags, $link, AzureVirtualWAN)
+!procedure VirtualWAN($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualWAN, $tags, $link, VirtualWAN)
 !endprocedure
 
-sprite $AzureVPNGateway [70x70/16z] {
-xTFfUjiW48LXpohb_c-u4b4FFFYOCltjBpl4hqVRQvMOHsIucxogWOZiXVyNv3bNTonPLXs45qMam1IGCcEvolSGoNMwfSHq21uJ8zMJOlBSWCLZako5zEKe
-3UEVBaTKXfaGplmBqMbkpkZs0TdY7NptCWVRt3qaDWhIpQiaw__RF36wdZcgolhSszxZ7Ejj_ofVvQlmLDNZRyh2jkiLCyojt1iY4LN6NMP5uoEZtBWofd3d
-skC8LpZJDgd15UeykmJX2cMmJGok84CgSc-AA4EuGiUv6JB8MW735TzIa5F52meOA32A2fokU55n1GF5MwRxYistCf2NL9I9mQls59MxTXJHdV55qbehWWKm
-z9q_Adb_38h_hbpvquQIhNvrFNyxhc9WjBLGa0z8Ay68j_OKXv4HsSSfATxdq6jl64VtbGG21UFiAZ3E-wCfvzsHPUKudsxbV3gYeC20WhAW0862ZbWgr0ZL
-jgash6qeG339dHna7A8OCHu628g50cHcWA1SA30cXYq7LVIuEcbyEQ6CmU3zjA_numn_lMNdJx6pZ_87
+sprite $VirtualWANHub [70x70/16z] {
+xPY7kkim28E30Dlj-p_m_RAKMKpkNigEvHzy9dGuIipTP8YaeoLqm2SXi9XF2YA9Bv9Ed30RzQx7Lw5lyMwshZ-OOjzbHUXRR9zjxB70mZY1O1x_s8dI4Ke0
+1640wI5eZ0Q7b41dEj7OcSypjkO3vBt8KMX-Df0FcLzGQKcL02Blj2HOIPw2Fvdodo9bKwNsJnoEA3Kj-H4KbWbNYbgbJ6yedCiouKfH4L_lNKGl5CuzbWbo
+WkZj4ocSkoiJPFLn6kfEk0oB-I9r2e2T8Pyn1e1JxOv2I80XvOGHWROwRpEadROHGmSW6-HG9g3DaX7IYeYtzGpn2MEB1SSIGtTb0kX0RKr5T3fZFLViFImn
+T2qJCEmeElyTDq2FvpBE96N9nZ1Gf6oOwbRRTYuJHBcYJoAb-OGvQOHuIr1URTb6J9tkkDKHmgUGGisOdIR8YyfHY3b3yfGpXf0yXIh3KCxtUGfLoka-INc_
+ijkVylyeJqbqV5vAyHiLlfSVNzTj57aq48JCZpoD-8mI37rxDv5VacZO7wM-m9qkTu36ZUKeINz2440IVUwfAOyxTmbJYPD1jtFNECvpoWzU4R-wblpgnfZk
+Dy26K30tF7Py0G
 }
 
-AzureEntityColoring(AzureVPNGateway)
-!define AzureVPNGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVPNGateway, AzureVPNGateway)
-!define AzureVPNGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVPNGateway, AzureVPNGateway)
-!procedure AzureVPNGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVPNGateway, $stereo=AzureVPNGateway, $tags, $link)
+AzureEntityColoring(VirtualWANHub)
+!define VirtualWANHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, VirtualWANHub, VirtualWANHub)
+!define VirtualWANHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, VirtualWANHub, VirtualWANHub)
+!procedure VirtualWANHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=VirtualWANHub, $stereo=VirtualWANHub, $tags, $link)
  !endprocedure
-!procedure AzureVPNGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureVPNGateway, $tags, $link, AzureVPNGateway)
+!procedure VirtualWANHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, VirtualWANHub, $tags, $link, VirtualWANHub)
 !endprocedure
 
-sprite $AzureWAFPolicies [70x70/16z] {
+sprite $WebApplicationFirewallPolicies [70x70/16z] {
 pPTNWgim34NZec8dx7-xBmZV33AQGdZj_4pDGLUktFuqXLHRxxsfSatl619fzpGvQKf4qYCa_rn2Aws7QFcPexQkHCJz4_G7zHHh1nCoHV1t3T7HoIrJ-y2N
 axwKj3wGDHCCNjLKHUfF9BsjcNIsg0YJmVojn3v0aqOX61gA9Rb3OY3JKG7YmO5amD0eKqWDAY7PIv19GWSpYuWUDKGCYTFmmI3Qa3q5anwI5n8OtFJHgIbZ
 vKpZwXMgXqdeCrdTwYJg6oAwIK2GgOWzB2e4IJOE6jbPL6abAWHX8eql9c-hZpIGG1DuflKjmoA1X6VDN0maQLLkaQIMoattHSYd6ZzCD7O2Ij3kkohVQ31d
@@ -581,13 +905,13 @@ aVt-vxmxKJiifybOMBO-aUY-ybZkVZ7QxtSio_WzB6cyokpxyhJm7ZtsGwnFPa4cMmbNBARfnWMBQVhG
 dZMf0pK0ipZOB6-i8qzkron0Vekb_b-MULuq4Eu_eQKifudkOlsiH6yHvHpFFBy
 }
 
-AzureEntityColoring(AzureWAFPolicies)
-!define AzureWAFPolicies(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureWAFPolicies, AzureWAFPolicies)
-!define AzureWAFPolicies(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureWAFPolicies, AzureWAFPolicies)
-!procedure AzureWAFPolicies($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureWAFPolicies, $stereo=AzureWAFPolicies, $tags, $link)
+AzureEntityColoring(WebApplicationFirewallPolicies(WAF))
+!define WebApplicationFirewallPolicies(WAF)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WebApplicationFirewallPolicies(WAF), WebApplicationFirewallPolicies(WAF))
+!define WebApplicationFirewallPolicies(WAF)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WebApplicationFirewallPolicies(WAF), WebApplicationFirewallPolicies(WAF))
+!procedure WebApplicationFirewallPolicies(WAF)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WebApplicationFirewallPolicies(WAF), $stereo=WebApplicationFirewallPolicies(WAF), $tags, $link)
  !endprocedure
-!procedure AzureWAFPolicies($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureWAFPolicies, $tags, $link, AzureWAFPolicies)
+!procedure WebApplicationFirewallPolicies(WAF)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WebApplicationFirewallPolicies(WAF), $tags, $link, WebApplicationFirewallPolicies(WAF))
 !endprocedure
 

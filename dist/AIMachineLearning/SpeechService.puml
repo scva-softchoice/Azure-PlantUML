@@ -1,0 +1,16 @@
+sprite $SpeechService [70x70/16z] {
+xTG54jim48NXjxov_u4B7iKAgICg-myBlh39eZCdDFFe3yrY8DgcN8gJTokP6SyNbpnkWoYUvdwiFEVdM43ogNx5onXhfY7c5BkFAJmJEg6eIXcBJE9CeN75
+wXWi7N5S5XH19Zm3jg8uF4apeIjAm9AN5OSdR5LHP4n-Bbx78D-XgUyeXQd-Na2PWYs_NPbJqieOoNSfXfNAP3aKW7DMIQDoXobdbLeW1fHR7htVnkjuMxaD
+fF8v7b9C6yaMHI_bSp6WQ3FERiJR2i2ldIylx2bjXmzPuyd75F0M1HGx5C2sAD0j2YnDIy9otcCjCKk7ecVr8G407mO0q832kE-GEeCZwLVe3r84vwTHl9CU
+-NJvZgZGWHI6P4HfzokKIxcKIv5-XD6EdweeluNkg1Y2bOh2sA0GrXK1rXN61eNGx2i
+}
+
+AzureEntityColoring(SpeechService)
+!define SpeechService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpeechService, SpeechService)
+!define SpeechService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpeechService, SpeechService)
+!procedure SpeechService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpeechService, $stereo=SpeechService, $tags, $link)
+ !endprocedure
+!procedure SpeechService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpeechService, $tags, $link, SpeechService)
+!endprocedure

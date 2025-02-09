@@ -1,0 +1,15 @@
+sprite $IntuneTrend [70x70/16z] {
+xTLLUiCm44NXGHdsl-0QnlrqW_AK6vt48FfVJV-fdXZ6EKRp2ZAeP1bKqWmeUSRVOyfddw6mWv96KCaZaRIUiLk8aPvGk9HYX1CnfML96X5WOC92QK2GGTMQ
+52b7XiYH5sb4D4uY4Za_HuRbfqJRqpTaUJCwamnh2x8oIxvDP95W8iyXo5WEGSRpI328g6_PGsHSKeBAM24oHtuV6GF1wWa-56r7C5IU8tb50KafYEGLGDAA
+Z5E5oDvfXRX2fddFcXKC5VztIbTu6BSAAlMIFLTiZlXAAJ6OdYjwN_6VLxhIbQvqHURe-WjhjK9p97IJsMCOtHWmZBwytXi
+}
+
+AzureEntityColoring(IntuneTrend)
+!define IntuneTrend(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IntuneTrend, IntuneTrend)
+!define IntuneTrend(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IntuneTrend, IntuneTrend)
+!procedure IntuneTrend($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IntuneTrend, $stereo=IntuneTrend, $tags, $link)
+ !endprocedure
+!procedure IntuneTrend($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IntuneTrend, $tags, $link, IntuneTrend)
+!endprocedure

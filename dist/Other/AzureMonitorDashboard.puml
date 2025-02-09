@@ -1,0 +1,19 @@
+sprite $AzureMonitorDashboard [70x70/16z] {
+xPE7UlCW34KbD27l_xmTYeWNSV2_Hqyt_JXSNMFuaoWitmn1GlOzQ5hKlWk4mBwFycK9207vEosAiQTyduNWZdoN1TD2UujVm211xroo98yiFyHYanQXGkex
+E2NiKvOiZNs3HYLfdx18Jtxe5dFfO9bgiMzGdxT0KlQbi5-rR8_Mj5wm5EZmfXI_OZ5OG5sQqakMaeACOyAn8dx58lUzsSM3ubSijjf2YmJzaWNNomeTEhDK
+ttrmzFZuso71weEFRjbXSMvTA0_BYB75CIge2vmMkc29EctZJOlDMbH28dM3m2TSvoozxr9tk8fu7KCG71PWl67Iul0ZB0gdDRQ5AOkU6Jel9nexNBbyGkhf
+6LhwzPA1mmZM54tFqP8NGuyIHJWWgTbO4jNZD8Om9F8CBCDM6PvHsWTfQUSGF0UNGsObICm5a9bmMQkjGZ0dASmSblov36KlBG91xarBqFDGpdGYyKsGj2Hb
+UL8lB0Z9m0ATslJKefaaDHjBh0SSfxsAWaofIKjAnB27aHEBzMcwfc0l2G7KJFgxK4yi9PjDJO5EGQ3QcXlrkrUWjZ6rH-cQ1OezrHG2RmfqsktsVf0m0kUv
+PaRBICXof5zRIaiOs-s3JEhs0VSBZ31W-SSwYjzkgJ6sG2788m_GffQyOoqj6eyewCKmZ93cgGjA37Ix8s6Nu1xOci887Qrd5XoSQJ1WREUGE1pWLfzO18v8
+lGspKslp4oNp5cuEy-YmbtnHP-5yvuOXVPB--eyrqvp5HcAPWk0Funq
+}
+
+AzureEntityColoring(AzureMonitorDashboard)
+!define AzureMonitorDashboard(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorDashboard, AzureMonitorDashboard)
+!define AzureMonitorDashboard(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorDashboard, AzureMonitorDashboard)
+!procedure AzureMonitorDashboard($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorDashboard, $stereo=AzureMonitorDashboard, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorDashboard($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorDashboard, $tags, $link, AzureMonitorDashboard)
+!endprocedure

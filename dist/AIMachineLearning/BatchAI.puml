@@ -1,0 +1,19 @@
+sprite $BatchAI [70x70/16z] {
+rTS7Skiw30LG0Y0Azx_XBn3ol-D4pnJbQRclf9yXYZnC-okHRaQjaLcNPm9r7navi97nJjk8ZYDn99M8c93k6JsAW59Gz0t4wnplIZb-7u41fNAReG021KpG
+9k97KictUuo-6L30o5eX4Y1GuEIOU84m4t5ahDkRegBkXL0ic8Xat3iJaMSubNfBeeMC-8Z86CdCGE4wqnds64C-Rqh4oN1MP6QfM1PddGfPRGsFL3gHg6Vi
+VsKwhbbUZVj3PsoSP_4N0iNE-gWK-xSo4ISI850cqrlJgOn5GKgaXLmejYwfew0hnTvAwf_RGYH0eA0a-zmOhxvWFhsNKk-TkwoBLmWVU81IaGDGFl-J5nDB
+PVnGZj3yEnM7id4Mmwi-LKKFpW8dZLqbahYSj6atZyNowalHHdQbQ6lTOx4lV2fpAQwU03kKGZuzZgSISgLW_wUoUgPJeL_Fj6UW7E2g94ub0yLdgF6Y84p9
+gB6VcOfdIY73d3yTfbR4F8DNxo8flqS3HxcEIQkGUaLI0P8XqROCYH8OAFbPqJm5hGXcpOt9xzLtHTiv8MMwTOcgbQ5mA66jLkxcbIgAwKtZo5GY8wGR5o4U
+nVZF-uiLCcZZOdXv8ylq-pUo31GWgETUJHaeHQ2UEx6NWbjpALjNNXeprjXBSJxbsBvv9z0adyRv3bgxTnXdV8OTHzdjZF5fsA8hYp7LRpOOq5vg9fWHUhiJ
+kr9qLv4hXTjkuhSIRJjadZ5wUtS_tTwYhNsdQ1Sc-KBHdWAnzFvGqG8EGPzNb481TQXdYW2G59_tfO1l-Y8fL5NVz0LjoVJsBFhzqe41yfm1yZmTFVah-Gy
+}
+
+AzureEntityColoring(BatchAI)
+!define BatchAI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, BatchAI, BatchAI)
+!define BatchAI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, BatchAI, BatchAI)
+!procedure BatchAI($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=BatchAI, $stereo=BatchAI, $tags, $link)
+ !endprocedure
+!procedure BatchAI($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, BatchAI, $tags, $link, BatchAI)
+!endprocedure

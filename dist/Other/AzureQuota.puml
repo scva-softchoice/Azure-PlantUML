@@ -1,0 +1,17 @@
+sprite $AzureQuota [70x70/16z] {
+xTTNOgim48NX8qqL-r_mvMBiWKWCkBoaVEd9oU_Uy3Fz-LE8PSPSyQegjY645x1rdkwG3LKyG-m0uxAYTaZBrOXb5DTOU3sZTe9nZloC5PmfvgSKPyGl89pm
+AnIfAdv9mI5I7s3s7cEiY0y9aLm-IUI7aL76CA8-fhJe__pCTSHerGrg7_43nhHYw_-4FVC3J0-d5vIcaSYadUhPnHCalVfP4hcSeUR3DwME3fTBnjgGqu2t
+0SEiPPnfmPwC1A2sv_izhx9DAv0l4LLFAx492cixEZkf-7qJyAMwI2kn2TIsJ1UMLVIn2UfT92PHaT4ckEqYtKIYqc-2H50tlA_qcz4PepjTPRXPEVBBA2hz
+9XYqkv0ihSGcCEW3bGBurARMve_vxRQ8dwEo_jmsc_W_07KAjyKKH5Z-VmmsWJ7JhBBAAWqBVwzIiIZjdGfZLTlh5SD3yVLNYxwYKzXl55ktdL-j-FtlsAj-
+h_WKDAruGOVyIYKsMjDNCnvqvS5cAbJn0_pvymy
+}
+
+AzureEntityColoring(AzureQuota)
+!define AzureQuota(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureQuota, AzureQuota)
+!define AzureQuota(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureQuota, AzureQuota)
+!procedure AzureQuota($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureQuota, $stereo=AzureQuota, $tags, $link)
+ !endprocedure
+!procedure AzureQuota($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureQuota, $tags, $link, AzureQuota)
+!endprocedure

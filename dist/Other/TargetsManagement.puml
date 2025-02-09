@@ -1,0 +1,17 @@
+sprite $TargetsManagement [70x70/16z] {
+xTW7Tjmm34NHZyQY_Iyu2ZGYH4KSChtvfiSuRm1t6pEY9eJl9BPJV2Tpz57vg7nKlXLhoYuPVsl2SkTRGjGQ8NrjH_CZ8woZb4SOgpWt9iBCehbHh96dvoTR
+P1OtANd_POGEwV7_MJ17kJXzwljJCcCg5IV0E8CPZat6JvMrLGm3khICpAPIh3eR4ZH4p4Heg3YyvIC93Si1ZVa8pm_YFk8ebfcUPFswB06dF7t-vkuWaaPL
+-XSJRaIjwRUzD7RKNPtiv7snY_ubr1gESU1hnGbW5wcM_OV4GH69a-ZpJ5VHUsKNbMXq5HzATW6eNTmh6kAYgCGkfFUAuaN3zRbxhxoUGatnWNZf1OksLvXE
+-4Bo2Pmk4MlJkUuAHk9ny48H4Pnyn30Ipt_WUbIStZ_GMF4PGaCimeHG7J0_AMF8OjlfCee1heumNsPyDrLdc2blCbHcgyJEc__GntEsklyIpEbso8HUsWw6
+kPZUZ12qddLWFUDAKYQmM8d_mYhTXXBMIHr455-3x74HmjUo-ZsDm16gIV3jAANuHFVZQvAFoaVbTtr7QVsxMvy
+}
+
+AzureEntityColoring(TargetsManagement)
+!define TargetsManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, TargetsManagement, TargetsManagement)
+!define TargetsManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, TargetsManagement, TargetsManagement)
+!procedure TargetsManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=TargetsManagement, $stereo=TargetsManagement, $tags, $link)
+ !endprocedure
+!procedure TargetsManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, TargetsManagement, $tags, $link, TargetsManagement)
+!endprocedure

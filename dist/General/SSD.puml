@@ -1,0 +1,17 @@
+sprite $SSD [70x70/16z] {
+xTXNmbif30LW5P30-z_lJ89Ii3YtfoVVa-kvgFWlfYF_y4Mq4lFBJ7A8tv9Y_2QQiT_4D56_IMbI_9DwadzIQ5BJ0H7OWaeJyy7e9FmE0ydxAaZ9LMAeasTJ
+j7uXkodSlBNcJMabUApQuZqylR85eGKR2C5lqHOOrOy_Czp255qsKpH_VdFArChQ1aVB5OmfyJPCos5jCD0K68BVunif1OO4MyxVGjqOScLQrHQMb9BhGI5v
+8dXg-o5eE_86eQPO-KhsravHYlYYC4ZHlQLZyyG4hnrkTv3oYO51mS5Q7vm0zQ2KUHyCtCyOhHs-TWyLXDZKrgJseQMKGekIsWfIEWNUJ16yTQ7qm3H83mhh
+KTgWFGYuE-6Asqhfuk1eaxBHLjm8wo5VQwkjUBIUHXROSbkpzhPc3QwkAcr2L-zJvWMf4t1riUsrurSeT55v1HwpU9eYeuslu4oNiB-2Zl9UpqGHzZHb3DUV
+flXOkgSfRQpBqvInCFxONv1IfVexMnvHFKeHoYyf92cMo2wdAF6IKdzG2iixNXuvhgZG2GowMtrYHGvfAgY2Fxsk4uh3F58VV3i0_zhZcsZFF_y3
+}
+
+AzureEntityColoring(SSD)
+!define SSD(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SSD, SSD)
+!define SSD(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SSD, SSD)
+!procedure SSD($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SSD, $stereo=SSD, $tags, $link)
+ !endprocedure
+!procedure SSD($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SSD, $tags, $link, SSD)
+!endprocedure

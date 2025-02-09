@@ -1,0 +1,18 @@
+sprite $DefenderIndustrialScaleSystem [70x70/16z] {
+xPE7Tjim34L1JEh_VxXGAIXchJpBihjpipY2Uy27Ovfep2Bw7H7cHa_JM0_WTaqX6q-BcbIz5jE1dF78gD03wbpe4Pg80aGJWZIzmHAFwE5kjkxrWuOafYQc
+srSijyH-hgA6D6efsUYZkA-Kfr0py2ZUBJ7AMZKv3jm6OiO4cz5gn6YY-TxE6X5CTrYoeBVxo-e6jvB8qEJ_2t7uV9UdUogOOLarbCzgFxHIsTOv25X7ki7v
+GomYe_qyyaqYLA20HxxQbwAxQFwkLkWXhTvqJqcOw6mpldKHxZ6QykDeSJCz1ROJlHz6YwTzpDmAnWu1qO9ftm6c308-XaxJ3YnWoYXW7EtrWF6KSS0uMWo8
+za8p8DghqwQdQI3QQzF6KyPOujlNkg9BiBlwHYw4hc6JXTvXiTzjiN_FWcVqPR5_sAB-2NhUqXQ0dBNq1N7MiYoVUl92pbaOM-pz5gxYoN8EQoLnnnRCfbcB
+Yjro5dSjY_bbQfZjFPR8PLpziYXBBY-JfN-SXJnUmeU5uoMOIkCJAf3etOlUbSgoB35_u25z-aJweILNJ92OB4f5RgF82yBOMZx8LQD2brkC2l2amka3kSb5
+wI4MVH1hXDy
+}
+
+AzureEntityColoring(DefenderIndustrialScaleSystem)
+!define DefenderIndustrialScaleSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderIndustrialScaleSystem, DefenderIndustrialScaleSystem)
+!define DefenderIndustrialScaleSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderIndustrialScaleSystem, DefenderIndustrialScaleSystem)
+!procedure DefenderIndustrialScaleSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderIndustrialScaleSystem, $stereo=DefenderIndustrialScaleSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderIndustrialScaleSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderIndustrialScaleSystem, $tags, $link, DefenderIndustrialScaleSystem)
+!endprocedure

@@ -1,0 +1,21 @@
+sprite $ManagedInstanceApacheCassandra [70x70/16z] {
+lTS7bfqw381Xr2M3zh_TDmPnuG4t1qZvquk_OqAiyGn_Ca1cbf-OcV0TGNA8wJ72SXNz9bBnM-JzRkHh_EyLqsqTiQofFLEi74O0G9e9DNkcUAzB27EYPjvx
+egXN34larIi5Iy7VKkYtbAW-JnILmmjbVIIBQanzheH2Js9JSfAR2aPhRVasXiVwyv-oD_8zXg9LKr_LAfSnvnfz9XdznFGJmjdXE2dUbygqE873G7mQP2U9
+r7UA2mvBMexU7Xs0tl_-ORFQ4Rjzwci5dt3B9j_26qe5Ab-xgno7AhzMJDRc4IHhzaXnDosaXxmCG_S7oZR8FWTME-6FbVFmUAq4GlLEYVvbJ2c4mfSl-aIf
+EP6j58tgeLBdMw77yKRHCd9gnimMtnK0r1PD4E3m1_unuXWD-v1a7-4j8sJO0lusEpPZxCRXcy9-7t8T3BWQZWE8jtqkCDn0H6CruFFSNCCIRzvVRDoC6_tQ
+i0k3-4BHPyOWcNfr2reTGaJQ31_sGPkMFNXc6teyZV2_0skgmWWzBgGTxWoMcVEYA0NwPh_UWc8n_A3mihjIYkMljo1PZ5AsMcRYfc1cZiD9WGfR-9M2sVas
+BSV1EqhdcmSURq471QOyDC5PaUC8akE_xZc3JQceRa5NYcRLmiqyMbQwZSFA2DclXWUCsHkDDfTqt3-Mj-jqMCDfVwiYqRgwy3WpMBjfvu8s97io2zPoVyEI
+xDK9v-D-bgrNtZS2tUY42I7RUjXXt1yL857pQE6cWgVZPtrBhMi4SzHNQxqx7kw4K2SW0w6Qvs0iTx3XTfuzwW0t9m3AUj07nVw3MZ-6058lwEbE4g6dyoO0
+Sevk8vfB061YKu5rhlYkKeDhX6LfAMqRYRTQrn90WGc0HG-tgyK2eBK10DuTeqSFrG30r_ytyHofrsG0WCG8zQBRGwHE7aD5DLmUDpz3cnrkzGdFy-f0JX5J
+6My3jfPJJOu_tNy
+}
+
+AzureEntityColoring(ManagedInstanceApacheCassandra)
+!define ManagedInstanceApacheCassandra(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagedInstanceApacheCassandra, ManagedInstanceApacheCassandra)
+!define ManagedInstanceApacheCassandra(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagedInstanceApacheCassandra, ManagedInstanceApacheCassandra)
+!procedure ManagedInstanceApacheCassandra($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagedInstanceApacheCassandra, $stereo=ManagedInstanceApacheCassandra, $tags, $link)
+ !endprocedure
+!procedure ManagedInstanceApacheCassandra($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagedInstanceApacheCassandra, $tags, $link, ManagedInstanceApacheCassandra)
+!endprocedure

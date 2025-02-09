@@ -1,0 +1,17 @@
+sprite $Image [70x70/16z] {
+xTC5ejjO341HCNZslz_nLqWlO2otDs0-PlZZ8ZuT0RYVJqiv7VvoYY6qp9TImdiaNK7eYIz5qEEcm6457ueDputuOaPuQrIy3c1_j5qHijDAtH7sz_4snHWh
+qesAlZqPl4LsK572dYmfuN5LOlWuurEaFgvJIerXp9KIlNOoBR8OAcNkasByLj4b9MR5egV4_6A8B2jA74yA4TEJyQ8OaJRb9QCvbeV3qfNUij8T4ZcgLCnb
+d54gOJcfLCpd5KGcFgdW71CHBokKCNzCDAD_x8wKSdEUrWgtg37Ahm30isStevIA-KiP4W2gaVglD-1PGMnAnSyA0U2IueHFIYNxb0n-LTXoZr8PZGfhFiSh
+IgNK58bSKR8hFRufx9c7bNIUbReWXvNAweASKgh8xOhwhSZb_1xTbMakOSYdfGHwE7rLoWH3kgWGzBWfSlXOl2cJwoEVbWj_55DJZlVhAP3dZH1OAF_h8Ipq
+JzdTD2XqL1bYE1IEYiAXU5GS3cNJsEaJgWGEvCzA4kmD2nbBtcdez3Rd7KJavsmRnBcImOPoDORLC5Sp-ANx7m
+}
+
+AzureEntityColoring(Image)
+!define Image(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Image, Image)
+!define Image(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Image, Image)
+!procedure Image($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Image, $stereo=Image, $tags, $link)
+ !endprocedure
+!procedure Image($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Image, $tags, $link, Image)
+!endprocedure

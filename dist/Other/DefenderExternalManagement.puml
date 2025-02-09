@@ -1,0 +1,17 @@
+sprite $DefenderExternalManagement [70x70/16z] {
+xTO5ekCW58NX0rT9zx_UEdsbiHiOd_VL9NzS495jco12RCTeHPd_c8gf3bSgHAYlCX5p7wum3rR6fwM52FPjXf2KDoL4PFUoTHD4QDanMZ4H3rPieyBiunLN
+BMELQhpY8k7AjCgPopGDLqI6AnKYTDfM498NYRjhtO-woUbqCgpxhf0TaLOgQaVGIiL-NaL5TBn2G1gl900wK64sCwqhZvFsL0W0F_-QkPsaU2MXqLaHVCXT
+ooNZXaIuJafBtzchugrR9PbV6IrSSqodTxvICLoPFzmoTBnYt5wiu2gH7glKHT7CNliNQuYPyKh5lA9PXR0WFYtnYYlDbmkhHogbbA-7uygUd_Cjqlw-LYaj
+UbqYE3r6qk1O9U66kEwIqbCHV4WzbOHFsb5H02AF5Ya1kMkvgDJBDBw-EfUEIaNDjLoWCYqn84rBOfNApCSgrM-eoA5AGbGkJuw0drpn9nkhL1X0Lc40wvsf
+9lJJ5q8taYy9dRAyuQvC8lwK4N41
+}
+
+AzureEntityColoring(DefenderExternalManagement)
+!define DefenderExternalManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderExternalManagement, DefenderExternalManagement)
+!define DefenderExternalManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderExternalManagement, DefenderExternalManagement)
+!procedure DefenderExternalManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderExternalManagement, $stereo=DefenderExternalManagement, $tags, $link)
+ !endprocedure
+!procedure DefenderExternalManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderExternalManagement, $tags, $link, DefenderExternalManagement)
+!endprocedure

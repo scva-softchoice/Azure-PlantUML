@@ -1,0 +1,17 @@
+sprite $DefenderDistributerControlSystem [70x70/16z] {
+lT89hjGm48HXzsAxm_qFZ1rbIezI3Aq6tZ_xzar5IlkUn4p-6h6vihz7YAaZOEe8c3h2J1q1KqVg311cYWWpTMGq9wQ4D69g234rfCWu8VIc5v0Yun78LBNj
+T3NmjkSHI6qL24mQWIB1J1vXXPay0YNFUEILy3m29Si0OKLMaMM03FaqVrLKdXpCUGcKJbicAM0OWG84ocQWW6645Vjy4Kh4WC8C8xp53rl044AAT5Acal8m
+ZE0V5Sojw1T4IGa7GagV3mC5o9XwAyn4i3Bm6_yeGFOpKc8X6jo8tRFcKO3W2rzIA0YPxhhhQkhT24HAYpD3pNYlhUowhdYxCJCFtxEsy-jG626luOGvCbda
+zym4qi_8dvd-81P79C44ZkU4f1ZVGyoEI8ePqkui3aY6wUsJnXkIOcPhJVgOjjUy83b6zuRFfdX1Caoi9O7VT4QIpDZ7WMEpB086YhC29C7WfygpWEGP4PdN
+dOeCGjACFqoOY32IPsIblWt1bDvoTIWXkm92ZD-6JK9op0yKeuyBhu3a6SH8dG5IPu0KcJe2Xf4YmqYT0L9d6AapGEhvEcylRt-TMVkcVW8
+}
+
+AzureEntityColoring(DefenderDistributerControlSystem)
+!define DefenderDistributerControlSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderDistributerControlSystem, DefenderDistributerControlSystem)
+!define DefenderDistributerControlSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderDistributerControlSystem, DefenderDistributerControlSystem)
+!procedure DefenderDistributerControlSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderDistributerControlSystem, $stereo=DefenderDistributerControlSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderDistributerControlSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderDistributerControlSystem, $tags, $link, DefenderDistributerControlSystem)
+!endprocedure

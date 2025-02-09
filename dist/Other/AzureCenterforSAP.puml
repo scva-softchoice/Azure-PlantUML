@@ -1,0 +1,20 @@
+sprite $AzureCenterforSAP [70x70/16z] {
+rPRPkkGW28G5IknEylwlEqlQaz98jhwQgKkN_wDGqFH_IDIGlI0byNTnIy-bsSkFB2MRbcLvPNaK1KedJKcNLI-xpSYbbqjAPQbwunO4PIUaX7cXNjU-rFim
+O98INjFIQCxt0t6eTFXt4yuPGnX8rc2wRCOckG51Ef1lhkmg9JWBztsEaSfmJMVYUTc9dJnC335FDHeD7CSGKHqNlsgAnpZZbEX70IOwS0qZ4VtHtbRDCI8_
+EMB4d4zkPXdzU6I6wcVdmPDiVOHIqrwm3fE7O13uKQ3bc1UBKbCuK5QbFGNO8CvGwOd1C1G4b1eEQ9YgZSlZK4Yf76FxxJMtLq_Z-uOV5LAYkwUj8NrEGMl9
+ULVkKsZftLmMFANGaZ0j-Wq5BARF4KZQIVOKbu4YAoMlLvbfwQKj9Nwcv-twEcz_p3bfnTDMaHxUbXg-hPJwoalKPkgz2uweQIW2k3QZmI7D6yMYxbGtzwCo
+bb8GYoWbPwDyvCQyQ2y9HoyeeeF2KMaTpVkJ5fYsCi_hWPjsoXZEgBrr0hGxyWUl09J26ZfltOiLG0h0rHk5S6iJmDR0QlnGwWxpGaetIegn6eNZBC5rDIbL
+blatuH79lakHKY8AIa-PjYDYntnCKRv8goNtafzJIlSPSaz9_J55PXhw8_iG3YaIKlYgLVdsxn8ZXHrEUefh4mfhqv809iqEsrMwDXH4hpttLgnMIfRKo2eb
+I_ppO0IoxR3smqgppUZChEmeu0vBL3IAy9S9Ocw9TsMm3TXD25-YNdY0iIJq4s8WLmm1aioJMpnPfHSGhZZ5c9miCgmKELw32muBv3H_XaqI1dlFjO8obOQW
+XYi89UXbfce4tBuDYb2Hr-yvDFCznz8Z2K71-JyZcLdDCG_iNzTl
+}
+
+AzureEntityColoring(AzureCenterforSAP)
+!define AzureCenterforSAP(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCenterforSAP, AzureCenterforSAP)
+!define AzureCenterforSAP(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCenterforSAP, AzureCenterforSAP)
+!procedure AzureCenterforSAP($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCenterforSAP, $stereo=AzureCenterforSAP, $tags, $link)
+ !endprocedure
+!procedure AzureCenterforSAP($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCenterforSAP, $tags, $link, AzureCenterforSAP)
+!endprocedure

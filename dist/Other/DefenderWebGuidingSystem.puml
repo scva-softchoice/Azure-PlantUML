@@ -1,0 +1,16 @@
+sprite $DefenderWebGuidingSystem [70x70/16z] {
+xT1NOXin38HXi64mMDp_l15B-gweb4T-xZRcjoJvxuxZE8wZgF61QP6Fw1NlgUmnWbhBWwgCy0yYLzaytskRGRXiUPYyaoEoREol492T_TaLHJvGRfvtgWgq
+CO-GhUztPUnMM1iKB_dpoXL9qjgXhE2IPoNjZ4fI_RuJDJFOYwgEIiL66nKTexMhQjzewPLcQFO8QjehttRQT-XDNivnCIk6DnNCYgBltBbA1ZelZiogcBMc
+5VM-DYfcHlAYSrJOHJXfH5ohKgjcvCUAnuXu10aZmC596X3-MSK2SpPtMidlBBHNQEmLow3TlFMRc14wkoA6aHtHY2JII7whtEYLD9uA5nD9eB-OEpqW8heg
+vQaoZi9jxE3EB3q3zefvkAmAswZOOqKyd6kNf5CdpHZXwLl5ZFtjkP8yOXnuaO4ngSYgs7hT_EQh4Uik9iYGMczgbacTy4U4GwQi956JtCdOgFBDSHp7SNm1
+}
+
+AzureEntityColoring(DefenderWebGuidingSystem)
+!define DefenderWebGuidingSystem(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderWebGuidingSystem, DefenderWebGuidingSystem)
+!define DefenderWebGuidingSystem(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderWebGuidingSystem, DefenderWebGuidingSystem)
+!procedure DefenderWebGuidingSystem($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderWebGuidingSystem, $stereo=DefenderWebGuidingSystem, $tags, $link)
+ !endprocedure
+!procedure DefenderWebGuidingSystem($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderWebGuidingSystem, $tags, $link, DefenderWebGuidingSystem)
+!endprocedure

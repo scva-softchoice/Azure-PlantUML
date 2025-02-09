@@ -1,0 +1,19 @@
+sprite $CodeOptimization [70x70/16z] {
+xTI7RkDA38NXmyxn-p_mrH0ZMSmAkR8IzFpRNJxmR0fW7f_bZA-Hn-S9qBDu4g7dyIH6BnubVyf5Vuh_Ya8a_cF50VnSKO2VBN9lNtGQ4VQnuaHnX1eaaFzJ
+CjeF9u3tVob06GP0-gl-LLeJ8S_L79GPF9biVQjq90ZmRCmTfIDfSr1Lp4sb8_LIpSRSK1eoMuCwSwrq9B9gWnhplTAHIlg8nbmf7Uc3-WhvNc60l26-1lLh
+8YkzLWnaJMc3gd06vxKoLZRBSLI3nYatTwqNX0bTA5MOgRwP6dH6rCpd0o5eTMM4gaYEbG9oGanLVHca7ZdIbPko2f4tqmUPYDhy4w3rSBjhd0hUoZ6BDaXv
+Kmg1JU1TS5CgPoBAVmOfCI_4fz6IKbfETKCVf4GqoGJyC3epUeuw8W5CR1ydesHTI8zAQNdTOW2_1w7-Rg03YMh_Hocz6iA0jOUsWCYPU-ovhqslgshGg-VW
+iJuel8pwwtpiMd60lpuciDmIDYM9cP07Isxnwx9K__eG8RU2F8B9mzqdPZIFqTVTWB4hGkvDyRl80EMCsKp8PYHcB37jkqg2S-RSaeZ9V7fBX9kmRIcBUTnN
+Ag2GcRAxcR5wp6hHpGXnAB8hwnQxhIZifCpak8LlAm7AhIibyBeT7SVOKcm_1NbRyUF_rzHdkXG7v7KxXknAR2qbam3ORMK0NenRpCmB4LHgD-ErwQHaEZvF
+Jj-d2WaygJPvHaubQy-3Q2gHiuUdL9xd1C_YaQVmj1nln_4q7-y4ZzEZXZncyFlAdy8B8Vm2mpZw3m
+}
+
+AzureEntityColoring(CodeOptimization)
+!define CodeOptimization(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CodeOptimization, CodeOptimization)
+!define CodeOptimization(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CodeOptimization, CodeOptimization)
+!procedure CodeOptimization($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CodeOptimization, $stereo=CodeOptimization, $tags, $link)
+ !endprocedure
+!procedure CodeOptimization($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CodeOptimization, $tags, $link, CodeOptimization)
+!endprocedure

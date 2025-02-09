@@ -1,0 +1,19 @@
+sprite $AzureLoadTesting [70x70/16z] {
+xPQ7ikCW34LLg9B__tit22SQBy43sLxEw-tuNfx65lm8CCIt1DoHo1HO9yYKyCCi-urmxtIh35GxtItY1sr6mXzh-M_vRr7HI2UfVVM9HLN5lnJLJotPlop_
+BPtuNInvj2JOXVL1kLe4OHFHCOkM_JvUmRyHD_iODFdE6YZgXRpI0u5rYXfmGOq001HpgIArb4Xt0sVG-DrA05yzDJFUzHcdeseP78tadfKJI815Z9fJZ2aN
+wT1g7mEhAO9VdBk8Xz_Kiyy8IIF22NQFcSFGlY6p91MRZh4LJD4-vZ5DL0DXf8Klvc2cPcb414XsDcEV22Fnb32xfS7-euK-hGu0SiSjYNkfiD8dz_8yMX81
+LBj4X-Pzk8rfaxWbf2Vz6HWlVIgCs0dYgm-TQkzKNc7Il0zKYq9i-6zOddo6GV0-0IO35m2U4YVcgfe9y5b9vdqWY1SYSBZeSKWAFQptWRT4gqqUXK90J78S
+MhETRxAHOJKOtcA_SrfCaXyyOfJ0eV6yZjpU4RF_dyqIcgKcl8usPEtWp69P214Cip0ORc6zeq2ol0xcdDFGMVGEwNalC8sTzHwWvr0XCSDaB6FHu-u5eGyL
+SOCcOqbOZpiYP9j7v9acgihQKkGt1dot7UIr9SB3Z5Df5rdRhTAf6QBmubhY6--RA2JBwmJhcNgC8XlhMfpSVKXM-_YzSDWHWj-LDZIQ49me9i6zLTgeaH00
+AHGrCko1LGU4OPiWUYN1Hvmzpcu87qCSOWo1uKVm1G
+}
+
+AzureEntityColoring(AzureLoadTesting)
+!define AzureLoadTesting(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLoadTesting, AzureLoadTesting)
+!define AzureLoadTesting(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLoadTesting, AzureLoadTesting)
+!procedure AzureLoadTesting($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLoadTesting, $stereo=AzureLoadTesting, $tags, $link)
+ !endprocedure
+!procedure AzureLoadTesting($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLoadTesting, $tags, $link, AzureLoadTesting)
+!endprocedure

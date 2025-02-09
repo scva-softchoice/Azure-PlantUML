@@ -1,0 +1,17 @@
+sprite $ServiceProvider [70x70/16z] {
+tTK9ZcCX30JGykw-_uM7La0Y4f-sPvzvsRSIL99lN10HVWY9-Oj-TnARRun_F2C65tIHn-VfZJDwnED4koivOpHuF26KMJnoL55SC8eqBgpUoarvGrU24eah
+hTVouyLONFaFbvlZ5D-xbjnvkPTydJRzbBmob71U2MeYRmWrbXUE8cfkgByOHrrqMkdlYT4XUQJeuLkpTHINxTJdl7c-SNSXDB35G6pvwMESmfXZqFPWL29Y
+KNTb6hGrgoKcfztA3ciUevWs4ejJwt1fjB6entZiQ1CxQeI442qQRwZGoQ5VRtyxXtuvGW6Q0DhlVZMVRUkMmJOnRDcUV9w9MxSCkQR8lfHZlr9EiJZmrMqn
+XUOKZdoxPHeugocQHqg3vb1AYJmA6Y87AQHmFX0YoMgAvGCdyfcYvgyJOzqpyBedrmd4F1VrGqDLTQMmJ0HPG38H8FaeOgMeJmnVm3u9e7bHIr70VqfAVdUA
+_EmK-gTJ-htKVdKCwCUN15_pGifnH-z7Rur2ogqNGSb_cHAl4sFTSyYwLqw9YH4B9ARVcoBN5COt
+}
+
+AzureEntityColoring(ServiceProvider)
+!define ServiceProvider(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ServiceProvider, ServiceProvider)
+!define ServiceProvider(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ServiceProvider, ServiceProvider)
+!procedure ServiceProvider($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ServiceProvider, $stereo=ServiceProvider, $tags, $link)
+ !endprocedure
+!procedure ServiceProvider($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ServiceProvider, $tags, $link, ServiceProvider)
+!endprocedure

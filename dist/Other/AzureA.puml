@@ -1,0 +1,17 @@
+sprite $AzureA [70x70/16z] {
+vT11TjWW38HXWK6IB7h_wnOxDKtm15ilk_PdFqyVz9zKrLJck9IIwNtMUiQeGcyhxUWNmpAzJ5llnyUqZvnX8L0lG8AW80c3WYGC6ac0140n4WQ5IHWK9s5G
+d8H1SH86OPBqSW04IF9HfOUyVKkIlps3C4b6BqZMfWoCF95IctCMbdkqghPR0jiYe9u9ggv0tcwvm4AWdaP9vktU7YGbTs_z_OnK_MnUuHZ9hfKl5yaM8YN_
+t9ZPai1MeD5rpquK8fdVQus9C8cVGQEMYIAawgWE2f7CKKmK8IM7PJeIM0o4IIfR00H9AghA8L1ldX0zIW7GJD9HeQbz0Rf8Wt86I7a56YITcacCGVMAnszy
+gIn0-ottNKNl2G2jLbnXQG52AwQe0a0ZI4890eq2900Q1KW0D0gJigEY97QKQOoqEwgIHaZPOOb80gHlGDIJDwGrw8YVIRe6dV4pANyFKlfJVIJL5UYgF91C
+YMXRWSws5SbwUGqQCvXaQcULI1rLw7CPakoAYNW1ccRSRRfZt99sloSqbUrOsUyJlLEVgiuLkfLaA4R2HuN-nNu3
+}
+
+AzureEntityColoring(AzureA)
+!define AzureA(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureA, AzureA)
+!define AzureA(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureA, AzureA)
+!procedure AzureA($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureA, $stereo=AzureA, $tags, $link)
+ !endprocedure
+!procedure AzureA($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureA, $tags, $link, AzureA)
+!endprocedure

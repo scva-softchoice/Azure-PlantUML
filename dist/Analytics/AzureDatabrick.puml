@@ -1,0 +1,18 @@
+sprite $AzureDatabrick [70x70/16z] {
+rPZNWiGW24LNXM3-_uEt4bDEc1YtyxH5xyKZmv0y_QT8PkdJ8Zg_XdvEGsOF6TSeTMvHovX6jlVjwgUQBGz0dTwtVf1D7u9J6W9IctskdjWj84GXmDm9v13g
+-VK10GEokWhbGgOvNK0542AxmfF35S0SEYL0VKmkHK08DJ8yLv6RHLuqnLLsEt8-929Z7pRPgKo37KoQP1r9HdmNmEGRG9OEfZSlcYKZzf4B_g5zG7ofSKEs
+FZobUjfGwSUJsvgcWX3W0H2lJwh8vXJ0Smh4OqjNTjMVW2TCj2phceDbu0c0xErqf-8cS2KG7jrLF8G4-2jzsX9R-Y3AarjuvgR2R-C68jVZFwmvGiNTOOaa
+6n2g19y11J02sQcuEvsPdUNpihUuZ-S7G99DkurwtMhIXFEYTcSvvGVn8o6DPuhSy1o0yFwKCmKnXa1Gx-uUrZY1BARiKgK6UFHSlvRMNy2FUGS5BUXrnCEc
+mlc4Al5aABMM4nkg93Cct345xxbe12_2pusiNUB1MLcxl1mE_d7lKLvEW0T0O8E4WIS04hIPS6siVnfohtR3qExQxNeYGUrwuAgw7WR6PslEq6EpDJtxvxLW
+v4H3xmpEGX92xSDSoyXCJPncWFeBRojQcUallCNvvNW1
+}
+
+AzureEntityColoring(AzureDatabrick)
+!define AzureDatabrick(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabrick, AzureDatabrick)
+!define AzureDatabrick(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabrick, AzureDatabrick)
+!procedure AzureDatabrick($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabrick, $stereo=AzureDatabrick, $tags, $link)
+ !endprocedure
+!procedure AzureDatabrick($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabrick, $tags, $link, AzureDatabrick)
+!endprocedure

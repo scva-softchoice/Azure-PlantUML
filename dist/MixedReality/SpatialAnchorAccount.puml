@@ -1,0 +1,18 @@
+sprite $SpatialAnchorAccount [70x70/16z] {
+rTQ9JeOm30Vmtjru_mUMC6oA8sjOJd_U2l-ltQ02_ngocfiAmZuq_sK4czWpXItgJuPx8LLCJNncy17w6zxjHmYGOw_W6x_XCrIsDXdXPZl5QBi8X3R05zOk
+1C7ZDvNf7CpLxQTCrV56Hpoj2ssihiClRWEMeqI4ySz92WEs55lVDnnd3HQXARMUHuQnl8E9jS159O7JmapgdNsqZlsDmGgrv6wflw1rGn4HlNEV5Gr9JmGk
+VIQmn2zbQv_0XreOBZI551UBYFVW8cDzM_y3OO7ar8wRouccDgjjPXdwSUei5tufXbRTn5aaGf4g6AjLRtESab04zuphGjwpjIubNZJwdSlfHv2YcqML7Y7J
+sfAOAKVtgzVGI77Xr__0cWgfBoDz7clk4SEmGgcO9gVN6U04ItAYkvZOXXXgeKuXqb4AFLAm9LBTeu8qDbk9yqvmIwnE8R9hcudpmj0qkgeKFbECefQX9roc
+q4cQ4n4_LbVBEoF8A6QGd9A7XZ4iNKtGS2zBu2DTI5YFhpjZEjXQFxhhE6RTK4QhkR0QFHcj3yJ5Io3B3SlEOS8nDP2O2M69ukWCeuU5gYigUgYxojtCwgwG
+rKovwAReIhqOf3MEa1YaEzYdGLghd-jgzNFT9ft6yGwUHk0EwWd2Bk_1OHlrVlJnWR1FytFAFlIpakO8_yeF
+}
+
+AzureEntityColoring(SpatialAnchorAccount)
+!define SpatialAnchorAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpatialAnchorAccount, SpatialAnchorAccount)
+!define SpatialAnchorAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpatialAnchorAccount, SpatialAnchorAccount)
+!procedure SpatialAnchorAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpatialAnchorAccount, $stereo=SpatialAnchorAccount, $tags, $link)
+ !endprocedure
+!procedure SpatialAnchorAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpatialAnchorAccount, $tags, $link, SpatialAnchorAccount)
+!endprocedure

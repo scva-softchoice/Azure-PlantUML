@@ -1,0 +1,16 @@
+sprite $APIProxy [70x70/16z] {
+xPP7bkOW38GLovxx7xWZF8HbtbZkBT_cZovb0HNPR3ORuVQ6wIMi3a1_tW9mVQDa-C7f2ySFHaKK7Ve27Iq5u-XuywlX_5naF6I_J-cGvQg8SinrKSQRnY9N
+NX1nNgRB7bV75nQULYg9S9Pvs6pS5Gp7SS256lmifibbFJe-1_maAzxj7W4PCIqomtFSxG4x9hAT-AZuw54A_ievuvJ-mkQ0oxMN91Z2UO63knp7JKUxktvX
+eGBd5GrLDFt2qM13GcD0EIH5mXmJ8xcML5f-1Gd7IiNFn5fb6P4c4QmZafJTfiBBlEJi2dbSFXmgVVwxeAdItPKnVwcbx29ongxBiycYJ3TJSimgSZS1hCB_
+cSP9n2OxXSt06E58D8FQbj8cWdbBQNbZiWZNDcPzUxy_IRnmD2vFDT03nhYvK416azTa05UgdlOvg74BgeWCxFuMP5I3xsva_FPsA3rHhlpNcoeB5TbiDfjF
+}
+
+AzureEntityColoring(APIProxy)
+!define APIProxy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, APIProxy, APIProxy)
+!define APIProxy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, APIProxy, APIProxy)
+!procedure APIProxy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=APIProxy, $stereo=APIProxy, $tags, $link)
+ !endprocedure
+!procedure APIProxy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, APIProxy, $tags, $link, APIProxy)
+!endprocedure

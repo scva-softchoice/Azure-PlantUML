@@ -1,0 +1,14 @@
+sprite $StorageAccounts [70x70/16z] {
+xTF74OH044FHTfejyWyOSrw72Wzw0VonRHoHn1ALDcdTGcsgT8kfeeegRR5xLr0aVAeOxKC5HeCg7s6rDrh-Nqu_0RHFbM3byie4iokgv2fl1DP39g1erwoe
+mZjhvRNOLC7I2AQAHouIRXIH0G
+}
+
+AzureEntityColoring(StorageAccounts(Classic))
+!define StorageAccounts(Classic)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, StorageAccounts(Classic), StorageAccounts(Classic))
+!define StorageAccounts(Classic)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, StorageAccounts(Classic), StorageAccounts(Classic))
+!procedure StorageAccounts(Classic)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=StorageAccounts(Classic), $stereo=StorageAccounts(Classic), $tags, $link)
+ !endprocedure
+!procedure StorageAccounts(Classic)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, StorageAccounts(Classic), $tags, $link, StorageAccounts(Classic))
+!endprocedure

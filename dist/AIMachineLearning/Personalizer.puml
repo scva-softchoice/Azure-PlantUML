@@ -1,0 +1,18 @@
+sprite $Personalizer [70x70/16z] {
+xTHNOgmw381XoLQpsVz-RuWHnXCD8halftqfy_QFP0hynlx1KX3-XyBMjw6RyWzQIBgzClhE1iHYPbj44J9OAecgsgU-XGJkaHwy4kiLRjMbqk98lXQAHxmI
+wmYtMDNSzkDCNIlAjI005jR-F5Ck4Uk2wnVqPndKQuNWbMwJmJjoZHW72r_6eUne1uscRTbESny5iWyGiMGdEIku9_UFY4_Jmvkud94webO0ugNwrdTwToe2
+GyKl0IorOEak6DOZXX13Ed3h0x-_QmbYbIRjm_jx1KA55jp2OT0Zaayofn5yNSY6cepYMk-c7uGl9R83tXpikfCUf81ZNoZTnucU20vY0yKL_afqyWNkZuMI
+2iDWjnLEAefhfVne5gtnHlcvw1Mj5O98ULWH6nX2mKBcBYkm3GgXSX_nUxNQ0M8aAxKhWG7dR27aDTAZKG1ihfHFOxrVCmHEPZU2bLWSwvvfmJrMRMZy_fdc
+JxJZyQxVIoeLJaUajP8_qjxv-dBW8z8iY6GP9P_QAqrWGIxB-31jgC4aQSQNyigIANH3TF8DQZjnie-JO2UT6Gr6oNP2F-0sKJXAFioQwNkdK8A3au4o8pkb
+rBhIeIwPHYdHgO8hrrcCKgmJmmdrZ7IXt7em4tlaKKNMoeJQ1_vUXM5LHeSUu0c35wqzgrIuX_H4WKoX7EImlAWl2lnU_laF
+}
+
+AzureEntityColoring(Personalizer)
+!define Personalizer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Personalizer, Personalizer)
+!define Personalizer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Personalizer, Personalizer)
+!procedure Personalizer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Personalizer, $stereo=Personalizer, $tags, $link)
+ !endprocedure
+!procedure Personalizer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Personalizer, $tags, $link, Personalizer)
+!endprocedure

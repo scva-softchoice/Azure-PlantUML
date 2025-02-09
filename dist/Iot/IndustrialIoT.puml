@@ -1,0 +1,17 @@
+sprite $IndustrialIoT [70x70/16z] {
+vPS74jim30JH3lh_ZsCg8ArWp0WYqxFJrBWydQr6ToYWj8d0Nq1e0uO7nhIA-GMb9JI60-iUGGmDuKezRAEEl5uZpvspFIr42viBXHGYLWgfxwtFbfFM2vaV
+99HXDTC-ZHN_qX1MvMlCazC2hbvUE34U6uDB8Oh6T-j141f3Hwbpd3XDKNIY0GoemyTNQ4eUnJxWR66QaKUHTq0T2OlG51-acv5IH-yjve751kGeP67HC3hF
+mr07ROHHiiGsduHY77xunQ_vRu-me5jqTb9A0ytNXLyi4Ue3ScCv0YVY7KlGBLYmyCKY4UgvHOuEauRkaKMjmes5KOB_Dej90msL5ug6DAnkuVVjZ4xUDqAf
+M-IFizYt5djYkQDY4IyXlyy2RMnQub3Rj1Wry5zQOhLc6SEo1Kmd_8cq9uv4jeoOTIGFOZy1F_zqukHjsDDF9_cyMPzyATWq8gJwfG0kxotCLavQF_DyK7sQ
+Uk3wAUTZg_vAxdeXythOO2RbGYRnWqaXnNhGIONKqP24HMaHmy1e7NY7QHtp3ct07WZje7u2saFW3gKRlW
+}
+
+AzureEntityColoring(IndustrialIoT)
+!define IndustrialIoT(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IndustrialIoT, IndustrialIoT)
+!define IndustrialIoT(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IndustrialIoT, IndustrialIoT)
+!procedure IndustrialIoT($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IndustrialIoT, $stereo=IndustrialIoT, $tags, $link)
+ !endprocedure
+!procedure IndustrialIoT($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IndustrialIoT, $tags, $link, IndustrialIoT)
+!endprocedure

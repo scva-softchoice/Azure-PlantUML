@@ -1,0 +1,19 @@
+sprite $ExpressRouteDirect [70x70/16z] {
+xTQ9SgOg48RXhw7t-x_WCmOgIkk_nEJiyzGwa-Ir4QWIx_kjiKXltsp8mFW64lc13CkdzirH9jpLVgJIvU1lNX5an_Y99H5k4_s1KIZJPACHkCqoCrpCCrDm
+Ky-DmND3k6V-zMVj5icDp9LbDjoHcnXlUUEuGNF3Xx4O2oAyr9RdnvXheYvg7vGRdl7bNN1k51jMMqXxkSjrly0sg8gg3Sgu5hcXia3hjf5Ec6XErf_kyZHt
+s-qNnee-Ee9gRctK__BHA6IyQaLbkUbbFF-bdIERgqo_F6NkRdIE35epTPSdUHAP6SPK3iUEtVr9P2ogdNOP2tBtVeuScPlL2oIdzGYgBaTwV53BJPn78LGa
+PHYtlQwHsTyO1Hgo6CFGNZtlykK1rxecENuYb56Qkrv575GgjhmiZuKxNqP0BZjMzoNhUHJdTykP1b2axn6mEyk1rGeAcv7i90EFbJ-P9Gm5yOm0Cp8EXBBi
+ebHqJG0OaGPenem0xjParuyaGd2WuxxBZAGruVr4y8DlmRREelEgait8Ugv89iQ28co9EAOImRW3F2Sf8Xm3quYqyJzjZP3FeQaHJY9YFjeiqyUB7LDgMRhW
+8OkW6J6RaOupZc1KzQTg7sX6H2-VLjJNgpQDY6QsPxjmvX5DxTEC65PI5tJ-kTi1NKKeweAgYB03dP7wACLJ6Xbsb8etHgaYq-s8BjwTu0NEaj7JjE5uoKg6
+Jv4WlEPBXa_dBHhU4PaPbn7oyWdwQfhmSqGYC_hNle73rmX_p4XuNu_S63SYWAY9vqRmMfs-KiANiIuX5y8zJTGYmqtvpSHlVm
+}
+
+AzureEntityColoring(ExpressRouteDirect)
+!define ExpressRouteDirect(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ExpressRouteDirect, ExpressRouteDirect)
+!define ExpressRouteDirect(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ExpressRouteDirect, ExpressRouteDirect)
+!procedure ExpressRouteDirect($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ExpressRouteDirect, $stereo=ExpressRouteDirect, $tags, $link)
+ !endprocedure
+!procedure ExpressRouteDirect($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ExpressRouteDirect, $tags, $link, ExpressRouteDirect)
+!endprocedure

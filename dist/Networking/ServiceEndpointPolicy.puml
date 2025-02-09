@@ -1,0 +1,17 @@
+sprite $ServiceEndpointPolicy [70x70/16z] {
+vTS56cCX34NX6o39XVtlTuGnKYCVVUEdRd-V2_xOIbNFPQRgLd2VgAUpCQC0iUhvEBxM8mFnV7ryZr4nppUMQfYmXyZmLMcdIbyLFLN6gdW-nc6vHF5Bb7g5
+GboWE9uhghxKB2eDJujV4msl8gCffSM5i20mEIKYaSah6f30v1MLW3nYRAj493999IBtJ59f0bHtBTBcAwdkNgLOO5ue9AcV4P854ASB8AHXlZaPv-SsIWMA
+S_uSIWK0OyF4Q09eHd4fgause70EKfccA6dQf3AZq5KdOyhFYVXyqxz-mhqI6Cu4tvwQgXeJIcIYuXF9A-HaWXAGX1AOgGGaeKHcKImW6oKozaE9I5wXsJ8i
+7X7ISyhTdFw75FuUfTzVvE6xhvH-trGUzByhBh3tbGB8-me0y6sb0gNd5JmPT3EUAh6_LwdSb52QRriKFaPqZt2hDCyColXsUQn81XbBF1mKZgsYXsT4CTih
+FIXwg30ezOhfql6eSduQVZvvYT3PzEs2qD6aSRn86hVrJgluu_i8
+}
+
+AzureEntityColoring(ServiceEndpointPolicy)
+!define ServiceEndpointPolicy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ServiceEndpointPolicy, ServiceEndpointPolicy)
+!define ServiceEndpointPolicy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ServiceEndpointPolicy, ServiceEndpointPolicy)
+!procedure ServiceEndpointPolicy($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ServiceEndpointPolicy, $stereo=ServiceEndpointPolicy, $tags, $link)
+ !endprocedure
+!procedure ServiceEndpointPolicy($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ServiceEndpointPolicy, $tags, $link, ServiceEndpointPolicy)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $AzureExperimentationStudio [70x70/16z] {
+xTLNZeKm38LXKkrZsFzw9qCH0PiIffV_lg9FEHJTxWVtNmBYcn4dfJShKKhXpGn4qBsz4BfVaelHlnb9KgAtAZBsnjDu6OjlVcVVzhwvc4iObRoKMhU5d6S6
+b5UcKOdPh7MHYOHdTwOkkMQZFWv1i3-8stMjG4Hegz0-Twb82HTAU7AMt7wMJ4pglYHQoyhGYlsOOwqql39ng_3Qnoj-l2Dpz1Q5-UqALGezLOYeKaWfChpM
+tr4m_Iob7yPmhM3k4nGwKS9EIKyKHoKiyVwxJVUKf1HorLok50vdUmXhkw-Em1Yc161tieUnnbHlIW3wOGx0mQPS7KLlyW1aMEe1H0k9DQ8tCO1XJG2uupsQ
+YUD1wpt7ctA5w4s-HlGclKSpUTmZmxPUR_8Z8letCb7jMHxtLg4IYnMeD2FwC6dxRXCpn8nVc_Tenc_UxKD4C3BgA7eJSKdaZ15BwGN82v8reZVrDYC84nBK
+7el1O2KYq-Ds2cdQ949gpobpL9p_PEGgFhiAUeyTpYxZwI7pFOMJdO_SKkxik2rlAyHDELlnJKpiVch_lG
+}
+
+AzureEntityColoring(AzureExperimentationStudio)
+!define AzureExperimentationStudio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExperimentationStudio, AzureExperimentationStudio)
+!define AzureExperimentationStudio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExperimentationStudio, AzureExperimentationStudio)
+!procedure AzureExperimentationStudio($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExperimentationStudio, $stereo=AzureExperimentationStudio, $tags, $link)
+ !endprocedure
+!procedure AzureExperimentationStudio($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExperimentationStudio, $tags, $link, AzureExperimentationStudio)
+!endprocedure

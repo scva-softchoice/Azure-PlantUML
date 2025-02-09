@@ -1,0 +1,17 @@
+sprite $EnterpriseApplication [70x70/16z] {
+xTO5UlGm38JXaMT6olR-zosu5AkKxC_m5fQ_9xANy7kXLm3S40ZgcUzfj4WrG5GZO5I3XQ-iZAyg-5Sh_ol-uolvl_Ak6Al0pn6Z0J2QUEzkYzmQ8BR6WBPc
+_ChA_mf-M8NNLFvNwi-ib5NFDgwLImFWqXZWPHD9vNCcnzbA0aoJCvFEcXmuonHVU5PqDXDPviuSBEsNgQW6W1gs22bPL2e-NfUuD5d9zvWwNjbgLYHsJXsk
+r3tHcMAJKXoiR7CXiwhDPQjC7gwy4DVjbko3bNgnx5JEOrF6kKeRIJcZ6hlApUNv58ZbybOxMZAFbsRbfW5YkTmhdN1l-nqgoYigP7UmqlPe8MVnMokkU-FB
+FPhs5N57yoeyq1ULTM7CdQnxmXHVVJla-vka6Qd0GNmxazD-hE8mjymy3CzBE27NVNgfPk24iIwDAn-x0wUCN6QIvcNYfCZQISbpdDEuT6oXETz9uNf1oH87
+Vbjt
+}
+
+AzureEntityColoring(EnterpriseApplication)
+!define EnterpriseApplication(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EnterpriseApplication, EnterpriseApplication)
+!define EnterpriseApplication(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EnterpriseApplication, EnterpriseApplication)
+!procedure EnterpriseApplication($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EnterpriseApplication, $stereo=EnterpriseApplication, $tags, $link)
+ !endprocedure
+!procedure EnterpriseApplication($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EnterpriseApplication, $tags, $link, EnterpriseApplication)
+!endprocedure

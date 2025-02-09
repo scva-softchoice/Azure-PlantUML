@@ -1,0 +1,19 @@
+sprite $DefenderPneumaticDevice [70x70/16z] {
+xP87akms34GX9dH38kv_N1SndAtDIyhP_czomAjkKF9_vXSfbr9hAVcGknobwGirttDKLMsrrl68zpSyHLLhqybydsIFziOHjAPQjjgC8Gr04j2WgjQj92qa
+kFn1FwTc8qtLLuv-TH_OrAJbnOQ5OxJ6XPBqSkzJSomk9IJcVgKuyH8bkpjYNNMZ3zmfW-9T1kdo7XOzrgEucxonIEf-HgULC3aaPyo-iKWTdGPBfroZJ_rW
+aTElw9JaHm05p2_vQ2dk01f-hdGC2Ix76ykaEuUboKyaD03kvJEBkGsBoa_aQKclQiWJ-Xc5Torliy0l38wTHlUpfDXkzoQJHCYJStKl1mQdcto2EzREI7HK
+ehjyf4vBaH-fQ569ye4-rW95aiN5q3tBEpYZG1RG6QOdUOEwMqGfia16qDthkoJdUfG8CpLdaadhGn8KMUB0GtEv-zco76KOdOW-AekKgM7toJE80eUiKgS6
+jAkxzujuIfAiqqW5tw5WIDOf91hUE9HiiadICTcKGHZZT6vvYF4SxwhSuoXAFYoQvNU0QIdoLrjIAINViUHIqdnRm07ohYM_cgka3iXZptB48CWYaaZb0DJq
+0gUbfgzHHWabixGfeV8DYA--Hv_FCfulzvE4lhw5HV7DJS7pCSWodixhCjx1Ob2fm_8x0Vd7MCnWOozsXpC6OVR7MNuNVw251XidVOyOX16cSozKRA6SUr53
+CHeZ4cqJ8WP9A_ASXx5kGSF3PH19uuqgp0xPuZ0RSpHB8f9fGPLDgWNC4kGHCCasCPVbJ-ONlm4
+}
+
+AzureEntityColoring(DefenderPneumaticDevice)
+!define DefenderPneumaticDevice(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DefenderPneumaticDevice, DefenderPneumaticDevice)
+!define DefenderPneumaticDevice(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DefenderPneumaticDevice, DefenderPneumaticDevice)
+!procedure DefenderPneumaticDevice($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DefenderPneumaticDevice, $stereo=DefenderPneumaticDevice, $tags, $link)
+ !endprocedure
+!procedure DefenderPneumaticDevice($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DefenderPneumaticDevice, $tags, $link, DefenderPneumaticDevice)
+!endprocedure

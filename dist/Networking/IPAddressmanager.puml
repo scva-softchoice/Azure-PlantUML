@@ -1,0 +1,17 @@
+sprite $IPAddressmanager [70x70/16z] {
+xT5NWgim38NX8zbgtl-2RmpADD84jm_VbEJmyDDmqudKznAyyR6VuceS4FzyvQoS5Jr0ZbVEobdnYB3tQPVfc_ciCXQcoSSKc_cu4cELqtBwvncFApQIVuwE
+pNnKyV7vREFADlELoYXKZj_HyQTx_4rBMyYcaYp2Fy-mxHGiU5Cf4R284FPMEekgDdGpw-ZxAWA0HGbseQ1TbGum00BRn9YZOIf5n6ocr2Pbq3nGgm3Yvcxc
+xkkVBTzxgT8Wlb6k2DXleL952UR9r3n9-HtrDT480At3EIl51sD8x5EhLAG1i7mEgSsfXGe1OCbNah8g_785fBuYlEk-CjENVi0Uwm_mZlEOgxq47Ebp9N6r
+mdZNOkLuMRUO1EzaIGYZWcAYpzjHPN5XkF8vEwfwJCwOsFCvLNciN4MktmL5BMv1aOzRsa-fTDJG9MDCFSPa3Tt7K5IH4YxQc30rmMupOZXAyt4Sm-vEUEhq
+0m
+}
+
+AzureEntityColoring(IPAddressmanager)
+!define IPAddressmanager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IPAddressmanager, IPAddressmanager)
+!define IPAddressmanager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IPAddressmanager, IPAddressmanager)
+!procedure IPAddressmanager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IPAddressmanager, $stereo=IPAddressmanager, $tags, $link)
+ !endprocedure
+!procedure IPAddressmanager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IPAddressmanager, $tags, $link, IPAddressmanager)
+!endprocedure

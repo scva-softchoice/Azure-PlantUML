@@ -1,0 +1,15 @@
+sprite $ExchangeOnPremisesAcces [70x70/16z] {
+xTO56i8m30NWrHAQ-zzt7Z9FXaiVzhxAZyEg3qu4L0DHGHoQuewLO5F2NogG-e1Kx2AZ9iKFtSlo8DLR5NUak9zJ_FygVbE99vHB5smlHxUwOif_AWXzSBjQ
+5NwdX-Ky76LKbA8KPMDhR6kIqM_w7iLNAb5HiYaMXOyPsehhQbNuyz9M_bkLdVxdbAA4-vGO-gJv1n26qMXLzDol54NU6BXFuR-3ymfTBwBGR5nLQ4Yc8Qpa
+-RX1aOWY8uzMYb8KJ_Fmjv7cyTLnWFHag3uu3G
+}
+
+AzureEntityColoring(ExchangeOnPremisesAcces)
+!define ExchangeOnPremisesAcces(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ExchangeOnPremisesAcces, ExchangeOnPremisesAcces)
+!define ExchangeOnPremisesAcces(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ExchangeOnPremisesAcces, ExchangeOnPremisesAcces)
+!procedure ExchangeOnPremisesAcces($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ExchangeOnPremisesAcces, $stereo=ExchangeOnPremisesAcces, $tags, $link)
+ !endprocedure
+!procedure ExchangeOnPremisesAcces($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ExchangeOnPremisesAcces, $tags, $link, ExchangeOnPremisesAcces)
+!endprocedure

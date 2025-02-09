@@ -1,0 +1,17 @@
+sprite $IdentitySecureScore [70x70/16z] {
+xTO7ijuW30HWgyBzJvpVf61c0y9oocjxW6zMSe7Z3OS5OX295C4OXjO8fPNd4s5sbCHwKU7LIgXbH_aH9DH_HYF5wy_u2B7tMAIKsZFisUyezP927H6_9b2y
+NcDZ5Pq-wzaJeZRQgD3qMK_VMpuL6fJvLp1zvGWLkQ_OkTxBTiSoIqMFN-dRXJAH8aELIaTFUtCt5QY2PMA5eSga36yfMEMWNYPIe0gMYHMQLEbbU5zHgD9Y
+xcxxIdaXVa2uZqInGl1pWOSTAVZomsSGAh1RBCEnWhl5Xor4j7vVY5WhxXR_lYkbjc0LF0bqGv5Z5Z9liRdYjQNm-ixGeBdI29FxTo7u5hSpKuvReTyhbB_V
+mJofDccaCrtHDaxQwKLo4LCzbNOPo2ljHIvd7YXi9_DK8L6pKt6N9yehwcvcJnLn-pZAbu9lMqzfyHRZVSI7r27RZAsKaglYDLL6regb1lAQ6idNIgKTX2D5
+TnID54yCX4hD38IA90P2nMB5OgNyeIvlETy
+}
+
+AzureEntityColoring(IdentitySecureScore)
+!define IdentitySecureScore(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IdentitySecureScore, IdentitySecureScore)
+!define IdentitySecureScore(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IdentitySecureScore, IdentitySecureScore)
+!procedure IdentitySecureScore($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IdentitySecureScore, $stereo=IdentitySecureScore, $tags, $link)
+ !endprocedure
+!procedure IdentitySecureScore($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IdentitySecureScore, $tags, $link, IdentitySecureScore)
+!endprocedure

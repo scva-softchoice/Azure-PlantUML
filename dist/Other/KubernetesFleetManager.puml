@@ -1,0 +1,18 @@
+sprite $KubernetesFleetManager [70x70/16z] {
+xPM7qkmW24PHgNd_1xuBRecICNV_tiuKPmYUVAJ2CPNb0Axm52I7qBCMsnBs8eiviTrvgOKki5kOBhp8ycUfD55NbaOJ1GAMYRQoa4pWpM8ZlBAeZGZTBDl8
+shADx2tQ-_hEfOMlHVEQVRBbpoAE5yLveINn0ejQGf-re1o2prcW7G9FMHPyWkL54vbUS8klowih-yxHChAuqwllYuxWygdJ0RbPKlgsUWCeTN_1lrgPM5hA
+37JmTV-Zjhv7nnRMaPVzZsprFzhVrANbTllDrr_x9s5X997NM9W9EfMPNsOnBY6ejQzY_sDXPaGI3Wkss5h8N2tO4o66XIKQELi4x-65eOEwtP467H4kq24U
+B16-eAYoDvTksoQumlLWOrN1FkRDWd50ja3WCKd2kWXabwz6oF6yDawIiPZyeItGARWxBm7mTW8FFUgZjF6y26KxfG1jUxJbyzYPn01agcZge3CB0amLcSCq
+WFCeE9NgF802y6cKl2TxorcKd3-91K1EecZovgjPeAoZrEHrfY8lms0-2W6dC7KH9IKb27hPX8aroll9DShf3L4c5jj5YJfNw3JrUdjiwZJRHT46dU8xuKhL
+wgLQuzUDTWl34EKBjxdHL_IgT_kg1NOWTNm3HXWf06LNBXBtb0j0fGuMsDFeGOKRuSWRAZreZ-P60rXNvOeqq5nFX_pn3m
+}
+
+AzureEntityColoring(KubernetesFleetManager)
+!define KubernetesFleetManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesFleetManager, KubernetesFleetManager)
+!define KubernetesFleetManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesFleetManager, KubernetesFleetManager)
+!procedure KubernetesFleetManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=KubernetesFleetManager, $stereo=KubernetesFleetManager, $tags, $link)
+ !endprocedure
+!procedure KubernetesFleetManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, KubernetesFleetManager, $tags, $link, KubernetesFleetManager)
+!endprocedure

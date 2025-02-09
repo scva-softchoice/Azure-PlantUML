@@ -1,0 +1,16 @@
+sprite $ProximityPlacementGroup [70x70/16z] {
+xPY9hceX34LRQ3TdvFx_txxdN3rDJYNEkZApRrQWSDMMRew0AGX3o2K1K0gY098ZLy1BV18sA2yEiuT2O8-Uguza2f2TlsU5uPgjc2AeixP2XaKl5p854LZo
+XJIEmb0A3Z1THJevKFxZ5IHUdesWR024cX2KShGKfKR2bfz5koNRXCioAEnR-CzZatHUqFcMv5gOY0Ol6EvlgIUCvJnPizIfw-SZrLZceOodPCNIYHYDjOY8
+yJTQ9X6DMlwchlDFL0CdQgxkwx-NEf-ePvOwdOAwSjE3oEY_5mZ2xwM85E-cwoWYPZStsKjhNMguBl4x-XRBp_Ap_2nqaryUnBA4QKEM1VcXl-j-5g1H8y31
+Ojgqzix6QHb3iEcoBCgj7P_0el73M9AHnikJO15dZGBuPSWtc11iqBPfXTnaSdB3AKxxH8aqqytv1m
+}
+
+AzureEntityColoring(ProximityPlacementGroup)
+!define ProximityPlacementGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ProximityPlacementGroup, ProximityPlacementGroup)
+!define ProximityPlacementGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ProximityPlacementGroup, ProximityPlacementGroup)
+!procedure ProximityPlacementGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ProximityPlacementGroup, $stereo=ProximityPlacementGroup, $tags, $link)
+ !endprocedure
+!procedure ProximityPlacementGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ProximityPlacementGroup, $tags, $link, ProximityPlacementGroup)
+!endprocedure

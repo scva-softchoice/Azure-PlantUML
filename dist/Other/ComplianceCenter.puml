@@ -1,0 +1,19 @@
+sprite $ComplianceCenter [70x70/16z] {
+xTO7qkCW38RXJpH9nBd_THSoou1iAyNRo_FtaZSWql2G2d-aH1mHVmn7WJz6ltSb_kZA_ufmyyvNjo8V-s4L-Lp6NghoiHjXfrwfCAoqNQbi1ACkbTmLQKew
+mKk5iShRh1JgWZG19y9IsG8MzL0XSvHkXJ7HThLoCnkwk2Ep9LqhaZkMXhtfpagPbQsvoGTcHJ74ovM6bh5ShyHHuOkLhKlBSAzNygXKMocvAUuP5LifyuXC
+PTxg8awGhOYjw5UZegeHPtJOElsXbK1Dw9M44-HKggaevuOVmPoEH5MuzF5NCnSnbLSoOQ1Ivqdp-nKc86HcKM7E0GWOyjkL0CgYaomBY_Vj_av5JEFGsUxt
+--sTYEYHZ8oOIefDreR38e-8bqbhHUX1TxUwW30YNkPrXG1M3-D1NrOYYleAkhXKD50JjSbB9AfdNbzTAigDFl1043t1aSVvTM5K74ZUM9C-97IwgVeonDr7
+NXTpKrz5E6yten_GSLNthIAvvrjqtHAqkiGUyphGP0yRL5qyRt6HM9Sj1Bko9bPFXYppvBa34hkqBlkLTPuaOmDWFLJy34FMVoKnaxKLVrC2DhideMMoTYx-
+Y1Nbv9-3hWecvy2Hz90XqLN2v0mdXEELiXe1EyKVxypaustmPGTvT_-9QcMS2KLD1M9cG6e9N8b5jNQoFrPHA-5Dh3x6s_XYnA8NpqTl8lPUHtocw571nwAe
+9H5Nx5w_u2BxMchw0W
+}
+
+AzureEntityColoring(ComplianceCenter)
+!define ComplianceCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ComplianceCenter, ComplianceCenter)
+!define ComplianceCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ComplianceCenter, ComplianceCenter)
+!procedure ComplianceCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ComplianceCenter, $stereo=ComplianceCenter, $tags, $link)
+ !endprocedure
+!procedure ComplianceCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ComplianceCenter, $tags, $link, ComplianceCenter)
+!endprocedure

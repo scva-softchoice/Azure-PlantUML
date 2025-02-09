@@ -1,0 +1,17 @@
+sprite $ArcDataservice [70x70/16z] {
+xTA7igim38HXIzgLZFF-xtiT7JBW588p_GxVgMd_BAKSa46P9XzD9rJL3CbCLMT2Qy7mXkcvpf3u73eHCHoohvbSWYzopUIK-J4oRY7f7fqxoM7BKORRoQNN
+vKbrRjU9vQCAIShblKhvmtfGkL5Mvh4y2PgiU3kitAhAvd7pckdmTBqTLxe6EOHswuuhQO7AMvg9SvNK7AQwEpP65gOgg_Qm5UOhRQpybrkkBTUMQykrvTfo
+RLcalATOpczP02qln00i4rlGcOmDfAajoOPZIRDRafIL0RzjIJf4vhUiP8ZCRrcL3fkPUtUi23OyluNOM5wVZP_TujZHNY5ssCviQUDdxXN7mDktBIsmnxXN
+mZ7osZvlQPKOCFugcHbvP6dSqfOQV7tdMkc8D-WHjTPbwR_2dNZ5k9Er4axCeyUZ8f6cEsGybCxZmSd95GcbazXnvt6Af7liiIID5zun8V7EktZ1iXAFdrdP
+s8yTI1aWvg6yKimCScZvH8t-FK3JyeqeU3H1odaYQWRIFTm9cAb8-UGV
+}
+
+AzureEntityColoring(ArcDataservice)
+!define ArcDataservice(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ArcDataservice, ArcDataservice)
+!define ArcDataservice(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ArcDataservice, ArcDataservice)
+!procedure ArcDataservice($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ArcDataservice, $stereo=ArcDataservice, $tags, $link)
+ !endprocedure
+!procedure ArcDataservice($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ArcDataservice, $tags, $link, ArcDataservice)
+!endprocedure

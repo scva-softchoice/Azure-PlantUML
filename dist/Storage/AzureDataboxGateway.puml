@@ -1,0 +1,16 @@
+sprite $AzureDataboxGateway [70x70/16z] {
+xTH7WiCW38NX9_GauRd_VQSNF362a6nIlgpIVjiqtAUd9r7IpCY2LSMYOOe5ZF_yx8vw7F22SrXq4DF4eyimooDX2v7bZCM0OanZ26CnPXXXJ93fMrc_cQ8q
+qimzSac2BOjCIHkjx7w88y835hNtyZoovxKZigUPpuplf1NrcBDWZvceFQ7J4LgjCvt2dDT4DBUIgvaGV50UQJ_sFDE_5MqVr6hAaqex_pNNN59sW3OJDHL0
+S_5JsWnCWd-L9EDRhiBI2lZ1jW4nfkOgUfMAyHeLvmSjntIo4eNlfAFCtWluuS8AmK_beaf1QJAhumByhZiHMPmZRy-wvKhPdGtQgxoa79-CkRoo2RvSL55y
+4rkl47-MAqHBbofRmPuiL0odX7PEfH8TGll0FJj55To1fwSt
+}
+
+AzureEntityColoring(AzureDataboxGateway)
+!define AzureDataboxGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataboxGateway, AzureDataboxGateway)
+!define AzureDataboxGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataboxGateway, AzureDataboxGateway)
+!procedure AzureDataboxGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataboxGateway, $stereo=AzureDataboxGateway, $tags, $link)
+ !endprocedure
+!procedure AzureDataboxGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataboxGateway, $tags, $link, AzureDataboxGateway)
+!endprocedure

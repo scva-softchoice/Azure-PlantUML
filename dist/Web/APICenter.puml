@@ -1,0 +1,18 @@
+sprite $APICenter [70x70/16z] {
+hPK9ckKW28JPmNV_-yx2w-oOVD7-PthN2WMMWHLISqMOGpsHQP54OHnoTyRyGbEbCFo3fpoPUpOMfopfhwX8xbwSZOBkheJYMTD4CJympC3pAWchYhl3F5hC
+QApB1DFmxtYo9GEimXEU3FEsIORTRHgJEc8x1644iHCoC2GhOAWWV2ZakHpK-8UNViaw41pHM90osZLIYYHQvQZck5HYZuofuB8PKyx7L78lVHiP_-0NAXvx
+TDSXUw4I1sYPQc59eyD5XKTKB5KAHr8uiXiLMibd8IHUZBglSfcqqxe1HrGMusvM7rvjKVuxh_JOS3Z3hGD3JyRWIhGIBtAR6ivGuRL80OamGWU-b1CC0qWx
+8ADl4ckV1OCHE4yY-YTn1C21TzAID8xFv-URS7YYZEFvIX9u1HONgMTItc3HBWOesZjFr5gqHcVfJ419_-3QrMPhyVQuOVbxXP9U5BLJ8uiysY8Yr0nDtQ_a
+lYAo8ZLrqeEW1hrjn5C-eoCIHO2BXXa2UzTKj0DO9NITltUAiPQuMlzQqzRQfeU5d-zMpCKzJvRYotAg7zFyy4EvA0wrb2EaGu_gliXTNux3izIi9w1GpAXK
+qOuAFvoNkDQ2vPIIuXc5Xrm75HBVOH9Ky7uillnGWIo2jxT1y9QdgHUXRzqRmOeSJSe4mYZI5Wnc4CzO3nVo5m
+}
+
+AzureEntityColoring(APICenter)
+!define APICenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, APICenter, APICenter)
+!define APICenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, APICenter, APICenter)
+!procedure APICenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=APICenter, $stereo=APICenter, $tags, $link)
+ !endprocedure
+!procedure APICenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, APICenter, $tags, $link, APICenter)
+!endprocedure

@@ -1,0 +1,21 @@
+sprite $OpenSupplyChainPlatform [70x70/16z] {
+dPE9bgKW34IJL1RW_pzuZk0IHMtdtLbwmtkg2fjU486QXxifHEWNO771GFy5m-CM1tzsQBoWtpmF3ZTLzUxvsH4g7OqF7lQu1x8nWhtLajiUy50Py9Ocv6CR
+Lw61XoGYNbjP991gXal2Os2lasG7CuiWL18MdVjnV7AmO47DJvQZjxziuhj2rRmpPxdV1X6dkW8rFpZluYbrHgAiVtGuO9w1x22KT3iTJ0SSPMMHS79C6lZo
+f9QLe0ClApQ2-0msYQjGqlZH9tzBe7w7ASPMYaLZPKMkKI99NXYQo65o52RY97dHC14kOJoDaYGl0AcJdwCi4lY4sOCcSXWxBbbW5mEaS_Dz8aqTgApCVKmI
+wXd5-KavZ0AB0uUSW9z_UBH8hw4iKMP99ckMC7ni4QKJESeiuQl68EdPv4FE33d1pETI3gHAEBhbGYPt5h5SwTWKkk_CiAdFopG6tcz9RPy5oMBoW2KBzc5i
+jVXv5fK7z7OOyzgnnJ9jEvFET4ljUDHEgBb_iCXvNgsTA7KbaiNb4KyMtYnbjHZwThzQel-Foo7vq0Y79I99c4K-xvBN3L_go86ztpJED-srurPhcOvzV-jg
+nxJMaCHx9Ln-gUj0KQlVMEmbod55KWVWkT7pCXexdiQjJANMsuDuxHEwM4hjbEwpkxVACKay3W0XhWEZtWrpb3cDHi80tWi9ZPtrxcHOyi0YawDKelND2HM1
+Mbmm1KGm_oIzSjKN2sghjRPQQYkk7bVS8-7QdGxYzRa6MYXjnHX0F94dHnJsDWZgI5i1CQ3nZCc01RMs5Q51j45babUDx1RnbgASmnHwrPWasWhJHYGn07ZS
+0aciQphjSDlmdWRsjoLob86sb8O1g7_BefInjb661ZhdKKdqEp8w4ssZehVg8e-1cwcUrjKH_4ffEy7TCr1L34wLIeyzmRKTE1Enu8IWLUHjAzrHsiL3p29T
+8CozTHsb44UT2M-PCA44lFJLtAD_ulI4jWibtCss1pDApqXjdwX2htZxWDDViF_fOFe0HtiXc3uYLjejnPZ-1zQOKYZJ3uYQH-dtRIhqmZy
+}
+
+AzureEntityColoring(OpenSupplyChainPlatform)
+!define OpenSupplyChainPlatform(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, OpenSupplyChainPlatform, OpenSupplyChainPlatform)
+!define OpenSupplyChainPlatform(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, OpenSupplyChainPlatform, OpenSupplyChainPlatform)
+!procedure OpenSupplyChainPlatform($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=OpenSupplyChainPlatform, $stereo=OpenSupplyChainPlatform, $tags, $link)
+ !endprocedure
+!procedure OpenSupplyChainPlatform($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, OpenSupplyChainPlatform, $tags, $link, OpenSupplyChainPlatform)
+!endprocedure

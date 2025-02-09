@@ -1,0 +1,15 @@
+sprite $IntegrationAccount [70x70/16z] {
+xTT50iGW38LXd2Jtl-_uFEhkvLjM_XMgMcM6P3BswYVA7FfNOPd37hN2D5wz4jHevZOLc-WP5GUdgkHAhcZeYEILGPjaH8NBIxk940vToPLSeSIyFmlWPy_6
+lBxuHB-N6uBuVkqyc8vAY63U5G6glMwlnC4LsrKXQAmGh5-XxaeSM65eh32SfS82JHKIMARYXfzVj0DRUttuEStpAszapKWEbMlUX4dcCB-Aanb8WPbCgsjw
+0W
+}
+
+AzureEntityColoring(IntegrationAccount)
+!define IntegrationAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IntegrationAccount, IntegrationAccount)
+!define IntegrationAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IntegrationAccount, IntegrationAccount)
+!procedure IntegrationAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IntegrationAccount, $stereo=IntegrationAccount, $tags, $link)
+ !endprocedure
+!procedure IntegrationAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IntegrationAccount, $tags, $link, IntegrationAccount)
+!endprocedure

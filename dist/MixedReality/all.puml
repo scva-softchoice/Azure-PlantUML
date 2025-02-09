@@ -1,0 +1,37 @@
+sprite $RemoteRendering [70x70/16z] {
+xTP9ceCm34HXgKg3pVqFt24X8SQ6DEnw-Dc_h-GLikVVltzAyuZC23UgN0BFHl128x8Ja5CqSiZb1EIUKFakvW5SNT9I-GxDniLCv4Xed7bYoo7LTIEktcCA
+VVNZyXG09yPa6R5xXMNXSa3DimmfPffb8RiOPO-1Cx0iA6FCia_ve7bu4WODKskdpCf332Ebumf2OvtIZ4dfiMmbm1dcaGPx8ie3yNa9bKzgHMtrTdgqeHmS
+iuB2tg2iKkKbIYCKR43Lp9yVeXaj2zqyYBAdy9VsVXlUmmwMisPqTyOWWz8Wp3Y0PGYsOmhanhOLqAoTOYGH3qupBmsT3weDueRML6Q89pFMXej8xIfD1znM
+mb3gkwA2hhAmkMC6BcAbKHictAk0PcvyoPLjAYdMLLPcumfBRIcFApQe1Ei6SRhYh5lK3nKZsegnTapAViNjRgs4GQFsA7vKMH1GpYph20J7bGMj7b2HsYWS
+LS1we8Y8rrPs5IBh4PURKZUyhI3gCPbnsggsLcXrEcPo5rEdy54Xw_H1bKLElIISpEaZI9FPSlhq6MNbqqKcxrYdAoWRCPsMAXqzsGaz-plL2dUd_0B__dq1
+}
+
+AzureEntityColoring(RemoteRendering)
+!define RemoteRendering(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, RemoteRendering, RemoteRendering)
+!define RemoteRendering(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, RemoteRendering, RemoteRendering)
+!procedure RemoteRendering($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=RemoteRendering, $stereo=RemoteRendering, $tags, $link)
+ !endprocedure
+!procedure RemoteRendering($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, RemoteRendering, $tags, $link, RemoteRendering)
+!endprocedure
+
+sprite $SpatialAnchorAccount [70x70/16z] {
+rTQ9JeOm30Vmtjru_mUMC6oA8sjOJd_U2l-ltQ02_ngocfiAmZuq_sK4czWpXItgJuPx8LLCJNncy17w6zxjHmYGOw_W6x_XCrIsDXdXPZl5QBi8X3R05zOk
+1C7ZDvNf7CpLxQTCrV56Hpoj2ssihiClRWEMeqI4ySz92WEs55lVDnnd3HQXARMUHuQnl8E9jS159O7JmapgdNsqZlsDmGgrv6wflw1rGn4HlNEV5Gr9JmGk
+VIQmn2zbQv_0XreOBZI551UBYFVW8cDzM_y3OO7ar8wRouccDgjjPXdwSUei5tufXbRTn5aaGf4g6AjLRtESab04zuphGjwpjIubNZJwdSlfHv2YcqML7Y7J
+sfAOAKVtgzVGI77Xr__0cWgfBoDz7clk4SEmGgcO9gVN6U04ItAYkvZOXXXgeKuXqb4AFLAm9LBTeu8qDbk9yqvmIwnE8R9hcudpmj0qkgeKFbECefQX9roc
+q4cQ4n4_LbVBEoF8A6QGd9A7XZ4iNKtGS2zBu2DTI5YFhpjZEjXQFxhhE6RTK4QhkR0QFHcj3yJ5Io3B3SlEOS8nDP2O2M69ukWCeuU5gYigUgYxojtCwgwG
+rKovwAReIhqOf3MEa1YaEzYdGLghd-jgzNFT9ft6yGwUHk0EwWd2Bk_1OHlrVlJnWR1FytFAFlIpakO8_yeF
+}
+
+AzureEntityColoring(SpatialAnchorAccount)
+!define SpatialAnchorAccount(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpatialAnchorAccount, SpatialAnchorAccount)
+!define SpatialAnchorAccount(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpatialAnchorAccount, SpatialAnchorAccount)
+!procedure SpatialAnchorAccount($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpatialAnchorAccount, $stereo=SpatialAnchorAccount, $tags, $link)
+ !endprocedure
+!procedure SpatialAnchorAccount($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpatialAnchorAccount, $tags, $link, SpatialAnchorAccount)
+!endprocedure
+

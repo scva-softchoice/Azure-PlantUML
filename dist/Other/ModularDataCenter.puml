@@ -1,0 +1,18 @@
+sprite $ModularDataCenter [70x70/16z] {
+vTK7Gjmm48NXwKyskVzvOuyiimBtzF3JdYWVi9KEKx-IyZ62QpaTvRZOxr3AnVuP9SeKbbvswVObnPTUDcQaxMjAU1OxIlbToZ3Lb6ckohHNPPZwnvHQAb5B
+9Mf_apASAXZcIZPqkvldodddodYnhwWWidaFKIlJBb4R_f0oNbVKF11kybnXmrhOGqNHzKmnJBaA4x7OCoKHPsgnFL4KWDs-ZiOFIZIaLmgoyhA7QGxjqxsY
+GFpeFO0r0A4-l8tNNYYp0DgVqYaNeoaEPBgf34lJ79SvzZiLcH5NfbQlO6cQ8sfbnb5R50OGZNYi1E2qNRcgT5VmOuK1o0yhsjrWkG_TS-DK_zpuhXZ0pL2x
+bwzA00rXkrkyAz4KUQxWHV7C9BFkf5wJcjVAE2Rovi07HJXh9jVwatas9D4ktKxH0yLt50NqnnK6eYcHDIKoKs4suyYycP6j2XcW1mgHg0gTAGH0TXMIm5G8
+HRQhA9Q_HZj5wyQIy8OohafbN6WpmvBJYP8CGdcZG8ljH25sd2Pwg6HiEEdyRybOz7De1KNWHS7yqYa7hOnIMjt5jQaeCkKiJq6EpCYVAr3I09p9a3rJsZEL
+uQPYdUAiPYgyhNohbNCbErG6FLE2CzbKX3wd1VCB8aDtYbBF_MbRkTccmdSHq5RYSISNQdq7
+}
+
+AzureEntityColoring(ModularDataCenter)
+!define ModularDataCenter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ModularDataCenter, ModularDataCenter)
+!define ModularDataCenter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ModularDataCenter, ModularDataCenter)
+!procedure ModularDataCenter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ModularDataCenter, $stereo=ModularDataCenter, $tags, $link)
+ !endprocedure
+!procedure ModularDataCenter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ModularDataCenter, $tags, $link, ModularDataCenter)
+!endprocedure

@@ -1,0 +1,18 @@
+sprite $ResourceGuard [70x70/16z] {
+xTY7bkCW38LXG099lFy3xrevyV752cEJRDz_UliiCJrfKcQnxfbmMekaGqBtZUm69hS7wL56guDWxRfHzskhYgTgprVn9QF8RWXa-pnbFWHLwM1WVK-uv6W0
+jGwf16c7J0N6waCc4Ao57LSvNUDbuynvLCnJ8A9KRIjMv6wwgc2_Y_9VQUq32kVCxogrvE-L-exIt72dBIkK3z4rHGNlQibGgOBl4IjGSmChJQ6l55W6rhgX
+88BC3QLGw1JcMqeXBe5nLpaxnBSLZmYC5SNZiY-phlXQkn4gwL2iU4J4XtH1yIuhsoiiLd8ceb2nxT97fSMA8vcsjLuexQWmhYIxiKN7jOQ5wAYKKCcUAxiJ
+VQBt35Tw6AWyrXgF1QeuZ2EZuWwEmgZaxiFO8tLZK3poT_57mqAUq_PCELIegZqB_umke9W9dHLMCr1A6fE1iLPGeMOUZ18F0_7nwwNQ7fuAriwCqbDXFICr
+HPapc9HD8R4pOhF_Gsoe-Z9OnwEDTy9K0mJscUo4pVV1Ih_2m5_BKGpC1A4qgtt5T8_JFEdU76aJ09WuHDOPHDQPcgxLPWYdgzLL1EDN27tY5eASxbLizPE3
+jSasorjPIMjbXMsMu-26b-Ln9BqRNpdMRm
+}
+
+AzureEntityColoring(ResourceGuard)
+!define ResourceGuard(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ResourceGuard, ResourceGuard)
+!define ResourceGuard(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ResourceGuard, ResourceGuard)
+!procedure ResourceGuard($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ResourceGuard, $stereo=ResourceGuard, $tags, $link)
+ !endprocedure
+!procedure ResourceGuard($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ResourceGuard, $tags, $link, ResourceGuard)
+!endprocedure

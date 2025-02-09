@@ -1,0 +1,17 @@
+sprite $EntraIdentityRolesandAdministrator [70x70/16z] {
+rTP7Wkmm24LHmWDg_nl-GHLmKC2T-tX-BMa2z2km0WP0cTvCBK7UrKX2ry5EG1UnzO3V4qbqXOs0wk13IbNiOqPLvXDupr4IrQXFIVr2xx-IpzbxdYLzOKLY
+WQc0Ou5AOiwfn6FAgCHYIgb4tlEuwJtFaX0JGbLn6t8gas4acEemgYXTuVs8qJNMYu2QzrrAhkyAXiEj3D3hWnx4UQq0jL6dLneD4n6B0YfCH6ADN1pHIZk7
+8IjSt5fEzJmaopzSsbfab9UdGiJGNoEWaWfB6DEBv7D9wbrBB1tVztYGSSV6Ov2zoSREOlUHtGQGbnaVHsQJlKKWGpfT5RP_C42bpw9pb2JRomBz3d9WscpD
+y0QD7AZds6NluyVRPkNmnXwH5SmsKy_AeMFni5YWDa-6r3gAU5bCLNbDEKSoP2ChY14GHLOsFBPMsmPfhw8AErLYJFrSKH7T7sUrR7Xa9IEj0lDjHQF0iz4g
+ZMqgLgfa8ok0lofUhQZAiGBpHoNYLlWU1ybATbhbLk6FHbQIjRCKCyCAPsNDj5kHN3DgeAUARlR1gj13XH9dflWycW-omQXJVLI4tgLLbDwB5Km_rby
+}
+
+AzureEntityColoring(EntraIdentityRolesandAdministrator)
+!define EntraIdentityRolesandAdministrator(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EntraIdentityRolesandAdministrator, EntraIdentityRolesandAdministrator)
+!define EntraIdentityRolesandAdministrator(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EntraIdentityRolesandAdministrator, EntraIdentityRolesandAdministrator)
+!procedure EntraIdentityRolesandAdministrator($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EntraIdentityRolesandAdministrator, $stereo=EntraIdentityRolesandAdministrator, $tags, $link)
+ !endprocedure
+!procedure EntraIdentityRolesandAdministrator($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EntraIdentityRolesandAdministrator, $tags, $link, EntraIdentityRolesandAdministrator)
+!endprocedure

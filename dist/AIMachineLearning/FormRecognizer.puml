@@ -1,0 +1,17 @@
+sprite $FormRecognizer [70x70/16z] {
+xTO5akKm38HXIzqEtV--WodxsIkdjLYq_-2ZhnHEAONxSzMApdVLMNIKodNcb6tTft8pIgdhjaz5C5dbEkst5S4a5S4a5S4a5S4a5S4a5S5a5SrKhGWcgIX6
+AtjNGYQlQ4OhnoMOv2o2oIgQqTle58nIxc6EKp9rFuHoH5_Rf1nTYPaZpAKohve8Wb9q_rhvhnn_K25S1QcmP5AAbvvvoyRuCmh3qFxRZuDwYR0aSF-jiL9X
+FOyCj74T94rlwHyHM9ccXLJgZ5YP6vZjE9K2eWI1wCePAdL212CLa6KHwBFYDkHibMNafD2csYZsiZ-F_nKZHiLdnSTHqFx7yEoemC9XG7zIZFwyH8PlfJmf
+XHYKIipnCw60NOdh-yfQSPfGQbijdzbdxHzhYj_AAPLrffNQzfQymg2VdiM3kXBikttjTeMH0jAJs-ZwKk1H97BxotMjPt6azjskL0_Jnr5NrebZ-lwhbFgu
+hPqkb3wDYNDTJk4QCQ7qG8gJTrC4O-4aA5tvO4GC6EFhQgzNeXfSfmVOhqmxIBhTOpWvNozzFp9Dzp5UVZN73St4Em
+}
+
+AzureEntityColoring(FormRecognizer)
+!define FormRecognizer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FormRecognizer, FormRecognizer)
+!define FormRecognizer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FormRecognizer, FormRecognizer)
+!procedure FormRecognizer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FormRecognizer, $stereo=FormRecognizer, $tags, $link)
+ !endprocedure
+!procedure FormRecognizer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FormRecognizer, $tags, $link, FormRecognizer)
+!endprocedure

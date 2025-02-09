@@ -1,0 +1,15 @@
+sprite $WindowsNotificationService [70x70/16z] {
+xT45OeKm383XQ1ku_tqdMF0rcM_lm-t7u0ooHD1vH5m-mnBrmogFogF2kCU92i8UNbNm85xXUgGouTPFLauhKVNNLEWIDrIc0U4QgVXmMb7HOO8RAAewJwUL
+6S4rLdTVKU4heWsLWBzPCREwdqgYSdHUULIg1f4TXF-I45WpBrSR8SoiNTM9PIgkN5KwYmnrgWnRwqhCy3WsROGhhkOgUrQxaqeUVKdbKUdxlXk6n79ToVlB
+5UlpOC7fJ2Vmfj8vXAnYxjihrT5tLrO-fiAGH4LzK4WINKD8GTsGN4Hs6AA8M8w8CDBWQyqTv3lGY7ALPm
+}
+
+AzureEntityColoring(WindowsNotificationService)
+!define WindowsNotificationService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WindowsNotificationService, WindowsNotificationService)
+!define WindowsNotificationService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WindowsNotificationService, WindowsNotificationService)
+!procedure WindowsNotificationService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WindowsNotificationService, $stereo=WindowsNotificationService, $tags, $link)
+ !endprocedure
+!procedure WindowsNotificationService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WindowsNotificationService, $tags, $link, WindowsNotificationService)
+!endprocedure

@@ -1,0 +1,18 @@
+sprite $ManagedDatabase [70x70/16z] {
+xTS7UkCW48PXCnt8_S-xqV-C6mY7R6_VblJNmqXfbzt-Lnxw-e-V-mg1YEyHVKPAWEKaPjg29cAAFcGAWl7rJa62lfxPc0JnfCnxbSTKrKnL9sN9qEDQr3pg
+K-6cZmWl5BjEeodCXGbTrxTGkfPqs4uTXu6aBvKUvHQnchbx7BcRALEvvNsjlATb8-rzhRpr8-VN17j7wrcocjDFiKP7EmewTictHBrsjAzaxQc-fxoj5VIJ
+PlbwvVzUsX-qb__tIsirgfPlcQM5PIfVUx-aaIbzrIpDXkGhzj9iIhPdcP6PsLV2pgBFASrEqy_jnUqysf-bXgsINGN4iat5drR0ZnzCPbPszbA7HHP3SbDe
+PvRfSkXzgL1CkNoa-AHm7YWLnA-LQi_AyQXve08bqvTxyK7XF1BXsLIINSzYWmB9S21D9QErKYU5S2Gv02ZtrafC2luxxX4P5SPUzXJ3aJ3GeCZ6B3ap7hBW
+GAEYwxtuGr0yhxSw5B-7Ytsgj5dnSZdoIS6rhgTAp0hZ1dRtGS6bBkrCgRE2IwfGW6Kv8xL1GH6UVr89l7juGBc_LI-P3GgAMouY7X4cel6U74ypc5cnMMcn
+5LqUOsk3qke68fUnmkgrGSdg1s5Lvz53_EBNG6KOw_xt1G
+}
+
+AzureEntityColoring(ManagedDatabase)
+!define ManagedDatabase(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ManagedDatabase, ManagedDatabase)
+!define ManagedDatabase(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ManagedDatabase, ManagedDatabase)
+!procedure ManagedDatabase($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ManagedDatabase, $stereo=ManagedDatabase, $tags, $link)
+ !endprocedure
+!procedure ManagedDatabase($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ManagedDatabase, $tags, $link, ManagedDatabase)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $ServiceFabricCluster [70x70/16z] {
+rTS7iciX20PWGFZ9_ZVyYccE40VEg_URSWjs4rJwIbY4wTUmsgHCrmrx6NGH6nR6T8a2AwKh11kX2mmRemiGK1yZO6eR2CQ_QaKy46fZ3wXFFR3-3dc6gMFu
+1qfry8_0TCB2ONVWoQyIAZoD9OlOqgsygpBMHPP71Q4tjIULRKTOnX3UTasM2lGWXeK_ZCC7CMIlc09EY_W89Wb3iJbjw9YDn2GeYAt8yOk190agWcxsKY93
+BpFc5T0UI_IxMh5k0e3laEKHxIOUpPB0eAEy0iBupl8AqitHUGNhPhEyWiRvr9lHD5TJ0JuaK1OrlrMFBfzCXIaOXNKf5FIfEY7kHsDlQ8sqNyodsZvpTSBr
+2VMd9B5GlPiueTAKwelNdn9hA1AmOx916L6Ru5ox-fiaKNk2L2-dolGMBWLQFQ-a48qKc_CjkdfScIwADt71pbVOQU6q2ee7iNLRuJ_NYdfJyVp5yQ63ubF6
+Zb6bsl9o8HgTRo08qPpSLhP7gnSknkt9HnAjtfI6toPm6gqyajwFa4Bql_KT
+}
+
+AzureEntityColoring(ServiceFabricCluster)
+!define ServiceFabricCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ServiceFabricCluster, ServiceFabricCluster)
+!define ServiceFabricCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ServiceFabricCluster, ServiceFabricCluster)
+!procedure ServiceFabricCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ServiceFabricCluster, $stereo=ServiceFabricCluster, $tags, $link)
+ !endprocedure
+!procedure ServiceFabricCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ServiceFabricCluster, $tags, $link, ServiceFabricCluster)
+!endprocedure

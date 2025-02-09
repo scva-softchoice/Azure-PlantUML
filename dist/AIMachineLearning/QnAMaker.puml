@@ -1,0 +1,15 @@
+sprite $QnAMaker [70x70/16z] {
+xSy5WiCm34JHiItA_I-y1JNeeBpSNmY_MCYY1sEifrw8INeymLfPJ_GjYeGLphYLAA98mYi-ePYfZNwC8PbUsrIcCJAB2k5MiMad57zKSEkoekQbY68Z9OKL
+1L32IWOWKQK080igsUS9ASMHaC8-Japnqp5508ZLEgjeMD7WMZmYYYhUzoYTFHfj9IMnolaDfLkakANTCgDgfQemRabDuNfKKmotx8J2QL26j1JjeehNNl4-
+MK6JYK375LbNW3ohMEUfZEFL4cffzULd5L0J1Rc9WcGj5B0rKLYDuueShutoLjwAVBdoLjuADr6A78wnNYxZI5wLHJZUiFf8m-B3Ia4mdoQOA2FUvZGV
+}
+
+AzureEntityColoring(QnAMaker)
+!define QnAMaker(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, QnAMaker, QnAMaker)
+!define QnAMaker(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, QnAMaker, QnAMaker)
+!procedure QnAMaker($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=QnAMaker, $stereo=QnAMaker, $tags, $link)
+ !endprocedure
+!procedure QnAMaker($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, QnAMaker, $tags, $link, QnAMaker)
+!endprocedure

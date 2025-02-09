@@ -1,0 +1,17 @@
+sprite $EdgeAction [70x70/16z] {
+xTO7ZYiX381X6rpd_lTz1KZ6chM4JDGt__Pbz55IOVJj6xRL9qXZcgd0USIBSMiVAJCt_bmHCpir6l5ALBKV6IIgKL5fPQEBQbH6Z3M4LHEbk2tHcJmLfIAI
+Ayf595UKgeZA_swbS3PTexBI6En3tIgyLoWOGqcWjbKqAB72ObeN3IN8zcIGzTa3sMy9HPCUo6vBf9OrcHzZaYDYbgSPOfhVHsoMCjbWfgXLKo7CjbDFMaJ8
+JkEWs7cAi69Be_QCBEd5M5w7PwcYCEf59Ry3Ib79BxIYak_9tJpxIXJFhsq0w7cfaiS0xNF5JXIxyzd9ZkJTIsa0FhFdu5wnCA46vb1fySnAIcGm78oMbCYC
+EsyOB2eo_t4hocM5cULr9Tb4c8iAZznjFHglIvblngx_9Ser4d4TnineFL1TkQBuvSftE9TYRtXiPwVue3WotTputLY7RvHPM0q1BMJbrsohnDLGGoBAa5n9
+6IA45XY_AifYY1e0tAj1P2yexiH40vdCHEPRCk9P_r7OEdKnSrj8O11gTNFdWTmC8PHZyucii24SX8Jmg_hs5m
+}
+
+AzureEntityColoring(EdgeAction)
+!define EdgeAction(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EdgeAction, EdgeAction)
+!define EdgeAction(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EdgeAction, EdgeAction)
+!procedure EdgeAction($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EdgeAction, $stereo=EdgeAction, $tags, $link)
+ !endprocedure
+!procedure EdgeAction($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EdgeAction, $tags, $link, EdgeAction)
+!endprocedure

@@ -1,0 +1,20 @@
+sprite $WebApplicationFirewallPolicies [70x70/16z] {
+pPTNWgim34NZec8dx7-xBmZV33AQGdZj_4pDGLUktFuqXLHRxxsfSatl619fzpGvQKf4qYCa_rn2Aws7QFcPexQkHCJz4_G7zHHh1nCoHV1t3T7HoIrJ-y2N
+axwKj3wGDHCCNjLKHUfF9BsjcNIsg0YJmVojn3v0aqOX61gA9Rb3OY3JKG7YmO5amD0eKqWDAY7PIv19GWSpYuWUDKGCYTFmmI3Qa3q5anwI5n8OtFJHgIbZ
+vKpZwXMgXqdeCrdTwYJg6oAwIK2GgOWzB2e4IJOE6jbPL6abAWHX8eql9c-hZpIGG1DuflKjmoA1X6VDN0maQLLkaQIMoattHSYd6ZzCD7O2Ij3kkohVQ31d
+xB3mowAY40E37MTA2FI4ibzMLWa8DRw_nRulnzK9GiqSYV2jnrd4ZtWmIe9mdYIEtOXppIaNUbci5yWsKqCDASxPeaDJqTmQMB9Ca95trMuMikcFei98lXm_
+7yh781MqvO146lUVR1Q9BQWbeFhGtf9_Pb4j_bys2tmbx6wWcHxNd8K2IubgYH8ngch1hEF8GlDL1oKWsqILo2BPNzmOawt5gp6KgF9ySzDkOkc7JALMQIl1
+FiaLq72Nj9Q-MQZ0an_BIHeQhHyxPbrEaqTZRCdMMaibMGuy7A65BD3hBD6sFFgU-_BWFJB_tInf1CBfsD-ot1Jd4L-nrDx9q2kM6zhIBbb8qDihbXiZa5dc
+aVt-vxmxKJiifybOMBO-aUY-ybZkVZ7QxtSio_WzB6cyokpxyhJm7ZtsGwnFPa4cMmbNBARfnWMBQVhGtD-qUCqrourUbet3c3pcUN8tXWMKOJbDFhvztgSQ
+dZMf0pK0ipZOB6-i8qzkron0Vekb_b-MULuq4Eu_eQKifudkOlsiH6yHvHpFFBy
+}
+
+AzureEntityColoring(WebApplicationFirewallPolicies(WAF))
+!define WebApplicationFirewallPolicies(WAF)(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WebApplicationFirewallPolicies(WAF), WebApplicationFirewallPolicies(WAF))
+!define WebApplicationFirewallPolicies(WAF)(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WebApplicationFirewallPolicies(WAF), WebApplicationFirewallPolicies(WAF))
+!procedure WebApplicationFirewallPolicies(WAF)($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WebApplicationFirewallPolicies(WAF), $stereo=WebApplicationFirewallPolicies(WAF), $tags, $link)
+ !endprocedure
+!procedure WebApplicationFirewallPolicies(WAF)($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WebApplicationFirewallPolicies(WAF), $tags, $link, WebApplicationFirewallPolicies(WAF))
+!endprocedure

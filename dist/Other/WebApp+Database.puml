@@ -1,0 +1,21 @@
+sprite $WebApp [70x70/16z] {
+fTPNOkn8241HYWoz__sEaAf5TNYsDJhwShe6764rn3nBc23yFyoS2oUuZjE8D5UESCseJPZ8ymLVYyIn0t4ycGfl1lmPHfPG8gc2Ls7wUyIFI0GJMHXJkPWP
+uZCIJaHC4wkvHoe0ue3Vi5X5TefZx0Mns6GX0DuGmWz8H3CEHbjb46jCMNq0vFBJhLr4ug14bK7tM3C2m1FzeqCf8Xv5Q69tNpC0n4y4ttYg26FjGSMSPwOh
+t3jzNsjakipN8n6Rk_CUywxOVBFm_j2NXT8wMJFCZAwP_agKpunc4fpK3q94uc4YjbSG9cGf3AyY4ngwMt4b8jxpL1c64ttBP3eit7PRZ8dEdLFXFKDlbPUi
+JNMS7hShdS7NYi72ks8mQLVMp6ibeGsVaGAJpKhZzzD49i99tBiouA2H0g-a33XvPgnV8g_6GSzFh0Ily6qOpSnd5Na6renetw3nwu4vCvY81X9lr5j4c4La
+Q5L-7YRJcCaYd8lKKhB7rbyD7_ZrCfh2pB5nuQBZE55q1RuOY8GzMzO4KLoN7tpgYCBlb9az3YRCC7K5uNUZ5igOzAoOVuuoti69MJBFZ2sl5b5LMHE8r13N
+a5Wk6JWCcSRPGE9tXDsnN3BINyg2PuJucoNZcHqo123FAFuM-JcZ-HJxCqL71l91DYeRFgotmSXF0XCU6L6BXPlAVXY44tc-yduZnYWaRnK-yWyu86nGenkA
+qF3ne750ulthNu63F9uLcb_GmMgcmdFJhcmKnoUonmOEg2e4NtIbk10-MuYaKQ_ioj0D_bYPylHeC5M5RrUaChShL9NnUoL_gioLxipIAusx5UnXRbH02zwy
+2w2MExFqPUHkPMZXcnMWpbo_InCjSckMpemRbSuetQbqHl3wNLQitRayIqDzOhnSQKFLpaT51AzK6gcjwDfT6guTkZfB6oItAesOHVLcfNKbRrJ6dLbQ_bWn
+-9kHdvMhaQBvZxi4mnLa-J5BAC9boABcaJd_aHfm-0y
+}
+
+AzureEntityColoring(WebApp+Database)
+!define WebApp+Database(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WebApp+Database, WebApp+Database)
+!define WebApp+Database(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WebApp+Database, WebApp+Database)
+!procedure WebApp+Database($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WebApp+Database, $stereo=WebApp+Database, $tags, $link)
+ !endprocedure
+!procedure WebApp+Database($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WebApp+Database, $tags, $link, WebApp+Database)
+!endprocedure

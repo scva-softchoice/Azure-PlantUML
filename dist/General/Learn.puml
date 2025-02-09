@@ -1,0 +1,16 @@
+sprite $Learn [70x70/16z] {
+xT45egD044NHLzv0xt-x4I0UCXMQ-NwZI1qCj-bGanN2KbhpEHRYMdj19kbhX-VHK0T6BgyzdjVNAaXcIqgK4fP9NYgURHk5VfUIRadvK_wKFwN4EOzd-LkA
+0H9ZGY2zhEMyOeIJGW3cMMEyenXmKWJWesaH0RobE8Xd1S2eqlXVaifOM2WWXtyES2cZTLmxBawzLkPcnQOVEYg7LYeAw3JYQnJRL6cxebcnQGn0QL2cf-E0
+jYY50J82eaa9mZ4hgnHddYU585wcWbapIgBlfNG_J-bAylLIoVQ_bJ_5jr1eg5spmaEjtghe0GcqAZFIgWo6fIAlA9RZG-BNAJyB_upiEaQY3r9a0yLZ0oLY
+0oLQ51ypZtP5OUqA0z16nGZ7sDShx7e1Loiak6HPPGy
+}
+
+AzureEntityColoring(Learn)
+!define Learn(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Learn, Learn)
+!define Learn(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Learn, Learn)
+!procedure Learn($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Learn, $stereo=Learn, $tags, $link)
+ !endprocedure
+!procedure Learn($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Learn, $tags, $link, Learn)
+!endprocedure

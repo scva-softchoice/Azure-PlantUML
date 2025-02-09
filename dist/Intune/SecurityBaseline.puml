@@ -1,0 +1,16 @@
+sprite $SecurityBaseline [70x70/16z] {
+xTHLkkCm44JXg46q__s6ayfdAgipS_cy-xVuyCKJyskcAMoeExAO8pv90uZvEJldQ70uIM44fvN4RWOGP48XKNm7P9wPwYfcpWb45tGLoS-s58EnWJ2566CA
+DRZYle6WROKQN74ZnZw58045HaJXHYc5AnpX2ZUumWsg40F8FeKGNE48L_Xak4AC_Gerk48HvAkAEYUu8kuxaLhSrfGqKqfUDEfPaSDQKwMibhCkX8MP8gtl
+hs1Aau7qWTfZhs645Goc11KC1iIuWi5CjdMWWfCtKLG6mcK24r9mzDvHi3Hn1UahKo-Ase029cE3z8pqNaLqSxiobCaArtfJSk_TpjPM3GeOznloEfQwfHGe
+IDsX1DPboaJt2C_dMmgkL7n6oDqBLbV6TXgPUmxlD1BtsrYQ11HartLn3QqB4lI35ClwlcAzDsMtaIhnym85ByDMXIcuH-ZllAG191s-L2S
+}
+
+AzureEntityColoring(SecurityBaseline)
+!define SecurityBaseline(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SecurityBaseline, SecurityBaseline)
+!define SecurityBaseline(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SecurityBaseline, SecurityBaseline)
+!procedure SecurityBaseline($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SecurityBaseline, $stereo=SecurityBaseline, $tags, $link)
+ !endprocedure
+!procedure SecurityBaseline($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SecurityBaseline, $tags, $link, SecurityBaseline)
+!endprocedure

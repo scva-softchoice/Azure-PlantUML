@@ -1,0 +1,17 @@
+sprite $DeviceSecurityWindow [70x70/16z] {
+xTA7ZYCX3CPnSA6y_mkVB9JzKl00u-jt_ztqv2UDSVgCjLIhAAUxINrEyXs3QhMADPxIEQA3iBuWFJIum7Xo2kyJMIgCftR7aubOCOy9OoaJkHRPjrO4AkJD
+4u2FW74K1u0HK624b1fGG4GL7sc-Se2qjgjKtzXNV6DVgIwohxY48PkAZw2LKjtQlh8mreenlh6j-BM00YAkjBZI30ag87OLEK1wtrUQYvYYKuMN1X1JPAhG
+0W4n54hJrWIGNckUApf3gZXndfKI0q6Izm830l4PGkEiMrX9G2AAW0aegNmNXUexK_GeUUnCLFcyfjxFbOzhwdULn0-c6t9FmN5tQoZ2BFPm7HHCk3yfb3Eh
+QhvE7WeOAEFdf2eBXRyKCCyAZwymNSK21RE1iXqKC2saW0afMB-uad8nPtkw91yAJjmKkdFIY6k5edIsTIYhASgibbo5kKoIm7GH_rTyHSBAM1IrXrLofV1O
+JCchs5V6poMiA1EhFQpwCqwQpXJw1W
+}
+
+AzureEntityColoring(DeviceSecurityWindow)
+!define DeviceSecurityWindow(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DeviceSecurityWindow, DeviceSecurityWindow)
+!define DeviceSecurityWindow(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DeviceSecurityWindow, DeviceSecurityWindow)
+!procedure DeviceSecurityWindow($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DeviceSecurityWindow, $stereo=DeviceSecurityWindow, $tags, $link)
+ !endprocedure
+!procedure DeviceSecurityWindow($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DeviceSecurityWindow, $tags, $link, DeviceSecurityWindow)
+!endprocedure

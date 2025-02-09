@@ -1,0 +1,19 @@
+sprite $Peering [70x70/16z] {
+xTI7ifmm38LXkPmZoU__m1bO8xYiQRjJqhuqclyH9LV-H2cNalDN1L0x5lbCXlvGvGFKFIPvA547qiE8ZgMl8a4UK5KR_w7SLknOaRlKzbArJhyOHQG-6gQ0
+zcxJfbogQaFR4UL2LZiWcym7hqPPSyvfUq5-6D6w7tP-C4MEfRV6uEeSfqu_UWkKaREpgMB5EGKPeItU_cEMUQKR09Wf03LSVzJxXdfhJQ5mmbjp1V9wMisj
+FpdVeeG4M9kGxfXQrkPEVJNwmXIHZInT1drgEDdQL6a6dGy0IOJkKSdcExQEssRGrYjBfX6RTKcAloi_8zGMbQRmdbahkVZ0VDTvYIZRfjB8ji_4nllpHR_Q
+uL69qIQWdp8HgJ2VGVj1-B9X_L_rKo89TrpD4kD2OuGulHdpX4g2jPcXTOwsYESEFm6fonBbeABnuCsdVyP_ia3R2snGYKso7LB9yD7IiBlVeIm5CVkmGjry
+IsCGgRoin51Z55aVY-gmebnpGrMs5NvKiImJtCP1eyeBQ2-aBHHg2o8sTcf9qZsueoh7SF6ET8cZoB5w-tl9SYmlA-pystN8YRHUveDA7DMed3yOwA0I4wBA
+cG8_-Sb0BhKafw3BXVvUWVKQv5p5zbiRRocod4i0Ny2Z3K2kb1YR1p_W54ak0TvNMrIsJygGvGPibqN5eVtVAdSaqECMea96v2R0NYiO5M8kwpWoLg4zutF5
+UuGeya01hO_Wc6lp84ZoIAgW-RHIOM1pKyGWppe05HC5el5OhbYK95z9IOR---yN
+}
+
+AzureEntityColoring(Peering)
+!define Peering(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Peering, Peering)
+!define Peering(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Peering, Peering)
+!procedure Peering($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Peering, $stereo=Peering, $tags, $link)
+ !endprocedure
+!procedure Peering($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Peering, $tags, $link, Peering)
+!endprocedure

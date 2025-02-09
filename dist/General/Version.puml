@@ -1,0 +1,14 @@
+sprite $Version [70x70/16z] {
+xSo50SCm00CmX-7_VyTO3Wvg7I0qHZgcCnYAEJ0WiXPHid3Xud8C5tHPkFYGJe-MaAFE8WQB_vl5tvKiOcRXaiFUORZO7FSbt0mMBdTStfPuypSBwYmw52q3
+WWkN4IvSu79WIDdamoeqHaS
+}
+
+AzureEntityColoring(Version)
+!define Version(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Version, Version)
+!define Version(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Version, Version)
+!procedure Version($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Version, $stereo=Version, $tags, $link)
+ !endprocedure
+!procedure Version($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Version, $tags, $link, Version)
+!endprocedure

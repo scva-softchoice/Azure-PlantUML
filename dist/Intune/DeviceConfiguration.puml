@@ -1,0 +1,16 @@
+sprite $DeviceConfiguration [70x70/16z] {
+xTO5ciCW48RXyP_U_y1r8I4JIDRbswstxmDJfU-M10QoZX8OIjOLJ3EvDzDran9-3pkKl775rlCXnNWz6LByqnJxqSg_yg_yA_zAwIgAqbCAIbSfADsrz1MK
+db86b3AYn2SgUkxD2kESlLKnd8kzYjwLm2NPfpX2BuhNlyp4UKcHxCznBl3AXCuoWbibHGHPmQqYBCk7G9QsIfeYYyQLV36sIT54eKsA9SEbdJjI9d4yOjep
+NQThkdqkQb7jOCQ4yOYY5wBTG7LjZ2ZBmzJ67bRyfV2xAB9D4LzyaLa-boHzGjPiA9JfrU5m24dp-UAZObCb7uvCHok9qdrFHpEeOGLDcG99CoJP5WLfZL8i
+Av1cSoMl8A-Z02WrKshEzJuhMLU2YEIrcZiOzSj4AoHHd8YulNRwpc7QfyJwBu_s0UvehbIhtarjMZ5vGNp6ZRvv9m
+}
+
+AzureEntityColoring(DeviceConfiguration)
+!define DeviceConfiguration(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DeviceConfiguration, DeviceConfiguration)
+!define DeviceConfiguration(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DeviceConfiguration, DeviceConfiguration)
+!procedure DeviceConfiguration($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DeviceConfiguration, $stereo=DeviceConfiguration, $tags, $link)
+ !endprocedure
+!procedure DeviceConfiguration($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DeviceConfiguration, $tags, $link, DeviceConfiguration)
+!endprocedure

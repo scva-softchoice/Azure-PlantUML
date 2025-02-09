@@ -1,0 +1,17 @@
+sprite $WACInstaller [70x70/16z] {
+xTM5jiCW383XG0nftlznhz1HcQQo7Ti_jwy2dC4OiYE4vqLs5U5foAxmYF9L9DSx5Tsa93EhTgUoGL6pH4HwXyb-fLgX__8TngyCbeaUx8nyM2bMJpWYjROp
+wTZPvMGFAk-STTyr_Vcpcxzh-drAFRYcwPGrJNsa7rHaWyAQyhsKsQSu-fGY8lpwvb0SdQ2aKajUf667KeQRSBEIXjlgPgKEGrR1HN_lq5R5RBWwksmcnnKo
+q-sAlKNX7SemL14AYxXM2QtNYZgIS8QYt1NkRK9wT_vWToh4wvPASbrcPD5IyQIBmud0lSrA465f0Q2qTkmBIG_cvrkL84yL0bVuNE6uAi2b45UHR3aYxShL
+-_n4KH7DQNcPbVNxqg9POLxEsfHNfQwazTlz7F95GGXFb2pKqYkSvIy62AE2076jU4hKToRyAmXzLmXRubEYJCnubHR366LNi9fU7H7SgE3Cp8Z0HWMaCmia
+Jah9dWj041rZxCy8PiNJdm9HhsBOhinxC-_9PgM5iyCH5h5RQKKIKM4C03kKNm
+}
+
+AzureEntityColoring(WACInstaller)
+!define WACInstaller(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, WACInstaller, WACInstaller)
+!define WACInstaller(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, WACInstaller, WACInstaller)
+!procedure WACInstaller($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=WACInstaller, $stereo=WACInstaller, $tags, $link)
+ !endprocedure
+!procedure WACInstaller($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, WACInstaller, $tags, $link, WACInstaller)
+!endprocedure

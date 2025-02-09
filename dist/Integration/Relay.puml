@@ -1,0 +1,16 @@
+sprite $Relay [70x70/16z] {
+xTS5eiGW30JGIO0Cw_S_xPTQMAr_xLijCdK1gzh47MV96Hzsd4i1PCvbYwJmJwQSBfKTnhlKlZbbIz4GLLwd683TfPBmYAHAm2DDrxFWDKcDY1bI9s0oJGwJ
+XKLIOdBwpMiagHEnn2h98hiQCoWjVJ0oO3eZ5G8bYSaYcV0faH4JYIy2IS4qnUO8f64yx-c9KzT77aoD8Bv5ooqjemzPew5aj34Ncc2DyB0u3LeWiLP4oLe9
+0oHs12woe-X75-6iBEwbcTqhmT7BYNxPHJXwSK8_vaw0ipAyNzYrCWhgnO81RDTGbDAkuKlOipJx3nHSqwhusP8ykCPh30Bth5Yyw_5IoHZ97rhC_-untjaN
+OCsKBULugknalAPhNcHCigMiEU9J09ehJECrFV4BRDu1
+}
+
+AzureEntityColoring(Relay)
+!define Relay(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, Relay, Relay)
+!define Relay(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, Relay, Relay)
+!procedure Relay($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=Relay, $stereo=Relay, $tags, $link)
+ !endprocedure
+!procedure Relay($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, Relay, $tags, $link, Relay)
+!endprocedure

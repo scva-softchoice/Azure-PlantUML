@@ -1,0 +1,15 @@
+sprite $PowerBIEmbedded [70x70/16z] {
+xSxPRWKX38FX0Ji3x__4bRjnw48KvKnNVjz_yl7hglRKQUTh5bPUa2c4bV5ZnB0oX8JoWR6LhMmbLZ6Q2Yi57pGpvYlui0kLhJ2l4Bo7mhn2pafhBQhmfO74
+5RusYAZ2cuOHKpWrZ932EI5HXIggbFe-U8gFgFiek41v0RR2_wXinNobEehHyegfd6Aqj28Yew2-_4We04Ha55Ia5QYLqjlfAS1QwTfQWNA-zDvN2YeSfOjO
+Ar0hHSXQWN8K8Ki5lYBYzoW5lj9liyCzuokj73-o1m
+}
+
+AzureEntityColoring(PowerBIEmbedded)
+!define PowerBIEmbedded(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PowerBIEmbedded, PowerBIEmbedded)
+!define PowerBIEmbedded(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PowerBIEmbedded, PowerBIEmbedded)
+!procedure PowerBIEmbedded($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PowerBIEmbedded, $stereo=PowerBIEmbedded, $tags, $link)
+ !endprocedure
+!procedure PowerBIEmbedded($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PowerBIEmbedded, $tags, $link, PowerBIEmbedded)
+!endprocedure

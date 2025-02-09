@@ -1,0 +1,18 @@
+sprite $CustomerLockboxforMicrosoftAzure [70x70/16z] {
+rPO50kCm30J5Klh__nweJZdE-lYcJ6DecrtwFs1HLP6VKbZkkFoem-kH-26FrolEj4hKExceuQnFfFpiJ9fSsvCZWc2aZZ52oPf085mpb32iPWIye2deWkO8
+8SWsnmX1JonE27PYYLypbp-uBtnYKO8uiJ11n5HIXA70vWBKueBM9-C44y2k0DJbCxqU6Du-MvIMa4-QJMaHhdU9q2BY6I-IJEVrhc0KsuEZdro8VAlyVihh
+bAegGuae-zbWGk2eWNoCkbH0ebaxVf2w3gpcADeN8iaEOr0BrkXn36QX6gaN-33gV25QZNOSRY0-gKxr1kFvB4yRXcnDJcf6eAalive1DyMOr3W3MrKdOhrV
+yhhOoMjGKv19SWkQGPqSZgQApAAZq5ZnIKNeaCjunhzZEX1gyj2IdN7vGjWpUjPPUh5nOh6p_bImnROfpvRGQ8kADR9ROi4IJDuMeVuyysv9rD8IwnKD3RFk
+ba8jGzAMrhHaM3R0OW-IjhI6r6wMotPoYZIIbcW-M9X8xfRjSa8Bf2KF5cOLafibJYsjePOCozZOeI5aClaT7f9X4TRhtkXkuG8iuVbeiPQC6xeYvXE0Vm20
+0lzf0DPdv0ccVukl
+}
+
+AzureEntityColoring(CustomerLockboxforMicrosoftAzure)
+!define CustomerLockboxforMicrosoftAzure(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CustomerLockboxforMicrosoftAzure, CustomerLockboxforMicrosoftAzure)
+!define CustomerLockboxforMicrosoftAzure(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CustomerLockboxforMicrosoftAzure, CustomerLockboxforMicrosoftAzure)
+!procedure CustomerLockboxforMicrosoftAzure($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CustomerLockboxforMicrosoftAzure, $stereo=CustomerLockboxforMicrosoftAzure, $tags, $link)
+ !endprocedure
+!procedure CustomerLockboxforMicrosoftAzure($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CustomerLockboxforMicrosoftAzure, $tags, $link, CustomerLockboxforMicrosoftAzure)
+!endprocedure

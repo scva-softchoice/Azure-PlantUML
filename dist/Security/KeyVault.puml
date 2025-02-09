@@ -1,0 +1,20 @@
+sprite $KeyVault [70x70/16z] {
+rTW5SkL030JG4GtT_xuBirP_fyjVWSBjWl0hWJ7jFubQz37NcgE7wKy4yR7sdwoJyrbt-PuHCu4H4NsaDUCRnieQPlX9p7JM5nrVUrqPZenrPI__ZZ5C_1Qn
+0STQdN7rCgsrH99fpURLroYH2ICHKn450sSMsrqx3I3jn999Pq-faT4IoJ-ahyPXbbH8tF_CCVGx4_-OzpEP2iJ-XfIBqVbkDdsZcoP782KPTBLxuyIfX17J
+F2-PETKu8NPc8a0GmNS-Cd9cGoVwcQmIGg7Pv8If7sUaPlml4tVbDXJB5CnhD8ltezSSly3egwSEH6vBDgGk1kkM3wK8A_ukK2IBmO8w7ohn43S-zbvhKfHo
+hyKV5KCjc8pUrjoWL26btPOzJqF9LxMaefWeZX31ca_gkHp5MaQn9KD3OAfQC5kqT50dHQmC42YUHyjeNsNSxaYRETxnHudsLGO8nhl7nIrl1LCWpND9wq-i
+5Ko1DClp6ej-O4e4gsQbPe2mWeuAfa3G4QRBqGBXwVAccQcH5hdfZfEnO81GHbwdObz5bQEX-VEnYxEnLcZ-T3RogbdnWi6Y-Ih5YaV1u3IYAsQbk3mtv7Jr
+BXMtDmt9IrozLfmGlfFWhbOek4mYV5V37VQTSeKLt67vRizHToZ4yDqUnSnAOGOFPOzFGQp4JQ5YyHJ4JsIbOW_zhCUdmq8XH1PE8Uvf5ihJKA9yQhuhGRLK
+JyruWfSdXOShfv9Pl4teHwK_732QRnC5uuzAUAJYnPiDcbf3kAFuaqHq52zh6F5nybaj3f0831uin_FjypWIY1uZtpwzrT7nUXC-32fvlGcZvIAszigCLCRA
+x6djIt5s1eYz_7l_QTXWPX9xHVjMDERUeCwdCxHzF-AzZ_ctYpbwTsd_Htu3
+}
+
+AzureEntityColoring(KeyVault)
+!define KeyVault(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KeyVault, KeyVault)
+!define KeyVault(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KeyVault, KeyVault)
+!procedure KeyVault($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=KeyVault, $stereo=KeyVault, $tags, $link)
+ !endprocedure
+!procedure KeyVault($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, KeyVault, $tags, $link, KeyVault)
+!endprocedure

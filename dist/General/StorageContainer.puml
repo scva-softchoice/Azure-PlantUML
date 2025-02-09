@@ -1,0 +1,14 @@
+sprite $StorageContainer [70x70/16z] {
+xT050eCm44JH9HFRtl--TVVjr9cFsmDYiPHAXIejaJ8XAmkbiqfVACug7bMaI6cTh2sKKibAI95IyZ9AALvi6SXlmRAoFCWugOJ71NOQeWhi2KgoXvHifyKL
+_BWYHOgK-azAVRaYfTMwjvGxshj_fv1zdL9OfImKi0fiqG2gmM8fDGC
+}
+
+AzureEntityColoring(StorageContainer)
+!define StorageContainer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, StorageContainer, StorageContainer)
+!define StorageContainer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, StorageContainer, StorageContainer)
+!procedure StorageContainer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=StorageContainer, $stereo=StorageContainer, $tags, $link)
+ !endprocedure
+!procedure StorageContainer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, StorageContainer, $tags, $link, StorageContainer)
+!endprocedure

@@ -1,0 +1,17 @@
+sprite $DataLakeAnalytic [70x70/16z] {
+rTW7alCW38RXJmM1xt_WlpAZn1B4Xcnxjs-OPoZf-FQngWfXAz8UOoFrrXtHnsHhAfxGsixkEIn_Acagpp46gTrAaCHsjq885VEMPqEsqCw2F8fRM-z_C4v9
+NIWe-jELmczHLFajYYfTKenx0qKlAU8ZSeMlA7t6N4UANb3w6B8jXVpoTKN3Ue8YhnNozQplRi6_IWs5avwCux2Ue30ycqo5wao1HzQo67-pDgYSfgBfICFV
+fCqKU9GhydyzCqNWIQhKFirUgX0yJHN1OnpdPAUfP4ebUEd2x3ILJ564GmmAFCwLfzjQVeOCJuCIPbJoCuB7KuKcLnc5fpEb12G_H9eg383RQqLcYiKppXNz
+rs0aExAkc5zHDXH9pZXNUAnKWhPh2hfon0-5zD_o3pc_1Ab7h16tOzRfHfyh6f1KyJXJad_E5PHiHSU6ulreHLOKnYbUKH2gzv624Dr66h9iPoOUYJvNna-X
+17bpUFVrVd2m5eUt3FOThESRHDYAM5GOtxxV
+}
+
+AzureEntityColoring(DataLakeAnalytic)
+!define DataLakeAnalytic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DataLakeAnalytic, DataLakeAnalytic)
+!define DataLakeAnalytic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DataLakeAnalytic, DataLakeAnalytic)
+!procedure DataLakeAnalytic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DataLakeAnalytic, $stereo=DataLakeAnalytic, $tags, $link)
+ !endprocedure
+!procedure DataLakeAnalytic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DataLakeAnalytic, $tags, $link, DataLakeAnalytic)
+!endprocedure

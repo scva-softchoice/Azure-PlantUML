@@ -1,0 +1,18 @@
+sprite $MobileNetwork [70x70/16z] {
+xTG7Tgim44RXE-MNGDd_VjyJk42Ct79QofTUVC_W4UPd-lF7LMgTQb7ohgnjOn9lAEs6U97QaJbunTG62a-pkGtDzavahkbcW7ceZpY_79bbW7j4HhW1sThq
+sdDI7JorbNrrUc4xnI3qITBFaF68jSLaMEe6iVoHHshh1AdZI9TFZUBOOSHRzt2OA5ETgX4wiDcUCMAIiWDNb-46vf7gZFdX7MNAasMIS3fpOs5XboCmlYJj
+8yRsg8HzlhVcmI3djy0LOA4TjxR3BTT5OdA8qOxFV1ZfZ7HiiEEDIS6Uhe9O8-5cvX5QcBK36aGK6AQmxQ15TZueuqvgoo01-XphUO6-uu7PMMd7YTsI5OvF
+RSmFHf43Tl1YC6O0HNk6AyFzVF0JQtVDW6alSHbWndfbc5hxkFTM8BMN5X2fBXr0cl__wyVuenb59xcI4rA6H-OIIcaQHvQFUgaag-tthbNzUE2euhnQoKrb
+q_EKCaAhygXIoqb0MGZmilDmbdbJoTJw3Ngnqig9qvcABwE4TNgsebq5j5QSxjdAREL20KISPtcXCb4s0YA1qhrG4TfK7A80_cB5e2miCjVr9827FrzfGAuL
+5hbUL_Ty9G5A5wT5By802vMdAetEQXbuhX8il7wbKZY9BrGg5rxVhHIsblyUVJnOpqRMiU7L63UY32BJu4Oska5ef5mfm_a1_lpv1m
+}
+
+AzureEntityColoring(MobileNetwork)
+!define MobileNetwork(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MobileNetwork, MobileNetwork)
+!define MobileNetwork(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MobileNetwork, MobileNetwork)
+!procedure MobileNetwork($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MobileNetwork, $stereo=MobileNetwork, $tags, $link)
+ !endprocedure
+!procedure MobileNetwork($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MobileNetwork, $tags, $link, MobileNetwork)
+!endprocedure

@@ -1,0 +1,18 @@
+sprite $CommunityImage [70x70/16z] {
+rTK7OgGm341HgxWAoFrlkoWDR6ac96RRdrvuT1p-eI2LIsL-ffHsDNYYjCl5MnI-HLbNgPcdbPVN9DwXACJpYjPmMj6sCgzeAquhsaRpYZBy4sKpfHd5CjBU
+-l9L5Hk-AVgtQmzNMU5zMKJsH_lwLHMRl2cNMpQtT8koF59gSR-j_gP9hj8I0bSnbHXJSPpLKmh17gPcVaXQNKtPA2t2UvXT9HNBZ4f6EABQApddbFUMKU5E
+gGHziPr_pU_LKIbXM9aXp8wIsw0imLiGdwdbisLWyBHl68t1d3ob3Key54JY7k5e57zXqadPOpeCsespqkgHz4evPeLuTb29nyhILKS5tpOFHwkS6XGnYZga
+nbL5SnHr74M-gG0X3ShGe3Ih0EmA4Xd5HVoj2_2cg7DPARq2S2YxqolBmtAdGA-eaonYYoS5O52qatASmulqmV6se5KeYwECI0joAetR9OfuYWpbqADyLeQ1
+ODtUCeYmAlQYISVA6CKY4eACPLI5OXD7UTaMYsHLJ168gfZM5pMSm5MaPVzu5RSSL9aDlgSqjnXkK4guGu4x50etA1mcb149ayYyGc5UAHX-fDHp7CAqaY3C
+AeNLc59AL692oIao1cr2YJvmer8lA_X4mLGlLJZy9_q2
+}
+
+AzureEntityColoring(CommunityImage)
+!define CommunityImage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CommunityImage, CommunityImage)
+!define CommunityImage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CommunityImage, CommunityImage)
+!procedure CommunityImage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CommunityImage, $stereo=CommunityImage, $tags, $link)
+ !endprocedure
+!procedure CommunityImage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CommunityImage, $tags, $link, CommunityImage)
+!endprocedure

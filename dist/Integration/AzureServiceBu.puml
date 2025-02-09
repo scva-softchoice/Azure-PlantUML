@@ -1,0 +1,16 @@
+sprite $AzureServiceBu [70x70/16z] {
+xTW7RiCm38LXoQ94qPAX-z-sODXDBu9EPpwCDklXpnxXhXvYgGoI6LHM8gyGEX6le1jV8NIBVtAbYPpCSXEyCWG4CnZYVwvCyOAL192ELy8GKrWJuMOz9mt1
+_-F2Q2k4RUNGmZ1eEkGbnq27g1oB24hqXeZa3h7dJB1fSeU8Q0bnvfGCkpA54n0Bx40win8HSJkd4D6v5bOsG-XqoqkE3Z6kw9mi8PPhf7CunDQYSt8bPc-H
+71LYRc7bSuYzHN8unDN2QFQlrDPxywxC_MRsh728QDOL5Q9oBFTHxHyrUmk7ABDrXVegsqfRDhIjbLbEVhT2VTd4LokyQ6yV58P8uPc4R6jLV_BGduBWIFhA
+ptMFbUk-JQ3Rdrm9w7RPjtB_BmJXlXwU
+}
+
+AzureEntityColoring(AzureServiceBu)
+!define AzureServiceBu(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureServiceBu, AzureServiceBu)
+!define AzureServiceBu(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureServiceBu, AzureServiceBu)
+!procedure AzureServiceBu($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureServiceBu, $stereo=AzureServiceBu, $tags, $link)
+ !endprocedure
+!procedure AzureServiceBu($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureServiceBu, $tags, $link, AzureServiceBu)
+!endprocedure

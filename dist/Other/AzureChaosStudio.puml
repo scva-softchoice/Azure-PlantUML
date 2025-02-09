@@ -1,0 +1,16 @@
+sprite $AzureChaosStudio [70x70/16z] {
+hSnBqkCm30DXE25J5kE-_tLd-RzHcB9QEv7yzAb7lyu9EW_zMQz4y4mP8sMESqmXyrZplwtZ1pAcb3dMR63ECQLCZIbbZZ75JCyEPiq6vZccc7bbk-sPCqAE
+6ijaYCgFCqJb5pB4AxCoH5uXGxm24U8L84DK5Y53L1OXGrGM8KDK5Y53L1OXGrGM8KDK5Y53L1OXGrGMuJs_l1-8wllEy4NvfJdqK_dQLuGCKLc4355PX0nH
+MOGVoCMdMh_qn2XV4ACyBtva4Jf3i0YT8LY4pX0iGcS85g4p18lG6O95w0p18dI6O14wGx08dI5OXCuGB49d21QXCmIBq1c2HUWCON1rXd2yhP8Xo3AT8SWo
+dI6NB7D622F3nBLsCD86PhI3UMW3iwJxp2LjO4eRc9RkCo_fDdCzfTlCEYJ3vCOTvdglqgV-0G
+}
+
+AzureEntityColoring(AzureChaosStudio)
+!define AzureChaosStudio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureChaosStudio, AzureChaosStudio)
+!define AzureChaosStudio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureChaosStudio, AzureChaosStudio)
+!procedure AzureChaosStudio($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureChaosStudio, $stereo=AzureChaosStudio, $tags, $link)
+ !endprocedure
+!procedure AzureChaosStudio($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureChaosStudio, $tags, $link, AzureChaosStudio)
+!endprocedure

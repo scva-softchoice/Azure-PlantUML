@@ -1,0 +1,18 @@
+sprite $AzureSustainability [70x70/16z] {
+hTY5iYCX48NXqz1AzlsVTmafLkvOPvZlIah_GcCuKrXKpLI52-uXiVy8tMYmRJ2-L6rNnHT8xO0WZUm4BKS6vDWvHOQQcvtz2QwnNwguKZo1S44zGN2EF0Nd
+n5COfpp7bYSqK6ARbpQRgdcILSAU8lubATiRw3SOPTSZlpxYjmacymMwkJeBewdHUGot7YiwZqKEW6DP1JoM6KeyW2GUm1OFK8y7M7p9LRWM8WnKM6oUdYof
+X1tLyXchE6IHnF--IVE8zdgzsfWV08qK8tHLesiVhmyHLQgHeUZO8pQLNoeYYcYNFsCsnQBRL9gCYhLBF2_jjjBqKw5sHMTaqWh4gBYE2HL0spa7K3SRphqI
+EY9IqKKxLO0Ian8-jBaE8egtSZaV_z4WqKaw3FLYA1mVzKTY696X74yg0Fnxy23wdp6XITi1cKkhU6FjjcEPoDgk2cXqWevqGwJWFso-dHa1DkyYwnxap8Zk
+aNn5HsGV8yVj9A98KXgHnGe145sRq51NXpBO4nKzh13Ioc54a6Tcw_DXimSsoBhrNJwA2BwWzePY9oD9JeWtvvTkV6-1D-BDEBB4EiKYjKuUgJ0MYNM4LPgO
+q6y
+}
+
+AzureEntityColoring(AzureSustainability)
+!define AzureSustainability(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSustainability, AzureSustainability)
+!define AzureSustainability(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSustainability, AzureSustainability)
+!procedure AzureSustainability($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSustainability, $stereo=AzureSustainability, $tags, $link)
+ !endprocedure
+!procedure AzureSustainability($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSustainability, $tags, $link, AzureSustainability)
+!endprocedure

@@ -1,0 +1,18 @@
+sprite $SpotVM [70x70/16z] {
+xT074kCe443HtmbesFkVTqSoLSuMzkJmgA3u2JpnZtfy5LT0wbSJi7gar0C6MeyW1nqzhfG0ucignOGJ_xZYmbdvh5BsXaKn8BAtJoe647sCuLh7fhUtAmfu
+7zUoUbckp4WRTmAUhDiUHwIFAS-v2hfSSP0S9pr4FCVaOAiL86UZg7oXqUUzGbch6CJODPD9wzWbwCDAkr51nYPTBbWR6uFIRZog1DHv8DUyRscmbOh2s2fc
+SiMYpSMiLC3sYgfVT3JSzqg1UbmfK6P5pNL6F7nM4cAfqcPbxsmDsngpCi2EAm4vApittHhdYg3lLzJ2ftn_BQawVLAfK0ygVbnf4ESTtLSQb0ULl27Ogqf0
+oskFAWPzgzXj9VfMKIGNAXNAs5IxgjInIOYLIWeoTZtEbTB7JY6NAW4nJj9FbSXnKi7NAYdGnbHDm-kO4iZ5IWDoJ3rg7rCNAAkLB40RrsR4SxcI0THnem6M
+ovMv6crN2t70ywrALW29_6ziOpG7AFcqqXzhnaxTbPsr_jYiFDQKC_7ipnXuVowBYG0QhR_WitBiDwhmzHK0AUsh5E6bo0l1XwBbUNn5vOB_v4gz43-tKgxy
+r8gMAyf7FAuudz2u8RnF_Cxx6VC7b3U8sbCgh55xILaXTa2MAdf0MFJF_m
+}
+
+AzureEntityColoring(SpotVM)
+!define SpotVM(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SpotVM, SpotVM)
+!define SpotVM(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SpotVM, SpotVM)
+!procedure SpotVM($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SpotVM, $stereo=SpotVM, $tags, $link)
+ !endprocedure
+!procedure SpotVM($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SpotVM, $tags, $link, SpotVM)
+!endprocedure

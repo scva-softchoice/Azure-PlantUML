@@ -1,0 +1,16 @@
+sprite $IntuneAppProtection [70x70/16z] {
+xTLLOeL0343Hw5Ztlz-Y3Lucp-N-u0S7k6dVA4HVYc25w4t0YjTI1AkZi58GwkEhAFAEYjvLGRnOOOrDWIzHCCIXm2UKb19k8fPiAIdzhtI8CaitmZv5sZCX
+REEuUSvwGcaHR1iOzYZjXeHZsf0UHOT3iOCvI0uKDONYSNkAN4TPdH5pA_CwtLUetOx6j3jtt7x6gLTophZrq0KQaeQa4mh1ri44_aCKN0f8R58L3Qs73iMO
+jW7nAVRdPG2lqaQYAWJWLwmNL4gfLN2jb7ebyrMKmXjAe1D9IanzkHXZogbocSMhg-ifpnN9BWGdodwQhDNLRP5JIlonLeeX5oW9mQ6S-BxibAwYv6AHMocJ
+nAlGL0bU9KoLx5Imp0ek1NEP9_KAXn6nab2DGYdlLADaow_mLHIalNXVgGXZr8r2hRBJooeGTX21c_Rj5m
+}
+
+AzureEntityColoring(IntuneAppProtection)
+!define IntuneAppProtection(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, IntuneAppProtection, IntuneAppProtection)
+!define IntuneAppProtection(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, IntuneAppProtection, IntuneAppProtection)
+!procedure IntuneAppProtection($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=IntuneAppProtection, $stereo=IntuneAppProtection, $tags, $link)
+ !endprocedure
+!procedure IntuneAppProtection($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, IntuneAppProtection, $tags, $link, IntuneAppProtection)
+!endprocedure

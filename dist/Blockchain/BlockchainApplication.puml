@@ -1,0 +1,16 @@
+sprite $BlockchainApplication [70x70/16z] {
+xT85ZiGm44JHvi3z3xoMQYdg2LGYMlZ3a2VPRZbB8rIUvZboUPHb8fFRQUHdjvVbkSdlBQPbZmsav8QqwEtnFCZlBeRV7iqMlpsHbmfkG_ZjiQGoOZ7iigRa
+glMbCb7EikufK-N5vdNTLKON5xFkArST6BiAghF5d2eezvi0d2deP35dIbzMR4wNKaQ9NAGjXb3WX8mIfqihg828O36yWbAG0hcb0073AHr1HYeT0KCg7G53
+AXq1moifFICL89qX5PDjXkPdKxUs2AL-eVAlI71AoUiqhokpoMvM6DdOAs4iBeVvD8hzvdMKSfRccJAfN4ZhI5bCBXO7YR2AQtkdjE8Y7aX4QQKXO4WbS-G3
+oSzYC3aYb8w08PMEZ0P3Ah512e_1b15AvL1g6xuZbAgAnW2c530DOHLSrX1AQGpUymekZK90I6N2BVNZdJjUEMMtFwtuBfFoiZS
+}
+
+AzureEntityColoring(BlockchainApplication)
+!define BlockchainApplication(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, BlockchainApplication, BlockchainApplication)
+!define BlockchainApplication(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, BlockchainApplication, BlockchainApplication)
+!procedure BlockchainApplication($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=BlockchainApplication, $stereo=BlockchainApplication, $tags, $link)
+ !endprocedure
+!procedure BlockchainApplication($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, BlockchainApplication, $tags, $link, BlockchainApplication)
+!endprocedure

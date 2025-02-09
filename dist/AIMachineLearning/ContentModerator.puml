@@ -1,0 +1,16 @@
+sprite $ContentModerator [70x70/16z] {
+xT07TgGm48JXwYZ1_G-yqpW8qUHrjhzviPxq3u0DV-Y_0LBUW5Xv0rR-MCVBZ2ziZeO5AOqjR8uCxH2rY9-la7KORrqfRrBvgoWUP5QfqyyMOikLnpghy7Db
+AeHSMHlZR7wM6jwxKjFuuHM5h5I8vXKxh01clgmGvBXI_OK2vkxz694OJrIiHLh5MkHKXSbU8wyLXRv6KaLNAWgovqYh6A0UaRELo4IagqGc8eUL8LH_a1Rn
+rz7m6l4ucoj3Q1LNyrHnKq-L9bKwQKmLlLiPMeK1EbSPqfY-onUelDKRvQyRhbViwrR6OKmNIgoh5KcLwVuugQKph8qrDiE2Z7SKw_WmRllZRn81swRIiKsC
+FNMOgRYfr9do8ogTJwsGTmYti7SOjwXt1BVO0kuGMs1SnvfSpuYk45n1eXk4S1BBBiOPSWZ7I0xHcSmX9Fy
+}
+
+AzureEntityColoring(ContentModerator)
+!define ContentModerator(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ContentModerator, ContentModerator)
+!define ContentModerator(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ContentModerator, ContentModerator)
+!procedure ContentModerator($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ContentModerator, $stereo=ContentModerator, $tags, $link)
+ !endprocedure
+!procedure ContentModerator($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ContentModerator, $tags, $link, ContentModerator)
+!endprocedure

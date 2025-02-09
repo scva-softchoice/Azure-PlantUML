@@ -1,0 +1,15 @@
+sprite $SystemTopic [70x70/16z] {
+xTW5hiCm403HCQxJ-z_tGq0Rt5XMkNs2OYQClA7GSqr23w9SGSno1Ql8TNtbGN9DKbv8DBbZvLk9D8bv45BF0pxD163rUOVV_YXpSUUB6jwkvBjKlXLnbPNa
+0Lp8knLnLHN79AP9r8gLqGesqOnH6VO6aHoFA-9FAXa8fIT-p_ZJGQKCehur7MK6G2hj6ILT5NUDIZcPermLSITBrtMNKmMiYW3XqjiTdUj_wfnTAG7myjT8
+xDA8LIdO_YDWLTRRPTmvOwqYwufA0S05APhMIi6kg0IKmRfIk4Q5bwbqSzUhT7D27RkICCokFCBwWcRnsLbN7fzsTVYjk2PJHPxTLqvo1K6VdBJZ3Vq2
+}
+
+AzureEntityColoring(SystemTopic)
+!define SystemTopic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, SystemTopic, SystemTopic)
+!define SystemTopic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, SystemTopic, SystemTopic)
+!procedure SystemTopic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=SystemTopic, $stereo=SystemTopic, $tags, $link)
+ !endprocedure
+!procedure SystemTopic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, SystemTopic, $tags, $link, SystemTopic)
+!endprocedure

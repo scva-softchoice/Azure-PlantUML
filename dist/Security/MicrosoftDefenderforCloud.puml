@@ -1,0 +1,17 @@
+sprite $MicrosoftDefenderforCloud [70x70/16z] {
+xTS7Sjmm44JHdapT_y9MMXR19hQ8SRRrMK7n8Iei_fRKC-krJ5Vq4iywb8v6NjIo8raNXM0bg-lI6aRV4SjwMffWcggPHzQTCiFDLC6xsIY5jgAJOSZ_1YLS
+rUFx5AVFDnJ5dhOLmI5PKlXBFZ5hAOctBFUVdUmeUlXuu3NjA090ZwJSKRRJWzVoyLxYjTFNN2jZWTVs3xwRiOtTK1olRNjupN-CygLytjVS-xp7IqhATSWL
+9O1B1F5KCLB01jOLSj1KS39OKGmfAQE3MufC50m6AO8nKWuEPahYL0nCW6AbYhxCEehXb7GK0NX9QqfLWD9rHS7bgfAJ_maN59uAJoOnANU4fy8x4txPV2fy
+JFFuW3YvhT2_bxp1ysWzxJNntUUoghKf_3_uzlBquKFcjAfUdaOxEs6s5i9C2-55DH1c9jFPPiZyf9e8CunWBMReijqfgceqofilxhSZOkYaMLMxGVkwjAgj
+knf-UP2ArVXrjWk-CyrK_4rz0m
+}
+
+AzureEntityColoring(MicrosoftDefenderforCloud)
+!define MicrosoftDefenderforCloud(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftDefenderforCloud, MicrosoftDefenderforCloud)
+!define MicrosoftDefenderforCloud(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftDefenderforCloud, MicrosoftDefenderforCloud)
+!procedure MicrosoftDefenderforCloud($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftDefenderforCloud, $stereo=MicrosoftDefenderforCloud, $tags, $link)
+ !endprocedure
+!procedure MicrosoftDefenderforCloud($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftDefenderforCloud, $tags, $link, MicrosoftDefenderforCloud)
+!endprocedure

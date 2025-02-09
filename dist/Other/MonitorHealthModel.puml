@@ -1,0 +1,20 @@
+sprite $MonitorHealthModel [70x70/16z] {
+fTQ9OgmW30NGcnt__uFV0Z91KRJJyvR2GAz9kYAnclzZAeGPoNuiX7lY0sCSiNaoMMSa8oGoFs6awTRrHV6PpY5-IT2eNp6S-0t9aETgDEuG08axZ075BGV8
+LwV9ufwiJvUb95-VhgUIF5OOdSVtD1lwNhOayHkKOrbpjkV1M3oGrUZaxN2NNIkQU63BHzbpIjRClqt9lZCq4PfIIfp-gUJQKF6-TzoaJ1omqWaQBnNVf4Gv
+Ou1AXntNdU4cnIzA0Jmtupq20D4aQAoC-aqU6oAWbQTzCJKi9Gr5HpP4GUrnCHTF038weT5iI5eo5PcU6eU6asAN1Nifb9EC-VOYt3uD7OQiymoRqatJzC_x
+yMN_ZgJdKe9h8zbGtlUvbBaORgaE0DmRoXFmL4gIOodz8TbGLZcNac9ysVed3VDu9jDe3KV45MK7UJJMMKQ1CqQLyzDvzD97QygYKHWJGfNpEpKxzy5OYBBL
+FuAAsYx_242YmaZpQ7JREQgsJmQe_QU4Ax8TjLinlQhMA6RpOwqrT1GWwmINR1kLwuR4EyKrtqPwqP11_GDlOihSqERWw1GNvc5AzZWaHqTu5rEsYK3s7tY6
+1T-MIlyEe5YoRKK0a9eI7kXsZ_4V2UEHR1T2c9dmFWMyJGmfKzQed2i1M2uj0sCxqDkGTOoTFqs4F-IumOASKfJGiGewKdax70VqDaMHLbqfxbCuKvPT5KPD
+uMzJGB45AhKXnNHQhmaQLK4dgjFw3TR_ADTxVvJhPseDrHOQ6TQA5zWw0DRHi6OyC-y8ufs0lLCyym-6UcT3elymHRvEiUW879s0ebCyoji6m6CtnXDUa59v
+YwphuFoLAGIla0rtTVX18j5-B_eB
+}
+
+AzureEntityColoring(MonitorHealthModel)
+!define MonitorHealthModel(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MonitorHealthModel, MonitorHealthModel)
+!define MonitorHealthModel(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MonitorHealthModel, MonitorHealthModel)
+!procedure MonitorHealthModel($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MonitorHealthModel, $stereo=MonitorHealthModel, $tags, $link)
+ !endprocedure
+!procedure MonitorHealthModel($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MonitorHealthModel, $tags, $link, MonitorHealthModel)
+!endprocedure

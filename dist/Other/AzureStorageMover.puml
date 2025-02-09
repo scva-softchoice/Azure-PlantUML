@@ -1,0 +1,17 @@
+sprite $AzureStorageMover [70x70/16z] {
+hTTNeeCW48NXCtt8_lTxgn5J1IPVwjDlLy0VOYOKaVufHknVBQEs4QnZss6Ts8uA5TyLAkmx5FYL4L1V6TNx3B6QUuIx2U4zyl1mDxtBaCQHCzvZOHBLcmnP
+t7F2gTkCnZCobx5upcOo7g_uQ8RxcYokZQcfMRoZWrTLl4T3cOXy-tACPF8Cuvpd6SC9Dizp9uaS8tY9F4SfNj4SvuL85vL85ovun3dFS2zoGH1kMAuH752k
+qiggT8nTjkLNuefRWMAZhI2niLOX-EUjmZzIoRv55NtlLb0_qlKAMWas_f4JHbg1uIhRElx4bPJe_DB-NfVfNyP1NjOuRhIbIE8MPINInNGay8JChKvJF1Tj
+l65umTmzqiFjhVw8VSP69oRclwGKwPbIv9WXUX91DvBHNzHdzZqoaR5_383rrry5CypjYY2sSIDCiPsGxJ19RQVz7oQPNvcjLxHN3i7rwJpte69ra-mG94pJ
+BTAtJh20pPJnIpmyN5148eoQRm
+}
+
+AzureEntityColoring(AzureStorageMover)
+!define AzureStorageMover(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStorageMover, AzureStorageMover)
+!define AzureStorageMover(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStorageMover, AzureStorageMover)
+!procedure AzureStorageMover($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStorageMover, $stereo=AzureStorageMover, $tags, $link)
+ !endprocedure
+!procedure AzureStorageMover($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStorageMover, $tags, $link, AzureStorageMover)
+!endprocedure

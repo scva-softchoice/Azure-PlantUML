@@ -1,0 +1,17 @@
+sprite $StackHCIPremium [70x70/16z] {
+xTRNOjmW48NXmxGphD__VSE2RKcf0jAJRzjS_Tj7mjVyfxx12ZhX5aTdtFDQoHKk8jgddOgWYTsAek7thdYkS00bJvMwPwj2ChShXcQxecZoL7ci69Ndj5CP
+x-Yen5AbkZiVkw_bW4vUjd1tItNu3HatXA1JRebVltSDGBdkEaPmSzU9e5FVgG15LAK0XSkLOi4k5B1wLuY8zkdw3VMEBkrTPHDcvi56RcVIpQ9F8-8gdJux
+1JwzCOMaoHjrCWhgxCRq7Za4QV3xbVgS2XbwGHBb_juT4wbNJihDjvIPjG_nIKL90nzJoFYaaevucU7CprG2HMRWinN7f4ZgbMKQH2S8BDDCX_7ecOBW32kP
+OHUPYS8vY4otayWq66ynLH-LalMSOQq4EBkb-XwW3PwrPe7dTAKljsH4aCz9e3bTwPb35iZCaGJvLb5cVSL0gNSb8x9Fez9ammPI9nsLmyHheOZOUyNYPA8Y
+nzxzjB9mflff1NEL-jbAkLyX07tiLWve_AnLNcRLesBBbPJtYa9UAuj612CZ6nNjWsnLJ368hLT4Zb7n_Vpt0G
+}
+
+AzureEntityColoring(StackHCIPremium)
+!define StackHCIPremium(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, StackHCIPremium, StackHCIPremium)
+!define StackHCIPremium(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, StackHCIPremium, StackHCIPremium)
+!procedure StackHCIPremium($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=StackHCIPremium, $stereo=StackHCIPremium, $tags, $link)
+ !endprocedure
+!procedure StackHCIPremium($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, StackHCIPremium, $tags, $link, StackHCIPremium)
+!endprocedure

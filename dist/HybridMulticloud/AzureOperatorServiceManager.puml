@@ -1,0 +1,22 @@
+sprite $AzureOperatorServiceManager [70x70/16z] {
+XPQ9mgCW38HpaA1z_mTUIXsoHFZvzl2AuqmGANNgfzAHSbz2Io3o-HWTa5PqCsqfxJhC7Aeksi6VBqedxa-Zq0R_Z42oBDA2I2tJtWgSshBAu_A-VpxobBNb
+wDgzDpEiIE-FhFjX-yUCApggVGGTSjhL6INBORgwopIIMlk1KST69eDUPjYzHmNttHX_kX2LDv4K1Jha11Bp6OTUfHbu74E5aGTmKn7RiHFW-eL05OLWwXbZ
+PzrSHtyATbvci2FhzjvFTex-91nb9SeIi10FiQnomRA5gGpExbNkLt0zUobBBtTIEVL5aWY2fBBz6E660FVmOOmSdYjsB0KwloyuZPi5zWAEAHlFoiXakc8o
+3dGKsTJbH4oqQ7yTSPYcwQweoLH4qc66MBrfthL8p7kFuWKw9f0F5MdmypzAU4gzZ7J3k7GhqdYqS47ZGtzSZdXOaM-kleaBZ0SkO0peG5IrzxBnQc6XDPON
+O6rWowakh6mM7C1GaScCV61bZS9CM96GMrZUPt82298YAKIsQAqvq3kIrKXzH4if-WYMnZoWnTohknMcFoaDYVt_ozLgO4eRylDrA3R4wumBxH2ev0EhR-mG
+2COGYHyZNbH4jE2Gzu4uQqB4-incxeMGsGS2-XpwSmSQxFhBgExBG6QcD61hzFhUX5A39gv2lkoDDMG-Lf8kWbZ0-MTIA2FMIDwuvt4YTDGy1jhQTXcepB9A
+MXiCaIeaVSiOVpq58ZRfjvTVJzIgznpMfDr_jdmLY6TTuj-3kyWGdphDDA5eIo0za97cTzKgo97CtTyfUo37KyNy6vgt4u6z8IiLeLxkz7HMC6BkBnNr1YLw
+ENCCxHV371VfuZbGeKnF8ZrMms7grr_foQPw1DgeE6Slk70EH8ZVS7ILOOeazyNgScvLi1WZwx4ibnTEXChgVL7ozBv8NI4qVmqOvGM1vdUt_ANYvkxpFEec
+B3UtRbMGXJ6dHq2kET1HHHosAaOiJMdaN80xe0Bm9PMv-AhsXue8SQc1nkSuaAkXUnNzvLSVooixJ0RbQj1Q1PZGM8zekHvv4_6j2l0Y_4NCLo9qDSfHPRzE
+HrluhBB_pG0lbSuggKaPDkGvghn_I_q3
+}
+
+AzureEntityColoring(AzureOperatorServiceManager)
+!define AzureOperatorServiceManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperatorServiceManager, AzureOperatorServiceManager)
+!define AzureOperatorServiceManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperatorServiceManager, AzureOperatorServiceManager)
+!procedure AzureOperatorServiceManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperatorServiceManager, $stereo=AzureOperatorServiceManager, $tags, $link)
+ !endprocedure
+!procedure AzureOperatorServiceManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperatorServiceManager, $tags, $link, AzureOperatorServiceManager)
+!endprocedure

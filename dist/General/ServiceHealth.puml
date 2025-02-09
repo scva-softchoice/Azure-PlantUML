@@ -1,0 +1,18 @@
+sprite $ServiceHealth [70x70/16z] {
+xPFdWjj028GfIz7xFt0QyGeVYwMDVkQ-wmSUPa26Ixv17gAgCXZNTU9Pxs3DKAcJQ68iXKY_mbMZhmT3AtA_7eWkmUjw5QdWPJtRjUP3GwIhvr1eFG80R3ry
+vh6FRQZMeyLAqpQiKiqC-qZ9ipPZpuWpaJrZf41xr4Xg3xcx5iAhnQ1T8fyVFBgtN2wEIvdl1MTh6RTKvE888ntQsv_yzbYv3NW70O1zWQYVGA0U6DnKOG0x
+5I4W3mY-G56Sf6aZIsOp2YiLz4IQbWDbCnY_9w8zaQP93XJ8_5FBK5rQ0So1c5x_oYlAPaUn4cZgSOCm4rUsqbyMWn3m6OWyNewocCkGbSiURFP8Md8PEuTc
+O3BEG1vc0brFzKGqSymy0-MaTG4bPsmnQZ83vQ5MRb7CX8dJGovZ6bciP9CsWyTO3R4q5hsvHN99yrLnsSYNvsezq0IBf2toQbajmHir7aEz2TSydOobBUH0
+5OCMFZm-S0OwcWzOG84VVv6NQWSjLVp8l4RfqS1TbdT616f411gacEa36RHezQnR8e6MrcsHAeF0so9LniMtHQhCPfoCx8liooZSX8yUWTlGqJ5W0_Jk3RW5
+sb5nWbrazpWRR_5zq9-bgS-n8VmxN9wI1waOdgA78po7uB_a9m
+}
+
+AzureEntityColoring(ServiceHealth)
+!define ServiceHealth(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, ServiceHealth, ServiceHealth)
+!define ServiceHealth(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, ServiceHealth, ServiceHealth)
+!procedure ServiceHealth($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=ServiceHealth, $stereo=ServiceHealth, $tags, $link)
+ !endprocedure
+!procedure ServiceHealth($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, ServiceHealth, $tags, $link, ServiceHealth)
+!endprocedure

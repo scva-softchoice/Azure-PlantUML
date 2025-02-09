@@ -1,0 +1,20 @@
+sprite $HDIAKSCluster [70x70/16z] {
+fPZHqkiW28I3Ae3l_y3d97Odf2NI_DshXjfFNCYCT4lKT9ZKxISr6uVi1qxHCI2blp58Zb-NRQj7HlmNIFSdQMDNUqR0zlqCCA1F3H7oCKBiIn73a2W_Vc98
+w07iUMu8vEqfIuG_V6xPavrQQuaz-QcRxMfVErUYBTYcUfgqRtTw9qFqZJqzxinkKFkYcEm3_T2CAzJzLrXunTJT4BfuF8x7hj2H2ur3V6doWYT5PR0INnQ5
+vkEO8k-4ulCOvWutTJqI-pI7d5wCCR0zW6wx6G6c8sUVA4BqIS52Gy5AwvLG5SCMjnJa38fjxr8pSDgIOc04BLBifDYAqWSeTxa0q-yf1CXTjpeCtLB4GMQ4
+Uw6DIkVvv2XyHwa-bNAO_TQxrsHYYhUMvvfJqpU7qP1oJSMzHbFzm-0QKiX1-X5NBuB1e9I8WZh3MdI__DVvAec1mdSrCb2EPEkB0SmHBA3ORQNRY_BQzaK1
+Hc3mWMdtlQl6PGPHPKTHz27LRhhTKxpqZO9al79AzHHKAQEiCO0yfg3fpX8ze5HHxNXXeTCKwgfICWgRdXit8Cx8TAYlATqcHUZj5PWBYaoAjIN59WMxTORc
+Cq-8cguerO2HBPBeb1bzHT4LnSpAWaAsAyl5x2uN145f8QM38ajtY-r2AiGYl4k4KJIa4bE0KNS1Opl5B-wH2QLl0BKAedbXSQrWWEAk3u7KlCAg-PzAU7sL
+OLv3jcZD6QxHRLh6BfieN7w2Ysc9ReTG7v_gmUMvBs-g9Q2KPEnmGwBFxoeEnexi1ayVbE06dqmJU7HgsR0LZvZbgcIoIO-RZnqFHqnacwejfa_Bfi-q0gZY
+uwbytL4F1-AukvyFvmtGny8V1JWWqs__ukI6vFRaXkHgCapI3la7
+}
+
+AzureEntityColoring(HDIAKSCluster)
+!define HDIAKSCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, HDIAKSCluster, HDIAKSCluster)
+!define HDIAKSCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, HDIAKSCluster, HDIAKSCluster)
+!procedure HDIAKSCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=HDIAKSCluster, $stereo=HDIAKSCluster, $tags, $link)
+ !endprocedure
+!procedure HDIAKSCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, HDIAKSCluster, $tags, $link, HDIAKSCluster)
+!endprocedure

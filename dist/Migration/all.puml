@@ -1,0 +1,19 @@
+sprite $AzureDatabaseMigrationService [70x70/16z] {
+xT85SiKm34LHiUJkVxy5kU14SQ1CfqEbEo_AXrt4ekRkfeBmIk8ZuzSr2e6BsBSOmXNg4mJdcK_nQvQyVetuBeGpqFVPQux2AAyu3PT_ANU2Onu3vtxkM63O
+XwnRVuyQ8zjDIEueaPg1EOjK8pL3C44-ZTICm3Q9UQJ3OQl29er20AOPPuHAvf6QwLpAJQ8ecqkcFB97uPOOEhKKIxRxF7MInoOVAl6AIidmAohreQp5zEkv
+ClqBXYxQr52PSKZKNbr9VGo_ebB7oEihtU6Ma1CLshcBcp0XGeV8eXxpms0hGWaV415qH9G_a8rGtnkbaV_0Se-Xatkv3SMtNvAk8dYFfMFivD53n-fTwc4u
+_waOCkKTfLLwKT5kKV7oUQcV6ErFf6hc0pFL7k4enqrnywAvO7Pg9Hl85ZU31azeKJ4JmaJC8layJ8H9pBoD5O5dElpOxPuA4wuGYvgjAW437Ilf-QZC_7nb
+IqEb8PJCKD5kzQfilOLWYLhPCbIaLkgIP5Ut66n1ds-fTmc22MIB4rjQSoNOTNmNWcEJBQ-exD_bAxVyt-N_Blzt-R-B76qnE4CEjY2SWZBVeWpdaMnk4OAB
+48cP9J4p4SBK7G
+}
+
+AzureEntityColoring(AzureDatabaseMigrationService)
+!define AzureDatabaseMigrationService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabaseMigrationService, AzureDatabaseMigrationService)
+!define AzureDatabaseMigrationService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabaseMigrationService, AzureDatabaseMigrationService)
+!procedure AzureDatabaseMigrationService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabaseMigrationService, $stereo=AzureDatabaseMigrationService, $tags, $link)
+ !endprocedure
+!procedure AzureDatabaseMigrationService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabaseMigrationService, $tags, $link, AzureDatabaseMigrationService)
+!endprocedure
+

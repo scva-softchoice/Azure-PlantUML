@@ -1,0 +1,18 @@
+sprite $AzureOperatorNexu [70x70/16z] {
+xTO7kkeu343XesgB_Izu29hsJ69ulVwtGShvfDlPaHpl2BP6-xoCZdTzOkLF9QJ5_R7tGyt_FNwluZIxFpRQKLHQ_cALFnN_h4fyTcM-wxjM_bI25lV7Jilx
+OwEDZwfut_blKN-4of-AZC-kD8spIbvKDhJ5CPUsuqxNDlSLeVKOUvnHysOzjtv2nRmr0v2FhQYlv7M6XOMxBsyAMEqi4Oyp2cHLpNmOjJokTPAupCmgvz15
+fULJHUCAu5LsKXbFbRXam7oled4Do3SgeXOR2lQw8h7d8FjA385u0J3VL7oC08yzwRMVAhChrlz6MEoPSB2BIl-dmwFZ2eXkljo8UzJTy4C_BdoCfBb0iqr7
+wnbZJWNf5EgPBjTVCWUydkYS0yX7YvY7eR3RQjGgvlJ-zT6HfX1vJizsoZa5VCxeLakmF1V0hCLuLEuj0vl_4YGl67WjUfLk-VoNGLuF8szM5FBAoKgpIY2g
+3FI_eo1vHM3SFZIg5Amg-qlO72olAEHIYQheHGLwqYx6hhBEee_noVw0p_i3PpTA2jHIOLPP3pC5G3XeNWhWjY1w2gjUgbbUCz2ryfWYwOon7QG1uwc2TmR9
+0CbN3EIsehziIVDymO4ygVI0lOtb2m7OxRJ2lFKuEbumUf_J2d4y56Jif0D8FKScJQAsiwIxSj3R2VqB
+}
+
+AzureEntityColoring(AzureOperatorNexu)
+!define AzureOperatorNexu(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureOperatorNexu, AzureOperatorNexu)
+!define AzureOperatorNexu(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureOperatorNexu, AzureOperatorNexu)
+!procedure AzureOperatorNexu($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureOperatorNexu, $stereo=AzureOperatorNexu, $tags, $link)
+ !endprocedure
+!procedure AzureOperatorNexu($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureOperatorNexu, $tags, $link, AzureOperatorNexu)
+!endprocedure

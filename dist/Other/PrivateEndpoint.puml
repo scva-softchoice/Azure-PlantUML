@@ -1,0 +1,16 @@
+sprite $PrivateEndpoint [70x70/16z] {
+xTO7ZW8n38LXnx5Jxd_X7ScKQ7bv6eLUVZeE7nr67bMwdb3RojT1oGxbQnJpOrSmsS-bPSM7R1L9FhQgw4sKL8QM5HaLMrPiK98ivoSaotfwzQiIMQaRed9b
+5X__hr5-oazHPuhhFgJtEbTgxxeBsMeJ9RNU0GEHhOgL3G4CGYAizFwFuOW21Suv0XJ6O0GeZC48KZY3nbZX31nYXJDuX1Myblj00QivSbGumv6ZOaAO7KZs
+A7668tvA6JDUp1T81fjIWE68bA5C68feBUUT2s7Q716hOp9dZaYH5KMyHnQ8cLoMsn1Ip88nyK0WCoe58S7OThu4WXWV50L8C773R3PZwWanW4H7FisPqk9D
+o5CaIKGPzHgV5OvW1iSHpd04CzSWdE48Pgv1CCCHpbo3O8OZdBa2mGn7EAC2Ke0m9WiiGmGpWM068fW913E1l71_
+}
+
+AzureEntityColoring(PrivateEndpoint)
+!define PrivateEndpoint(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PrivateEndpoint, PrivateEndpoint)
+!define PrivateEndpoint(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PrivateEndpoint, PrivateEndpoint)
+!procedure PrivateEndpoint($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PrivateEndpoint, $stereo=PrivateEndpoint, $tags, $link)
+ !endprocedure
+!procedure PrivateEndpoint($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PrivateEndpoint, $tags, $link, PrivateEndpoint)
+!endprocedure

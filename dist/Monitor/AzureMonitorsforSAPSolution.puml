@@ -1,0 +1,18 @@
+sprite $AzureMonitorsforSAPSolution [70x70/16z] {
+xTPROfmm38NXeuibEVjVS04nO88PUzA-DTyyjKb-9EMArQzV9Agb55N6Jt7nHX7yWFhDnntnBiOdYZzGJ2FpHqQp4N_7CCVz7sJC1nHZuZ5uEM64F8OC8oKc
+20PYQ3mCbvX2UAGMinHzD9vYl9B4Hnmz5XyQV8rCea5aZglWokDdTFAhTRx3yJTelCzyHc9idF4w8TpDh9YPUzGhns8cKRHLleKA87NWICZg2DK6eKmrXB4Z
+bkmqyzZxiuHj2S9LXgmU4EyYPMsWW-GoZhoBw8BFJG0GOSTjnkBz97G-MWdW1UtP9XDUdwoHff6LH4TchvHX91j79Rqozlumjgz3gftAcV5j5ZnVbdAKnqgU
+k2uSzhGF8tKhI98xAUHf52oCcmo1cWXjfHo6WAXVjvVbACMzoH3GHfXp9wy1WBzkQex2lk2y8XDMH6U4QHycnxvLF4zh_iemJfHVGkRw6WQR-5uf-oWReuS_
+fmjJphdNwssXl4e_8yLNHPZpquJ4jRCG-SwmKQ-k83LVc0eVzoKakYnbMrvy9ncfAtybKgx4UB7BMGI0NaU9kcUA4FYiG5Lmu7ESwraKcvfoV4xxOGGDYSjn
+jIHkPmbiw59HNAb7_GfLmetLbU66LT51tGhvUXNgLWZJ_mrYcdzeVkv6nWzLLPcdgkWX_GoXYrZcCVuVl_u
+}
+
+AzureEntityColoring(AzureMonitorsforSAPSolution)
+!define AzureMonitorsforSAPSolution(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMonitorsforSAPSolution, AzureMonitorsforSAPSolution)
+!define AzureMonitorsforSAPSolution(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMonitorsforSAPSolution, AzureMonitorsforSAPSolution)
+!procedure AzureMonitorsforSAPSolution($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMonitorsforSAPSolution, $stereo=AzureMonitorsforSAPSolution, $tags, $link)
+ !endprocedure
+!procedure AzureMonitorsforSAPSolution($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMonitorsforSAPSolution, $tags, $link, AzureMonitorsforSAPSolution)
+!endprocedure

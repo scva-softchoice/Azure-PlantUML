@@ -1,0 +1,22 @@
+sprite $DNSPrivateResolver [70x70/16z] {
+xPO7TYuX28Mn3SLa_zjzGHGFRyRqqtDJ_ndvl625tzAVIiafmKzLfqhEdu6bUY6n23DXou7Y-WZHIAAetYdvVTUiSKo4GqGy7g2cKDw557zMU23Gv7_PEEK8
+CQC5L9aSuKcnWRH8aD-7MAsk6QCWSP4-61n8vzAMzHX5hBMCNov4iZTfKye1aZJQmad30iOy5JXLrr9Da4OsjAA2oAnH6vJfA4ox1UO5yI2NOviQJwlda8yb
+IQE88UPk1g7K13bxr5IQ7ozXXx1PCeL7392Ww9yISYfchOgioTLdnptyJ7iNG4KId8M8Lf8s8pAGHlJ_lmYPvti5LiXknedOUOHoN3jcH9Z9LuBqFZ0hrAra
+io9zI1WFqco72Aato1QxguBZnPAQr-xTrt16ser9eXamN3OhI_P_aB6xAPXP2IMuhCccz0UnDTbcLlIYIR0YICyKYiOgsFZEFzbRUAT13eyVqAgwB3L5Fr9U
+t_Joc2Zkb6P27Ej9A0unZ3-FAMKRd4anitVAowlfJh4gjKqfa69Pjh7N0oKM9XSlBWTAFrDSJYa31ULEEMJ4iHN1ICPcRjszH4gixhslSAvS9ufX3lE8KEJJ
+5BTofbXTsf7o4YYdZ6oCQkSpPQTqxujiZC98dwjxebn6iRcRkZpDklSf6j9-PGLKewIz6YFbQUxU6-L1ISQ2wx0pd2XnY01MUUKxkrI3OfIPaYZwkNc0Fsul
+0B1sR_xoxjtPTszOvwj7HegyAHPz4wkV993TJ3pL_4ZrWuqHevLb0Q8PkH-mH856lAjIzd7lrn2qcWh58tbdnkGWzHsj-64hdP2iMHYnCCt4MgZjF8VPj7pb
+tl42ACSPOsG3SR_y3XRDrDu04bo76UDWKGXvs3PZqAnle1ncZ1SVaRhCUcROyfkqmlDZIkwE5T8J5BSICMk1eWGpSShHW1J8TmYaQZ8AKhXcB0ls6xbBcW49
+eWnjZcmCl0vU5MKecW308GTC0RJcv3bP8ZplbzU-nzsKDgMOzNM3rdbB-uwQL_DoXbZ5clHryNKHAwF0UwfRzbazA6d8B7Mgy4c8romtwgw0EAb4YgkqwxfQ
+qzCFFg6KivCo_519QGb-IN_w1m
+}
+
+AzureEntityColoring(DNSPrivateResolver)
+!define DNSPrivateResolver(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DNSPrivateResolver, DNSPrivateResolver)
+!define DNSPrivateResolver(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DNSPrivateResolver, DNSPrivateResolver)
+!procedure DNSPrivateResolver($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DNSPrivateResolver, $stereo=DNSPrivateResolver, $tags, $link)
+ !endprocedure
+!procedure DNSPrivateResolver($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DNSPrivateResolver, $tags, $link, DNSPrivateResolver)
+!endprocedure

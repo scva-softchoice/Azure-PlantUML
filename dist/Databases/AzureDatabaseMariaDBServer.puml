@@ -1,0 +1,17 @@
+sprite $AzureDatabaseMariaDBServer [70x70/16z] {
+xTQ5akKg483X5bfv_-ST2yMzx8O974hMlj5ZVtMe6FmcS73uyT5sWeYu8QADK0ymbvymqrAeZS1bYjjGJuDmUS1zdFaWPK4RPrufIrhbP9G-pFAgY8YgY2ol
+30qPKVSOk9lA_oCCDwBlAg8UCwPzfqcuKGCR4fjaN1cnYNfRgPMnew9cxiFcCFw7QvrLQX0keQZpoeTWVCGVZNcb2I6S8cc9RojDkl3G8kAYdhLPgZGvQ8dV
+fx8REPybzBGIBagGHnL5-41qiYv1m4R0SB95IG1g24XvK2bmuQolLmmkUhA_9C8NETfV2bpof69mAVMW4WWNFJYE7A6nrsUn7i5yjU8C7TVNAjOQVOEsroLC
+20QvNH647vMwLUcDKUnLeZV6KJOgimZcLYK81ksXRbMIOC1y_N7UgJ0CqE53KSV5rKrtlNOHaa-50T3qCnNL46IXuWoDPjztFPBQCwcwKb61Jnp3SQG0K9Ql
+i6rPqSQZCH10SgFYgcevHbAen13vT__I_RthahkHX1kwEui2d0-JS0jpfn884xeU4PX3MyiemlTAF5L249vXiPnLGXas41SnZxo4kvimmc_W7G
+}
+
+AzureEntityColoring(AzureDatabaseMariaDBServer)
+!define AzureDatabaseMariaDBServer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabaseMariaDBServer, AzureDatabaseMariaDBServer)
+!define AzureDatabaseMariaDBServer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabaseMariaDBServer, AzureDatabaseMariaDBServer)
+!procedure AzureDatabaseMariaDBServer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabaseMariaDBServer, $stereo=AzureDatabaseMariaDBServer, $tags, $link)
+ !endprocedure
+!procedure AzureDatabaseMariaDBServer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabaseMariaDBServer, $tags, $link, AzureDatabaseMariaDBServer)
+!endprocedure

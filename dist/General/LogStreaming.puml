@@ -1,0 +1,16 @@
+sprite $LogStreaming [70x70/16z] {
+xTO5WiCW40LGnfFx7xWs_BeCwy9lcmHxYwor7nfTrg44jzl8EXowGNYl2vUpdxbU8xH7MZ6OkxMhB43gkLLYNPVsNiKYmhKUlg_uMEnz2l8FbAbCPIh-GnNX
+k-ipVQs4U__mhgWedpwxQiRpOoKy3X_P5pbGnkVGNr1-h6IoNWDvKFz28Kn5EUlmAEXNK1GbIoi2ZtxmfQJmlc3PwqnfsjT4qVDKGKyvgqD1qF6LujWLxAIX
+LdkZLXN9EzQIan4q5fH3hUM6OfSYKAmgcBJcC3eT68qfc3prkL00HMFzZ78bpYIM-uAZreh2lK3ugfYXeQsYQ9-CvS0CeQhwNHVuePCS0TdHKbCK_-OHHeHZ
+FGbNbE2ptozWFCAWrvGWdETvS41bnQbnt4PoXaK5Qxc9MTIKUgOobQdmHoYql5yv82k_KpaWc0hYIuozrbsqtIY3sI7IhcFZoYtIA4OLRZyqMm
+}
+
+AzureEntityColoring(LogStreaming)
+!define LogStreaming(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, LogStreaming, LogStreaming)
+!define LogStreaming(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, LogStreaming, LogStreaming)
+!procedure LogStreaming($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=LogStreaming, $stereo=LogStreaming, $tags, $link)
+ !endprocedure
+!procedure LogStreaming($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, LogStreaming, $tags, $link, LogStreaming)
+!endprocedure

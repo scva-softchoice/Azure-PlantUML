@@ -1,0 +1,16 @@
+sprite $EventGridDomain [70x70/16z] {
+xTW5UiCm341XeHMxTF_RxbFbGSgMnzi_BBqmmeVwXsLnmiDaSGMzKcrIzOfDymcoQVWhApKK7LPgyCeX20oJGvYj_5U8cV1w1Gw1u1Ov8bZXG_3_ItC6jv04
+MBFc2joX5lIaCaIjamvp4S8Zbf2CGC28S3eIQ3eIaE8FAsCwqcbpCXUX5d0imhgoj21Z4LkhBUXZ4NwEbDIud4Poy-KqSdaPvI88eQylgGYVx5joaR7jcLdD
+2ZinC-4WGviYsaL5kdUfC0mHCrqz3WHJ6Kpkv_WaGypK_qjcJbVSCfdHq-tvFZ9JNAjHgJ2KETKwI6TEAtdBhIbgExU1k_XiFxVTkMFsyRCWNcfT-CAPnmyu
+8_kllDVLX4txbHMmQUzoLRwykKEWF4oAO_XO_vu
+}
+
+AzureEntityColoring(EventGridDomain)
+!define EventGridDomain(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, EventGridDomain, EventGridDomain)
+!define EventGridDomain(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, EventGridDomain, EventGridDomain)
+!procedure EventGridDomain($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=EventGridDomain, $stereo=EventGridDomain, $tags, $link)
+ !endprocedure
+!procedure EventGridDomain($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, EventGridDomain, $tags, $link, EventGridDomain)
+!endprocedure

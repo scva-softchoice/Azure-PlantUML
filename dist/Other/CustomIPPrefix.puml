@@ -1,0 +1,18 @@
+sprite $CustomIPPrefix [70x70/16z] {
+xPK5Wkiu44IhGH2u_tatLheoiZp6fKylAF1pjKn-VvwdOe2ISpZcF2vPqczYUPpaLcjDIylz0ZvQxbV8_wNbZ-MFfPONFbhA1NvsonzBJhDM7Xlhbbf85W3A
+sOON5eqqDVI89QCXitbE2JMhbdXPTAVMGj36D1gPSvSMmga-DSgNvOLyTX2iMwotL0Irj-HzI-RU-sJQRoHrmqACKLWIbGoJlhCyQI4k4CviIwgbsuFakcwv
+rGka0vQSw_UKv6xckRSymdAxpJ_9FNVj-1J55xB8qXCIzpBqPa3K32_CJR38Cj0aeqQWxgvGKOErlvkMx47juW7-Gc0kwjwChXkMx2HzD0L2IRE4nbRM9IJK
+CCbROZ0FYyDy0XEtPhcFab7J90mW4SC_QRJS1fnqDGbQGyI_BAxlbeBSxdEAJsGs7P29-Gz_LotlG2LQ5T09YCv-1T4-P34kfFcdehv3DYsi25n77omYCV0c
+tGTy8deBbDiC5deHYCw9ML6-3H7KWx0eliTcero5fSKsBH5-tl2bHQEo5RmR5cl00f7n7rRGNdCTfsQh8lx36kA1RgskxYLM3-JICIB6CF5Fz8g56ejOkddk
+xXPrz3hQZgC7h-brn5eOdOWVbPNxooOYe4PewPiu3bTcUTyLdDM8qF9HAavXSRBI0gNajCQWOU6pyZJQD39PZ98hQDE8MZCghY9gJMVQv_WB
+}
+
+AzureEntityColoring(CustomIPPrefix)
+!define CustomIPPrefix(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, CustomIPPrefix, CustomIPPrefix)
+!define CustomIPPrefix(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, CustomIPPrefix, CustomIPPrefix)
+!procedure CustomIPPrefix($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=CustomIPPrefix, $stereo=CustomIPPrefix, $tags, $link)
+ !endprocedure
+!procedure CustomIPPrefix($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, CustomIPPrefix, $tags, $link, CustomIPPrefix)
+!endprocedure

@@ -1,78 +1,54 @@
-sprite $AzureMobileApp [70x70/16z] {
-xT07igGm34LHa8I2c_slTn3Lv2Ji-PbBHS8fFwf5m1AAeJg99HYVARAAu1t9gizMrds-0lL5457gonxbKHxbKP2WM856HAXG8UbZB52GPQY1J0KQcKTP2iag
-nh2YiXaZwraYUgxee8ZA9ZOSdmMLbDQ6jksWQ5n9jb1UROxYZRCujLvOqL6P73Odii_YzJzaeUZTitZMZj6FKxGBQhyE57yMKkgUEL3wPzfLVfQGqaUsexoV
-HHMFrqeYkAy0wbnvCK26CiuoDnGXInbdsJWcLm6KP3wcHF684OeLx_SfZs8MKSn-cMBNYdqd1U4YZ2Wg5sb02NIbsBQcoxRTKxZguk-XIDKbfOfnqx3TKr0j
-b6Arw1y
+sprite $AppService [70x70/16z] {
+rTU7SkKg381XK1Vl_y0NQpXWsKgxK_VRJK_-ESAz_HiwifhxS5DXQFy7i8_C6F_wAX1v50JQhmdZfADYs7w5V3XEvAFa_8jXR4o2aupmZbd_eS4ZEE5aVZSs
+D_WsucDHZ9aUJ5MOBlXZvBmOJWaXfF1j1ax3tV2YzyHKPkg81yMBdSJoVQRpYGJ6YSoDCVikG-md4WWdMesSOL4rarS4cIr7OccW0oOiQdkhKyk0cJL59e4-
+dGo9FVQUtXAUv14nWduonFhU1pL7GegO4kBEaDZqpc3QtQAI8eBJog3OyinuEsH4HK_3675dO5LovhN0OmXFSYA47x4iNsTiHtXLU5S8Dq7yDWDjyPdaYIG6
+G3aHKjEJgIgo8XWdC6Pi6owYfgeh-CgCi0UQ7jUAZXVL82kZPOPQiAYq1q1IpHdKgg8jx4LAEcj86R5GZ8GdcB3U4GQsgAZUCdqlIszlMcN8J20cbhGmTdRa
+J3HXNDe2TjlMrwVS2gYPH0FQ1hVbpOTcZxVu1tgSgVeDHyK-5UW5q2AJVzDJ1NzPCSaL6vD_AbHLiAXeJoHLfAfGLO7aL68sA1GHCqXY8jiLWXVKAfD_KVop
+fNLC3Yzbn0HkYDdMNhSsEZn85PaODkIBuZuQXpCaM5K2RiIXjwcFmFIuealH24euaRf9L5hOjpsq6u6BId1JDP_6rQ4MP4mQ2PA9wQDiv9EKoQh06OXzifCH
+Iudox0tdIk94LqQZSilmLH3i3L1FfBp6yZNGXEJ1J6YJVRTDfr9TOliO71NnJqPt1NlxwDzVxdLGC5_iJ0Nza3HFu5C1e-2RxQdw3VXoAks6WlYDcVAg7A-8
+j5V6XZywH9Wg-eXuIo066iCpKxZMPRyXiQZPNbfesOpmY4h6S4U1Fx0z4MdqFTDNXO_sXZQg3CA1gS6zVgwfCeOvSi0FZqUFp49kfY9o8YMeCovqDJGzzdd_
+zj4pXR9HH4eyRfwHGrEad2hp-9SujX_f-86qt-Wolk7GVejzr0JRNm3fgwGvyVkIxG9Z-pVy1m
 }
 
-AzureEntityColoring(AzureMobileApp)
-!define AzureMobileApp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMobileApp, AzureMobileApp)
-!define AzureMobileApp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMobileApp, AzureMobileApp)
-!procedure AzureMobileApp($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMobileApp, $stereo=AzureMobileApp, $tags, $link)
+AzureEntityColoring(AppService)
+!define AppService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AppService, AppService)
+!define AppService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AppService, AppService)
+!procedure AppService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AppService, $stereo=AppService, $tags, $link)
  !endprocedure
-!procedure AzureMobileApp($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureMobileApp, $tags, $link, AzureMobileApp)
+!procedure AppService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AppService, $tags, $link, AppService)
 !endprocedure
 
-sprite $AzureMobileEngagement [70x70/16z] {
-xTG5aWCn34JHk6qBPdF_ywuLPibXy2yOVjL5CziBnA48imiH1wDB2XzKiAhmGKzGd9wj83aXeYItJrHGJjMh53vL_b1bA4CPIkPJeKVP3yHSxl2lg_sAS3eg
-vqD5BYjYYbT3hbPGMdcfNBq5VtEhtARa-Q8QKoIknBTKiSgU8jrRTBBuOnLf8I6XM3bXes2Z8AGOKjaY9AmKRBOWGLgHBKk5ps_nbTPA0JPRDWg0snNQKOOY
-ZrE6CXJLYA8QKWfR5G1FbfrDXloLgE9qBqLzHTz9oN3A4KNOINmbagVeSRMbn_KfPBVfFHIsstohebGhQP-IHKD9dktr3m
-}
-
-AzureEntityColoring(AzureMobileEngagement)
-!define AzureMobileEngagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMobileEngagement, AzureMobileEngagement)
-!define AzureMobileEngagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMobileEngagement, AzureMobileEngagement)
-!procedure AzureMobileEngagement($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMobileEngagement, $stereo=AzureMobileEngagement, $tags, $link)
- !endprocedure
-!procedure AzureMobileEngagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureMobileEngagement, $tags, $link, AzureMobileEngagement)
-!endprocedure
-
-sprite $AzureNotificationHub [70x70/16z] {
+sprite $NotificationHub [70x70/16z] {
 xTSr0iD034HHuUR-Dqucf6s2eyxwPdg6pdAS9YKJP4vcK9mEIj2rAQEOM8EY8jgXWE4LvBnIJ2dsMtBFDeL8Iw7gKSHv1LbaP0YRvQK-nPdoeIJJLyeeHlHK
 WbTGi4enh89wbFGMfHZ_gLBM_d7YiVtT4ihQovkoVggKOcW5fVCASaj2UTyeeoGKPn7xwjV6LfNoTrfA257m2Z9UGRfEA8GiU0Kvho1TKFXSZjrq1W
 }
 
-AzureEntityColoring(AzureNotificationHub)
-!define AzureNotificationHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNotificationHub, AzureNotificationHub)
-!define AzureNotificationHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNotificationHub, AzureNotificationHub)
-!procedure AzureNotificationHub($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNotificationHub, $stereo=AzureNotificationHub, $tags, $link)
+AzureEntityColoring(NotificationHub)
+!define NotificationHub(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, NotificationHub, NotificationHub)
+!define NotificationHub(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, NotificationHub, NotificationHub)
+!procedure NotificationHub($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=NotificationHub, $stereo=NotificationHub, $tags, $link)
  !endprocedure
-!procedure AzureNotificationHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNotificationHub, $tags, $link, AzureNotificationHub)
+!procedure NotificationHub($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, NotificationHub, $tags, $link, NotificationHub)
 !endprocedure
 
-sprite $AzureNotificationHubNamespace [70x70/16z] {
-xTSr0iD034HHuUR-Dqucf6s2eyxwPdg6pdAS9YKJP4vcK9mEIj2rAQEOM8EY8jgXWE4LvBnIJ2dsMtBFDeL8Iw7gKSHv1LbaP0YRvQK-nPdoeIJJLyeeHlHK
-WbTGi4enh89wbFGMfHZ_gLBM_d7YiVtT4ihQovkoVggKOcW5fVCASaj2UTyeeoGKPn7xwjV6LfNoTrfA257m2Z9UGRfEA8GiU0Kvho1TKFXSZjrq1W
+sprite $PowerPlatform [70x70/16z] {
+tTG7UeGm34JX4UxOzxzkYZREDfH5JFf_WFaUnSQV8Cj7HB17QYVhfNufxIXf3rV6Y7WWpn5pPRneRChGcKoczA4MAcNEh4JAPGoLCbSAbJ9NEYpDiJBC5EE1
+V2l6Y6ybkrQg8yLU2VPXvX-eRApO8ndRekS33LZI_dzb51mYSRrOwOAZmlj6BpXEvWDQAH9IoZaNLIVh3wh6IDAHkMAEA3Cb6YEkb91SAtOA_rQ2uu7wltqh
+V0h_LihlUIk9-rTKR_YCjoAVyLOMy6-b2TYKbXTOOgvRzz0Yjm1RxADlIF2GK-iTkEIrRObmQTlWNk5JKDWK5UWKLTkT2d0nzLK4Y9Zw1WU4oucPubTlu91G
+5P6YZ1Gc9k0eEaK5EaNHAIhGAQgyJfHIG0crl0hW50LIe5DKrXIQ2FwyPm
 }
 
-AzureEntityColoring(AzureNotificationHubNamespace)
-!define AzureNotificationHubNamespace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNotificationHubNamespace, AzureNotificationHubNamespace)
-!define AzureNotificationHubNamespace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNotificationHubNamespace, AzureNotificationHubNamespace)
-!procedure AzureNotificationHubNamespace($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNotificationHubNamespace, $stereo=AzureNotificationHubNamespace, $tags, $link)
+AzureEntityColoring(PowerPlatform)
+!define PowerPlatform(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, PowerPlatform, PowerPlatform)
+!define PowerPlatform(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, PowerPlatform, PowerPlatform)
+!procedure PowerPlatform($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=PowerPlatform, $stereo=PowerPlatform, $tags, $link)
  !endprocedure
-!procedure AzureNotificationHubNamespace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNotificationHubNamespace, $tags, $link, AzureNotificationHubNamespace)
-!endprocedure
-
-sprite $AzureNotificationHubs [70x70/16z] {
-xTSr0iD034HHuUR-Dqucf6s2eyxwPdg6pdAS9YKJP4vcK9mEIj2rAQEOM8EY8jgXWE4LvBnIJ2dsMtBFDeL8Iw7gKSHv1LbaP0YRvQK-nPdoeIJJLyeeHlHK
-WbTGi4enh89wbFGMfHZ_gLBM_d7YiVtT4ihQovkoVggKOcW5fVCASaj2UTyeeoGKPn7xwjV6LfNoTrfA257m2Z9UGRfEA8GiU0Kvho1TKFXSZjrq1W
-}
-
-AzureEntityColoring(AzureNotificationHubs)
-!define AzureNotificationHubs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNotificationHubs, AzureNotificationHubs)
-!define AzureNotificationHubs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNotificationHubs, AzureNotificationHubs)
-!procedure AzureNotificationHubs($alias, $label, $techn, $descr,  $color, $tags, $link)
- AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNotificationHubs, $stereo=AzureNotificationHubs, $tags, $link)
- !endprocedure
-!procedure AzureNotificationHubs($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
-   AzureEntity($alias, $label, $color, $techn, $descr, AzureNotificationHubs, $tags, $link, AzureNotificationHubs)
+!procedure PowerPlatform($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, PowerPlatform, $tags, $link, PowerPlatform)
 !endprocedure
 

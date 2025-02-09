@@ -1,0 +1,17 @@
+sprite $AzureVideoIndexer [70x70/16z] {
+nTG7aXj128LXu15wz_u7jXAJXCh6EFoRWxvIlwaH_S4OJECa8fIcQTnoZ9L7pbFbcV5CoNIcP8wPahdCbCnufcGwKpB7MCbvvahECrS4D5SW0amLbNkGsRgG
+P-210ic0hYBOBlGXeAdaJv3iL-Unaq9i4IRNZ5lABN789Rt9FUKMBWn-VfFQsXBApiphNqAQ2l71GUG_EBUKMx8vllO-pQnxgPpdmJeMMYlOIkLyB5_d0Wqb
+ZwNhBUUMSWk-YenRoYrTLTfJRbd519eAILIErmheOwWS_JVAdpyHswewhwl8Dmokz1xgGOgSgQ48nBxMzIs4iaefxyRuEhT0xzaUobS6FHjALVQr9OLnom-8
+CpKKWMnXvJ-4q8UyK1XopFP16WeIEJqP9Mee2CWbgmVvh73S7Y7N2kEpabjVJmGggnLeNek6aKgHIWPb-brbROWGzPNCYiCqb0nfZ1GNC8sL4AAMylti-7M1
+UldtMtdBZ1GZ6Yl1D5Doa86IWumL8nehmJHMbj0apq56QGuo2yRq__i1
+}
+
+AzureEntityColoring(AzureVideoIndexer)
+!define AzureVideoIndexer(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVideoIndexer, AzureVideoIndexer)
+!define AzureVideoIndexer(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVideoIndexer, AzureVideoIndexer)
+!procedure AzureVideoIndexer($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVideoIndexer, $stereo=AzureVideoIndexer, $tags, $link)
+ !endprocedure
+!procedure AzureVideoIndexer($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVideoIndexer, $tags, $link, AzureVideoIndexer)
+!endprocedure

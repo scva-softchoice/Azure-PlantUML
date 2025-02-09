@@ -1,0 +1,18 @@
+sprite $MultifactorAuthentication [70x70/16z] {
+rTO5kkCm30HWEOu5ext_THz3AZcLq-N_OMc-iOBqlzY66jnXoXizQC2Fc1wmmwD1LwbFMAChDlXSlnBYftPQrU3dDbfaVWJp6usMy25XT7gnxOSaenNDF-4m
+X6xNHYF-GKyguaeLo_7hPOQ_GpkTkgvle7wdvlA2G1EwkgJztf7N_HslZGKsM5JLpF32p5HLU3VuAw62m0ntsGkwfp4MSQCpcs6PRJJNCUMEgRuUuY_UVsNJ
+DZRBC1Lc5ft566K3YKFuapcIGL53fdmWoDfA5JwOjjaf44GkV0i9Kw0EuFQ70_Nu7gK07Xa7uf4jf4Za4IWmZrGY_9uKeq0VMP7MAT2eJX5FD817Gi7mgenv
+CYZedbbHnJi5pOiOUDOeWa_0Fla4A56V0c00V4Of6NxPeAJvPOqozTF902SBodPFJFYJuiTqGULMKhwH3aQQOZyoJjIFcAPQAf8WpBOe8pndwKXCMWh9B5L9
+E8Lag6-da6QII7tFs_q5E4bRgfSttY8ip2nyyXVrZPqvfA0EAZHNgQ1HfKkfKusbmBIY35d3HSYY8QS6LUeOtUcAhjEGZIuIJLz2r-qQT7g8w07JmxZ8MDRs
+Jd_8Cm
+}
+
+AzureEntityColoring(MultifactorAuthentication)
+!define MultifactorAuthentication(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MultifactorAuthentication, MultifactorAuthentication)
+!define MultifactorAuthentication(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MultifactorAuthentication, MultifactorAuthentication)
+!procedure MultifactorAuthentication($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MultifactorAuthentication, $stereo=MultifactorAuthentication, $tags, $link)
+ !endprocedure
+!procedure MultifactorAuthentication($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MultifactorAuthentication, $tags, $link, MultifactorAuthentication)
+!endprocedure
